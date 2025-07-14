@@ -1,0 +1,32 @@
+module Base
+{
+	model PZKA_Vehicles_Ftype_Tow_Base
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Vehicles_Tow_Base,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Ftype_Tow_RearProvince
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_Tow.RearProvince,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Tow_RearF350
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_Tow_Rear_F350,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Tow_Lightbar
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_Lightbar_Tow,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

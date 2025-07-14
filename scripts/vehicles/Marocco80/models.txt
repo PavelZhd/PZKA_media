@@ -1,0 +1,207 @@
+module Base
+{
+	model PZKA_Vehicles_Marocco80_Base_a
+	{
+		mesh = vehicles/pzka_Marocco80|Vehicles_Marocco_Base,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Marocco80_Roof_a
+	{
+		mesh = vehicles/pzka_Marocco80|Roof_full,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Marocco80_Roof_sport_a
+	{
+		mesh = vehicles/pzka_Marocco80|Roof_sport,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+
+	model PZKA_Vehicles_Marocco80_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_Marocco80_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Marocco80|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Marocco80_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Marocco80|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+
+	model PZKA_Vehicles_Marocco80_DoorFrontLeft_sport
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontLeft_sport_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorSportBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_DoorFrontRight_sport
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontRight_sport_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorSportBone 1.0,
+	}
+
+	model PZKA_Vehicles_Marocco80_WindowFrontLeft_sport
+	{
+		mesh = vehicles/pzka_Marocco80|Window_FrontLeft_sport_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorSportBone 1.0,
+		boneWeight = FrontLeftWindowSportBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_WindowFrontRight_sport
+	{
+		mesh = vehicles/pzka_Marocco80|Window_FrontRight_sport_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorSportBone 1.0,
+		boneWeight = FrontRightWindowSportBone 1.0,
+	}
+	
+	model PZKA_Vehicles_Marocco80_Trunk
+	{
+		mesh = vehicles/pzka_Marocco80|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_Hood
+	{
+		mesh = vehicles/pzka_Marocco80|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_Windshield
+	{
+		mesh = vehicles/pzka_Marocco80|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Marocco80_RearWindow
+	{
+		mesh = vehicles/pzka_Marocco80|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,		
+	}
+
+	model PZKA_Vehicles_Marocco80_Base_nr_a
+	{
+		mesh = vehicles/pzka_Marocco80|Vehicles_Marocco_Base,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Marocco80_Roof_nr_a
+	{
+		mesh = vehicles/pzka_Marocco80|Roof_full,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Marocco80_Roof_sport_nr_a
+	{
+		mesh = vehicles/pzka_Marocco80|Roof_sport,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Marocco80_lights_a
+	{
+		mesh = vehicles/pzka_Marocco80|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+
+
+	model PZKA_Vehicles_Marocco80_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_DoorFrontLeft_sport_nr
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontLeft_sport_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_DoorFrontRight_sport_nr
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontRight_sport_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	
+	model PZKA_Vehicles_Marocco80_Trunk_nr
+	{
+		mesh = vehicles/pzka_Marocco80|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_Hood_nr
+	{
+		mesh = vehicles/pzka_Marocco80|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+}

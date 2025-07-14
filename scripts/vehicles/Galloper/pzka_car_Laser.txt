@@ -1,0 +1,258 @@
+module Base
+{
+	model PZKA_Vehicles_Laser_a12
+	{
+		mesh = vehicles/pzka_CarGalloperBase|Comp_Grill_Laser12,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_a34
+	{
+		mesh = vehicles/pzka_CarGalloperBase|Comp_Grill_Laser34,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_a56
+	{
+		mesh = vehicles/pzka_CarGalloperBase|Comp_Grill_Laser56,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_a78
+	{
+		mesh = vehicles/pzka_CarGalloperBase|Comp_Grill_Laser78,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Laser_nr_a12
+	{
+		mesh = vehicles/pzka_CarGalloperBase|Comp_Grill_Laser12,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_nr_a34
+	{
+		mesh = vehicles/pzka_CarGalloperBase|Comp_Grill_Laser34,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_nr_a56
+	{
+		mesh = vehicles/pzka_CarGalloperBase|Comp_Grill_Laser56,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_nr_a78
+	{
+		mesh = vehicles/pzka_CarGalloperBase|Comp_Grill_Laser78,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+
+	model PZKA_Vehicles_Laser_LightFL12
+	{
+		mesh = vehicles/pzka_Galloper_Static|Light_Laser12_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_LightFR12
+	{
+		mesh = vehicles/pzka_Galloper_Static|Light_Laser12_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Laser_LightFL34
+	{
+		mesh = vehicles/pzka_Galloper_Static|Light_Laser34_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_LightFR34
+	{
+		mesh = vehicles/pzka_Galloper_Static|Light_Laser34_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Laser_LightFL56
+	{
+		mesh = vehicles/pzka_Galloper_Static|Light_Laser56_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_LightFR56
+	{
+		mesh = vehicles/pzka_Galloper_Static|Light_Laser56_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Laser_LightFL78
+	{
+		mesh = vehicles/pzka_Galloper_Static|Light_Laser78_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_LightFR78
+	{
+		mesh = vehicles/pzka_Galloper_Static|Light_Laser78_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Laser_LightRL
+	{
+		mesh = vehicles/pzka_Galloper_Static|Light_Laser_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Laser_LightRR
+	{
+		mesh = vehicles/pzka_Galloper_Static|Light_Laser_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Laser_Lights {
+		part HeadlightLeft 
+		{
+			model Filla0a1a
+			{
+				file = PZKA_Vehicles_Laser_LightFL12,
+			}
+			model Filla2a3a
+			{
+				file = PZKA_Vehicles_Laser_LightFL34,
+			}
+			model Filla4a5a
+			{
+				file = PZKA_Vehicles_Laser_LightFL56,
+			}
+			model Filla6a7a
+			{
+				file = PZKA_Vehicles_Laser_LightFL78,
+			}
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Filla0a1a
+			{
+				file = PZKA_Vehicles_Laser_LightFR12,
+			}
+			model Filla2a3a
+			{
+				file = PZKA_Vehicles_Laser_LightFR34,
+			}
+			model Filla4a5a
+			{
+				file = PZKA_Vehicles_Laser_LightFR56,
+			}
+			model Filla6a7a
+			{
+				file = PZKA_Vehicles_Laser_LightFR78,
+			}
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser_LightRR,
+			}
+		}
+	}
+
+	template vehicle PZKA_Laser_FillFront {
+        part PZKA_fill
+        {
+			model Filla0a1a
+			{
+				file = PZKA_Vehicles_Laser_a12,
+			}
+			model Filla2a3a
+			{
+				file = PZKA_Vehicles_Laser_a34,
+			}
+			model Filla4a5a
+			{
+				file = PZKA_Vehicles_Laser_a56,
+			}
+			model Filla6a7a
+			{
+				file = PZKA_Vehicles_Laser_a78,
+			}
+
+            category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = false,
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+            	init = Vehicles.Init.AdjustLightGeometry,
+	    	}
+        }
+	}
+
+	template vehicle PZKA_Laser {
+        template! = PZKA_Laser_animatedDoors,
+		template! = PZKA_Laser_FillFront,
+    }	
+	template vehicle PZKA_Laser_nr {
+        template! = PZKA_Laser_animatedDoors_nr,
+		template! = PZKA_Laser_FillFront,
+    }
+
+	template vehicle PZKA_Laser_Lightbar {
+		template! = PZKA_Laser_nr,
+		template! = PZKA_Galloper_Lightbar_shared,
+	}
+
+	template vehicle PZKA_Laser5D {
+        template! = PZKA_Laser5D_animatedDoors,
+		template! = PZKA_Laser_FillFront,
+    }
+}

@@ -1,0 +1,256 @@
+module Base
+{
+	model PZKA_Vehicles_Truck_RV_a
+	{
+		mesh = vehicles/pzka_TrucksStatic|Vehicles_TruckCamper,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Truck_RV_internals
+	{
+		mesh = vehicles/pzka_TrucksStatic|Vehicles_Interior_RV,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkVanMultivanShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Truck_RV_DoorRearRight
+	{
+		mesh = vehicles/pzka_Trucks|Door_RV_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightRVDoorBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	model PZKA_Vehicles_Truck_RV_WindowRearRight
+	{
+		mesh = vehicles/pzka_Trucks|Window_RV_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightRVDoorBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	model PZKA_Vehicles_Truck_RV_WindowRearRightStatic
+	{
+		mesh = vehicles/pzka_TrucksStatic|Window_RV_RearRight_s_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Truck_RV_RearDoor
+	{
+		mesh = vehicles/pzka_Trucks2|Trunk_RV_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkRVBone 1.0,
+	}
+	model PZKA_Vehicles_Truck_RV_WindowRearLeft
+	{
+		mesh = vehicles/pzka_TrucksStatic|Window_RV_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Truck_RV_RearWindow
+	{
+		mesh = vehicles/pzka_TrucksStatic|RearWindow_RV_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Truck_RV_Windshield
+	{
+		mesh = vehicles/pzka_TrucksStatic|Windshield_RV_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Truck_RV_LightRL
+	{
+		mesh = vehicles/pzka_TrucksStatic|Light_RV_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLeftBone 1.0,
+	}	
+	model PZKA_Vehicles_Truck_RV_LightRR
+	{
+		mesh = vehicles/pzka_TrucksStatic|Light_RV_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkRightBone 1.0,
+	}
+
+	template vehicle PZKA_Truck_RV_lights {
+		part HeadlightLeft 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_RV_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_RV_LightRR,
+			}
+		}
+	}
+
+	template vehicle PZKA_Truck_RV_animatedDoors {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_RV_RearDoor,
+			}
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_DoorFrontRight,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_RV_DoorRearRight,
+			}
+		}
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_Hood,
+			}
+		}
+		part WindowFrontLeft
+        	{
+			parent = DoorFrontLeft,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Truck_WindowFrontLeft,
+            		}            		
+        	}
+		part WindowFrontRight
+        	{	
+            		parent = DoorFrontRight,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Truck_WindowFrontRight,
+            		}
+	       	}
+
+		part WindowRearLeft
+        	{
+				model Default
+            		{
+                		file = PZKA_Vehicles_Truck_RV_WindowRearLeft,
+            		}            		
+        	}
+		part WindowRearRight
+        {	
+        	parent = DoorRearRight,
+			setAllModelsVisible = true,
+			model Default
+            {
+            	file = PZKA_Vehicles_Truck_RV_WindowRearRight,
+            }
+			model Static
+            {
+            	file = PZKA_Vehicles_Truck_RV_WindowRearRightStatic,
+            }
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_RV_Windshield,
+			}			
+		}
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_RV_RearWindow,
+			}
+		}
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_SeatFR,
+			}
+		}
+		
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_TruckBus_Battery,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_TruckRV_internals,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create = Vehicles.Create.Default,
+	    		}
+		}
+	}
+}

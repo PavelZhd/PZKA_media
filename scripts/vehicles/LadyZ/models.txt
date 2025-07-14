@@ -1,0 +1,128 @@
+module Base
+{
+	model PZKA_Vehicles_LadyZ_a
+	{
+		mesh = vehicles/pzka_LadyZ|LadyZ,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_LadyZ_nr_a
+	{
+		mesh = vehicles/pzka_LadyZ|LadyZ,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_LadyZ_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_LadyZ|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_LadyZ_DoorFrontRight
+	{
+		mesh = vehicles/pzka_LadyZ|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_LadyZ_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_LadyZ|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_LadyZ_WindowFrontRight
+	{
+		mesh = vehicles/pzka_LadyZ|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+
+	model PZKA_Vehicles_LadyZ_WindowFrontLeft_static
+	{
+		mesh = vehicles/pzka_LadyZ|Window_FrontLeft_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_LadyZ_WindowFrontRight_static
+	{
+		mesh = vehicles/pzka_LadyZ|Window_FrontRight_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_LadyZ_Hood
+	{
+		mesh = vehicles/pzka_LadyZ|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_LadyZ_Trunk
+	{
+		mesh = vehicles/pzka_LadyZ|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_LadyZ_Windshield
+	{
+		mesh = vehicles/pzka_LadyZ|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_LadyZ_RearWindow
+	{
+		mesh = vehicles/pzka_LadyZ|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}	
+
+	model PZKA_Vehicles_LadyZ_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_LadyZ|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_LadyZ_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_LadyZ|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_LadyZ_Hood_nr
+	{
+		mesh = vehicles/pzka_LadyZ|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_LadyZ_Trunk_nr
+	{
+		mesh = vehicles/pzka_LadyZ|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+}

@@ -1,0 +1,171 @@
+module Base
+{
+	template vehicle PZKA_LadyZ_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_LadyZ_WindowFrontLeft,
+            }
+			model Static
+            {
+            	file = PZKA_Vehicles_LadyZ_WindowFrontLeft_static,
+            }           		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_LadyZ_WindowFrontRight,
+            }
+			model Static
+            {
+            	file = PZKA_Vehicles_LadyZ_WindowFrontRight_static,
+            }           		
+	    }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LadyZ_Windshield,
+			}			
+		}
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_LadyZ_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LadyZ_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LadyZ_SeatFR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.132932 -0.00909 0.310174,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_LadyZ_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+
+		passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.32 -0.23 -0.418,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+		passenger FrontRight
+		{
+			position inside
+			{
+				offset = -0.32 -0.23 -0.418,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+	}
+
+
+	template vehicle PZKA_LadyZ {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LadyZ_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LadyZ_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LadyZ_DoorFrontRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LadyZ_Hood,
+			}
+		}
+		template! = PZKA_LadyZ_shared,
+	}
+
+	template vehicle PZKA_LadyZ_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LadyZ_Trunk_nr,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LadyZ_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LadyZ_DoorFrontRight_nr,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LadyZ_Hood_nr,
+			}
+		}
+		template! = PZKA_LadyZ_shared,
+	}
+}

@@ -1,0 +1,39 @@
+module Base
+{
+
+	template vehicle PZKA_FType_Box_Doors_animated {
+		template! = PZKA_FType_shared2Doors,
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Box_Doors_Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Box_Doors_RearWindow,
+			}	
+		}
+	}
+	template vehicle PZKA_FType_Box_Shutter_animated {
+		template! = PZKA_FType_shared2Doors,
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Box_Shutter_Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+	}
+
+}

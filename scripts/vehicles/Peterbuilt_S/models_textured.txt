@@ -1,0 +1,24 @@
+module Base
+{
+	model PZKA_Vehicles_PeterbuiltS_internals
+	{
+		mesh = vehicles/pzka_Peterbuilt_Sleeper|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBankshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_PeterbuiltS_SeatFL
+	{
+		mesh = vehicles/pzka_Peterbuilt_Sleeper|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkPeterbuiltBanditshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_PeterbuiltS_SeatFR
+	{
+		mesh = vehicles/pzka_Peterbuilt_Sleeper|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkPeterbuiltBanditshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+}

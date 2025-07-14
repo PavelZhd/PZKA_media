@@ -1,0 +1,24 @@
+module Base
+{
+	model PZKA_Vehicles_DashNoble_internals
+	{
+		mesh = vehicles/pzka_DashNoble|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkMastersonLadyshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_DashNoble_SeatFL
+	{
+		mesh = vehicles/pzka_DashNoble|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkDashNobleshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_DashNoble_SeatFR
+	{
+		mesh = vehicles/pzka_DashNoble|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkDashNobleshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+}

@@ -1,0 +1,112 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinRaider_a
+	{
+		mesh = vehicles/pzka_FranklinRaider|Vehicles_SUVpickup,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinRaider_nr_a
+	{
+		mesh = vehicles/pzka_FranklinRaider|Vehicles_SUVpickup,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_FranklinRaider_GrillR1_a
+	{
+		mesh = vehicles/pzka_FranklinRaider|Grill_Raider,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinRaider_GrillR2_a
+	{
+		mesh = vehicles/pzka_FranklinRaider|Grill_Raider2,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_FranklinRaider_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_FranklinRaider|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinRaider_DoorFrontRight
+	{
+		mesh = vehicles/pzka_FranklinRaider|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinRaider_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_FranklinRaider|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_FranklinRaider_WindowFrontRight
+	{
+		mesh = vehicles/pzka_FranklinRaider|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	
+	model PZKA_Vehicles_FranklinRaider_Hood
+	{
+		mesh = vehicles/pzka_FranklinRaider|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinRaider_Windshield
+	{
+		mesh = vehicles/pzka_FranklinRaider|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinRaider_RearWindow
+	{
+		mesh = vehicles/pzka_FranklinRaider|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}	
+
+	model PZKA_Vehicles_FranklinRaider_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_FranklinRaider|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinRaider_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_FranklinRaider|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinRaider_Hood_nr
+	{
+		mesh = vehicles/pzka_FranklinRaider|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+}

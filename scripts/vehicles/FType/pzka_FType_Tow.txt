@@ -1,0 +1,67 @@
+module Base
+{
+	template vehicle PZKA_FType_Tow {
+		template! = PZKA_FType_Tow_animated,
+		part PZKA_fill
+        {
+			model Province_12
+			{
+				file = PZKA_Vehicles_Ftype_Grill_Province_1,
+			}
+			model Province_34
+			{
+				file = PZKA_Vehicles_Ftype_Grill_Province_2,
+			}
+			model Province_56
+			{
+				file = PZKA_Vehicles_Ftype_Grill_Province_3,
+			}
+			model Province_78
+			{
+				file = PZKA_Vehicles_Ftype_Grill_Province_4,
+			}	
+			model F350_15
+			{
+				file = PZKA_Vehicles_Ftype_Grill_F350_1,
+			}
+			model F350_68
+			{
+				file = PZKA_Vehicles_Ftype_Grill_F350_2,
+			}
+			model Province
+			{
+				file = PZKA_Vehicles_Ftype_Tow_RearProvince,
+			}
+			model F350
+			{
+				file = PZKA_Vehicles_Ftype_Tow_RearF350,
+			}
+
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = false,
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+            	init = Vehicles.Init.AdjustLightGeometry,
+	    	}		
+        }
+		part ATA2RoofLightbar
+		{
+			model Normal
+			{
+				file = PZKA_Vehicles_Ftype_Tow_Lightbar,
+			}			
+			category = nodisplay,
+            area = Engine,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+}

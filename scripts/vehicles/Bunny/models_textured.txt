@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Bunny_internals
+	{
+		mesh = vehicles/pzka_Bunny|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkAutowagenBunnyshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bunny_SeatFL
+	{
+		mesh = vehicles/pzka_Bunny|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkAutowagenBunnyshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Bunny_SeatFR
+	{
+		mesh = vehicles/pzka_Bunny|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkAutowagenBunnyshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bunny_SeatRL
+	{
+		mesh = vehicles/pzka_Bunny|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkAutowagenBunnyshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bunny_SeatRR
+	{
+		mesh = vehicles/pzka_Bunny|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkAutowagenBunnyshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

@@ -1,0 +1,109 @@
+module Base
+{
+	model PZKA_Vehicles_Van_internals
+	{
+		mesh = vehicles/pzka_Vans2|Vehicles_Interior,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkVanMultivanShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_VanSeats_internals
+	{
+		mesh = vehicles/pzka_Vans2|Vehicles_Interior_police,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkVanMultivanShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_Camper_internals
+	{
+		mesh = vehicles/pzka_Vans2|Vehicles_Interior_Camper,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkVanMultivanShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_McCoy_internals
+	{
+		mesh = vehicles/pzka_Vans2|Vehicles_Interior_cargo,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkVanMultivanShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_VanTaxi_internals
+	{
+		mesh = vehicles/pzka_Vans2|Vehicles_Interior_seats,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkVanMultivanShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	
+
+	model PZKA_Vehicles_Van_SeatFL
+	{
+		mesh = vehicles/pzka_Vans2|Seat_FrontLeft_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkVanMultivanShell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Van_SeatFR
+	{
+		mesh = vehicles/pzka_Vans2|Seat_FrontRight_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkVanMultivanShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_Seats_SeatML
+	{
+		mesh = vehicles/pzka_Vans2|Seat_MiddleLeft_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkVanMultivanShell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Van_Seats_SeatMR
+	{
+		mesh = vehicles/pzka_Vans2|Seat_MiddleRight_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkVanMultivanShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+		model PZKA_Vehicles_Van_Seats_SeatRL
+	{
+		mesh = vehicles/pzka_Vans2|Seat_RearLeft_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkVanMultivanShell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Van_Seats_SeatRR
+	{
+		mesh = vehicles/pzka_Vans2|Seat_RearRight_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkVanMultivanShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_Brig_SeatRL
+	{
+		mesh = vehicles/pzka_Vans2|Seat_Bed_RearLeft_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkVanMultivanShell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Van_Brig_SeatRR
+	{
+		mesh = vehicles/pzka_Vans2|Seat_Bed_RearRight_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkVanMultivanShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

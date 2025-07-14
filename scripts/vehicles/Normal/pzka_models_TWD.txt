@@ -1,0 +1,123 @@
+module Base
+{
+	model PZKA_Vehicles_Sedan_TWD_a
+	{
+		mesh = vehicles/pzka_Normal|Vehicles_Sedan_TWD,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sedan_TWD_nr_a
+	{
+		mesh = vehicles/pzka_Normal|Vehicles_Sedan_TWD,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Wagon_TWD_a
+	{
+		mesh = vehicles/pzka_Normal|Vehicles_Wagon_TWD,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Wagon_TWD_nr_a
+	{
+		mesh = vehicles/pzka_Normal|Vehicles_Wagon_TWD,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Sedan_LightFL_TWD
+	{
+		mesh = vehicles/pzka_NormalLight|Light_TWD_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sedan_LightFR_TWD
+	{
+		mesh = vehicles/pzka_NormalLight|Light_TWD_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Sedan_Lights_Front_TWD {
+		part HeadlightLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightFL_TWD,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightFR_TWD,
+			}
+		}
+	}
+	model PZKA_Vehicles_Sedan_LightRL_TWD
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Sedan_TWD_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sedan_LightRR_TWD
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Sedan_TWD_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Sedan_Lights_TWD {
+		template! = PZKA_Sedan_Lights_Front_TWD,
+		part HeadlightRearLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightRL_TWD,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightRR_TWD,
+			}
+		}
+	}
+
+	model PZKA_Wagon_TWD_LightRL
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Wagon_TWD_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Wagon_TWD_LightRR
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Wagon_TWD_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Wagon_Lights_TWD {
+		template! = PZKA_Sedan_Lights_Front_TWD,
+		part HeadlightRearLeft
+		{
+			model Default 
+			{
+				file = PZKA_Wagon_TWD_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default 
+			{
+				file = PZKA_Wagon_TWD_LightRR,
+			}
+		}
+	}
+}

@@ -1,0 +1,114 @@
+module Base
+{
+	model PZKA_Vehicles_Sedan_Nyala_a
+	{
+		mesh = vehicles/pzka_Normal|Vehicles_Sedan_Nyala,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sedan_Nyala_nr_a
+	{
+		mesh = vehicles/pzka_Normal|Vehicles_Sedan_Nyala,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Limo_Nyala_a
+	{
+		mesh = vehicles/pzka_Normal|Vehicles_Limo,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Sedan_LightFL_Nyala
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Vanilla_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sedan_LightFR_Nyala
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Vanilla_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Sedan_Lights_Front_Nyala {
+		part HeadlightLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightFL_Nyala,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightFR_Nyala,
+			}
+		}
+	}
+	model PZKA_Vehicles_Sedan_LightRL_Nyala
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Sedan_Nyala_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sedan_LightRR_Nyala
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Sedan_Nyala_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Sedan_Lights_Nyala {
+		template! = PZKA_Sedan_Lights_Front_Nyala,
+		part HeadlightRearLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightRL_Nyala,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightRR_Nyala,
+			}
+		}
+	}
+
+	model PZKA_Vehicles_Limo_LightRL_Nyala
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Limo_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Limo_LightRR_Nyala
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Limo_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Limo_Lights_Nyala {
+		template! = PZKA_Sedan_Lights_Front_Nyala,
+		part HeadlightRearLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Limo_LightRL_Nyala,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Limo_LightRR_Nyala,
+			}
+		}
+	}
+}

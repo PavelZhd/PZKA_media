@@ -1,0 +1,31 @@
+module Base
+{
+	model PZKA_Vehicles_MuscleCabrio_internals
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Vehicles_Interior,
+		texture = Vehicles/Vehicles/Vehicle_MuscleCarShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MuscleCabrio_SeatFL
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicles/Vehicle_MuscleCarShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MuscleCabrio_SeatFR
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicles/Vehicle_MuscleCarShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MuscleCabrio_Battery
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Battery_obj,
+		texture = WorldItems/CarBattery,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

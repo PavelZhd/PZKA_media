@@ -1,0 +1,141 @@
+module Base
+{
+	template vehicle PZKA_Muscle_shared {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MuscleCabrio_Hood,
+			}
+		}
+
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MuscleCabrio_Windshield,
+			}			
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MuscleCabrio_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MuscleCabrio_SeatFR,
+			}
+		}
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.146653 -0.01722 0.869358,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_MuscleCabrio_internals,
+			}			
+			category = nodisplay,
+    		specificItem = false,
+    		itemType = Base.LightBulb,
+    		setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+	template vehicle PZKA_MuscleCabrio_animatedDoors {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MuscleCabrio_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MuscleCabrio_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MuscleCabrio_DoorFrontRight,
+			}
+		}
+		template! = PZKA_Muscle_shared,		
+	}
+
+	template vehicle PZKA_Muscle_animatedDoors {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MuscleCabrio_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Muscle_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Muscle_DoorFrontRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MuscleCabrio_Hood,
+			}
+		}
+		part WindowFrontLeft
+        	{
+			parent = DoorFrontLeft,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Muscle_WindowFrontLeft,
+            		}            		
+        	}
+		part WindowFrontRight
+        	{	
+            		parent = DoorFrontRight,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Muscle_WindowFrontRight,
+            		}
+	       	}
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Muscle_RearWindow,
+			}
+		}
+		template! = PZKA_Muscle_shared,
+	}
+}

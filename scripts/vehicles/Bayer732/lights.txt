@@ -1,0 +1,62 @@
+module Base
+{
+	model PZKA_Vehicles_Bayer732_LightFL
+	{
+		mesh = vehicles/pzka_Bayer732|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Bayer732_LightFR
+	{
+		mesh = vehicles/pzka_Bayer732|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bayer732_LightRL
+	{
+		mesh = vehicles/pzka_Bayer732|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bayer732_LightRR
+	{
+		mesh = vehicles/pzka_Bayer732|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Bayer732_Light {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer732_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer732_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer732_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer732_LightRR,
+			}
+		}
+	}
+}

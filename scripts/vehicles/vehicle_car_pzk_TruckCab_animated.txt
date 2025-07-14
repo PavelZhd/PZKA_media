@@ -1,0 +1,155 @@
+module Base
+{
+	model PZKA_Vehicles_Truck_Cab_a
+	{
+		mesh = vehicles/pzka_TrucksStatic|Vehicles_TruckBrig,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Truck_DoorRearLeft
+	{
+		mesh = vehicles/pzka_Trucks|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Truck_DoorRearRight
+	{
+		mesh = vehicles/pzka_Trucks|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Truck_WindowRearLeft
+	{
+		mesh = vehicles/pzka_Trucks|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Truck_WindowRearRight
+	{
+		mesh = vehicles/pzka_Trucks|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Truck_Cab_RearWindow
+	{
+		mesh = vehicles/pzka_TrucksStatic|RearWindow_Sleeper_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+
+	template vehicle PZKA_Truck_Cab_specific {
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_DoorRearLeft,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_DoorRearRight,
+			}
+		}
+		part WindowRearLeft
+        {
+			parent = DoorRearLeft,
+			model Default
+            {
+           		file = PZKA_Vehicles_Truck_WindowRearLeft,
+           	}
+        }
+		part WindowRearRight
+        {	
+        	parent = DoorRearRight,
+			model Default
+            {
+            	file = PZKA_Vehicles_Truck_WindowRearRight,
+        	}
+	   	}
+
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_Cab_RearWindow,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_SeatRL,
+			}
+		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_SeatRR,
+			}
+		}
+		part HeadlightLeft 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_LightRR,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Truck_internals,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create = Vehicles.Create.Default,
+	    		}
+		}
+	}
+}

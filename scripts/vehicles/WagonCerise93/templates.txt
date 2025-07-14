@@ -1,0 +1,237 @@
+module Base
+{
+	template vehicle PZKA_Wagon_Cerise93_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Wagon_Cerise93_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+        {	
+            parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Wagon_Cerise93_WindowFrontRight,
+            }
+	    }
+		part WindowRearLeft
+        {	
+            parent = DoorRearLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Wagon_Cerise93_WindowRearLeft,
+            }
+        }
+		part WindowRearRight
+        {	
+        	parent = DoorRearRight,
+			model Default
+        	{
+           		file = PZKA_Vehicles_Wagon_Cerise93_WindowRearRight,
+        	}
+        }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_Windshield,
+			}			
+		}
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_RearWindow,
+				rotate = 0 0 0,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_RearWindow_static,
+				rotate = 0 0 0,
+			}			
+		}
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_SeatRR,
+			}
+		}
+		
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.21153 -0.031767 1.05765,
+			}
+		}
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_internals,
+				rotate = 0 0 0,
+				scale = 1,
+			}			
+			category = nodisplay,
+    		specificItem = false,
+    		itemType = Base.LightBulb,
+    		setAllModelsVisible = true,
+			lua
+    		{
+				create =Vehicles.Create.Default,
+			}
+		}
+	}
+	
+	template vehicle PZKA_Wagon_Cerise93_animatedDoors {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_DoorFrontRight,
+			}
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_DoorRearLeft,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_DoorRearRight,
+			}
+		}
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_Hood,
+			}
+		}
+		template! = PZKA_Wagon_Cerise93_shared,
+	}
+	template vehicle PZKA_Wagon_Cerise93_animatedDoors_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_Trunk_nr,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_DoorFrontRight_nr,
+			}
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_DoorRearLeft_nr,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_DoorRearRight_nr,
+			}
+		}
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_Hood_nr,
+			}
+		}
+		template! = PZKA_Wagon_Cerise93_shared,
+	}
+	template vehicle PZKA_Wagon_Cerise93_animatedDoors_lightbar {
+		template! = PZKA_Wagon_Cerise93_animatedDoors_nr,
+		part ATA2RoofLightbar
+		{
+			model Normal
+			{
+				file = PZKA_Vehicles_Wagon_Cerise93_Lightbar,
+			}			
+			category = nodisplay,
+            area = Engine,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+}

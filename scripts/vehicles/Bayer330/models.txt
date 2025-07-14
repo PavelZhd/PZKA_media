@@ -1,0 +1,170 @@
+module Base
+{
+	model PZKA_Vehicles_Bayer_2D_a
+	{
+		mesh = vehicles/pzka_CarBayer|ModernCarBMW3302D,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bayer_a
+	{
+		mesh = vehicles/pzka_CarBayer|ModernCarBMW330,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bayer_Cabrio_a
+	{
+		mesh = vehicles/pzka_CarBayer|CarCarBMW330Cabrio,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	
+
+	model PZKA_Vehicles_Bayer_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_CarBayer|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer_DoorFrontRight
+	{
+		mesh = vehicles/pzka_CarBayer|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer_DoorRearLeft
+	{
+		mesh = vehicles/pzka_CarBayer|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer_DoorRearRight
+	{
+		mesh = vehicles/pzka_CarBayer|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_CarBayer|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Bayer_WindowFrontRight
+	{
+		mesh = vehicles/pzka_CarBayer|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer_WindowRearLeft
+	{
+		mesh = vehicles/pzka_CarBayer|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer_WindowRearRight
+	{
+		mesh = vehicles/pzka_CarBayer|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer_Trunk
+	{
+		mesh = vehicles/pzka_CarBayer|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer_Hood
+	{
+		mesh = vehicles/pzka_CarBayer|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer_Windshield
+	{
+		mesh = vehicles/pzka_CarBayer|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bayer_RearWindow
+	{
+		mesh = vehicles/pzka_CarBayer|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Bayer_2D_WindowRearLeft
+	{
+		mesh = vehicles/pzka_CarBayer|Window_RearLeft_2D_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bayer_2D_WindowRearRight
+	{
+		mesh = vehicles/pzka_CarBayer|Window_RearRight_2D_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Bayer_Sport_a
+	{
+		mesh = vehicles/pzka_CarBayer|ModernCarBMW3302D,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bayer_Trunk_Sport
+	{
+		mesh = vehicles/pzka_CarBayer|Trunk_sport_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+
+	model PZKA_Vehicles_Bayer_DoorFrontLeft_Cabrio
+	{
+		mesh = vehicles/pzka_CarBayer|Door_FrontLeft_cabrio_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer_DoorFrontRight_Cabrio
+	{
+		mesh = vehicles/pzka_CarBayer|Door_FrontRight_cabrio_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+
+}

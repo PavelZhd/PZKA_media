@@ -1,0 +1,43 @@
+module Base
+{
+	model PZKA_Vehicles_Laser_internals
+	{
+		mesh = vehicles/pzka_Galloper_Static|Vehicles_Interior,
+		shader = vehiclewheel,
+		texture = Vehicles/vehicle_pzkFranklin350Fshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Laser_SeatFL
+	{
+		mesh = vehicles/pzka_Galloper_Static|Seat_FrontLeft_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/vehicle_pzkFranklin350Fshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_SeatFR
+	{
+		mesh = vehicles/pzka_Galloper_Static|Seat_FrontRight_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/vehicle_pzkFranklin350Fshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Laser_SeatRL
+	{
+		mesh = vehicles/pzka_Galloper_Static|Seat_RearLeft_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/vehicle_pzkFranklin350Fshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Laser_SeatRR
+	{
+		mesh = vehicles/pzka_Galloper_Static|Seat_RearRight_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/vehicle_pzkFranklin350Fshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

@@ -1,0 +1,227 @@
+module Base
+{
+	template vehicle PZKA_DashRoyal_shared {
+		
+
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashRoyal_Windshield,
+			}			
+		}
+
+		
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashRoyal_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashRoyal_SeatFR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.251934 -0.013284 0.930216,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_DashRoyal_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+
+		passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.32 -0.25 -0.033,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		passenger FrontRight
+		{
+			position inside
+			{
+				offset = -0.32 -0.25 -0.033,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+	}
+	template vehicle PZKA_DashRoyal_hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashRoyal_Hood,
+			}
+		}
+	}
+	template vehicle PZKA_DashRoyal_hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashRoyal_Hood_nr,
+			}
+		}
+	}
+	template vehicle PZKA_DashRoyal_sedan_windows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+                file = PZKA_Vehicles_DashRoyal_WindowFrontLeft,
+        	}            		
+        }
+		part WindowFrontRight
+        {	
+        	parent = DoorFrontRight,
+			model Default
+        	{
+           		file = PZKA_Vehicles_DashRoyal_WindowFrontRight,
+        	}
+	    }
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashRoyal_RearWindow,
+			}
+		}
+		part Interior 
+		{
+			model Trunk
+			{
+				file = PZKA_Vehicles_DashRoyal_internalsTrunk,
+			}			
+		}
+	}
+
+	template vehicle PZKA_DashRoyal_sedan {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashRoyal_DoorFrontLeft,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashRoyal_DoorFrontRight,
+			}
+		}
+		template! = PZKA_DashRoyal_hood,
+		template! = PZKA_DashRoyal_shared,
+		template! = PZKA_DashRoyal_sedan_windows,
+	}
+
+	template vehicle PZKA_DashRoyal_sedan_shared {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashRoyal_Trunk,
+			}
+		}
+		template! = PZKA_DashRoyal_sedan,
+	}
+
+	template vehicle PZKA_DashRoyal_roadrunner {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Roadrunner_DoorFrontLeft,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Roadrunner_DoorFrontRight,
+			}
+		}
+		template! = PZKA_DashRoyal_hood,
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+                file = PZKA_Vehicles_Roadrunner_WindowFrontLeft,
+        	}            		
+        }
+		part WindowFrontRight
+        {	
+        	parent = DoorFrontRight,
+			model Default
+        	{
+           		file = PZKA_Vehicles_Roadrunner_WindowFrontRight,
+        	}
+	    }
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Roadrunner_RearWindow,
+			}
+		}
+		template! = PZKA_DashRoyal_shared,
+	}
+	
+	template vehicle PZKA_DashRoyal_sedan_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashRoyal_DoorFrontLeft_nr,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashRoyal_DoorFrontRight_nr,
+			}
+		}
+		template! = PZKA_DashRoyal_hood_nr,
+		template! = PZKA_DashRoyal_shared,
+		template! = PZKA_DashRoyal_sedan_windows,
+	}
+
+	template vehicle PZKA_DashRoyal_sedan_nr_shared {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashRoyal_Trunk_nr,
+			}
+		}
+		template! = PZKA_DashRoyal_sedan_nr,
+	}
+}

@@ -1,0 +1,188 @@
+module Base
+{
+	template vehicle PZKA_BankTrunk_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_BankTrunk_WindowFrontLeft,
+            }           		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_BankTrunk_WindowFrontRight,
+            }       		
+	    }
+		part WindowMiddleRight
+    	{	
+        	parent = DoorMiddleRight,
+			model Default
+            {
+                file = PZKA_Vehicles_BankTrunk_WindowRearRight,
+            }       		
+	    }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_Windshield,
+			}			
+		}
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_SeatFR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_BatteryR,
+				offset = -0.26118 0.143402 1.14078,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_BankTrunk_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+
+
+	template vehicle PZKA_BankTrunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_DoorFrontRight,
+			}
+		}
+		part DoorMiddleRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_DoorRearRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_Hood,
+			}
+		}
+		template! = PZKA_BankTrunk_shared,
+	}
+
+	template vehicle PZKA_BankTrunk_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_Trunk_nr,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_DoorFrontRight_nr,
+			}
+		}
+		part DoorMiddleRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_DoorRearRight_nr,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_Hood_nr,
+			}
+		}
+		template! = PZKA_BankTrunk_shared,
+	}
+	
+	template vehicle PZKA_BankTrunk_lightbar {
+		template! = PZKA_BankTrunk_nr,
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_Lightbar,
+			}			
+			category = nodisplay,
+            area = Engine,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+}

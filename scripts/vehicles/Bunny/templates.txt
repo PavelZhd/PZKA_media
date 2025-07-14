@@ -1,0 +1,139 @@
+module Base
+{
+
+	template vehicle PZKA_Bunny {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bunny_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bunny_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bunny_DoorFrontRight,
+			}
+		}
+		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bunny_Hood,
+			}
+		}
+		part WindowFrontLeft
+        	{
+			parent = DoorFrontLeft,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Bunny_WindowFrontLeft,
+            		}            		
+        	}
+		part WindowFrontRight
+        	{	
+            		parent = DoorFrontRight,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Bunny_WindowFrontRight,
+            		}
+	       	}
+		part WindowRearLeft
+        	{	
+         	model Default
+            		{
+                		file = PZKA_Vehicles_Bunny_WindowRearLeft,
+            		}
+        	}
+		part WindowRearRight
+        	{	
+         	model Default
+            		{
+                		file = PZKA_Vehicles_Bunny_WindowRearRight,
+            		}
+        	}		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bunny_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Bunny_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bunny_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bunny_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bunny_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bunny_SeatRR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.193941 -0.01458 0.70164,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Bunny_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+}

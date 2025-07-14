@@ -1,0 +1,93 @@
+module Base
+{
+	model PZKA_Vehicles_Ftype_Grill_F350_1
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_Grill_F350_12345,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Grill_F350_2
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_Grill_F350_678,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Ftype_Reg_Tail_F350
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_Reg_Tail_F350,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Med_Tail_F350
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_Med_Tail_F350,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_CrewMed_Tail_F350
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_CrewMed_Tail_F350,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_CrewLong_Tail_F350
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_Long_Tail_F350,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_FType_Reg_Wagon_Trunk350
+	{
+		mesh = vehicles/pzka_FType_animated|Trunk_Reg_Wagon_F350_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RegTrunkUpperBone 1.0,
+		boneWeight = RegTrunkLowerBone 1.0,
+	}
+	model PZKA_Vehicles_FType_CrewMed_Wagon_Trunk350
+	{
+		mesh = vehicles/pzka_FType_animated|Trunk_CrewMed_Wagon_F350_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = CrewMedTrunkUpperBone 1.0,
+		boneWeight = CrewMedTrunkLowerF350Bone 1.0,
+	}
+
+	model PZKA_Vehicles_FType_Med_Wagon_Trunk350
+	{
+		mesh = vehicles/pzka_FType_animated|Trunk_Med_Wagon_F350_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = MedTrunkUpperBone 1.0,
+		boneWeight = MedTrunkLowerF350Bone 1.0,
+	}
+	model PZKA_Vehicles_FType_Long_Wagon_Trunk350
+	{
+		mesh = vehicles/pzka_FType_animated|Trunk_Long_Wagon_F350_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = LongTrunkUpperBone 1.0,
+		boneWeight = LongTrunkLowerF350Bone 1.0,
+	}
+
+	model PZKA_Vehicles_Ftype_Tow_Tail_F350
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_Tow_Rear_F350,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+}

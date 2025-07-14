@@ -1,0 +1,227 @@
+module Base
+{
+	template vehicle PZKA_Cruiser_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Cruiser_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Cruiser_WindowFrontRight,
+            }
+	    }
+		part WindowRearLeft
+        {	
+			parent = DoorRearLeft,
+         	model Default
+			{
+        		file = PZKA_Vehicles_Cruiser_WindowRearLeft,
+       		}
+       	}
+		part WindowRearRight
+       	{	
+			parent = DoorRearRight,
+         	model Default
+            {
+            	file = PZKA_Vehicles_Cruiser_WindowRearRight,
+            }
+        }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_RearWindow,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_Cruiser_RearWindow_statis,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_SeatRR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.221992 -0.045974 0.837415,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Cruiser_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle PZKA_Cruiser {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_DoorFrontRight,
+			}
+		}
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_DoorRearLeft,
+			}
+		}
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_DoorRearRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_Hood,
+			}
+		}
+		template! = PZKA_Cruiser_shared,
+	}
+	template vehicle PZKA_Cruiser_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_Trunk_nr,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_DoorFrontRight_nr,
+			}
+		}
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_DoorRearLeft_nr,
+			}
+		}
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_DoorRearRight_nr,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_Hood_nr,
+			}
+		}
+		template! = PZKA_Cruiser_shared,
+	}
+	template vehicle PZKA_Cruiser_lightbar {
+		template! = PZKA_Cruiser_nr,
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cruiser_Lightbar,
+			}			
+			category = nodisplay,
+            area = Engine,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+}

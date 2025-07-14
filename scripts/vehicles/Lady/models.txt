@@ -1,0 +1,128 @@
+module Base
+{
+	model PZKA_Vehicles_Lady_a
+	{
+		mesh = vehicles/pzka_Lady|Vehicles_SportsCar,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Lady_nr_a
+	{
+		mesh = vehicles/pzka_Lady|Vehicles_SportsCar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Lady_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Lady|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Lady_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Lady|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Lady_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Lady|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftDoorBone 1.0,
+
+	}
+	model PZKA_Vehicles_Lady_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Lady|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	
+	model PZKA_Vehicles_Lady_Hood
+	{
+		mesh = vehicles/pzka_Lady|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Lady_Trunk
+	{
+		mesh = vehicles/pzka_Lady|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Lady_Windshield
+	{
+		mesh = vehicles/pzka_Lady|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Lady_RearWindow
+	{
+		mesh = vehicles/pzka_Lady|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}	
+
+	model PZKA_Vehicles_Lady_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Lady|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Lady_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Lady|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Lady_Hood_nr
+	{
+		mesh = vehicles/pzka_Lady|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Lady_Trunk_nr
+	{
+		mesh = vehicles/pzka_Lady|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Lady_LightHost
+	{
+		mesh = vehicles/pzka_Lady|Light_Host_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Lights1Bone 1.0,
+		boneWeight = Lights2Bone 1.0,
+		boneWeight = Lights3Bone 1.0,
+		boneWeight = Lights4Bone 1.0,
+	}	
+}

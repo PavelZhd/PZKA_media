@@ -1,0 +1,182 @@
+module Base
+{
+	model PZKA_Vehicles_Van_Taxi_a
+	{
+		mesh = vehicles/pzka_Vans|Vehicles_VanTaxi,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_Seats_RearWindow
+	{
+		mesh = vehicles/pzka_Vans|RearWindow_seats_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkRightBone 1.0,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	template vehicle PZKA_Van_Taxi_animatedDoors {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_RearDoor_nr,
+			}
+		}
+
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorFrontRight_nr,
+			}
+		}
+		part DoorMiddleLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorRearLeft_nr,
+			}
+		}
+
+		part DoorMiddleRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorRearRight_nr,
+			}
+		}
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Hood_nr,
+			}
+		}
+		part WindowFrontLeft
+        	{
+			parent = DoorFrontLeft,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Van_WindowFrontLeft,
+            		}            		
+        	}
+		part WindowFrontRight
+        	{	
+            parent = DoorFrontRight,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Van_WindowFrontRight,
+            		}
+	       	}
+
+		part WindowMiddleLeft
+        {
+			parent = DoorMiddleLeft,
+			model Default
+        	{
+          		file = PZKA_Vehicles_Van_WindowRearLeft,
+        	}            		
+        }
+		part WindowMiddleRight
+        	{	
+            parent = DoorMiddleRight,
+			model Default
+            {
+          		file = PZKA_Vehicles_Van_WindowRearRight,
+            }
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Windshield,
+			}			
+		}
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Seats_RearWindow,
+			}
+		}
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_SeatFR,
+			}
+		}
+		part SeatMiddleLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Seats_SeatML,
+			}
+		}
+		part SeatMiddleRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Seats_SeatMR,
+			}
+		}
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Seats_SeatRL,
+			}
+		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Seats_SeatRR,
+			}
+		}
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.2374 0.0036 0.9535,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_VanTaxi_internals,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create = Vehicles.Create.Default,
+	    		}
+		}
+	}
+}

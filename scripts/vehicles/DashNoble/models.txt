@@ -1,0 +1,121 @@
+module Base
+{
+	model PZKA_Vehicles_DashNoble_a
+	{
+		mesh = vehicles/pzka_DashNoble|Vehicles_SportsCar,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_DashNoble_nr_a
+	{
+		mesh = vehicles/pzka_DashNoble|Vehicles_SportsCar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_DashNoble_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_DashNoble|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_DashNoble_DoorFrontRight
+	{
+		mesh = vehicles/pzka_DashNoble|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_DashNoble_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_DashNoble|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_DashNoble_WindowFrontRight
+	{
+		mesh = vehicles/pzka_DashNoble|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	
+	model PZKA_Vehicles_DashNoble_Hood
+	{
+		mesh = vehicles/pzka_DashNoble|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_DashNoble_Trunk
+	{
+		mesh = vehicles/pzka_DashNoble|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_DashNoble_Windshield
+	{
+		mesh = vehicles/pzka_DashNoble|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_DashNoble_RearWindow
+	{
+		mesh = vehicles/pzka_DashNoble|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}	
+
+	model PZKA_Vehicles_DashNoble_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_DashNoble|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_DashNoble_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_DashNoble|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_DashNoble_Hood_nr
+	{
+		mesh = vehicles/pzka_DashNoble|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_DashNoble_Trunk_nr
+	{
+		mesh = vehicles/pzka_DashNoble|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_DashNoble_LightHost
+	{
+		mesh = vehicles/pzka_DashNoble|Light_Host_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = LightsBone 1.0,
+	}	
+}

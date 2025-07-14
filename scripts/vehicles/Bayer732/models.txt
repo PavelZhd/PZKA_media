@@ -1,0 +1,106 @@
+module Base
+{
+	model PZKA_Vehicles_Bayer732_a
+	{
+		mesh = vehicles/pzka_Bayer732|Bayer732,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Bayer732_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Bayer732|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer732_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Bayer732|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer732_DoorRearLeft
+	{
+		mesh = vehicles/pzka_Bayer732|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer732_DoorRearRight
+	{
+		mesh = vehicles/pzka_Bayer732|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer732_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Bayer732|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Bayer732_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Bayer732|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer732_WindowRearLeft
+	{
+		mesh = vehicles/pzka_Bayer732|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer732_WindowRearRight
+	{
+		mesh = vehicles/pzka_Bayer732|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer732_Trunk
+	{
+		mesh = vehicles/pzka_Bayer732|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer732_Hood
+	{
+		mesh = vehicles/pzka_Bayer732|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Bayer732_Windshield
+	{
+		mesh = vehicles/pzka_Bayer732|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bayer732_RearWindow
+	{
+		mesh = vehicles/pzka_Bayer732|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+}

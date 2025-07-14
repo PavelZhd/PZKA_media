@@ -1,0 +1,180 @@
+module Base
+{
+	model PZKA_Vehicles_Triumph_Sedan_a
+	{
+		mesh = vehicles/pzka_Cerise93|Vehicles_Sedan_Triumph,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Triumph_Wagon_a
+	{
+		mesh = vehicles/pzka_Cerise93|Vehicles_Wagon_Triumph,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Triumph_Sedan_nr_a
+	{
+		mesh = vehicles/pzka_Cerise93|Vehicles_Sedan_Triumph,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Triumph_Wagon_nr_a
+	{
+		mesh = vehicles/pzka_Cerise93|Vehicles_Wagon_Triumph,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Triumph_LightFL
+	{
+		mesh = vehicles/pzka_Cerise93|Light_FrontLeft_Triumph_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Triumph_LightFR
+	{
+		mesh = vehicles/pzka_Cerise93|Light_FrontRight_Triumph_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Triumph_Front_Light {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Triumph_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Triumph_LightFR,
+			}
+		}
+	}
+	
+	model PZKA_Vehicles_Triumph_Sedan_LightRL
+	{
+		mesh = vehicles/pzka_Cerise93|Light_RearLeft_Sedan_Triumph_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Triumph_Sedan_LightRR
+	{
+		mesh = vehicles/pzka_Cerise93|Light_RearRight_Sedan_Triumph_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Triumph_Sedan_Lights {
+		template! = PZKA_Triumph_Front_Light,
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Triumph_Sedan_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Triumph_Sedan_LightRR,
+			}
+		}
+	}
+
+	model PZKA_Vehicles_Triumph_Wagon_LightRL
+	{
+		mesh = vehicles/pzka_Cerise93|Light_RearLeft_Wagon_Triumph_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Triumph_Wagon_LightRR
+	{
+		mesh = vehicles/pzka_Cerise93|Light_RearRight_Wagon_Triumph_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Triumph_Wagon_Lights {
+		template! = PZKA_Triumph_Front_Light,
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Triumph_Wagon_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Triumph_Wagon_LightRR,
+			}
+		}
+	}
+
+	template vehicle PZKA_Cerise93_sedan_Triumph {
+		template! = PZKA_Cerise93_sedan,
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Hood,
+			}
+		}
+	}
+	template vehicle PZKA_Cerise93_sedan_Triumph_nr {
+		template! = PZKA_Cerise93_sedan_nr,
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Hood_nr,
+			}
+		}
+	}
+	template vehicle PZKA_Cerise93_wagon_Triumph {
+		template! = PZKA_Cerise93_wagon,
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Hood,
+			}
+		}
+	}
+	template vehicle PZKA_Cerise93_wagon_Triumph_nr {
+		template! = PZKA_Cerise93_wagon_nr,
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Hood_nr,
+			}
+		}
+	}
+
+	template vehicle PZKA_Cerise93_sedan_Triumph_police {
+		template! = PZKA_Cerise93_sedan_Triumph_nr,
+		template! = PZKA_Cerise93_lightbar,
+	}
+	template vehicle PZKA_Cerise93_sedan_Triumph_taxi {
+		template! = PZKA_Cerise93_sedan_Triumph_nr,
+		template! = PZKA_Cerise93_sedan_taxi,
+	}
+	template vehicle PZKA_Cerise93_wagon_Triumph_police {
+		template! = PZKA_Cerise93_wagon_Triumph_nr,
+		template! = PZKA_Cerise93_lightbar,
+	}
+}

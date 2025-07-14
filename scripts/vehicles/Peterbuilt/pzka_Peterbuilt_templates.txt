@@ -1,0 +1,146 @@
+module Base
+{
+	template vehicle PZKA_Peterbuilt_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Peterbuilt_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Peterbuilt_WindowFrontRight,
+            }
+	    }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Peterbuilt_Windshield,
+			}			
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Peterbuilt_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Peterbuilt_SeatFR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.095384 0.357026 1.3069,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Peterbuilt_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+
+		passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.346 0.67 1.48,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+		passenger FrontRight
+		{
+			position inside
+			{
+				offset = -0.346 0.67 1.48,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+        area Engine
+        {
+            xywh = 0.000 2.7 4.04 1.22,
+        }
+	}
+
+	template vehicle PZKA_Peterbuilt {
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Peterbuilt_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Peterbuilt_DoorFrontRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Peterbuilt_Hood,
+			}
+		}
+		template! = PZKA_Peterbuilt_shared,
+	}
+
+	template vehicle PZKA_Peterbuilt_nr {
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Peterbuilt_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Peterbuilt_DoorFrontRight_nr,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Peterbuilt_Hood_nr,
+			}
+		}
+		template! = PZKA_Peterbuilt_shared,
+	}
+}

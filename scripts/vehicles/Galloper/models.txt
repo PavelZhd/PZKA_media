@@ -1,0 +1,221 @@
+module Base
+{
+    model PZKA_Vehicles_Galloper_2D_Base_a
+	{
+		mesh = vehicles/pzka_CarGalloperBase|Comp_2D_Base,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_Galloper_2D_Base_nr_a
+	{
+		mesh = vehicles/pzka_CarGalloperBase|Comp_2D_Base,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Galloper_5D_Base_a
+	{
+		mesh = vehicles/pzka_CarGalloperBase|Comp_5D_Base,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Laser_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_CarGalloper|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Laser_WindowFrontRight
+	{
+		mesh = vehicles/pzka_CarGalloper|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Laser_WindowRearLeft
+	{
+		mesh = vehicles/pzka_Galloper_Static|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Laser_WindowRearRight
+	{
+		mesh = vehicles/pzka_Galloper_Static|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Laser_Windshield
+	{
+		mesh = vehicles/pzka_Galloper_Static|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Laser_Lightbar
+	{
+		mesh = vehicles/pzka_Galloper_Static|Lightbar,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Laser_RearWindow
+	{
+		mesh = vehicles/pzka_CarGalloper|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkUpperBone 1.0,
+	}	
+
+
+	model PZKA_Vehicles_Laser_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_CarGalloper|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Laser_DoorFrontRight
+	{
+		mesh = vehicles/pzka_CarGalloper|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Laser_Trunk
+	{
+		mesh = vehicles/pzka_CarGalloper|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkUpperBone 1.0,
+		boneWeight = TrunkLowerBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	model PZKA_Vehicles_Laser_Hood
+	{
+		mesh = vehicles/pzka_CarGalloper|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+
+	model PZKA_Vehicles_Laser_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_CarGalloper|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Laser_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_CarGalloper|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}	
+	model PZKA_Vehicles_Laser_Trunk_nr
+	{
+		mesh = vehicles/pzka_CarGalloper|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkUpperBone 1.0,
+		boneWeight = TrunkLowerBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	model PZKA_Vehicles_Laser_Hood_nr
+	{
+		mesh = vehicles/pzka_CarGalloper|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+
+	model PZKA_Vehicles_Laser5D_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_CarGalloper|Door5D_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_DoorFrontRight
+	{
+		mesh = vehicles/pzka_CarGalloper|Door5D_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_DoorRearLeft
+	{
+		mesh = vehicles/pzka_CarGalloper|Door5D_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_DoorRearRight
+	{
+		mesh = vehicles/pzka_CarGalloper|Door5D_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_Laser5D_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_CarGalloper|Window5D_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_WindowFrontRight
+	{
+		mesh = vehicles/pzka_CarGalloper|Window5D_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_WindowRearLeft
+	{
+		mesh = vehicles/pzka_CarGalloper|Window5D_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_WindowRearRight
+	{
+		mesh = vehicles/pzka_CarGalloper|Window5D_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_RearWindow_static
+	{
+		mesh = vehicles/pzka_Galloper_Static|RearWindow5D_sobj,
+		static = TRUE,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+	}
+
+}

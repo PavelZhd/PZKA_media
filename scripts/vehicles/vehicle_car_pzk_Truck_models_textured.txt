@@ -1,0 +1,51 @@
+module Base
+{
+	model PZKA_Vehicles_Truck_internals
+	{
+		mesh = vehicles/pzka_TrucksStatic|Vehicles_Interior,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBedshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_TruckRV_internals
+	{
+		mesh = vehicles/pzka_TrucksStatic|Vehicles_Interior_RV,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkFranklinTruckRVshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Truck_SeatFL
+	{
+		mesh = vehicles/pzka_TrucksStatic|Seat_FrontLeft_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBedshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Truck_SeatFR
+	{
+		mesh = vehicles/pzka_TrucksStatic|Seat_FrontRight_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBedshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Truck_SeatRL
+	{
+		mesh = vehicles/pzka_TrucksStatic|Seat_RearLeft_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBedshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Truck_SeatRR
+	{
+		mesh = vehicles/pzka_TrucksStatic|Seat_RearRight_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBedshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

@@ -1,0 +1,100 @@
+module Base
+{
+	model PZKA_Vehicles_MuscleCabrio_a
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Vehicles_CarMuscleCabrio,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Muscle_a
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Vehicles_CarMuscle,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_MuscleCabrio_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_MuscleCabrio_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_MuscleCabrio_Trunk
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_MuscleCabrio_Hood
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Muscle_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Door_FrontLeft_full_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Muscle_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Door_FrontRight_full_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_Muscle_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	model PZKA_Vehicles_Muscle_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	model PZKA_Vehicles_Muscle_RearWindow
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MuscleCabrio_Windshield
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+}

@@ -1,0 +1,32 @@
+module Base
+{
+	model PZKA_Vehicles_DashRoyal_internals
+	{
+		mesh = vehicles/pzka_DashRoyal|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkChevalierCeriseSedanshell,	
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_DashRoyal_internalsTrunk {
+		mesh = vehicles/pzka_DashRoyal|Vehicles_InteriorTrunk,
+		texture = Vehicles/Vehicle_pzkDashRoyalshell,	
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_DashRoyal_SeatFL
+	{
+		mesh = vehicles/pzka_DashRoyal|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkChevalierCeriseSedanshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_DashRoyal_SeatFR
+	{
+		mesh = vehicles/pzka_DashRoyal|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkChevalierCeriseSedanshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+}

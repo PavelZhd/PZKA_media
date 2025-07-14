@@ -1,0 +1,299 @@
+module Base
+{
+	model PZKA_Vehicles_Van_Brig_a
+	{
+		mesh = vehicles/pzka_Vans|Vehicles_VanBed,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Vans|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Van_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Vans|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Van_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Vans|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Van_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Vans|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Van_Brig_DoorRearLeft
+	{
+		mesh = vehicles/pzka_Vans|Door_Bed_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftBedDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Van_Brig_DoorRearRight
+	{
+		mesh = vehicles/pzka_Vans|Door_Bed_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightBedDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Van_Brig_WindowRearLeft
+	{
+		mesh = vehicles/pzka_Vans|Window_Bed_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftBedWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Van_Brig_WindowRearRight
+	{
+		mesh = vehicles/pzka_Vans|Window_Bed_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightBedWindowBone 1.0,
+	}
+	
+	model PZKA_Vehicles_Van_Hood
+	{
+		mesh = vehicles/pzka_Vans|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Van_Windshield
+	{
+		mesh = vehicles/pzka_Vans2|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_Brig_RearWindow
+	{
+		mesh = vehicles/pzka_Vans2|RearWindow_Bed_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+
+	model PZKA_Vehicles_Van_LightFL
+	{
+		mesh = vehicles/pzka_Vans2|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Van_LightFR
+	{
+		mesh = vehicles/pzka_Vans2|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_Brig_LightRL
+	{
+		mesh = vehicles/pzka_Vans2|Light_Bed_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Van_Brig_LightRR
+	{
+		mesh = vehicles/pzka_Vans2|Light_Bed_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Van_Brig_Lights {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_LightRR,
+			}
+		}
+	}
+
+
+	template vehicle PZKA_Van_Brig_animatedDoors {
+		
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorFrontRight,
+			}
+		}
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_DoorRearLeft,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_DoorRearRight,
+			}
+		}
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Hood,
+			}
+		}
+		part WindowFrontLeft
+        	{
+			parent = DoorFrontLeft,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Van_WindowFrontLeft,
+            		}            		
+        	}
+		part WindowFrontRight
+        	{	
+            parent = DoorFrontRight,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Van_WindowFrontRight,
+            		}
+	       	}
+
+		part WindowRearLeft
+        {
+			parent = DoorRearLeft,
+			model Default
+        	{
+          		file = PZKA_Vehicles_Van_Brig_WindowRearLeft,
+        	}            		
+        }
+		part WindowRearRight
+        	{	
+            parent = DoorRearRight,
+			model Default
+            {
+          		file = PZKA_Vehicles_Van_Brig_WindowRearRight,
+            }
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Windshield,
+			}			
+		}
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_RearWindow,
+			}
+		}
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_SeatFR,
+			}
+		}
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_SeatRL,
+			}
+		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_SeatRR,
+			}
+		}
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.2374 0.0036 0.9535,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Van_internals,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create = Vehicles.Create.Default,
+	    		}
+		}
+	}
+}

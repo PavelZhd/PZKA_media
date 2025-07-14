@@ -1,0 +1,45 @@
+module Base
+{
+	model PZKA_Vehicles_Bayer_internals
+	{
+		mesh = vehicles/pzka_CarBayer|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkContinentalBayer3304Dshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bayer_SeatFL
+	{
+		mesh = vehicles/pzka_CarBayer|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkContinentalBayer3304Dshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Bayer_SeatFR
+	{
+		mesh = vehicles/pzka_CarBayer|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkContinentalBayer3304Dshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bayer_SeatRL
+	{
+		mesh = vehicles/pzka_CarBayer|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_pzkContinentalBayer3304Dshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bayer_SeatRR
+	{
+		mesh = vehicles/pzka_CarBayer|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_pzkContinentalBayer3304Dshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Battery
+	{
+		mesh = vehicles/pzka_battery,
+		texture = WorldItems/CarBattery,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

@@ -1,0 +1,125 @@
+module Base
+{
+	model PZKA_Vehicles_Marocco_a
+	{
+		mesh = vehicles/pzka_Marocco|Vehicle_Marocco,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Marocco_nr_a
+	{
+		mesh = vehicles/pzka_Marocco|Vehicle_Marocco,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Marocco_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Marocco|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Marocco|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_Marocco_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Marocco|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Marocco_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Marocco|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	
+	model PZKA_Vehicles_Marocco_Trunk
+	{
+		mesh = vehicles/pzka_Marocco|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco_Hood
+	{
+		mesh = vehicles/pzka_Marocco|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco_Windshield
+	{
+		mesh = vehicles/pzka_Marocco|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Marocco_RearWindow
+	{
+		mesh = vehicles/pzka_Marocco|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+
+	model PZKA_Vehicles_Marocco_Lightbal_a
+	{
+		mesh = vehicles/pzka_Marocco|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Marocco_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Marocco|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Marocco|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}	
+	
+	model PZKA_Vehicles_Marocco_Trunk_nr
+	{
+		mesh = vehicles/pzka_Marocco|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco_Hood_nr
+	{
+		mesh = vehicles/pzka_Marocco|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+}

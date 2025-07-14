@@ -1,0 +1,103 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinRaider_LightFL_R1
+	{
+		mesh = vehicles/pzka_FranklinRaider|Light_FrontLeft_R_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FranklinRaider_LightFR_R1
+	{
+		mesh = vehicles/pzka_FranklinRaider|Light_FrontRight_R_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinRaider_LightFL_R2
+	{
+		mesh = vehicles/pzka_FranklinRaider|Light_FrontLeft_R2_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FranklinRaider_LightFR_R2
+	{
+		mesh = vehicles/pzka_FranklinRaider|Light_FrontRight_R2_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_FranklinRaider_LightRL
+	{
+		mesh = vehicles/pzka_FranklinRaider|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinRaider_LightRR
+	{
+		mesh = vehicles/pzka_FranklinRaider|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle pzka_FranklinRaider_Light {
+		part HeadlightLeft 
+		{
+			model Raider1
+			{
+				file = PZKA_Vehicles_FranklinRaider_LightFL_R1,
+			}
+			model Raider2
+			{
+				file = PZKA_Vehicles_FranklinRaider_LightFL_R2,
+			}
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Raider1
+			{
+				file = PZKA_Vehicles_FranklinRaider_LightFR_R1,
+			}
+			model Raider2
+			{
+				file = PZKA_Vehicles_FranklinRaider_LightFR_R2,
+			}
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinRaider_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinRaider_LightRR,
+			}
+		}
+	}
+}

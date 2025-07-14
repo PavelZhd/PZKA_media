@@ -1,0 +1,238 @@
+module Base
+{
+	model PZKA_Vehicles_TruckBus_a
+	{
+		mesh = vehicles/pzka_TruckBus|Vehicle_TruckBus,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_TruckBus_Bars_a
+	{
+		mesh = vehicles/pzka_TruckBus|Vehicle_TruckBusBars,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_TruckBus_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_TruckBus|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = DoorFrontRightOneBone 1.0,
+		boneWeight = DoorFrontRightTwoBone 1.0,
+	}
+	model PZKA_Vehicles_TruckBus_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_TruckBus|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+
+	}
+	model PZKA_Vehicles_TruckBus_WindowFrontRight
+	{
+		mesh = vehicles/pzka_TruckBus|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = DoorFrontRightOneBone 1.0,
+		boneWeight = DoorFrontRightTwoBone 1.0,
+	}
+	model PZKA_Vehicles_TruckBus_Trunk_nr
+	{
+		mesh = vehicles/pzka_TruckBus|DoorRear_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoorLeftBone 1.0,
+		boneWeight = RearDoorRightBone 1.0,
+		boneWeight = VehicleBone 1.0,
+
+	}
+	model PZKA_Vehicles_TruckBus_Hood_nr
+	{
+		mesh = vehicles/pzka_TruckBus|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_TruckBus_Windshield
+	{
+		mesh = vehicles/pzka_TruckBus|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_TruckBus_RearWindow
+	{
+		mesh = vehicles/pzka_TruckBus|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoorLeftBone 1.0,
+		boneWeight = RearDoorRightBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+
+	model PZKA_Vehicles_TruckBus_LightFL
+	{
+		mesh = vehicles/pzka_TruckBus|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}	
+	model PZKA_Vehicles_TruckBus_LightFR
+	{
+		mesh = vehicles/pzka_TruckBus|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_TruckBus_LightRL
+	{
+		mesh = vehicles/pzka_TruckBus|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_TruckBus_LightRR
+	{
+		mesh = vehicles/pzka_TruckBus|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+
+	template vehicle PZKA_TruckBus_Lights {
+		part HeadlightLeft 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_LightRR,
+			}
+		}
+	}
+	template vehicle PZKA_TruckBus_animatedDoors_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_Trunk_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_DoorFrontRight_nr,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_Hood_nr,
+			}
+		}
+		part WindowFrontLeft
+        	{
+			model Default
+            		{
+                		file = PZKA_Vehicles_TruckBus_WindowFrontLeft,
+            		}            		
+        	}
+		part WindowFrontRight
+        {	
+            parent = DoorFrontRight,
+			model Default
+        	{
+          		file = PZKA_Vehicles_TruckBus_WindowFrontRight,
+        	}
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+            parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_SeatFR,
+			}
+		}
+
+		
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_TruckBus_Battery,
+			}
+		}
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_TruckBus_internals,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create = Vehicles.Create.Default,
+	    		}
+		}
+	}
+}

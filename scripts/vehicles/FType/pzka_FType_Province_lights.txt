@@ -1,0 +1,284 @@
+module Base
+{	
+	model PZKA_Vehicles_FType_Province_1_LightFL
+	{
+		mesh = vehicles/pzka_FType_light|Light_Province_12_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FType_Province_1_LightFR
+	{
+		mesh = vehicles/pzka_FType_light|Light_Province_12_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Province_2_LightFL
+	{
+		mesh = vehicles/pzka_FType_light|Light_Province34_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FType_Province_2_LightFR
+	{
+		mesh = vehicles/pzka_FType_light|Light_Province34_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Province_3_LightFL
+	{
+		mesh = vehicles/pzka_FType_light|Light_Province56_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FType_Province_3_LightFR
+	{
+		mesh = vehicles/pzka_FType_light|Light_Province56_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Province_4_LightFL
+	{
+		mesh = vehicles/pzka_FType_light|Light_Province78_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FType_Province_4_LightFR
+	{
+		mesh = vehicles/pzka_FType_light|Light_Province78_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	
+	template vehicle PZKA_FType_Province_FrontLights {
+		part HeadlightLeft 
+		{
+			model Province_12
+			{
+				file = PZKA_Vehicles_FType_Province_1_LightFL,
+			}
+			model Province_34
+			{
+				file = PZKA_Vehicles_FType_Province_2_LightFL,
+			}
+			model Province_56
+			{
+				file = PZKA_Vehicles_FType_Province_3_LightFL,
+			}
+			model Province_78
+			{
+				file = PZKA_Vehicles_FType_Province_4_LightFL,
+			}
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Province_12
+			{
+				file = PZKA_Vehicles_FType_Province_1_LightFR,
+			}
+			model Province_34
+			{
+				file = PZKA_Vehicles_FType_Province_2_LightFR,
+			}
+			model Province_56
+			{
+				file = PZKA_Vehicles_FType_Province_3_LightFR,
+			}
+			model Province_78
+			{
+				file = PZKA_Vehicles_FType_Province_4_LightFR,
+			}
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}		
+	}
+
+	model PZKA_Vehicles_FType_Reg_Province_LightRL
+	{
+		mesh = vehicles/pzka_FType_rearlight|Light_Reg_Province_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Reg_Province_LightRR
+	{
+		mesh = vehicles/pzka_FType_rearlight|Light_Reg_Province_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FType_Reg_Province_Lights {
+		
+		template! = PZKA_FType_Province_FrontLights,
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Reg_Province_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Reg_Province_LightRR,
+			}
+		}
+	}
+
+	model PZKA_Vehicles_FType_CrewLong_Province_LightRL
+	{
+		mesh = vehicles/pzka_FType_rearlight|Light_Long_Province_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_CrewLong_Province_LightRR
+	{
+		mesh = vehicles/pzka_FType_rearlight|Light_Long_Intruder_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FType_CrewLong_Province_Lights {
+		template! = PZKA_FType_Province_FrontLights,
+		
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_CrewLong_Province_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_CrewLong_Province_LightRR,
+			}
+		}
+	}
+
+	model PZKA_Vehicles_FType_Med_Province_LightRR
+	{
+		mesh = vehicles/pzka_FType_rearlight|Light_Med_Intruder_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Med_Province_LightRL
+	{
+		mesh = vehicles/pzka_FType_rearlight|Light_Med_Province_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FType_Med_Province_Lights {
+		template! = PZKA_FType_Province_FrontLights,
+		
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Med_Province_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Med_Province_LightRR,
+			}
+		}
+	}
+
+	model PZKA_Vehicles_FType_CrewMed_Province_LightRL
+	{
+		mesh = vehicles/pzka_FType_rearlight|Light_CrewMed_Province_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_CrewMed_Province_LightRR
+	{
+		mesh = vehicles/pzka_FType_rearlight|Light_CrewMed_Province_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FType_CrewMed_Province_Lights {
+		template! = PZKA_FType_Province_FrontLights,
+		
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_CrewMed_Province_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_CrewMed_Province_LightRR,
+			}
+		}
+
+	}
+
+	model PZKA_Vehicles_FType_Tow_Province_LightRL
+	{
+		mesh = vehicles/pzka_FType_rearlight|Light_Tow_Province_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FType_Tow_Province_LightRR
+	{
+		mesh = vehicles/pzka_FType_rearlight|Light_Tow_Province_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FType_Tow_Province_Lights {
+		template! = PZKA_FType_Province_FrontLights,
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Tow_Province_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Tow_Province_LightRR,
+			}
+		}
+	}
+}

@@ -1,0 +1,154 @@
+module Base
+{
+
+	template vehicle PZKA_Bayer534 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer534_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer534_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer534_DoorFrontRight,
+			}
+		}
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer534_DoorRearLeft,
+			}
+		}
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer534_DoorRearRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer534_Hood,
+			}
+		}
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Bayer534_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Bayer534_WindowFrontRight,
+            }
+	    }
+		part WindowRearLeft
+        {	
+			parent = DoorRearLeft,
+         	model Default
+			{
+        		file = PZKA_Vehicles_Bayer534_WindowRearLeft,
+       		}
+       	}
+		part WindowRearRight
+       	{	
+			parent = DoorRearRight,
+         	model Default
+            {
+            	file = PZKA_Vehicles_Bayer534_WindowRearRight,
+            }
+        }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer534_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer534_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer534_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer534_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer534_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer534_SeatRR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.208893 -0.037643 0.854562,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Bayer534_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+}

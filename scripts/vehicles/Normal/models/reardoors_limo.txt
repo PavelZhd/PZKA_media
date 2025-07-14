@@ -1,0 +1,64 @@
+module Base
+{		
+	model PZKA_Vehicles_Normal_DoorRearLeft_limo
+	{
+		mesh = vehicles/pzka_NormalAnimated|Door_Limo_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftLimoDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Normal_DoorRearRight_limo
+	{
+		mesh = vehicles/pzka_NormalAnimated|Door_Limo_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightLimoDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Normal_DoorRearLeft_limo_nr
+	{
+		mesh = vehicles/pzka_NormalAnimated|Door_Limo_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftLimoDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Normal_DoorRearRight_limo_nr
+	{
+		mesh = vehicles/pzka_NormalAnimated|Door_Limo_RearRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightLimoDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_CarNormal_WindowRearLeft_limo
+	{
+		mesh = vehicles/pzka_NormalAnimated|Window_Limo_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftLimoWindowBone 1.0,
+	}
+	model PZKA_Vehicles_CarNormal_WindowRearRight_limo
+	{
+		mesh = vehicles/pzka_NormalAnimated|Window_Limo_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightLimoWindowBone 1.0,
+	}
+	model PZKA_Vehicles_CarNormal_WindowRearLeft_limo_static
+	{
+		mesh = vehicles/pzka_Normal|Window_Limo_RearLeft_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_CarNormal_WindowRearRight_limo_static
+	{
+		mesh = vehicles/pzka_Normal|Window_Limo_RearRight_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+}

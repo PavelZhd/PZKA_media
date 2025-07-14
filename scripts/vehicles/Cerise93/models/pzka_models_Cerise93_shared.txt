@@ -1,0 +1,152 @@
+module Base
+{
+	model PZKA_Vehicles_Cerise93_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Cerise93|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Cerise93|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_DoorRearLeft
+	{
+		mesh = vehicles/pzka_Cerise93|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_DoorRearRight
+	{
+		mesh = vehicles/pzka_Cerise93|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_Cerise93_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Cerise93|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Cerise93|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_WindowRearLeft
+	{
+		mesh = vehicles/pzka_Cerise93|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_WindowRearRight
+	{
+		mesh = vehicles/pzka_Cerise93|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_Hood
+	{
+		mesh = vehicles/pzka_Cerise93|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_Hood_C93
+	{
+		mesh = vehicles/pzka_Cerise93|Hood_C93_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_Windshield
+	{
+		mesh = vehicles/pzka_Cerise93|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Cerise93_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Cerise93|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Cerise93|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_DoorRearLeft_nr
+	{
+		mesh = vehicles/pzka_Cerise93|Door_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_DoorRearRight_nr
+	{
+		mesh = vehicles/pzka_Cerise93|Door_RearRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_Hood_nr
+	{
+		mesh = vehicles/pzka_Cerise93|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_Hood_C93_nr
+	{
+		mesh = vehicles/pzka_Cerise93|Hood_C93_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+
+	model PZKA_Vehicles_Cerise93_Lightbar
+	{
+		mesh = vehicles/pzka_Cerise93|Lightbar,
+		shader = vehicle_norandom_multiuv,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cerise93_Taxi
+	{
+		mesh = vehicles/pzka_Cerise93|TaxiSigh,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+}

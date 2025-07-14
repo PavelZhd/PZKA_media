@@ -1,0 +1,179 @@
+module Base
+{
+	model PZKA_Vehicles_Cruiser_a
+	{
+		mesh = vehicles/pzka_Cruiser|Range Rover,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cruiser_nr_a
+	{
+		mesh = vehicles/pzka_Cruiser|Range Rover,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Cruiser_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Cruiser|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Cruiser|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_DoorRearLeft
+	{
+		mesh = vehicles/pzka_Cruiser|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_DoorRearRight
+	{
+		mesh = vehicles/pzka_Cruiser|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Cruiser|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Cruiser_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Cruiser|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_WindowRearLeft
+	{
+		mesh = vehicles/pzka_Cruiser|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_WindowRearRight
+	{
+		mesh = vehicles/pzka_Cruiser|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_Trunk
+	{
+		mesh = vehicles/pzka_Cruiser|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_Hood
+	{
+		mesh = vehicles/pzka_Cruiser|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_Windshield
+	{
+		mesh = vehicles/pzka_Cruiser|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cruiser_RearWindow
+	{
+		mesh = vehicles/pzka_Cruiser|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_RearWindow_statis
+	{
+		mesh = vehicles/pzka_Cruiser|RearWindow_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Cruiser_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Cruiser|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Cruiser|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_DoorRearLeft_nr
+	{
+		mesh = vehicles/pzka_Cruiser|Door_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_DoorRearRight_nr
+	{
+		mesh = vehicles/pzka_Cruiser|Door_RearRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_Trunk_nr
+	{
+		mesh = vehicles/pzka_Cruiser|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Cruiser_Hood_nr
+	{
+		mesh = vehicles/pzka_Cruiser|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+
+	model PZKA_Vehicles_Cruiser_Lightbar
+	{
+		mesh = vehicles/pzka_Cruiser|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+}

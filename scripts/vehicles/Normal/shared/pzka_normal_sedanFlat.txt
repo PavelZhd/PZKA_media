@@ -1,0 +1,126 @@
+module Base
+{	
+	template vehicle PZKA_SedanFlat_shared {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_RearWindshieldFlat,
+			}
+		}
+		part Inreior {
+			model Trunk
+			{
+				file = PZKA_Vehicles_Normal_Sedan_internals,
+			}			
+		}
+	}
+	template vehicle PZKA_SedanFlat {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Trunk_sedan,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		template! = PZKA_Normal_Shared_Front,
+		template! = PZKA_Normal_Shared_Reardoors_wagon,
+
+		template! = PZKA_SedanFlat_shared,
+	}
+	template vehicle PZKA_SedanFlat_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Trunk_sedan_nr,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		template! = PZKA_Normal_Shared_Front_nr,
+		template! = PZKA_Normal_Shared_Reardoors_wagon_nr,
+
+		template! = PZKA_SedanFlat_shared,
+	}
+	template vehicle PZKA_SedanFlat_Detective {
+		template! = PZKA_SedanFlat,
+		part ATA2RoofLightbar
+		{
+			model Detective
+			{
+				file = PZKA_Vehicles_Normal_Detective,
+			}			
+			category = nodisplay,
+            area = Engine,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle PZKA_SedanFlat_Lightbar {
+		template! = PZKA_SedanFlat_nr,
+		part ATA2RoofLightbar
+		{
+			model Normal
+			{
+				file = PZKA_Vehicles_Normal_Lightbar,
+			}			
+			category = nodisplay,
+            area = Engine,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle PZKA_SedanFlat_TaxiFull {
+		template! = PZKA_SedanFlat_nr,
+		part PZKATaxiSign
+		{
+			model Normal
+			{
+				file = PZKA_Vehicles_Normal_TaxiFull,
+			}			
+			category = nodisplay,
+            area = Engine,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle PZKA_SedanFlat_Taxi {
+		template! = PZKA_SedanFlat_nr,
+		part PZKATaxiSign
+		{
+			model Normal
+			{
+				file = PZKA_Vehicles_Normal_TaxiShort,
+			}			
+			category = nodisplay,
+            area = Engine,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+}

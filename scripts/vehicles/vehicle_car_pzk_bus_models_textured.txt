@@ -1,0 +1,27 @@
+module Base
+{
+	model PZKA_Vehicles_TruckBus_internals
+	{
+		mesh = vehicles/pzka_TruckBus|Vehicle_Interior,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_TruckBus_SeatFL
+	{
+		mesh = vehicles/pzka_TruckBus|Seat_FrontLeft_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_TruckBus_SeatFR
+	{
+		mesh = vehicles/pzka_TruckBus|Seat_FrontRight_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

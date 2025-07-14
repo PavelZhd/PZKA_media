@@ -1,0 +1,210 @@
+module Base
+{
+	template vehicle PZKA_DashNoble_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_DashNoble_WindowFrontLeft,
+            }           		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_DashNoble_WindowFrontRight,
+            }           		
+	    }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashNoble_Windshield,
+			}			
+		}
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashNoble_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashNoble_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashNoble_SeatFR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.235175 0.002558 0.397446,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_DashNoble_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+
+		/*passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.32 -0.23 -0.418,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}*/
+		/*passenger FrontRight
+		{
+			position inside
+			{
+				offset = -0.32 -0.23 -0.418,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}*/
+	}
+
+	template vehicle pzka_DashNoble_LightHostAnimate {
+		part PZKA_LightsHost
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashNoble_LightHost,
+			}
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+			door
+			{}		
+
+			anim Close
+			{
+				anim = Lights_open,
+				reverse = TRUE,
+				rate = 1,
+			}
+
+			anim Open
+			{
+				anim = Lights_open,
+				rate = 1,
+			}
+
+			anim Closed
+			{
+				anim = Lights_open,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Lights_open,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+	}
+
+
+	template vehicle PZKA_DashNoble {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashNoble_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashNoble_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashNoble_DoorFrontRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashNoble_Hood,
+			}
+		}
+		template! = PZKA_DashNoble_shared,
+		template! = pzka_DashNoble_LightHostAnimate,
+	}
+
+	template vehicle PZKA_DashNoble_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashNoble_Trunk_nr,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashNoble_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashNoble_DoorFrontRight_nr,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_DashNoble_Hood_nr,
+			}
+		}
+		template! = PZKA_DashNoble_shared,
+		template! = pzka_DashNoble_LightHostAnimate_nr,
+	}
+}

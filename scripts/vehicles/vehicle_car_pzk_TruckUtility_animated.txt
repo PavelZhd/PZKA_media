@@ -1,0 +1,96 @@
+module Base
+{
+	model PZKA_Vehicles_Truck_Utility_a
+	{
+		mesh = vehicles/pzka_TrucksStatic|Vehicles_TruckUtility,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Truck_Utility_LightRL
+	{
+		mesh = vehicles/pzka_TrucksStatic|Light_Utility_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Truck_Utility_LightRR
+	{
+		mesh = vehicles/pzka_TrucksStatic|Light_Utility_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Truck_UtilityDoor
+	{
+		mesh = vehicles/pzka_Trucks2|Trunk_Utility_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkUtilityBone 1.0,
+	}
+
+	template vehicle PZKA_Truck_Utility_Specific {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_UtilityDoor,
+			}
+		}
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_RearWindow,
+			}
+		}
+
+		part HeadlightLeft 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_Utility_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_Utility_LightRR,
+			}
+		}
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Truck_internals,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create = Vehicles.Create.Default,
+	    		}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+module Base
+{	
+	model PZKA_Vehicles_FType_Reg_Pickup_RearWindow
+	{
+		mesh = vehicles/pzka_FType_static|RearWindow_Reg_PickUp_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Tow_RearWindow
+	{
+		mesh = vehicles/pzka_FType_static|RearWindow_Tow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FType_FakeDoors_Pickup_RearWindow
+	{
+		mesh = vehicles/pzka_FType_static|RearWindow_FakeDoor_Picup_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_4Doors_Pickup_RearWindow
+	{
+		mesh = vehicles/pzka_FType_static|RearWindow_4DoorPickup_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+}

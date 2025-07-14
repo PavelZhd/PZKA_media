@@ -1,0 +1,84 @@
+module Base
+{
+	model PZKA_Vehicles_Truck_Semi_a
+	{
+		mesh = vehicles/pzka_TrucksStatic|Vehicles_TruckSemi,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Truck_Semi_LightRL
+	{
+		mesh = vehicles/pzka_TrucksStatic|Light_Semi_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Truck_Semi_LightRR
+	{
+		mesh = vehicles/pzka_TrucksStatic|Light_Semi_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+
+	template vehicle PZKA_Truck_Semi_specific {
+		
+
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_RearWindow,
+			}
+		}
+
+		part HeadlightLeft 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_Semi_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Truck_Semi_LightRR,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Truck_internals,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create = Vehicles.Create.Default,
+	    		}
+		}
+	}
+}

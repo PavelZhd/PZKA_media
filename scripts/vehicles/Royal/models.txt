@@ -1,0 +1,171 @@
+module Base
+{
+	model PZKA_Vehicles_DashRoyal_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_DashRoyal|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_DashRoyal_DoorFrontRight
+	{
+		mesh = vehicles/pzka_DashRoyal|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Roadrunner_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_DashRoyal|Door_FrontLeft_Roadrunner_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Roadrunner_DoorFrontRight
+	{
+		mesh = vehicles/pzka_DashRoyal|Door_FrontRight_Roadrunner_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_DashRoyal_Trunk
+	{
+		mesh = vehicles/pzka_DashRoyal|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_DashRoyal_Hood
+	{
+		mesh = vehicles/pzka_DashRoyal|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+
+	model PZKA_Vehicles_DashRoyal_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_DashRoyal|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_DashRoyal_WindowFrontRight
+	{
+		mesh = vehicles/pzka_DashRoyal|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Roadrunner_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_DashRoyal|Window_FrontLeft_Roadrunner_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Roadrunner_WindowFrontRight
+	{
+		mesh = vehicles/pzka_DashRoyal|Window_FrontRight_Roadrunner_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_DashRoyal_Windshield
+	{
+		mesh = vehicles/pzka_DashRoyal|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_DashRoyal_RearWindow
+	{
+		mesh = vehicles/pzka_DashRoyal|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Roadrunner_RearWindow
+	{
+		mesh = vehicles/pzka_DashRoyal|RearWindow_Roarrunner_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_DashRoyal_Royal_RearWindow
+	{
+		mesh = vehicles/pzka_DashRoyal|RearWindow_Royal_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_DashRoyal_Downhill_RearWindow
+	{
+		mesh = vehicles/pzka_DashRoyal|RearWindow_Downhill_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_DashRoyal_Tornado_RearWindow
+	{
+		mesh = vehicles/pzka_DashRoyal|RearWindow_Tornodo_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_DashRoyal_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_DashRoyal|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_DashRoyal_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_DashRoyal|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Roadrunner_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_DashRoyal|Door_FrontLeft_Roadrunner_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Roadrunner_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_DashRoyal|Door_FrontRight_Roadrunner_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_DashRoyal_Trunk_nr
+	{
+		mesh = vehicles/pzka_DashRoyal|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_DashRoyal_Hood_nr
+	{
+		mesh = vehicles/pzka_DashRoyal|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+}

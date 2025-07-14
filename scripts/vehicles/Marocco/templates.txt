@@ -1,0 +1,164 @@
+module Base
+{
+	template vehicle PZKA_Marocco_shared {
+		part WindowFrontLeft
+        	{
+			parent = DoorFrontLeft,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Marocco_WindowFrontLeft,
+            		}            		
+        	}
+		part WindowFrontRight
+        	{	
+            		parent = DoorFrontRight,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Marocco_WindowFrontRight,
+            		}
+	       	}
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco_SeatFR,
+			}
+		}
+		
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.197497 -0.005616 0.729221,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Marocco_internals,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create = Vehicles.Create.Default,
+	    		}
+		}
+	}
+	template vehicle PZKA_Marocco_animatedDoors {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco_DoorFrontRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco_Hood,
+			}
+		}
+		template! = PZKA_Marocco_shared,
+	}
+	
+	template vehicle PZKA_Marocco_animatedDoors_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco_Trunk_nr,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco_DoorFrontRight_nr,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco_Hood_nr,
+			}
+		}
+		template! = PZKA_Marocco_shared,
+	}
+	template vehicle PZKA_Marocco_lightbar {
+		template! = PZKA_Marocco_animatedDoors_nr,
+		part ATA2RoofLightbar
+		{
+			model Normal
+			{
+				file = PZKA_Vehicles_Marocco_Lightbal_a,
+			}			
+			category = nodisplay,
+            area = Engine,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+}

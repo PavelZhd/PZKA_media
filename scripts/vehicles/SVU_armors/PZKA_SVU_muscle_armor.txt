@@ -1,0 +1,1015 @@
+module Base
+{
+	model PZKA_SVU_Airscoop_pzkCarMuscle_Small
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|airscoopsmall,
+		texture = Vehicles/puv_parts,
+		shader = vehiclewheel,
+		scale = 0.01,
+	}
+
+	model PZKA_SVU_Airscoop_pzkCarMuscle_Small_Rusted
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|airscoopsmall,
+		texture = Vehicles/puv_parts_rusted,
+		shader = vehiclewheel,
+		scale = 0.01,
+	}
+
+	model PZKA_SVU_Airscoop_pzkCarMuscle_Medium
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|airscoopmedium,
+		texture = Vehicles/puv_parts,
+		shader = vehiclewheel,
+		scale = 0.01,
+	}
+
+	model PZKA_SVU_Airscoop_pzkCarMuscle_Medium_Rusted
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|airscoopmedium,
+		texture = Vehicles/puv_parts_rusted,
+		shader = vehiclewheel,
+		scale = 0.01,
+	}
+
+	model PZKA_SVU_Airscoop_pzkCarMuscle_Large
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|airscooplarge,
+		texture = Vehicles/puv_parts,
+		shader = vehiclewheel,
+		scale = 0.01,
+	}
+
+	model PZKA_SVU_Airscoop_pzkCarMuscle_Large_Rusted
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|airscooplarge,
+		texture = Vehicles/puv_parts_rusted,
+		shader = vehiclewheel,
+		scale = 0.01,
+	}
+
+	model PZKA_SVU_Airscoop_pzkCarMuscle_Piped
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|airscooppiped,
+		texture = Vehicles/puv_parts,
+		shader = vehiclewheel,
+		scale = 0.01,
+	}
+
+	model PZKA_SVU_Airscoop_pzkCarMuscle_Piped_Rusted
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|airscooppiped,
+		texture = Vehicles/puv_parts_rusted,
+		shader = vehiclewheel,
+		scale = 0.01,
+	}
+
+	model PZKA_SVU_Airscoop_pzkCarMuscle_Small_Round
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|airscooproundsmall,
+		texture = Vehicles/puv_parts,
+		shader = vehiclewheel,
+		scale = 0.01,
+	}
+
+	model PZKA_SVU_Airscoop_pzkCarMuscle_Small_Round_Rusted
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|airscooproundsmall,
+		texture = Vehicles/puv_parts_rusted,
+		shader = vehiclewheel,
+		scale = 0.01,
+	}
+
+	model PZKA_SVU_Airscoop_pzkCarMuscle_Large_Round
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|airscooproundlarge,
+		texture = Vehicles/puv_parts,
+		shader = vehiclewheel,
+		scale = 0.01,
+	}
+
+	model PZKA_SVU_Airscoop_pzkCarMuscle_Large_Round_Rusted
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|airscooproundlarge,
+		texture = Vehicles/puv_parts_rusted,
+		shader = vehiclewheel,
+		scale = 0.01,
+	}
+
+	model PZKA_SVU_FL_Window_pzkCarMuscle_Light
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|windowfrontlightleft,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_SVU_FL_Window_pzkCarMuscle_Light_Spiked
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|windowfrontlightspikedleft,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_SVU_FL_Window_pzkCarMuscle_Heavy
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|windowfrontheavyleft,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_SVU_FL_Window_pzkCarMuscle_Heavy_Spiked
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|windowfrontheavyspikedleft,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_SVU_FL_Window_pzkCarMuscle_Reinforced
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|windowfrontreinforcedleft,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+
+	model PZKA_SVU_FR_Window_pzkCarMuscle_Light
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|windowfrontlightright,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_SVU_FR_Window_pzkCarMuscle_Light_Spiked
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|windowfrontlightspikedright,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_SVU_FR_Window_pzkCarMuscle_Heavy
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|windowfrontheavyright,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_SVU_FR_Window_pzkCarMuscle_Heavy_Spiked
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|windowfrontheavyspikedright,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_SVU_FR_Window_pzkCarMuscle_Reinforced
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|windowfrontreinforcedright,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model PZKA_SVU_Hood_pzkCarMuscle_Light
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|hoodlightfront,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_SVU_Hood_pzkCarMuscle_Light_Scoop
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|hoodlightfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_SVU_Hood_pzkCarMuscle_Light_Spiked
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|hoodlightspikedfront,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_SVU_Hood_pzkCarMuscle_Light_Spiked_Scoop
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|hoodlightspikedfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_SVU_Hood_pzkCarMuscle_Heavy
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|hoodheavyfront,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_SVU_Hood_pzkCarMuscle_Heavy_Scoop
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|hoodheavyfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_SVU_Hood_pzkCarMuscle_Heavy_Spiked
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|hoodheavyspikedfront,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_SVU_Hood_pzkCarMuscle_Heavy_Spiked_Scoop
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|hoodheavyspikedfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_SVU_Hood_pzkCarMuscle_Reinforced
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|hoodreinforcedfront,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_SVU_Hood_pzkCarMuscle_Reinforced_Scoop
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|hoodreinforcedfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+
+	model PZKA_SVU_Door_FL_pzkCarMuscle_Light
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|doorfrontlightleft,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_SVU_Door_FL_pzkCarMuscle_Light_Spiked
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|doorfrontlightspikedleft,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_SVU_Door_FL_pzkCarMuscle_Heavy
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|doorfrontheavyleft,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_SVU_Door_FL_pzkCarMuscle_Heavy_Spiked
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|doorfrontheavyspikedleft,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_SVU_Door_FL_pzkCarMuscle_Reinforced
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|doorfrontreinforcedleft,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+	model PZKA_SVU_Door_FR_pzkCarMuscle_Light
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|doorfrontlightright,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_SVU_Door_FR_pzkCarMuscle_Light_Spiked
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|doorfrontlightspikedright,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_SVU_Door_FR_pzkCarMuscle_Heavy
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|doorfrontheavyright,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_SVU_Door_FR_pzkCarMuscle_Heavy_Spiked
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|doorfrontheavyspikedright,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_SVU_Door_FR_pzkCarMuscle_Reinforced
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|doorfrontreinforcedright,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_SVU_pzkCarMuscle_Hood_Scoop_a
+	{
+		mesh = vehicles/pzka_Muscle_Cabrio|Hood_scooped_obj,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_SVU_Dummy_pzkCarMuscle_Normal
+	{
+		mesh = vehicles/ArmorSVU3/Vehicles_pzkCarMuscleArmor|dummy,
+		texture = Vehicles/puv_parts,
+		shader = vehiclewheel,
+		scale = 0.004,
+	}
+	model PZKA_SVU_Dummy_pzkCarMuscle_Rusted
+	{
+		mesh = vehicles/ArmorSVU3/Vehicles_pzkCarMuscleArmor|dummy,
+		texture = Vehicles/puv_parts_rusted,
+		shader = vehiclewheel,
+		scale = 0.004,
+	}
+
+	template vehicle PZKA_SVU3_Armor_pzkCarMuscle
+	{
+		part EngineDoor
+		{
+
+			model Scooped
+			{
+				file = PZKA_SVU_pzkCarMuscle_Hood_Scoop_a,				
+			}			
+			table install
+			{
+				complete = ATATuning2.InstallComplete.ScoopedHood,
+			}
+			table uninstall
+			{
+				complete = ATATuning2.UninstallComplete.ScoopedHood,
+			}
+			lua
+			{
+				create = ATATuning2.Create.ScoopedHood,
+				init = ATATuning2.Init.ScoopedHood,
+				update = Vehicles.Update.EngineDoor,
+				use = Vehicles.Use.EngineDoor,
+			}
+			setAllModelsVisible = false,
+		}
+
+		part ATA2AirScoop
+		{
+			model Small
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Small,
+			}
+			model SmallRusted
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Small_Rusted,
+			}
+			model Medium
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Medium,
+			}
+			model MediumRusted
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Medium_Rusted,
+			}
+			model Large
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Large,
+			}
+			model LargeRusted
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Large_Rusted,
+			}
+			model Piped
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Piped,
+			}
+			model PipedRusted
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Piped_Rusted,
+			}
+			model SmallRound
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Small_Round,
+			}
+			model SmallRoundRusted
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Small_Round_Rusted,
+			}
+			model LargeRound
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Large_Round,
+			}
+			model LargeRoundRusted
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Large_Round_Rusted,
+			}
+		}
+
+		part ATA2ProtectionWindowFrontLeft
+		{
+			parent = DoorFrontLeft,
+			model Light
+			{
+				file = PZKA_SVU_FL_Window_pzkCarMuscle_Light,
+			}
+			model Heavy
+			{
+				file = PZKA_SVU_FL_Window_pzkCarMuscle_Heavy,
+			}
+			model LightSpiked
+			{
+				file = PZKA_SVU_FL_Window_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpiked
+			{
+				file = PZKA_SVU_FL_Window_pzkCarMuscle_Heavy_Spiked,
+			}
+			model LightRusted
+			{
+				file =	PZKA_SVU_FL_Window_pzkCarMuscle_Light,
+			}
+			model HeavyRusted
+			{
+				file = PZKA_SVU_FL_Window_pzkCarMuscle_Heavy,
+			}
+			model LightSpikedRusted
+			{
+				file = PZKA_SVU_FL_Window_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpikedRusted
+			{
+				file = PZKA_SVU_FL_Window_pzkCarMuscle_Heavy_Spiked,
+			}
+			model Reinforced
+			{
+				file = PZKA_SVU_FL_Window_pzkCarMuscle_Reinforced,
+			}
+			model ReinforcedRusted
+			{
+				file = PZKA_SVU_FL_Window_pzkCarMuscle_Reinforced,
+			}
+		}
+
+		part ATA2ProtectionWindowFrontRight
+		{
+			parent = DoorFrontRight,
+			model Light
+			{
+				file = PZKA_SVU_FR_Window_pzkCarMuscle_Light,
+			}
+			model Heavy
+			{
+				file = PZKA_SVU_FR_Window_pzkCarMuscle_Heavy,
+			}
+			model LightSpiked
+			{
+				file = PZKA_SVU_FR_Window_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpiked
+			{
+				file = PZKA_SVU_FR_Window_pzkCarMuscle_Heavy_Spiked,
+			}
+			model LightRusted
+			{
+				file = PZKA_SVU_FR_Window_pzkCarMuscle_Light,
+			}
+			model HeavyRusted
+			{
+				file = PZKA_SVU_FR_Window_pzkCarMuscle_Heavy,
+			}
+			model LightSpikedRusted
+			{
+				file = PZKA_SVU_FR_Window_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpikedRusted
+			{
+				file = PZKA_SVU_FR_Window_pzkCarMuscle_Heavy_Spiked,
+			}
+			model Reinforced
+			{
+				file = PZKA_SVU_FR_Window_pzkCarMuscle_Reinforced,
+			}
+			model ReinforcedRusted
+			{
+				file = PZKA_SVU_FR_Window_pzkCarMuscle_Reinforced,
+			}
+		}
+
+		part ATA2ProtectionDoorFrontLeft
+		{
+ 			parent = DoorFrontLeft,
+			model Light
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Light,
+			}
+			model Heavy
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Heavy,
+			}
+			model LightSpiked
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpiked
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Heavy_Spiked,
+			}
+			model LightRusted
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Light,
+			}
+			model HeavyRusted
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Heavy,
+			}
+			model LightSpikedRusted
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpikedRusted
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Heavy_Spiked,
+			}
+			model Reinforced
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Reinforced,
+			}
+			model ReinforcedRusted
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Reinforced,
+			}
+		}
+
+		part ATA2ProtectionDoorFrontRight
+		{
+			parent = DoorFrontRight,
+			model Light
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Light,
+			}
+			model Heavy
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Heavy,
+			}
+			model LightSpiked
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpiked
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Heavy_Spiked,
+			}
+			model LightRusted
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Light,
+			}
+			model HeavyRusted
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Heavy,
+			}
+			model LightSpikedRusted
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpikedRusted
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Heavy_Spiked,
+			}
+			model Reinforced
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Reinforced,
+			}
+			model ReinforcedRusted
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Reinforced,
+			}
+		}
+
+		part ATA2ProtectionHood
+		{
+			parent = EngineDoor,
+			model Light
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light,
+			}
+			model Heavy
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy,
+			}
+			model LightSpiked
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpiked
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy_Spiked,
+			}
+			model LightRusted
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light,
+			}
+			model HeavyRusted
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy,
+			}
+			model LightSpikedRusted
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpikedRusted
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy_Spiked,
+			}
+			model Reinforced
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Reinforced,
+			}
+			model ReinforcedRusted
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Reinforced,
+			}
+			model LightScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light_Scoop,
+			}
+			model HeavyScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy_Scoop,
+			}
+			model LightSpikedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light_Spiked_Scoop,
+			}
+			model HeavySpikedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy_Spiked_Scoop,
+			}
+			model LightRustedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light_Scoop,
+			}
+			model HeavyRustedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy_Scoop,
+			}
+			model LightSpikedRustedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light_Spiked_Scoop,
+			}
+			model HeavySpikedRustedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy_Spiked_Scoop,
+			}
+			model ReinforcedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Reinforced_Scoop,
+			}
+			model ReinforcedRustedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Reinforced_Scoop,
+			}
+		}
+
+        	part ATA2Protection*
+        	{
+            		model anchorNormal {
+				file = PZKA_SVU_Dummy_pzkCarMuscle_Normal,
+			}
+			model anchorRusted {
+				file = PZKA_SVU_Dummy_pzkCarMuscle_Rusted,
+			}
+			table install
+            		{
+                		complete = ATATuning2.InstallComplete.AnchorTuning,
+            		}
+            		table uninstall
+            		{
+                		complete = ATATuning2.UninstallComplete.AnchorTuning,
+            		}
+            		lua
+            		{
+                		create = ATATuning2.Create.AnchorTuning,
+                		init = ATATuning2.Init.AnchorTuning,
+                		update = ATATuning2.Update.Protection,
+            		}
+        	}
+	}
+
+	template vehicle PZKA_SVU3_Armor_pzkCarMuscle_cabrio
+	{
+		part EngineDoor
+		{
+
+			model Scooped
+			{
+				file = PZKA_SVU_pzkCarMuscle_Hood_Scoop_a,				
+			}			
+			table install
+			{
+				complete = ATATuning2.InstallComplete.ScoopedHood,
+			}
+			table uninstall
+			{
+				complete = ATATuning2.UninstallComplete.ScoopedHood,
+			}
+			lua
+			{
+				create = ATATuning2.Create.ScoopedHood,
+				init = ATATuning2.Init.ScoopedHood,
+				update = Vehicles.Update.EngineDoor,
+				use = Vehicles.Use.EngineDoor,
+			}
+			setAllModelsVisible = false,
+		}
+
+		part ATA2AirScoop
+		{
+			model Small
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Small,
+			}
+			model SmallRusted
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Small_Rusted,
+			}
+			model Medium
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Medium,
+			}
+			model MediumRusted
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Medium_Rusted,
+			}
+			model Large
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Large,
+			}
+			model LargeRusted
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Large_Rusted,
+			}
+			model Piped
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Piped,
+			}
+			model PipedRusted
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Piped_Rusted,
+			}
+			model SmallRound
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Small_Round,
+			}
+			model SmallRoundRusted
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Small_Round_Rusted,
+			}
+			model LargeRound
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Large_Round,
+			}
+			model LargeRoundRusted
+			{
+				file = PZKA_SVU_Airscoop_pzkCarMuscle_Large_Round_Rusted,
+			}
+		}
+
+		part ATA2ProtectionDoorFrontLeft
+		{
+ 			parent = DoorFrontLeft,
+			model Light
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Light,
+			}
+			model Heavy
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Heavy,
+			}
+			model LightSpiked
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpiked
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Heavy_Spiked,
+			}
+			model LightRusted
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Light,
+			}
+			model HeavyRusted
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Heavy,
+			}
+			model LightSpikedRusted
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpikedRusted
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Heavy_Spiked,
+			}
+			model Reinforced
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Reinforced,
+			}
+			model ReinforcedRusted
+			{
+				file = PZKA_SVU_Door_FL_pzkCarMuscle_Reinforced,
+			}
+		}
+
+		part ATA2ProtectionDoorFrontRight
+		{
+			parent = DoorFrontRight,
+			model Light
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Light,
+			}
+			model Heavy
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Heavy,
+			}
+			model LightSpiked
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpiked
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Heavy_Spiked,
+			}
+			model LightRusted
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Light,
+			}
+			model HeavyRusted
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Heavy,
+			}
+			model LightSpikedRusted
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpikedRusted
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Heavy_Spiked,
+			}
+			model Reinforced
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Reinforced,
+			}
+			model ReinforcedRusted
+			{
+				file = PZKA_SVU_Door_FR_pzkCarMuscle_Reinforced,
+			}
+		}
+
+		part ATA2ProtectionHood
+		{
+			parent = EngineDoor,
+			model Light
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light,
+			}
+			model Heavy
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy,
+			}
+			model LightSpiked
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpiked
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy_Spiked,
+			}
+			model LightRusted
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light,
+			}
+			model HeavyRusted
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy,
+			}
+			model LightSpikedRusted
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light_Spiked,
+			}
+			model HeavySpikedRusted
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy_Spiked,
+			}
+			model Reinforced
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Reinforced,
+			}
+			model ReinforcedRusted
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Reinforced,
+			}
+			model LightScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light_Scoop,
+			}
+			model HeavyScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy_Scoop,
+			}
+			model LightSpikedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light_Spiked_Scoop,
+			}
+			model HeavySpikedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy_Spiked_Scoop,
+			}
+			model LightRustedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light_Scoop,
+			}
+			model HeavyRustedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy_Scoop,
+			}
+			model LightSpikedRustedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Light_Spiked_Scoop,
+			}
+			model HeavySpikedRustedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Heavy_Spiked_Scoop,
+			}
+			model ReinforcedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Reinforced_Scoop,
+			}
+			model ReinforcedRustedScoop
+			{
+				file = PZKA_SVU_Hood_pzkCarMuscle_Reinforced_Scoop,
+			}
+		}
+
+        	part ATA2Protection*
+        	{
+            		model anchorNormal {
+				file = PZKA_SVU_Dummy_pzkCarMuscle_Normal,
+			}
+			model anchorRusted {
+				file = PZKA_SVU_Dummy_pzkCarMuscle_Rusted,
+			}
+			table install
+            		{
+                		complete = ATATuning2.InstallComplete.AnchorTuning,
+            		}
+            		table uninstall
+            		{
+                		complete = ATATuning2.UninstallComplete.AnchorTuning,
+            		}
+            		lua
+            		{
+                		create = ATATuning2.Create.AnchorTuning,
+                		init = ATATuning2.Init.AnchorTuning,
+                		update = ATATuning2.Update.Protection,
+            		}
+        	}
+	}
+
+}

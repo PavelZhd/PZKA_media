@@ -1,0 +1,184 @@
+module Base
+{
+	model PZKA_Vehicles_Van70_riddle_a
+	{
+		mesh = vehicles/pzka_CVan70|Vehicles_DashVan70Riddle,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Van70_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_CVan70|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Van70_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_CVan70|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	
+	model PZKA_Vehicles_Van70_Hood_nr
+	{
+		mesh = vehicles/pzka_CVan70|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Van70_Trunk_nr
+	{
+		mesh = vehicles/pzka_CVan70|Trunk_Riddle_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
+	}
+
+	model PZKA_Vehicles_Van70_DoorRearLeft_nr
+	{
+		mesh = vehicles/pzka_CVan70|Door_RearLeft_Riddle_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorFrontBone 1.0,
+		boneWeight = RearLeftDoorRearBone 1.0,
+	}
+	model PZKA_Vehicles_Van70_DoorRearRight_nr
+	{
+		mesh = vehicles/pzka_CVan70|Door_RearRight_Riddle_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorFrontBone 1.0,
+		boneWeight = RearRightDoorRearBone 1.0,
+	}
+
+	template vehicle PZKA_Van70_animatedDoors_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_Trunk_nr,
+			}
+		}
+
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_DoorFrontRight_nr,
+			}
+		}
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_DoorRearLeft_nr,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_DoorRearRight_nr,
+			}
+		}
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_Hood_nr,
+			}
+		}
+		part WindowFrontLeft
+        	{
+			parent = DoorFrontLeft,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Van70_WindowFrontLeft,
+            		}            		
+        	}
+		part WindowFrontRight
+        	{	
+            parent = DoorFrontRight,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Van70_WindowFrontRight,
+            		}
+	       	}
+
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_Windshield,
+			}			
+		}
+		
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_SeatFR,
+			}
+		}
+		
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_SeatML,
+			}
+		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_SeatMR,
+			}
+		}		
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Van70_internals,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create = Vehicles.Create.Default,
+	    		}
+		}
+	}	
+}

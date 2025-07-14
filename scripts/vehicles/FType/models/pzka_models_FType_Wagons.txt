@@ -1,0 +1,134 @@
+module Base
+{	
+	model PZKA_Vehicles_FType_Reg_Wagon_RearWindow
+	{
+		mesh = vehicles/pzka_FType_animated|RearWindow_Reg_Wagon,
+		shader = vehicle_multiuv_vva,
+		invertX = FALSE,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RegTrunkUpperBone 1.0,
+	}
+	model PZKA_Vehicles_FType_Med_Wagon_RearWindow
+	{
+		mesh = vehicles/pzka_FType_animated|RearWindow_Med_Wagon_obj,
+		shader = vehicle_multiuv_vva,
+		invertX = FALSE,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = MedTrunkUpperBone 1.0,
+	}	
+	model PZKA_Vehicles_FType_CrewMed_Wagon_RearWindow
+	{
+		mesh = vehicles/pzka_FType_animated|RearWindow_CrewMed_Wagon_obj,
+		shader = vehicle_multiuv_vva,
+		invertX = FALSE,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = CrewMedTrunkUpperBone 1.0,
+	}
+	model PZKA_Vehicles_FType_Long_Wagon_RearWindow
+	{
+		mesh = vehicles/pzka_FType_animated|RearWindow_Long_Wagon_obj,
+		shader = vehicle_multiuv_vva,
+		invertX = FALSE,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = LongTrunkUpperBone 1.0,
+	}
+	
+	model PZKA_Vehicles_FType_Reg_Window_RearLeft
+	{
+		mesh = vehicles/pzka_FType_static|Window_Reg_Wagon_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Reg_Window_RearRight
+	{
+		mesh = vehicles/pzka_FType_static|Window_Reg_Wagon_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_FType_CrewMed_Wagon_RearWindow_Static
+	{
+		mesh = vehicles/pzka_FType_static|RearWindow_CrewMed_Wagon_sobj,
+		shader = vehicle_multiuv_vva,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Med_Wagon_RearWindow_Static
+	{
+		mesh = vehicles/pzka_FType_static|RearWindow_MediumWagon_sobj,
+		shader = vehicle_multiuv_vva,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_CrewLong_Wagon_RearWindow_Static
+	{
+		mesh = vehicles/pzka_FType_static|Rearwindow_4doorWagon_sobj,
+		shader = vehicle_multiuv_vva,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Long_Wagon_RearWindow_Static
+	{
+		mesh = vehicles/pzka_FType_static|RearWindow_LongWagon_sobj,
+		shader = vehicle_multiuv_vva,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_FType_Reg_Wagon_Trunk
+	{
+		mesh = vehicles/pzka_FType_animated|Trunk_Reg_Wagon_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RegTrunkUpperBone 1.0,
+		boneWeight = RegTrunkLowerBone 1.0,
+	}
+
+
+	model PZKA_Vehicles_FType_Med_Wagon_Trunk
+	{
+		mesh = vehicles/pzka_FType_animated|Trunk_Med_Wagon_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = MedTrunkUpperBone 1.0,
+		boneWeight = MedTrunkLowerProvinceBone 1.0,
+	}
+	
+	model PZKA_Vehicles_FType_CrewMed_Wagon_Trunk
+	{
+		mesh = vehicles/pzka_FType_animated|Trunk_CrewMed_Wagon_Province_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = CrewMedTrunkUpperBone 1.0,
+		boneWeight = CrewMedTrunkLowerProvinceBone 1.0,
+	}
+
+
+	model PZKA_Vehicles_FType_Long_Wagon_Trunk
+	{
+		mesh = vehicles/pzka_FType_animated|Trunk_Long_Wagon_Province,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = LongTrunkUpperBone 1.0,
+		boneWeight = LongTrunkLowerProvinceBone 1.0,
+	}
+	model PZKA_Vehicles_FType_Long_Wagon_Trunk_nr
+	{
+		mesh = vehicles/pzka_FType_animated|Trunk_Long_Wagon_Province,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = LongTrunkUpperBone 1.0,
+		boneWeight = LongTrunkLowerProvinceBone 1.0,
+	}
+}

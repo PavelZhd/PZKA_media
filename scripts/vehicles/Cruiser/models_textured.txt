@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Cruiser_internals
+	{
+		mesh = vehicles/pzka_Cruiser|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkContinentalCruisershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cruiser_SeatFL
+	{
+		mesh = vehicles/pzka_Cruiser|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkContinentalCruisershell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Cruiser_SeatFR
+	{
+		mesh = vehicles/pzka_Cruiser|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkContinentalCruisershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cruiser_SeatRL
+	{
+		mesh = vehicles/pzka_Cruiser|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkContinentalCruisershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cruiser_SeatRR
+	{
+		mesh = vehicles/pzka_Cruiser|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkContinentalCruisershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

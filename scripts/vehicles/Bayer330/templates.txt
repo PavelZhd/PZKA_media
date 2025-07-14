@@ -1,0 +1,243 @@
+module Base
+{
+	template vehicle PZKA_Bayer330_shared {
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_SeatRR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.184 -0.0429 0.7460,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Bayer_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+
+	template vehicle PZKA_Bayer330_Hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_Hood,
+			}
+		}
+	}
+
+	template vehicle PZKA_Bayer330_FrontWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+                file = PZKA_Vehicles_Bayer_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+            parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Bayer_WindowFrontRight,
+            }
+	    }
+	}
+
+	template vehicle PZKA_Bayer330_RearWindows {
+		part WindowRearLeft
+        {	
+        	parent = DoorRearLeft,
+			model Default
+            {
+        		file = PZKA_Vehicles_Bayer_WindowRearLeft,
+    		}
+		}
+		part WindowRearRight
+        {	
+    		parent = DoorRearRight,
+			model Default
+    		{
+        		file = PZKA_Vehicles_Bayer_WindowRearRight,
+    		}
+    	}
+	}
+	
+	template vehicle PZKA_Bayer330_FakeRearWindows {
+		part WindowRearLeft
+    	{	
+    		model Default
+    		{
+        		file = PZKA_Vehicles_Bayer_2D_WindowRearLeft,
+    		}
+    	}
+		part WindowRearRight
+    	{	
+    		model Default
+    		{
+        		file = PZKA_Vehicles_Bayer_2D_WindowRearRight,
+    		}
+    	}
+	}
+
+	template vehicle PZKA_Bayer330_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_Trunk,
+			}
+		}
+	}
+
+	template vehicle PZKA_Bayer330_2Doors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_DoorFrontRight,
+			}
+		}
+		template! = PZKA_Bayer330_FrontWindows,
+	}
+
+	template vehicle PZKA_Bayer330_4Doors {
+		template! = PZKA_Bayer330_2Doors,
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_DoorRearLeft,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_DoorRearRight,
+			}
+		}
+		template!= PZKA_Bayer330_RearWindows,
+	}
+
+
+
+	template vehicle PZKA_Bayer4D_animatedDoors {
+		template! = PZKA_Bayer330_Trunk,
+		template! = PZKA_Bayer330_4Doors,
+		template! = PZKA_Bayer330_Hood,
+		template! = PZKA_Bayer330_shared,
+	}
+
+	template vehicle PZKA_Bayer2D_animatedDoors {
+		template! = PZKA_Bayer330_Trunk,
+		template! = PZKA_Bayer330_2Doors,
+		template! = PZKA_Bayer330_Hood,
+		template! = PZKA_Bayer330_FakeRearWindows,
+		template! = PZKA_Bayer330_shared,
+	}	
+
+
+	template vehicle PZKA_BayerSport_animatedDoors {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_Trunk_Sport,
+			}
+		}
+		template! = PZKA_Bayer330_2Doors,
+		template! = PZKA_Bayer330_Hood,
+		template! = PZKA_Bayer330_FakeRearWindows,
+		template! = PZKA_Bayer330_shared,
+	}
+
+	template vehicle PZKA_BayerCabrio_animatedDoors {
+		template! = PZKA_Bayer330_Trunk,		
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_DoorFrontLeft_Cabrio,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Bayer_DoorFrontRight_Cabrio,
+			}
+		}
+		template! = PZKA_Bayer330_Hood,
+		template! = PZKA_Bayer330_shared,
+	}
+}

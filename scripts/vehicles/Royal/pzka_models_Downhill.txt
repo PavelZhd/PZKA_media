@@ -1,0 +1,77 @@
+module Base
+{
+	model PZKA_Vehicles_Downhill_a
+	{
+		mesh = vehicles/pzka_DashRoyal|Vehicles_Downhill,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Royal_LightFL_Downhill
+	{
+		mesh = vehicles/pzka_DashRoyal|Light_FrontLeft_Downhill_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Royal_LightFR_Downhill
+	{
+		mesh = vehicles/pzka_DashRoyal|Light_FrontRight_Downhill_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Royal_LightRL_Downhill
+	{
+		mesh = vehicles/pzka_DashRoyal|Light_RearLeft_Downhill_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Royal_LightRR_Downhill
+	{
+		mesh = vehicles/pzka_DashRoyal|Light_RearRight_Downhill_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	
+	template vehicle PZKA_Royal_Lights_Downhill {	
+		part HeadlightLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Royal_LightFL_Downhill,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Royal_LightFR_Downhill,
+			}
+		}
+		part HeadlightRearLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Royal_LightRL_Downhill,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Royal_LightRR_Downhill,
+			}
+		}
+	}
+
+	template vehicle PZKA_DashRoyal_sedan_Downhill {
+		template! = PZKA_DashRoyal_sedan_shared,
+		part WindshieldRear
+		{
+			model Static
+			{
+				file = PZKA_Vehicles_DashRoyal_Downhill_RearWindow,
+			}
+		}
+	}
+}

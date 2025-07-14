@@ -1,0 +1,24 @@
+module Base
+{
+	model PZKA_Vehicles_Marocco_internals
+	{
+		mesh = vehicles/pzka_Marocco|Vehicles_Interior,
+		texture = Vehicles/vehicle_sportscarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Marocco_SeatFL
+	{
+		mesh = vehicles/pzka_Marocco|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_sportscarshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Marocco_SeatFR
+	{
+		mesh = vehicles/pzka_Marocco|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_sportscarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicles_Normal_Trunk_hellion
+	{
+		mesh = vehicles/pzka_NormalAnimatedTrunk|Trunk_Sedan_Hellion_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkFlatSedanBone 1.0,
+	}
+	model PZKA_Vehicles_Normal_Trunk_hellion_nr
+	{
+		mesh = vehicles/pzka_NormalAnimatedTrunk|Trunk_Sedan_Hellion_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkFlatSedanBone 1.0,
+	}
+}

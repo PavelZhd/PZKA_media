@@ -1,0 +1,105 @@
+module Base
+{
+	model PZKA_Vehicles_Ftype_Box_Base
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Vehicles_BoxBase,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Box_Base_nr
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Vehicles_BoxBase,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_FType_Box_Doors_RearWindow
+	{
+		mesh = vehicles/pzka_FType_animated|RearWindow_Anbulance_obj,
+		shader = vehicle_multiuv_vva,
+		invertX = FALSE,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = AmbulanceTrunkRightBone 1.0,
+		boneWeight = AmbulanceTrunkLeftBone 1.0,
+	}
+	model PZKA_Vehicles_FType_Box_Doors_Trunk
+	{
+		mesh = vehicles/pzka_FType_animated|Trunk_Ambulance_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = AmbulanceTrunkRightBone 1.0,
+		boneWeight = AmbulanceTrunkLeftBone 1.0,
+	}
+	model PZKA_Vehicles_FType_Box_Doors_Trunk_nr
+	{
+		mesh = vehicles/pzka_FType_animated|Trunk_Ambulance_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = AmbulanceTrunkRightBone 1.0,
+		boneWeight = AmbulanceTrunkLeftBone 1.0,
+	}
+
+	model PZKA_Vehicles_FType_Box_Shutter_Trunk
+	{
+		mesh = vehicles/pzka_FType_shutter|Trunk_Box_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkShutterBone 1.0,
+		boneWeight = TrunkShutter2Bone 1.0,
+		boneWeight = TrunkShutter3Bone 1.0,
+		boneWeight = TrunkShutter4Bone 1.0,
+		boneWeight = TrunkShutter5Bone 1.0,
+		boneWeight = TrunkShutter6Bone 1.0,
+		boneWeight = TrunkShutter7Bone 1.0,
+		boneWeight = TrunkShutter8Bone 1.0,
+		boneWeight = TrunkShutter9Bone 1.0,
+		boneWeight = TrunkShutter10Bone 1.0,
+		boneWeight = TrunkShutter11Bone 1.0,
+		boneWeight = TrunkShutter12Bone 1.0,
+		boneWeight = TrunkShutter13Bone 1.0,
+		boneWeight = TrunkShutter14Bone 1.0,
+	}
+
+	model PZKA_Vehicles_Ftype_Box_RearCUCV_nr
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_Box_Door,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Box_Ambulance_nr
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_Box_DoorAmbulance,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Box_UMove
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_Box_Shutter,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Ftype_Box_CUCV_Lightbar
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_CUCVLight,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Box_Lightbar
+	{		
+		mesh = vehicles/pzka_FType_body_misc|Comp_Lightbor,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

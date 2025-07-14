@@ -1,0 +1,140 @@
+module Base
+{
+	model PZKA_Vehicles_Sedan_Mayor_a
+	{
+		mesh = vehicles/pzka_Normal|Vehicles_Sedan_Mayor,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sedan_Mayor_nr_a
+	{
+		mesh = vehicles/pzka_Normal|Vehicles_Sedan_Mayor,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Wagon_Mayor_a
+	{
+		mesh = vehicles/pzka_Normal|Vehicles_Wagon_Mayor,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Wagon_Mayor_nr_a
+	{
+		mesh = vehicles/pzka_Normal|Vehicles_Wagon_Mayor,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Sedan_LightFL_Mayor
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Mayor_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sedan_LightFR_Mayor
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Mayor_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Sedan_Lights_Front_Mayor {
+		part HeadlightLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightFL_Mayor,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightFR_Mayor,
+			}
+		}
+	}
+	model PZKA_Vehicles_Sedan_LightRL_Mayor
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Sedan_Mayor_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sedan_LightRR_Mayor
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Sedan_Mayor_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Sedan_Lights_Mayor {
+		template! = PZKA_Sedan_Lights_Front_Mayor,
+		part HeadlightRearLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightRL_Mayor,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightRR_Mayor,
+			}
+		}
+	}
+
+	model PZKA_Wagon_Mayor_LightRL
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Wagon_Mayor_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Wagon_Mayor_LightRR
+	{
+		mesh = vehicles/pzka_NormalLight|Light_Wagon_Mayor_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Wagon_Lights_Mayor {
+		template! = PZKA_Sedan_Lights_Front_Mayor,
+		part HeadlightRearLeft
+		{
+			model Default 
+			{
+				file = PZKA_Wagon_Mayor_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default 
+			{
+				file = PZKA_Wagon_Mayor_LightRR,
+			}
+		}
+	}
+
+	template vehicle PZKA_Normal_Wagon_Mayor {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Trunk_wagon_mayor,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		template! = PZKA_Normal_Shared_Front,
+		template! = PZKA_Normal_Shared_Reardoors_wagon,
+
+		template! = PZKA_Normal_Wagon_shared,
+	}
+}

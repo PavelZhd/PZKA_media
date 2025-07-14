@@ -1,0 +1,24 @@
+module Base
+{
+	model PZKA_Battery
+	{
+		mesh = vehicles/pzka_battery|Battery_obj,
+		texture = WorldItems/CarBattery,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_BatteryL
+	{
+		mesh = vehicles/pzka_battery|BatteryL_obj,
+		texture = WorldItems/CarBattery,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_BatteryR
+	{
+		mesh = vehicles/pzka_battery|BatteryR_obj,
+		texture = WorldItems/CarBattery,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

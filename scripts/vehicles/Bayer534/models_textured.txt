@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Bayer534_internals
+	{
+		mesh = vehicles/pzka_Bayer534|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkContinentalBayer732shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bayer534_SeatFL
+	{
+		mesh = vehicles/pzka_Bayer534|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkContinentalBayer732shell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Bayer534_SeatFR
+	{
+		mesh = vehicles/pzka_Bayer534|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkContinentalBayer732shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bayer534_SeatRL
+	{
+		mesh = vehicles/pzka_Bayer534|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_pzkContinentalBayer732shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bayer534_SeatRR
+	{
+		mesh = vehicles/pzka_Bayer534|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_pzkContinentalBayer732shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

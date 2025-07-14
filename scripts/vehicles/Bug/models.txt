@@ -1,0 +1,126 @@
+module Base
+{
+	model PZKA_Vehicles_Bug_a
+	{
+		mesh = vehicles/pzka_Bug|Garbus,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bug_nr_a
+	{
+		mesh = vehicles/pzka_Bug|Garbus,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Bug_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Bug|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Bug_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Bug|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Bug_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Bug|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Bug_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Bug|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+
+	model PZKA_Vehicles_Bug_WindowFrontLeft_static
+	{
+		mesh = vehicles/pzka_Bug|Window_FrontLeft_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bug_WindowFrontRight_static
+	{
+		mesh = vehicles/pzka_Bug|Window_FrontRight_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Bug_Hood
+	{
+		mesh = vehicles/pzka_Bug|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Bug_Trunk
+	{
+		mesh = vehicles/pzka_Bug|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Bug_Windshield
+	{
+		mesh = vehicles/pzka_Bug|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Bug_RearWindow
+	{
+		mesh = vehicles/pzka_Bug|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}	
+
+	model PZKA_Vehicles_Bug_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Bug|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Bug_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Bug|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Bug_Hood_nr
+	{
+		mesh = vehicles/pzka_Bug|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Bug_Trunk_nr
+	{
+		mesh = vehicles/pzka_Bug|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+}

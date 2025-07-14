@@ -1,0 +1,185 @@
+module Base
+{
+	template vehicle PZKA_FType_Province_Fill_shared {
+		part PZKA_fill
+        {
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = false,			
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+            	init = Vehicles.Init.AdjustLightGeometry,
+	    	}	
+        }
+		part PZKA_fill_rear
+        {
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+            }	
+        }
+	}
+	template vehicle PZKA_FType_Province_Fill {
+		template! = PZKA_FType_Province_Fill_shared,
+		part PZKA_fill
+        {
+			model Province_12
+			{
+				file = PZKA_Vehicles_Ftype_Grill_Province_1,
+			}
+			model Province_34
+			{
+				file = PZKA_Vehicles_Ftype_Grill_Province_2,
+			}
+			model Province_56
+			{
+				file = PZKA_Vehicles_Ftype_Grill_Province_3,
+			}
+			model Province_78
+			{
+				file = PZKA_Vehicles_Ftype_Grill_Province_4,
+			}				
+		}
+	}
+	template vehicle PZKA_FType_Province_Fill_nr {
+		template! = PZKA_FType_Province_Fill_shared,
+		part PZKA_fill
+        {
+			model Province_12
+			{
+				file = PZKA_Vehicles_Ftype_Grill_Province_1_nr,
+			}
+			model Province_34
+			{
+				file = PZKA_Vehicles_Ftype_Grill_Province_2_nr,
+			}
+			model Province_56
+			{
+				file = PZKA_Vehicles_Ftype_Grill_Province_3_nr,
+			}
+			model Province_78
+			{
+				file = PZKA_Vehicles_Ftype_Grill_Province_4_nr,
+			}				
+		}
+	}
+
+	template vehicle PZKA_FType_Reg_Fill_Province {
+		template!= PZKA_FType_Province_Fill,
+		part PZKA_fill_rear
+        {
+			model Default
+			{
+				file = PZKA_Vehicles_Ftype_Reg_Tail_Province,
+			}
+        }		
+	}
+	template vehicle PZKA_FType_Reg_Wagon_Province {
+		template! = PZKA_FType_Reg_Wagon,
+		template! = PZKA_FType_Reg_Fill_Province,
+	}
+	template vehicle PZKA_FType_Reg_Pickup_Province {
+		template! = PZKA_FType_Reg_Pickup_animated,
+		template! = PZKA_FType_Reg_Fill_Province,
+	}
+
+	template vehicle PZKA_FType_Med_Fill_Province {
+		template!= PZKA_FType_Province_Fill,
+		part PZKA_fill_rear
+        {
+			model Default
+			{
+				file = PZKA_Vehicles_Ftype_Med_Tail_Province,
+			}
+        }
+	}
+	template vehicle PZKA_FType_Med_Wagon_Province {
+		template! = PZKA_FType_Med_Wagon,
+		template! = PZKA_FType_Med_Fill_Province,
+	}
+	template vehicle PZKA_FType_Med_Pickup_Province {
+		template! = PZKA_FType_FakeDoor_Pickup_animated,
+		template! = PZKA_FType_Med_Fill_Province,
+	}
+
+	template vehicle PZKA_FType_CrewMed_Fill_Province {
+		template!= PZKA_FType_Province_Fill,
+		part PZKA_fill_rear
+        {
+			model Default
+			{
+				file = PZKA_Vehicles_Ftype_CrewMed_Tail_Province,
+			}
+        }
+	}
+	template vehicle PZKA_FType_CrewMed_Wagon_Province {
+		template! = PZKA_FType_CrewMed_Wagon,
+		template! = PZKA_FType_CrewMed_Fill_Province,
+	}
+	template vehicle PZKA_FType_CrewMed_Pickup_Province {
+		template! = PZKA_FType_4Door_Pickup_animated,
+		template! = PZKA_FType_CrewMed_Fill_Province,
+	}
+
+	template vehicle PZKA_FType_Long_Fill_Province {
+		template!= PZKA_FType_Province_Fill,
+		part PZKA_fill_rear
+        {
+			model Default
+			{
+				file = PZKA_Vehicles_Ftype_CrewLong_Tail_Province,
+			}
+        }
+	}
+	template vehicle PZKA_FType_Long_Fill_Province_nr {
+		template!= PZKA_FType_Province_Fill_nr,
+		part PZKA_fill_rear
+        {
+			model Default
+			{
+				file = PZKA_Vehicles_Ftype_CrewLong_Tail_Province_nr,
+			}
+        }
+	}
+
+	template vehicle PZKA_FType_Long_Wagon_Province {
+		template! = PZKA_FType_Long_Wagon,
+		template! = PZKA_FType_Long_Fill_Province,
+	}
+	template vehicle PZKA_FType_Long_Pickup_Province {
+		template! = PZKA_FType_FakeDoor_Pickup_animated,
+		template! = PZKA_FType_Long_Fill_Province,
+	}
+
+	template vehicle PZKA_FType_CrewLong_Wagon_Province {
+		template! = PZKA_FType_CrewLong_Wagon,
+		template! = PZKA_FType_Long_Fill_Province,
+	}
+	template vehicle PZKA_FType_CrewLong_Wagon_Province_nr {
+		template! = PZKA_FType_CrewLong_Wagon_nr,
+		template! = PZKA_FType_Long_Fill_Province_nr,
+	}
+	template vehicle PZKA_FType_CrewLong_Pickup_Province {
+		template! = PZKA_FType_4Door_Pickup_animated,
+		template! = PZKA_FType_Long_Fill_Province,
+	}
+
+
+	template vehicle PZKA_FType_Tow_Province {
+		template! = PZKA_FType_Tow_animated
+		template! = PZKA_FType_Reg_Province_Fill
+		part PZKA_fill_rear
+        {
+			model Default
+			{
+				file = PZKA_Vehicles_Ftype_Tow_Tail_Province,
+			}
+        }
+	}
+}

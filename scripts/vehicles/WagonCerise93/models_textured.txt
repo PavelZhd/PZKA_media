@@ -1,0 +1,39 @@
+module Base
+{
+	model PZKA_Vehicles_Wagon_Cerise93_internals
+	{
+		mesh = vehicles/pzka_Cerise93Wagon|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkChevalierCerise93Wagon,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Wagon_Cerise93_SeatFL
+	{
+		mesh = vehicles/pzka_Cerise93Wagon|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkChevalierCeriseSedanshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Wagon_Cerise93_SeatFR
+	{
+		mesh = vehicles/pzka_Cerise93Wagon|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkChevalierCeriseSedanshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Wagon_Cerise93_SeatRL
+	{
+		mesh = vehicles/pzka_Cerise93Wagon|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkChevalierCeriseSedanshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Wagon_Cerise93_SeatRR
+	{
+		mesh = vehicles/pzka_Cerise93Wagon|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkChevalierCeriseSedanshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+}

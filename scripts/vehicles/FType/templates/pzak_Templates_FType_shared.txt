@@ -1,0 +1,226 @@
+module Base
+{
+	template vehicle PZKA_FType_shared {
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Windshield,
+			}			
+		}
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+           	{
+               	file = PZKA_Vehicles_FType_WindowFrontLeft,
+           	}            		
+        }
+		part WindowFrontRight
+        {	
+           	parent = DoorFrontRight,
+			model Default
+           	{
+               	file = PZKA_Vehicles_FType_WindowFrontRight,
+           	}
+	    }
+
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_SeatFR,
+			}
+		}
+
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.2508 0.0754 0.9267,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_FType_internals,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create = Vehicles.Create.Default,
+	    		}
+		}
+
+		passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.32 -0.12 0.237,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		passenger FrontRight
+		{
+			position inside
+			{
+				offset = -0.32 -0.12 0.237,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+	}
+	template vehicle PZKA_FType_shared2Doors {
+		template! = PZKA_FType_shared,
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_DoorFrontLeft,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_DoorFrontRight,
+			}
+		}
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Hood,
+			}
+		}
+	}
+
+	template vehicle PZKA_FType_shared4seats {
+		part WindowRearLeft
+        {	
+        	parent = DoorRearLeft,
+			model Default
+        	{
+           		file = PZKA_Vehicles_FType_WindowRearLeft,
+        	}
+        }
+		part WindowRearRight
+        {	
+        	parent = DoorRearRight,
+			model Default
+            {
+            	file = PZKA_Vehicles_FType_WindowRearRight,
+			}
+        }
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_SeatRR,
+			}
+		}
+		passenger RearLeft
+		{
+			position inside
+			{
+				offset = 0.28 -0.144 -0.47,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		passenger RearRight
+		{
+			position inside
+			{
+				offset = -0.28 -0.144 -0.47,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+	}
+	template vehicle PZKA_FType_shared4Doors {
+		template! = PZKA_FType_shared2Doors,
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_DoorRearLeft,
+			}
+		}
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_DoorRearRight,
+			}
+		}
+		template! = PZKA_FType_shared4seats,
+	}
+
+	template vehicle PZKA_FType_shared2Doors_nr {
+		template! = PZKA_FType_shared,
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_DoorFrontLeft,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_DoorFrontRight,
+			}
+		}
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Hood,
+			}
+		}
+	}
+	template vehicle PZKA_FType_shared4Doors_nr {
+		template! = PZKA_FType_shared2Doors_nr,
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_DoorRearLeft_nr,
+			}
+		}
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_DoorRearRight_nr,
+			}
+		}
+		template! = PZKA_FType_shared4seats,
+	}
+}
