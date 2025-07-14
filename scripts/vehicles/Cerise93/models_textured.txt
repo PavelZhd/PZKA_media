@@ -3,6 +3,7 @@ module Base
 	model PZKA_Vehicles_Cerise93_internals
 	{
 		mesh = vehicles/pzka_Cerise93|Vehicles_Interior,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkFranklinTriumph,
 		static = TRUE,
 		scale = 0.01,
@@ -11,6 +12,7 @@ module Base
 	model PZKA_Vehicles_Cerise93_SeatFL
 	{
 		mesh = vehicles/pzka_Cerise93|Seat_FrontLeft_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkChevalierCeriseSedanshell,
 		static = TRUE,
 		scale = 0.01,
@@ -18,6 +20,7 @@ module Base
 	model PZKA_Vehicles_Cerise93_SeatFR
 	{
 		mesh = vehicles/pzka_Cerise93|Seat_FrontRight_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkChevalierCeriseSedanshell,
 		static = TRUE,
 		scale = 0.01,
@@ -25,6 +28,7 @@ module Base
 	model PZKA_Vehicles_Cerise93_SeatRL
 	{
 		mesh = vehicles/pzka_Cerise93|Seat_RearLeft_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkChevalierCeriseSedanshell,
 		static = TRUE,
 		scale = 0.01,
@@ -32,6 +36,7 @@ module Base
 	model PZKA_Vehicles_Cerise93_SeatRR
 	{
 		mesh = vehicles/pzka_Cerise93|Seat_RearRight_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkChevalierCeriseSedanshell,
 		static = TRUE,
 		scale = 0.01,
