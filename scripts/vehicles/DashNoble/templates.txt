@@ -106,8 +106,6 @@ module Base
 	    	{
 				create = Vehicles.Create.Default,
 	    	}
-			door
-			{}		
 
 			anim Close
 			{
