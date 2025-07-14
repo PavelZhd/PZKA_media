@@ -3,6 +3,7 @@ module Base
 	model PZKA_Vehicles_Normal_internals_shared
 	{
 		mesh = vehicles/pzka_Normal|Comp_Interior_Short,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
 		static = TRUE,
 		scale = 0.01,
@@ -10,6 +11,7 @@ module Base
 	model PZKA_Vehicles_Normal_Sedan_internals
 	{
 		mesh = vehicles/pzka_Normal|Vehicles_Interior_Sedan,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
 		static = TRUE,
 		scale = 0.01,
@@ -17,6 +19,7 @@ module Base
 	model PZKA_Vehicles_Normal_internals
 	{
 		mesh = vehicles/pzka_Normal|Vehicles_Interior_TWD,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkFranklinTriumphTWDshell,
 		static = TRUE,
 		scale = 0.01,
@@ -24,6 +27,7 @@ module Base
 	model PZKA_Vehicles_Sedan_SeatFL
 	{
 		mesh = vehicles/pzka_Normal|Seat_FrontLeft_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
 		static = TRUE,
 		scale = 0.01,
@@ -31,6 +35,7 @@ module Base
 	model PZKA_Vehicles_Sedan_SeatFR
 	{
 		mesh = vehicles/pzka_Normal|Seat_FrontRight_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
 		static = TRUE,
 		scale = 0.01,
@@ -38,6 +43,7 @@ module Base
 	model PZKA_Vehicles_Sedan_SeatRL
 	{
 		mesh = vehicles/pzka_Normal|Seat_RearLeft_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
 		static = TRUE,
 		scale = 0.01,
@@ -45,6 +51,7 @@ module Base
 	model PZKA_Vehicles_Sedan_SeatRR
 	{
 		mesh = vehicles/pzka_Normal|Seat_RearRight_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
 		static = TRUE,
 		scale = 0.01,
@@ -54,6 +61,7 @@ module Base
 	model PZKA_Vehicles_NormalShort_internals
 	{
 		mesh = vehicles/pzka_Normal|Vehicles_Interior_Short,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkFranklinTriumphTWDshell,
 		static = TRUE,
 		scale = 0.01,
@@ -61,6 +69,7 @@ module Base
 	model PZKA_Vehicles_Hearse_SeatRL
 	{
 		mesh = vehicles/pzka_Normal|Seat_Hearse_RearLeft_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.01,
@@ -68,6 +77,7 @@ module Base
 	model PZKA_Vehicles_Hearse_SeatRR
 	{
 		mesh = vehicles/pzka_Normal|Seat_Hearse_RearRight_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.01,
@@ -76,6 +86,7 @@ module Base
 	model PZKA_Vehicles_Limo_internals
 	{
 		mesh = vehicles/pzka_Normal|Vehicles_Interior_Limo,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
 		static = TRUE,
 		scale = 0.01,
@@ -83,6 +94,7 @@ module Base
 	model PZKA_Vehicles_Limo_SeatRL
 	{
 		mesh = vehicles/pzka_Normal|Seat_Limo_RearLeft_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.01,
@@ -90,6 +102,7 @@ module Base
 	model PZKA_Vehicles_Limo_SeatRR
 	{
 		mesh = vehicles/pzka_Normal|Seat_Limo_RearRight_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.01,

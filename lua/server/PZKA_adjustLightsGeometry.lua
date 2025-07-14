@@ -23,10 +23,7 @@ FillPartsMap["Base.pzkChevalierLaserFire"] = {
     ["Filla4a5a"] = "a2a",
     ["Filla6a7a"] = "a3a",
 }
-FillPartsMap["Base.pzkChevalierLaserPoliceBulletinSheriff"] = FillPartsMap["Base.pzkChevalierLaserFire"]
-FillPartsMap["Base.pzkChevalierLaserPoliceKST"] = FillPartsMap["Base.pzkChevalierLaserFire"]
-FillPartsMap["Base.pzkChevalierLaserPoliceLouisvilleCounty"] = FillPartsMap["Base.pzkChevalierLaserFire"]
-FillPartsMap["Base.pzkChevalierLaserPoliceMuldraughPolice"] = FillPartsMap["Base.pzkChevalierLaserFire"]
+FillPartsMap["Base.pzkChevalierLaserPolice"] = FillPartsMap["Base.pzkChevalierLaserFire"]
 FillPartsMap["Base.pzkChevalierLaserRanger"] = FillPartsMap["Base.pzkChevalierLaserFire"]
 
 FillPartsMap["Base.pzkChevalierLaserLSU"] = {
@@ -60,10 +57,7 @@ FillPartsMap["Base.pzkFranklinGalloperFire"] = {
     ["Fill12345"] = "a0a1a",
     ["Fill678"] = "a2a",
 }
-FillPartsMap["Base.pzkFranklinGalloperPoliceKST"] = FillPartsMap["Base.pzkFranklinGalloperFire"]
-FillPartsMap["Base.pzkFranklinGalloperPoliceLouisvilleCounty"] = FillPartsMap["Base.pzkFranklinGalloperFire"]
-FillPartsMap["Base.pzkFranklinGalloperPoliceMuldraughPolice"] = FillPartsMap["Base.pzkFranklinGalloperFire"]
-FillPartsMap["Base.pzkFranklinGalloperPoliceBulletinSheriff"] = FillPartsMap["Base.pzkFranklinGalloperFire"]
+FillPartsMap["Base.pzkFranklinGalloperPolice"] = FillPartsMap["Base.pzkFranklinGalloperFire"]
 FillPartsMap["Base.pzkFranklinGalloperRanger"] = FillPartsMap["Base.pzkFranklinGalloperFire"]
 
 FillPartsMap["Base.pzkFranklinGalloperLSU"] = {

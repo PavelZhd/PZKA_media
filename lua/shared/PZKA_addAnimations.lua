@@ -142,15 +142,13 @@ local function ApplyAnimationProfiles()
 		if vehicleScript then 
 			vehicleScript:Load(vehicleId, "{ model { file = " .. model.m .. ",}}")
 			vehicleScript:Load(vehicleId, "{ template! = " .. model.l .. ",}")
-			
-			print("PZKA (42): trying to catch error : "..(template and "TEMPLATE" or "NULL").." -- "..(template.t or "NULL"))
 			vehicleScript:Load(vehicleId, "{ template! = " .. template.t .. ",}")
 			vehicleScript:Load(vehicleId, "{ template! = PZKA_EngineDoor,}")
 			for i, door in pairs(template.d) do
 				vehicleScript:Load(vehicleId, "{ template! = " .. doorTemplatesMap[door] .. ",}")
 			end
 			vehicleScript:Load(vehicleId, "{ template! = " .. template.r .. ",}")
-			print("PZKA (42): Seats enabled: "..(showSeatAnimation and "true" or "false").." on vehicle "..vehicleId)
+			print("VVA (41): Seats enabled: "..(showSeatAnimation and "true" or "false"))
 			if showSeatAnimation then
 				for i, door in pairs(template.s) do
 					vehicleScript:Load(vehicleId, "{ template! = " .. seatTemplatesMap[door] .. ",}")
