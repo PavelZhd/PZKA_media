@@ -67,13 +67,13 @@ module Base
 				file = PZKA_Vehicles_Laser_internals,
 			}			
 			category = nodisplay,
-            specificItem = false,
-            itemType = Base.LightBulb,
-            setAllModelsVisible = true,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			setAllModelsVisible = true,
 			lua
-	    	{
+			{
 				create = Vehicles.Create.Default,
-	    	}
+			}
 		}
 
 		passenger FrontLeft
@@ -114,68 +114,70 @@ module Base
 	}
 	template vehicle PZKA_Laser2D_shared {
 		part WindowFrontLeft
-        {
+		{
 			parent = DoorFrontLeft,
 			model Default
-        	{
-          		file = PZKA_Vehicles_Laser_WindowFrontLeft,
-        	}            		
+			{
+		  		file = PZKA_Vehicles_Laser_WindowFrontLeft,
+			}					
 		}
 		part WindowFrontRight
-        {	
-        	parent = DoorFrontRight,
+		{	
+			parent = DoorFrontRight,
 			model Default
-        	{
-            	file = PZKA_Vehicles_Laser_WindowFrontRight,
-            }
-	    }
+			{
+				file = PZKA_Vehicles_Laser_WindowFrontRight,
+			}
+		}
 		part WindowRearLeft
-        {	
-        	model Default
-        	{
-           		file = PZKA_Vehicles_Laser_WindowRearLeft,
-        	}
-        }
+		{	
+			model Default
+			{
+		   		file = PZKA_Vehicles_Laser_WindowRearLeft,
+			}
+		}
 		part WindowRearRight
-        {	
-        	model Default
-        	{
-           		file = PZKA_Vehicles_Laser_WindowRearRight,
-        	}
+		{	
+			model Default
+			{
+		   		file = PZKA_Vehicles_Laser_WindowRearRight,
+			}
 		}		
 		template! = PZKA_Laser_shared,
 	}
 	template vehicle PZKA_Laser5D_shared {
 		part WindowFrontLeft
-        {
+		{
 			parent = DoorFrontLeft,
 			model Default
-        	{
-        		file = PZKA_Vehicles_Laser5D_WindowFrontLeft,
-        	}            		
-        }
+			{
+				file = PZKA_Vehicles_Laser5D_WindowFrontLeft,
+			}					
+		}
 		part WindowFrontRight
-    	{	
-    		parent = DoorFrontRight,
+		{	
+			parent = DoorFrontRight,
 			model Default
-    		{
-        		file = PZKA_Vehicles_Laser5D_WindowFrontRight,
-    		}
+			{
+				file = PZKA_Vehicles_Laser5D_WindowFrontRight,
+			}
 	   	}
 		part WindowRearLeft
-    	{	
-    		model Default
-        	{
-            	file = PZKA_Vehicles_Laser5D_WindowRearLeft,
-        	}
-        }
+		{	
+			parent = DoorRearRight,
+			model Default
+			{
+				file = PZKA_Vehicles_Laser5D_WindowRearLeft,
+			}
+		}
 		part WindowRearRight
-        {	
-        	model Default
-    		{
-    			file = PZKA_Vehicles_Laser5D_WindowRearRight,
-    		}
-    	}
+		{	
+			parent = DoorRearRight,
+			model Default
+			{
+				file = PZKA_Vehicles_Laser5D_WindowRearRight,
+			}
+		}
 		template! = PZKA_Laser_shared,
 		part WindshieldRear
 		{
@@ -261,14 +263,14 @@ module Base
 				file = PZKA_Vehicles_Laser_Lightbar,
 			}			
 			category = nodisplay,
-            area = Engine,
-            specificItem = false,
-            itemType = Base.LightBulb,
-            setAllModelsVisible = true,
+			area = Engine,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			setAllModelsVisible = true,
 			lua
-	    	{
+			{
 				create = Vehicles.Create.Default,
-	    	}
+			}
 		}
 	}
 
