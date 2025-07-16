@@ -3,6 +3,7 @@ module Base
 	model PZKA_Vehicles_Bug_internals
 	{
 		mesh = vehicles/pzka_Bug|Vehicles_Interior,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_pzkContinentalBugshell,
 		static = TRUE,
 		scale = 0.01,
@@ -10,7 +11,7 @@ module Base
 	model PZKA_Vehicles_Bug_SeatFL
 	{
 		mesh = vehicles/pzka_Bug|Seat_FrontLeft_obj,
-
+		shader = vehiclewheel,		
 		texture = Vehicles/vehicle_pzkContinentalBugshell,
 		static = TRUE,
 		scale = 0.01,
@@ -18,7 +19,7 @@ module Base
 	model PZKA_Vehicles_Bug_SeatFR
 	{
 		mesh = vehicles/pzka_Bug|Seat_FrontRight_obj,
-
+		shader = vehiclewheel,		
 		texture = Vehicles/vehicle_pzkContinentalBugshell,
 		static = TRUE,
 		scale = 0.01,
