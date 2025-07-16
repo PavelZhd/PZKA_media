@@ -225,7 +225,7 @@ module Base
 	}
 	model PZKA_Vehicles_FType_CrewMed_Province_LightRR
 	{
-		mesh = vehicles/pzka_FType_rearlight|Light_CrewMed_Province_RearRight_obj,
+		mesh = vehicles/pzka_FType_rearlight|Light_CrewMed_Intruder_RearRight_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,

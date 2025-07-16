@@ -91,7 +91,7 @@ PZKA.CloneAnimationProfile("pzkStepVanPizza","pzkStepVanTacoVan","PZKA_Vehicle_S
 
 PZKA.CreateAnimationProfile("pzkVanBrig","PZKA_Vehicles_Van_Brig_a","PZKA_Van_Brig_Lights","PZKA_Van_Brig_animatedDoors",{"FLW","FRW","RLW","RRW"}, "PZKA_OpenBedVersion")
 PZKA.CreateAnimationProfile("pzkVanBox","PZKA_Vehicles_Van_Box_a","PZKA_Van_Box_Lights","PZKA_Van_Box_animatedDoors",{"FLW","FRW"}, "PZKA_RearDoorVersion")
-PZKA.CreateAnimationProfile("pzkVanCamper","PZKA_Vehicles_Van_Camper_a","PZKA_Van_Lights","PZKA_Van_Camper_animatedDoors",{"FLW","FRW","RL","RR"}, "PZKA_RearDoorVersion")
+PZKA.CreateAnimationProfile("pzkVanCamper","PZKA_Vehicles_Van_Camper_a","PZKA_Van_Lights","PZKA_Van_Camper_animatedDoors",{"FLW","FRW","RR"}, "PZKA_RearDoorVersion")
 PZKA.CloneAnimationProfile("pzkVanBoxAmbulance","pzkVanBox","PZKA_Vehicles_Van_BoxAmbulance_a","PZKA_Van_BoxAmbulance_Lights","PZKA_Van_BoxAmbulance_animatedDoors")
 PZKA.CloneAnimationProfile("pzkVanBoxFiretruck","pzkVanBoxAmbulance")
 PZKA.CreateAnimationProfile("pzkVanilaVanAmbulance", "PZKA_Vehicles_Van_Ambulance_a","PZKA_Van_Lights","PZKA_Van_McCoy_animatedDoors",{"FLW","FRW"}, "PZKA_RearDoorVersion")
