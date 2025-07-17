@@ -1,6 +1,6 @@
 require "Vehicles/ISUI/ISVehicleMenu"
 vvaLightsFunctionOverride = vvaLightsFunctionOverride or false
-if not (vvaLightsFunctionOverride > 1) then
+if not vvaLightsFunctionOverride or vvaLightsFunctionOverride < 1 then
 	vvaLightsFunctionOverride = 1
 	local Cached_ISVehicleMenu_onToggleHeadlights = ISVehicleMenu.onToggleHeadlights
 	function ISVehicleMenu.onToggleHeadlights(playerObj)
