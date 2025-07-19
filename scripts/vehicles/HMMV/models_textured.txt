@@ -1,0 +1,45 @@
+module Base
+{
+	model PZKA_Vehicles_HMMV_internals
+	{
+		mesh = vehicles/pzka_HMMV|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkHMMVShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_SeatFL
+	{
+		mesh = vehicles/pzka_HMMV|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkHMMVShell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_HMMV_SeatFR
+	{
+		mesh = vehicles/pzka_HMMV|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkHMMVShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_SeatRL
+	{
+		mesh = vehicles/pzka_HMMV|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkHMMVShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_SeatRR
+	{
+		mesh = vehicles/pzka_HMMV|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkHMMVShell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_HMMV_Battery
+	{
+		mesh = vehicles/pzka_HMMV|Battery_obj,
+		texture = WorldItems/CarBattery,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

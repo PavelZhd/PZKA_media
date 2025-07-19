@@ -1,0 +1,320 @@
+module Base
+{
+	template vehicle PZKA_HMMV_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_HMMV_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_HMMV_WindowFrontRight,
+            }
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_Windshield,
+			}			
+		}
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_SeatRR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_HMMV_Battery,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_HMMV_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle PZKA_HMMV_shared_4D {
+		template! = PZKA_HMMV_shared,
+		part WindowRearLeft
+        {	
+			parent = DoorRearLeft,
+         	model Default
+			{
+        		file = PZKA_Vehicles_HMMV_WindowRearLeft,
+       		}
+       	}
+		part WindowRearRight
+       	{	
+			parent = DoorRearRight,
+         	model Default
+            {
+            	file = PZKA_Vehicles_HMMV_WindowRearRight,
+            }
+        }	
+	}
+	template vehicle PZKA_HMMV_shared_RearWindow1 {
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_RearWindow1,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_HMMV_RearWindow1_Static,
+			}			
+		}
+	}
+	template vehicle PZKA_HMMV_shared_RearWindow3 {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_RearWindow3,
+			}
+		}
+	}	
+	template vehicle PZKA_HMMV_shared_RearWindow4 {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_RearWindow4,
+			}
+		}
+	}
+	template vehicle PZKA_HMMV_shared_2Doors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorFrontRight,
+			}
+		}
+	}
+	template vehicle PZKA_HMMV_shared_4Doors {
+		template! = PZKA_HMMV_shared_2Doors,
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorRearLeft,
+			}
+		}
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorRearRight,
+			}
+		}
+	}
+	template vehicle PZKA_HMMV_shared_Hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_Hood,
+			}
+			/*model BullBar
+			{
+				file = PZKA_Vehicles_HMMV_Bullbar,
+			}*/
+		}
+	}
+	
+	template vehicle PZKA_HMMV_shared_2Doors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorFrontRight_nr,
+			}
+		}
+	}
+	template vehicle PZKA_HMMV_shared_4Doors_nr {
+		template! = PZKA_HMMV_shared_2Doors_nr,
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorRearLeft_nr,
+			}
+		}
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorRearRight_nr,
+			}
+		}
+	}
+	template vehicle PZKA_HMMV_shared_Hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_Hood_nr,
+			}
+			/*model BullBar
+			{
+				file = PZKA_Vehicles_HMMV_Bullbar,
+			}*/
+		}
+	}
+
+	template vehicle PZKA_HMMV_1 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_Trunk_1,
+			}
+		}
+		template! = PZKA_HMMV_shared_4Doors,
+		template! = PZKA_HMMV_shared_Hood,
+		template! = PZKA_HMMV_shared_RearWindow1,
+		template! = PZKA_HMMV_shared_4D,
+	}
+	template vehicle PZKA_HMMV_1_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_Trunk_1_nr,
+			}
+		}
+		template! = PZKA_HMMV_shared_4Doors_nr,
+		template! = PZKA_HMMV_shared_Hood_nr,
+		template! = PZKA_HMMV_shared_RearWindow1,
+		template! = PZKA_HMMV_shared_4D,
+	}
+
+	template vehicle PZKA_HMMV_2 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_Trunk_2,
+			}
+		}
+		template! = PZKA_HMMV_shared_4Doors,
+		template! = PZKA_HMMV_shared_Hood,
+		template! = PZKA_HMMV_shared_4D,
+	}
+	template vehicle PZKA_HMMV_2_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_Trunk_2_nr,
+			}
+		}
+		template! = PZKA_HMMV_shared_4Doors_nr,
+		template! = PZKA_HMMV_shared_Hood_nr,
+		template! = PZKA_HMMV_shared_4D,
+	}
+
+	template vehicle PZKA_HMMV_3 {
+		template! = PZKA_HMMV_shared_4Doors,
+		template! = PZKA_HMMV_shared_Hood,
+		template! = PZKA_HMMV_shared_RearWindow3,
+		template! = PZKA_HMMV_shared_4D,
+	}
+	template vehicle PZKA_HMMV_3_nr {
+		template! = PZKA_HMMV_shared_4Doors_nr,
+		template! = PZKA_HMMV_shared_Hood_nr,
+		template! = PZKA_HMMV_shared_RearWindow3,
+		template! = PZKA_HMMV_shared_4D,
+	}
+
+	template vehicle PZKA_HMMV_4 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_Trunk_4,
+			}
+		}
+		template! = PZKA_HMMV_shared_2Doors,
+		template! = PZKA_HMMV_shared_Hood,
+		template! = PZKA_HMMV_shared_RearWindow4,
+		template! = PZKA_HMMV_shared,
+	}
+	template vehicle PZKA_HMMV_4_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_Trunk_4_nr,
+			}
+		}
+		template! = PZKA_HMMV_shared_2Doors_nr,
+		template! = PZKA_HMMV_shared_Hood_nr,
+		template! = PZKA_HMMV_shared_RearWindow4,
+		template! = PZKA_HMMV_shared,
+	}
+}
