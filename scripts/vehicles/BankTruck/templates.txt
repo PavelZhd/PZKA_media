@@ -17,14 +17,7 @@ module Base
                 file = PZKA_Vehicles_BankTrunk_WindowFrontRight,
             }       		
 	    }
-		part WindowMiddleRight
-    	{	
-        	parent = DoorMiddleRight,
-			model Default
-            {
-                file = PZKA_Vehicles_BankTrunk_WindowRearRight,
-            }       		
-	    }		
+		
 		
 		part Windshield
 		{
@@ -83,46 +76,40 @@ module Base
 		}
 	}
 
-
-	template vehicle PZKA_BankTrunk {
-		part DoorRear
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_BankTrunk_Trunk,
-			}
-		}
-		part DoorFrontLeft
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_BankTrunk_DoorFrontLeft,
-			}
-		}
-
-		part DoorFrontRight
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_BankTrunk_DoorFrontRight,
-			}
-		}
+	template vehicle PZKA_BankTrunk_MiddleDoor {
 		part DoorMiddleRight
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_BankTrunk_DoorRearRight,
+				file = PZKA_Vehicles_BankTrunk_DoorRearRight_nr,
 			}
 		}
+		part WindowMiddleRight
+    	{	
+        	parent = DoorMiddleRight,
+			model Default
+            {
+                file = PZKA_Vehicles_BankTrunk_WindowRearRight,
+            }       		
+	    }
+	}
 
-		part EngineDoor
+	template vehicle PZKA_BankTrunk_RearDoor {
+		part DoorRearRight
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_BankTrunk_Hood,
+				file = PZKA_Vehicles_BankTrunk_DoorRearRight_nr,
 			}
 		}
-		template! = PZKA_BankTrunk_shared,
+		part WindowRearRight
+    	{	
+        	parent = DoorRearRight,
+			model Default
+            {
+                file = PZKA_Vehicles_BankTrunk_WindowRearRight,
+            }       		
+	    }
 	}
 
 	template vehicle PZKA_BankTrunk_nr {
@@ -166,8 +153,14 @@ module Base
 		template! = PZKA_BankTrunk_shared,
 	}
 	
+	template vehicle PZKA_BankTrunk_Bank {
+		template! = PZKA_BankTrunk_nr,
+		template! = PZKA_BankTrunk_RearDoor,		
+	}
+
 	template vehicle PZKA_BankTrunk_lightbar {
 		template! = PZKA_BankTrunk_nr,
+		template! = PZKA_BankTrunk_MiddleDoor,	
 		part ATA2RoofLightbar
 		{
 			model Default

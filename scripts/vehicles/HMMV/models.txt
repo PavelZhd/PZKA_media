@@ -1,0 +1,268 @@
+module Base
+{
+	model PZKA_Vehicles_HMMV_1_a
+	{
+		mesh = vehicles/pzka_HMMV|Vehicles_HMMV_1,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_2_a
+	{
+		mesh = vehicles/pzka_HMMV|Vehicles_HMMV_2,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_3_a
+	{
+		mesh = vehicles/pzka_HMMV|Vehicles_HMMV_3,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_4_a
+	{
+		mesh = vehicles/pzka_HMMV|Vehicles_HMMV_4,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_HMMV_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_HMMV|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_DoorFrontRight
+	{
+		mesh = vehicles/pzka_HMMV|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_DoorRearLeft
+	{
+		mesh = vehicles/pzka_HMMV|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_DoorRearRight
+	{
+		mesh = vehicles/pzka_HMMV|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_HMMV|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_HMMV_WindowFrontRight
+	{
+		mesh = vehicles/pzka_HMMV|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_WindowRearLeft
+	{
+		mesh = vehicles/pzka_HMMV|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_WindowRearRight
+	{
+		mesh = vehicles/pzka_HMMV|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_Trunk_1
+	{
+		mesh = vehicles/pzka_HMMV|Trunk_1_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk1Bone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_Trunk_2
+	{
+		mesh = vehicles/pzka_HMMV|Trunk_2_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk2Bone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_Trunk_4
+	{
+		mesh = vehicles/pzka_HMMV|Trunk_4_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk4Bone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_Hood
+	{
+		mesh = vehicles/pzka_HMMV|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+		boneWeight = BullBarBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_Windshield
+	{
+		mesh = vehicles/pzka_HMMV|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_RearWindow1
+	{
+		mesh = vehicles/pzka_HMMV|RearWindow_1_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk1Bone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_RearWindow1_Static
+	{
+		mesh = vehicles/pzka_HMMV|RearWindow_1_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_RearWindow3
+	{
+		mesh = vehicles/pzka_HMMV|RearWindow_3_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_RearWindow4
+	{
+		mesh = vehicles/pzka_HMMV|RearWindow_4_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+
+	model PZKA_Vehicles_HMMV_1_nr_a
+	{
+		mesh = vehicles/pzka_HMMV|Vehicles_HMMV_1,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_2_nr_a
+	{
+		mesh = vehicles/pzka_HMMV|Vehicles_HMMV_2,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_3_nr_a
+	{
+		mesh = vehicles/pzka_HMMV|Vehicles_HMMV_3,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_4_nr_a
+	{
+		mesh = vehicles/pzka_HMMV|Vehicles_HMMV_4,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_HMMV_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_HMMV|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_HMMV|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_DoorRearLeft_nr
+	{
+		mesh = vehicles/pzka_HMMV|Door_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_DoorRearRight_nr
+	{
+		mesh = vehicles/pzka_HMMV|Door_RearRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_Bullbar
+	{
+		mesh = vehicles/pzka_HMMV|BullBar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = BullBarBone 1.0,
+	}
+
+	model PZKA_Vehicles_HMMV_Trunk_1_nr
+	{
+		mesh = vehicles/pzka_HMMV|Trunk_1_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk1Bone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_Trunk_2_nr
+	{
+		mesh = vehicles/pzka_HMMV|Trunk_2_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk2Bone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_Trunk_4_nr
+	{
+		mesh = vehicles/pzka_HMMV|Trunk_4_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk4Bone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_Hood_nr
+	{
+		mesh = vehicles/pzka_HMMV|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+		boneWeight = BullBarBone 1.0,
+	}
+}

@@ -1,0 +1,103 @@
+module Base
+{
+	model PZKA_Vehicles_HMMV_LightFL
+	{
+		mesh = vehicles/pzka_HMMV|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}	
+	model PZKA_Vehicles_HMMV_LightFR
+	{
+		mesh = vehicles/pzka_HMMV|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_1_LightRL
+	{
+		mesh = vehicles/pzka_HMMV|Light_RearLeft_1_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk1Bone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_1_LightRR
+	{
+		mesh = vehicles/pzka_HMMV|Light_RearRight_1_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk1Bone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_2_LightRL
+	{
+		mesh = vehicles/pzka_HMMV|Light_RearLeft_2_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_2_LightRR
+	{
+		mesh = vehicles/pzka_HMMV|Light_RearRight_2_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_HMMV_Light_front {
+		part HeadlightLeft 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_LightFR,
+			}
+		}
+	}
+	template vehicle PZKA_HMMV_Light_1 {
+		template! = PZKA_HMMV_Light_front,
+		part HeadlightRearLeft 
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_1_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_1_LightRR,
+			}
+		}
+	}
+	template vehicle PZKA_HMMV_Light_2 {
+		template! = PZKA_HMMV_Light_front,
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_2_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_2_LightRR,
+			}
+		}
+	}
+}
