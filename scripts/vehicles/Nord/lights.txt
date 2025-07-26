@@ -1,0 +1,96 @@
+module Base
+{	
+	model PZKA_Vehicles_Nord_LightFL
+	{
+		mesh = vehicles/pzka_Nord|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Nord_LightFR
+	{
+		mesh = vehicles/pzka_Nord|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Nord_Light_front {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Nord_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Nord_LightFR,
+			}
+		}
+	}
+	model PZKA_Vehicles_Nord_LightRL_S
+	{
+		mesh = vehicles/pzka_Nord|Light_RearLeft_S_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Nord_LightRR_S
+	{
+		mesh = vehicles/pzka_Nord|Light_RearRight_S_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Nord_Light_S {
+		template! = PZKA_Nord_Light_front,
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Nord_LightRL_S,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Nord_LightRR_S,
+			}
+		}
+	}
+
+	model PZKA_Vehicles_Nord_LightRL_W
+	{
+		mesh = vehicles/pzka_Nord|Light_RearLeft_W_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Nord_LightRR_W
+	{
+		mesh = vehicles/pzka_Nord|Light_RearRight_W_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Nord_Light_W {
+		template! = PZKA_Nord_Light_front,
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Nord_LightRL_W,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Nord_LightRR_W,
+			}
+		}
+	}
+}

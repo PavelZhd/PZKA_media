@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Hammerman_internals
+	{
+		mesh = vehicles/pzka_Hammerman|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkContinentalHammermanKnightshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Hammerman_SeatFL
+	{
+		mesh = vehicles/pzka_Hammerman|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkContinentalHammermanKnightshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Hammerman_SeatFR
+	{
+		mesh = vehicles/pzka_Hammerman|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkContinentalHammermanKnightshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Hammerman_SeatRL
+	{
+		mesh = vehicles/pzka_Hammerman|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_pzkContinentalHammermanKnightshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Hammerman_SeatRR
+	{
+		mesh = vehicles/pzka_Hammerman|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_pzkContinentalHammermanKnightshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}
