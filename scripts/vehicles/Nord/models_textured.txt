@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Nord_internals
+	{
+		mesh = vehicles/pzka_Nord|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkContinentalNordshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Nord_SeatFL
+	{
+		mesh = vehicles/pzka_Nord|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkContinentalNordshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Nord_SeatFR
+	{
+		mesh = vehicles/pzka_Nord|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkContinentalNordshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Nord_SeatRL
+	{
+		mesh = vehicles/pzka_Nord|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkContinentalNordshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Nord_SeatRR
+	{
+		mesh = vehicles/pzka_Nord|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkContinentalNordshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

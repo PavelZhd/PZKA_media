@@ -1,0 +1,169 @@
+module Base
+{
+	model PZKA_Vehicles_Nord_a
+	{
+		mesh = vehicles/pzka_Nord|V940S,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_NordWagon_a
+	{
+		mesh = vehicles/pzka_Nord|V940W,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Nord_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Nord|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Nord|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_DoorRearLeft_S
+	{
+		mesh = vehicles/pzka_Nord|Door_RearLeft_S_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_DoorRearRight_S
+	{
+		mesh = vehicles/pzka_Nord|Door_RearRight_S_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_DoorRearLeft_W
+	{
+		mesh = vehicles/pzka_Nord|Door_RearLeft_W_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_DoorRearRight_W
+	{
+		mesh = vehicles/pzka_Nord|Door_RearRight_W_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Nord|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Nord_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Nord|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_WindowRearLeft_S
+	{
+		mesh = vehicles/pzka_Nord|Window_RearLeft_S_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_WindowRearRight_S
+	{
+		mesh = vehicles/pzka_Nord|Window_RearRight_S_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_WindowRearLeft_W
+	{
+		mesh = vehicles/pzka_Nord|Window_RearLeft_W_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_WindowRearRight_W
+	{
+		mesh = vehicles/pzka_Nord|Window_RearRight_W_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_Trunk_S
+	{
+		mesh = vehicles/pzka_Nord|Trunk_S_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkSBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_Trunk_W
+	{
+		mesh = vehicles/pzka_Nord|Trunk_W_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkWUBone 1.0,
+		boneWeight = TrunkWLBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_Hood
+	{
+		mesh = vehicles/pzka_Nord|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_Windshield
+	{
+		mesh = vehicles/pzka_Nord|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Nord_RearWindow_S
+	{
+		mesh = vehicles/pzka_Nord|RearWindow_S_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Nord_RearWindow_W
+	{
+		mesh = vehicles/pzka_Nord|RearWindow_W_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkWUBone 1.0,
+	}
+	model PZKA_Vehicles_Nord_RearWindow_Ws
+	{
+		mesh = vehicles/pzka_Nord|RearWindow_W_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+}
