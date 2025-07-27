@@ -1,0 +1,152 @@
+module Base
+{
+	model PZKA_Vehicles_Pfeiffer_911_a
+	{
+		mesh = vehicles/pzka_Pfeiffer|P911,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Pfeiffer_911c_a
+	{
+		mesh = vehicles/pzka_Pfeiffer|P911c,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Pfeiffer_930_a
+	{
+		mesh = vehicles/pzka_Pfeiffer|P930,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Pfeiffer_930c_a	
+	{
+		mesh = vehicles/pzka_Pfeiffer|P930c,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	
+
+	model PZKA_Vehicles_Pfeiffer_DoorFrontLeft_roof
+	{
+		mesh = vehicles/pzka_Pfeiffer|Door_FrontLeft_roof_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Pfeiffer_DoorFrontRight_roof
+	{
+		mesh = vehicles/pzka_Pfeiffer|Door_FrontRight_roof_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Pfeiffer_DoorFrontLeft_cabr
+	{
+		mesh = vehicles/pzka_Pfeiffer|Door_FrontLeft_cabr_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Pfeiffer_DoorFrontRight_cabr
+	{
+		mesh = vehicles/pzka_Pfeiffer|Door_FrontRight_cabr_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+
+	model PZKA_Vehicles_Pfeiffer_WindowFrontLeft_roof
+	{
+		mesh = vehicles/pzka_Pfeiffer|Window_FrontLeft_roof_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Pfeiffer_WindowFrontRight_roof
+	{
+		mesh = vehicles/pzka_Pfeiffer|Window_FrontRight_roof_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Pfeiffer_WindowFrontLeft_cabr
+	{
+		mesh = vehicles/pzka_Pfeiffer|Window_FrontLeft_cabr_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Pfeiffer_WindowFrontRight_cabr
+	{
+		mesh = vehicles/pzka_Pfeiffer|Window_FrontRight_cabr_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_Pfeiffer_WindowRearLeft
+	{
+		mesh = vehicles/pzka_Pfeiffer|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Pfeiffer_WindowRearRight
+	{
+		mesh = vehicles/pzka_Pfeiffer|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Pfeiffer_Hood911
+	{
+		mesh = vehicles/pzka_Pfeiffer|Hood_911_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Hood911Bone 1.0,
+	}
+	model PZKA_Vehicles_Pfeiffer_Hood930
+	{
+		mesh = vehicles/pzka_Pfeiffer|Hood_930_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Hood930Bone 1.0,
+	}
+
+	model PZKA_Vehicles_Pfeiffer_Trunk
+	{
+		mesh = vehicles/pzka_Pfeiffer|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Pfeiffer_Windshield
+	{
+		mesh = vehicles/pzka_Pfeiffer|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Pfeiffer_RearWindow
+	{
+		mesh = vehicles/pzka_Pfeiffer|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+}

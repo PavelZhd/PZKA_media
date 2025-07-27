@@ -1,0 +1,32 @@
+module Base
+{
+	model PZKA_Vehicles_Spirit_internals
+	{
+		mesh = vehicles/pzka_Spirit|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkContinentalSpiritshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Spirit_SeatFL
+	{
+		mesh = vehicles/pzka_Spirit|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkContinentalSpiritshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Spirit_SeatFR
+	{
+		mesh = vehicles/pzka_Spirit|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkContinentalSpiritshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_Spirit_engine
+	{
+		mesh = vehicles/pzka_Spirit|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkContinentalPyrenean310shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	
+}

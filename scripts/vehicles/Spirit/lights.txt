@@ -1,0 +1,89 @@
+module Base
+{
+	model PZKA_Vehicles_Spirit_LightFL
+	{
+		mesh = vehicles/pzka_Spirit|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = LightLBone 1.0,
+	}	
+	model PZKA_Vehicles_Spirit_LightFR
+	{
+		mesh = vehicles/pzka_Spirit|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = LightRBone 1.0,
+	}
+	model PZKA_Vehicles_Spirit_LightFL_static
+	{
+		mesh = vehicles/pzka_Spirit|Light_FrontLeft_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Spirit_LightFR_static
+	{
+		mesh = vehicles/pzka_Spirit|Light_FrontRight_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Spirit_LightRL
+	{
+		mesh = vehicles/pzka_Spirit|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Spirit_LightRR
+	{
+		mesh = vehicles/pzka_Spirit|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+
+	template vehicle pzka_Spirit_Light {
+		part HeadlightLeft 
+		{
+			parent = PZKA_LightsHost,
+			model Default
+			{
+				file = PZKA_Vehicles_Spirit_LightFL,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_Spirit_LightFL_static,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = PZKA_LightsHost,
+			model Default
+			{
+				file = PZKA_Vehicles_Spirit_LightFR,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_Spirit_LightFR_static,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Spirit_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Spirit_LightRR,
+			}
+		}
+	}
+}

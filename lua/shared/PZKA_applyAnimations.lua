@@ -301,6 +301,15 @@ PZKA.CreateAnimationProfile("pzkContinentalHammermanKnight","PZKA_Vehicles_Hamme
 PZKA.CreateAnimationProfile("pzkContinentalNord","PZKA_Vehicles_Nord_a","PZKA_Nord_Light_S","PZKA_Nord_S",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkContinentalNordWagon","PZKA_Vehicles_NordWagon_a","PZKA_Nord_Light_W","PZKA_Nord_W",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
 
+PZKA.CreateAnimationProfile("pzkContinentalPfeiffer901","PZKA_Vehicles_Pfeiffer_911_a","pzka_Pfeiffer_Light","PZKA_Pfeiffer_P911",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+PZKA.CreateAnimationProfile("pzkContinentalPfeiffer901c","PZKA_Vehicles_Pfeiffer_911c_a","pzka_Pfeiffer_Light","PZKA_Pfeiffer_P911c",{"FL","FR"},"PZKA_TrunkDoorVersion")
+PZKA.CreateAnimationProfile("pzkContinentalPfeiffer930","PZKA_Vehicles_Pfeiffer_930_a","pzka_Pfeiffer_Light","PZKA_Pfeiffer_P930",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+PZKA.CreateAnimationProfile("pzkContinentalPfeiffer930c","PZKA_Vehicles_Pfeiffer_930c_a","pzka_Pfeiffer_Light","PZKA_Pfeiffer_P930c",{"FL","FR"},"PZKA_TrunkDoorVersion")
+
+PZKA.CreateAnimationProfile("pzkContinentalPyrenean310","PZKA_Vehicles_Pyre_a","PZKA_Pyre_Light","PZKA_Pyre",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+
+PZKA.CreateAnimationProfile("pzkContinentalSpirit","PZKA_Vehicles_Spirit_a","pzka_Spirit_Light","PZKA_Spirit",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+
 
 --[[
 PZKA.CreateAnimationProfile("CarNormal","PZKA_Vehicles_CarNormal_a","PZKA_CarNormal_animatedDoors", {"FLW","FRW","RLW","RRW"}, "PZKA_TrunkDoorVersion")
