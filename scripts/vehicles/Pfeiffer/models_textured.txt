@@ -4,6 +4,7 @@ module Base
 	{
 		mesh = vehicles/pzka_Pfeiffer|Vehicles_Interior,
 		texture = Vehicles/Vehicle_pzkContinentalPfeiffershell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -11,6 +12,7 @@ module Base
 	{
 		mesh = vehicles/pzka_Pfeiffer|Vehicles_Engine911,
 		texture = Vehicles/Vehicle_pzkContinentalPfeiffershell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -18,22 +20,23 @@ module Base
 	{
 		mesh = vehicles/pzka_Pfeiffer|Vehicles_Engine930,
 		texture = Vehicles/Vehicle_pzkContinentalPfeiffershell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Pfeiffer_SeatFL
 	{
 		mesh = vehicles/pzka_Pfeiffer|Seat_FrontLeft_obj,
-
 		texture = Vehicles/Vehicle_pzkContinentalPfeiffershell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}	
 	model PZKA_Vehicles_Pfeiffer_SeatFR
 	{
 		mesh = vehicles/pzka_Pfeiffer|Seat_FrontRight_obj,
-
 		texture = Vehicles/Vehicle_pzkContinentalPfeiffershell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}	
