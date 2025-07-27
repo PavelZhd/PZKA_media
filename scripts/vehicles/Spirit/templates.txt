@@ -1,0 +1,141 @@
+module Base
+{
+	template vehicle PZKA_Spirit_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Spirit_WindowFrontLeft,
+            }           		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Spirit_WindowFrontRight,
+            }           		
+	    }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Spirit_Windshield,
+			}			
+		}
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Spirit_RearWindow,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_Spirit_RearWindow_static,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Sport_Cabrio_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Sport_Cabrio_SeatFR,
+			}
+		}		
+		
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.190608 -0.002523 0.595552,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sport_Cabrio_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+    		itemType = Base.LightBulb,
+    		setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+		template! = pzka_LightHostAnimate,
+
+		/*passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.32 -0.23 -0.418,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}*/
+		/*passenger FrontRight
+		{
+			position inside
+			{
+				offset = -0.32 -0.23 -0.418,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}*/
+	}
+
+	template vehicle PZKA_Spirit {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Spirit_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Spirit_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Spirit_DoorFrontRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Spirit_Hood,
+			}
+		}
+		template! = PZKA_Spirit_shared,
+				
+		part PZKA_LightsHost
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Spirit_LightHost,
+			}
+		}
+	}
+}

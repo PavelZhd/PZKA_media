@@ -1,0 +1,250 @@
+module Base
+{
+	template vehicle PZKA_Pfeiffer_shared {
+		part WindowRearLeft
+        {
+			model Default
+            {
+            	file = PZKA_Vehicles_Pfeiffer_WindowRearLeft,
+            }
+        }
+		part WindowRearRight
+    	{	
+        	model Default
+            {
+                file = PZKA_Vehicles_Pfeiffer_WindowRearRight,
+            }
+	    }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pfeiffer_Windshield,
+			}			
+		}
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pfeiffer_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pfeiffer_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pfeiffer_SeatFR,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Pfeiffer_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+
+		/*passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.26 -0.168 -0.11,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}*/
+		/*passenger FrontRight
+		{
+			position inside
+			{
+				offset = -0.26 -0.168 -0.11,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}*/
+        area Engine
+        {
+            xywh = 0.000 -2.34 1.8 0.86,
+        }
+        area TruckBed
+        {
+            xywh = 0.000 2.34 1.8 0.86,
+        }
+	}
+	template vehicle PZKA_Pfeiffer_cabrioWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Pfeiffer_WindowFrontLeft_cabr,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Pfeiffer_WindowFrontRight_cabr,
+            }
+	    }
+		
+	}
+	template vehicle PZKA_Pfeiffer_roofWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Pfeiffer_WindowFrontLeft_roof,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Pfeiffer_WindowFrontRight_roof,
+            }
+	    }		
+	}
+
+	template vehicle PZKA_Pfeiffer_911Hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pfeiffer_Hood911,
+			}
+		}
+		part Interior 
+		{
+			model Engine 
+			{
+				file = PZKA_Vehicles_Pfeiffer_engine911,
+			}	
+		}
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.090919 -0.036111 -0.922386,
+			}
+		}
+	}
+	template vehicle PZKA_Pfeiffer_930Hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pfeiffer_Hood930,
+			}
+		}
+		part Interior 
+		{
+			model Engine 
+			{
+				file = PZKA_Vehicles_Pfeiffer_engine930,
+			}	
+		}
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_BatteryL,
+				offset = 0.154851 0.019543 -0.887637,
+			}
+		}
+	}
+
+	template vehicle PZKA_Pfeiffer_cabrioDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pfeiffer_DoorFrontLeft_cabr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pfeiffer_DoorFrontRight_cabr,
+			}
+		}
+	}
+	template vehicle PZKA_Pfeiffer_roofDoors {		
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pfeiffer_DoorFrontLeft_roof,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pfeiffer_DoorFrontRight_roof,
+			}
+		}
+	}
+
+	template vehicle PZKA_Pfeiffer_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pfeiffer_Trunk,
+			}
+		}
+	}
+	template vehicle PZKA_Pfeiffer_P911 {
+		template! = PZKA_Pfeiffer_Trunk,
+		template! = PZKA_Pfeiffer_roofDoors,
+		template! = PZKA_Pfeiffer_911Hood,
+		template! = PZKA_Pfeiffer_roofWindows,
+		template! = PZKA_Pfeiffer_shared,
+	}
+	template vehicle PZKA_Pfeiffer_P911c {
+		template! = PZKA_Pfeiffer_Trunk,
+		template! = PZKA_Pfeiffer_cabrioDoors,
+		template! = PZKA_Pfeiffer_911Hood,
+		template! = PZKA_Pfeiffer_cabrioWindows,
+		template! = PZKA_Pfeiffer_shared,
+	}
+	template vehicle PZKA_Pfeiffer_P930 {
+		template! = PZKA_Pfeiffer_Trunk,
+		template! = PZKA_Pfeiffer_roofDoors,
+		template! = PZKA_Pfeiffer_930Hood,
+		template! = PZKA_Pfeiffer_roofWindows,
+		template! = PZKA_Pfeiffer_shared,
+	}
+	template vehicle PZKA_Pfeiffer_P930c {
+		template! = PZKA_Pfeiffer_Trunk,
+		template! = PZKA_Pfeiffer_cabrioDoors,
+		template! = PZKA_Pfeiffer_930Hood,
+		template! = PZKA_Pfeiffer_cabrioWindows,
+		template! = PZKA_Pfeiffer_shared,
+	}
+
+}

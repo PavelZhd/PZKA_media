@@ -1,0 +1,114 @@
+module Base
+{
+
+	template vehicle PZKA_Pyre {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pyre_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pyre_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pyre_DoorFrontRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pyre_Hood,
+			}
+		}
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Pyre_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Pyre_WindowFrontRight,
+            }
+	    }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pyre_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Pyre_RearWindow,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_Pyre_RearWindow_static,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pyre_SeatFL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Pyre_SeatRR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.136393 -0.008852 0.783917,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Pyre_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+}
