@@ -23,7 +23,7 @@ module Base
 	}
     model PZKA_Vehicles_Spirit_engine
 	{
-		mesh = vehicles/pzka_Spirit|Vehicles_Interior,
+		mesh = vehicles/pzka_Spirit|Vehicles_Engine,
 		texture = Vehicles/Vehicle_pzkContinentalPyrenean310shell,
 		static = TRUE,
 		scale = 0.01,
