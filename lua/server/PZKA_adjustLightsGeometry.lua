@@ -195,6 +195,9 @@ function Vehicles.Init.AdjustLightGeometry(vehicle, part)
                     part:setModelVisible(modelName, false)
                 end
             end
+            if useFallback and fallback then
+                part:setModelVisible(fallback, true)
+            end
         else 
             for modelName, match in pairs(fillData) do
                 --part:setModelVisible(modelName, false)
