@@ -88,23 +88,38 @@ module Base
         }
 	}
 	template vehicle PZKA_Pfeiffer_cabrioWindows {
-		part WindowFrontLeft
+				part FauxWindowFrontLeft
         {
 			parent = DoorFrontLeft,
-			model Default
+			model Window
             {
             	file = PZKA_Vehicles_Pfeiffer_WindowFrontLeft_cabr,
-            }            		
+            }
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
         }
-		part WindowFrontRight
-    	{	
-        	parent = DoorFrontRight,
-			model Default
+		part FauxWindowRight
+    	{
+			parent = DoorFrontRight,
+        	model Window
             {
                 file = PZKA_Vehicles_Pfeiffer_WindowFrontRight_cabr,
             }
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
 	    }
-		
 	}
 	template vehicle PZKA_Pfeiffer_roofWindows {
 		part WindowFrontLeft
@@ -241,7 +256,7 @@ module Base
 	}
 	template vehicle PZKA_Pfeiffer_P930c {
 		template! = PZKA_Pfeiffer_Trunk,
-		template! = PZKA_Pfeiffer_cabrioDoors,
+		--template! = PZKA_Pfeiffer_cabrioDoors,
 		template! = PZKA_Pfeiffer_930Hood,
 		template! = PZKA_Pfeiffer_cabrioWindows,
 		template! = PZKA_Pfeiffer_shared,
