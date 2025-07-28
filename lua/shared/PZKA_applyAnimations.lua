@@ -277,7 +277,7 @@ PZKA.CreateAnimationProfile("pzkMastersonLadyZ","PZKA_Vehicles_LadyZ_a","pzka_La
 PZKA.CreateAnimationProfile("pzkPickupFranklin","PZKA_Vehicles_FranklinRaider_a","pzka_FranklinRaider_Light","PZKA_FranklinRaider",{"FLW","FRW"},"PZKA_OpenBedVersion")
 
 PZKA.CreateAnimationProfile("pzkFranklinBankTruck","PZKA_Vehicles_BankTrunk_nr_a","pzka_BankTrunk_Light","PZKA_BankTrunk_Bank",{"FLW","FRW","RR"},"PZKA_RearDoorVersion")
-PZKA.CreateAnimationProfile("pzkFranklinSwatTruckLouisvilleSWAT","PZKA_Vehicles_BankTrunk_nr_a","pzka_BankTrunk_Light","PZKA_BankTrunk_lightbar",{"FLW","FRW","MR"},"PZKA_RearDoorVersion")
+PZKA.CreateAnimationProfile("pzkFranklinSwatTruck","PZKA_Vehicles_BankTrunk_nr_a","pzka_BankTrunk_Light","PZKA_BankTrunk_lightbar",{"FLW","FRW","MR"},"PZKA_RearDoorVersion")
 
 PZKA.CreateAnimationProfile("pzkDashNoble","PZKA_Vehicles_DashNoble_a","pzka_DashNoble_Light","PZKA_DashNoble",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 
