@@ -2,14 +2,22 @@ local PZKA = require "PZKA_addAnimations"
 
 PZKA.CreateAnimationProfile("pzkChevalierCeriseSedan","PZKA_Vehicles_Sedan_Cerise_a","PZKA_Sedan_Lights_Cerise","PZKA_SedanFlat",{"FLW","FRW","RLW","RRW"}, "PZKA_TrunkDoorVersion")
 PZKA.CloneAnimationProfile("pzkChevalierCeriseDetective","pzkChevalierCeriseSedan","PZKA_Vehicles_Sedan_Cerise_a",false,"PZKA_SedanFlat_Detective")
-PZKA.CloneAnimationProfile("pzkChevalierCeriseSedanFire","pzkChevalierCeriseSedan","PZKA_Vehicles_Sedan_Cerise_nr_a",false,"PZKA_SedanFlat_Lightbar")
+if getActivatedMods():contains("\\SimpleLightbarsExpandedPZK") then
+    PZKA.CloneAnimationProfile("pzkChevalierCeriseSedanFire","pzkChevalierCeriseSedan","PZKA_Vehicles_Sedan_Cerise_nr_a",false,"PZKA_SedanFlat_nr")
+else
+    PZKA.CloneAnimationProfile("pzkChevalierCeriseSedanFire","pzkChevalierCeriseSedan","PZKA_Vehicles_Sedan_Cerise_nr_a",false,"PZKA_SedanFlat_Lightbar")
+end
 PZKA.CloneAnimationProfile("pzkChevalierCeriseSedanLSU","pzkChevalierCeriseSedanFire")
 PZKA.CloneAnimationProfile("pzkChevalierCeriseSedanMall","pzkChevalierCeriseSedanFire")
 PZKA.CloneAnimationProfile("pzkChevalierCeriseSedanPoliceKST","pzkChevalierCeriseSedanFire")
 PZKA.CloneAnimationProfile("pzkChevalierCeriseSedanPoliceLouisvilleCounty","pzkChevalierCeriseSedanFire")
 PZKA.CloneAnimationProfile("pzkChevalierCeriseSedanPoliceMuldraughPolice","pzkChevalierCeriseSedanFire")
 PZKA.CloneAnimationProfile("pzkChevalierCeriseSedanPoliceBulletinSheriff","pzkChevalierCeriseSedanFire")
-PZKA.CloneAnimationProfile("pzkChevalierCeriseSedanTaxi","pzkChevalierCeriseSedanFire","PZKA_Vehicles_Sedan_Cerise_nr_a",false,"PZKA_SedanFlat_TaxiFull")
+if getActivatedMods():contains("\\SimpleLightbarsExpandedPZK") then
+    PZKA.CloneAnimationProfile("pzkChevalierCeriseSedanTaxi","pzkChevalierCeriseSedanFire","PZKA_Vehicles_Sedan_Cerise_nr_a",false,"PZKA_SedanFlat_TaxiFull")
+else
+    PZKA.CloneAnimationProfile("pzkChevalierCeriseSedanTaxi","pzkChevalierCeriseSedanFire","PZKA_Vehicles_Sedan_Cerise_nr_a",false,"PZKA_SedanFlat_nr")
+end
 
 PZKA.CloneAnimationProfile("pzkDashHellion","pzkChevalierCeriseSedan","PZKA_Vehicles_Sedan_Hellion_a","PZKA_Sedan_Lights_Hellion","PZKA_SedanHellion")
 PZKA.CloneAnimationProfile("pzkDashHellionDetective","pzkDashHellion","PZKA_Vehicles_Sedan_Hellion_a",false,"PZKA_SedanHellion_Detective")
