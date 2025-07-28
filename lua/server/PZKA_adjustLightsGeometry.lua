@@ -188,12 +188,12 @@ function Vehicles.Init.AdjustLightGeometry(vehicle, part)
                 --print("PZKA checking model name "..modelName.. "|" .. match .. " : "..(string.find(match, skinId) or 'FALSE'))
                 if not fallback or string.find(match, "ada") then
                     fallback = modelName
-                end if
+                end
                 if string.find(match, skinId) then
                     part:setModelVisible(modelName, true)
                 else
                     part:setModelVisible(modelName, false)
-                end if
+                end
             end
         else 
             for modelName, match in pairs(fillData) do
