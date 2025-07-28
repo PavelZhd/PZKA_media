@@ -36,7 +36,7 @@ FillPartsMap["Base.pzkFranklinGalloper"] = {
     ["Filla5a6a7a"] = "a5a6a7a",
 }
 FillPartsMap["Base.pzkChevalierLaserModern"] = {
-    ["Filla0a1a"] = "a0a1a",
+    ["Filla0a1a"] = "ada0a1a",
     ["Filla2a3a"] = "a2a3a",
     ["Filla4a5a"] = "a4a5a",
     ["Filla6a7a"] = "a6a7a",
@@ -177,14 +177,23 @@ FillPartsMap["Base.pzkPickupFranklin"] = {
 
 
 function Vehicles.Init.AdjustLightGeometry(vehicle, part)
-    local fillData = FillPartsMap[vehicle:getScriptName()]    
+    local fillData = FillPartsMap[vehicle:getScriptName()]
     if fillData then
         if part and part:getInventoryItem() then
             local skinId = "a"..(vehicle:getSkinIndex() or 'NULL' ).."a"    
+            local fallback = nil
+            local useFallback = true
             --print("PZKA: Skin index :\is "..skinId.." .. "..vehicle:getScriptName())
             for modelName, match in pairs(fillData) do
                 --print("PZKA checking model name "..modelName.. "|" .. match .. " : "..(string.find(match, skinId) or 'FALSE'))
-                part:setModelVisible(modelName, not not string.find(match, skinId))
+                if not fallback or string.find(match, "ada") then
+                    fallback = modelName
+                end if
+                if string.find(match, skinId) then
+                    part:setModelVisible(modelName, true)
+                else
+                    part:setModelVisible(modelName, false)
+                end if
             end
         else 
             for modelName, match in pairs(fillData) do
