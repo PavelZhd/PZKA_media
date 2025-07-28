@@ -1,5 +1,29 @@
 local FillPartsMap = {}
 
+local outModule = {}
+outModule.RegisterSkin = function (vehicleID, modelName, skinIndex) 
+    local veh = FillPartsMap[vehicleID]
+    if not veh then
+        veh = {}
+    end
+    local mod = veh[modelName]
+    mod = (mod or "a")..skinIndex.."a"
+    veh[modelName] = mod
+    FillPartsMap[vehicleID] = veh
+end
+outModule.GetModelName = function (VehicleId, skinId)
+    local fillData = FillPartsMap[VehicleId]    
+    if fillData and skinId then
+        local searchID = "a"..(skinId or "NONE") .. "a"
+        for modelName, match in pairs(fillData) do
+            if string.find(match, searchID) then
+                return modelName
+            end
+        end
+    end
+    return false
+end
+
 function AddFillMapRecord(vehicleId, map)
     FillPartsMap[vehicleId] = map
 end
@@ -184,3 +208,5 @@ function Vehicles.Init.AdjustLightGeometryDoor(vehicle, part)
     Vehicles.Init.Door(vehicle, part)
     Vehicles.Init.AdjustLightGeometry(vehicle, part)    
 end
+
+return outModule
