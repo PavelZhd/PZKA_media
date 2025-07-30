@@ -16,7 +16,7 @@ module Base
 	}
 	model PZKA_Vehicles_Limo_Hellion_a
 	{
-		mesh = vehicles/pzka_Normal|Vehicles_Limo_Hellion,
+		mesh = vehicles/pzka_Normal|Vehicles_Limo_Helion,
 		shader = vehicle_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.01,

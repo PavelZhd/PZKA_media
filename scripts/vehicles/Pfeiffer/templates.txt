@@ -256,7 +256,7 @@ module Base
 	}
 	template vehicle PZKA_Pfeiffer_P930c {
 		template! = PZKA_Pfeiffer_Trunk,
-		--template! = PZKA_Pfeiffer_cabrioDoors,
+		template! = PZKA_Pfeiffer_cabrioDoors,
 		template! = PZKA_Pfeiffer_930Hood,
 		template! = PZKA_Pfeiffer_cabrioWindows,
 		template! = PZKA_Pfeiffer_shared,

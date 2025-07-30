@@ -6,7 +6,7 @@ outModule.RegisterSkin = function (vehicleID, modelName, skinIndex)
     if not veh then
         veh = {}
     end
-    local mod = veh[modelName]
+    local mod = veh[modelName]    
     mod = (mod or "a")..skinIndex.."a"
     veh[modelName] = mod
     FillPartsMap[vehicleID] = veh
@@ -183,18 +183,20 @@ function Vehicles.Init.AdjustLightGeometry(vehicle, part)
             local skinId = "a"..(vehicle:getSkinIndex() or 'NULL' ).."a"    
             local fallback = nil
             local useFallback = true
-            --print("PZKA: Skin index :\is "..skinId.." .. "..vehicle:getScriptName())
+            print("PZKA: Skin index :\is "..skinId.." .. "..vehicle:getScriptName())
             for modelName, match in pairs(fillData) do
-                --print("PZKA checking model name "..modelName.. "|" .. match .. " : "..(string.find(match, skinId) or 'FALSE'))
+                print("PZKA checking model name "..modelName.. "|" .. match .. " : "..(string.find(match, skinId) or 'FALSE'))
                 if not fallback or string.find(match, "ada") then
                     fallback = modelName
                 end
                 if string.find(match, skinId) then
                     part:setModelVisible(modelName, true)
+                    useFallback = false
                 else
                     part:setModelVisible(modelName, false)
                 end
             end
+            print("PZKA: fallback needed : "..(useFallback and "TRUE" or "FALSE").." .. "..(fallback or "NONE").." .. "..vehicle:getScriptName())
             if useFallback and fallback then
                 part:setModelVisible(fallback, true)
             end
