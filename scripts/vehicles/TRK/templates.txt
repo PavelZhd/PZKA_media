@@ -1,12 +1,12 @@
 module Base
 {
-	template vehicle PZKA_Peterbuilt_shared {
+	template vehicle PZKA_TRK_shared {
 		part WindowFrontLeft
         {
 			parent = DoorFrontLeft,
 			model Default
             {
-            	file = PZKA_Vehicles_Peterbuilt_WindowFrontLeft,
+            	file = PZKA_Vehicles_TRK_WindowFrontLeft,
             }            		
         }
 		part WindowFrontRight
@@ -14,7 +14,7 @@ module Base
         	parent = DoorFrontRight,
 			model Default
             {
-                file = PZKA_Vehicles_Peterbuilt_WindowFrontRight,
+                file = PZKA_Vehicles_TRK_WindowFrontRight,
             }
 	    }		
 		
@@ -22,7 +22,7 @@ module Base
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Peterbuilt_Windshield,
+				file = PZKA_Vehicles_TRK_Windshield,
 			}			
 		}
 
@@ -30,14 +30,14 @@ module Base
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Peterbuilt_SeatFL,
+				file = PZKA_Vehicles_TRK_SeatFL,
 			}
 		}
 		part SeatFrontRight 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Peterbuilt_SeatFR,
+				file = PZKA_Vehicles_TRK_SeatFR,
 			}
 		}
 
@@ -46,7 +46,7 @@ module Base
 			model Default 
 			{
 				file = PZKA_Battery,
-				offset = -0.095384 0.357026 1.3069,
+				offset = -0.197341 0.768817 0.496056,
 			}
 		}
 
@@ -54,7 +54,7 @@ module Base
 		{
 			model Default 
 			{
-				file = PZKA_Vehicles_Peterbuilt_internals,
+				file = PZKA_Vehicles_TRK_internals,
 			}			
 			category = nodisplay,
             specificItem = false,
@@ -66,35 +66,46 @@ module Base
 	    	}
 		}
 
-		passenger FrontLeft
+		/*passenger FrontLeft
 		{
 			position inside
 			{
 				offset = 0.346 0.67 1.48,
 				rotate = 0.0000 0.0000 0.0000,
 			}
-		}
-		passenger FrontRight
+		}*/
+		/*passenger FrontRight
 		{
 			position inside
 			{
 				offset = -0.346 0.67 1.48,
 				rotate = 0.0000 0.0000 0.0000,
 			}
-		}
+		}*/
         area Engine
         {
-            xywh = 0.000 2.7 4.04 1.22,
+            xywh = -1.61 0.703 0.92 1.58,
         }
+		area Headlights
+		{
+			xywh = 0.000 3.05 1.72 0.92,
+		}
 	}
 
-	template vehicle PZKA_Peterbuilt {
 
+	template vehicle PZKA_TRK_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TRK_Trunk_nr,
+			}
+		}
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Peterbuilt_DoorFrontLeft,
+				file = PZKA_Vehicles_TRK_DoorFrontLeft_nr,
 			}
 		}
 
@@ -102,7 +113,7 @@ module Base
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Peterbuilt_DoorFrontRight,
+				file = PZKA_Vehicles_TRK_DoorFrontRight_nr,
 			}
 		}
 
@@ -110,37 +121,9 @@ module Base
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Peterbuilt_Hood,
+				file = PZKA_Vehicles_TRK_Hood_nr,
 			}
 		}
-		template! = PZKA_Peterbuilt_shared,
-	}
-
-	template vehicle PZKA_Peterbuilt_nr {
-
-		part DoorFrontLeft
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Peterbuilt_DoorFrontLeft_nr,
-			}
-		}
-
-		part DoorFrontRight
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Peterbuilt_DoorFrontRight_nr,
-			}
-		}
-
-		part EngineDoor
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Peterbuilt_Hood_nr,
-			}
-		}
-		template! = PZKA_Peterbuilt_shared,
+		template! = PZKA_TRK_shared,
 	}
 }

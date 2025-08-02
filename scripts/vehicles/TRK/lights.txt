@@ -1,0 +1,64 @@
+module Base
+{
+	model PZKA_Vehicles_TRK_LightFL
+	{
+		mesh = vehicles/pzka_TRK|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_TRK_LightFR
+	{
+		mesh = vehicles/pzka_TRK|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_TRK_LightRL
+	{
+		mesh = vehicles/pzka_TRK|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_TRK_LightRR
+	{
+		mesh = vehicles/pzka_TRK|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle pzka_TRK_Light {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TRK_LightFL,
+			}
+			area = Headlights,
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TRK_LightFR,
+			}
+			area = Headlights,
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TRK_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TRK_LightRR,
+			}
+		}
+	}
+}

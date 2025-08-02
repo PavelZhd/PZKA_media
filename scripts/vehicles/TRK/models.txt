@@ -1,0 +1,68 @@
+module Base
+{
+	model PZKA_Vehicles_TRK_nr_a
+	{
+		mesh = vehicles/pzka_TRK|TRK,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_TRK_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_TRK|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_TRK_WindowFrontRight
+	{
+		mesh = vehicles/pzka_TRK|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	
+	model PZKA_Vehicles_TRK_Windshield
+	{
+		mesh = vehicles/pzka_TRK|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_TRK_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_TRK|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_TRK_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_TRK|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_TRK_Hood_nr
+	{
+		mesh = vehicles/pzka_TRK|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_TRK_Trunk_nr
+	{
+		mesh = vehicles/pzka_TRK|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+}

@@ -36,6 +36,7 @@ module Base
 			{
 				file = PZKA_Vehicles_Bug_LightFL,
 			}
+			area = TruckBed,
 		}
 		part HeadlightRight 
 		{
@@ -43,6 +44,7 @@ module Base
 			{
 				file = PZKA_Vehicles_Bug_LightFR,
 			}
+			area = TruckBed,
 		}
 		part HeadlightRearLeft 
 		{
@@ -50,6 +52,7 @@ module Base
 			{
 				file = PZKA_Vehicles_Bug_LightRL,
 			}
+			area = Engine,
 		}
 		part HeadlightRearRight 
 		{
@@ -57,6 +60,7 @@ module Base
 			{
 				file = PZKA_Vehicles_Bug_LightRR,
 			}
+			area = Engine,
 		}
 	}
 }
