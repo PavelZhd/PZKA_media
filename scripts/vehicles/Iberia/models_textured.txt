@@ -1,0 +1,24 @@
+module Base
+{
+	model PZKA_Vehicles_Iberia_internals
+	{
+		mesh = vehicles/pzka_Iberia|Vehicles_Interior,
+		texture = Vehicles/_IberiaVehicle_pzkMastersonIberia1shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Iberia_SeatFL
+	{
+		mesh = vehicles/pzka_Iberia|Seat_FrontLeft_obj,
+		texture = Vehicles/_IberiaVehicle_pzkMastersonIberia1shell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Iberia_SeatFR
+	{
+		mesh = vehicles/pzka_Iberia|Seat_FrontRight_obj,
+		texture = Vehicles/_IberiaVehicle_pzkMastersonIberia1shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

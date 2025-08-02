@@ -1,0 +1,108 @@
+module Base
+{
+	model PZKA_Vehicles_IberiaP_a
+	{
+		mesh = vehicles/pzka_Iberia|IberiaP,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_IberiaW_a
+	{
+		mesh = vehicles/pzka_Iberia|IberiaW,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_IberiaW2_a
+	{
+		mesh = vehicles/pzka_Iberia|IberiaW2,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Iberia_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Iberia|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Iberia_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Iberia|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Iberia_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Iberia|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Iberia_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Iberia|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Iberia_TrunkP
+	{
+		mesh = vehicles/pzka_Iberia|Trunk_P_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLBone 1.0,
+	}
+	model PZKA_Vehicles_Iberia_TrunkW
+	{
+		mesh = vehicles/pzka_Iberia|Trunk_W_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLBone 1.0,
+		boneWeight = TrunkUBone 1.0,
+	}
+	model PZKA_Vehicles_Iberia_Hood
+	{
+		mesh = vehicles/pzka_Iberia|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Iberia_Windshield
+	{
+		mesh = vehicles/pzka_Iberia|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Iberia_RearWindowP
+	{
+		mesh = vehicles/pzka_Iberia|RearWindow_P_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Iberia_RearWindowW
+	{
+		mesh = vehicles/pzka_Iberia|RearWindow_W_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Iberia_RearWindowW_statis
+	{
+		mesh = vehicles/pzka_Iberia|RearWindow_W_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+}

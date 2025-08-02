@@ -1,0 +1,157 @@
+module Base
+{
+	template vehicle PZKA_Iberia_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Iberia_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Iberia_WindowFrontRight,
+            }
+	    }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Iberia_Windshield,
+			}			
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Iberia_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Iberia_SeatFR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.192442 -0.062833 0.891952,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Iberia_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}	
+	}
+	template vehicle PZKA_IberiaP_shared {
+		template! = PZKA_Iberia_shared,
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Iberia_RearWindowP,
+			}			
+		}
+	}
+	template vehicle PZKA_IberiaW2_shared {
+		template! = PZKA_Iberia_shared,
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Iberia_RearWindowW,
+			}
+		}
+	}
+	template vehicle PZKA_IberiaW_shared {
+		template! = PZKA_IberiaW2_shared,
+		part WindshieldRear
+		{
+			model Static
+			{
+				file = PZKA_Vehicles_Iberia_RearWindowW_statis,
+			}
+		}
+	}
+	template vehicle PZKA_Iberia_doors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Iberia_DoorFrontLeft,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Iberia_DoorFrontRight,
+			}
+		}		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Iberia_Hood,
+			}
+		}
+	}
+	template vehicle PZKA_IberiaP {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Iberia_TrunkP,
+			}
+		}
+		template! = PZKA_Iberia_doors,
+		template! = PZKA_IberiaP_shared,
+	}
+	template vehicle PZKA_IberiaW {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Iberia_TrunkW,
+			}
+		}
+		template! = PZKA_Iberia_doors,
+		template! = PZKA_IberiaW_shared,
+	}
+	template vehicle PZKA_IberiaW2 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Iberia_TrunkW,
+			}
+		}
+		template! = PZKA_Iberia_doors,
+		template! = PZKA_IberiaW2_shared,
+	}
+	
+}
