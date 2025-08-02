@@ -1694,14 +1694,14 @@ module Base
 			anim Close
 			{
 				anim = Trunk_closing,
-				rate = 2.5,
+				rate = 1.25,
 			}
 
 			anim Open
 			{
 				anim = Trunk_closing,
 				reverse = TRUE,
-				rate = 2.0,
+				rate = 1.0,
 			}
 
 			anim Closed

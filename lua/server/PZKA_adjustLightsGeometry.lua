@@ -6,7 +6,7 @@ outModule.RegisterSkin = function (vehicleID, modelName, skinIndex)
     if not veh then
         veh = {}
     end
-    local mod = veh[modelName]
+    local mod = veh[modelName]    
     mod = (mod or "a")..skinIndex.."a"
     veh[modelName] = mod
     FillPartsMap[vehicleID] = veh
@@ -185,6 +185,7 @@ function Vehicles.Init.AdjustLightGeometry(vehicle, part)
                 end
                 if string.find(match, skinId) then
                     part:setModelVisible(modelName, true)
+                    useFallback = false
                 else
                     part:setModelVisible(modelName, false)
                 end
