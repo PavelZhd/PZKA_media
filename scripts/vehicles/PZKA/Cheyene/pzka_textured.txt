@@ -4,6 +4,7 @@ module Base
 	{
 		mesh = vehicles/pzka_Cheyene|Vehicles_Interior,
 		texture = Vehicles/Vehicle_pzkDashCheyeneshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -11,6 +12,7 @@ module Base
 	{
 		mesh = vehicles/pzka_Cheyene|Seat_FrontLeft_obj,
 		texture = Vehicles/Vehicle_pzkDashCheyeneshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}	
@@ -18,6 +20,7 @@ module Base
 	{
 		mesh = vehicles/pzka_Cheyene|Seat_FrontRight_obj,
 		texture = Vehicles/Vehicle_pzkDashCheyeneshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -25,6 +28,7 @@ module Base
 	{
 		mesh = vehicles/pzka_Cheyene|Seat_RearLeft_obj,
 		texture = Vehicles/Vehicle_pzkDashCheyeneshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -32,6 +36,7 @@ module Base
 	{
 		mesh = vehicles/pzka_Cheyene|Seat_RearRight_obj,
 		texture = Vehicles/Vehicle_pzkDashCheyeneshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}

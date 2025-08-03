@@ -4,6 +4,7 @@ module Base
 	{
 		mesh = vehicles/pzka_Iberia|Vehicles_Interior,
 		texture = Vehicles/_IberiaVehicle_pzkMastersonIberia1shell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -11,6 +12,7 @@ module Base
 	{
 		mesh = vehicles/pzka_Iberia|Seat_FrontLeft_obj,
 		texture = Vehicles/_IberiaVehicle_pzkMastersonIberia1shell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}	
@@ -18,6 +20,7 @@ module Base
 	{
 		mesh = vehicles/pzka_Iberia|Seat_FrontRight_obj,
 		texture = Vehicles/_IberiaVehicle_pzkMastersonIberia1shell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
