@@ -1,0 +1,24 @@
+module Base
+{
+	model PZKA_Vehicles_Deluxo_internals
+	{
+		mesh = vehicles/pzka_Deluxo|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkChevalierMarocashell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Deluxo_SeatFL
+	{
+		mesh = vehicles/pzka_Deluxo|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkChevalierMarocashell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Deluxo_SeatFR
+	{
+		mesh = vehicles/pzka_Deluxo|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkChevalierMarocashell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Cheyene_internals
+	{
+		mesh = vehicles/pzka_Cheyene|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkDashCheyeneshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cheyene_SeatFL
+	{
+		mesh = vehicles/pzka_Cheyene|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkDashCheyeneshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Cheyene_SeatFR
+	{
+		mesh = vehicles/pzka_Cheyene|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkDashCheyeneshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cheyene_SeatRL
+	{
+		mesh = vehicles/pzka_Cheyene|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkDashCheyeneshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cheyene_SeatRR
+	{
+		mesh = vehicles/pzka_Cheyene|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkDashCheyeneshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}
