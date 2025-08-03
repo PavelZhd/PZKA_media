@@ -1,0 +1,80 @@
+module Base
+{
+	model PZKA_Vehicles_Deluxo_a
+	{
+		mesh = vehicles/pzka_Deluxo|Vehicles_SportsCar,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Deluxo_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Deluxo|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Deluxo_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Deluxo|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_Deluxo_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Deluxo|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Deluxo_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Deluxo|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Deluxo_Trunk
+	{
+		mesh = vehicles/pzka_Deluxo|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Deluxo_Hood
+	{
+		mesh = vehicles/pzka_Deluxo|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Deluxo_Windshield
+	{
+		mesh = vehicles/pzka_Deluxo|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Deluxo_RearWindow
+	{
+		mesh = vehicles/pzka_Deluxo|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Deluxo_RearWindowStatic
+	{
+		mesh = vehicles/pzka_Deluxo|RearWindow_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+}
