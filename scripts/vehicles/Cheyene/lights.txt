@@ -29,7 +29,7 @@ module Base
 		scale = 0.01,
 	}
 
-	template vehicle PZKA_Cheyene_Light {
+	template vehicle PZKA_Cheyene_LightFront {
 		part HeadlightLeft 
 		{
 			model Default
@@ -44,6 +44,11 @@ module Base
 				file = PZKA_Vehicles_Cheyene_LightFR,
 			}
 		}
+		
+	}
+
+	template vehicle PZKA_Cheyene_Light {
+		template! = PZKA_Cheyene_LightFront,
 		part HeadlightRearLeft 
 		{
 			model Default
@@ -56,6 +61,39 @@ module Base
 			model Default
 			{
 				file = PZKA_Vehicles_Cheyene_LightRR,
+			}
+		}
+	}
+
+	model PZKA_Vehicles_Navajo_LightRL
+	{
+		mesh = vehicles/pzka_Cheyene|Light_RearLeft_N_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Navajo_LightRR
+	{
+		mesh = vehicles/pzka_Cheyene|Light_RearRight_N_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Navajo_Light {
+		template! = PZKA_Cheyene_LightFront,
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Navajo_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Navajo_LightRR,
 			}
 		}
 	}

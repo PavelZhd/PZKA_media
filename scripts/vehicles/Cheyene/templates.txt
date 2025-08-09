@@ -1,6 +1,6 @@
 module Base
 {
-	template vehicle PZKA_Cheyene_shared {
+	template vehicle PZKA_CheNava_shared {
 		part WindowFrontLeft
         {
 			parent = DoorFrontLeft,
@@ -17,23 +17,6 @@ module Base
                 file = PZKA_Vehicles_Cheyene_WindowFrontRight,
             }
 	    }
-		part WindowRearLeft
-        {	
-			parent = DoorRearLeft,
-         	model Default
-			{
-        		file = PZKA_Vehicles_Cheyene_WindowRearLeft,
-       		}
-       	}
-		part WindowRearRight
-       	{	
-			parent = DoorRearRight,
-         	model Default
-            {
-            	file = PZKA_Vehicles_Cheyene_WindowRearRight,
-            }
-        }		
-		
 		part Windshield
 		{
 			model Default
@@ -41,20 +24,6 @@ module Base
 				file = PZKA_Vehicles_Cheyene_Windshield,
 			}			
 		}
-
-		part WindshieldRear
-		{
-			parent = TrunkDoor,
-			model Default
-			{
-				file = PZKA_Vehicles_Cheyene_RearWindow,
-			}
-			model Static
-			{
-				file = PZKA_Vehicles_Cheyene_RearWindow_static,
-			}
-		}
-
 		part SeatFrontLeft 
 		{
 			model Default
@@ -69,23 +38,6 @@ module Base
 				file = PZKA_Vehicles_Cheyene_SeatFR,
 			}
 		}
-
-		part SeatRearLeft 
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Cheyene_SeatRL,
-			}
-		}
-
-		part SeatRearRight 
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Cheyene_SeatRR,
-			}
-		}
-
 		part Battery 
 		{
 			model Default 
@@ -110,15 +62,55 @@ module Base
 				create = Vehicles.Create.Default,
 	    	}
 		}
+
 	}
-	template vehicle PZKA_Cheyene {
-		part TrunkDoor
+
+	template vehicle PZKA_Cheyene_shared {
+		template! = PZKA_CheNava_shared,
+		part WindowRearLeft
+        {	
+			parent = DoorRearLeft,
+         	model Default
+			{
+        		file = PZKA_Vehicles_Cheyene_WindowRearLeft,
+       		}
+       	}
+		part WindowRearRight
+       	{	
+			parent = DoorRearRight,
+         	model Default
+            {
+            	file = PZKA_Vehicles_Cheyene_WindowRearRight,
+            }
+        }
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_RearWindow,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_Cheyene_RearWindow_static,
+			}
+		}
+		part SeatRearLeft 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Cheyene_Trunk,
+				file = PZKA_Vehicles_Cheyene_SeatRL,
 			}
 		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_SeatRR,
+			}
+		}
+	}
+	template vehicle PZKA_CheNava {
 		part DoorFrontLeft
 		{
 			model Default
@@ -126,12 +118,51 @@ module Base
 				file = PZKA_Vehicles_Cheyene_DoorFrontLeft,
 			}
 		}
-
 		part DoorFrontRight
 		{
 			model Default
 			{
 				file = PZKA_Vehicles_Cheyene_DoorFrontRight,
+			}
+		}
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_Hood,
+			}
+		}
+	}
+	template vehicle PZKA_CheNava_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_DoorFrontLeft,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_DoorFrontRight,
+			}
+		}
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_Hood,
+			}
+		}
+	}
+
+	template vehicle PZKA_Cheyene {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_Trunk,
 			}
 		}
 		part DoorRearLeft
@@ -148,14 +179,7 @@ module Base
 				file = PZKA_Vehicles_Cheyene_DoorRearRight,
 			}
 		}
-
-		part EngineDoor
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Cheyene_Hood,
-			}
-		}
+		template! = PZKA_CheNava,
 		template! = PZKA_Cheyene_shared,
 	}
 	template vehicle PZKA_Cheyene_nr {
@@ -164,21 +188,6 @@ module Base
 			model Default
 			{
 				file = PZKA_Vehicles_Cheyene_Trunk_nr,
-			}
-		}
-		part DoorFrontLeft
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Cheyene_DoorFrontLeft_nr,
-			}
-		}
-
-		part DoorFrontRight
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Cheyene_DoorFrontRight_nr,
 			}
 		}
 		part DoorRearLeft
@@ -196,13 +205,7 @@ module Base
 			}
 		}
 
-		part EngineDoor
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Cheyene_Hood_nr,
-			}
-		}
+		template! = PZKA_CheNava_nr,		
 		template! = PZKA_Cheyene_shared,
 	}
 	template vehicle PZKA_Cheyene_lightbar {
@@ -224,4 +227,40 @@ module Base
 	    	}
 		}
 	}
+
+	template vehicle PZKA_NavajoP {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_RearWindow_NP,
+			}
+		}
+		template! = PZKA_CheNava,
+		template! = PZKA_CheNava_shared,
+	}
+	template vehicle PZKA_NavajoW {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_Trunk_NW,
+			}
+		}
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_RearWindow_NW,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_Cheyene_RearWindow_NW_static,
+			}
+		}
+		template! = PZKA_CheNava,
+		template! = PZKA_CheNava_shared,
+	}
+
 }

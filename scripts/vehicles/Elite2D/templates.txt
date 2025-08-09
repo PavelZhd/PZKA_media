@@ -1,0 +1,138 @@
+module Base
+{
+
+	template vehicle PZKA_Elite2D {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Elite2D_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Elite2D_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Elite2D_DoorFrontRight,
+			}
+		}
+		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Elite2D_Hood,
+			}
+		}
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Elite2D_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Elite2D_WindowFrontRight,
+            }
+	    }
+		part WindowRearLeft
+        {	
+			model Default
+			{
+        		file = PZKA_Vehicles_Elite2D_WindowRearLeft,
+       		}
+       	}
+		part WindowRearRight
+       	{	
+			model Default
+            {
+            	file = PZKA_Vehicles_Elite2D_WindowRearRight,
+            }
+        }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Elite2D_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Elite2D_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Elite2D_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Elite2D_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Elite2D_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Elite2D_SeatRR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.254959 -0.037148 0.954759,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Elite2D_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+}

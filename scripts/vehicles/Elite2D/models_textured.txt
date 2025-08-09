@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Elite2D_internals
+	{
+		mesh = vehicles/pzka_Elite2D|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkDashElite2Dshel,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Elite2D_SeatFL
+	{
+		mesh = vehicles/pzka_Elite2D|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkDashElite2Dshel,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Elite2D_SeatFR
+	{
+		mesh = vehicles/pzka_Elite2D|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkDashElite2Dshel,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Elite2D_SeatRL
+	{
+		mesh = vehicles/pzka_Elite2D|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkDashElite2Dshel,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Elite2D_SeatRR
+	{
+		mesh = vehicles/pzka_Elite2D|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkDashElite2Dshel,
+		static = TRUE,
+		scale = 0.01,
+	}
+}
