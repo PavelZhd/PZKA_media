@@ -169,6 +169,10 @@ FillPartsMap["Base.pzkChevalierMaroca80"] = {
     ["Default"] = "a0a1a",
     ["Sport"] = "a2a3a",
 }
+FillPartsMap["Base.pzkDashPhoenix80"] = {
+    ["Default"] = "a0a2a4a",
+    ["Sport"] = "a1a3a5a",
+}
 
 FillPartsMap["Base.pzkPickupFranklin"] = {
     ["Raider1"] = "a0a",

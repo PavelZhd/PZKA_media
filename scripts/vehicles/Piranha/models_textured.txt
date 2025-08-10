@@ -1,0 +1,24 @@
+module Base
+{
+	model PZKA_Vehicles_Piranha_internals
+	{
+		mesh = vehicles/pzka_Piranha|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkDashPiranhashell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Piranha_SeatFL
+	{
+		mesh = vehicles/pzka_Piranha|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkDashPiranhashell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Piranha_SeatFR
+	{
+		mesh = vehicles/pzka_Piranha|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkDashPiranhashell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

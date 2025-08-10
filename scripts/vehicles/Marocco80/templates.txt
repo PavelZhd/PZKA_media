@@ -1,6 +1,6 @@
 module Base
 {
-	template vehicle pzka_Marocco80_shared {
+	template vehicle pzka_Marocco80_common {
 		part WindowFrontLeft
        	{
 			parent = DoorFrontLeft,
@@ -18,13 +18,7 @@ module Base
     		}
 	   	}
 		
-		part Windshield
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Marocco80_Windshield,
-			}			
-		}
+		
 
 		part WindshieldRear
 		{
@@ -75,14 +69,27 @@ module Base
 	    		}
 		}
 	}
-	template vehicle pzka_Marocco80_basicDoors {
-		part TrunkDoor
+	template vehicle pzka_Marocco80_shared {
+		template! = pzka_Marocco80_common,
+		part Windshield
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Marocco80_Trunk,
-			}
-		}		
+				file = PZKA_Vehicles_Marocco80_Windshield,
+			}			
+		}
+	}
+	template vehicle pzka_Phoenix75_shared {
+		template! = pzka_Marocco80_common,
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix75_Windshield,
+			}			
+		}
+	}
+	template vehicle pzka_Marocco80_basicDoors {	
 		part DoorFrontLeft
 		{
 			model Default
@@ -97,16 +104,8 @@ module Base
 				file = PZKA_Vehicles_Marocco80_DoorFrontRight,
 			}
 		}
-		part EngineDoor
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Marocco80_Hood,
-			}
-		}
-		template! = pzka_Marocco80_shared,		
 	}
-	template vehicle pzka_Marocco80 {
+	template vehicle pzka_Marocco80_basicRoof {	
 		template! = pzka_Marocco80_basicDoors,
 		part PZKA_fill
         {
@@ -124,8 +123,7 @@ module Base
             }
         }
 	}
-	template vehicle pzka_Marocco80_Sport {
-		template! = pzka_Marocco80,
+	template vehicle pzka_Marocco80_Sport_windows {
 		part WindowFrontLeft
        	{
 			model Sport
@@ -155,7 +153,10 @@ module Base
 			table install {
 				complete = Vehicles.Init.AdjustLightGeometry,
 			}
-	   	}
+	   	}		
+	}
+	template vehicle pzka_Marocco80_Sport_roof {
+		template! = pzka_Marocco80_basicRoof,
 		part DoorFrontLeft
 		{
 			model Sport
@@ -172,7 +173,6 @@ module Base
 				complete = Vehicles.Init.AdjustLightGeometry,
 			}
 		}
-
 		part DoorFrontRight
 		{
 			model Sport
@@ -202,16 +202,9 @@ module Base
             	init = Vehicles.Init.AdjustLightGeometry,
 	    	}		
         }
+		template! = pzka_Marocco80_Sport_windows,
 	}
-
-	template vehicle pzka_Marocco80_basicDoors_nr {
-		part TrunkDoor
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Marocco80_Trunk_nr,
-			}
-		}		
+	template vehicle pzka_Marocco80_basicDoors_nr {	
 		part DoorFrontLeft
 		{
 			model Default
@@ -226,14 +219,9 @@ module Base
 				file = PZKA_Vehicles_Marocco80_DoorFrontRight_nr,
 			}
 		}
-		part EngineDoor
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Marocco80_Hood_nr,
-			}
-		}
-		template! = pzka_Marocco80_shared,
+	}
+	template vehicle pzka_Marocco80_basicRoof_nr {	
+		template! = pzka_Marocco80_basicDoors_nr,
 		part PZKA_fill
         {
 			model Default
@@ -247,41 +235,11 @@ module Base
 			lua
 	    	{
 			    create = Vehicles.Create.Default,
-			}
-        }	
-	}
-	template vehicle pzka_Marocco80_Sport_nr {
-		template! = pzka_Marocco80_basicDoors_nr,
-		part WindowFrontLeft
-       	{
-			model Sport
-        	{
-        		file = PZKA_Vehicles_Marocco80_WindowFrontLeft_sport,
-    		}
-			lua
-			{
-				create = Vehicles.Create.Window,
-				init = Vehicles.Init.AdjustLightGeometryWindow,				
-			}
-			table install {
-				complete = Vehicles.Init.AdjustLightGeometry,
-			}
-    	}
-		part WindowFrontRight
-       	{	
-     		model Sport
-    		{
-        		file = PZKA_Vehicles_Marocco80_WindowFrontRight_sport,
-    		}
-			lua
-			{
-				create = Vehicles.Create.Window,
-				init = Vehicles.Init.AdjustLightGeometryWindow,				
-			}
-			table install {
-				complete = Vehicles.Init.AdjustLightGeometry,
-			}
-	   	}
+            }
+        }
+	}	
+	template vehicle pzka_Marocco80_Sport_doors_nr {
+		template! = pzka_Marocco80_basicRoof_nr,
 		part DoorFrontLeft
 		{
 			model Sport
@@ -298,7 +256,6 @@ module Base
 				complete = Vehicles.Init.AdjustLightGeometry,
 			}
 		}
-
 		part DoorFrontRight
 		{
 			model Sport
@@ -319,19 +276,77 @@ module Base
         {
 			model Sport
 			{
-				file = PZKA_Vehicles_Marocco80_Roof_sport_nr_a,
+				file = PZKA_Vehicles_Marocco80_Roof_sport_a,
 			}
 			setAllModelsVisible = false,
 			lua
 	    	{
-			    create = Vehicles.Create.Default,
+				create = Vehicles.Create.Default,
             	init = Vehicles.Init.AdjustLightGeometry,
 	    	}		
         }
+		template! = pzka_Marocco80_Sport_windows,
+	}
+
+
+	template vehicle pzka_Marocco80 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_Trunk,
+			}
+		}	
+		template! = pzka_Marocco80_Sport_roof,		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_Hood,
+			}
+		}
+		template! = pzka_Marocco80_shared,		
+	}
+
+	template vehicle pzka_Marocco80_basic_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_Trunk_nr,
+			}
+		}
+		template! = pzka_Marocco80_basicRoof_nr		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_Hood_nr,
+			}
+		}
+		template! = pzka_Marocco80_shared,			
+	}
+	template vehicle pzka_Marocco80_Sport_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_Trunk_nr,
+			}
+		}
+		template! = pzka_Marocco80_Sport_doors_nr		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_Hood_nr,
+			}
+		}
+		template! = pzka_Marocco80_shared,
 	}
 
 	template vehicle pzka_Marocco80_Lightbar {
-		template! = pzka_Marocco80_basicDoors_nr,
+		template! = pzka_Marocco80_basic_nr,
 		part ATA2RoofLightbar
 		{
 			model Normal
@@ -349,4 +364,61 @@ module Base
 	    	}
 		}
 	}
+
+	template vehicle pzka_Phoenix80 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_Trunk,
+			}
+		}	
+		template! = pzka_Marocco80_Sport_roof,		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix80_Hood,
+			}
+		}
+		template! = pzka_Marocco80_shared,		
+	}
+
+	template vehicle pzka_Phoenix75 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix75_Trunk,
+			}
+		}	
+		template! = pzka_Marocco80_basicDoors,		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix75_Hood,
+			}
+		}
+		template! = pzka_Phoenix75_shared,		
+	}
+	template vehicle pzka_Phoenix75_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix75_Trunk_nr,
+			}
+		}	
+		template! = pzka_Marocco80_basicDoors_nr,		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix75_Hood_nr,
+			}
+		}
+		template! = pzka_Phoenix75_shared,		
+	}
+
 }

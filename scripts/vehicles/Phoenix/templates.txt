@@ -1,0 +1,161 @@
+module Base
+{
+	template vehicle PZKA_Phoenix_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Phoenix_WindowFrontLeft,
+            }           		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Phoenix_WindowFrontRight,
+            }           		
+	    }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix_Windshield,
+			}			
+		}
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Sport_Cabrio_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Sport_Cabrio_SeatFR,
+			}
+		}		
+		
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.208985 0.002736 0.446101,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sport_Cabrio_internals,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create = Vehicles.Create.Default,
+	    		}
+		}
+		template! = pzka_LightHostAnimate,
+	}
+
+	template vehicle PZKA_Phoenix {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix_DoorFrontRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix_Hood,
+			}
+		}
+		template! = PZKA_Phoenix_shared,
+				
+		part PZKA_LightsHost
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix_LightHost,
+			}
+		}
+	}
+
+	template vehicle PZKA_Phoenix_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix_Trunk_nr,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix_DoorFrontRight_nr,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix_Hood_nr,
+			}
+		}
+		template! = PZKA_Phoenix_shared,
+		part PZKA_LightsHost
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix_LightHost,
+			}
+		}
+	}
+}
