@@ -4,6 +4,7 @@ module Base
 	{
 		mesh = vehicles/pzka_GTA|Vehicles_Interior,
 		texture = Vehicles/vehicle_pzkDashGTAshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -11,6 +12,7 @@ module Base
 	{
 		mesh = vehicles/pzka_GTA|Seat_FrontLeft_obj,
 		texture = Vehicles/vehicle_pzkDashGTAshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}	
@@ -18,6 +20,7 @@ module Base
 	{
 		mesh = vehicles/pzka_GTA|Seat_FrontRight_obj,
 		texture = Vehicles/vehicle_pzkDashGTAshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}

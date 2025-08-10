@@ -4,6 +4,7 @@ module Base
 	{
 		mesh = vehicles/pzka_Ohio|Vehicles_Interior,
 		texture = Vehicles/Vehicle_pzkDashOhioshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -11,6 +12,7 @@ module Base
 	{
 		mesh = vehicles/pzka_Ohio|Seat_FrontLeft_obj,
 		texture = Vehicles/Vehicle_pzkDashOhioshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}	
@@ -18,6 +20,7 @@ module Base
 	{
 		mesh = vehicles/pzka_Ohio|Seat_FrontRight_obj,
 		texture = Vehicles/Vehicle_pzkDashOhioshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -25,6 +28,7 @@ module Base
 	{
 		mesh = vehicles/pzka_Ohio|Seat_RearLeft_obj,
 		texture = Vehicles/Vehicle_pzkDashOhioshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
