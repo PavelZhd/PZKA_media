@@ -92,45 +92,12 @@ module Base
 	}
 
 	template vehicle pzka_DashNoble_LightHostAnimate {
+		template! = pzka_LightHostAnimate,
 		part PZKA_LightsHost
 		{
 			model Default
 			{
 				file = PZKA_Vehicles_DashNoble_LightHost,
-			}
-			category = nodisplay,
-            specificItem = false,
-            itemType = Base.LightBulb,
-            setAllModelsVisible = true,
-			lua
-	    	{
-				create = Vehicles.Create.Default,
-	    	}
-
-			anim Close
-			{
-				anim = Lights_open,
-				reverse = TRUE,
-				rate = 1,
-			}
-
-			anim Open
-			{
-				anim = Lights_open,
-				rate = 1,
-			}
-
-			anim Closed
-			{
-				anim = Lights_open,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = Lights_open,
-				reverse = TRUE,
-				animate = FALSE,
 			}
 		}
 	}

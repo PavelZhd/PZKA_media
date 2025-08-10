@@ -8,7 +8,7 @@ local modelExtras = {}
 local pendingExtras = {}
 local tcnt = 0;
 local mcnt = 0;
-local showSeatAnimation = true;
+local showSeatAnimation = not getActivatedMods():contains("VVA_cullseats");
 
 PZKAModule.DisableSeats = function() 
 	showSeatAnimation = false;
