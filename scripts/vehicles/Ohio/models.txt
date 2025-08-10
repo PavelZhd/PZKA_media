@@ -1,0 +1,48 @@
+module Base
+{
+	model PZKA_Vehicles_Ohio_a
+	{
+		mesh = vehicles/pzka_Ohio|Ohio,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ohio_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Ohio|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Ohio_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Ohio|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}	
+	model PZKA_Vehicles_Ohio_Trunk
+	{
+		mesh = vehicles/pzka_Ohio|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Ohio_Hood
+	{
+		mesh = vehicles/pzka_Ohio|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Ohio_Windshield
+	{
+		mesh = vehicles/pzka_Ohio|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+}

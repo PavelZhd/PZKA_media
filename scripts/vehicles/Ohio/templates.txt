@@ -1,0 +1,113 @@
+module Base
+{
+
+	template vehicle PZKA_Ohio {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Ohio_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Ohio_DoorFrontLeft,
+			}
+			lua
+			{
+				create = Vehicles.Create.Door25,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Ohio_DoorFrontRight,
+			}			
+			lua
+			{
+				create = Vehicles.Create.Door25,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
+			}
+		}
+		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Ohio_Hood,
+			}
+		}
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Ohio_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Ohio_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Ohio_SeatFL,
+			}
+		}
+		
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Ohio_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Ohio_SeatRL,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.141856 -0.021653 0.41176,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Ohio_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+}

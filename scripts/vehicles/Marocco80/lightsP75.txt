@@ -1,0 +1,62 @@
+module Base
+{
+	model PZKA_Vehicles_Phoenix75_LightFL
+	{
+		mesh = vehicles/pzka_Marocco80|Light_FrontLeft_P75_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Phoenix75_LightFR
+	{
+		mesh = vehicles/pzka_Marocco80|Light_FrontRight_P75_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Phoenix75_LightRL
+	{
+		mesh = vehicles/pzka_Marocco80|Light_RearLeft_P75_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Phoenix75_LightRR
+	{
+		mesh = vehicles/pzka_Marocco80|Light_RearRight_P75_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle pzka_Phoenix75_Light {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix75_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix75_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix75_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Phoenix75_LightRR,
+			}
+		}
+	}
+}

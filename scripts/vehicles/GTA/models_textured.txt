@@ -1,0 +1,24 @@
+module Base
+{
+	model PZKA_Vehicles_GTA_internals
+	{
+		mesh = vehicles/pzka_GTA|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkDashGTAshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_GTA_SeatFL
+	{
+		mesh = vehicles/pzka_GTA|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkDashGTAshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_GTA_SeatFR
+	{
+		mesh = vehicles/pzka_GTA|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkDashGTAshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

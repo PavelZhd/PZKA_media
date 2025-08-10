@@ -259,7 +259,7 @@ PZKA.CreateAnimationProfile("pzkChevalierMaroca","PZKA_Vehicles_Marocco_a","PZKA
 --PZKA.CloneAnimationProfile("pzkChevalierMarocaPoliceWP","pzkChevalierMarocaPoliceLV")
 --PZKA.CloneAnimationProfile("pzkChevalierMarocaPoliceMeade","pzkChevalierMarocaPoliceLV")
 
-PZKA.CreateAnimationProfile("pzkChevalierMaroca80","PZKA_Vehicles_Marocco80_Base_a","pzka_Marocco80_Light","pzka_Marocco80_Sport",{"FLW","FRW"}, "PZKA_TrunkDoorVersion")
+PZKA.CreateAnimationProfile("pzkChevalierMaroca80","PZKA_Vehicles_Marocco80_Base_a","pzka_Marocco80_Light","pzka_Marocco80",{"FLW","FRW"}, "PZKA_TrunkDoorVersion")
 --PZKA.CloneAnimationProfile("pzkChevalierMaroca80Bulletin","pzkChevalierMaroca80","PZKA_Vehicles_Marocco80_Base_nr_a",false,"pzka_Marocco80_Lightbar")
 --PZKA.CloneAnimationProfile("pzkChevalierMaroca80KST","pzkChevalierMaroca80Bulletin")
 --PZKA.CloneAnimationProfile("pzkChevalierMaroca80LV","pzkChevalierMaroca80Bulletin")
@@ -379,7 +379,22 @@ PZKA.CreateAnimationProfile("pzkDashCheyene","PZKA_Vehicles_Cheyene_a","PZKA_Che
 
 PZKA.CreateAnimationProfile("pzkDashDeluxo","PZKA_Vehicles_Deluxo_a","PZKA_Deluxo_Light","PZKA_Deluxo",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 
+PZKA.CreateAnimationProfile("pzkDashElite2D","PZKA_Vehicles_Elite2D_a","PZKA_Elite2D_Light","PZKA_Elite2D",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+PZKA.CreateAnimationProfile("pzkDashGTA","PZKA_Vehicles_GTA_a","PZKA_GTA_Light","PZKA_GTA",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 
+PZKA.CreateAnimationProfile("pzkDashNavajoP","PZKA_Vehicles_NavajoP_a","PZKA_Navajo_Light","PZKA_NavajoP",{"FLW","FRW"},"PZKA_OpenBedVersion")
+PZKA.CreateAnimationProfile("pzkDashNavajoW","PZKA_Vehicles_NavajoW_a","PZKA_Navajo_Light","PZKA_NavajoW",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+
+PZKA.CreateAnimationProfile("pzkDashOhio","PZKA_Vehicles_Ohio_a","PZKA_Ohio_Light","PZKA_Ohio",{"FL","FR"},"PZKA_TrunkDoorVersion",{"FL","FR","RL"})
+
+PZKA.CreateAnimationProfile("pzkDashPhoenix","PZKA_Vehicles_Phoenix_a","pzka_Phoenix_Light","PZKA_Phoenix",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+PZKA.CreateAnimationProfile("pzkDashPhoenixBandit","PZKA_Vehicles_Phoenix_nr_a","pzka_Phoenix_Light","PZKA_Phoenix_nr",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+
+PZKA.CreateAnimationProfile("pzkDashPhoenix80","PZKA_Vehicles_Phoehix80_Base_a","pzka_Phoenix80_Light","pzka_Phoenix80",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+PZKA.CreateAnimationProfile("pzkDashPhoenix75","PZKA_Vehicles_Phoehix75_Base_a","pzka_Phoenix75_Light","pzka_Phoenix75",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+PZKA.CreateAnimationProfile("pzkDashPhoenix75JP","PZKA_Vehicles_Phoehix75_Base_nr_a","pzka_Phoenix75_Light","pzka_Phoenix75_nr",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+
+PZKA.CreateAnimationProfile("pzkDashPiranha","PZKA_Vehicles_Piranha_a","PZKA_Piranha_Light","PZKA_Piranha",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 
 
 --[[

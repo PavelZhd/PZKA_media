@@ -1,0 +1,31 @@
+module Base
+{
+	model PZKA_Vehicles_Ohio_internals
+	{
+		mesh = vehicles/pzka_Ohio|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkDashOhioshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ohio_SeatFL
+	{
+		mesh = vehicles/pzka_Ohio|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkDashOhioshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Ohio_SeatFR
+	{
+		mesh = vehicles/pzka_Ohio|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkDashOhioshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ohio_SeatRL
+	{
+		mesh = vehicles/pzka_Ohio|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkDashOhioshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}
