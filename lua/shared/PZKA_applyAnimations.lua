@@ -35,7 +35,7 @@ PZKA.CloneAnimationProfile("pzkDashMayorDetective","pzkChevalierCeriseDetective"
 PZKA.CloneAnimationProfile("pzkDashMayorLSU","pzkChevalierCeriseSedanFire","PZKA_Vehicles_Sedan_Mayor_nr_a","PZKA_Sedan_Lights_Mayor")
 PZKA.CloneAnimationProfile("pzkDashMayorMall","pzkDashMayorLSU")
 if SLE then
-    PZKA.CloneAnimationProfile("pzkDashMayorPoliceMuldraughPolice","pzkChevalierCeriseSedanFire","PZKA_Vehicles_Sedan_Mayor_nr_a","PZKA_SedanFlat_nr")
+    PZKA.CloneAnimationProfile("pzkDashMayorPoliceMuldraughPolice","pzkChevalierCeriseSedanFire","PZKA_Vehicles_Sedan_Mayor_nr_a",false,"PZKA_SedanFlat_nr")
 else    
     PZKA.CloneAnimationProfile("pzkDashMayorPoliceMuldraughPolice","pzkDashMayorLSU")
 end

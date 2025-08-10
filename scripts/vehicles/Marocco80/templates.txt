@@ -316,7 +316,7 @@ module Base
 				file = PZKA_Vehicles_Marocco80_Trunk_nr,
 			}
 		}
-		template! = pzka_Marocco80_basicRoof_nr		
+		template! = pzka_Marocco80_basicRoof_nr,
 		part EngineDoor
 		{
 			model Default
