@@ -1897,4 +1897,18 @@ module Base
 			}
 		}
 	}
+	template vehicle PZKA_lightbar {
+		part ATA2RoofLightbar
+		{
+			category = nodisplay,
+            area = Engine,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
 }

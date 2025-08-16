@@ -430,6 +430,16 @@ PZKA.CreateAnimationProfile("pzkDashPhoenix75JP","PZKA_Vehicles_Phoehix75_Base_n
 
 PZKA.CreateAnimationProfile("pzkDashPiranha","PZKA_Vehicles_Piranha_a","PZKA_Piranha_Light","PZKA_Piranha",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 
+PZKA.CreateAnimationProfile("pzkDashRancherCabrio","PZKA_Vehicles_Offroad_C_a","PZKA_Offroad_Light","PZKA_Offroad_C",{"FL","FR"},"PZKA_TrunkDoorVersion")
+PZKA.CreateAnimationProfile("pzkDashRancherDinoPark","PZKA_Vehicles_Offroad_R_nr_a","PZKA_Offroad_Light","PZKA_Offroad_R_nr",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+PZKA.CloneAnimationProfile("pzkDashRancherMail","pzkDashRancherDinoPark")
+PZKA.CreateAnimationProfile("pzkDashRancherRanger","PZKA_Vehicles_Offroad_R_nr_a","PZKA_Offroad_Light","PZKA_Offroad_lightbar",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+
+PZKA.CreateAnimationProfile("pzkDashRunner","PZKA_Vehicles_Runner_a","PZKA_Runner_Light","PZKA_Runner",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+PZKA.CreateAnimationProfile("pzkDashRunnerGeneral","PZKA_Vehicles_Runner_nr_a","PZKA_Runner_Light","PZKA_Runner_general",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+
+
+-- ameliasmith1605 - ADD DISCORD
 
 --[[
 PZKA.CreateAnimationProfile("CarNormal","PZKA_Vehicles_CarNormal_a","PZKA_CarNormal_animatedDoors", {"FLW","FRW","RLW","RRW"}, "PZKA_TrunkDoorVersion")

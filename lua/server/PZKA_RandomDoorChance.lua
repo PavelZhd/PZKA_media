@@ -1,6 +1,13 @@
 local V = require "Vehicles"
 
 function Vehicles.Create.Door25(vehicle, part)
+    DoorChance(vehicle, part,25)
+end
+function Vehicles.Create.Door75(vehicle, part)
+    DoorChance(vehicle, part,25)
+end
+
+local function DoorChance(vehicle, part, chance)
     local doorFrontLeft = vehicle:getPartById("DoorFrontLeft");
 	if doorFrontLeft and doorFrontLeft ~= part then
         if doorFrontLeft:getInventoryItem() then
@@ -9,12 +16,10 @@ function Vehicles.Create.Door25(vehicle, part)
     else
         local roll = ZombRand(100)
         print("PZKAN: Door spawn roll" .. roll)
-        if roll <= 25 then
+        if roll <= chance then
             Vehicles.Create.Door(vehicle, part)
         end
     end
 end
 
-function Vehicles.Create.NOSPAWN(vehicle, part)
-    print("PZKAN: No spawn call")
-end
+return DoorChance

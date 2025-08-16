@@ -1,0 +1,24 @@
+module Base
+{
+	model PZKA_Vehicles_Offroad_internals
+	{
+		mesh = vehicles/pzka_Offroad|Vehicles_Interior,
+		texture = Vehicles/Vehicle_OffRoadRangershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Offroad_SeatFL
+	{
+		mesh = vehicles/pzka_Offroad|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_OffRoadRangershell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Offroad_SeatFR
+	{
+		mesh = vehicles/pzka_Offroad|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_OffRoadRangershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}
