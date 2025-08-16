@@ -1,0 +1,24 @@
+module Base
+{
+	model PZKA_Vehicles_Runner_internals
+	{
+		mesh = vehicles/pzka_Runner|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkDashRunnershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Runner_SeatFL
+	{
+		mesh = vehicles/pzka_Runner|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkDashRunnershell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Runner_SeatFR
+	{
+		mesh = vehicles/pzka_Runner|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkDashRunnershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}
