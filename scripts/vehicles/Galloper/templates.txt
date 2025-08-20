@@ -164,14 +164,16 @@ module Base
 	   	}
 		part WindowRearLeft
     	{	
-    		model Default
+			parent = DoorRearLeft,
+			model Default
         	{
             	file = PZKA_Vehicles_Laser5D_WindowRearLeft,
         	}
         }
 		part WindowRearRight
         {	
-        	model Default
+			parent = DoorRearRight,
+			model Default
     		{
     			file = PZKA_Vehicles_Laser5D_WindowRearRight,
     		}
