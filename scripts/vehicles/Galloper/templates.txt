@@ -164,7 +164,7 @@ module Base
 	   	}
 		part WindowRearLeft
 		{	
-			parent = DoorRearRight,
+			parent = DoorRearLeft,
 			model Default
 			{
 				file = PZKA_Vehicles_Laser5D_WindowRearLeft,
