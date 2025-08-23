@@ -1,0 +1,144 @@
+module Base
+{
+	model PZKA_Vehicles_FireTruck_Semi_nr_a
+	{
+		mesh = vehicles/pzka_FireTruck|Semi,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FireTruck_Ladder_nr_a
+	{
+		mesh = vehicles/pzka_FireTruck|FTLadderM,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FireTruck_nr_Pump_a
+	{
+		mesh = vehicles/pzka_FireTruck|FTPumperM,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_FireTruck_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_FireTruck|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_FireTruck_WindowFrontRight
+	{
+		mesh = vehicles/pzka_FireTruck|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_FireTruck_WindowRearLeft
+	{
+		mesh = vehicles/pzka_FireTruck|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_FireTruck_WindowRearRight
+	{
+		mesh = vehicles/pzka_FireTruck|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_FireTruck_WindowRearLeft_s
+	{
+		mesh = vehicles/pzka_FireTruck|Window_RearLeft_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FireTruck_WindowRearRight_s
+	{
+		mesh = vehicles/pzka_FireTruck|Window_RearRight_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_FireTruck_Windshield
+	{
+		mesh = vehicles/pzka_FireTruck|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_FireTruck_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_FireTruck|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_FireTruck_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_FireTruck|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_FireTruck_DoorRearLeft_nr
+	{
+		mesh = vehicles/pzka_FireTruck|Door_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_FireTruck_DoorRearRight_nr
+	{
+		mesh = vehicles/pzka_FireTruck|Door_RearRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_FireTruck_Hood_nr
+	{
+		mesh = vehicles/pzka_FireTruck|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_FireTruck_Trunk_nr
+	{
+		mesh = vehicles/pzka_FireTruck_Trunk|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk1Bone 1.0,
+		boneWeight = Trunk2Bone 1.0,
+		boneWeight = Trunk3Bone 1.0,
+		boneWeight = Trunk4Bone 1.0,
+		boneWeight = Trunk5Bone 1.0,
+		boneWeight = Trunk6Bone 1.0,
+		boneWeight = Trunk7Bone 1.0,
+		boneWeight = Trunk8Bone 1.0,
+	}
+
+	model PZKA_Vehicles_FireTruck_Lightbar
+	{
+		mesh = vehicles/pzka_FireTruck|Lighbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

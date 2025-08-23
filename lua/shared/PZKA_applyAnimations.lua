@@ -438,8 +438,15 @@ PZKA.CreateAnimationProfile("pzkDashRancherRanger","PZKA_Vehicles_Offroad_R_nr_a
 PZKA.CreateAnimationProfile("pzkDashRunner","PZKA_Vehicles_Runner_a","PZKA_Runner_Light","PZKA_Runner",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkDashRunnerGeneral","PZKA_Vehicles_Runner_nr_a","PZKA_Runner_Light","PZKA_Runner_general",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 
+PZKA.CreateAnimationProfile("pzkFireTruckFlatSemi","PZKA_Vehicles_FireTruck_Semi_nr_a","pzka_FireTruck_Light_S","PZKA_FireTruck_S_nr",{"FLW","FRW","RLW","RRW"},"PZKA_OpenBedVersion")
+PZKA.CreateAnimationProfile("pzkFireTruckFlatLadder","PZKA_Vehicles_FireTruck_Ladder_nr_a","pzka_FireTruck_Light_L","PZKA_FireTruck_L_nr",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
+PZKA.CreateAnimationProfile("pzkFireTruckFlatPumper","PZKA_Vehicles_FireTruck_nr_Pump_a","pzka_FireTruck_Light_L","PZKA_FireTruck_L_nr",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
 
--- ameliasmith1605 - ADD DISCORD
+PZKA.CreateAnimationProfile("pzkDashHEMTT6x6semi","PZKA_Vehicles_HEMTT_nr_a","pzka_HEMTT_Light","PZKA_HEMTT_nr",{"FLW","FRW"},"PZKA_OpenBedVersion")
+
+PZKA.CreateAnimationProfile("pzkFranklinIslander","PZKA_Vehicles_Islander_a","PZKA_Islander_Light","PZKA_Islander",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+
+
 
 --[[
 PZKA.CreateAnimationProfile("CarNormal","PZKA_Vehicles_CarNormal_a","PZKA_CarNormal_animatedDoors", {"FLW","FRW","RLW","RRW"}, "PZKA_TrunkDoorVersion")

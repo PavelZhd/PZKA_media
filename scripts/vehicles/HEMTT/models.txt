@@ -1,0 +1,61 @@
+module Base
+{
+	model PZKA_Vehicles_HEMTT_nr_a
+	{
+		mesh = vehicles/pzka_HEMTT|HEMMT,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_HEMTT_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_HEMTT|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_HEMTT_WindowFrontRight
+	{
+		mesh = vehicles/pzka_HEMTT|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	
+	model PZKA_Vehicles_HEMTT_Windshield
+	{
+		mesh = vehicles/pzka_HEMTT|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_HEMTT_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_HEMTT|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HEMTT_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_HEMTT|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HEMTT_Hood_nr
+	{
+		mesh = vehicles/pzka_HEMTT|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	
+}
