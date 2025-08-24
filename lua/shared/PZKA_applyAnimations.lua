@@ -1,6 +1,7 @@
 local PZKA = require "PZKA_addAnimations"
 
 local SLE = getActivatedMods():contains("\\SimpleLightbarsExpandedPZK")
+local VVE = getActivatedMods():contains("\\VVehicleEnhancer") or getActivatedMods():contains("\\Ze_VVehicleEnhancer_42B")
 
 PZKA.CreateAnimationProfile("pzkChevalierCeriseSedan","PZKA_Vehicles_Sedan_Cerise_a","PZKA_Sedan_Lights_Cerise","PZKA_SedanFlat",{"FLW","FRW","RLW","RRW"}, "PZKA_TrunkDoorVersion")
 PZKA.CloneAnimationProfile("pzkChevalierCeriseDetective","pzkChevalierCeriseSedan","PZKA_Vehicles_Sedan_Cerise_a",false,"PZKA_SedanFlat_Detective")
@@ -430,7 +431,11 @@ PZKA.CreateAnimationProfile("pzkDashPhoenix75JP","PZKA_Vehicles_Phoehix75_Base_n
 
 PZKA.CreateAnimationProfile("pzkDashPiranha","PZKA_Vehicles_Piranha_a","PZKA_Piranha_Light","PZKA_Piranha",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 
-PZKA.CreateAnimationProfile("pzkDashRancherCabrio","PZKA_Vehicles_Offroad_C_a","PZKA_Offroad_Light","PZKA_Offroad_C",{"FL","FR"},"PZKA_TrunkDoorVersion")
+if VVE then
+    PZKA.CreateAnimationProfile("pzkDashRancherCabrio","PZKA_VVE_Offroad_a","PZKA_VVE_Offroad_Light","PZKA_VVE_Offroad",{"FL","FR"},"PZKA_TrunkDoorVersion")
+else
+    PZKA.CreateAnimationProfile("pzkDashRancherCabrio","PZKA_Vehicles_Offroad_C_a","PZKA_Offroad_Light","PZKA_Offroad_C",{"FL","FR"},"PZKA_TrunkDoorVersion")
+end
 PZKA.CreateAnimationProfile("pzkDashRancherDinoPark","PZKA_Vehicles_Offroad_R_nr_a","PZKA_Offroad_Light","PZKA_Offroad_R_nr",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 PZKA.CloneAnimationProfile("pzkDashRancherMail","pzkDashRancherDinoPark")
 PZKA.CreateAnimationProfile("pzkDashRancherRanger","PZKA_Vehicles_Offroad_R_nr_a","PZKA_Offroad_Light","PZKA_Offroad_lightbar",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
@@ -445,6 +450,12 @@ PZKA.CreateAnimationProfile("pzkFireTruckFlatPumper","PZKA_Vehicles_FireTruck_nr
 PZKA.CreateAnimationProfile("pzkDashHEMTT6x6semi","PZKA_Vehicles_HEMTT_nr_a","pzka_HEMTT_Light","PZKA_HEMTT_nr",{"FLW","FRW"},"PZKA_OpenBedVersion")
 
 PZKA.CreateAnimationProfile("pzkFranklinIslander","PZKA_Vehicles_Islander_a","PZKA_Islander_Light","PZKA_Islander",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+
+PZKA.CreateAnimationProfile("pzkFreightlinerFlat","PZKA_Vehicles_Freight_S1_a","pzka_Freight_S_Light","PZKA_Freight",{"FLW","FRW"},"PZKA_OpenBedVersion")
+PZKA.CreateAnimationProfile("pzkFreightlinerFlat2","PZKA_Vehicles_Freight_S2_a","pzka_Freight_S_Light","PZKA_Freight",{"FLW","FRW"},"PZKA_OpenBedVersion")
+PZKA.CreateAnimationProfile("pzkFreightlinerTerminatorTow","PZKA_Vehicles_Freight_T_nr_a","pzka_Freight_T_Light","PZKA_Freight_nr",{"FLW","FRW"},"PZKA_OpenBedVersion")
+PZKA.CreateAnimationProfile("pzkFreightlinerFlatOptimus","PZKA_Vehicles_Freight_S1_nr_a","pzka_Freight_S_Light","PZKA_Freight_nr",{"FLW","FRW"},"PZKA_OpenBedVersion")
+PZKA.CloneAnimationProfile("pzkFreightlinerFlatSpiffo","pzkFreightlinerFlatOptimus")
 
 
 

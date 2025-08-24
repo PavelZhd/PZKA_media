@@ -1,13 +1,6 @@
 module Base
 {
-	template vehicle PZKA_Offroad_shared {
-		part Windshield
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Offroad_Windshield,
-			}			
-		}
+	template vehicle PZKA_Offroad_shared0 {
 		part SeatFrontLeft 
 		{
 			model Default
@@ -47,6 +40,16 @@ module Base
 				create = Vehicles.Create.Default,
 	    	}
 		}
+	}
+	template vehicle PZKA_Offroad_shared {
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Offroad_Windshield,
+			}			
+		}
+		template! = PZKA_Offroad_shared0,
 	}
 
 	template vehicle PZKA_Offroad_R_shared {
