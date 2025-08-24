@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Islander_internals
+	{
+		mesh = vehicles/pzka_Islander|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkFranklinIslandershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Islander_SeatFL
+	{
+		mesh = vehicles/pzka_Islander|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkFranklinIslandershell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Islander_SeatFR
+	{
+		mesh = vehicles/pzka_Islander|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkFranklinIslandershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Islander_SeatRL
+	{
+		mesh = vehicles/pzka_Islander|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkFranklinIslandershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Islander_SeatRR
+	{
+		mesh = vehicles/pzka_Islander|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkFranklinIslandershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

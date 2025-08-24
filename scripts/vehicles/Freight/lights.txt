@@ -1,0 +1,66 @@
+module Base
+{
+	model PZKA_Vehicles_Peterbuilt_LightFL
+	{
+		mesh = vehicles/pzka_Peterbuilt|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}	
+	model PZKA_Vehicles_Peterbuilt_LightFR
+	{
+		mesh = vehicles/pzka_Peterbuilt|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Peterbuilt_LightRL
+	{
+		mesh = vehicles/pzka_Peterbuilt|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Peterbuilt_LightRR
+	{
+		mesh = vehicles/pzka_Peterbuilt|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle pzka_Peterbuilt_Light {
+		part HeadlightLeft 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Peterbuilt_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Peterbuilt_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Peterbuilt_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Peterbuilt_LightRR,
+			}
+		}
+	}
+}

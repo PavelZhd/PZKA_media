@@ -1,0 +1,45 @@
+module Base
+{
+	model PZKA_Vehicles_FireTruck_internals
+	{
+		mesh = vehicles/pzka_FireTruck|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkFireTruckFlatshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FireTruck_SeatFL
+	{
+		mesh = vehicles/pzka_FireTruck|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkFireTruckFlatshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FireTruck_SeatFR
+	{
+		mesh = vehicles/pzka_FireTruck|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkFireTruckFlatshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FireTruck_SeatRL
+	{
+		mesh = vehicles/pzka_FireTruck|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkFireTruckFlatshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FireTruck_SeatRM
+	{
+		mesh = vehicles/pzka_FireTruck|Seat_RearMiddle_obj,
+		texture = Vehicles/Vehicle_pzkFireTruckFlatshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FireTruck_SeatRR
+	{
+		mesh = vehicles/pzka_FireTruck|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkFireTruckFlatshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+}

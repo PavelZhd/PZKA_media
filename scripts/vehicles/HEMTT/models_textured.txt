@@ -1,0 +1,31 @@
+module Base
+{
+	model PZKA_Vehicles_HEMTT_internals
+	{
+		mesh = vehicles/pzka_HEMTT|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkDashHEMTT6x6semishell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HEMTT_SeatFL
+	{
+		mesh = vehicles/pzka_HEMTT|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkFireTruckFlatshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_HEMTT_SeatFR
+	{
+		mesh = vehicles/pzka_HEMTT|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkFireTruckFlatshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Battery_HEMTT
+	{
+		mesh = vehicles/pzka_HEMTT|Battery_obj,
+		texture = WorldItems/CarBattery,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

@@ -1,0 +1,185 @@
+module Base
+{
+	template vehicle PZKA_FireTruck_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_FireTruck_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_FireTruck_WindowFrontRight,
+            }
+	    }		
+		part WindowRearLeft
+        {
+			parent = DoorRearLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_FireTruck_WindowRearLeft,
+            }
+			model Static
+            {
+            	file = PZKA_Vehicles_FireTruck_WindowRearLeft_s,
+            }
+        }
+		part WindowRearRight
+    	{	
+        	parent = DoorRearRight,
+			model Default
+            {
+                file = PZKA_Vehicles_FireTruck_WindowRearRight,
+            }
+			model Static
+            {
+                file = PZKA_Vehicles_FireTruck_WindowRearRight_s,
+            }
+	    }			
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FireTruck_Windshield,
+			}			
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FireTruck_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FireTruck_SeatFR,
+			}
+		}
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FireTruck_SeatFL,
+			}
+		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FireTruck_SeatFR,
+			}
+		}
+
+		/*part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.197341 0.768817 0.496056,
+			}
+		}*/
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_FireTruck_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+
+		/*passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.346 0.67 1.48,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}*/
+		/*passenger FrontRight
+		{
+			position inside
+			{
+				offset = -0.346 0.67 1.48,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}*/ 
+		template! = PZKA_lightbar,
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FireTruck_Lightbar,
+			}
+		}       
+	}
+
+
+	template vehicle PZKA_FireTruck_S_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FireTruck_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FireTruck_DoorFrontRight_nr,
+			}
+		}
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FireTruck_DoorRearLeft_nr,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FireTruck_DoorRearRight_nr,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FireTruck_Hood_nr,
+			}
+		}
+		template! = PZKA_FireTruck_shared,
+	}
+	template vehicle PZKA_FireTruck_L_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FireTruck_Trunk_nr,
+			}
+		}
+		template! = PZKA_FireTruck_S_nr,
+	}
+	
+}
