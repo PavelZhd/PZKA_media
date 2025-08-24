@@ -1,51 +1,51 @@
 module Base
 {	
-	model PZKA_VVE_Offroad_a
+		model PZKA_VVE_Offroad_a
 	{
-		mesh = vehicles/pzka_Offroad|Offroad_C,
+		mesh = vehicles/pzka_vve_offroad|OffRoadС,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 	}
 
 	model PZKA_VVE_Offroad_Windshield
 	{
-		mesh = vehicles/pzka_Offroad|Windshield_obj,
+		mesh = vehicles/pzka_vve_offroad|Windshield_obj,
 		shader = vehicle_multiuv_vva,
-		scale = 0.01,
+		scale = 0.004,
 	}
 
 	model PZKA_VVE_Offroad_DoorFrontLeft
 	{
-		mesh = vehicles/pzka_Offroad|Door_FrontLeft_C_obj,
+		mesh = vehicles/pzka_vve_offroad|Door_FrontLeft_С_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 	model PZKA_VVE_Offroad_DoorFrontRight
 	{
-		mesh = vehicles/pzka_Offroad|Door_FrontRight_C_obj,
+		mesh = vehicles/pzka_vve_offroad|Door_FrontRight_С_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 		boneWeight = FrontRightDoorBone 1.0,
 	}	
 	
 	model PZKA_VVE_Offroad_Trunk
 	{
-		mesh = vehicles/pzka_Offroad|Trunk_C_obj,
+		mesh = vehicles/pzka_vve_offroad|Trunk_С_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 		boneWeight = TrunkBone 1.0,
 	}
 	model PZKA_VVE_Offroad_Hood
 	{
-		mesh = vehicles/pzka_Offroad|Hood_obj,
+		mesh = vehicles/pzka_vve_offroad|Hood_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 		boneWeight = HoodBone 1.0,
 	}
 }
