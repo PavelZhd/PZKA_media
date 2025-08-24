@@ -1,23 +1,23 @@
 module Base
 {
-	model PZKA_Vehicles_Freight_internals
+	model PZKA_Vehicles_Peterbuilt_internals
 	{
-		mesh = vehicles/pzka_Freight|Vehicles_Interior,
-		texture = Vehicles/vehicle_pzkFreightlinerFlatShell,
+		mesh = vehicles/pzka_Peterbuilt|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkFranklinTruckRVshell,
 		static = TRUE,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Freight_SeatFL
+	model PZKA_Vehicles_Peterbuilt_SeatFL
 	{
-		mesh = vehicles/pzka_Freight|Seat_FrontLeft_obj,
-		texture = Vehicles/vehicle_pzkFreightlinerFlatShell,
+		mesh = vehicles/pzka_Peterbuilt|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkPeterbuiltshell,
 		static = TRUE,
 		scale = 0.01,
 	}	
-	model PZKA_Vehicles_Freight_SeatFR
+	model PZKA_Vehicles_Peterbuilt_SeatFR
 	{
-		mesh = vehicles/pzka_Freight|Seat_FrontRight_obj,
-		texture = Vehicles/vehicle_pzkFreightlinerFlatShell,
+		mesh = vehicles/pzka_Peterbuilt|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkPeterbuiltshell,
 		static = TRUE,
 		scale = 0.01,
 	}	

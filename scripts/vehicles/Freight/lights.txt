@@ -1,65 +1,96 @@
 module Base
 {
-	model PZKA_Vehicles_Peterbuilt_LightFL
+	model PZKA_Vehicles_Freight_LightFL
 	{
-		mesh = vehicles/pzka_Peterbuilt|Light_FrontLeft_obj,
+		mesh = vehicles/pzka_Freight|Light_FrontLeft_obj,
 		shader = vehicle_multiuv_vva,
-		static = FALSE,
+		static = TRUE,
 		scale = 0.01,
-		boneWeight = HoodBone 1.0,
 	}	
-	model PZKA_Vehicles_Peterbuilt_LightFR
+	model PZKA_Vehicles_Freight_LightFR
 	{
-		mesh = vehicles/pzka_Peterbuilt|Light_FrontRight_obj,
-		shader = vehicle_multiuv_vva,
-		static = FALSE,
-		scale = 0.01,
-		boneWeight = HoodBone 1.0,
-	}
-	model PZKA_Vehicles_Peterbuilt_LightRL
-	{
-		mesh = vehicles/pzka_Peterbuilt|Light_RearLeft_obj,
+		mesh = vehicles/pzka_Freight|Light_FrontRight_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Peterbuilt_LightRR
+	template vehicle pzka_Freight_LightFront {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Freight_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Freight_LightFR,
+			}
+		}		
+	}
+	model PZKA_Vehicles_Freight_LightRL_S
 	{
-		mesh = vehicles/pzka_Peterbuilt|Light_RearRight_obj,
+		mesh = vehicles/pzka_Freight|Light_RearLeft_S_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Freight_LightRR_S
+	{
+		mesh = vehicles/pzka_Freight|Light_RearRight_S_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,
 	}
 
-	template vehicle pzka_Peterbuilt_Light {
-		part HeadlightLeft 
-		{
-			parent = EngineDoor,
-			model Default
-			{
-				file = PZKA_Vehicles_Peterbuilt_LightFL,
-			}
-		}
-		part HeadlightRight 
-		{
-			parent = EngineDoor,
-			model Default
-			{
-				file = PZKA_Vehicles_Peterbuilt_LightFR,
-			}
-		}
+	template vehicle pzka_Freight_S_Light {
+		template! = pzka_Freight_LightFront,
 		part HeadlightRearLeft 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Peterbuilt_LightRL,
+				file = PZKA_Vehicles_Freight_LightRL_S,
 			}
 		}
 		part HeadlightRearRight 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Peterbuilt_LightRR,
+				file = PZKA_Vehicles_Freight_LightRR_S,
+			}
+		}
+	}
+	model PZKA_Vehicles_Freight_LightRL_T
+	{
+		mesh = vehicles/pzka_Freight|Light_RearLeft_T_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Freight_LightRR_T
+	{
+		mesh = vehicles/pzka_Freight|Light_RearRight_T_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle pzka_Freight_T_Light {
+		template! = pzka_Freight_LightFront,
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Freight_LightRL_T,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Freight_LightRR_T,
 			}
 		}
 	}
