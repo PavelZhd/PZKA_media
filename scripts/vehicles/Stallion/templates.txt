@@ -1,0 +1,342 @@
+module Base
+{
+	template vehicle PZKA_Stallion_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+    		{
+        		file = PZKA_Vehicles_Stallion_WindowFrontLeft,
+    		}            		
+        }
+		part WindowFrontRight
+        {	
+    		parent = DoorFrontRight,
+			model Default
+    		{
+        		file = PZKA_Vehicles_Stallion_WindowFrontRight,
+    		}
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_Windshield,
+			}			
+		}
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_SeatRR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.255136 -0.034907 0.808387,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Stallion_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle PZKA_Stallion1_shared {
+		template! = PZKA_Stallion_shared,
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_RearWindow1,
+			}
+		}
+	}
+	template vehicle PZKA_Stallion2_shared {
+		template! = PZKA_Stallion_shared,
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_RearWindow2,
+			}
+		}
+		part PZKA_fill
+        {
+            category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = false,
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+            	init = Vehicles.Init.AdjustLightGeometry,
+	    	}
+        }
+	}
+	template vehicle PZKA_StallionFrontDoors {
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_DoorFrontRight,
+			}
+		}
+		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_Hood,
+			}
+		}
+	}
+	template vehicle PZKA_StallionFront {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_DoorFrontLeft,
+			}
+		}
+		template! = PZKA_StallionFrontDoors,
+	}
+	template vehicle PZKA_StallionFrontS {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_DoorFrontLeft,
+			}
+		}
+		template! = PZKA_StallionFrontDoors,
+	}
+	template vehicle PZKA_StallionFront_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_DoorFrontRight_nr,
+			}
+		}
+		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_Hood_nr,
+			}
+		}
+	}
+	template vehicle PZKA_Stallion1 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_Trunk1,
+			}
+		}
+		template! = PZKA_StallionFront,
+		template! = PZKA_Stallion1_shared,
+	}
+	template vehicle PZKA_Stallion1S {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_Trunk1S,
+			}
+		}
+		template! = PZKA_StallionFront,
+		template! = PZKA_Stallion1_shared,
+	}
+	template vehicle PZKA_Stallion1Sport {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_Trunk1S,
+			}
+		}
+		template! = PZKA_StallionFrontS,
+		template! = PZKA_Stallion1_shared,
+	}
+	template vehicle PZKA_Stallion1_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_Trunk1_nr,
+			}
+		}
+		template! = PZKA_StallionFront_nr,
+		template! = PZKA_Stallion1_shared,
+	}
+	template vehicle PZKA_Stallion1S_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_Trunk1S_nr,
+			}
+		}
+		template! = PZKA_StallionFront_nr,
+		template! = PZKA_Stallion1_shared,
+	}
+	template vehicle PZKA_Stallion2_fill {
+		part PZKA_fill
+        {
+            model L1 {
+                file = PZKA_Vehicles_Stallion2_FF1,
+            }
+            model L2 {
+                file = PZKA_Vehicles_Stallion2_FF2,
+            }
+		}
+	}
+	template vehicle PZKA_Stallion2_fill_nr {
+		part PZKA_fill
+        {
+            model L1 {
+                file = PZKA_Vehicles_Stallion2_FF1_nr,
+            }
+            model L2 {
+                file = PZKA_Vehicles_Stallion2_FF2_nr,
+            }
+		}
+	}
+	template vehicle PZKA_Stallion2 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_Trunk2,
+			}
+		}
+		template! = PZKA_StallionFront,
+		template! = PZKA_Stallion2_fill,
+		template! = PZKA_Stallion2_shared,
+	}
+	template vehicle PZKA_Stallion2S {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_Trunk2S,
+			}
+		}
+		template! = PZKA_StallionFront,
+		template! = PZKA_Stallion2_fill,
+		template! = PZKA_Stallion2_shared,
+	}
+	template vehicle PZKA_Stallion2Sport {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_Trunk2S,
+			}
+		}
+		template! = PZKA_StallionFrontS,
+		template! = PZKA_Stallion2_fill,
+		template! = PZKA_Stallion2_shared,
+	}
+	template vehicle PZKA_Stallion2_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_Trunk2_nr,
+			}
+		}
+		template! = PZKA_StallionFront_nr,
+		template! = PZKA_Stallion2_fill_nr,
+		template! = PZKA_Stallion2_shared,
+	}
+	template vehicle PZKA_Stallion2S_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_Trunk2S_nr,
+			}
+		}
+		template! = PZKA_StallionFront_nr,
+		template! = PZKA_Stallion2_fill_nr,
+		template! = PZKA_Stallion2_shared,
+	}
+	template vehicle PZKA_Stallion_lightbar {	
+		template! = PZKA_lightbar,
+		part ATA2RoofLightbar
+		{
+			model Normal
+			{
+				file = PZKA_Vehicles_Marocco_Lightbal_a,
+			}
+		}
+	}
+
+	template vehicle PZKA_Stallion1_lightbar {
+		template! = PZKA_Stallion1_nr,
+		template! = PZKA_Stallion_lightbar,
+	}
+	template vehicle PZKA_Stallion1S_lightbar {
+		template! = PZKA_Stallion1S_nr,
+		template! = PZKA_Stallion_lightbar,
+	}
+	template vehicle PZKA_Stallion2_lightbar {
+		template! = PZKA_Stallion2_nr,
+		template! = PZKA_Stallion_lightbar,
+	}
+	template vehicle PZKA_Stallion2S_lightbar {
+		template! = PZKA_Stallion2S_nr,
+		template! = PZKA_Stallion_lightbar,
+	}
+
+}

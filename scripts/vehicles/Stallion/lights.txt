@@ -1,0 +1,113 @@
+module Base
+{
+	model PZKA_Vehicles_Stallion_LightFL
+	{
+		mesh = vehicles/pzka_Stallion|Light_FrontLeft_1_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Stallion_LightFR
+	{
+		mesh = vehicles/pzka_Stallion|Light_FrontRight_1_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Stallion_LightRL
+	{
+		mesh = vehicles/pzka_Stallion|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Stallion_LightRR
+	{
+		mesh = vehicles/pzka_Stallion|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Stallion_Light {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stallion_LightRR,
+			}
+		}
+	}
+
+	model PZKA_Vehicles_Stallion_LightFL2
+	{
+		mesh = vehicles/pzka_Stallion|Light_FrontLeft_2_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Stallion_LightFR2
+	{
+		mesh = vehicles/pzka_Stallion|Light_FrontRight_2_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Stallion_Light2 {
+		template! = PZKA_Stallion_Light,
+		part HeadlightLeft 
+		{
+			model L2
+			{
+				file = PZKA_Vehicles_Stallion_LightFL2,
+			}
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+		part HeadlightRight 
+		{
+			model L2
+			{
+				file = PZKA_Vehicles_Stallion_LightFR2,
+			}
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}		
+	}
+}

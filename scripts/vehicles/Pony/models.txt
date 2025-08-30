@@ -1,0 +1,86 @@
+module Base
+{
+	model PZKA_Vehicles_Pony_a
+	{
+		mesh = vehicles/pzka_Pony|LP_Body,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Pony_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Pony|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Pony_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Pony|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_Pony_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Pony|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Pony_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Pony|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Pony_WindowRearLeft
+	{
+		mesh = vehicles/pzka_Pony|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Pony_WindowRearRight
+	{
+		mesh = vehicles/pzka_Pony|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Pony_Trunk
+	{
+		mesh = vehicles/pzka_Pony|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Pony_Hood
+	{
+		mesh = vehicles/pzka_Pony|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Pony_Windshield
+	{
+		mesh = vehicles/pzka_Pony|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Pony_RearWindow
+	{
+		mesh = vehicles/pzka_Pony|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+}

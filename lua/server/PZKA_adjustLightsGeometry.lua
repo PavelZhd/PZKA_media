@@ -179,6 +179,19 @@ FillPartsMap["Base.pzkPickupFranklin"] = {
     ["Raider2"] = "a1a",
 }
 
+FillPartsMap["Base.pzkFranklinStallion2"] = {
+    ["L1"] = "a0a",
+    ["L2"] = "a1a",
+    ["Default"] = "a0a1a",
+}
+FillPartsMap["Base.pzkFranklinStallionSport"] = FillPartsMap["Base.pzkFranklinStallion2"]
+FillPartsMap["Base.pzkFranklinStallionPoliceLouisvillePD"] = {
+    ["L2"] = "a0a",
+    ["Default"] = "a0a",
+}
+FillPartsMap["Base.pzkFranklinStallionPoliceMeadeSheriff"] = FillPartsMap["Base.pzkFranklinStallionPoliceLouisvillePD"]
+FillPartsMap["Base.pzkFranklinStallionPoliceWestPoint"] = FillPartsMap["Base.pzkFranklinStallionPoliceLouisvillePD"]
+
 
 function Vehicles.Init.AdjustLightGeometry(vehicle, part)
     local fillData = FillPartsMap[vehicle:getScriptName()]
@@ -187,9 +200,9 @@ function Vehicles.Init.AdjustLightGeometry(vehicle, part)
             local skinId = "a"..(vehicle:getSkinIndex() or 'NULL' ).."a"    
             local fallback = nil
             local useFallback = true
-            print("PZKA: Skin index :\is "..skinId.." .. "..vehicle:getScriptName())
+            --print("PZKA: Skin index :\is "..skinId.." .. "..vehicle:getScriptName())
             for modelName, match in pairs(fillData) do
-                print("PZKA checking model name "..modelName.. "|" .. match .. " : "..(string.find(match, skinId) or 'FALSE'))
+                --print("PZKA checking model name "..modelName.. "|" .. match .. " : "..(string.find(match, skinId) or 'FALSE'))
                 if not fallback or string.find(match, "ada") then
                     fallback = modelName
                 end
@@ -200,7 +213,7 @@ function Vehicles.Init.AdjustLightGeometry(vehicle, part)
                     part:setModelVisible(modelName, false)
                 end
             end
-            print("PZKA: fallback needed : "..(useFallback and "TRUE" or "FALSE").." .. "..(fallback or "NONE").." .. "..vehicle:getScriptName())
+            --print("PZKA: fallback needed : "..(useFallback and "TRUE" or "FALSE").." .. "..(fallback or "NONE").." .. "..vehicle:getScriptName())
             if useFallback and fallback then
                 part:setModelVisible(fallback, true)
             end

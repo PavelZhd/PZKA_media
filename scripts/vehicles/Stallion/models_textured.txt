@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Stallion_internals
+	{
+		mesh = vehicles/pzka_Stallion|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkFranklinStallionshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Stallion_SeatFL
+	{
+		mesh = vehicles/pzka_Stallion|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkFranklinStallionshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Stallion_SeatFR
+	{
+		mesh = vehicles/pzka_Stallion|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkFranklinStallionshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Stallion_SeatRL
+	{
+		mesh = vehicles/pzka_Stallion|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkFranklinStallionshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Stallion_SeatRR
+	{
+		mesh = vehicles/pzka_Stallion|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkFranklinStallionshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

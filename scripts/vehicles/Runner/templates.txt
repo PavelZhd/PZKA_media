@@ -143,55 +143,68 @@ module Base
 		template! = PZKA_Runner_shared,
 	}
 	template vehicle PZKA_Runner_general {
-		part TrunkDoor
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Runner_Trunk_nr,
-			}
-		}
+		template! = PZKA_Runner_nr,
 
 		part DoorFrontLeft
 		{
-			model Default
-			{
-				file = PZKA_Vehicles_Runner_DoorFrontLeft_general,
-			}
-
 			anim Close
 			{
-				anim = WindowFrontLeft_open,
+				anim = DoorFrontLeft_closing,
 				reverse = TRUE,
-				rate = 1,
+				animate = FALSE,
 			}
 
 			anim Open
 			{
-				anim = WindowFrontLeft_open,
-				rate = 1.0,
+				anim = DoorFrontLeft_closing,
+				reverse = TRUE,
+				animate = FALSE,
 			}
 
 			anim Closed
 			{
-				anim = WindowFrontLeft_open,
+				anim = DoorFrontLeft_closing,
+				reverse = TRUE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = WindowFrontLeft_open,
+				anim = DoorFrontLeft_closing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
 		}
 
-		part EngineDoor
+		part DoorFrontRight
 		{
-			model Default
+			anim Close
 			{
-				file = PZKA_Vehicles_Runner_Hood_nr,
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Open
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Closed
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
 			}
 		}
-		template! = PZKA_Runner_shared,
 	}
 }
