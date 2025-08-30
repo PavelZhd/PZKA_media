@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Pony_internals
+	{
+		mesh = vehicles/pzka_Pony|Vehicles_Interior,
+		texture = Vehicles/vehicle_smallcarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Pony_SeatFL
+	{
+		mesh = vehicles/pzka_Pony|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_smallcarshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Pony_SeatFR
+	{
+		mesh = vehicles/pzka_Pony|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_smallcarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Pony_SeatRL
+	{
+		mesh = vehicles/pzka_Pony|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_smallcarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Pony_SeatRR
+	{
+		mesh = vehicles/pzka_Pony|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_smallcarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

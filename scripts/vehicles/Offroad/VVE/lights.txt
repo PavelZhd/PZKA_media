@@ -5,28 +5,28 @@ module Base
 		mesh = vehicles/pzka_vve_offroad|Light_FrontLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
-		scale = 0.01,
+		scale = 0.004,
 	}	
 	model PZKA_VVE_Offroad_LightFR
 	{
 		mesh = vehicles/pzka_vve_offroad|Light_FrontRight_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
-		scale = 0.01,
+		scale = 0.004,
 	}
 	model PZKA_VVE_Offroad_LightRL
 	{
 		mesh = vehicles/pzka_vve_offroad|Light_RearLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 	}
 	model PZKA_VVE_Offroad_LightRR
 	{
 		mesh = vehicles/pzka_vve_offroad|Light_RearRight_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 	}
 
 	template vehicle PZKA_VVE_Offroad_Light {
