@@ -1,0 +1,171 @@
+module Base
+{
+	model PZKA_Vehicles_StallionKing_LightFL1
+	{
+		mesh = vehicles/pzka_StallionKing|Light_FrontLeft1_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_StallionKing_LightFR1
+	{
+		mesh = vehicles/pzka_StallionKing|Light_FrontRight1_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKing_LightFLK
+	{
+		mesh = vehicles/pzka_StallionKing|Light_FrontLeftK_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_StallionKing_LightFRK
+	{
+		mesh = vehicles/pzka_StallionKing|Light_FrontRightK_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKing_LightFLE
+	{
+		mesh = vehicles/pzka_StallionKing|Light_FrontLeftE_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_StallionKing_LightFRE
+	{
+		mesh = vehicles/pzka_StallionKing|Light_FrontRightE_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+
+	model PZKA_Vehicles_StallionKing_LightRL
+	{
+		mesh = vehicles/pzka_StallionKing|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKing_LightRR
+	{
+		mesh = vehicles/pzka_StallionKing|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKing_LightRLEK
+	{
+		mesh = vehicles/pzka_StallionKing|Light_RearLeftEK_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKing_LightRREK
+	{
+		mesh = vehicles/pzka_StallionKing|Light_RearRightEK_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_StallionKing_LightFrontK {
+		part HeadlightLeft 
+		{
+			model DefaultK
+			{
+				file = PZKA_Vehicles_StallionKing_LightFLK,
+			}
+		}
+		part HeadlightRight 
+		{
+			model DefaultK
+			{
+				file = PZKA_Vehicles_StallionKing_LightFRK,
+			}
+		}
+	}
+	template vehicle PZKA_StallionKing_LightRearEK {
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_LightRLEK,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_LightRREK,
+			}
+		}
+	}
+	template vehicle PZKA_StallionKing_LightRear1 {
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_LightRR,
+			}
+		}
+	}
+
+	template vehicle PZKA_StallionKing_Light1 {
+		template! = PZKA_StallionKing_LightFrontK,
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_LightFL1,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_LightFR1,
+			}
+		}
+		template! = PZKA_StallionKing_LightRear1,
+	}
+	
+
+	template vehicle PZKA_StallionKing_LightK {
+		template! = PZKA_StallionKing_LightFrontK,
+		template! = PZKA_StallionKing_LightRearEK,		
+	}
+	template vehicle PZKA_StallionKing_LightB {
+		template! = PZKA_StallionKing_LightFrontK,
+		template! = PZKA_StallionKing_LightRear1,		
+	}
+	template vehicle PZKA_StallionKing_LightE {
+		template! = PZKA_StallionKing_LightFrontK,
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_LightFLE,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_LightFRE,
+			}
+		}
+		template! = PZKA_StallionKing_LightRearEK,		
+	}
+}

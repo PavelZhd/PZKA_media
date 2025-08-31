@@ -1,0 +1,317 @@
+module Base
+{
+	template vehicle PZKA_StallionKing_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+    		{
+        		file = PZKA_Vehicles_StallionKing_WindowFrontLeft,
+    		}            		
+        }
+		part WindowFrontRight
+        {	
+    		parent = DoorFrontRight,
+			model Default
+    		{
+        		file = PZKA_Vehicles_StallionKing_WindowFrontRight,
+    		}
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_Windshield,
+			}			
+		}
+		part WindshieldRear
+		{
+			model Static
+			{
+				file = PZKA_Vehicles_StallionKing_RearWindowStatic,
+			}			
+		}
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_SeatFR,
+			}
+		}
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.106645 -0.011559 0.853318,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_StallionKing_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle PZKA_StallionKing124_shared {
+		template! = PZKA_StallionKing_shared,
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_RearWindow1,
+			}
+		}
+	}
+	template vehicle PZKA_StallionKing3_shared {
+		template! = PZKA_StallionKing_shared,
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_RearWindow3,
+			}
+		}
+	}
+	template vehicle PZKA_StallionKing5_shared {
+		template! = PZKA_StallionKing_shared,
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_RearWindow5,
+			}
+		}
+	}
+	template vehicle PZKA_StallionKingFrontDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_DoorFrontLeft,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_DoorFrontRight,
+			}
+		}	
+	}
+	template vehicle PZKA_StallionKingHood12 {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_Hood,
+			}
+		}
+	}
+	template vehicle PZKA_StallionKingHood34 {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_Hood4,
+			}
+		}
+	}
+	template vehicle PZKA_StallionKingTrunk24 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_Trunk2,
+			}
+			anim Close
+			{
+				rate = 1.25,
+			}
+
+			anim Open
+			{
+				rate = 1.0,
+			}
+		}
+	}	
+
+	template vehicle PZKA_StallionKingFrontDoors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_DoorFrontRight_nr,
+			}
+		}
+	}
+	template vehicle PZKA_StallionKingHood12_nr {		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_Hood_nr,
+			}
+		}
+	}
+	template vehicle PZKA_StallionKingHood34_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_Hood4_nr,
+			}
+		}
+	}
+	template vehicle PZKA_StallionKingTrunk24_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_Trunk2,
+			}
+		}
+	}
+	template vehicle PZKA_StallionKing1 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_Trunk1,
+			}
+			anim Close
+			{
+				rate = 1.25,
+			}
+
+			anim Open
+			{
+				rate = 1.0,
+			}
+		}
+		template! = PZKA_StallionKingFrontDoors,
+		template! = PZKA_StallionKingHood12,
+		template! = PZKA_StallionKing124_shared,
+	}
+	template vehicle PZKA_StallionKing2 {
+		template! = PZKA_StallionKingTrunk24,
+		template! = PZKA_StallionKingFrontDoors,
+		template! = PZKA_StallionKingHood12,
+		template! = PZKA_StallionKing124_shared,
+	}
+	template vehicle PZKA_StallionKing3 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_Trunk3,
+			}
+		}
+		template! = PZKA_StallionKingFrontDoors,
+		template! = PZKA_StallionKingHood34,
+		template! = PZKA_StallionKing3_shared,
+	}
+	template vehicle PZKA_StallionKing4 {
+		template! = PZKA_StallionKingTrunk24,
+		template! = PZKA_StallionKingFrontDoors,
+		template! = PZKA_StallionKingHood34,
+		template! = PZKA_StallionKing124_shared,
+	}
+	template vehicle PZKA_StallionKing5 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_Trunk5,
+			}
+		}
+		template! = PZKA_StallionKingFrontDoors,
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_Hood5,
+			}
+		}
+		template! = PZKA_StallionKing5_shared,
+	}
+
+
+	template vehicle PZKA_StallionKing1_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_Trunk1_nr,
+			}
+			anim Close
+			{
+				rate = 1.25,
+			}
+
+			anim Open
+			{
+				rate = 1.0,
+			}
+		}
+		template! = PZKA_StallionKingFrontDoors_nr,
+		template! = PZKA_StallionKingHood12_nr,
+		template! = PZKA_StallionKing124_shared,
+	}
+	template vehicle PZKA_StallionKing2_nr {
+		template! = PZKA_StallionKingTrunk24_nr,
+		template! = PZKA_StallionKingFrontDoors_nr,
+		template! = PZKA_StallionKingHood12_nr,
+		template! = PZKA_StallionKing124_shared,
+	}
+	template vehicle PZKA_StallionKing4_nr {
+		template! = PZKA_StallionKingTrunk24_nr,
+		template! = PZKA_StallionKingFrontDoors_nr,
+		template! = PZKA_StallionKingHood34_nr,
+		template! = PZKA_StallionKing124_shared,
+	}
+	template vehicle PZKA_StallionKing5_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_Trunk5_nr,
+			}
+		}
+		template! = PZKA_StallionKingFrontDoors_nr,
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StallionKing_Hood5_nr,
+			}
+		}
+		template! = PZKA_StallionKing5_shared,
+	}
+}

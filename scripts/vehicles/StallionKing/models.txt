@@ -1,0 +1,257 @@
+module Base
+{
+	model PZKA_Vehicles_StallionKing124_a
+	{
+		mesh = vehicles/pzka_StallionKing|StallionKing124,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKing3_a
+	{
+		mesh = vehicles/pzka_StallionKing|StallionKing3,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKing5_a
+	{
+		mesh = vehicles/pzka_StallionKing|StallionKing5,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_StallionKing124_nr_a
+	{
+		mesh = vehicles/pzka_StallionKing|StallionKing124,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKing5_nr_a
+	{
+		mesh = vehicles/pzka_StallionKing|StallionKing5,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKingE_a
+	{
+		mesh = vehicles/pzka_StallionKing|StallionKingE,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKingK_a
+	{
+		mesh = vehicles/pzka_StallionKing|StallionKingK,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKingB_a
+	{
+		mesh = vehicles/pzka_StallionKing|StallionKingB,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKingM_a
+	{
+		mesh = vehicles/pzka_StallionKing|StallionKingM,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	
+
+	model PZKA_Vehicles_StallionKing_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_StallionKing|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_StallionKing_DoorFrontRight
+	{
+		mesh = vehicles/pzka_StallionKing|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_StallionKing_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_StallionKing|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_StallionKing_WindowFrontRight
+	{
+		mesh = vehicles/pzka_StallionKing|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+
+	model PZKA_Vehicles_StallionKing_Trunk1
+	{
+		mesh = vehicles/pzka_StallionKing|Trunk_1S_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk124Bone 1.0,
+	}
+	model PZKA_Vehicles_StallionKing_Trunk2
+	{
+		mesh = vehicles/pzka_StallionKing|Trunk1_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk124Bone 1.0,
+	}
+	model PZKA_Vehicles_StallionKing_Trunk3
+	{
+		mesh = vehicles/pzka_StallionKing|Trunk3_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk3Bone 1.0,
+	}
+	model PZKA_Vehicles_StallionKing_Trunk5
+	{
+		mesh = vehicles/pzka_StallionKing|Trunk5_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk5Bone 1.0,
+	}
+	model PZKA_Vehicles_StallionKing_Hood
+	{
+		mesh = vehicles/pzka_StallionKing|Hood1_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_StallionKing_Hood4
+	{
+		mesh = vehicles/pzka_StallionKing|Hood4_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_StallionKing_Hood5
+	{
+		mesh = vehicles/pzka_StallionKing|Hood5_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_StallionKing_Windshield
+	{
+		mesh = vehicles/pzka_StallionKing|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKing_RearWindow1
+	{
+		mesh = vehicles/pzka_StallionKing|RearWindow1_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKing_RearWindowStatic
+	{
+		mesh = vehicles/pzka_StallionKing|RearWindow_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKing_RearWindow3
+	{
+		mesh = vehicles/pzka_StallionKing|RearWindow3_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_StallionKing_RearWindow5
+	{
+		mesh = vehicles/pzka_StallionKing|RearWindow5_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_StallionKing_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_StallionKing|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_StallionKing_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_StallionKing|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_StallionKing_Hood_nr
+	{
+		mesh = vehicles/pzka_StallionKing|Hood1_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_StallionKing_Hood4_nr
+	{
+		mesh = vehicles/pzka_StallionKing|Hood4_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_StallionKing_Hood5_nr
+	{
+		mesh = vehicles/pzka_StallionKing|Hood5_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_StallionKing_Trunk1_nr
+	{
+		mesh = vehicles/pzka_StallionKing|Trunk_1S_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk124Bone 1.0,
+	}
+	model PZKA_Vehicles_StallionKing_Trunk2_nr
+	{
+		mesh = vehicles/pzka_StallionKing|Trunk1_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk124Bone 1.0,
+	}
+	model PZKA_Vehicles_StallionKing_Trunk5_nr
+	{
+		mesh = vehicles/pzka_StallionKing|Trunk5_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk5Bone 1.0,
+	}
+}
