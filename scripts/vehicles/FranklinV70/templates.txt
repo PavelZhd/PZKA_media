@@ -1,0 +1,240 @@
+module Base
+{
+	template vehicle PZKA__FranklinV70_shared {
+
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+                file = PZKA_Vehicles_FranklinV70_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+            parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_FranklinV70_WindowFrontRight,
+            }
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_RearWindow,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_FranklinV70_RearWindowStatic,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_SeatFR,
+			}
+		}
+		part SeatMiddleLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_SeatML,
+			}
+		}
+		part SeatMiddleRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_SeatMR,
+			}
+		}		
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_SeatRR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.264422 0.003895 0.861456,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_FranklinV70_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+
+	template vehicle PZKA__FranklinV70_Hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_Hood,
+			}
+		}
+	}
+
+	
+
+	template vehicle PZKA__FranklinV70_RearWindows {
+		part WindowRearLeft
+        {	
+        	parent = DoorRearLeft,
+			model Default
+            {
+        		file = PZKA_Vehicles_FranklinV70_WindowRearLeft,
+    		}
+		}
+		part WindowRearRight
+        {	
+    		parent = DoorRearRight,
+			model Default
+    		{
+        		file = PZKA_Vehicles_FranklinV70_WindowRearRight,
+    		}
+    	}
+	}
+	template vehicle PZKA__FranklinV70_MiddleWindows {
+		part WindowMiddleLeft
+        {	
+        	parent = DoorMiddleLeft,
+			model Default
+            {
+        		file = PZKA_Vehicles_FranklinV70_WindowRearLeft,
+    		}
+		}
+		part WindowMiddleRight
+        {	
+    		parent = DoorMiddleRight,
+			model Default
+    		{
+        		file = PZKA_Vehicles_FranklinV70_WindowRearRight,
+    		}
+    	}
+	}
+
+
+	template vehicle PZKA__FranklinV70_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_Trunk,
+			}
+		}
+	}
+
+	template vehicle PZKA__FranklinV70_2Doors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_DoorFrontRight,
+			}
+		}
+		template! = PZKA__FranklinV70_FrontWindows,
+	}
+
+	template vehicle PZKA__FranklinV70_4DoorsR {
+		template! = PZKA__FranklinV70_2Doors,
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_DoorRearLeft,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_DoorRearRight,
+			}
+		}
+		template!= PZKA__FranklinV70_RearWindows,
+	}
+	template vehicle PZKA__FranklinV70_4DoorsM {
+		template! = PZKA__FranklinV70_2Doors,
+		part DoorMiddleLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_DoorRearLeft,
+			}
+		}
+
+		part DoorMiddleRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_DoorRearRight,
+			}
+		}
+		template!= PZKA__FranklinV70_MiddleWindows,
+	}
+
+
+
+	template vehicle PZKA_FranklinV70 {
+		template! = PZKA__FranklinV70_Trunk,
+		template! = PZKA__FranklinV70_4DoorsM,
+		template! = PZKA__FranklinV70_Hood,
+		template! = PZKA__FranklinV70_shared,
+	}
+
+
+}

@@ -1,0 +1,62 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinV70_LightFL
+	{
+		mesh = vehicles/pzka_FranklinV70|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FranklinV70_LightFR
+	{
+		mesh = vehicles/pzka_FranklinV70|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinV70_LightRL
+	{
+		mesh = vehicles/pzka_FranklinV70|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinV70_LightRR
+	{
+		mesh = vehicles/pzka_FranklinV70|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FranklinV70_Light {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinV70_LightRR,
+			}
+		}
+	}
+}

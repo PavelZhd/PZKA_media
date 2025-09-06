@@ -1,0 +1,133 @@
+module Base
+{
+	model PZKA_Vehicles_Harmony_a
+	{
+		mesh = vehicles/pzka_Harmony|Harmony,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HarmonyWagon_a
+	{
+		mesh = vehicles/pzka_Harmony|HarmonyWagon,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Harmony_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Harmony|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Harmony_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Harmony|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Harmony_DoorRearLeft
+	{
+		mesh = vehicles/pzka_Harmony|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Harmony_DoorRearRight
+	{
+		mesh = vehicles/pzka_Harmony|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Harmony_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Harmony|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Harmony_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Harmony|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Harmony_WindowRearLeft
+	{
+		mesh = vehicles/pzka_Harmony|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Harmony_WindowRearRight
+	{
+		mesh = vehicles/pzka_Harmony|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Harmony_TrunkW
+	{
+		mesh = vehicles/pzka_Harmony|Trunk_W_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkWBone 1.0,
+	}
+	model PZKA_Vehicles_Harmony_Trunk
+	{
+		mesh = vehicles/pzka_Harmony|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Harmony_Hood
+	{
+		mesh = vehicles/pzka_Harmony|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Harmony_Windshield
+	{
+		mesh = vehicles/pzka_Harmony|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Harmony_RearWindow
+	{
+		mesh = vehicles/pzka_Harmony|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Harmony_RearWindowWStatic
+	{
+		mesh = vehicles/pzka_Harmony|RearWindow_W_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Harmony_RearWindowW
+	{
+		mesh = vehicles/pzka_Harmony|RearWindow_W_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+}

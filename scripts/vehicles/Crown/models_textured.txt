@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Crown_internals
+	{
+		mesh = vehicles/pzka_Crown|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkMastersonCrownshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Crown_SeatFL
+	{
+		mesh = vehicles/pzka_Crown|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkMastersonCrownshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Crown_SeatFR
+	{
+		mesh = vehicles/pzka_Crown|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkMastersonCrownshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Crown_SeatRL
+	{
+		mesh = vehicles/pzka_Crown|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkMastersonCrownshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Crown_SeatRR
+	{
+		mesh = vehicles/pzka_Crown|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkMastersonCrownshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

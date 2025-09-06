@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Expander_internals
+	{
+		mesh = vehicles/pzka_Expander|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkMastersonExpandershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Expander_SeatFL
+	{
+		mesh = vehicles/pzka_Expander|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkMastersonExpandershell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Expander_SeatFR
+	{
+		mesh = vehicles/pzka_Expander|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkMastersonExpandershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Expander_SeatRL
+	{
+		mesh = vehicles/pzka_Expander|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_pzkMastersonExpandershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Expander_SeatRR
+	{
+		mesh = vehicles/pzka_Expander|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_pzkMastersonExpandershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}
