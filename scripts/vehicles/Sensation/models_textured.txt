@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Sensation_internals
+	{
+		mesh = vehicles/pzka_Sensation|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkMastersonSensationshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sensation_SeatFL
+	{
+		mesh = vehicles/pzka_Sensation|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkMastersonSensationshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Sensation_SeatFR
+	{
+		mesh = vehicles/pzka_Sensation|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkMastersonSensationshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sensation_SeatRL
+	{
+		mesh = vehicles/pzka_Sensation|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_pzkMastersonSensationshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sensation_SeatRR
+	{
+		mesh = vehicles/pzka_Sensation|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_pzkMastersonSensationshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

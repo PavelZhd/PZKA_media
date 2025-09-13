@@ -497,6 +497,12 @@ PZKA.CreateAnimationProfile("pzkMastersonInitialFuji","PZKA_Vehicles_Initial_nr_
 
 PZKA.CreateAnimationProfile("pzkMastersonScout4D","PZKA_Vehicles_Scout_a","PZKA_Scout_Light","PZKA_Scout",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
 
+PZKA.CreateAnimationProfile("pzkMastersonSensation","PZKA_Vehicles_Sensation_a","PZKA_Sensation_Light","PZKA_Sensation",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
+
+PZKA.CreateAnimationProfile("pzkMastersonSunrise","PZKA_Vehicles_Sunrise_a","PZKA_Sunrise_Light","PZKA_Sunrise",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+
+
+
 
 --[[
 PZKA.CreateAnimationProfile("CarNormal","PZKA_Vehicles_CarNormal_a","PZKA_CarNormal_animatedDoors", {"FLW","FRW","RLW","RRW"}, "PZKA_TrunkDoorVersion")
