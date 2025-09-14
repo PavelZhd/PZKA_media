@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Scout_internals
+	{
+		mesh = vehicles/pzka_Scout|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkMastersonScout4Dshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Scout_SeatFL
+	{
+		mesh = vehicles/pzka_Scout|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkMastersonScout4Dshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Scout_SeatFR
+	{
+		mesh = vehicles/pzka_Scout|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkMastersonScout4Dshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Scout_SeatRL
+	{
+		mesh = vehicles/pzka_Scout|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkMastersonScout4Dshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Scout_SeatRR
+	{
+		mesh = vehicles/pzka_Scout|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkMastersonScout4Dshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

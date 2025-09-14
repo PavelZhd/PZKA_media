@@ -1,0 +1,62 @@
+module Base
+{
+	model PZKA_Vehicles_Scout_LightFL
+	{
+		mesh = vehicles/pzka_Scout|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Scout_LightFR
+	{
+		mesh = vehicles/pzka_Scout|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Scout_LightRL
+	{
+		mesh = vehicles/pzka_Scout|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Scout_LightRR
+	{
+		mesh = vehicles/pzka_Scout|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Scout_Light {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Scout_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Scout_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Scout_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Scout_LightRR,
+			}
+		}
+	}
+}

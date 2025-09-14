@@ -450,6 +450,24 @@ PZKA.CreateAnimationProfile("pzkFranklinStallionKingFrankBullitt","PZKA_Vehicles
 PZKA.CreateAnimationProfile("pzkFranklinStallionKingKenMiles","PZKA_Vehicles_StallionKingM_a","PZKA_StallionKing_LightB","PZKA_StallionKing5_nr",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkFranklinStallionKingTheKing","PZKA_Vehicles_StallionKingK_a","PZKA_StallionKing_LightK","PZKA_StallionKing2_nr",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 
+PZKA.CreateAnimationProfile("pzkFranklinVan70","PZKA_Vehicles_FranklinV70_a","PZKA_FranklinV70_Light","PZKA_FranklinV70",{"FLW","FRW","ML","MR"},"PZKA_RearDoorVersion",{"FL","FR","ML","MR","RL","RR"})
+
+PZKA.CreateAnimationProfile("pzkMastersonCrown","PZKA_Vehicles_Crown_a","PZKA_Crown_Light","PZKA_Crown",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
+PZKA.CreateAnimationProfile("pzkMastersonExpander","PZKA_Vehicles_Expander_a","PZKA_Expander_Light","PZKA_Expander",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
+
+PZKA.CreateAnimationProfile("pzkMastersonHarmony","PZKA_Vehicles_Harmony_a","PZKA_Harmony_Light","PZKA_Harmony",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
+PZKA.CreateAnimationProfile("pzkMastersonHarmonyWagon","PZKA_Vehicles_HarmonyWagon_a","PZKA_Harmony_Light","PZKA_HarmonyW",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
+
+PZKA.CreateAnimationProfile("pzkMastersonInitial","PZKA_Vehicles_Initial_a","pzka_Initial_Light","PZKA_Initial",{"FLW","FRW"},"PZKA_TrunkDoorVersion",{"FL","FR","RL","RR"})
+PZKA.CreateAnimationProfile("pzkMastersonInitialFuji","PZKA_Vehicles_Initial_nr_a","pzka_Initial_Light","PZKA_Initial_nr",{"FLW","FRW"},"PZKA_TrunkDoorVersion",{"FL","FR","RL","RR"})
+
+PZKA.CreateAnimationProfile("pzkMastersonScout4D","PZKA_Vehicles_Scout_a","PZKA_Scout_Light","PZKA_Scout",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
+
+PZKA.CreateAnimationProfile("pzkMastersonSensation","PZKA_Vehicles_Sensation_a","PZKA_Sensation_Light","PZKA_Sensation",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
+
+PZKA.CreateAnimationProfile("pzkMastersonSunrise","PZKA_Vehicles_Sunrise_a","PZKA_Sunrise_Light","PZKA_Sunrise",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
+
+
 
 
 --[[

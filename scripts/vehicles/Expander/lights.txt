@@ -1,0 +1,62 @@
+module Base
+{
+	model PZKA_Vehicles_Expander_LightFL
+	{
+		mesh = vehicles/pzka_Expander|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Expander_LightFR
+	{
+		mesh = vehicles/pzka_Expander|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Expander_LightRL
+	{
+		mesh = vehicles/pzka_Expander|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Expander_LightRR
+	{
+		mesh = vehicles/pzka_Expander|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Expander_Light {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Expander_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Expander_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Expander_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Expander_LightRR,
+			}
+		}
+	}
+}

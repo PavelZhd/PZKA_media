@@ -1,0 +1,192 @@
+module Base
+{
+	template vehicle PZKA_Initial_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Initial_WindowFrontLeft,
+            }           		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Initial_WindowFrontRight,
+            }           		
+	    }		
+		part WindowRearLeft
+        {
+			model Default
+            {
+            	file = PZKA_Vehicles_Initial_WindowRearLeft,
+            }           		
+        }
+		part WindowRearRight
+    	{	
+        	model Default
+            {
+                file = PZKA_Vehicles_Initial_WindowRearRight,
+            }           		
+	    }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_Windshield,
+			}			
+		}
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_SeatRR,
+			}
+		}		
+		
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.210376 0.002069 0.647314,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Initial_internals,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create = Vehicles.Create.Default,
+	    		}
+		}
+		template! = pzka_LightHostAnimate,		
+	}
+
+	template vehicle PZKA_Initial {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_DoorFrontRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_Hood,
+			}
+		}
+		template! = PZKA_Initial_shared,
+				
+		part PZKA_LightsHost
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_LightHost,
+			}
+		}
+	}
+	
+	template vehicle PZKA_Initial_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_Trunk_nr,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_DoorFrontRight_nr,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_Hood_nr,
+			}
+		}
+		template! = PZKA_Initial_shared,
+				
+		part PZKA_LightsHost
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Initial_LightHost_nr,
+			}
+		}
+	}
+}

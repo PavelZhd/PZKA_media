@@ -1,0 +1,147 @@
+module Base
+{
+	model PZKA_Vehicles_Initial_a
+	{
+		mesh = vehicles/pzka_Initial|Initial,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Initial_nr_a
+	{
+		mesh = vehicles/pzka_Initial|Initial,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Initial_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Initial|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Initial_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Initial|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Initial_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Initial|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Initial_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Initial|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Initial_WindowRearLeft
+	{
+		mesh = vehicles/pzka_Initial|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Initial_WindowRearRight
+	{
+		mesh = vehicles/pzka_Initial|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Initial_Hood
+	{
+		mesh = vehicles/pzka_Initial|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Initial_Trunk
+	{
+		mesh = vehicles/pzka_Initial|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Initial_Windshield
+	{
+		mesh = vehicles/pzka_Initial|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Initial_RearWindow
+	{
+		mesh = vehicles/pzka_Initial|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Initial_LightHost
+	{
+		mesh = vehicles/pzka_Initial|LightsHost_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Light0Bone 1.0,
+		boneWeight = Light1Bone 1.0,
+		boneWeight = Light2Bone 1.0,		
+	}
+
+	model PZKA_Vehicles_Initial_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Initial|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Initial_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Initial|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Initial_Hood_nr
+	{
+		mesh = vehicles/pzka_Initial|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Initial_Trunk_nr
+	{
+		mesh = vehicles/pzka_Initial|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Initial_LightHost_nr
+	{
+		mesh = vehicles/pzka_Initial|LightsHost_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Light0Bone 1.0,
+		boneWeight = Light1Bone 1.0,
+		boneWeight = Light2Bone 1.0,		
+	}
+
+}

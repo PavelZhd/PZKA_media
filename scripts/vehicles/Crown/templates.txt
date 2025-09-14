@@ -1,0 +1,154 @@
+module Base
+{
+
+	template vehicle PZKA_Crown {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Crown_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Crown_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Crown_DoorFrontRight,
+			}
+		}
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Crown_DoorRearLeft,
+			}
+		}
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Crown_DoorRearRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Crown_Hood,
+			}
+		}
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Crown_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Crown_WindowFrontRight,
+            }
+	    }
+		part WindowRearLeft
+        {	
+			parent = DoorRearLeft,
+         	model Default
+			{
+        		file = PZKA_Vehicles_Crown_WindowRearLeft,
+       		}
+       	}
+		part WindowRearRight
+       	{	
+			parent = DoorRearRight,
+         	model Default
+            {
+            	file = PZKA_Vehicles_Crown_WindowRearRight,
+            }
+        }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Crown_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Crown_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Crown_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Crown_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Crown_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Crown_SeatRR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.206106 -0.046832 0.963512,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Crown_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+}

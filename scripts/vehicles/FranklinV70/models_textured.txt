@@ -1,0 +1,52 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinV70_internals
+	{
+		mesh = vehicles/pzka_FranklinV70|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkFranklinVan70shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinV70_SeatFL
+	{
+		mesh = vehicles/pzka_FranklinV70|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkFranklinVan70shell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FranklinV70_SeatFR
+	{
+		mesh = vehicles/pzka_FranklinV70|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkFranklinVan70shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinV70_SeatML
+	{
+		mesh = vehicles/pzka_FranklinV70|Seat_MiddleLeft_obj,
+		texture = Vehicles/Vehicle_pzkFranklinVan70shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinV70_SeatMR
+	{
+		mesh = vehicles/pzka_FranklinV70|Seat_MiddleRight_obj,
+		texture = Vehicles/Vehicle_pzkFranklinVan70shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinV70_SeatRL
+	{
+		mesh = vehicles/pzka_FranklinV70|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkFranklinVan70shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinV70_SeatRR
+	{
+		mesh = vehicles/pzka_FranklinV70|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkFranklinVan70shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

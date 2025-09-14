@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Harmony_internals
+	{
+		mesh = vehicles/pzka_Harmony|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkMastersonHarmonyshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Harmony_SeatFL
+	{
+		mesh = vehicles/pzka_Harmony|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkMastersonHarmonyshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Harmony_SeatFR
+	{
+		mesh = vehicles/pzka_Harmony|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkMastersonHarmonyshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Harmony_SeatRL
+	{
+		mesh = vehicles/pzka_Harmony|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkMastersonHarmonyshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Harmony_SeatRR
+	{
+		mesh = vehicles/pzka_Harmony|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkMastersonHarmonyshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

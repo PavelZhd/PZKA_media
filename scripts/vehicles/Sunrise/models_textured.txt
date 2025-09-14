@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Sunrise_internals
+	{
+		mesh = vehicles/pzka_Sunrise|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkMastersonSunriseshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sunrise_SeatFL
+	{
+		mesh = vehicles/pzka_Sunrise|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkMastersonSunriseshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Sunrise_SeatFR
+	{
+		mesh = vehicles/pzka_Sunrise|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkMastersonSunriseshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sunrise_SeatRL
+	{
+		mesh = vehicles/pzka_Sunrise|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_pzkMastersonSunriseshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sunrise_SeatRR
+	{
+		mesh = vehicles/pzka_Sunrise|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_pzkMastersonSunriseshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

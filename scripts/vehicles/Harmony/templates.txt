@@ -1,0 +1,191 @@
+module Base
+{
+	template vehicle PZKA_Harmony_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Harmony_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Harmony_WindowFrontRight,
+            }
+	    }
+		part WindowRearLeft
+        {	
+			parent = DoorRearLeft,
+         	model Default
+			{
+        		file = PZKA_Vehicles_Harmony_WindowRearLeft,
+       		}
+       	}
+		part WindowRearRight
+       	{	
+			parent = DoorRearRight,
+         	model Default
+            {
+            	file = PZKA_Vehicles_Harmony_WindowRearRight,
+            }
+        }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Harmony_Windshield,
+			}			
+		}
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Harmony_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Harmony_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Harmony_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Harmony_SeatRR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.196922 -0.046768 0.960807,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Harmony_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+
+	template vehicle PZKA_Harmony_sharedS {
+		template! = PZKA_Harmony_shared,
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Harmony_RearWindow,
+			}
+		}
+	}
+
+	template vehicle PZKA_Harmony_sharedW {
+		template! = PZKA_Harmony_shared,
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Harmony_RearWindowW,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_Harmony_RearWindowWStatic,
+			}
+		}
+	}
+
+	template vehicle PZKA_Harmony_Doors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Harmony_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Harmony_DoorFrontRight,
+			}
+		}
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Harmony_DoorRearLeft,
+			}
+		}
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Harmony_DoorRearRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Harmony_Hood,
+			}
+		}
+	}
+
+
+	template vehicle PZKA_Harmony {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Harmony_Trunk,
+			}
+		}
+		template! = PZKA_Harmony_Doors,
+		template! = PZKA_Harmony_sharedS,
+	}
+	template vehicle PZKA_HarmonyW {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Harmony_TrunkW,
+			}
+		}
+		template! = PZKA_Harmony_Doors,
+		template! = PZKA_Harmony_sharedW,
+	}
+}

@@ -1,0 +1,112 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinV70_a
+	{
+		mesh = vehicles/pzka_FranklinV70|FranclinV70,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_FranklinV70_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_FranklinV70|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinV70_DoorFrontRight
+	{
+		mesh = vehicles/pzka_FranklinV70|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinV70_DoorRearLeft
+	{
+		mesh = vehicles/pzka_FranklinV70|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoor1Bone 1.0,
+		boneWeight = RearLeftDoor2Bone 1.0,
+	}
+	model PZKA_Vehicles_FranklinV70_DoorRearRight
+	{
+		mesh = vehicles/pzka_FranklinV70|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoor1Bone 1.0,
+		boneWeight = RearRightDoor2Bone 1.0,
+	}
+	model PZKA_Vehicles_FranklinV70_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_FranklinV70|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_FranklinV70_WindowFrontRight
+	{
+		mesh = vehicles/pzka_FranklinV70|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinV70_WindowRearLeft
+	{
+		mesh = vehicles/pzka_FranklinV70|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinV70_WindowRearRight
+	{
+		mesh = vehicles/pzka_FranklinV70|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinV70_Trunk
+	{
+		mesh = vehicles/pzka_FranklinV70|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk1Bone 1.0,
+		boneWeight = Trunk2Bone 1.0,
+	}
+	model PZKA_Vehicles_FranklinV70_Hood
+	{
+		mesh = vehicles/pzka_FranklinV70|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinV70_Windshield
+	{
+		mesh = vehicles/pzka_FranklinV70|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinV70_RearWindowStatic
+	{
+		mesh = vehicles/pzka_FranklinV70|RearWindow_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinV70_RearWindow
+	{
+		mesh = vehicles/pzka_FranklinV70|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+}
