@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Lang1240_internals
+	{
+		mesh = vehicles/pzka_Lang1240|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkMerciaLang1240shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Lang1240_SeatFL
+	{
+		mesh = vehicles/pzka_Lang1240|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkMerciaLang1240shell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Lang1240_SeatFR
+	{
+		mesh = vehicles/pzka_Lang1240|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkMerciaLang1240shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Lang1240_SeatRL
+	{
+		mesh = vehicles/pzka_Lang1240|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_pzkMerciaLang1240shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Lang1240_SeatRR
+	{
+		mesh = vehicles/pzka_Lang1240|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_pzkMerciaLang1240shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

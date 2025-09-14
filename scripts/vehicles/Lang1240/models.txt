@@ -1,0 +1,162 @@
+module Base
+{
+	model PZKA_Vehicles_Lang1240_a
+	{
+		mesh = vehicles/pzka_Lang1240|Lang1240_4D,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Lang1240_2D_a
+	{
+		mesh = vehicles/pzka_Lang1240|Lang1240_2D,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Lang1240_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Lang1240|Door_4_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Lang1240_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Lang1240|Door_4_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Lang1240_DoorFrontLeft_2D
+	{
+		mesh = vehicles/pzka_Lang1240|Door_2_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Lang1240_DoorFrontRight_2D
+	{
+		mesh = vehicles/pzka_Lang1240|Door_2_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Lang1240_DoorRearLeft
+	{
+		mesh = vehicles/pzka_Lang1240|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Lang1240_DoorRearRight
+	{
+		mesh = vehicles/pzka_Lang1240|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Lang1240_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Lang1240|Window_4_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Lang1240_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Lang1240|Window_4_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Lang1240_WindowRearLeft
+	{
+		mesh = vehicles/pzka_Lang1240|Window_4_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Lang1240_WindowRearRight
+	{
+		mesh = vehicles/pzka_Lang1240|Window_4_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Lang1240_WindowFrontLeft_2D
+	{
+		mesh = vehicles/pzka_Lang1240|Window_2_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Lang1240_WindowFrontRight_2D
+	{
+		mesh = vehicles/pzka_Lang1240|Window_2_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Lang1240_WindowRearLeft_2D
+	{
+		mesh = vehicles/pzka_Lang1240|Window_2_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Lang1240_WindowRearRight_2D
+	{
+		mesh = vehicles/pzka_Lang1240|Window_2_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Lang1240_Trunk
+	{
+		mesh = vehicles/pzka_Lang1240|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Lang1240_Hood
+	{
+		mesh = vehicles/pzka_Lang1240|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Lang1240_Windshield
+	{
+		mesh = vehicles/pzka_Lang1240|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Lang1240_RearWindow
+	{
+		mesh = vehicles/pzka_Lang1240|RearWindow_4_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Lang1240_RearWindow_2D
+	{
+		mesh = vehicles/pzka_Lang1240|RearWindow_2_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+}

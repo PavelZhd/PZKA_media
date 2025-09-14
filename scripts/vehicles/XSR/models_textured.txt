@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_XSR_internals
+	{
+		mesh = vehicles/pzka_XSR|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkMastersonXSRshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_XSR_SeatFL
+	{
+		mesh = vehicles/pzka_XSR|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkMastersonXSRshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_XSR_SeatFR
+	{
+		mesh = vehicles/pzka_XSR|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkMastersonXSRshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_XSR_SeatRL
+	{
+		mesh = vehicles/pzka_XSR|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkMastersonXSRshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_XSR_SeatRR
+	{
+		mesh = vehicles/pzka_XSR|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkMastersonXSRshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}
