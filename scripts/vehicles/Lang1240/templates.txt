@@ -1,0 +1,221 @@
+module Base
+{
+	template vehicle PZKA_Lang1240_shared {
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_Windshield,
+			}			
+		}
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_SeatRR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.208893 -0.037643 0.854562,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Lang1240_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+
+	template vehicle PZKA_Lang1240_shared_4D {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Lang1240_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Lang1240_WindowFrontRight,
+            }
+	    }
+		part WindowRearLeft
+        {	
+			parent = DoorRearLeft,
+         	model Default
+			{
+        		file = PZKA_Vehicles_Lang1240_WindowRearLeft,
+       		}
+       	}
+		part WindowRearRight
+       	{	
+			parent = DoorRearRight,
+         	model Default
+            {
+            	file = PZKA_Vehicles_Lang1240_WindowRearRight,
+            }
+        }
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_RearWindow,
+			}
+		}
+	}
+	template vehicle PZKA_Lang1240_shared_2D {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Lang1240_WindowFrontLeft_2D,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Lang1240_WindowFrontRight_2D,
+            }
+	    }
+		part WindowRearLeft
+        {	
+			model Default
+			{
+        		file = PZKA_Vehicles_Lang1240_WindowRearLeft_2D,
+       		}
+       	}
+		part WindowRearRight
+       	{	
+			model Default
+            {
+            	file = PZKA_Vehicles_Lang1240_WindowRearRight_2D,
+            }
+        }
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_RearWindow_2D,
+			}
+		}
+	}
+	template vehicle PZKA_Lang1240_sharedParts {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_Trunk,
+			}
+		}
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_Hood,
+			}
+		}
+	}
+	
+
+	template vehicle PZKA_Lang1240_4D {
+		template! = PZKA_Lang1240_sharedParts,
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_DoorFrontRight,
+			}
+		}
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_DoorRearLeft,
+			}
+		}
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_DoorRearRight,
+			}
+		}
+		template! = PZKA_Lang1240_shared,
+		template! = PZKA_Lang1240_shared_4D,
+	}
+
+	template vehicle PZKA_Lang1240_2D {
+		template! = PZKA_Lang1240_sharedParts,
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_DoorFrontLeft_2D,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang1240_DoorFrontRight_2D,
+			}
+		}
+		template! = PZKA_Lang1240_shared,
+		template! = PZKA_Lang1240_shared_2D,
+	}
+}
