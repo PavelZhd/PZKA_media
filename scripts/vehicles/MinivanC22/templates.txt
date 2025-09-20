@@ -1,0 +1,165 @@
+module Base
+{
+	template vehicle PZKA__MinivanC22_shared {
+
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+                file = PZKA_Vehicles_MinivanC22_WindowFrontLeft,
+            }
+        }
+		part WindowFrontRight
+    	{	
+            parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_MinivanC22_WindowFrontRight,
+            }
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanC22_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanC22_RearWindow,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_MinivanC22_RearWindowStatic,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanC22_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanC22_SeatFR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.172212 -0.027365 1.14068,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_MinivanC22_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+
+	template vehicle PZKA__MinivanC22_Hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanC22_Hood,
+			}
+		}
+	}
+
+	
+
+	template vehicle PZKA__MinivanC22_RearWindows {
+		part WindowRearLeft
+        {	
+        	model Default
+            {
+        		file = PZKA_Vehicles_MinivanC22_WindowRearLeft,
+    		}
+		}
+		part WindowRearRight
+        {	
+    		parent = DoorRearRight,
+			model Default
+    		{
+        		file = PZKA_Vehicles_MinivanC22_WindowRearRight,
+    		}
+    	}
+	}
+
+
+	template vehicle PZKA__MinivanC22_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanC22_Trunk,
+			}
+		}
+	}
+
+	template vehicle PZKA__MinivanC22_2Doors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanC22_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanC22_DoorFrontRight,
+			}
+		}
+		template! = PZKA__MinivanC22_FrontWindows,
+	}
+
+	template vehicle PZKA__MinivanC22_3DoorsR {
+		template! = PZKA__MinivanC22_2Doors,		
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanC22_DoorRearRight,
+			}
+		}
+		template!= PZKA__MinivanC22_RearWindows,
+	}
+
+
+	template vehicle PZKA_MinivanC22 {
+		template! = PZKA__MinivanC22_Trunk,
+		template! = PZKA__MinivanC22_3DoorsR,
+		template! = PZKA__MinivanC22_Hood,
+		template! = PZKA__MinivanC22_shared,
+	}
+
+
+}

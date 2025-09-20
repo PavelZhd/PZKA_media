@@ -506,6 +506,12 @@ PZKA.CreateAnimationProfile("pzkMastersonXSR","PZKA_Vehicles_XSR_a","PZKA_XSR_Li
 PZKA.CreateAnimationProfile("pzkMerciaLang1240","PZKA_Vehicles_Lang1240_a","PZKA_Lang1240_Light","PZKA_Lang1240_4D",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkMerciaLang12402D","PZKA_Vehicles_Lang1240_2D_a","PZKA_Lang1240_Light","PZKA_Lang1240_2D",{"FLW","FRW"},"PZKA_TrunkDoorVersion",{"FL","FR","RL","RR"})
 
+PZKA.CreateAnimationProfile("pzkMerciaLangBerg","PZKA_Vehicles_Berg_a","PZKA_Berg_Light","PZKA_Berg",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
+
+PZKA.CreateAnimationProfile("pzkMerciaLang4000Cabrio","PZKA_Vehicles_Lang4000Cabrio_a","PZKA_Lang4000Cabrio_Light","PZKA_Lang4000Cabrio",{"FL","FR"},"PZKA_TrunkDoorVersion")
+
+PZKA.CreateAnimationProfile("pzkMinivan2","PZKA_Vehicles_Minivan2_a","PZKA_Minivan2_Light","PZKA_Minivan2",{"FLW","FRW","RR"},"PZKA_RearDoorVersion")
+PZKA.CreateAnimationProfile("pzkMinivanC22","PZKA_Vehicles_MinivanC22_a","PZKA_MinivanC22_Light","PZKA_MinivanC22",{"FLW","FRW","RR"},"PZKA_RearDoorVersion")
 
 
 --[[
