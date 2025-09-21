@@ -96,7 +96,7 @@ PZKA.CreateAnimationProfile("pzkContinentalBayer3302D","PZKA_Vehicles_Bayer_2D_a
 PZKA.CreateAnimationProfile("pzkContinentalBayer330Sport","PZKA_Vehicles_Bayer_Sport_a","PZKA_Bayer4D_Light","PZKA_BayerSport_animatedDoors",{"FLW","FRW","RLOW","RROW"}, "PZKA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkContinentalBayer330Cabrio","PZKA_Vehicles_Bayer_Cabrio_a","PZKA_Bayer4D_Light","PZKA_BayerCabrio_animatedDoors",{"FL","FR"}, "PZKA_TrunkDoorVersion",{"FL","FR","RL","RR"})
 
-PZKA.CreateAnimationProfile("pzkFranklinTruckBus","PZKA_Vehicles_TruckBus_a","PZKA_TruckBus_Lights","PZKA_TruckBus_animatedDoors_nr",{"FR"}, "PZKA_RearDoorVersion",{"FL","FR","ML","MR","RL","RR"})
+PZKA.CreateAnimationProfile("pzkFranklinTruckBus","PZKA_Vehicles_TruckBus_a","PZKA_TruckBus_Lights","PZKA_TruckBus_animatedDoors_nr",{"FR"}, "PZKA_RearDoorVersionMed",{"FL","FR","ML","MR","RL","RR"})
 PZKA.CloneAnimationProfile("pzkFranklinTruckBusAirport","pzkFranklinTruckBus")
 PZKA.CloneAnimationProfile("pzkFranklinTruckBusArmy","pzkFranklinTruckBus","PZKA_Vehicles_TruckBus_Bars_a")
 PZKA.CloneAnimationProfile("pzkFranklinTruckBusPrison","pzkFranklinTruckBusArmy")
@@ -120,7 +120,7 @@ end
 PZKA.CloneAnimationProfile("pzkDashMayorStationWagon","pzkCeriseStationWagon","PZKA_Vehicles_Wagon_Mayor_a","PZKA_Wagon_Lights_Mayor","PZKA_Normal_Wagon_Mayor")
 PZKA.CloneAnimationProfile("pzkTriumphTWDStationWagonGriswold","pzkCeriseStationWagon","PZKA_Vehicles_Wagon_Grisworld_a","PZKA_Wagon_Grisworld_Lights","PZKA_Wagon_Grisworld_animatedDoors")
 
-PZKA.CreateAnimationProfile("pzkStepVanMilk","PZKA_Vehicle_StepVan_NoRandom_a","PZKA_StepVan_Lights","PZKA_StepVan_animatedDoors",{"FLW","FRW"}, "PZKA_RearDoorVersion")
+PZKA.CreateAnimationProfile("pzkStepVanMilk","PZKA_Vehicle_StepVan_NoRandom_a","PZKA_StepVan_Lights","PZKA_StepVan_animatedDoors",{"FLW","FRW"}, "PZKA_RearDoorVersionMed")
 PZKA.CloneAnimationProfile("pzkStepVanUPZ","pzkStepVanMilk")
 PZKA.CloneAnimationProfile("pzkStepVanFedLog","pzkStepVanMilk")
 PZKA.CloneAnimationProfile("pzkStepVanSwatLouisvilleSWAT","pzkStepVanMilk","PZKA_Vehicle_StepVan_SWAT_a")
@@ -130,14 +130,14 @@ PZKA.CloneAnimationProfile("pzkStepVanIceCream","pzkStepVanTacoVan","PZKA_Vehicl
 PZKA.CloneAnimationProfile("pzkStepVanPizza","pzkStepVanTacoVan","PZKA_Vehicle_StepVan_Pizza_a")
 
 PZKA.CreateAnimationProfile("pzkVanBrig","PZKA_Vehicles_Van_Brig_a","PZKA_Van_Brig_Lights","PZKA_Van_Brig_animatedDoors",{"FLW","FRW","RLW","RRW"}, "PZKA_OpenBedVersion")
-PZKA.CreateAnimationProfile("pzkVanBox","PZKA_Vehicles_Van_Box_a","PZKA_Van_Box_Lights","PZKA_Van_Box_animatedDoors",{"FLW","FRW"}, "PZKA_RearDoorVersion")
-PZKA.CreateAnimationProfile("pzkVanCamper","PZKA_Vehicles_Van_Camper_a","PZKA_Van_Lights","PZKA_Van_Camper_animatedDoors",{"FLW","FRW","RR"}, "PZKA_RearDoorVersion")
+PZKA.CreateAnimationProfile("pzkVanBox","PZKA_Vehicles_Van_Box_a","PZKA_Van_Box_Lights","PZKA_Van_Box_animatedDoors",{"FLW","FRW"}, "PZKA_RearDoorVersionMed")
+PZKA.CreateAnimationProfile("pzkVanCamper","PZKA_Vehicles_Van_Camper_a","PZKA_Van_Lights","PZKA_Van_Camper_animatedDoors",{"FLW","FRW","RR"}, "PZKA_RearDoorVersionMed")
 PZKA.CloneAnimationProfile("pzkVanBoxAmbulance","pzkVanBox","PZKA_Vehicles_Van_BoxAmbulance_a","PZKA_Van_BoxAmbulance_Lights","PZKA_Van_BoxAmbulance_animatedDoors")
 PZKA.CloneAnimationProfile("pzkVanBoxFiretruck","pzkVanBoxAmbulance")
-PZKA.CreateAnimationProfile("pzkVanilaVanAmbulance", "PZKA_Vehicles_Van_Ambulance_a","PZKA_Van_Lights","PZKA_Van_McCoy_animatedDoors",{"FLW","FRW"}, "PZKA_RearDoorVersion")
+PZKA.CreateAnimationProfile("pzkVanilaVanAmbulance", "PZKA_Vehicles_Van_Ambulance_a","PZKA_Van_Lights","PZKA_Van_McCoy_animatedDoors",{"FLW","FRW"}, "PZKA_RearDoorVersionMed")
 PZKA.CloneAnimationProfile("pzkVanMcCoy","pzkVanilaVanAmbulance","PZKA_Vehicles_Van_McCoy_a")
 
-PZKA.CreateAnimationProfile("pzkVanMultivan", "PZKA_Vehicles_Van_Seats_a","PZKA_Van_Lights","PZKA_Van_Seats_animatedDoors",{"FLW","FRW","RLW","RRW"}, "PZKA_RearDoorVersion",{"FL","FR","ML","MR","RL","RR"})
+PZKA.CreateAnimationProfile("pzkVanMultivan", "PZKA_Vehicles_Van_Seats_a","PZKA_Van_Lights","PZKA_Van_Seats_animatedDoors",{"FLW","FRW","RLW","RRW"}, "PZKA_RearDoorVersionMed",{"FL","FR","ML","MR","RL","RR"})
 PZKA.CloneAnimationProfile("pzkVanMultivanPayday", "pzkVanMultivan", "PZKA_Vehicles_Van_Seats_a_nr", false, "PZKA_Van_Payday_animatedDoors")
 if SLE then
     PZKA.CloneAnimationProfile("pzkVanPoliceLouisvillePD", "pzkVanMultivan", "PZKA_Vehicles_Van_Seats_a_nr", false, "PZKA_Van_Police_nr_animatedDoors")
@@ -147,9 +147,9 @@ end
 PZKA.CloneAnimationProfile("pzkVanPoliceMeadeSheriff", "pzkVanPoliceLouisvillePD")
 PZKA.CloneAnimationProfile("pzkVanPoliceWestPoint", "pzkVanPoliceLouisvillePD")
 if SLE then
-    PZKA.CreateAnimationProfile("pzkVanSeatsTaxi", "PZKA_Vehicles_Van_Seats_a_nr", "PZKA_Van_Lights", "PZKA_Van_Taxi_animatedDoors",{"FLW","FRW","MLW","MRW"}, "PZKA_RearDoorVersion",{"FL","FR","ML","MR","RL","RR"})
+    PZKA.CreateAnimationProfile("pzkVanSeatsTaxi", "PZKA_Vehicles_Van_Seats_a_nr", "PZKA_Van_Lights", "PZKA_Van_Taxi_animatedDoors",{"FLW","FRW","MLW","MRW"}, "PZKA_RearDoorVersionMed",{"FL","FR","ML","MR","RL","RR"})
 else
-    PZKA.CreateAnimationProfile("pzkVanSeatsTaxi", "PZKA_Vehicles_Van_Taxi_a", "PZKA_Van_Lights", "PZKA_Van_Taxi_animatedDoors",{"FLW","FRW","MLW","MRW"}, "PZKA_RearDoorVersion",{"FL","FR","ML","MR","RL","RR"})
+    PZKA.CreateAnimationProfile("pzkVanSeatsTaxi", "PZKA_Vehicles_Van_Taxi_a", "PZKA_Van_Lights", "PZKA_Van_Taxi_animatedDoors",{"FLW","FRW","MLW","MRW"}, "PZKA_RearDoorVersionMed",{"FL","FR","ML","MR","RL","RR"})
 end
 
 PZKA.CreateAnimationProfile("pzkFranklinTruckBed", "PZKA_Vehicles_Truck_Bed_a","PZKA_Truck_Bed_specific","PZKA_Truck_animatedDoors",{"FLW","FRW"}, "PZKA_OpenBedVersion")
@@ -159,7 +159,7 @@ PZKA.CloneAnimationProfile("pzkFranklinTruckShort","pzkFranklinTruckBed","PZKA_V
 
 PZKA.CreateAnimationProfile("pzkFranklinTruckCab", "PZKA_Vehicles_Truck_Cab_a","PZKA_Truck_Cab_specific","PZKA_Truck_animatedDoors",{"FLW","FRW","RLW","RRW"}, "PZKA_OpenBedVersion")
 
-PZKA.CreateAnimationProfile("pzkFranklinTruckBox", "PZKA_Vehicles_Truck_Box_a","PZKA_Truck_Box_specific","PZKA_Truck_animatedDoors",{"FLW","FRW"}, "PZKA_RearDoorVersion")
+PZKA.CreateAnimationProfile("pzkFranklinTruckBox", "PZKA_Vehicles_Truck_Box_a","PZKA_Truck_Box_specific","PZKA_Truck_animatedDoors",{"FLW","FRW"}, "PZKA_RearDoorVersionMed")
 PZKA.CloneAnimationProfile("pzkFranklinTruckDump","pzkFranklinTruckBox","PZKA_Vehicles_Truck_Dump_a","PZKA_Truck_Dump_specific")
 PZKA.CloneAnimationProfile("pzkFranklinTruckPropane","pzkFranklinTruckBox","PZKA_Vehicles_Truck_Propane_a","PZKA_Truck_Propane_specific")
 PZKA.CloneAnimationProfile("pzkFranklinTruckTow","pzkFranklinTruckBox","PZKA_Vehicles_Truck_Tow_a","PZKA_Truck_Tow_specific")
@@ -178,7 +178,7 @@ PZKA.CloneAnimationProfile("pzkFranklinTruckTankerMil", "pzkFranklinTruckFireTan
 PZKA.CloneAnimationProfile("pzkFranklinTruckTankerSeptic","pzkFranklinTruckMilTankerWater","PZKA_Vehicles_Truck_Tanker2_a",false,"PZKA_Truck_animatedDoors")
 PZKA.CloneAnimationProfile("pzkFranklinTruckTankerWater","pzkFranklinTruckTankerSeptic")
 
-PZKA.CreateAnimationProfile("pzkFranklinTruckRV", "PZKA_Vehicles_Truck_RV_a","PZKA_Truck_RV_lights","PZKA_Truck_RV_animatedDoors",{"FLW","FRW","RR"},"PZKA_RearDoorVersion",{"FL","FR","RL","RR"})
+PZKA.CreateAnimationProfile("pzkFranklinTruckRV", "PZKA_Vehicles_Truck_RV_a","PZKA_Truck_RV_lights","PZKA_Truck_RV_animatedDoors",{"FLW","FRW","RR"},"PZKA_RearDoorVersionMed",{"FL","FR","RL","RR"})
 
 PZKA.CreateAnimationProfile("pzkCarMuscle", "PZKA_Vehicles_Muscle_a","PZKA_Muscle_lights","PZKA_Muscle_animatedDoors",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkCarMuscleCabrio", "PZKA_Vehicles_MuscleCabrio_a","PZKA_Muscle_lights","PZKA_MuscleCabrio_animatedDoors",{"FL","FR"},"PZKA_TrunkDoorVersion")
@@ -247,7 +247,7 @@ PZKA.CloneAnimationProfile("pzkFranklin250FWagonLong","pzkFranklin150FWagonMediu
 PZKA.CreateAnimationProfile("pzkFranklin250FPickupWagonLong","PZKA_Vehicles_Ftype_Long_Wagon_Base1","PZKA_FType_CrewLong_F350_Lights","PZKA_FType_Long_Wagon_F350",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 PZKA.CloneAnimationProfile("pzkDashIntruder250WagonLong","pzkFranklin250FPickupWagonLong","PZKA_Vehicles_Ftype_Long_Wagon_Base2","PZKA_FType_CrewLong_Intruder_Lights","PZKA_FType_Long_Wagon_Intruder")
 
-PZKA.CreateAnimationProfile("pzkF350BoxCUCV","PZKA_Vehicles_Ftype_Box_Base_nr","PZKA_FType_BOX_CUCV_Lights","PZKA_FType_Box_CUCV",{"FLW","FRW"},"PZKA_RearDoorVersion")
+PZKA.CreateAnimationProfile("pzkF350BoxCUCV","PZKA_Vehicles_Ftype_Box_Base_nr","PZKA_FType_BOX_CUCV_Lights","PZKA_FType_Box_CUCV",{"FLW","FRW"},"PZKA_RearDoorVersionMed")
 PZKA.CloneAnimationProfile("pzkF350BoxUmoveit","pzkF350BoxCUCV","PZKA_Vehicles_Ftype_Box_Base","PZKA_FType_BOX_UMove_Lights","PZKA_FType_Box_UMove")
 PZKA.CloneAnimationProfile("pzkF350BoxAmbulance","pzkF350BoxCUCV","PZKA_Vehicles_Ftype_Box_Base_nr","PZKA_FType_BOX_Ambulance_Lights","PZKA_FType_Box_Ambulance")
 PZKA.CloneAnimationProfile("pzkF350BoxSwat","pzkF350BoxCUCV","PZKA_Vehicles_Ftype_Box_Base_nr",false,"PZKA_FType_Box_SWAT")
@@ -280,9 +280,9 @@ PZKA.CloneAnimationProfile("pzkChevalierMaroca80KST","pzkChevalierMaroca80Bullet
 PZKA.CloneAnimationProfile("pzkChevalierMaroca80LV","pzkChevalierMaroca80Bulletin")
 PZKA.CloneAnimationProfile("pzkChevalierMaroca80Muld","pzkChevalierMaroca80Bulletin")
 
-PZKA.CreateAnimationProfile("pzkChevalierVan70","PZKA_Vehicles_Van70_a","PZKA_Van70Chev_Lights","PZKA_Van70Chev_animatedDoors",{"FLW","FRW","ML","MR"}, "PZKA_RearDoorVersion",{"FL","FR","ML","MR","RL","RR"})
+PZKA.CreateAnimationProfile("pzkChevalierVan70","PZKA_Vehicles_Van70_a","PZKA_Van70Chev_Lights","PZKA_Van70Chev_animatedDoors",{"FLW","FRW","ML","MR"}, "PZKA_RearDoorVersionMed",{"FL","FR","ML","MR","RL","RR"})
 PZKA.CloneAnimationProfile("pzkDashVan70","pzkChevalierVan70","PZKA_Vehicles_Van70Dash_a","PZKA_Van70Dash_Lights","PZKA_Van70Dash_animatedDoors")
-PZKA.CreateAnimationProfile("pzkDashVan70Riddle","PZKA_Vehicles_Van70_riddle_a","PZKA_Van70Dash_Lights","PZKA_Van70_animatedDoors_nr",{"FLW","FRW","RL","RR"}, "PZKA_RearDoorVersion",{"FL","FR","ML","MR","RL","RR"})
+PZKA.CreateAnimationProfile("pzkDashVan70Riddle","PZKA_Vehicles_Van70_riddle_a","PZKA_Van70Dash_Lights","PZKA_Van70_animatedDoors_nr",{"FLW","FRW","RL","RR"}, "PZKA_RearDoorVersionMed",{"FL","FR","ML","MR","RL","RR"})
 
 PZKA.CreateAnimationProfile("pzkDashRoyal","PZKA_Vehicles_Royal_a","PZKA_Royal_Lights_Royal","PZKA_DashRoyal_sedan_Royal",{"FLW","FRW"}, "PZKA_TrunkDoorVersion")
 PZKA.CloneAnimationProfile("pzkDashRoyalGrand","pzkDashRoyal")
@@ -354,8 +354,8 @@ PZKA.CreateAnimationProfile("pzkMastersonLadyZ","PZKA_Vehicles_LadyZ_a","pzka_La
 
 PZKA.CreateAnimationProfile("pzkPickupFranklin","PZKA_Vehicles_FranklinRaider_a","pzka_FranklinRaider_Light","PZKA_FranklinRaider",{"FLW","FRW"},"PZKA_OpenBedVersion")
 
-PZKA.CreateAnimationProfile("pzkFranklinBankTruck","PZKA_Vehicles_BankTrunk_nr_a","pzka_BankTrunk_Light","PZKA_BankTrunk_Bank",{"FLW","FRW","RR"},"PZKA_RearDoorVersion")
-PZKA.CreateAnimationProfile("pzkFranklinSwatTruckLouisvilleSWAT","PZKA_Vehicles_BankTrunk_nr_a","pzka_BankTrunk_Light","PZKA_BankTrunk_lightbar",{"FLW","FRW","MR"},"PZKA_RearDoorVersion")
+PZKA.CreateAnimationProfile("pzkFranklinBankTruck","PZKA_Vehicles_BankTrunk_nr_a","pzka_BankTrunk_Light","PZKA_BankTrunk_Bank",{"FLW","FRW","RR"},"PZKA_RearDoorVersionMed")
+PZKA.CreateAnimationProfile("pzkFranklinSwatTruckLouisvilleSWAT","PZKA_Vehicles_BankTrunk_nr_a","pzka_BankTrunk_Light","PZKA_BankTrunk_lightbar",{"FLW","FRW","MR"},"PZKA_RearDoorVersionMed")
 
 PZKA.CreateAnimationProfile("pzkDashNoble","PZKA_Vehicles_DashNoble_a","pzka_DashNoble_Light","PZKA_DashNoble",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 
@@ -394,7 +394,7 @@ PZKA.CreateAnimationProfile("pzkContinentalPyrenean310","PZKA_Vehicles_Pyre_a","
 
 PZKA.CreateAnimationProfile("pzkContinentalSpirit","PZKA_Vehicles_Spirit_a","pzka_Spirit_Light","PZKA_Spirit",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 
-PZKA.CreateAnimationProfile("pzkContinentalTRK","PZKA_Vehicles_TRK_nr_a","pzka_TRK_Light","PZKA_TRK_nr",{"FLW","FRW"},"PZKA_RearDoorVersion")
+PZKA.CreateAnimationProfile("pzkContinentalTRK","PZKA_Vehicles_TRK_nr_a","pzka_TRK_Light","PZKA_TRK_nr",{"FLW","FRW"},"PZKA_RearDoorVersionMed")
 
 PZKA.CreateAnimationProfile("pzkMastersonIberiaPickup","PZKA_Vehicles_IberiaP_a","PZKA_Iberia_Light","PZKA_IberiaP",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkMastersonIberiaVan1","PZKA_Vehicles_IberiaW_a","PZKA_Iberia_Light","PZKA_IberiaW",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
@@ -484,7 +484,7 @@ PZKA.CreateAnimationProfile("pzkFranklinStallionKingFrankBullitt","PZKA_Vehicles
 PZKA.CreateAnimationProfile("pzkFranklinStallionKingKenMiles","PZKA_Vehicles_StallionKingM_a","PZKA_StallionKing_LightB","PZKA_StallionKing5_nr",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkFranklinStallionKingTheKing","PZKA_Vehicles_StallionKingK_a","PZKA_StallionKing_LightK","PZKA_StallionKing2_nr",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 
-PZKA.CreateAnimationProfile("pzkFranklinVan70","PZKA_Vehicles_FranklinV70_a","PZKA_FranklinV70_Light","PZKA_FranklinV70",{"FLW","FRW","ML","MR"},"PZKA_RearDoorVersion",{"FL","FR","ML","MR","RL","RR"})
+PZKA.CreateAnimationProfile("pzkFranklinVan70","PZKA_Vehicles_FranklinV70_a","PZKA_FranklinV70_Light","PZKA_FranklinV70",{"FLW","FRW","ML","MR"},"PZKA_RearDoorVersionMed",{"FL","FR","ML","MR","RL","RR"})
 
 PZKA.CreateAnimationProfile("pzkMastersonCrown","PZKA_Vehicles_Crown_a","PZKA_Crown_Light","PZKA_Crown",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkMastersonExpander","PZKA_Vehicles_Expander_a","PZKA_Expander_Light","PZKA_Expander",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
@@ -510,8 +510,11 @@ PZKA.CreateAnimationProfile("pzkMerciaLangBerg","PZKA_Vehicles_Berg_a","PZKA_Ber
 
 PZKA.CreateAnimationProfile("pzkMerciaLang4000Cabrio","PZKA_Vehicles_Lang4000Cabrio_a","PZKA_Lang4000Cabrio_Light","PZKA_Lang4000Cabrio",{"FL","FR"},"PZKA_TrunkDoorVersion")
 
-PZKA.CreateAnimationProfile("pzkMinivan2","PZKA_Vehicles_Minivan2_a","PZKA_Minivan2_Light","PZKA_Minivan2",{"FLW","FRW","RR"},"PZKA_RearDoorVersion")
-PZKA.CreateAnimationProfile("pzkMinivanC22","PZKA_Vehicles_MinivanC22_a","PZKA_MinivanC22_Light","PZKA_MinivanC22",{"FLW","FRW","RR"},"PZKA_RearDoorVersion")
+PZKA.CreateAnimationProfile("pzkMinivan2","PZKA_Vehicles_Minivan2_a","PZKA_Minivan2_Light","PZKA_Minivan2",{"FLW","FRW","RR"},"PZKA_RearDoorVersionMed")
+PZKA.CreateAnimationProfile("pzkMinivanC22","PZKA_Vehicles_MinivanC22_a","PZKA_MinivanC22_Light","PZKA_MinivanC22",{"FLW","FRW","RR"},"PZKA_RearDoorVersionMed")
+PZKA.CreateAnimationProfile("pzkMinivanChev","PZKA_Vehicles_MinivanChev_a","PZKA_MinivanChev_Light","PZKA_MinivanChev",{"FLW","FRW","RR"},"PZKA_RearDoorVersionMed")
+PZKA.CreateAnimationProfile("pzkMinivanConvoy","PZKA_Vehicles_MinivanChev_Convoy_a","PZKA_MinivanConvoy_Light","PZKA_MinivanConvoy",{"FLW","FRW","RR"},"PZKA_RearDoorVersionMed")
+PZKA.CreateAnimationProfile("pzkMinivanMPV","PZKA_Vehicles_MinivanMPV_a","PZKA_MinivanMPV_Light","PZKA_MinivanMPV",{"FLW","FRW","RR"},"PZKA_RearDoorVersionSlow")
 
 
 --[[
@@ -576,7 +579,7 @@ PZKA.CreateAnimationProfile("SmallCar02","PZKA_Vehicles_SmallCar02_a","PZKA_Smal
 
 PZKA.CreateAnimationProfile("SportsCar","PZKA_Vehicles_SportsCar_a","PZKA_SportsCar_animatedDoors", {"FLW","FRW"}, "PZKA_TrunkDoorVersion", {})
 
-PZKA.CreateAnimationProfile("StepVan","PZKA_Vehicle_StepVan_a","PZKA_StepVan_animatedDoors", {"FLW","FRW"}, "PZKA_RearDoorVersion")
+PZKA.CreateAnimationProfile("StepVan","PZKA_Vehicle_StepVan_a","PZKA_StepVan_animatedDoors", {"FLW","FRW"}, "PZKA_RearDoorVersionMed")
 PZKA.CloneAnimationProfile("StepVan_Cereal", "StepVan","PZKA_Vehicle_StepVan_NoRandom_a","PZKA_StepVan_norandom_animatedDoors")
 PZKA.CloneAnimationProfile("StepVan_Citr8", "StepVan_Cereal")
 PZKA.CloneAnimationProfile("StepVan_CompleteRepairShop", "StepVan_Cereal")
@@ -600,7 +603,7 @@ PZKA.CloneAnimationProfile("StepVanMail", "StepVan_Cereal")
 
 PZKA.CreateAnimationProfile("SUV","PZKA_Vehicles_SUV_a", "PZKA_SUV_animatedDoors", {"FLW","FRW","RLW","RRW"}, "PZKA_TrunkDoorVersion")
 
-PZKA.CreateAnimationProfile("Van","PZKA_Vehicles_Van_a","PZKA_Van_animatedDoors", {"FLW","FRW"}, "PZKA_RearDoorVersion")
+PZKA.CreateAnimationProfile("Van","PZKA_Vehicles_Van_a","PZKA_Van_animatedDoors", {"FLW","FRW"}, "PZKA_RearDoorVersionMed")
 PZKA.CloneAnimationProfile("Van_BugWipers", "Van","PZKA_Vehicles_Van_NoRandom_a","PZKA_Van_norandom_animatedDoors")
 PZKA.CloneAnimationProfile("Van_Charlemange_Beer", "Van_BugWipers")
 PZKA.CloneAnimationProfile("Van_KnoxDisti", "Van_BugWipers")
@@ -652,7 +655,7 @@ PZKA.CloneAnimationProfile("VanWPCarpentry", "Van_BugWipers")
 PZKA.CloneAnimationProfile("Vehicles_VanRadio", "Van_BugWipers","PZKA_Vehicles_VanRadio_a")
 PZKA.CloneAnimationProfile("VanRadio_3N", "Vehicles_VanRadio")
 
-PZKA.CreateAnimationProfile("VanSeats","PZKA_Vehicles_VanSeats_a","PZKA_VanSeats_animatedDoors", {"FLW","FRW","ML","MR"}, "PZKA_RearDoorVersion",{"FL","FR","ML","MR","RL","RR"})
+PZKA.CreateAnimationProfile("VanSeats","PZKA_Vehicles_VanSeats_a","PZKA_VanSeats_animatedDoors", {"FLW","FRW","ML","MR"}, "PZKA_RearDoorVersionMed",{"FL","FR","ML","MR","RL","RR"})
 PZKA.CloneAnimationProfile("VanSeats_Creature", "VanSeats","PZKA_Vehicles_VanSeats_norandom_a","PZKA_VanSeats_norandom_animatedDoors")
 PZKA.CloneAnimationProfile("VanSeats_LadyDelighter", "VanSeats_Creature")
 PZKA.CloneAnimationProfile("VanSeats_Mural", "VanSeats_Creature")

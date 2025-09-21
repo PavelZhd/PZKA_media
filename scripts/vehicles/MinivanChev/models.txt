@@ -1,0 +1,154 @@
+module Base
+{
+	model PZKA_Vehicles_MinivanChev_a
+	{
+		mesh = vehicles/pzka_MinivanChev|MinivanChev,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanChev_Convoy_a
+	{
+		mesh = vehicles/pzka_MinivanChev|MinivanConvoy,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_MinivanChev_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_MinivanChev|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_MinivanChev_DoorFrontRight
+	{
+		mesh = vehicles/pzka_MinivanChev|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_MinivanChev_DoorRearRight
+	{
+		mesh = vehicles/pzka_MinivanChev|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_MinivanChev_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_MinivanChev|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_MinivanChev_WindowFrontRight
+	{
+		mesh = vehicles/pzka_MinivanChev|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+
+	model PZKA_Vehicles_MinivanChev_WindowRearLeft
+	{
+		mesh = vehicles/pzka_MinivanChev|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanChev_WindowRearRight
+	{
+		mesh = vehicles/pzka_MinivanChev|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanChev_Trunk
+	{
+		mesh = vehicles/pzka_MinivanChev|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLBone 1.0,
+		boneWeight = TrunkRBone 1.0,
+	}
+	model PZKA_Vehicles_MinivanChev_TrunkC
+	{
+		mesh = vehicles/pzka_MinivanChev|Trunk_C_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkUBone 1.0,
+	}
+	model PZKA_Vehicles_MinivanChev_TrunkC2
+	{
+		mesh = vehicles/pzka_MinivanChev|Trunk_C2_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkUBone 1.0,
+		boneWeight = TrunkWBone 1.0,
+	}
+	model PZKA_Vehicles_MinivanChev_Hood
+	{
+		mesh = vehicles/pzka_MinivanChev|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_MinivanChev_Windshield
+	{
+		mesh = vehicles/pzka_MinivanChev|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanChev_RearWindowStatic
+	{
+		mesh = vehicles/pzka_MinivanChev|RearWindow_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanChev_RearWindowStaticC
+	{
+		mesh = vehicles/pzka_MinivanChev|RearWindow_C_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanChev_RearWindow
+	{
+		mesh = vehicles/pzka_MinivanChev|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanChev_RearWindowC
+	{
+		mesh = vehicles/pzka_MinivanChev|RearWindow_C_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_MinivanChev_FrontFill_C12_a
+	{
+		mesh = vehicles/pzka_MinivanChev|FrontFill_C12,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanChev_FrontFill_C3_a
+	{
+		mesh = vehicles/pzka_MinivanChev|FrontFill_C3,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

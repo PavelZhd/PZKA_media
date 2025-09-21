@@ -1688,20 +1688,18 @@ module Base
             		}
         	}	
 	}
-	template vehicle PZKA_RearDoorVersion {
+	template vehicle PZKA_RearDoorShared {
 		part DoorRear
 		{
 			anim Close
 			{
 				anim = Trunk_closing,
-				rate = 2.5,
 			}
 
 			anim Open
 			{
 				anim = Trunk_closing,
 				reverse = TRUE,
-				rate = 2.0,
 			}
 
 			anim Closed
@@ -1718,6 +1716,52 @@ module Base
 			}
 		}
 	}
+	template vehicle PZKA_RearDoorVersion {
+		template! = PZKA_RearDoorShared,
+		part DoorRear
+		{
+			anim Close
+			{
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				rate = 2.0,
+			}
+		}
+	}
+	template vehicle PZKA_RearDoorVersionMed {
+		template! = PZKA_RearDoorShared,
+		part DoorRear
+		{
+			anim Close
+			{
+				rate = 1.25,
+			}
+
+			anim Open
+			{
+				rate = 1.0,
+			}
+		}
+	}
+	template vehicle PZKA_RearDoorVersionSlow {
+		template! = PZKA_RearDoorShared,
+		part DoorRear
+		{
+			anim Close
+			{
+				rate = 0.625,
+			}
+
+			anim Open
+			{
+				rate = 0.5,
+			}
+		}
+	}
+
 	template vehicle PZKA_TrunkDoorVersion {
 		part TrunkDoor
 		{

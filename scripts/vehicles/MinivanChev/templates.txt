@@ -1,0 +1,220 @@
+module Base
+{
+	template vehicle PZKA_MinivanChev_shared {
+
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+                file = PZKA_Vehicles_MinivanChev_WindowFrontLeft,
+            }
+        }
+		part WindowFrontRight
+    	{	
+            parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_MinivanChev_WindowFrontRight,
+            }
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = DoorRear,
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_SeatFR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_BatteryL,
+				offset = 0.267806 -0.017231 0.984281,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_MinivanChev_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle PZKA_MinivanChev_Chev {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_RearWindow,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_MinivanChev_RearWindowStatic,
+			}
+		}
+	}
+	template vehicle PZKA_MinivanChev_Convoy {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_RearWindowC,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_MinivanChev_RearWindowStaticC,
+			}
+		}
+	}
+
+	template vehicle PZKA_MinivanChev_Hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_Hood,
+			}
+		}
+	}
+
+	
+
+	template vehicle PZKA_MinivanChev_RearWindows {
+		part WindowRearLeft
+        {	
+        	model Default
+            {
+        		file = PZKA_Vehicles_MinivanChev_WindowRearLeft,
+    		}
+		}
+		part WindowRearRight
+        {	
+    		parent = DoorRearRight,
+			model Default
+    		{
+        		file = PZKA_Vehicles_MinivanChev_WindowRearRight,
+    		}
+    	}
+	}
+
+
+	template vehicle PZKA_MinivanChev_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_Trunk,
+			}
+		}
+	}
+	template vehicle PZKA_MinivanChev_TrunkC {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_TrunkC,
+			}
+		}
+	}
+
+	template vehicle PZKA_MinivanChev_2Doors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_DoorFrontRight,
+			}
+		}
+		template! = PZKA_MinivanChev_FrontWindows,
+	}
+
+	template vehicle PZKA_MinivanChev_3DoorsR {
+		template! = PZKA_MinivanChev_2Doors,		
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_DoorRearRight,
+			}
+		}
+		template!= PZKA_MinivanChev_RearWindows,
+	}
+
+
+	template vehicle PZKA_MinivanChev {
+		template! = PZKA_MinivanChev_Trunk,
+		template! = PZKA_MinivanChev_3DoorsR,
+		template! = PZKA_MinivanChev_Hood,
+		template! = PZKA_MinivanChev_shared,
+		template! = PZKA_MinivanChev_Chev,
+	}
+	
+	template vehicle PZKA_MinivanConvoy {
+		part PZKA_fill
+        {
+            model Convoy12 {
+                file = PZKA_Vehicles_MinivanChev_FrontFill_C12_a,
+            }
+            model Convoy3 {
+                file = PZKA_Vehicles_MinivanChev_FrontFill_C3_a,
+            }
+
+            category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = false,
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+            	init = Vehicles.Init.AdjustLightGeometry,
+	    	}
+        }
+		template! = PZKA_MinivanChev_TrunkC,
+		template! = PZKA_MinivanChev_3DoorsR,
+		template! = PZKA_MinivanChev_Hood,
+		template! = PZKA_MinivanChev_shared,
+		template! = PZKA_MinivanChev_Convoy,		
+	}
+
+
+}
