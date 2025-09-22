@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Berg_internals
+	{
+		mesh = vehicles/pzka_Berg|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkMerciaLangBergshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Berg_SeatFL
+	{
+		mesh = vehicles/pzka_Berg|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkMerciaLangBergshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Berg_SeatFR
+	{
+		mesh = vehicles/pzka_Berg|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkMerciaLangBergshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Berg_SeatRL
+	{
+		mesh = vehicles/pzka_Berg|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkMerciaLangBergshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Berg_SeatRR
+	{
+		mesh = vehicles/pzka_Berg|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkMerciaLangBergshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

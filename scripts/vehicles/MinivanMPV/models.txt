@@ -1,0 +1,101 @@
+module Base
+{
+	model PZKA_Vehicles_MinivanMPV_a
+	{
+		mesh = vehicles/pzka_MinivanMPV|MinivanMPV,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_MinivanMPV_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_MinivanMPV|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_MinivanMPV_DoorFrontRight
+	{
+		mesh = vehicles/pzka_MinivanMPV|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_MinivanMPV_DoorRearRight
+	{
+		mesh = vehicles/pzka_MinivanMPV|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_MinivanMPV_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_MinivanMPV|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_MinivanMPV_WindowFrontRight
+	{
+		mesh = vehicles/pzka_MinivanMPV|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+
+	model PZKA_Vehicles_MinivanMPV_WindowRearLeft
+	{
+		mesh = vehicles/pzka_MinivanMPV|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanMPV_WindowRearRight
+	{
+		mesh = vehicles/pzka_MinivanMPV|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanMPV_Trunk
+	{
+		mesh = vehicles/pzka_MinivanMPV|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_MinivanMPV_Hood
+	{
+		mesh = vehicles/pzka_MinivanMPV|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_MinivanMPV_Windshield
+	{
+		mesh = vehicles/pzka_MinivanMPV|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanMPV_RearWindowStatic
+	{
+		mesh = vehicles/pzka_MinivanMPV|RearWindow_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanMPV_RearWindow
+	{
+		mesh = vehicles/pzka_MinivanMPV|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+}

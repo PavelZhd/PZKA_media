@@ -1,0 +1,92 @@
+module Base
+{
+	template vehicle PZKA_Lang4000Cabrio {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang4000Cabrio_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang4000Cabrio_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang4000Cabrio_DoorFrontRight,
+			}
+		}		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang4000Cabrio_Hood,
+			}
+		}
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang4000Cabrio_Windshield,
+			}			
+		}
+
+		
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang4000Cabrio_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang4000Cabrio_SeatFR,
+			}
+		}		
+		
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.17477 -0.012792 0.86582,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Lang4000Cabrio_internals,
+			}			
+			category = nodisplay,
+            		specificItem = false,
+            		itemType = Base.LightBulb,
+            		setAllModelsVisible = true,
+			lua
+	    		{
+				create = Vehicles.Create.Default,
+	    		}
+		}
+		
+		template! = pzka_LightHostAnimate,
+		part PZKA_LightsHost
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Sport_LightHost,
+			}
+		}
+	}
+}

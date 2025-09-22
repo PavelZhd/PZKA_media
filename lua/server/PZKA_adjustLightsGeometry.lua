@@ -186,6 +186,11 @@ FillPartsMap["Base.pzkFranklinStallionPolice"] = {
 --FillPartsMap["Base.pzkFranklinStallionPoliceMeadeSheriff"] = FillPartsMap["Base.pzkFranklinStallionPoliceLouisvillePD"]
 --FillPartsMap["Base.pzkFranklinStallionPoliceWestPoint"] = FillPartsMap["Base.pzkFranklinStallionPoliceLouisvillePD"]
 
+FillPartsMap["Base.pzkMinivanConvoy"] = {
+    ["Convoy12"] = "a0a1a",
+    ["Convoy3"] = "a2a",
+}
+
 
 function Vehicles.Init.AdjustLightGeometry(vehicle, part)
     local fillData = FillPartsMap[vehicle:getScriptName()]

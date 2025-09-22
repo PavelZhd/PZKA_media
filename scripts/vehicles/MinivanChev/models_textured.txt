@@ -1,0 +1,24 @@
+module Base
+{
+	model PZKA_Vehicles_MinivanChev_internals
+	{
+		mesh = vehicles/pzka_MinivanChev|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkMinivanChevshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanChev_SeatFL
+	{
+		mesh = vehicles/pzka_MinivanChev|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkMinivanChevshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_MinivanChev_SeatFR
+	{
+		mesh = vehicles/pzka_MinivanChev|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkMinivanChevshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

@@ -1,0 +1,52 @@
+module Base
+{
+	model PZKA_Vehicles_Minivan2_internals
+	{
+		mesh = vehicles/pzka_Minivan2|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkMinivanAPVshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Minivan2_SeatFL
+	{
+		mesh = vehicles/pzka_Minivan2|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkMinivanAPVshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Minivan2_SeatFR
+	{
+		mesh = vehicles/pzka_Minivan2|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkMinivanAPVshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	/*model PZKA_Vehicles_Minivan2_SeatML
+	{
+		mesh = vehicles/pzka_Minivan2|Seat_MiddleLeft_obj,
+		texture = Vehicles/vehicle_pzkMinivanAPVshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Minivan2_SeatMR
+	{
+		mesh = vehicles/pzka_Minivan2|Seat_MiddleRight_obj,
+		texture = Vehicles/vehicle_pzkMinivanAPVshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Minivan2_SeatRL
+	{
+		mesh = vehicles/pzka_Minivan2|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_pzkMinivanAPVshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Minivan2_SeatRR
+	{
+		mesh = vehicles/pzka_Minivan2|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_pzkMinivanAPVshell,
+		static = TRUE,
+		scale = 0.01,
+	}*/
+}

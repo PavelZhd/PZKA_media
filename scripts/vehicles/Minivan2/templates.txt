@@ -1,0 +1,173 @@
+module Base
+{
+	template vehicle PZKA__Minivan2_shared {
+
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+                file = PZKA_Vehicles_Minivan2_WindowFrontLeft,
+            }            		
+			model Static
+            {
+                file = PZKA_Vehicles_Minivan2_WindowFrontLeft_static,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+            parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Minivan2_WindowFrontRight,
+            }
+			model Static
+            {
+                file = PZKA_Vehicles_Minivan2_WindowFrontRight_static,
+            }
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Minivan2_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_Minivan2_RearWindow,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_Minivan2_RearWindowStatic,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Minivan2_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Minivan2_SeatFR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.199597 -0.106845 1.15711,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Minivan2_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+
+	template vehicle PZKA__Minivan2_Hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Minivan2_Hood,
+			}
+		}
+	}
+
+	
+
+	template vehicle PZKA__Minivan2_RearWindows {
+		part WindowRearLeft
+        {	
+        	model Default
+            {
+        		file = PZKA_Vehicles_Minivan2_WindowRearLeft,
+    		}
+		}
+		part WindowRearRight
+        {	
+    		parent = DoorRearRight,
+			model Default
+    		{
+        		file = PZKA_Vehicles_Minivan2_WindowRearRight,
+    		}
+    	}
+	}
+
+
+	template vehicle PZKA__Minivan2_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Minivan2_Trunk,
+			}
+		}
+	}
+
+	template vehicle PZKA__Minivan2_2Doors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Minivan2_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Minivan2_DoorFrontRight,
+			}
+		}
+		template! = PZKA__Minivan2_FrontWindows,
+	}
+
+	template vehicle PZKA__Minivan2_3DoorsR {
+		template! = PZKA__Minivan2_2Doors,		
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Minivan2_DoorRearRight,
+			}
+		}
+		template!= PZKA__Minivan2_RearWindows,
+	}
+
+
+	template vehicle PZKA_Minivan2 {
+		template! = PZKA__Minivan2_Trunk,
+		template! = PZKA__Minivan2_3DoorsR,
+		template! = PZKA__Minivan2_Hood,
+		template! = PZKA__Minivan2_shared,
+	}
+
+
+}

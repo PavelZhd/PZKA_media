@@ -1,0 +1,138 @@
+module Base
+{
+	model PZKA_Vehicles_MinivanChev_LightFL
+	{
+		mesh = vehicles/pzka_MinivanChev|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_MinivanChev_LightFR
+	{
+		mesh = vehicles/pzka_MinivanChev|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanChev_LightRL
+	{
+		mesh = vehicles/pzka_MinivanChev|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanChev_LightRR
+	{
+		mesh = vehicles/pzka_MinivanChev|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_MinivanChev_LightRear {
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_LightRR,
+			}
+		}
+	}
+	template vehicle PZKA_MinivanChev_Light {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MinivanChev_LightFR,
+			}
+		}
+		template! = PZKA_MinivanChev_LightRear,
+	}
+
+	model PZKA_Vehicles_MinivanChev_C12_LightFL
+	{
+		mesh = vehicles/pzka_MinivanChev|Light_FrontLeft_C12_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_MinivanChev_C12_LightFR
+	{
+		mesh = vehicles/pzka_MinivanChev|Light_FrontRight_C12_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MinivanChev_C3_LightFL
+	{
+		mesh = vehicles/pzka_MinivanChev|Light_FrontLeft_C3_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_MinivanChev_C3_LightFR
+	{
+		mesh = vehicles/pzka_MinivanChev|Light_FrontRight_C3_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_MinivanConvoy_Light {
+		part HeadlightLeft 
+		{
+			model Convoy12
+			{
+				file = PZKA_Vehicles_MinivanChev_C12_LightFL,
+			}
+			model Convoy3
+			{
+				file = PZKA_Vehicles_MinivanChev_C3_LightFL,
+			}
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Convoy12
+			{
+				file = PZKA_Vehicles_MinivanChev_C12_LightFR,
+			}
+			model Convoy3
+			{
+				file = PZKA_Vehicles_MinivanChev_C3_LightFR,
+			}
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+		template! = PZKA_MinivanChev_LightRear,
+	}
+}
