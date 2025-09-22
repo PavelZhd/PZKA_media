@@ -179,12 +179,12 @@ FillPartsMap["Base.pzkFranklinStallion2"] = {
     ["Default"] = "a0a1a",
 }
 FillPartsMap["Base.pzkFranklinStallionSport"] = FillPartsMap["Base.pzkFranklinStallion2"]
-FillPartsMap["Base.pzkFranklinStallionPoliceLouisvillePD"] = {
+FillPartsMap["Base.pzkFranklinStallionPolice"] = {
     ["L2"] = "a0a",
     ["Default"] = "a0a",
 }
-FillPartsMap["Base.pzkFranklinStallionPoliceMeadeSheriff"] = FillPartsMap["Base.pzkFranklinStallionPoliceLouisvillePD"]
-FillPartsMap["Base.pzkFranklinStallionPoliceWestPoint"] = FillPartsMap["Base.pzkFranklinStallionPoliceLouisvillePD"]
+--FillPartsMap["Base.pzkFranklinStallionPoliceMeadeSheriff"] = FillPartsMap["Base.pzkFranklinStallionPoliceLouisvillePD"]
+--FillPartsMap["Base.pzkFranklinStallionPoliceWestPoint"] = FillPartsMap["Base.pzkFranklinStallionPoliceLouisvillePD"]
 
 
 function Vehicles.Init.AdjustLightGeometry(vehicle, part)
