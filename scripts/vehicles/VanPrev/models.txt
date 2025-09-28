@@ -1,0 +1,101 @@
+module Base
+{
+	model PZKA_Vehicles_VanPrev_a
+	{
+		mesh = vehicles/pzka_VanPrev|VanPrev,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_VanPrev_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_VanPrev|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_VanPrev_DoorFrontRight
+	{
+		mesh = vehicles/pzka_VanPrev|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_VanPrev_DoorRearRight
+	{
+		mesh = vehicles/pzka_VanPrev|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_VanPrev_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_VanPrev|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_VanPrev_WindowFrontRight
+	{
+		mesh = vehicles/pzka_VanPrev|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+
+	model PZKA_Vehicles_VanPrev_WindowRearLeft
+	{
+		mesh = vehicles/pzka_VanPrev|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_VanPrev_WindowRearRight
+	{
+		mesh = vehicles/pzka_VanPrev|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_VanPrev_Trunk
+	{
+		mesh = vehicles/pzka_VanPrev|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_VanPrev_Hood
+	{
+		mesh = vehicles/pzka_VanPrev|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_VanPrev_Windshield
+	{
+		mesh = vehicles/pzka_VanPrev|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_VanPrev_RearWindowStatic
+	{
+		mesh = vehicles/pzka_VanPrev|RearWindow_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_VanPrev_RearWindow
+	{
+		mesh = vehicles/pzka_VanPrev|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+}

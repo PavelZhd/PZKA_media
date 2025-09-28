@@ -515,6 +515,15 @@ PZKA.CreateAnimationProfile("pzkMinivanC22","PZKA_Vehicles_MinivanC22_a","PZKA_M
 PZKA.CreateAnimationProfile("pzkMinivanChev","PZKA_Vehicles_MinivanChev_a","PZKA_MinivanChev_Light","PZKA_MinivanChev",{"FLW","FRW","RR"},"PZKA_RearDoorVersionMed")
 PZKA.CreateAnimationProfile("pzkMinivanConvoy","PZKA_Vehicles_MinivanChev_Convoy_a","PZKA_MinivanConvoy_Light","PZKA_MinivanConvoy",{"FLW","FRW","RR"},"PZKA_RearDoorVersionMed")
 PZKA.CreateAnimationProfile("pzkMinivanMPV","PZKA_Vehicles_MinivanMPV_a","PZKA_MinivanMPV_Light","PZKA_MinivanMPV",{"FLW","FRW","RR"},"PZKA_RearDoorVersionSlow")
+PZKA.CreateAnimationProfile("pzkMinivanPrev","PZKA_Vehicles_VanPrev_a","PZKA_VanPrev_Light","PZKA_VanPrev",{"FLW","FRW","RR"},"PZKA_RearDoorVersionSlow")
+
+PZKA.CreateAnimationProfile("pzkMinivanStellaris","PZKA_Vehicles_Stellaris_a","PZKA_Stellaris_Light","PZKA_Stellaris",{"FLW","FRW","RR"},"PZKA_RearDoorVersionMed")
+PZKA.CreateAnimationProfile("pzkMinivanStellarisMail","PZKA_Vehicles_Stellaris_cargo_nr_a","PZKA_Stellaris_Light","PZKA_StellarisCargo_nr",{"FLW","FRW"},"PZKA_RearDoorVersionMed")
+if SLE then
+    PZKA.CreateAnimationProfile("pzkMinivanStellarisTaxi","PZKA_Vehicles_Stellaris_nr_a","PZKA_Stellaris_Light","PZKA_Stellaris_nr",{"FLW","FRW","RR"},"PZKA_RearDoorVersionMed")    
+else
+    PZKA.CreateAnimationProfile("pzkMinivanStellarisTaxi","PZKA_Vehicles_Stellaris_nr_a","PZKA_Stellaris_Light","PZKA_Stellaris_taxi",{"FLW","FRW","RR"},"PZKA_RearDoorVersionMed")    
+end
 
 
 --[[

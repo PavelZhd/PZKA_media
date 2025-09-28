@@ -1,0 +1,24 @@
+module Base
+{
+	model PZKA_Vehicles_Stellaris_internals
+	{
+		mesh = vehicles/pzka_Stellaris|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkMinivanStellarisshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Stellaris_SeatFL
+	{
+		mesh = vehicles/pzka_Stellaris|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkMinivanStellarisshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Stellaris_SeatFR
+	{
+		mesh = vehicles/pzka_Stellaris|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkMinivanStellarisshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

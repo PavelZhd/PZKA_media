@@ -1,0 +1,249 @@
+module Base
+{
+	template vehicle PZKA__Stellaris_shared {
+
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+                file = PZKA_Vehicles_Stellaris_WindowFrontLeft,
+            }
+        }
+		part WindowFrontRight
+    	{	
+            parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Stellaris_WindowFrontRight,
+            }
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stellaris_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_Stellaris_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stellaris_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stellaris_SeatFR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_BatteryR,
+				offset = -0.188103 -0.046739 1.00882,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Stellaris_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle PZKA__Stellaris_seat {
+		template! = PZKA__Stellaris_shared,
+		part WindshieldRear
+		{
+			model Static
+			{
+				file = PZKA_Vehicles_Stellaris_RearWindowStatic,
+			}
+		}
+	}
+
+	template vehicle PZKA__Stellaris_Hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stellaris_Hood,
+			}
+		}
+	}
+	template vehicle PZKA__Stellaris_Hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stellaris_Hood_nr,
+			}
+		}
+	}
+
+	template vehicle PZKA__Stellaris_RearWindows {
+		part WindowRearLeft
+        {	
+        	model Default
+            {
+        		file = PZKA_Vehicles_Stellaris_WindowRearLeft,
+    		}
+		}
+		part WindowRearRight
+        {	
+    		parent = DoorRearRight,
+			model Default
+    		{
+        		file = PZKA_Vehicles_Stellaris_WindowRearRight,
+    		}
+    	}
+	}
+
+	template vehicle PZKA__Stellaris_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stellaris_Trunk,
+			}
+		}
+	}
+	
+	template vehicle PZKA__Stellaris_Trunk_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stellaris_Trunk_nr,
+			}
+		}
+	}
+
+	template vehicle PZKA__Stellaris_2Doors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stellaris_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stellaris_DoorFrontRight,
+			}
+		}
+	}
+
+	template vehicle PZKA__Stellaris_3DoorsR {
+		template! = PZKA__Stellaris_2Doors,		
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stellaris_DoorRearRight,
+			}
+		}
+		template!= PZKA__Stellaris_RearWindows,
+	}
+
+	template vehicle PZKA__Stellaris_2Doors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stellaris_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stellaris_DoorFrontRight_nr,
+			}
+		}
+	}
+
+	template vehicle PZKA__Stellaris_3DoorsR_nr {
+		template! = PZKA__Stellaris_2Doors_nr,		
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Stellaris_DoorRearRight_nr,
+			}
+		}
+		template!= PZKA__Stellaris_RearWindows,
+	}
+
+
+	template vehicle PZKA_Stellaris {
+		template! = PZKA__Stellaris_Trunk,
+		template! = PZKA__Stellaris_3DoorsR,
+		template! = PZKA__Stellaris_Hood,
+		template! = PZKA__Stellaris_seat,
+	}
+	template vehicle PZKA_Stellaris_nr {
+		template! = PZKA__Stellaris_Trunk_nr,
+		template! = PZKA__Stellaris_3DoorsR_nr,
+		template! = PZKA__Stellaris_Hood_nr,
+		template! = PZKA__Stellaris_seat,
+	}
+	
+	template vehicle PZKA_StellarisCargo_nr {
+		template! = PZKA__Stellaris_Trunk_nr,
+		template! = PZKA__Stellaris_2Doors_nr,
+		template! = PZKA__Stellaris_Hood_nr,
+		template! = PZKA__Stellaris_shared,
+	}
+	
+	template vehicle PZKA_Stellaris_taxi {
+		template! = PZKA_Stellaris_nr,
+
+		part PZKATaxiSign
+		{
+			model Normal
+			{
+				file = PZKA_Vehicles_Stellaris_TaxiSignt,
+			}			
+			category = nodisplay,
+            area = Engine,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+}

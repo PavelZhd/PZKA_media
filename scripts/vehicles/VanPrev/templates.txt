@@ -1,0 +1,165 @@
+module Base
+{
+	template vehicle PZKA__VanPrev_shared {
+
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+                file = PZKA_Vehicles_VanPrev_WindowFrontLeft,
+            }
+        }
+		part WindowFrontRight
+    	{	
+            parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_VanPrev_WindowFrontRight,
+            }
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VanPrev_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_VanPrev_RearWindow,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_VanPrev_RearWindowStatic,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VanPrev_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VanPrev_SeatFR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.222337 -0.051232 1.0677,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_VanPrev_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+
+	template vehicle PZKA__VanPrev_Hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VanPrev_Hood,
+			}
+		}
+	}
+
+	
+
+	template vehicle PZKA__VanPrev_RearWindows {
+		part WindowRearLeft
+        {	
+        	model Default
+            {
+        		file = PZKA_Vehicles_VanPrev_WindowRearLeft,
+    		}
+		}
+		part WindowRearRight
+        {	
+    		parent = DoorRearRight,
+			model Default
+    		{
+        		file = PZKA_Vehicles_VanPrev_WindowRearRight,
+    		}
+    	}
+	}
+
+
+	template vehicle PZKA__VanPrev_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VanPrev_Trunk,
+			}
+		}
+	}
+
+	template vehicle PZKA__VanPrev_2Doors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VanPrev_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VanPrev_DoorFrontRight,
+			}
+		}
+		template! = PZKA__VanPrev_FrontWindows,
+	}
+
+	template vehicle PZKA__VanPrev_3DoorsR {
+		template! = PZKA__VanPrev_2Doors,		
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VanPrev_DoorRearRight,
+			}
+		}
+		template!= PZKA__VanPrev_RearWindows,
+	}
+
+
+	template vehicle PZKA_VanPrev {
+		template! = PZKA__VanPrev_Trunk,
+		template! = PZKA__VanPrev_3DoorsR,
+		template! = PZKA__VanPrev_Hood,
+		template! = PZKA__VanPrev_shared,
+	}
+
+
+}
