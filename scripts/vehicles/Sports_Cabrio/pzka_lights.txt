@@ -1,0 +1,43 @@
+module Base
+{
+	template vehicle PZKA_Sport_Cabrio_Light {
+		part HeadlightLeft 
+		{
+			parent = PZKA_LightsHost,
+			model Default
+			{
+				file = VVA_Vehicles_SportsCar_LightFL,
+			}
+			model Static
+			{
+				file = VVA_Vehicles_SportsCar_LightFL_static,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = PZKA_LightsHost,
+			model Default
+			{
+				file = VVA_Vehicles_SportsCar_LightFR,
+			}
+			model Static
+			{
+				file = VVA_Vehicles_SportsCar_LightFR_static,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SportsCar_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SportsCar_LightRR,
+			}
+		}
+	}
+}

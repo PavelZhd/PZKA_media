@@ -1,0 +1,125 @@
+module Base
+{
+	model PZKA_Vehicles_T3_LightFL
+	{
+		mesh = vehicles/pzka_T3|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_T3_LightFR
+	{
+		mesh = vehicles/pzka_T3|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_T3_1_LightFL
+	{
+		mesh = vehicles/pzka_T3|Light_FrontLeft_1_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_T3_1_LightFR
+	{
+		mesh = vehicles/pzka_T3|Light_FrontRight_1_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_T3_2_LightFL
+	{
+		mesh = vehicles/pzka_T3|Light_FrontLeft_2_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_T3_2_LightFR
+	{
+		mesh = vehicles/pzka_T3|Light_FrontRight_2_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_T3_LightRL
+	{
+		mesh = vehicles/pzka_T3|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_T3_LightRR
+	{
+		mesh = vehicles/pzka_T3|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_T3_Light {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_T3_LightFL,
+			}
+			model T3_1 
+			{
+				file = PZKA_Vehicles_T3_1_LightFL,
+			}
+			model T3_2
+			{
+				file = PZKA_Vehicles_T3_2_LightFL,
+			}
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_T3_LightFR,
+			}
+			model T3_1 
+			{
+				file = PZKA_Vehicles_T3_1_LightFR,
+			}
+			model T3_2
+			{
+				file = PZKA_Vehicles_T3_2_LightFR,
+			}
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_T3_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_T3_LightRR,
+			}
+		}
+	}
+}

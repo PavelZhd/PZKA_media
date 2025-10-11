@@ -1,0 +1,27 @@
+module Base
+{
+	model VVA_Vehicles_PickUpTruck_internals
+	{
+		mesh = vehicles/VVA_PickUpVan|Vehicles_Interior_truck,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_PickUpTruck_SeatFL
+	{
+		mesh = vehicles/VVA_PickUpVan|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_PickUpTruck_SeatFR
+	{
+		mesh = vehicles/VVA_PickUpVan|Seat_FrontRight_obj,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+}

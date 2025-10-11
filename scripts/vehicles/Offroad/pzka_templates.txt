@@ -1,0 +1,277 @@
+module Base
+{
+	template vehicle PZKA_Offroad_shared0 {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Offroad_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Offroad_SeatFR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.22822 -0.02726 0.417085,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_OffRoad_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle PZKA_Offroad_shared {
+		part Windshield
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Offroad_Windshield,
+			}			
+		}
+		template! = PZKA_Offroad_shared0,
+	}
+
+	template vehicle PZKA_Offroad_R_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = VVA_Vehicles_OffRoad_WindowFrontLeft,
+            }
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = VVA_Vehicles_OffRoad_WindowFrontRight,
+            }
+	    }
+
+		part WindowRearLeft
+        {	
+		 	model Default
+			{
+        		file = VVA_Vehicles_OffRoad_WindowRearLeft,
+       		}
+       	}
+		part WindowRearRight
+       	{	
+		 	model Default
+            {
+            	file = VVA_Vehicles_OffRoad_WindowRearRight,
+            }
+        }	
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_RearWindow,
+			}
+		}
+		template! = PZKA_Offroad_shared,
+	}
+	template vehicle PZKA_Offroad_hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_Hood,
+			}
+		}
+	}
+	template vehicle PZKA_Offroad_hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_Hood_nr,
+			}
+		}
+	}
+
+	template vehicle PZKA_Offroad_C {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Offroad_Trunk_C,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Offroad_DoorFrontLeft_C,
+			}
+			lua
+			{
+				create = Vehicles.Create.Door75,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Offroad_DoorFrontRight_C,
+			}			
+			lua
+			{
+				create = Vehicles.Create.Door75,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
+			}
+		}
+		template! = PZKA_Offroad_hood,
+		template! = PZKA_Offroad_shared,
+	}
+
+	template vehicle PZKA_Offroad_C_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Offroad_Trunk_C_nr,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Offroad_DoorFrontLeft_C_nr,
+			}
+			lua
+			{
+				create = Vehicles.Create.Door75,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Offroad_DoorFrontRight_C_nr,
+			}			
+			lua
+			{
+				create = Vehicles.Create.Door75,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
+			}
+		}
+		template! = PZKA_Offroad_hood_nr,
+		template! = PZKA_Offroad_shared,
+	}
+
+	template vehicle PZKA_Offroad_R {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_DoorFrontLeft,
+			}
+			lua
+			{
+				create = Vehicles.Create.Door75,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_DoorFrontRight,
+			}			
+			lua
+			{
+				create = Vehicles.Create.Door75,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
+			}
+		}
+		template! = PZKA_Offroad_hood,
+		template! = PZKA_Offroad_R_shared,
+	}
+	template vehicle PZKA_Offroad_R_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_Trunk_nr,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_DoorFrontLeft_nr,
+			}
+			lua
+			{
+				create = Vehicles.Create.Door75,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_DoorFrontRight_nr,
+			}			
+			lua
+			{
+				create = Vehicles.Create.Door75,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
+			}
+		}
+		template! = PZKA_Offroad_hood_nr,
+		template! = PZKA_Offroad_R_shared,
+	}
+	template vehicle PZKA_Offroad_lightbar {
+		template! = PZKA_Offroad_R_nr,
+		template! = PZKA_lightbar,
+		part ATA2RoofLightbar
+		{
+			model Normal
+			{
+				file = PZKA_Vehicles_Offroad_Lighbar,
+			}
+		}
+	}
+}

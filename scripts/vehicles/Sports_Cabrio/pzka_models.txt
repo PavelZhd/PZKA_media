@@ -1,0 +1,36 @@
+module Base
+{
+	model PZKA_Vehicles_Sport_Cabrio_a
+	{
+		mesh = vehicles/pzka_Sport|Vehicles_SportsCar_Cabrio,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Sport_Cabrio_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Sport|Door_Cabrio_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Sport_Cabrio_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Sport|Door_Cabrio_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_Sport_Cabrio_Trunk
+	{
+		mesh = vehicles/pzka_Sport|Trunk_Cabrio_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkCabrioBone 1.0,
+	}	
+}

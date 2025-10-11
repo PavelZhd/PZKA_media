@@ -1,0 +1,53 @@
+module Base
+{
+	model PZKA_Vehicles_Van_Camper_a
+	{
+		mesh = vehicles/pzka_Van_Camper|Vehicles_VanCamper,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_Camper_DoorRearRight
+	{
+		mesh = vehicles/pzka_Van_Camper|Door_Camper_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightCamperDoorR 1.0,
+		boneWeight = RearRightCamperDoorL 1.0,
+	}
+	model PZKA_Vehicles_Van_Camper_WindowRearRight
+	{
+		mesh = vehicles/pzka_Van_Camper|Window_Camper_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Van_Camper_Spare
+	{
+		mesh = vehicles/pzka_Vans|WheelDouble,
+		static = FALSE,
+		shader = vehicle_spare_noreflect,
+		scale = 0.01,
+		boneWeight = TrunkLeftBone 1.0,		
+	}
+	model PZKA_Vehicles_Van_Camper_WindowRearLeft
+	{
+		mesh = vehicles/pzka_Vans2|Window_Camper_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_Camper_RearWindow
+	{
+		mesh = vehicles/pzka_Vans|RearWindow_Camper_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,		
+	}
+
+
+	
+
+	
+}

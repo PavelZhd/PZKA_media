@@ -1,0 +1,219 @@
+module Base
+{
+	template vehicle PZKA_SUV_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = VVA_Vehicles_SUV_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = VVA_Vehicles_SUV_WindowFrontRight,
+            }
+	    }
+		part WindowRearLeft
+        {	
+			parent = DoorRearLeft,
+         	model Default
+			{
+        		file = VVA_Vehicles_SUV_WindowRearLeft,
+       		}
+       	}
+		part WindowRearRight
+       	{	
+			parent = DoorRearRight,
+         	model Default
+            {
+            	file = VVA_Vehicles_SUV_WindowRearRight,
+            }
+        }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = VVA_Vehicles_SUV_RearWindow,
+			}
+			model Static
+			{
+				file = VVA_Vehicles_SUV_RearWindow_statis,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_SeatRR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.242633 0.002052 0.881262,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_SUV_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle PZKA_SUV {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_Trunk,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorFrontRight,
+			}
+		}
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorRearLeft,
+			}
+		}
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorRearRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_Hood,
+			}
+		}
+		template! = PZKA_SUV_shared,
+	}
+	template vehicle PZKA_SUV_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_Trunk_nr,
+			}
+		}
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorFrontRight_nr,
+			}
+		}
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorRearLeft_nr,
+			}
+		}
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorRearRight_nr,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_Hood_nr,
+			}
+		}
+		template! = PZKA_SUV_shared,
+	}
+	template vehicle PZKA_SUV_lightbar {
+		template! = PZKA_SUV_nr,
+		template! = PZKA_lightbar,
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SUV_Lightbar,
+			}
+		}
+	}
+}

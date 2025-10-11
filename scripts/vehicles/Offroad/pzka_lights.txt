@@ -1,0 +1,35 @@
+module Base
+{
+	template vehicle PZKA_Offroad_Light {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Offroad_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = VVA_Vehicles_Offroad_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = VVA_Vehicles_Offroad_LightRR,
+			}
+		}
+	}
+}

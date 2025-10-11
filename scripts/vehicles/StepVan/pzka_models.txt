@@ -1,0 +1,60 @@
+module Base
+{
+	model PZKA_Vehicle_StepVan_Food_NoRandom_a
+	{
+		mesh = vehicles/pzka_StepVan|Vehicle_StepVan_Food,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+
+	model PZKA_Vehicle_StepVan_IceCream
+	{
+		mesh = vehicles/pzka_StepVan|IceCream,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	model PZKA_Vehicle_StepVan_HotDog
+	{
+		mesh = vehicles/pzka_StepVan|HotDog,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	model PZKA_Vehicle_StepVan_Pierogi
+	{
+		mesh = vehicles/pzka_StepVan|Pierogi,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	model PZKA_Vehicle_StepVan_Oven
+	{
+		mesh = vehicles/pzka_StepVan|RoofOven,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	model PZKA_Vehicle_StepVan_Taco
+	{
+		mesh = vehicles/pzka_StepVan|Taco,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	model PZKA_Vehicle_StepVan_Lightbar
+	{
+		mesh = vehicles/pzka_StepVan|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	
+	model PZKA_Vehicle_StepVan_Food_RearWindow
+	{
+		mesh = vehicles/pzka_StepVan|WindowRear_food_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+}

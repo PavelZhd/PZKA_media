@@ -1,0 +1,17 @@
+module Base
+{
+    model PZKA_Vehicles_Van_Camper_interior
+	{
+		mesh = vehicles/pzka_Van_Camper|Vehicles_VanCamper,
+		texture = Vehicles/vehicle_pzkvancampershell,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_Van_Police_interior
+	{
+		mesh = vehicles/pzka_Vans|Vehicles_Interior_police,
+		texture = Vehicles/vehicle_pzkvancampershell,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

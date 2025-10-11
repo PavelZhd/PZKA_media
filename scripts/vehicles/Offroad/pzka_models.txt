@@ -1,0 +1,77 @@
+module Base
+{
+	
+	model PZKA_Vehicles_Offroad_C_a
+	{
+		mesh = vehicles/pzka_Offroad|Offroad_C,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Offroad_C_nr_a
+	{
+		mesh = vehicles/pzka_Offroad|Offroad_C,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Offroad_DoorFrontLeft_C
+	{
+		mesh = vehicles/pzka_Offroad|Door_FrontLeft_C_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Offroad_DoorFrontRight_C
+	{
+		mesh = vehicles/pzka_Offroad|Door_FrontRight_C_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_Offroad_Trunk_C
+	{
+		mesh = vehicles/pzka_Offroad|Trunk_C_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+
+
+	model PZKA_Vehicles_Offroad_DoorFrontLeft_C_nr
+	{
+		mesh = vehicles/pzka_Offroad|Door_FrontLeft_C_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Offroad_DoorFrontRight_C_nr
+	{
+		mesh = vehicles/pzka_Offroad|Door_FrontRight_C_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Offroad_Trunk_C_nr
+	{
+		mesh = vehicles/pzka_Offroad|Trunk_C_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Offroad_Lighbar
+	{
+		mesh = vehicles/pzka_Offroad|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

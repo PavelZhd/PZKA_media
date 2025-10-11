@@ -1,0 +1,123 @@
+module Base
+{
+	model PZKA_Vehicles_T3_a
+	{
+		mesh = vehicles/pzka_T3|T3,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_T3C_a
+	{
+		mesh = vehicles/pzka_T3|T3C,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_T3_Front1
+	{
+		mesh = vehicles/pzka_T3|GrillFill1,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_T3_Front2
+	{
+		mesh = vehicles/pzka_T3|GrillFill2,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_T3_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_T3|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_T3_DoorFrontRight
+	{
+		mesh = vehicles/pzka_T3|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_T3_DoorRearRight
+	{
+		mesh = vehicles/pzka_T3|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_T3_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_T3|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_T3_WindowFrontRight
+	{
+		mesh = vehicles/pzka_T3|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+
+	model PZKA_Vehicles_T3_WindowRearLeft
+	{
+		mesh = vehicles/pzka_T3|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_T3_WindowRearRight
+	{
+		mesh = vehicles/pzka_T3|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_T3_Trunk
+	{
+		mesh = vehicles/pzka_T3|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_T3_Hood
+	{
+		mesh = vehicles/pzka_T3|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_T3_Windshield
+	{
+		mesh = vehicles/pzka_T3|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_T3_RearWindowStatic
+	{
+		mesh = vehicles/pzka_T3|RearWindow_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_T3_RearWindow
+	{
+		mesh = vehicles/pzka_T3|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+}

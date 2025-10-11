@@ -1,0 +1,68 @@
+module Base
+{
+	model VVA_Vehicles_Van_internals
+	{
+		mesh = vehicles/VVA_Van_static|Vehicles_Interior,
+		
+		texture = Vehicles/vehicle_vanambulanceshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_SeatFL
+	{
+		mesh = vehicles/VVA_Van|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_SeatFR
+	{
+		mesh = vehicles/VVA_Van|Seat_FrontRight_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}	
+	model VVA_Vehicles_VanSeats_internals
+	{
+		mesh = vehicles/VVA_Van_static|Vehicles_Interior_seats,
+		
+		texture = Vehicles/vehicle_vanambulanceshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_VanSeats_SeatML
+	{
+		mesh = vehicles/VVA_Van|Seat_MiddleLeft_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_VanSeats_SeatMR
+	{
+		mesh = vehicles/VVA_Van|Seat_MiddleRight_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_VanSeats_SeatRL
+	{
+		mesh = vehicles/VVA_Van|Seat_RearLeft_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_VanSeats_SeatRR
+	{
+		mesh = vehicles/VVA_Van|Seat_RearRight_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}	
+
+}

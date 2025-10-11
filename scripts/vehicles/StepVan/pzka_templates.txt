@@ -1,0 +1,195 @@
+module Base
+{
+	template vehicle PZKA_StepVan_Shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+            model Default
+            {
+            	file = VVA_Vehicle_StepVan_WindowFrontLeft,
+        	}
+        }
+		part WindowFrontRight
+        {
+			parent = DoorFrontRight,
+        	model Default
+    		{
+        		file = VVA_Vehicle_StepVan_WindowFrontRight,
+			}
+		}				
+		
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = VVA_Vehicle_StepVan_Windshield,
+			}			
+		}
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model windshieldRear
+			{
+				file = VVA_Vehicle_StepVan_RearWindow,
+			}
+		}
+		part SeatFrontLeft
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_StepVan_SeatFL,
+			}
+		}
+		part SeatFrontRight
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_StepVan_SeatFR,
+			}
+		}
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.2035 -0.0974 1.0203,
+				rotate = 17 90 0,
+			}
+		}
+		part Inreior 
+		{
+			model Default 
+			{
+				file = VVA_Vehicle_StepVan_internals,
+				rotate = 0 0 0,
+				scale = 1,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create =Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle PZKA_StepVan_SharedFood {
+		template! = PZKA_StepVan_Shared,
+		part WindshieldRear
+		{
+			model Static
+			{
+				file = PZKA_Vehicle_StepVan_Food_RearWindow,
+			}
+		}
+	}
+
+	
+	template vehicle PZKA_StepVan_Doors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicle_StepVan_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicle_StepVan_DoorFrontRight_nr,
+			}
+		}
+
+		
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicle_StepVan_Hood_nr,
+			}
+		}
+		
+		part DoorRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_StepVan_Trunk_nr,
+			}
+		}		
+	}
+
+	template vehicle PZKA_StepVan {
+		template! = PZKA_StepVan_Doors,
+		template! = PZKA_StepVan_Shared,
+	}
+	template vehicle PZKA_StepVan_Pizza {
+		template! = PZKA_StepVan_Doors,
+		template! = PZKA_StepVan_SharedFood,
+		part Inreior 
+		{
+			model RoofOven
+			{
+				file = PZKA_Vehicle_StepVan_Oven,
+			}
+		}
+	}
+	template vehicle PZKA_StepVan_Icecream {
+		template! = PZKA_StepVan_Doors,
+		template! = PZKA_StepVan_SharedFood,
+		template! = PZKA_taxi,
+		part ATA2RoofTaxiSign 
+		{
+			model Decor {
+				file = PZKA_Vehicle_StepVan_IceCream,
+			}
+		}
+	}
+	template vehicle PZKA_StepVan_Hotdog {
+		template! = PZKA_StepVan_Doors,
+		template! = PZKA_StepVan_SharedFood,
+		template! = PZKA_taxi,
+		part ATA2RoofTaxiSign 
+		{
+			model Decor {
+				file = PZKA_Vehicle_StepVan_HotDog,
+			}
+		}
+	}
+	template vehicle PZKA_StepVan_Taco {
+		template! = PZKA_StepVan_Doors,
+		template! = PZKA_StepVan_SharedFood,
+		template! = PZKA_taxi,
+		part ATA2RoofTaxiSign 
+		{
+			model Decor {
+				file = PZKA_Vehicle_StepVan_Taco,
+			}
+		}
+	}
+	template vehicle PZKA_StepVan_Pierogi {
+		template! = PZKA_StepVan_Doors,
+		template! = PZKA_StepVan_SharedFood,
+		template! = PZKA_taxi,
+		part ATA2RoofTaxiSign 
+		{
+			model Decor {
+				file = PZKA_Vehicle_StepVan_Pierogi,
+			}
+		}
+	}
+	template vehicle PZKA_StepVan_SWAT {
+		template! = PZKA_StepVan_Doors,
+		template! = PZKA_StepVan_Shared,
+		template! = PZKA_lightbar,
+		part ATA2RoofLightbar 
+		{
+			model Decor {
+				file = PZKA_Vehicle_StepVan_Lightbar,
+			}
+		}
+	}
+
+}

@@ -1,0 +1,251 @@
+module Base
+{
+	model VVA_Vehicles_Van_a
+	{
+		mesh = vehicles/VVA_Van_static|Vehicles_Van,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_NoRandom_a
+	{
+		mesh = vehicles/VVA_Van_static|Vehicles_Van,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}	
+	model VVA_Vehicles_Ambulance_a
+	{
+		mesh = vehicles/VVA_Van_static|Vehicles_VanAmbulance,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_VanRadio_a
+	{
+		mesh = vehicles/VVA_Van_static|Vehicles_VanRadio,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_VanRadioB_a
+	{
+		mesh = vehicles/VVA_Van_static|Vehicles_VanRadioBlind,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_VanSeats_a
+	{
+		mesh = vehicles/VVA_Van_static|Vehicles_VanSeats,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_VanSeats_nr_a
+	{
+		mesh = vehicles/VVA_Van_static|Vehicles_VanSeats,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+
+	model VVA_Vehicles_Van_DoorFrontLeft
+	{
+		mesh = vehicles/VVA_Van|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_Van_DoorFrontRight
+	{
+		mesh = vehicles/VVA_Van|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_Van_WindowFrontLeft
+	{
+		mesh = vehicles/VVA_Van|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model VVA_Vehicles_Van_WindowFrontRight
+	{
+		mesh = vehicles/VVA_Van|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightWindowBone 1.0,
+	}	
+	model VVA_Vehicles_Van_Trunk
+	{
+		mesh = vehicles/VVA_Van|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
+	}
+	model VVA_Vehicles_Van_Hood
+	{
+		mesh = vehicles/VVA_Van|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = HoodBone 1.0,
+	}
+	model VVA_Vehicles_Van_Windshield
+	{
+		mesh = vehicles/VVA_Van|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_RearWindow
+	{
+		mesh = vehicles/VVA_Van|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_LightFL
+	{
+		mesh = vehicles/VVA_Van|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_LightFR
+	{
+		mesh = vehicles/VVA_Van|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_LightRL
+	{
+		mesh = vehicles/VVA_Van|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkLeftBone 1.0,
+	}
+	model VVA_Vehicles_Van_LightRR
+	{
+		mesh = vehicles/VVA_Van|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkRightBone 1.0,
+	}
+
+	model VVA_Vehicles_VanSeats_DoorRearLeft
+	{
+		mesh = vehicles/VVA_Van|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftDoorBone 1.0
+	}
+	model VVA_Vehicles_VanSeats_DoorRearRight
+	{
+		mesh = vehicles/VVA_Van|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearRightDoorBone 1.0
+	}
+	model VVA_Vehicles_VanSeats_WindowRearLeft
+	{
+		mesh = vehicles/VVA_Van|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_VanSeats_WindowRearRight
+	{
+		mesh = vehicles/VVA_Van|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearRightDoorBone 1.0,
+	}	
+	model VVA_Vehicles_VanSeats_RearWindow_static
+	{
+		mesh = vehicles/VVA_Van|RearWindow_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_VanSeats_WindowRearRight_static
+	{
+		mesh = vehicles/VVA_Van|Window_RearRight_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	model VVA_Vehicles_Van_Lightbar
+	{
+		mesh = vehicles/VVA_Van|Lightbar,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}	
+	
+	model VVA_Vehicles_Van_DoorFrontLeft_nr
+	{
+		mesh = vehicles/VVA_Van|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_Van_DoorFrontRight_nr
+	{
+		mesh = vehicles/VVA_Van|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_VanSeats_DoorRearLeft_nr
+	{
+		mesh = vehicles/VVA_Van|Door_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_VanSeats_DoorRearRight_nr
+	{
+		mesh = vehicles/VVA_Van|Door_RearRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_Van_Trunk_nr
+	{
+		mesh = vehicles/VVA_Van|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
+	}
+	model VVA_Vehicles_Van_Hood_nr
+	{
+		mesh = vehicles/VVA_Van|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = HoodBone 1.0,
+	}
+	
+}

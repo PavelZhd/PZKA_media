@@ -1,0 +1,179 @@
+module Base
+{
+	template vehicle PZKA__TransitBus_shared {
+
+		part WindowFrontLeft
+        {
+			model Default
+            {
+                file = PZKA_Vehicles_TransitBus_WindowFrontLeft,
+            }
+        }
+		part WindowFrontRight
+    	{	
+            parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_TransitBus_WindowFrontRight,
+            }
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TransitBus_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TransitBus_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TransitBus_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TransitBus_SeatFR,
+			}
+		}
+		part SeatMiddleLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TransitBus_SeatML,
+			}
+		}
+		part SeatMiddleRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TransitBus_SeatMR,
+			}
+		}
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TransitBus_SeatRL,
+			}
+		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TransitBus_SeatRR,			   
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.200823 -0.14681 -2.86263,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_TransitBus_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+
+	template vehicle PZKA__TransitBus_Hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TransitBus_Hood,
+			}
+		}
+	}
+
+	
+
+	template vehicle PZKA__TransitBus_RearWindows {
+		part WindowRearLeft
+        {	
+        	model Default
+            {
+        		file = PZKA_Vehicles_TransitBus_WindowRearLeft,
+    		}
+		}
+		part WindowRearRight
+        {	
+    		parent = DoorRearRight,
+			model Default
+    		{
+        		file = PZKA_Vehicles_TransitBus_WindowRearRight,
+    		}
+    	}
+	}
+
+
+	template vehicle PZKA__TransitBus_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TransitBus_Trunk,
+			}
+		}
+	}
+
+	template vehicle PZKA__TransitBus_2Doors {		
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TransitBus_DoorFrontRight,
+			}
+		}
+		template! = PZKA__TransitBus_FrontWindows,
+	}
+
+	template vehicle PZKA__TransitBus_3DoorsR {
+		template! = PZKA__TransitBus_2Doors,		
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TransitBus_DoorRearRight,
+			}
+		}
+		template!= PZKA__TransitBus_RearWindows,
+	}
+
+
+	template vehicle PZKA_TransitBus {
+		template! = PZKA__TransitBus_Trunk,
+		template! = PZKA__TransitBus_3DoorsR,
+		template! = PZKA__TransitBus_Hood,
+		template! = PZKA__TransitBus_shared,
+	}
+
+
+}
