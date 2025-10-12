@@ -1,0 +1,38 @@
+module Base
+{
+	model VVA_Vehicles_CarNormal_Steerwheel
+	{
+		mesh = vehicles/Normal/vva_Normal_static|WheelWell,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_CarNormal_Engine
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Engine,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_CarNormal_AirFilter
+	{
+		mesh = vehicles/Normal/vva_Normal_static|AirFilter,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_SeatFL
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_SeatFR
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+}

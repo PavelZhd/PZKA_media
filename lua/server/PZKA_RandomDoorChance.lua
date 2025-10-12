@@ -1,13 +1,13 @@
 local V = require "Vehicles"
-
+local DoorChance
 function Vehicles.Create.Door25(vehicle, part)
-    DoorChance(vehicle, part,25)
+    DoorChance(vehicle, part, 25)
 end
 function Vehicles.Create.Door75(vehicle, part)
-    DoorChance(vehicle, part,25)
+    DoorChance(vehicle, part, 75)
 end
 
-local function DoorChance(vehicle, part, chance)
+DoorChance = function(vehicle, part, chance)
     local doorFrontLeft = vehicle:getPartById("DoorFrontLeft");
 	if doorFrontLeft and doorFrontLeft ~= part then
         if doorFrontLeft:getInventoryItem() then

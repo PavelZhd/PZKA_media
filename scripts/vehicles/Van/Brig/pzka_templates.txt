@@ -1,0 +1,59 @@
+module Base
+{
+    template vehicle PZKA_Van_Brig {
+		template! = PZKA_Van_front,
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_DoorRearLeft,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_DoorRearRight,
+			}
+		}
+		template! = PZKA_Van_shared0,
+		part WindowRearLeft
+        {
+			parent = DoorRearLeft,
+			model Default
+        	{
+          		file = PZKA_Vehicles_Van_Brig_WindowRearLeft,
+        	}            		
+        }
+		part WindowRearRight
+        {	
+            parent = DoorRearRight,
+			model Default
+            {
+          		file = PZKA_Vehicles_Van_Brig_WindowRearRight,
+            }
+	    }
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_RearWindow,
+			}
+		}
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_SeatRL,
+			}
+		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_SeatRR,
+			}
+		}
+	}
+}

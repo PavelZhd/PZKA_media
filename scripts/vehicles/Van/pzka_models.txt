@@ -1,5 +1,12 @@
 module Base
-{
+{	
+	model VVA_Vehicles_Van_Police_a
+	{
+		mesh = vehicles/pzka_Vans|Vehicles_VanPolice,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
 	model PZKA_Vehicles_Van_Payday_DoorRearLeft_nr
 	{
 		mesh = vehicles/pzka_Vans|Door_RearLeft_Payday_obj,
@@ -11,6 +18,40 @@ module Base
 	model PZKA_Vehicles_Van_Payday_DoorRearRight_nr
 	{
 		mesh = vehicles/pzka_Vans|Door_RearRight_Payday_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	
+	model PZKA_Vehicles_Van_DoorRearLeft
+	{
+		mesh = vehicles/pzka_Vans|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Van_DoorRearRight
+	{
+		mesh = vehicles/pzka_Vans|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_Van_DoorRearLeft_nr
+	{
+		mesh = vehicles/pzka_Vans|Door_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Van_DoorRearRight_nr
+	{
+		mesh = vehicles/pzka_Vans|Door_RearRight_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -47,5 +88,31 @@ module Base
 		mesh = vehicles/pzka_Vans|TaxiSign,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,		
+	}
+
+	model PZKA_Vehicles_Van_RearWindow
+	{
+		mesh = vehicles/pzka_Vans|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Van_Trunk
+	{
+		mesh = vehicles/pzka_Vans|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
+	}	
+	model PZKA_Vehicles_Van_Trunk_nr
+	{
+		mesh = vehicles/pzka_Vans|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
 	}
 }

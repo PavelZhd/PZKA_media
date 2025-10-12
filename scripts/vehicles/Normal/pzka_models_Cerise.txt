@@ -1,19 +1,6 @@
 module Base
 {
-	model PZKA_Vehicles_Sedan_Cerise_a
-	{
-		mesh = vehicles/pzka_Normal|Vehicles_Sedan_Cerise,
-		shader = vehicle_multiuv_noreflect,
-		invertX = FALSE,
-		scale = 0.01,
-	}
-	model PZKA_Vehicles_Sedan_Cerise_nr_a
-	{
-		mesh = vehicles/pzka_Normal|Vehicles_Sedan_Cerise,
-		shader = vehicle_norandom_multiuv_noreflect,
-		invertX = FALSE,
-		scale = 0.01,
-	}
+	
 	
 	model PZKA_Vehicles_Wagon_Cerise_a
 	{

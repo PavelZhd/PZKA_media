@@ -1,0 +1,107 @@
+module Base
+{
+	model PZKA_Vehicles_Van_Box_a
+	{
+		mesh = vehicles/pzka_VanBox|Vehicle_BoxVan,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Van_BoxDoor
+	{
+		mesh = vehicles/pzka_VanBox|Trunk_Box_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBoxBone 1.0,
+		boneWeight = TrunkBox5Bone 1.0,
+		boneWeight = TrunkBox6Bone 1.0,
+		boneWeight = TrunkBox7Bone 1.0,
+		boneWeight = TrunkBox8Bone 1.0,
+		boneWeight = TrunkBox9Bone 1.0,
+		boneWeight = TrunkBox10Bone 1.0,
+		boneWeight = TrunkBox11Bone 1.0,
+		boneWeight = TrunkBox12Bone 1.0,
+		boneWeight = TrunkBox13Bone 1.0,
+		boneWeight = TrunkBox14Bone 1.0,
+		boneWeight = TrunkBox15Bone 1.0,
+		boneWeight = TrunkBox16Bone 1.0,
+	}
+
+	model PZKA_Vehicles_Van_Box_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_VanBox|Door_Box_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Van_Box_DoorFrontRight
+	{
+		mesh = vehicles/pzka_VanBox|Door_Box_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Van_Box_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_VanBox|Window_Box_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Van_Box_WindowFrontRight
+	{
+		mesh = vehicles/pzka_VanBox|Window_Box_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Van_Box_Hood
+	{
+		mesh = vehicles/pzka_VanBox|Hood_Box_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_Van_Box_Windshield
+	{
+		mesh = vehicles/pzka_VanBox|Windshield_Box_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Van_BoxAmbulance_a
+	{
+		mesh = vehicles/pzka_VanBox|Vehicle_BoxVanLights,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Van_BoxAmbulance_Door
+	{
+		mesh = vehicles/pzka_VanBox|Trunk_BoxAmbulace_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBoxAmbulanceRightBone 1.0,
+		boneWeight = TrunkBoxAmbulanceLeftBone 1.0,
+	}
+
+	model PZKA_Vehicles_Van_BoxAmbulance_RearWindow
+	{
+		mesh = vehicles/pzka_VanBox|RearWindow_BoxAmbulance_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBoxAmbulanceRightBone 1.0,
+		boneWeight = TrunkBoxAmbulanceLeftBone 1.0,
+	}
+}

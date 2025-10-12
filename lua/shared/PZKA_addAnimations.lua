@@ -1,5 +1,100 @@
-local PZKAModule = { }
+local PZKACore = require "PZKA_core"
 
+local PZKAModule = { }
+PZKAModule.IsProfileDefined = PZKACore.IsProfileDefined
+PZKAModule.IsVehicleDefined = PZKACore.IsVehicleDefined
+PZKAModule.addToProfile = PZKACore.addToProfile
+PZKAModule.muteInProfile = PZKACore.muteInProfile
+PZKAModule.modifyProfile = PZKACore.modifyProfile
+PZKAModule.TeplateHandler = PZKACore.TeplateHandler
+PZKAModule.ApplyTemplateToVehicle = PZKACore.ApplyTemplateToVehicle
+PZKAModule.CopyTemplateToVehicle = PZKACore.CopyTemplateToVehicle
+PZKAModule.InheritTemplateToVehicle = PZKACore.InheritTemplateToVehicle
+
+local doorTemplatesMap = {
+		["FL"] = "PZKA_DoorFrontLeft",
+		["FR"] = "PZKA_DoorFrontRight",		
+		["ML"] = "PZKA_DoorMiddleLeft",
+		["MR"] = "PZKA_DoorMiddleRight",		
+		["RL"] = "PZKA_DoorRearLeft",
+		["RR"] = "PZKA_DoorRearRight",		
+		["FLW"] = "PZKA_DoorWindowFrontLeft",
+		["FRW"] = "PZKA_DoorWindowFrontRight",		
+		["MLW"] = "PZKA_DoorWindowMiddleLeft",
+		["MRW"] = "PZKA_DoorWindowMiddleRight",		
+		["RLW"] = "PZKA_DoorWindowRearLeft",
+		["RRW"] = "PZKA_DoorWindowRearRight",
+		["FLOW"] = "PZKA_WindowFrontLeft",
+		["FROW"] = "PZKA_WindowFrontRight",		
+		["MLOW"] = "PZKA_WindowMiddleLeft",
+		["MROW"] = "PZKA_WindowMiddleRight",		
+		["RLOW"] = "PZKA_WindowRearLeft",
+		["RROW"] = "PZKA_WindowRearRight",
+	}
+local seatTemplatesMap = {
+		["FL"] = "PZKA_SeatFrontLeft",
+		["FR"] = "PZKA_SeatFrontRight",
+		["ML"] = "PZKA_SeatMiddleLeft",
+		["MR"] = "PZKA_SeatMiddleRight",
+		["RL"] = "PZKA_SeatRearLeft",
+		["RR"] = "PZKA_SeatRearRight",
+		["FLW"] = "PZKA_SeatFrontLeft",
+		["FRW"] = "PZKA_SeatFrontRight",
+		["MLW"] = "PZKA_SeatMiddleLeft",
+		["MRW"] = "PZKA_SeatMiddleRight",
+		["RLW"] = "PZKA_SeatRearLeft",
+		["RRW"] = "PZKA_SeatRearRight",
+		["FLOW"] = "PZKA_SeatFrontLeft",
+		["FROW"] = "PZKA_SeatFrontRight",
+		["MLOW"] = "PZKA_SeatMiddleLeft",
+		["MROW"] = "PZKA_SeatMiddleRight",
+		["RLOW"] = "PZKA_SeatRearLeft",
+		["RROW"] = "PZKA_SeatRearRight",
+	}
+
+PZKAModule.AddExtraTemplate = function(vehicleId, extraTemplate)
+	local vt = PZKACore.TeplateHandler(vehicleId)
+	vt.plus({extraTemplate})
+end
+PZKAModule.CreateAnimationProfile = function(vehicleId, model, lights, template, doors, rear, seats, module, extra)
+	local vt = PZKACore.TeplateHandler(vehicleId, module)
+	local templates = {lights,template,rear,extra}
+	for i, door in pairs(doors) do
+		if doorTemplatesMap[door] then
+			table.insert(templates, doorTemplatesMap[door])
+		else
+			table.insert(templates, door)
+		end
+	end
+	if not seats then
+		seats = doors
+	end
+	for i, seat in pairs(seats) do
+		if seatTemplatesMap[seat] then
+			table.insert(templates, seatTemplatesMap[seat])
+		else
+			table.insert(templates, seat)
+		end
+	end
+	vt.plus(templates)
+	vt.setModel(model)
+end
+PZKAModule.CloneAnimationProfile = function(vehicleId, fromId, model, lights, template, extra)
+	local vt = PZKACore.TeplateHandler(vehicleId, module)
+	vt.setParent(fromId)
+	if model then
+		vt.setModel(model)
+	end
+	if light or template or extra then
+		local templates = {lights,template,extra}
+		vt.plus(templates)
+	end
+end
+
+PZKAModule.IsVehicleAnimated = function(vehicleId) 
+	return PZKACore.IsVehicleDefined(vehicleId)
+end
+--[[
 local vehicles = {}
 local vehicles2 = {}
 local models = {}
@@ -75,46 +170,7 @@ PZKAModule.CloneAnimationProfile = function(vehicleId, fromId, model, lights, te
 	end
 end
 
-	local doorTemplatesMap = {
-		["FL"] = "PZKA_DoorFrontLeft",
-		["FR"] = "PZKA_DoorFrontRight",		
-		["ML"] = "PZKA_DoorMiddleLeft",
-		["MR"] = "PZKA_DoorMiddleRight",		
-		["RL"] = "PZKA_DoorRearLeft",
-		["RR"] = "PZKA_DoorRearRight",		
-		["FLW"] = "PZKA_DoorWindowFrontLeft",
-		["FRW"] = "PZKA_DoorWindowFrontRight",		
-		["MLW"] = "PZKA_DoorWindowMiddleLeft",
-		["MRW"] = "PZKA_DoorWindowMiddleRight",		
-		["RLW"] = "PZKA_DoorWindowRearLeft",
-		["RRW"] = "PZKA_DoorWindowRearRight",
-		["FLOW"] = "PZKA_WindowFrontLeft",
-		["FROW"] = "PZKA_WindowFrontRight",		
-		["MLOW"] = "PZKA_WindowMiddleLeft",
-		["MROW"] = "PZKA_WindowMiddleRight",		
-		["RLOW"] = "PZKA_WindowRearLeft",
-		["RROW"] = "PZKA_WindowRearRight",
-	}
-	local seatTemplatesMap = {
-		["FL"] = "PZKA_SeatFrontLeft",
-		["FR"] = "PZKA_SeatFrontRight",
-		["ML"] = "PZKA_SeatMiddleLeft",
-		["MR"] = "PZKA_SeatMiddleRight",
-		["RL"] = "PZKA_SeatRearLeft",
-		["RR"] = "PZKA_SeatRearRight",
-		["FLW"] = "PZKA_SeatFrontLeft",
-		["FRW"] = "PZKA_SeatFrontRight",
-		["MLW"] = "PZKA_SeatMiddleLeft",
-		["MRW"] = "PZKA_SeatMiddleRight",
-		["RLW"] = "PZKA_SeatRearLeft",
-		["RRW"] = "PZKA_SeatRearRight",
-		["FLOW"] = "PZKA_SeatFrontLeft",
-		["FROW"] = "PZKA_SeatFrontRight",
-		["MLOW"] = "PZKA_SeatMiddleLeft",
-		["MROW"] = "PZKA_SeatMiddleRight",
-		["RLOW"] = "PZKA_SeatRearLeft",
-		["RROW"] = "PZKA_SeatRearRight",
-	}
+
 
 local function ApplyAnimationProfiles()
 	for vehicleId, pending in pairs(pendingExtras) do
@@ -172,5 +228,6 @@ local function ApplyAnimationProfiles()
 	end
 end
 Events.OnInitGlobalModData.Add(ApplyAnimationProfiles)
+]]
 print("PZKA: addAnimations loaded")
 return PZKAModule

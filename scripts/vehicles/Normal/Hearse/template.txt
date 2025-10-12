@@ -1,0 +1,86 @@
+module Base
+{
+	template vehicle PZKA_Hearse_shared {
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_hearse_RearWindow,
+			}
+		}
+	}
+
+	template vehicle PZKA_Normal_Shared_Reardoors_hearse_windows {
+		part WindowRearLeft
+		{	
+			parent = DoorRearLeft,
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_WindowRearLeft_hearse,
+			}
+		}
+		part WindowRearRight
+		{	
+			parent = DoorRearRight,
+			model Default
+			{
+				file = PZKA_Vehicles_Wagon_WindowRearRight_hearse,
+			}
+		}		
+		template! = PZKA_Normal_Shared_Rearseats_hearse,
+	}
+
+	template vehicle PZKA_Normal_Shared_Rearseats_hearse {		
+		part SeatRearLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Hearse_SeatRL,
+			}
+		}
+		part SeatRearRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Hearse_SeatRR,
+			}
+		}
+	}
+
+	template vehicle PZKA_Normal_Shared_Reardoors_hearse_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_DoorRearLeft_hearse_nr,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_DoorRearRight_hearse_nr,
+			}
+		}
+		template! = PZKA_Normal_Shared_Reardoors_hearse_windows,
+	}
+
+	template vehicle PZKA_Hearse_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Trunk_hearse_nr,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		template! = PZKA_Normal_Shared_Front_nr,
+		template! = PZKA_Normal_Shared_Reardoors_hearse_nr,
+
+		template! = PZKA_Hearse_shared,
+	}	
+}

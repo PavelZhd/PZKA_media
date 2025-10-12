@@ -5,14 +5,14 @@ module Base
 		{
 			model Default
 			{
-				file = VVA_Vehicles_Offroad_SeatFL,
+				file = VVA_Vehicles_OffRoad_SeatFL,
 			}
 		}
 		part SeatFrontRight 
 		{
 			model Default
 			{
-				file = VVA_Vehicles_Offroad_SeatFR,
+				file = VVA_Vehicles_OffRoad_SeatFR,
 			}
 		}
 
@@ -46,7 +46,7 @@ module Base
 		{
 			model Default
 			{
-				file = VVA_Vehicles_Offroad_Windshield,
+				file = VVA_Vehicles_OffRoad_Windshield,
 			}			
 		}
 		template! = PZKA_Offroad_shared0,
@@ -203,24 +203,12 @@ module Base
 			{
 				file = VVA_Vehicles_OffRoad_DoorFrontLeft,
 			}
-			lua
-			{
-				create = Vehicles.Create.Door75,
-				init = Vehicles.Init.Door,
-				use = Vehicles.Use.Door,
-			}
 		}
 		part DoorFrontRight
 		{
 			model Default
 			{
 				file = VVA_Vehicles_OffRoad_DoorFrontRight,
-			}			
-			lua
-			{
-				create = Vehicles.Create.Door75,
-				init = Vehicles.Init.Door,
-				use = Vehicles.Use.Door,
 			}
 		}
 		template! = PZKA_Offroad_hood,
@@ -240,24 +228,12 @@ module Base
 			{
 				file = VVA_Vehicles_OffRoad_DoorFrontLeft_nr,
 			}
-			lua
-			{
-				create = Vehicles.Create.Door75,
-				init = Vehicles.Init.Door,
-				use = Vehicles.Use.Door,
-			}
 		}
 		part DoorFrontRight
 		{
 			model Default
 			{
 				file = VVA_Vehicles_OffRoad_DoorFrontRight_nr,
-			}			
-			lua
-			{
-				create = Vehicles.Create.Door75,
-				init = Vehicles.Init.Door,
-				use = Vehicles.Use.Door,
 			}
 		}
 		template! = PZKA_Offroad_hood_nr,

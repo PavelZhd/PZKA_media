@@ -1,0 +1,116 @@
+module Base
+{
+	template vehicle PZKA_Van_Box_shared {
+		part WindowFrontLeft
+        	{
+			parent = DoorFrontLeft,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Van_Box_WindowFrontLeft,
+            		}            		
+        	}
+		part WindowFrontRight
+        	{	
+            		parent = DoorFrontRight,
+			model Default
+            		{
+                		file = PZKA_Vehicles_Van_Box_WindowFrontRight,
+            		}
+	       	}
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Box_Windshield,
+			}			
+		}
+
+        part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_SeatFR,
+			}
+		}
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.2374 0.0036 0.9535,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Van_Base_interior,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+
+	template vehicle PZKA_Van_Box_shared_front {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Box_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Box_DoorFrontRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Box_Hood,
+			}
+		}
+	}
+
+	template vehicle PZKA_Van_Box_animatedDoors {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_BoxDoor,
+			}
+		}
+		template! = PZKA_Van_Box_shared_front,
+		template! = PZKA_Van_Box_shared,		
+	}
+	template vehicle PZKA_Van_BoxAmbulance_animatedDoors {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_BoxAmbulance_Door,
+			}
+		}	
+		template! = PZKA_Van_Box_shared_front,
+		template! = PZKA_Van_Box_shared,		
+	}
+}

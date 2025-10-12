@@ -1,0 +1,52 @@
+module Base
+{		
+	model PZKA_Vehicles_Normal_DoorRearLeft_hearse_nr
+	{
+		mesh = vehicles/pzka_NormalAnimated|Door_Hearse_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftHearseDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Normal_DoorRearRight_hearse_nr
+	{
+		mesh = vehicles/pzka_NormalAnimated|Door_Hearse_RearRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightHearseDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_Wagon_WindowRearLeft_hearse
+	{
+		mesh = vehicles/pzka_NormalAnimated|Window_Hearse_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftHearseWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Wagon_WindowRearRight_hearse
+	{
+		mesh = vehicles/pzka_NormalAnimated|Window_Hearse_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightHearseWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Normal_Trunk_hearse_nr
+	{
+		mesh = vehicles/pzka_NormalAnimatedTrunk|Trunk_Hearse_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkHearseBone 1.0,
+	}
+	model PZKA_Vehicles_Normal_hearse_RearWindow
+	{
+		mesh = vehicles/pzka_NormalAnimatedTrunk|RearWindow_Hearse_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkHearseBone 1.0,
+	}
+}

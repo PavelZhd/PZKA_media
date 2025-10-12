@@ -1,13 +1,5 @@
 module Base
 {
-	model VVA_Vehicles_Van_internals
-	{
-		mesh = vehicles/VVA_Van_static|Vehicles_Interior,
-		
-		texture = Vehicles/vehicle_vanambulanceshell,
-		static = TRUE,
-		scale = 0.004,
-	}
 	model VVA_Vehicles_Van_SeatFL
 	{
 		mesh = vehicles/VVA_Van|Seat_FrontLeft_obj,
@@ -21,14 +13,6 @@ module Base
 		mesh = vehicles/VVA_Van|Seat_FrontRight_obj,
 		
 		texture = Vehicles/vehicle_vanspiffoshell,
-		static = TRUE,
-		scale = 0.004,
-	}	
-	model VVA_Vehicles_VanSeats_internals
-	{
-		mesh = vehicles/VVA_Van_static|Vehicles_Interior_seats,
-		
-		texture = Vehicles/vehicle_vanambulanceshell,
 		static = TRUE,
 		scale = 0.004,
 	}

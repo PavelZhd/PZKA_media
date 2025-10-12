@@ -34,28 +34,28 @@ module Base
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Offroad_LightFL,
+				file = PZKA_VVE_Offroad_LightFL,
 			}
 		}
 		part HeadlightRight 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Offroad_LightFR,
+				file = PZKA_VVE_Offroad_LightFR,
 			}
 		}
 		part HeadlightRearLeft 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Offroad_LightRL,
+				file = PZKA_VVE_Offroad_LightRL,
 			}
 		}
 		part HeadlightRearRight 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Offroad_LightRR,
+				file = PZKA_VVE_Offroad_LightRR,
 			}
 		}
 	}

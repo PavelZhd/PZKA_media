@@ -12,7 +12,7 @@ module Base
 		{
 			model Default
 			{
-				file = VVA_Vehicles_Offroad_LightFR,
+				file = VVA_Vehicles_OffRoad_LightFR,
 			}
 		}
 		part HeadlightRearLeft 
@@ -20,7 +20,7 @@ module Base
 			parent = TrunkDoor,
 			model Default
 			{
-				file = VVA_Vehicles_Offroad_LightRL,
+				file = VVA_Vehicles_OffRoad_LightRL,
 			}
 		}
 		part HeadlightRearRight 
@@ -28,7 +28,7 @@ module Base
 			parent = TrunkDoor,
 			model Default
 			{
-				file = VVA_Vehicles_Offroad_LightRR,
+				file = VVA_Vehicles_OffRoad_LightRR,
 			}
 		}
 	}

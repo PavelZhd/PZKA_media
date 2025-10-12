@@ -51,7 +51,7 @@ module Base
 		{
             model Default
 			{
-				file = VVA_Vehicles_Van_internals,
+				file = PZKA_Vehicles_Van_Base_interior,
 			}
 			category = nodisplay,
             specificItem = false,
@@ -70,7 +70,7 @@ module Base
 			parent = DoorRear,
 			model Default
 			{
-				file = VVA_Vehicles_Van_RearWindow,
+				file = PZKA_Vehicles_Van_RearWindow,
 			}
 		}
     }
@@ -112,7 +112,7 @@ module Base
 		{
 			model Default
 			{
-				file = VVA_Vehicles_Van_DoorFrontRight_nr
+				file = VVA_Vehicles_Van_DoorFrontRight_nr,
 			}
 		}
         part EngineDoor
@@ -129,7 +129,7 @@ module Base
 		{
 			model Default
 			{
-				file = VVA_Vehicles_Van_RearDoor,
+				file = PZKA_Vehicles_Van_Trunk,
 			}
 		}		
     }
@@ -138,165 +138,112 @@ module Base
 		{
 			model Default
 			{
-				file = VVA_Vehicles_Van_RearDoor_nr,
+				file = PZKA_Vehicles_Van_Trunk_nr,
 			}
 		}
     }
 
-
-    template vehicle PZKA_Van {
-        template! = PZKA_Van_rearDoor,
-		template! = PZKA_Van_front,
-		template! = PZKA_Van_shared,		
-    }
-    template vehicle PZKA_Van_nr {
-        template! = PZKA_Van_rearDoor_nr,
-		template! = PZKA_Van_front_nr,
-		template! = PZKA_Van_shared,		
-    }
-    template vehicle PZKA_Van_Camper {
-        template! = PZKA_Van,
-		/*part pzkSpareWheel
-        {
-			parent = DoorRear,
-			model Default
-			{
-            	file = PZKA_Vehicles_Van_Camper_SpareAnchor,
-			}
-			setAllModelsVisible = true,
-		}*/
-
-		part DoorRearRight
+	template vehicle PZKA_Van_shared_Cargo {
+		template! = PZKA_Van_shared,
+		part Inreior 
 		{
-			model Default
+			model Space 
 			{
-				file = PZKA_Vehicles_Van_Camper_DoorRearRight,
+				file = PZKA_Vehicles_Van_Cargo_interior,
 			}
-		}		
-
-		part WindowRearLeft
-        {
-		    model Default
-            {
-            	file = PZKA_Vehicles_Van_Camper_WindowRearLeft,
-        	}            		
-        }
-		part WindowRearRight
-        {	
-        	parent = DoorRearRight,
-			model Default
-        	{
-         	    file = PZKA_Vehicles_Van_Camper_WindowRearRight,
-        	}
-	    }
+		}
+	}
+	template vehicle PZKA_Van_shared_Police {
+		template! = PZKA_Van_shared,
+		part Inreior 
+		{
+			model Space 
+			{
+				file = PZKA_Vehicles_Van_Police_interior,
+			}
+		}
+	}
+	template vehicle PZKA_Van_shared_Seats {
+		template! = PZKA_Van_shared,
 		part WindshieldRear
 		{
 			model Static
 			{
-				file = PZKA_Vehicles_Van_Camper_RearWindow,
+				file = VVA_Vehicles_VanSeats_RearWindow_static,
 			}
 		}
 		part Inreior 
 		{
-            model Space
+			model Space 
 			{
-				file = PZKA_Vehicles_Van_Camper_interior,
+				file = PZKA_Vehicles_Van_Seats_interior,
 			}
-        }
+		}
 	}
-    
-    template vehicle PZKA_Van_Brig {
-		template! = PZKA_Van_front,
-		part DoorRearLeft
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Van_Brig_DoorRearLeft,
-			}
-		}
 
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Van_Brig_DoorRearRight,
-			}
-		}
-		template! = PZKA_Van_shared0,
-		part WindowRearLeft
-        {
-			parent = DoorRearLeft,
-			model Default
-        	{
-          		file = PZKA_Vehicles_Van_Brig_WindowRearLeft,
-        	}            		
-        }
-		part WindowRearRight
-        	{	
-            parent = DoorRearRight,
-			model Default
-            {
-          		file = PZKA_Vehicles_Van_Brig_WindowRearRight,
-            }
-	    }
-		part WindshieldRear
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Van_Brig_RearWindow,
-			}
-		}
+
+    /*template vehicle PZKA_Van {
+        template! = PZKA_Van_rearDoor,
+		template! = PZKA_Van_front,
+		template! = PZKA_Van_shared,		
+    }*/
+    /*template vehicle PZKA_Van_nr {
+        template! = PZKA_Van_rearDoor_nr,
+		template! = PZKA_Van_front_nr,
+		template! = PZKA_Van_shared,		
+    }*/
+    
+	
+    
+    
+
+    template vehicle PZKA_Van_Shortseats {		
 		part SeatRearLeft 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Van_Brig_SeatRL,
+				file = VVA_Vehicles_VanSeats_SeatML,
 			}
 		}
 		part SeatRearRight 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Van_Brig_SeatRR,
+				file = VVA_Vehicles_VanSeats_SeatMR,
 			}
 		}
-	}
-
-    
+    }
     template vehicle PZKA_Van_Backseats {
 		part SeatMiddleLeft 
 		{
 			model Default
 			{
-				file = VVA_Vehicles_Van_Seats_SeatML,
+				file = VVA_Vehicles_VanSeats_SeatML,
 			}
 		}
 		part SeatMiddleRight 
 		{
 			model Default
 			{
-				file = VVA_Vehicles_Van_Seats_SeatMR,
+				file = VVA_Vehicles_VanSeats_SeatMR,
 			}
 		}
 				part SeatRearLeft 
 		{
 			model Default
 			{
-				file = VVA_Vehicles_Van_Seats_SeatRL,
+				file = VVA_Vehicles_VanSeats_SeatRL,
 			}
 		}
 		part SeatRearRight 
 		{
 			model Default
 			{
-				file = VVA_Vehicles_Van_Seats_SeatRR,
+				file = VVA_Vehicles_VanSeats_SeatRR,
 			}
 		}
     }
-
-    template vehicle PZKA_Van_Payday {
-        template! = PZKA_Van,
-        template! = PZKA_Van_Backseats,
+    template vehicle PZKA_Van_RearDoorsB_nr {
 		part DoorRearLeft        
 		{
 			model Default
@@ -310,40 +257,22 @@ module Base
 			{
 				file = PZKA_Vehicles_Van_Payday_DoorRearRight_nr,
 			}
-		}
-        part Inreior 
-		{
-			model Default 
-			{
-				file = PZKA_Vehicles_Van_Police_interior,
-			}
-		}
+		}        
 	}
-
-    template vehicle PZKA_Van_Seats_rearWindow {        
-		part WindshieldRear
-		{
-			model Static
-			{
-				file = VVA_Vehicles_VanSeats_RearWindow_static,
-			}
-		}
-    }
-    template vehicle PZKA_Van_Seats {
-        template! = PZKA_Van,
-        template! = PZKA_Van_Backseats,
-        part DoorRearLeft
+	
+	template vehicle PZKA_Van_RearDoorsWa {
+		part DoorRearLeft
 		{
 			model Default
 			{
-				file = VVA_Vehicles_VanSeats_DoorRearLeft,
+				file = PZKA_Vehicles_Van_DoorRearLeft,
 			}
 		}
 		part DoorRearRight
 		{
 			model Default
 			{
-				file = VVA_Vehicles_VanSeats_DoorRearRight,
+				file = PZKA_Vehicles_Van_DoorRearRight,
 			}
 		}
         part WindowRearLeft
@@ -362,11 +291,73 @@ module Base
           		file = PZKA_Vehicles_Van_WindowRearRight,
             }
 	    }
-    }
-    template vehicle PZKA_Van_Seats_nr {
-        template! = PZKA_Van_nr,
-        template! = PZKA_Van_Backseats,
-        part DoorRearLeft
+	}
+	template vehicle PZKA_Van_RearDoorsWa_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorRearLeft_nr,
+			}
+		}
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorRearRight_nr,
+			}
+		}
+        part WindowRearLeft
+        {
+			parent = DoorRearLeft,
+			model Default
+        	{
+          		file = PZKA_Vehicles_Van_WindowRearLeft,
+        	}            		
+        }
+		part WindowRearRight
+        	{	
+            parent = DoorRearRight,
+			model Default
+            {
+          		file = PZKA_Vehicles_Van_WindowRearRight,
+            }
+	    }
+	}
+	template vehicle PZKA_Van_MiddleDoorsWa_nr {
+		part DoorMiddleLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorRearLeft_nr,
+			}
+		}
+		part DoorMiddleRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorRearRight_nr,
+			}
+		}
+        part WindowMiddleLeft
+        {
+			parent = DoorMiddleLeft,
+			model Default
+        	{
+          		file = PZKA_Vehicles_Van_WindowRearLeft,
+        	}            		
+        }
+		part WindowMiddleRight
+        	{	
+            parent = DoorMiddleRight,
+			model Default
+            {
+          		file = PZKA_Vehicles_Van_WindowRearRight,
+            }
+	    }
+	}
+	template vehicle PZKA_Van_RearDoorsW_nr {
+		part DoorRearLeft
 		{
 			model Default
 			{
@@ -385,7 +376,7 @@ module Base
 			parent = DoorRearLeft,
 			model Default
         	{
-          		file = PZKA_Vehicles_Van_WindowRearLeft,
+          		file = VVA_Vehicles_VanSeats_WindowRearLeft,
         	}            		
         }
 		part WindowRearRight
@@ -393,9 +384,48 @@ module Base
             parent = DoorRearRight,
 			model Default
             {
-          		file = PZKA_Vehicles_Van_WindowRearRight,
+          		file = VVA_Vehicles_VanSeats_WindowRearRight,
             }
 	    }
+	}
+	template vehicle PZKA_Van_Cargo {
+		template! = PZKA_Van_rearDoor,
+		template! = PZKA_Van_front,
+		template! = PZKA_Van_shared_Cargo,
+	}
+	template vehicle PZKA_Van_Cargo_nr {
+		template! = PZKA_Van_rearDoor_nr,
+		template! = PZKA_Van_front_nr,
+		template! = PZKA_Van_shared_Cargo,
+	}
+    template vehicle PZKA_Van_Payday {
+        template! = PZKA_Van_rearDoor_nr,
+		template! = PZKA_Van_front_nr,
+        template! = PZKA_Van_RearDoorsB_nr,
+		template! = PZKA_Van_Shortseats,
+		template! = PZKA_Van_shared_Police,
+	}
+
+    template vehicle PZKA_Van_SeatsR {
+        template! = PZKA_Van_rearDoor,
+		template! = PZKA_Van_front,
+		template! = PZKA_Van_RearDoorsWa,
+		template! = PZKA_Van_Backseats,
+		template! = PZKA_Van_shared_Seats,
+    }
+    template vehicle PZKA_Van_Seats {
+        template! = PZKA_Van_rearDoor,
+		template! = PZKA_Van_front,
+		template! = PZKA_Van_MiddleDoorsWa,
+		template! = PZKA_Van_Backseats,
+		template! = PZKA_Van_shared_Seats,
+    }
+    template vehicle PZKA_Van_Seats_nr {
+        template! = PZKA_Van_rearDoor_nr,
+		template! = PZKA_Van_front_nr,
+		template! = PZKA_Van_MiddleDoorsWa_nr,
+		template! = PZKA_Van_Backseats,
+		template! = PZKA_Van_shared_Seats,
     }
     template vehicle PZKA_Van_Taxi {
         template!= PZKA_Van_Seats_nr,
@@ -404,6 +434,24 @@ module Base
 		{
 			model Decor {
 				file = PZKA_Vehicles_Van_taxisign,
+			}
+		}
+    }
+	template vehicle PZKA_Van_Police_base {
+		template! = PZKA_Van_rearDoor_nr,
+		template! = PZKA_Van_front_nr,
+        template! = PZKA_Van_RearDoorsW_nr,
+		template! = PZKA_Van_Shortseats,
+		template! = PZKA_Van_shared_Police,
+	}
+	template vehicle PZKA_Van_Police {
+        template! = PZKA_Van_Police_base,
+		template! = PZKA_lightbar,
+		part ATA2RoofLightbar
+		{
+			model Normal
+			{
+				file = PZKA_Vehicles_Offroad_Lighbar,
 			}
 		}
     }
