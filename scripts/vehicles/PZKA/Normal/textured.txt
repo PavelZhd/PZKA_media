@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Normal_textured_internals
+	{
+		mesh = vehicles/Normal/pzka_Shared|Comp_Interior_Short,
+		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Normal_textured_internals_base {
+		part Iterior {
+			model EngineSteer
+            {
+            	file = PZKA_Normal_textured_internals,
+            }  
+		}
+	}
+}

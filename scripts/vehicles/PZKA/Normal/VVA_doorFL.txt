@@ -1,0 +1,56 @@
+module Base
+{
+	model VVA_Vehicles_Normal_DoorFrontLeft
+	{
+		mesh = vehicles/Normal/vva_Normal_doorFL|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_Normal_WindowFrontLeft
+	{
+		mesh = vehicles/Normal/vva_Normal_doorFL|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model VVA_Vehicles_Normal_DoorFrontLeft_nr
+	{
+		mesh = vehicles/Normal/vva_Normal_doorFL|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+	template vehicle PZKA_Normal_windowFL {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = VVA_Vehicles_Normal_WindowFrontLeft,
+            }            		
+        }
+	}
+	template vehicle PZKA_Normal_doorFL {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_DoorFrontLeft,
+			}
+		}
+	}
+	template vehicle PZKA_Normal_doorFL_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_DoorFrontLeft_nr,
+			}
+		}
+	}
+}

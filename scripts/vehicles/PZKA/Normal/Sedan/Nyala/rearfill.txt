@@ -1,0 +1,38 @@
+module Base
+{
+    model PZKA_Vehicles_Normal_SedanF_Rearfill_Nyala
+	{
+		mesh = vehicles/Normal/pzka_Sedan|RearFill_Sedan_V_Nyala,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Normal_SedanF_Rearfill_Nyala_nr
+	{
+		mesh = vehicles/Normal/pzka_Sedan|RearFill_Sedan_V_Nyala,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+
+    template vehicle PZKA_SedanF_Rearfill_Nyala
+    {
+        template! = PZKA_Normal_rearfill,
+        part Rearfill
+		{
+            model Nyala
+			{
+                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Nyala
+            }
+        }
+    }    
+    template vehicle PZKA_SedanF_Rearfill_Nyala_nr
+    {
+        template! = PZKA_Normal_rearfill,
+        part Rearfill
+		{
+            model Nyala
+			{
+                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Nyala_nr
+            }
+        }
+    }    
+}

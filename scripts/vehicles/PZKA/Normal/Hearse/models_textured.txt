@@ -1,0 +1,17 @@
+module Base
+{	
+	model PZKA_Vehicles_Hearse_SeatRL
+	{
+		mesh = vehicles/pzka_Normal|Seat_Hearse_RearLeft_obj,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Hearse_SeatRR
+	{
+		mesh = vehicles/pzka_Normal|Seat_Hearse_RearRight_obj,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

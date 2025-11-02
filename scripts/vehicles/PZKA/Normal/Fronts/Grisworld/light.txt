@@ -1,0 +1,31 @@
+module Base
+{
+	model PZKA_Normal_Front_LightFL_Grisworld
+	{
+		mesh = vehicles/Normal/pzka_Wagon|Grisworld_Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Normal_Front_LightFR_Grisworld
+	{
+		mesh = vehicles/Normal/pzka_Wagon|Grisworld_Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Normal_Front_Lights_Grisworld {
+		part HeadlightLeft
+		{
+			model Default 
+			{
+				file = PZKA_Normal_Front_LightFL_Grisworld,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default 
+			{
+				file = PZKA_Normal_Front_LightFR_Grisworld,
+			}
+		}
+	}
+}

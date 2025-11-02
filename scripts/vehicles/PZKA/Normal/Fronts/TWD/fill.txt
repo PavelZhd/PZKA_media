@@ -1,0 +1,38 @@
+module Base
+{
+    model PZKA_Normal_Front_fill_TWD
+	{
+		mesh = vehicles/Normal/pzka_Shared|TWD_Grill,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+	}
+	model PZKA_Normal_Front_fill_TWD_nr
+	{
+		mesh = vehicles/Normal/pzka_Shared|TWD_Grill,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+
+    template vehicle PZKA_Normal_Front_fill_TWD
+    {
+        template! = PZKA_Normal_frontfill,
+        part Rearfill
+		{
+            model TWD
+			{
+                file = PZKA_Normal_Front_fill_TWD
+            }
+        }
+    }    
+    template vehicle PZKA_Normal_Front_fill_TWD_nr
+    {
+        template! = PZKA_Normal_frontfill,
+        part Rearfill
+		{
+            model TWD
+			{
+                file = PZKA_Normal_Front_fill_TWD_nr
+            }
+        }
+    }    
+}

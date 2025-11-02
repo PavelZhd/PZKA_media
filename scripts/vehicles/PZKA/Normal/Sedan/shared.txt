@@ -1,0 +1,46 @@
+module Base
+{
+	model PZKA_Normal_SedanV
+	{
+		mesh = vehicles/Normal/pzka_Sedan|SedanV,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+	}
+	model PZKA_Normal_SedanV_nr
+	{
+		mesh = vehicles/Normal/pzka_Sedan|SedanV,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+	model PZKA_Normal_SedanF
+	{
+		mesh = vehicles/Normal/pzka_Sedan|SedanF,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+	}
+	model PZKA_Normal_SedanF_nr
+	{
+		mesh = vehicles/Normal/pzka_Sedan|SedanF,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Normal_RearWindshieldFlat
+	{
+		mesh = vehicles/pzka_Normal|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Normal_SedanF_shared {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_RearWindshieldFlat,
+			}
+		}
+		template! = PZKA_Normal_Wagon_shared_base,
+	}
+
+}

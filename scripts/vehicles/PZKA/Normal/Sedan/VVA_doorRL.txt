@@ -1,0 +1,56 @@
+module Base
+{
+	model VVA_Vehicles_Normal_DoorRearLeft
+	{
+		mesh = vehicles/Normal/vva_Normal_doorRL|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_Normal_WindowRearLeft
+	{
+		mesh = vehicles/Normal/vva_Normal_doorRL|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model VVA_Vehicles_Normal_DoorRearLeft_nr
+	{
+		mesh = vehicles/Normal/vva_Normal_doorRL|Door_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+
+	template vehicle PZKA_Normal_SedanV_windowRL {
+		part WindowRearLeft
+        {
+			parent = DoorRearLeft,
+			model Default
+            {
+            	file = VVA_Vehicles_Normal_WindowRearLeft,
+            }            		
+        }
+	}
+	template vehicle PZKA_Normal_SedanV_doorRL {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_DoorRearLeft,
+			}
+		}
+	}
+	template vehicle PZKA_Normal_SedanV_doorRL_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_DoorRearLeft_nr,
+			}
+		}
+	}
+}

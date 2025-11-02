@@ -1,0 +1,33 @@
+module Base
+{
+    model PZKA_Vehicles_Sedan_LightRL_Rapier
+	{
+		mesh = vehicles/Normal/pzka_Sedan|Light_Sedan_Rapier_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sedan_LightRR_Rapier
+	{
+		mesh = vehicles/Normal/pzka_Sedan|Light_Sedan_Rapier_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Sedan_Lights_Rapier {
+		template! = PZKA_Normal_Front_Lights_Rapier,
+		part HeadlightRearLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightRL_Rapier,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightRR_Rapier,
+			}
+		}
+	}
+}

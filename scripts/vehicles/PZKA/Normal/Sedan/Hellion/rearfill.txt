@@ -1,0 +1,38 @@
+module Base
+{
+    model PZKA_Vehicles_Normal_SedanF_Rearfill_Hellion
+	{
+		mesh = vehicles/Normal/pzka_Sedan|RearFill_F_Hellion,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Normal_SedanF_Rearfill_Hellion_nr
+	{
+		mesh = vehicles/Normal/pzka_Sedan|RearFill_F_Hellion,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+
+    template vehicle PZKA_SedanF_Rearfill_Hellion
+    {
+        template! = PZKA_Normal_rearfill,
+        part Rearfill
+		{
+            model Hellion
+			{
+                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Hellion
+            }
+        }
+    }    
+    template vehicle PZKA_SedanF_Rearfill_Hellion_nr
+    {
+        template! = PZKA_Normal_rearfill,
+        part Rearfill
+		{
+            model Hellion
+			{
+                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Hellion_nr
+            }
+        }
+    }    
+}

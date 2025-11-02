@@ -1,0 +1,34 @@
+module Base
+{
+	model PZKA_Normal_SedanV_interior_trunk
+	{
+		mesh = vehicles/Normal/pzka_Sedan|Vehicles_Interior_SedanV,
+		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
+		scale = 0.01,
+	}
+	model PZKA_Normal_SedanF_interior_trunk
+	{
+		mesh = vehicles/Normal/pzka_Sedan|Vehicles_Interior_SedanF,
+		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Normal_SedanV_interior_trunk 
+	{
+		part Iterior {
+			model TrunkSpace
+            {
+            	file = PZKA_Normal_SedanV_interior_trunk,
+            }  
+		}
+	}
+	template vehicle PZKA_Normal_SedanF_interior_trunk 
+	{
+		part Iterior {
+			model TrunkSpace
+            {
+            	file = PZKA_Normal_SedanF_interior_trunk,
+            }  
+		}
+	}
+}

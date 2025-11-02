@@ -1,0 +1,40 @@
+module Base
+{
+	template vehicle PZKA_Normal_front {
+		template! = PZKA_Normal_doorFL,
+		template! = PZKA_Normal_doorFR,
+		template! = PZKA_Normal_hood,
+	}
+	template vehicle PZKA_Normal_front_nr {
+		template! = PZKA_Normal_doorFL_nr,
+		template! = PZKA_Normal_doorFR_nr,
+		template! = PZKA_Normal_hood_nr,
+	}
+    
+    template vehicle PZKA_Normal_frontfill {
+        part Frontfill
+		{
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+	    	}
+		}
+    }
+    template vehicle PZKA_Normal_rearfill {
+        part Rearfill
+		{
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+	    	}
+		}
+    }
+}
