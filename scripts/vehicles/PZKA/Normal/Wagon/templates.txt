@@ -20,125 +20,71 @@ module Base
 		template! = PZKA_Normal_Shared_Rearseats_sedan,
 	}
 	template vehicle PZKA_Normal_Shared_Reardoors_wagon {
-		part DoorRearLeft
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_DoorRearLeft_wagon,
-			}
-		}
-
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_DoorRearRight_wagon,
-			}
-		}
+		template! = PZKA_Normal_Wagon_doorRL,
+		template! = PZKA_Normal_Wagon_doorRR,
 		template! = PZKA_Normal_Shared_Reardoors_wagon_windows,
 	}
 	template vehicle PZKA_Normal_Shared_Reardoors_wagon_nr {
-		part DoorRearLeft
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_DoorRearLeft_wagon_nr,
-			}
-		}
-
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_DoorRearRight_wagon_nr,
-			}
-		}
+		template! = PZKA_Normal_Wagon_doorRL_nr,
+		template! = PZKA_Normal_Wagon_doorRR_nr,
 		template! = PZKA_Normal_Shared_Reardoors_wagon_windows,
 	}
 
-	template vehicle PZKA_Normal_Wagon_shared {
-		part WindshieldRear
-		{
-			parent = TrunkDoor,
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_RearWindow,
-			}
-			model Static
-			{
-				file = PZKA_Vehicles_Normal_RearWindow_static,
-			}
-		}		
-	}
 	template vehicle PZKA_Normal_Wagon {
-		part TrunkDoor
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_Trunk_wagon,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
-			}
-		}
 		template! = PZKA_Normal_Shared_Front,
 		template! = PZKA_Normal_Shared_Reardoors_wagon,
-
-		template! = PZKA_Normal_Wagon_shared,
+		template! = PZKA_Normal_Wagon_Trunk,
+		template! = PZKA_Normal_Wagon_shared_base,
 	}
 	template vehicle PZKA_Normal_Wagon_nr {
-		part TrunkDoor
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_Trunk_wagon_nr,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
-			}
-		}
 		template! = PZKA_Normal_Shared_Front_nr,
 		template! = PZKA_Normal_Shared_Reardoors_wagon_nr,
-
-		template! = PZKA_Normal_Wagon_shared,
+		template! = PZKA_Normal_Wagon_Trunk_nr,
+		template! = PZKA_Normal_Wagon_shared_base,
+	}
+	template vehicle PZKA_Normal_Wagon_mayor {
+		template! = PZKA_Normal_Shared_Front,
+		template! = PZKA_Normal_Shared_Reardoors_wagon,
+		template! = PZKA_Normal_Wagon_Trunk_mayor,
+		template! = PZKA_Normal_Wagon_shared_base,
+	}
+	template vehicle PZKA_Normal_Wagon_mayor_nr {
+		template! = PZKA_Normal_Shared_Front_nr,
+		template! = PZKA_Normal_Shared_Reardoors_wagon_nr,
+		template! = PZKA_Normal_Wagon_Trunk_mayor_nr,
+		template! = PZKA_Normal_Wagon_shared_base,
+	}
+	
+	template vehicle PZKA_Normal_Wagon_gris_nr {
+		template! = PZKA_Normal_Shared_Front_nr,
+		template! = PZKA_Normal_Shared_Reardoors_wagon_nr,
+		template! = PZKA_Normal_Wagon_Trunk_gris_nr,
+		template! = PZKA_Normal_Wagon_shared_base,
+	}
+	
+	template vehicle PZKA_Normal_Wagon_ghoulbuster_nr {
+		template! = PZKA_Normal_Shared_Front_nr,
+		template! = PZKA_Normal_Shared_Reardoors_wagon_nr,
+		template! = PZKA_Normal_Hearse_Trunk_ghoulbuster_nr,
+		template! = PZKA_Normal_Wagon_shared_base,
 	}
 
 	template vehicle PZKA_Normal_Wagon_Lightbar {
-		template! = PZKA_Normal_Wagon_nr,
 		part ATA2RoofLightbar
 		{
 			model Normal
 			{
 				file = PZKA_Vehicles_Normal_Lightbar,
-			}			
-			category = nodisplay,
-            area = Engine,
-            specificItem = false,
-            itemType = Base.LightBulb,
-            setAllModelsVisible = true,
-			lua
-	    	{
-				create = Vehicles.Create.Default,
-	    	}
+			}
 		}
 	}
 	template vehicle PZKA_Normal_Wagon_Taxi {
-		template! = PZKA_Normal_Wagon_nr,
 		part PZKATaxiSign
 		{
 			model Normal
 			{
 				file = PZKA_Vehicles_Normal_TaxiWagon,
 			}			
-			category = nodisplay,
-            area = Engine,
-            specificItem = false,
-            itemType = Base.LightBulb,
-            setAllModelsVisible = true,
-			lua
-	    	{
-				create = Vehicles.Create.Default,
-	    	}
 		}
 	}
 }

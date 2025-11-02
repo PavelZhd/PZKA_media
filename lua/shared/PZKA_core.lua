@@ -1,6 +1,7 @@
-local VVAmodule = require "VVA_core"
+--local VVAmodule = require "VVA_core"
 
-if not VVAmodule then
+--if not VVAmodule then
+if true then -- Temp for testing without version mismatch
 	VVAmodule = {}
 	local vehicles = {}
 	local profiles = {}
@@ -163,8 +164,10 @@ if not VVAmodule then
 
 	local Applicator = {}
 	Applicator.Leaf = function (vehicleScript, vehicleid, template, applied)
-		vehicleScript:Load(vehicleid, "{ template! = " .. template .. ",}")
-		applied[template] = 1
+		if (template) then
+			vehicleScript:Load(vehicleid, "{ template! = " .. template .. ",}")
+			applied[template] = 1
+		end
 	end
 
 	Applicator.Template = function (vehicleScript, vehicleid, template, unwrap, applied, minus)

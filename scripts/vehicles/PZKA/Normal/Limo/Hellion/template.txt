@@ -1,0 +1,15 @@
+module Base
+{
+	template vehicle PZKA_Normal_Limo_Hellion
+	{
+		template! = PZKA_Limo_Trunk_Hellion,
+		template! = PZKA_Normal_Limo_RearDoorWindows,
+		template! = PZKA_Normal_Limo_shared_base,
+	}
+	template vehicle PZKA_Normal_Limo_Hellion_nr 
+	{
+		template! = PZKA_Limo_Trunk_Hellion_nr,
+		template! = PZKA_Normal_Limo_RearDoorWindows_nr,
+		template! = PZKA_Normal_Limo_shared_base,
+	}
+}

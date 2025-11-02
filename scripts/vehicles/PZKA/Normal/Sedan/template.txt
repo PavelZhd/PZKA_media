@@ -42,11 +42,11 @@ module Base
 		template! = PZKA_Normal_SedanF_Trunk_nr,
 		template! = PZKA_Normal_SedanF_base_nr,
 	}
-	template vehicle PZKA_Normal_SedanV_Hellion {
+	template vehicle PZKA_Normal_SedanF_Hellion {
 		template! = PZKA_Normal_SedanF_Trunk_hellion,
 		template! = PZKA_Normal_SedanF_base,
 	}
-	template vehicle PZKA_Normal_SedanV_Hellion_nr {
+	template vehicle PZKA_Normal_SedanF_Hellion_nr {
 		template! = PZKA_Normal_SedanF_Trunk_hellion_nr,
 		template! = PZKA_Normal_SedanF_base_nr,
 	}

@@ -10,6 +10,7 @@ PZKAModule.TeplateHandler = PZKACore.TeplateHandler
 PZKAModule.ApplyTemplateToVehicle = PZKACore.ApplyTemplateToVehicle
 PZKAModule.CopyTemplateToVehicle = PZKACore.CopyTemplateToVehicle
 PZKAModule.InheritTemplateToVehicle = PZKACore.InheritTemplateToVehicle
+PZKAModule.IsVehicleAnimated =  PZKACore.IsVehicleDefined
 
 local doorTemplatesMap = {
 		["FL"] = "PZKA_DoorFrontLeft",
@@ -91,9 +92,30 @@ PZKAModule.CloneAnimationProfile = function(vehicleId, fromId, model, lights, te
 	end
 end
 
-PZKAModule.IsVehicleAnimated = function(vehicleId) 
-	return PZKACore.IsVehicleDefined(vehicleId)
+PZKAModule.ExpandDoorSeatProfile = function(profileId, source, door, seats)
+	PZKAModule.MakeDoorSeatProfile(profileId, door, seats)
+	PZKACore.addToProfile(profileId,{source})
 end
+PZKAModule.MakeDoorSeatProfile = function(profileId, doors, seats)
+	local templates = {}
+	for i, door in pairs(doors) do
+		if doorTemplatesMap[door] then
+			table.insert(templates, doorTemplatesMap[door])
+		else
+			table.insert(templates, door)
+		end
+	end
+	if not seats then
+		seats = doors
+	end
+	for i, seat in pairs(seats) do
+		if seatTemplatesMap[seat] then
+			table.insert(templates, seatTemplatesMap[seat])
+		end
+	end
+	PZKACore.addToProfile(profileId,templates)
+end
+
 --[[
 local vehicles = {}
 local vehicles2 = {}

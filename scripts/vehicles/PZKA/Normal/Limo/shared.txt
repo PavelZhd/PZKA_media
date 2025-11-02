@@ -1,0 +1,15 @@
+module Base
+{
+	model PZKA_Normal_Limo
+	{
+		mesh = vehicles/Normal/pzka_Limo|Limo,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+	}
+	model PZKA_Normal_Limo_nr
+	{
+		mesh = vehicles/Normal/pzka_Limo|Limo,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+}

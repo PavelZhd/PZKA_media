@@ -1,0 +1,38 @@
+module Base
+{
+    model PZKA_Vehicles_Normal_WagonF_Rearfill_Mayor
+	{
+		mesh = vehicles/Normal/pzka_Wagon|Mayor_Wagon_RearFill,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Normal_WagonF_Rearfill_Mayor_nr
+	{
+		mesh = vehicles/Normal/pzka_Wagon|Mayor_Wagon_RearFill,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+
+    template vehicle PZKA_WagonF_Rearfill_Mayor
+    {
+        template! = PZKA_Normal_rearfill,
+        part Rearfill
+		{
+            model Mayor
+			{
+                file = PZKA_Vehicles_Normal_WagonF_Rearfill_Mayor
+            }
+        }
+    }    
+    template vehicle PZKA_WagonF_Rearfill_Mayor_nr
+    {
+        template! = PZKA_Normal_rearfill,
+        part Rearfill
+		{
+            model Mayor
+			{
+                file = PZKA_Vehicles_Normal_WagonF_Rearfill_Mayor_nr
+            }
+        }
+    }    
+}

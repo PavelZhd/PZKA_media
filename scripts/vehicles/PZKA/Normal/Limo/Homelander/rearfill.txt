@@ -1,0 +1,38 @@
+module Base
+{
+    model PZKA_Vehicles_Normal_LimoF_Rearfill_Homelander
+	{
+		mesh = vehicles/Normal/pzka_Limo|RearFill_Limo_V_Homelander,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Normal_LimoF_Rearfill_Homelander_nr
+	{
+		mesh = vehicles/Normal/pzka_Limo|RearFill_Limo_V_Homelander,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+
+    template vehicle PZKA_LimoF_Rearfill_Homelander
+    {
+        template! = PZKA_Normal_rearfill,
+        part Rearfill
+		{
+            model Homelander
+			{
+                file = PZKA_Vehicles_Normal_LimoF_Rearfill_Homelander
+            }
+        }
+    }    
+    template vehicle PZKA_LimoF_Rearfill_Homelander_nr
+    {
+        template! = PZKA_Normal_rearfill,
+        part Rearfill
+		{
+            model Homelander
+			{
+                file = PZKA_Vehicles_Normal_LimoF_Rearfill_Homelander_nr
+            }
+        }
+    }    
+}

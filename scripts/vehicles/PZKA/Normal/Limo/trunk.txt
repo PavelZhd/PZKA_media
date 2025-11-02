@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Normal_Limo_Trunk
+	{
+		mesh = vehicles/Normal/pzka_Limo|Trunk_Limo_Cerise_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLimoBone 1.0,
+	}
+	model PZKA_Vehicles_Normal_Limo_Trunk_nr
+	{
+		mesh = vehicles/Normal/pzka_Limo|Trunk_Limo_Cerise_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLimoBone 1.0,
+	}
+
+	template vehicle PZKA_Limo_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Limo_Trunk,
+			}
+		}
+	}
+	template vehicle PZKA_Limo_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Limo_Trunk_Trunk_nr,
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+module Base
+{
+    model PZKA_Vehicles_Limo_LightRL_Nyala
+	{
+		mesh = vehicles/Normal/pzka_Limo|Light_Limo_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Limo_LightRR_Nyala
+	{
+		mesh = vehicles/Normal/pzka_Limo|Light_Limo_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Limo_Lights_Nyala {
+		template! = PZKA_Normal_Front_Lights_Nyala,
+		part HeadlightRearLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Limo_LightRL_Nyala,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Limo_LightRR_Nyala,
+			}
+		}
+	}
+}

@@ -25,72 +25,11 @@ module Base
 		scale = 0.01,
 	}
 	
-	model PZKA_Normal_Wagon_RearWindow_gris
-	{
-		mesh = vehicles/pzka_NormalAnimatedTrunk|RearWindow_Grisworld_obj,
-		shader = vehicle_multiuv_vva,
-		static = FALSE,
-		scale = 0.01,
-	}
-	model PZKA_Normal_Wagon_RearWindow_gris_static
-	{
-		mesh = vehicles/pzka_Normal|RearWindow_Grisworld_sobj,
-		shader = vehicle_multiuv_vva,
-		scale = 0.01,
-	}
 
-	model PZKA_Normal_Wagon_RearWindow
-	{
-		mesh = vehicles/pzka_NormalAnimatedTrunk|RearWindow_Wagon_obj,
-		shader = vehicle_multiuv_vva,
-		static = FALSE,
-		scale = 0.01,
-	}
-	model PZKA_Normal_Wagon_RearWindow_static
-	{
-		mesh = vehicles/pzka_Normal|RearWindow_Wagon_sobj,
-		shader = vehicle_multiuv_vva,
-		scale = 0.01,
-	}
 
 	template vehicle PZKA_Normal_Wagon_shared_base 
 	{
-		template! = PZKA_Normal_Wagon_windowRL,
-		template! = PZKA_Normal_Wagon_windowRR,
 		template! = PZKA_Normal_Sedan_textured_seats,
 		template! = PZKA_Normal_shared,
 	}
-
-	template vehicle PZKA_Normal_Wagon_shared
-	{		
-		part WindshieldRear
-		{
-			parent = TrunkDoor,
-			model Default
-			{
-				file = PZKA_Normal_Wagon_RearWindow,
-			}
-			model Static
-			{
-				file = PZKA_Normal_Wagon_RearWindow_static,
-			}
-		}
-		template! = PZKA_Normal_Wagon_shared_base,
-	}
-	template vehicle PZKA_Normal_Wagon_shared_Grisworld
-	{		
-		part WindshieldRear
-		{
-			parent = TrunkDoor,
-			model Default
-			{
-				file = PZKA_Normal_Wagon_RearWindow_gris,
-			}
-			model Static
-			{
-				file = PZKA_Normal_Wagon_RearWindow_gris_static,
-			}
-		}
-		template! = PZKA_Normal_Wagon_shared_base,
-	}		
 }

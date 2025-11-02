@@ -1,115 +1,23 @@
 module Base
-{	
-	template vehicle PZKA_Limo_shared {
-		part WindshieldRear
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_RearWindshieldVanilla,
-			}
-		}
-		part Inreior {
-			model Trunk
-			{
-				file = PZKA_Vehicles_Normal_Trunk_limo_interior,
-			}			
-		}
-	}
-	template vehicle PZKA_Normal_Shared_Reardoors_limo_windows {
-		part WindowRearLeft
-		{	
-			parent = DoorRearLeft,
-			model Default
-			{
-				file = PZKA_Vehicles_CarNormal_WindowRearLeft_limo,
-			}
-			model Static
-			{
-				file = PZKA_Vehicles_CarNormal_WindowRearLeft_limo_static,
-			}			
-		}
-		part WindowRearRight
-		{	
-			parent = DoorRearRight,
-			model Default
-			{
-				file = PZKA_Vehicles_CarNormal_WindowRearRight_limo,
-			}
-			model Static
-			{
-				file = PZKA_Vehicles_CarNormal_WindowRearRight_limo_static,
-			}	
-		}		
-		template! = PZKA_Normal_Shared_Rearseats_limo,
-	}
-	template vehicle PZKA_Normal_Shared_Reardoors_limo {
-		part DoorRearLeft
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_DoorRearLeft_limo,
-			}
-		}
+{
 
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_DoorRearRight_limo,
-			}
-		}
-		template! = PZKA_Normal_Shared_Reardoors_limo_windows,
-	}
-	template vehicle PZKA_Normal_Shared_Reardoors_limo_nr {
-		part DoorRearLeft
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_DoorRearLeft_limo_nr,
-			}
-		}
-
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_DoorRearRight_limo_nr,
-			}
-		}
-		template! = PZKA_Normal_Shared_Reardoors_limo_windows,
+	template vehicle PZKA_Normal_Limo_shared_base 
+	{
+		template! = PZKA_Limo_RearWindow,
+		template! = PZKA_Normal_Limo_Shared,
+		template! = PZKA_Normal_shared,
 	}
 
-	template vehicle PZKA_Normal_Shared_Rearseats_limo {		
-		part SeatRearLeft
-		{
-			model Default 
-			{
-				file = PZKA_Vehicles_Limo_SeatRL,
-			}
-		}
-		part SeatRearRight
-		{
-			model Default 
-			{
-				file = PZKA_Vehicles_Limo_SeatRR,
-			}
-		}
+	template vehicle PZKA_Normal_Limo_base 
+	{
+		template! = PZKA_Limo_Trunk,
+		template! = PZKA_Normal_Limo_Reardoors,
+		template! = PZKA_Normal_Limo_shared_base,
 	}
-
-	template vehicle PZKA_Limo {
-		part TrunkDoor
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_Trunk_limo,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
-			}
-		}
-		template! = PZKA_Normal_Shared_Front,
-		template! = PZKA_Normal_Shared_Reardoors_limo,
-
-		template! = PZKA_Limo_shared,
+	template vehicle PZKA_Normal_Limo_base_nr 
+	{
+		template! = PZKA_Limo_Trunk_nr,
+		template! = PZKA_Normal_Limo_Reardoors_nr,
+		template! = PZKA_Normal_Limo_shared_base,
 	}
 }

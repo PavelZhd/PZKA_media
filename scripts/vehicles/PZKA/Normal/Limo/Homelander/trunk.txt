@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Normal_Limo_Homelander_Trunk
+	{
+		mesh = vehicles/pzka_NormalAnimatedTrunk|Trunk_Limo_Highlander_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLimoBone 1.0,
+	}
+	model PZKA_Vehicles_Normal_Limo_Homelander_Trunk_nr
+	{
+		mesh = vehicles/pzka_NormalAnimatedTrunk|Trunk_Limo_Highlander_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLimoBone 1.0,
+	}
+
+	template vehicle PZKA_Limo_Trunk_Homelander {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Limo_Homelander_Trunk,
+			}
+		}
+	}
+	template vehicle PZKA_Limo_Trunk_Homelander_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Limo_Homelander_Trunk_nr,
+			}
+		}
+	}
+}

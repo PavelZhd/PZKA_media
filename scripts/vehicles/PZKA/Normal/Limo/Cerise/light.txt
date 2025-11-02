@@ -1,0 +1,33 @@
+module Base
+{
+    model PZKA_Vehicles_Sedan_LightRL_Cerise
+	{
+		mesh = vehicles/Normal/pzka_Sedan|Light_Sedan_Cerise_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Sedan_LightRR_Cerise
+	{
+		mesh = vehicles/Normal/pzka_Sedan|Light_Sedan_Cerise_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Sedan_Lights_Cerise {
+		template! = PZKA_Normal_Front_Lights_Cerise,
+		part HeadlightRearLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightRL_Cerise,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Sedan_LightRR_Cerise,
+			}
+		}
+	}
+}

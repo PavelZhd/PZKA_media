@@ -21,4 +21,28 @@ module Base
 		static = TRUE,
 		scale = 0.01,
 	}
+	
+	template vehicle PZKA_Normal_Limo_Shared {
+		part SeatRearLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Limo_SeatRL,
+			}
+		}
+		part SeatRearRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Limo_SeatRR,
+			}
+		}
+		
+		part Inreior {
+			model Trunk
+			{
+				file = PZKA_Vehicles_Limo_internals,
+			}			
+		}
+	}
 }

@@ -16,6 +16,19 @@ module Base
 		scale = 0.01,
 		boneWeight = TrunkGrisBone 1.0,
 	}
+	model PZKA_Normal_Wagon_RearWindow_gris
+	{
+		mesh = vehicles/pzka_NormalAnimatedTrunk|RearWindow_Grisworld_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Normal_Wagon_RearWindow_gris_static
+	{
+		mesh = vehicles/pzka_Normal|RearWindow_Grisworld_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
 	
 	model PZKA_Vehicles_Normal_Trunk_wagon_mayor
 	{
@@ -52,5 +65,91 @@ module Base
 		scale = 0.01,
 		boneWeight = TrunkUpperBone 1.0,
 		boneWeight = TrunkLowerBone 1.0,
+	}
+	model PZKA_Normal_Wagon_RearWindow
+	{
+		mesh = vehicles/pzka_NormalAnimatedTrunk|RearWindow_Wagon_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Normal_Wagon_RearWindow_static
+	{
+		mesh = vehicles/pzka_Normal|RearWindow_Wagon_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Normal_Wagon_RearWindowTrunk {
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Normal_Wagon_RearWindow,
+			}
+			model Static
+			{
+				file = PZKA_Normal_Wagon_RearWindow_static,
+			}
+		}	
+	}
+	template vehicle PZKA_Normal_Wagon_Trunk {
+		part TrunkDoor {
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Trunk_wagon,
+			}
+		}
+		template! = PZKA_Normal_Wagon_RearWindowTrunk,
+	}
+	template vehicle PZKA_Normal_Wagon_Trunk_nr {
+		part TrunkDoor {
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Trunk_wagon_nr,
+			}
+		}
+		template! = PZKA_Normal_Wagon_RearWindowTrunk,
+	}
+	template vehicle PZKA_Normal_Wagon_Trunk_mayor {
+		part TrunkDoor {
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Trunk_wagon_mayor,
+			}
+		}
+		template! = PZKA_Normal_Wagon_RearWindowTrunk,
+	}
+	template vehicle PZKA_Normal_Wagon_Trunk_mayor_nr {
+		part TrunkDoor {
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Trunk_wagon_mayor_nr,
+			}
+		}
+		template! = PZKA_Normal_Wagon_RearWindowTrunk,
+	}
+
+	
+	template vehicle PZKA_Normal_Wagon_Trunk_gris_nr {
+		part TrunkDoor {
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Trunk_wagon_gris_nr,
+			}
+		}
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Normal_Wagon_RearWindow_gris,
+			}
+			model Static
+			{
+				file = PZKA_Normal_Wagon_RearWindow_gris_static,
+			}
+		}
 	}
 }
