@@ -15,23 +15,23 @@ module Base
 
     template vehicle PZKA_Normal_Front_fill_Mayor
     {
-        template! = PZKA_Normal_frontfill,
-        part Rearfill
+        template! = PZKA_Frontfill,
+        part Frontfill
 		{
             model Mayor
 			{
-                file = PZKA_Normal_Front_fill_Mayor
+                file = PZKA_Normal_Front_fill_Mayor,
             }
         }
     }    
     template vehicle PZKA_Normal_Front_fill_Mayor_nr
     {
-        template! = PZKA_Normal_frontfill,
-        part Rearfill
+        template! = PZKA_Frontfill,
+        part Frontfill
 		{
             model Mayor
 			{
-                file = PZKA_Normal_Front_fill_Mayor_nr
+                file = PZKA_Normal_Front_fill_Mayor_nr,
             }
         }
     }    

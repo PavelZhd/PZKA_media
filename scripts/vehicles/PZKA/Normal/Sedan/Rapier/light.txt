@@ -13,8 +13,7 @@ module Base
 		scale = 0.01,
 	}
 
-	template vehicle PZKA_Sedan_Lights_Rapier {
-		template! = PZKA_Normal_Front_Lights_Rapier,
+	template vehicle PZKA_SedanF_RearLights_Rapier {
 		part HeadlightRearLeft
 		{
 			model Default 

@@ -15,23 +15,23 @@ module Base
 
     template vehicle PZKA_SedanF_Rearfill_Nyala
     {
-        template! = PZKA_Normal_rearfill,
+        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model Nyala
 			{
-                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Nyala
+                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Nyala,
             }
         }
     }    
     template vehicle PZKA_SedanF_Rearfill_Nyala_nr
     {
-        template! = PZKA_Normal_rearfill,
+        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model Nyala
 			{
-                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Nyala_nr
+                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Nyala_nr,
             }
         }
     }    

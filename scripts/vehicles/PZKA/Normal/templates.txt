@@ -1,5 +1,20 @@
 module Base
 {
+	template vehicle PZKA_Normal_shared {
+		template! = PZKA_Normal_Windshield,
+		template! = PZKA_Normal_textured_seats_front,
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.2401 -0.0115 1.0182,
+			}
+		}
+		template! = PZKA_Interior,
+		template! = PZKA_Normal_textured_internals_base,
+	}
+
 	template vehicle PZKA_Normal_front {
 		template! = PZKA_Normal_doorFL,
 		template! = PZKA_Normal_doorFR,
@@ -11,30 +26,5 @@ module Base
 		template! = PZKA_Normal_hood_nr,
 	}
     
-    template vehicle PZKA_Normal_frontfill {
-        part Frontfill
-		{
-			category = nodisplay,
-            specificItem = false,
-            itemType = Base.LightBulb,
-            setAllModelsVisible = true,
-			lua
-	    	{
-			    create = Vehicles.Create.Default,
-	    	}
-		}
-    }
-    template vehicle PZKA_Normal_rearfill {
-        part Rearfill
-		{
-			category = nodisplay,
-            specificItem = false,
-            itemType = Base.LightBulb,
-            setAllModelsVisible = true,
-			lua
-	    	{
-			    create = Vehicles.Create.Default,
-	    	}
-		}
-    }
+    
 }

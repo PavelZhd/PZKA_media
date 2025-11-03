@@ -15,23 +15,23 @@ module Base
 
     template vehicle PZKA_Normal_Front_fill_Hellion
     {
-        template! = PZKA_Normal_frontfill,
-        part Rearfill
+        template! = PZKA_Frontfill,
+        part Frontfill
 		{
             model Hellion
 			{
-                file = PZKA_Normal_Front_fill_Hellion
+                file = PZKA_Normal_Front_fill_Hellion,
             }
         }
     }    
     template vehicle PZKA_Normal_Front_fill_Hellion_nr
     {
-        template! = PZKA_Normal_frontfill,
-        part Rearfill
+        template! = PZKA_Frontfill,
+        part Frontfill
 		{
             model Hellion
 			{
-                file = PZKA_Normal_Front_fill_Hellion_nr
+                file = PZKA_Normal_Front_fill_Hellion_nr,
             }
         }
     }    

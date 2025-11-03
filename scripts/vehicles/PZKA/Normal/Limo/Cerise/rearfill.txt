@@ -1,37 +1,37 @@
 module Base
 {
-    model PZKA_Vehicles_Normal_SedanF_Rearfill_Cerise
+    model PZKA_Vehicles_Normal_Limo_Rearfill_Cerise
 	{
-		mesh = vehicles/Normal/pzka_Sedan|RearFill_F_Cerise,
+		mesh = vehicles/Normal/pzka_Limo|RearFill_Limo_Cerise,
 		shader = vehicle_multiuv_noreflect,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Normal_SedanF_Rearfill_Cerise_nr
+	model PZKA_Vehicles_Normal_Limo_Rearfill_Cerise_nr
 	{
-		mesh = vehicles/Normal/pzka_Sedan|RearFill_F_Cerise,
+		mesh = vehicles/Normal/pzka_Limo|RearFill_Limo_Cerise,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
 
-    template vehicle PZKA_SedanF_Rearfill_Cerise
+    template vehicle PZKA_Limo_Rearfill_Cerise
     {
-        template! = PZKA_Normal_rearfill,
+        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model Cerise
 			{
-                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Cerise
+                file = PZKA_Vehicles_Normal_Limo_Rearfill_Cerise,
             }
         }
     }    
-    template vehicle PZKA_SedanF_Rearfill_Cerise_nr
+    template vehicle PZKA_Limo_Rearfill_Cerise_nr
     {
-        template! = PZKA_Normal_rearfill,
+        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model Cerise
 			{
-                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Cerise_nr
+                file = PZKA_Vehicles_Normal_Limo_Rearfill_Cerise_nr,
             }
         }
     }    

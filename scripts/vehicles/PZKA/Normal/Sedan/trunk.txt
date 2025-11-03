@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Normal_SedanF_Trunk_Cerise
 	{
-		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_obj,
+		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_Cerise_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -10,23 +10,7 @@ module Base
 	}
 	model PZKA_Normal_SedanF_Trunk_Cerise_nr
 	{
-		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
-		static = FALSE,
-		scale = 0.01,
-		boneWeight = TrunkFlatSedanBone 1.0,
-	}
-	model PZKA_Normal_SedanF_Trunk_hellion
-	{
-		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_Hellion_obj,
-		shader = vehicle_multiuv_noreflect,
-		static = FALSE,
-		scale = 0.01,
-		boneWeight = TrunkFlatSedanBone 1.0,
-	}
-	model PZKA_Normal_SedanF_Trunk_hellion_nr
-	{
-		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_Hellion_obj,
+		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_Cerise_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -34,7 +18,7 @@ module Base
 	}
 	model PZKA_Normal_SedanV_Trunk_TWD
 	{
-		mesh = vehicles/Normal/pzka_Sedan|Trunk_TWD_obj,
+		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_TWD_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -42,30 +26,14 @@ module Base
 	}
 	model PZKA_Normal_SedanV_Trunk_TWD_nr
 	{
-		mesh = vehicles/Normal/pzka_Sedan|Trunk_TWD_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
-		static = FALSE,
-		scale = 0.01,
-		boneWeight = TrunkBone 1.0,
-	}
-	model PZKA_Normal_SedanV_Trunk_Homelander
-	{
-		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_Homelander_obj,
-		shader = vehicle_multiuv_noreflect,
-		static = FALSE,
-		scale = 0.01,
-		boneWeight = TrunkBone 1.0,
-	}
-	model PZKA_Normal_SedanV_Trunk_Homelander_nr
-	{
-		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_Homelander_obj,
+		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_TWD_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = TrunkBone 1.0,
 	}
 	
-	template vehicle PZKA_Normal_SedanF_Trunk
+	template vehicle PZKA_SedanF_Trunk
 	{
 		part TrunkDoor
 		{
@@ -75,7 +43,7 @@ module Base
 			}
 		}
 	}
-	template vehicle PZKA_Normal_SedanF_Trunk_nr
+	template vehicle PZKA_SedanF_Trunk_nr
 	{
 		part TrunkDoor
 		{
@@ -85,27 +53,8 @@ module Base
 			}
 		}
 	}
-	template vehicle PZKA_Normal_SedanF_Trunk_hellion
-	{
-		part TrunkDoor
-		{
-			model Default
-			{
-				file = PZKA_Normal_SedanF_Trunk_hellion,
-			}
-		}
-	}
-	template vehicle PZKA_Normal_SedanF_Trunk_hellion_nr
-	{
-		part TrunkDoor
-		{
-			model Default
-			{
-				file = PZKA_Normal_SedanF_Trunk_hellion_nr,
-			}
-		}
-	}
-	template vehicle PZKA_Normal_SedanV_Trunk
+	
+	template vehicle PZKA_SedanV_Trunk
 	{
 		part TrunkDoor
 		{
@@ -115,33 +64,13 @@ module Base
 			}
 		}
 	}
-	template vehicle PZKA_Normal_SedanV_Trunk_nr
+	template vehicle PZKA_SedanV_Trunk_nr
 	{
 		part TrunkDoor
 		{
 			model Default
 			{
 				file = PZKA_Normal_SedanV_Trunk_TWD_nr,
-			}
-		}
-	}
-	template vehicle PZKA_Normal_SedanV_Trunk_Homelander
-	{
-		part TrunkDoor
-		{
-			model Default
-			{
-				file = PZKA_Normal_SedanV_Trunk_Homelander,
-			}
-		}
-	}
-	template vehicle PZKA_Normal_SedanV_Trunk_Homelander_nr
-	{
-		part TrunkDoor
-		{
-			model Default
-			{
-				file = PZKA_Normal_SedanV_Trunk_Homelander_nr,
 			}
 		}
 	}

@@ -15,7 +15,7 @@ module Base
 
 	template vehicle PZKA_Normal_SedanV_interior_trunk 
 	{
-		part Iterior {
+		part Interior {
 			model TrunkSpace
             {
             	file = PZKA_Normal_SedanV_interior_trunk,
@@ -24,7 +24,7 @@ module Base
 	}
 	template vehicle PZKA_Normal_SedanF_interior_trunk 
 	{
-		part Iterior {
+		part Interior {
 			model TrunkSpace
             {
             	file = PZKA_Normal_SedanF_interior_trunk,

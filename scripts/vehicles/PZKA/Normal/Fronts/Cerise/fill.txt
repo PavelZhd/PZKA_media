@@ -15,23 +15,23 @@ module Base
 
     template vehicle PZKA_Normal_Front_fill_Cerise
     {
-        template! = PZKA_Normal_frontfill,
-        part Rearfill
+        template! = PZKA_Frontfill,
+        part Frontfill
 		{
             model Cerise
 			{
-                file = PZKA_Normal_Front_fill_Cerise
+                file = PZKA_Normal_Front_fill_Cerise,
             }
         }
     }    
     template vehicle PZKA_Normal_Front_fill_Cerise_nr
     {
-        template! = PZKA_Normal_frontfill,
-        part Rearfill
+        template! = PZKA_Frontfill,
+        part Frontfill
 		{
             model Cerise
 			{
-                file = PZKA_Normal_Front_fill_Cerise_nr
+                file = PZKA_Normal_Front_fill_Cerise_nr,
             }
         }
     }    

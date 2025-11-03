@@ -118,16 +118,7 @@ if true then -- Temp for testing without version mismatch
 		return handler
 	end
 
-	--[[VVAmodule.CopyTemplateToVehicle = function(VehicleId,sourceId,templates,module,sourcemodule)
-		local smod = sourcemodule or "Base"
-		local handler = VVAmodule.TeplateHandler(VehicleId,module)
-		handler.setParent(smod.."."..sourceId)
-		if templates then
-			handler.plus(templates)
-		end
-		return handler
-	end
-	]]
+	
 	VVAmodule.CopyTemplateToVehicle = function(VehicleId,sourceId,templates,model,module,sourcemodule)
 		local handler = VVAmodule.TeplateHandler(VehicleId,module)
 		handler.setParent(sourceId, sourcemodule)
@@ -165,8 +156,11 @@ if true then -- Temp for testing without version mismatch
 	local Applicator = {}
 	Applicator.Leaf = function (vehicleScript, vehicleid, template, applied)
 		if (template) then
+			print("PZKACORE -- adding template to vehicle"..vehicleid.." << "..template)
 			vehicleScript:Load(vehicleid, "{ template! = " .. template .. ",}")
 			applied[template] = 1
+		else
+			print("PZKACORE!! Error adding template to vehicle "..vehicleid.." << NONE")			
 		end
 	end
 
@@ -223,7 +217,7 @@ if true then -- Temp for testing without version mismatch
 			if vehicleScript then
 				ApplyVehicleChanges(vehicleScript, data.vehicleId, data, false)			
 			else
-				print("VVA: WARNING: Attempted to modify vehicle "..vehicleId.." failed. Script does not exist.")
+				print("PZKA: WARNING: Attempted to modify vehicle "..vehicleId.." failed. Script does not exist.")
 			end
 		end
 	end

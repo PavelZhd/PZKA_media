@@ -1,0 +1,40 @@
+module Base
+{
+	model PZKA_Normal_SedanF_Trunk_hellion
+	{
+		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_Hellion_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkFlatSedanBone 1.0,
+	}
+	model PZKA_Normal_SedanF_Trunk_hellion_nr
+	{
+		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_Hellion_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkFlatSedanBone 1.0,
+	}
+	
+	template vehicle PZKA_SedanF_Trunk_Hellion
+	{
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Normal_SedanF_Trunk_hellion,
+			}
+		}
+	}
+	template vehicle PZKA_SedanF_Trunk_Hellion_nr
+	{
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Normal_SedanF_Trunk_hellion_nr,
+			}
+		}
+	}
+}

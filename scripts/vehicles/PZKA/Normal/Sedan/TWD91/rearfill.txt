@@ -15,23 +15,23 @@ module Base
 
     template vehicle PZKA_SedanF_Rearfill_TWD91
     {
-        template! = PZKA_Normal_rearfill,
+        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model TWD91
 			{
-                file = PZKA_Vehicles_Normal_SedanF_Rearfill_TWD91
+                file = PZKA_Vehicles_Normal_SedanF_Rearfill_TWD91,
             }
         }
     }    
     template vehicle PZKA_SedanF_Rearfill_TWD91_nr
     {
-        template! = PZKA_Normal_rearfill,
+        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model TWD91
 			{
-                file = PZKA_Vehicles_Normal_SedanF_Rearfill_TWD91_nr
+                file = PZKA_Vehicles_Normal_SedanF_Rearfill_TWD91_nr,
             }
         }
     }    

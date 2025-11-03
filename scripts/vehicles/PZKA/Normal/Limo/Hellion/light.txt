@@ -13,8 +13,7 @@ module Base
 		scale = 0.01,
 	}
 
-	template vehicle PZKA_Limo_Lights_Hellion {
-		template! = PZKA_Normal_Front_Lights_Hellion,
+	template vehicle PZKA_Limo_RearLights_Hellion {
 		part HeadlightRearLeft
 		{
 			model Default 

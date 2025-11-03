@@ -1977,4 +1977,30 @@ module Base
 			}
 		}
 	}
+	template vehicle PZKA_Frontfill {
+        part Frontfill
+		{
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+	    	}
+		}
+    }
+    template vehicle PZKA_Rearfill {
+        part Rearfill
+		{
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+	    	}
+		}
+    }
 }

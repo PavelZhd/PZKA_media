@@ -27,12 +27,12 @@ module Base
 	
 	model PZKA_Vehicles_Normal_RearWindshieldFlat
 	{
-		mesh = vehicles/pzka_Normal|RearWindow_obj,
+		mesh = vehicles/Normal/pzka_Sedan|RearWindow_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
 
-	template vehicle PZKA_Normal_SedanF_shared {
+	template vehicle PZKA_Normal_SedanF_RearWindow {
 		part WindshieldRear
 		{
 			model Default
@@ -40,7 +40,6 @@ module Base
 				file = PZKA_Vehicles_Normal_RearWindshieldFlat,
 			}
 		}
-		template! = PZKA_Normal_Wagon_shared_base,
 	}
 
 }

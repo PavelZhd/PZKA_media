@@ -15,23 +15,23 @@ module Base
 
     template vehicle PZKA_SedanF_Rearfill_Homelander
     {
-        template! = PZKA_Normal_rearfill,
+        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model Homelander
 			{
-                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Homelander
+                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Homelander,
             }
         }
     }    
     template vehicle PZKA_SedanF_Rearfill_Homelander_nr
     {
-        template! = PZKA_Normal_rearfill,
+        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model Homelander
 			{
-                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Homelander_nr
+                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Homelander_nr,
             }
         }
     }    

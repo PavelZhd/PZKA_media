@@ -2,40 +2,24 @@ module Base
 {
 	model PZKA_Normal_Detective		
 	{
-		mesh = vehicles/Normal/pzka_Shared|Comp_Detective,
+		mesh = vehicles/Normal/pzka_Shared|Detective,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
 	model PZKA_Normal_TaxiShort			
 	{
-		mesh = vehicles/Normal/pzka_Shared|Comp_Taxi_short,
+		mesh = vehicles/Normal/pzka_Shared|Taxi_short,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
 	model PZKA_Normal_TaxiWagon		
 	{
-		mesh = vehicles/Normal/pzka_Shared|Comp_Taxi_wagon,
+		mesh = vehicles/Normal/pzka_Shared|Taxi_wagon,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
 
-	template vehicle PZKA_Normal_shared {
-		template! = PZKA_Normal_Windshield,
-		template! = PZKA_Normal_windowFL,
-		template! = PZKA_Normal_windowFR,
-		template! = PZKA_Normal_textured_seats_front,
-		template! = PZKA_Normal_windowFR,
-		part Battery 
-		{
-			model Default 
-			{
-				file = PZKA_Battery,
-				offset = 0.2401 -0.0115 1.0182,
-			}
-		}
-		template! = PZKA_Interior,
-		template! = PZKA_Normal_textured_internals_base,
-	}
+	
 	template vehicle PZKA_Normal_detective {
 		part ATA2RoofLightbar
 		{

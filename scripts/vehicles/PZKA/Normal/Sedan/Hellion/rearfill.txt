@@ -15,23 +15,23 @@ module Base
 
     template vehicle PZKA_SedanF_Rearfill_Hellion
     {
-        template! = PZKA_Normal_rearfill,
+        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model Hellion
 			{
-                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Hellion
+                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Hellion,
             }
         }
     }    
     template vehicle PZKA_SedanF_Rearfill_Hellion_nr
     {
-        template! = PZKA_Normal_rearfill,
+        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model Hellion
 			{
-                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Hellion_nr
+                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Hellion_nr,
             }
         }
     }    

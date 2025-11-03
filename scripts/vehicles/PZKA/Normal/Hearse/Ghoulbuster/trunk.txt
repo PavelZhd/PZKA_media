@@ -1,40 +1,40 @@
 module Base
 {	
-	model PZKA_Vehicles_Normal_Trunk_hearse_ghoul_nr
+	model PZKA_Vehicles_Normal_Hearse_Trunk_Ghoulbuster_nr
 	{
-		mesh = vehicles/pzka_Normal_HearseTrunk|Trunk_Ghoulbuster,
+		mesh = vehicles/Normal/pzka_Hearse|Trunk_Ghoulbuster,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = TrunkHearseBone 1.0,
 	}
-	model PZKA_Vehicles_Normal_hearse_ghoul_RearWindow
+	model PZKA_Vehicles_Normal_Hearse_RearWindow_Ghoulbuster
 	{
-		mesh = vehicles/pzka_Normal_HearseTrunk|RearWindow_Ghoulbuster,
+		mesh = vehicles/Normal/pzka_Hearse|RearWindow_Ghoulbuster,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = TrunkHearseBone 1.0,
 	}
 	
-	template vehicle PZKA_Hearse_RearWindow {
+	template vehicle PZKA_Ghoulbuster_RearWindow {
 		part WindshieldRear
 		{
 			parent = TrunkDoor,
 			model Default
 			{
-				file = PZKA_Vehicles_Normal_hearse_ghoul_RearWindow,
+				file = PZKA_Vehicles_Normal_Hearse_RearWindow_Ghoulbuster,
 			}
 		}
 	}
-	template vehicle PZKA_Hearse_Trunk_nr {
+	template vehicle PZKA_Ghoulbuster_Trunk_nr {
 		part TrunkDoor
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Normal_Trunk_hearse_ghoul_nr,
+				file = PZKA_Vehicles_Normal_Hearse_Trunk_Ghoulbuster_nr,
 			}
 		}
-		template! = PZKA_Hearse_RearWindow,
+		template! = PZKA_Ghoulbuster_RearWindow,
 	}	
 }

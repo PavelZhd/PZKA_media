@@ -15,23 +15,23 @@ module Base
 
     template vehicle PZKA_SedanF_Rearfill_Mayor
     {
-        template! = PZKA_Normal_rearfill,
+        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model Mayor
 			{
-                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Mayor
+                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Mayor,
             }
         }
     }    
     template vehicle PZKA_SedanF_Rearfill_Mayor_nr
     {
-        template! = PZKA_Normal_rearfill,
+        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model Mayor
 			{
-                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Mayor_nr
+                file = PZKA_Vehicles_Normal_SedanF_Rearfill_Mayor_nr,
             }
         }
     }    

@@ -15,9 +15,8 @@ module Base
 		scale = 0.004,
 	}
 
-	template vehicle PZKA_Normal_Sedan_textured_seats 
+	template vehicle PZKA_Normal_Sedan_rear_seats 
 	{
-		template! = PZKA_Normal_textured_seats_front,
 		part SeatRearLeft
 		{
 			model Default 

@@ -13,8 +13,7 @@ module Base
 		scale = 0.01,
 	}
 
-	template vehicle PZKA_Sedan_Lights_Homelander {
-		template! = PZKA_Normal_Front_Lights_Homelander,
+	template vehicle PZKA_SedanV_RearLights_Homelander {
 		part HeadlightRearLeft
 		{
 			model Default 

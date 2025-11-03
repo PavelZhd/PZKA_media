@@ -1,32 +1,31 @@
 module Base
 {
-    model PZKA_Vehicles_Limo_LightRL_Homelander
+    model PZKA_Vehicles_Normal_Limo_LightRL_Homelander
 	{
 		mesh = vehicles/Normal/pzka_Limo|Light_Limo_Homelander_RearLeft_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Limo_LightRR_Homelander
+	model PZKA_Vehicles_Normal_Limo_LightRR_Homelander
 	{
 		mesh = vehicles/Normal/pzka_Limo|Light_Limo_Homelander_RearRight_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
 
-	template vehicle PZKA_Limo_Lights_Homelander {
-		template! = PZKA_Normal_Front_Lights_Homelander,
+	template vehicle PZKA_Limo_RearLights_Homelander {
 		part HeadlightRearLeft
 		{
 			model Default 
 			{
-				file = PZKA_Vehicles_Limo_LightRL_Homelander,
+				file = PZKA_Vehicles_Normal_Limo_LightRL_Homelander,
 			}
 		}
 		part HeadlightRearRight
 		{
 			model Default 
 			{
-				file = PZKA_Vehicles_Limo_LightRR_Homelander,
+				file = PZKA_Vehicles_Normal_Limo_LightRR_Homelander,
 			}
 		}
 	}

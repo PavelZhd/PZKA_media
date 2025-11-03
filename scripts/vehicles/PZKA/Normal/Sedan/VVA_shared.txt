@@ -7,8 +7,7 @@ module Base
 		scale = 0.004,
 	}
 	
-	template vehicle PZKA_Normal_SedanV_shared {
-		
+	template vehicle PZKA_Normal_SedanV_RearWindow {		
 		part WindshieldRear
 		{
 			model Default
@@ -16,9 +15,5 @@ module Base
 				file = VVA_Vehicles_Normal_RearWindow,
 			}
 		}
-		template! = PZKA_Normal_SedanV_windowRL,
-		template! = PZKA_Normal_SedanV_windowRR,
-		template! = PZKA_Normal_Sedan_textured_seats,
-		template! = PZKA_Normal_shared,
 	}
 }

@@ -43,6 +43,7 @@ module Base
 				file = VVA_Vehicles_Normal_Wagon_DoorRearLeft,
 			}
 		}
+		template! = PZKA_Normal_Wagon_windowRL,
 	}
 	template vehicle PZKA_Normal_Wagon_doorRL_nr {
 		part DoorRearLeft
@@ -52,5 +53,6 @@ module Base
 				file = VVA_Vehicles_Normal_Wagon_DoorRearLeft_nr,
 			}
 		}
+		template! = PZKA_Normal_Wagon_windowRL,
 	}
 }

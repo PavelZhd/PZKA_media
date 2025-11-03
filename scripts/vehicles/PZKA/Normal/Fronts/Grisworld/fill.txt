@@ -15,23 +15,23 @@ module Base
 
     template vehicle PZKA_Normal_Front_fill_Grisworld
     {
-        template! = PZKA_Normal_frontfill,
-        part Rearfill
+        template! = PZKA_Frontfill,
+        part Frontfill
 		{
             model Grisworld
 			{
-                file = PZKA_Normal_Front_fill_Grisworld
+                file = PZKA_Normal_Front_fill_Grisworld,
             }
         }
     }    
     template vehicle PZKA_Normal_Front_fill_Grisworld_nr
     {
-        template! = PZKA_Normal_frontfill,
-        part Rearfill
+        template! = PZKA_Frontfill,
+        part Frontfill
 		{
             model Grisworld
 			{
-                file = PZKA_Normal_Front_fill_Grisworld_nr
+                file = PZKA_Normal_Front_fill_Grisworld_nr,
             }
         }
     }    

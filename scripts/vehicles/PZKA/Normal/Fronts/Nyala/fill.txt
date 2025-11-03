@@ -15,23 +15,23 @@ module Base
 
     template vehicle PZKA_Normal_Front_fill_Nyala
     {
-        template! = PZKA_Normal_frontfill,
-        part Rearfill
+        template! = PZKA_Frontfill,
+        part Frontfill
 		{
             model Nyala
 			{
-                file = PZKA_Normal_Front_fill_Nyala
+                file = PZKA_Normal_Front_fill_Nyala,
             }
         }
     }    
     template vehicle PZKA_Normal_Front_fill_Nyala_nr
     {
-        template! = PZKA_Normal_frontfill,
-        part Rearfill
+        template! = PZKA_Frontfill,
+        part Frontfill
 		{
             model Nyala
 			{
-                file = PZKA_Normal_Front_fill_Nyala_nr
+                file = PZKA_Normal_Front_fill_Nyala_nr,
             }
         }
     }    

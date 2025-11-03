@@ -1,0 +1,17 @@
+module Base
+{	
+	template vehicle PZKA_SedanF_Nyala {
+		template! = PZKA_Normal_Front_fill_Nyala,
+		template! = PZKA_SedanV_Rearfill_Nyala,
+		template! = PZKA_SedanV_Trunk,
+		template! = PZKA_Normal_Front_Lights_Nyala,
+		template! = PZKA_SedanV_RearLights_Nyala,
+	}
+	template vehicle PZKA_SedanF_Nyala_nr {
+		template! = PZKA_Normal_Front_fill_Nyala_nr,
+		template! = PZKA_SedanF_Rearfill_Nyala_nr,
+		template! = PZKA_SedanV_Trunk_nr,
+		template! = PZKA_Normal_Front_Lights_Nyala,
+		template! = PZKA_SedanV_RearLights_Nyala,
+	}
+}

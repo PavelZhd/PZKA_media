@@ -92,12 +92,13 @@ PZKAModule.CloneAnimationProfile = function(vehicleId, fromId, model, lights, te
 	end
 end
 
-PZKAModule.ExpandDoorSeatProfile = function(profileId, source, door, seats)
-	PZKAModule.MakeDoorSeatProfile(profileId, door, seats)
-	PZKACore.addToProfile(profileId,{source})
-end
-PZKAModule.MakeDoorSeatProfile = function(profileId, doors, seats)
+local function MakeDoorSeatTemplate(doors, seats, defaultTemplates)
 	local templates = {}
+	if defaultTemplates then
+		for i, tmpl in pairs(defaultTemplates) do
+			table.insert(templates, tmpl)
+		end
+	end
 	for i, door in pairs(doors) do
 		if doorTemplatesMap[door] then
 			table.insert(templates, doorTemplatesMap[door])
@@ -113,7 +114,14 @@ PZKAModule.MakeDoorSeatProfile = function(profileId, doors, seats)
 			table.insert(templates, seatTemplatesMap[seat])
 		end
 	end
-	PZKACore.addToProfile(profileId,templates)
+	return templates
+end
+
+PZKAModule.ExpandDoorSeatProfile = function(profileId, source, doors, seats)
+	PZKACore.addToProfile(profileId,MakeDoorSeatTemplate(doors, seats, {source}))
+end
+PZKAModule.MakeDoorSeatProfile = function(profileId, doors, seats)
+	PZKACore.addToProfile(profileId,MakeDoorSeatTemplate(doors, seats, {"PZKA_EngineDoor"}))
 end
 
 --[[

@@ -15,23 +15,23 @@ module Base
 
     template vehicle PZKA_Normal_Front_fill_TWD
     {
-        template! = PZKA_Normal_frontfill,
-        part Rearfill
+        template! = PZKA_Frontfill,
+        part Frontfill
 		{
             model TWD
 			{
-                file = PZKA_Normal_Front_fill_TWD
+                file = PZKA_Normal_Front_fill_TWD,
             }
         }
     }    
     template vehicle PZKA_Normal_Front_fill_TWD_nr
     {
-        template! = PZKA_Normal_frontfill,
-        part Rearfill
+        template! = PZKA_Frontfill,
+        part Frontfill
 		{
             model TWD
 			{
-                file = PZKA_Normal_Front_fill_TWD_nr
+                file = PZKA_Normal_Front_fill_TWD_nr,
             }
         }
     }    

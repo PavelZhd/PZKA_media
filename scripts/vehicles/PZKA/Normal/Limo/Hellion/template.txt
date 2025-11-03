@@ -1,15 +1,17 @@
 module Base
 {
-	template vehicle PZKA_Normal_Limo_Hellion
-	{
+	template vehicle PZKA_Limo_Hellion {
 		template! = PZKA_Limo_Trunk_Hellion,
-		template! = PZKA_Normal_Limo_RearDoorWindows,
-		template! = PZKA_Normal_Limo_shared_base,
+		template! = PZKA_Normal_Front_fill_Hellion,
+		template! = PZKA_Limo_Rearfill_Hellion,
+		template! = PZKA_Normal_Front_Lights_Hellion,
+		template! = PZKA_Limo_RearLights_Hellion,
 	}
-	template vehicle PZKA_Normal_Limo_Hellion_nr 
-	{
+	template vehicle PZKA_Limo_Hellion_nr {
 		template! = PZKA_Limo_Trunk_Hellion_nr,
-		template! = PZKA_Normal_Limo_RearDoorWindows_nr,
-		template! = PZKA_Normal_Limo_shared_base,
+		template! = PZKA_Normal_Front_fill_Hellion_nr,
+		template! = PZKA_Limo_Rearfill_Hellion_nr,
+		template! = PZKA_Normal_Front_Lights_Hellion,
+		template! = PZKA_Limo_RearLights_Hellion,
 	}
 }

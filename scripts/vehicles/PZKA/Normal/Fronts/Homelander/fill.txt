@@ -15,23 +15,23 @@ module Base
 
     template vehicle PZKA_Normal_Front_fill_Homelander
     {
-        template! = PZKA_Normal_frontfill,
-        part Rearfill
+        template! = PZKA_Frontfill,
+        part Frontfill
 		{
             model Homelander
 			{
-                file = PZKA_Normal_Front_fill_Homelander
+                file = PZKA_Normal_Front_fill_Homelander,
             }
         }
     }    
     template vehicle PZKA_Normal_Front_fill_Homelander_nr
     {
-        template! = PZKA_Normal_frontfill,
-        part Rearfill
+        template! = PZKA_Frontfill,
+        part Frontfill
 		{
             model Homelander
 			{
-                file = PZKA_Normal_Front_fill_Homelander_nr
+                file = PZKA_Normal_Front_fill_Homelander_nr,
             }
         }
     }    

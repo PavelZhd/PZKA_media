@@ -1,6 +1,6 @@
 module Base
 {		
-	model PZKA_Vehicles_Normal_DoorRearLeft_limo
+	model PZKA_Vehicles_Normal_Limo_DoorRearLeft
 	{
 		mesh = vehicles/Normal/pzka_Limo|Door_Limo_RearLeft_obj,
 		shader = vehicle_multiuv_noreflect,
@@ -8,7 +8,7 @@ module Base
 		scale = 0.01,
 		boneWeight = RearLeftLimoDoorBone 1.0,
 	}
-	model PZKA_Vehicles_Normal_DoorRearRight_limo
+	model PZKA_Vehicles_Normal_Limo_DoorRearRight
 	{
 		mesh = vehicles/Normal/pzka_Limo|Door_Limo_RearRight_obj,
 		shader = vehicle_multiuv_noreflect,
@@ -16,7 +16,7 @@ module Base
 		scale = 0.01,
 		boneWeight = RearRightLimoDoorBone 1.0,
 	}
-	model PZKA_Vehicles_Normal_DoorRearLeft_limo_nr
+	model PZKA_Vehicles_Normal_Limo_DoorRearLeft_nr
 	{
 		mesh = vehicles/Normal/pzka_Limo|Door_Limo_RearLeft_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
@@ -24,7 +24,7 @@ module Base
 		scale = 0.01,
 		boneWeight = RearLeftLimoDoorBone 1.0,
 	}
-	model PZKA_Vehicles_Normal_DoorRearRight_limo_nr
+	model PZKA_Vehicles_Normal_Limo_DoorRearRight_nr
 	{
 		mesh = vehicles/Normal/pzka_Limo|Door_Limo_RearRight_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
@@ -33,7 +33,7 @@ module Base
 		boneWeight = RearRightLimoDoorBone 1.0,
 	}
 
-	model PZKA_Vehicles_Normal_WindowRearLeft_limo
+	model PZKA_Vehicles_Normal_Limo_WindowRearLeft
 	{
 		mesh = vehicles/Normal/pzka_Limo|Window_Limo_RearLeft_obj,
 		shader = vehicle_multiuv_vva,
@@ -41,7 +41,7 @@ module Base
 		scale = 0.01,
 		boneWeight = RearLeftLimoWindowBone 1.0,
 	}
-	model PZKA_Vehicles_Normal_WindowRearRight_limo
+	model PZKA_Vehicles_Normal_Limo_WindowRearRight
 	{
 		mesh = vehicles/Normal/pzka_Limo|Window_Limo_RearRight_obj,
 		shader = vehicle_multiuv_vva,
@@ -49,19 +49,13 @@ module Base
 		scale = 0.01,
 		boneWeight = RearRightLimoWindowBone 1.0,
 	}
-	model PZKA_Vehicles_Normal_WindowRearLeft_limo_static
+	model PZKA_Vehicles_Normal_Limo_WindowRearLeft_static
 	{
 		mesh = vehicles/Normal/pzka_Limo|Window_Limo_RearLeft_sobj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Normal_WindowRearRight_limo_static
-	{
-		mesh = vehicles/Normal/pzka_Limo|Window_Limo_RearRight_sobj,
-		shader = vehicle_multiuv_vva,
-		scale = 0.01,
-	}
-	model PZKA_Vehicles_Normal_RearWindow_limo
+	model PZKA_Vehicles_Normal_Limo_WindowRearRight_static
 	{
 		mesh = vehicles/Normal/pzka_Limo|Window_Limo_RearRight_sobj,
 		shader = vehicle_multiuv_vva,
@@ -74,11 +68,11 @@ module Base
 			parent = DoorRearLeft,
 			model Default
 			{
-				file = PZKA_Vehicles_Normal_WindowRearLeft_limo,
+				file = PZKA_Vehicles_Normal_Limo_WindowRearLeft,
 			}
 			model Static
 			{
-				file = PZKA_Vehicles_Normal_WindowRearLeft_limo_static,
+				file = PZKA_Vehicles_Normal_Limo_WindowRearLeft_static,
 			}			
 		}
 		part WindowRearRight
@@ -86,11 +80,11 @@ module Base
 			parent = DoorRearRight,
 			model Default
 			{
-				file = PZKA_Vehicles_Normal_WindowRearRight_limo,
+				file = PZKA_Vehicles_Normal_Limo_WindowRearRight,
 			}
 			model Static
 			{
-				file = PZKA_Vehicles_Normal_WindowRearRight_limo_static,
+				file = PZKA_Vehicles_Normal_Limo_WindowRearRight_static,
 			}	
 		}
 	}
@@ -100,7 +94,7 @@ module Base
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Normal_DoorRearLeft_limo,
+				file = PZKA_Vehicles_Normal_Limo_DoorRearLeft,
 			}
 		}
 
@@ -108,7 +102,7 @@ module Base
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Normal_DoorRearRight_limo,
+				file = PZKA_Vehicles_Normal_Limo_DoorRearRight,
 			}
 		}
 		template! = PZKA_Normal_Limo_RearDoorWindows,
@@ -118,7 +112,7 @@ module Base
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Normal_DoorRearLeft_limo_nr,
+				file = PZKA_Vehicles_Normal_Limo_DoorRearLeft_nr,
 			}
 		}
 
@@ -126,7 +120,7 @@ module Base
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Normal_DoorRearRight_limo_nr,
+				file = PZKA_Vehicles_Normal_Limo_DoorRearRight_nr,
 			}
 		}
 		template! = PZKA_Normal_Limo_RearDoorWindows,
