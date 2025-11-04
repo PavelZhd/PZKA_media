@@ -4,6 +4,7 @@ module Base
 	{
 		mesh = vehicles/Normal/pzka_Hearse|Seat_Hearse_RearLeft_obj,
 		texture = Vehicles/vehicle_carnormalshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -11,6 +12,7 @@ module Base
 	{
 		mesh = vehicles/Normal/pzka_Hearse|Seat_Hearse_RearRight_obj,
 		texture = Vehicles/vehicle_carnormalshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}

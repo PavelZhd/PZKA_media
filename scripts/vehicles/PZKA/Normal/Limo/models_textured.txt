@@ -4,6 +4,7 @@ module Base
 	{
 		mesh = vehicles/Normal/pzka_Limo|Vehicles_Interior_Limo,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -11,6 +12,7 @@ module Base
 	{
 		mesh = vehicles/Normal/pzka_Limo|Seat_Limo_RearLeft_obj,
 		texture = Vehicles/vehicle_carnormalshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -18,6 +20,7 @@ module Base
 	{
 		mesh = vehicles/Normal/pzka_Limo|Seat_Limo_RearRight_obj,
 		texture = Vehicles/vehicle_carnormalshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
