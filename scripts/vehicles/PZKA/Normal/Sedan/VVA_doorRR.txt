@@ -43,6 +43,7 @@ module Base
 				file = VVA_Vehicles_Normal_DoorRearRight,
 			}
 		}
+		template! = PZKA_Normal_SedanV_windowRR,
 	}
 	template vehicle PZKA_Normal_SedanV_doorRR_nr {
 		part DoorRearRight
@@ -52,5 +53,6 @@ module Base
 				file = VVA_Vehicles_Normal_DoorRearRight_nr,
 			}
 		}
+		template! = PZKA_Normal_SedanV_windowRR,
 	}
 }

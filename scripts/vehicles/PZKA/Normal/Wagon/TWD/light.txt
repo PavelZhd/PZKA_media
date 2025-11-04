@@ -13,8 +13,7 @@ module Base
 		scale = 0.01,
 	}
 
-	template vehicle PZKA_Wagon_Lights_TWD {
-		template! = PZKA_Normal_Front_Lights_TWD,
+	template vehicle PZKA_Wagon_RearLights_TWD {
 		part HeadlightRearLeft
 		{
 			model Default 

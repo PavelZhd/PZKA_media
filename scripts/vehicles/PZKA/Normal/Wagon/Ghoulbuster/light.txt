@@ -13,8 +13,7 @@ module Base
 		scale = 0.01,
 	}
 
-	template vehicle PZKA_Wagon_Lights_Ghoulbuster {
-		template! = PZKA_Normal_Front_Lights_Ghoulbuster,
+	template vehicle PZKA_Ghoulbuster_RearLights {
 		part HeadlightRearLeft
 		{
 			model Default 

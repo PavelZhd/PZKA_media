@@ -13,7 +13,7 @@ module Base
 		scale = 0.01,
 	}
 
-    template vehicle PZKA_WagonF_Rearfill_Cerise
+    template vehicle PZKA_Wagon_Rearfill_Cerise
     {
         template! = PZKA_Rearfill,
         part Rearfill
@@ -24,7 +24,7 @@ module Base
             }
         }
     }    
-    template vehicle PZKA_WagonF_Rearfill_Cerise_nr
+    template vehicle PZKA_Wagon_Rearfill_Cerise_nr
     {
         template! = PZKA_Rearfill,
         part Rearfill

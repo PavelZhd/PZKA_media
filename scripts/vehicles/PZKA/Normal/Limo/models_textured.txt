@@ -1,20 +1,20 @@
 module Base
 {
-	model PZKA_Vehicles_Limo_internals
+	model PZKA_Vehicles_Normal_Limo_internals
 	{
 		mesh = vehicles/Normal/pzka_Limo|Vehicles_Interior_Limo,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
 		static = TRUE,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Limo_SeatRL
+	model PZKA_Vehicles_Normal_Limo_SeatRL
 	{
 		mesh = vehicles/Normal/pzka_Limo|Seat_Limo_RearLeft_obj,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Limo_SeatRR
+	model PZKA_Vehicles_Normal_Limo_SeatRR
 	{
 		mesh = vehicles/Normal/pzka_Limo|Seat_Limo_RearRight_obj,
 		texture = Vehicles/vehicle_carnormalshell,
@@ -22,26 +22,26 @@ module Base
 		scale = 0.01,
 	}
 	
-	template vehicle PZKA_Normal_Limo_Interior {
+	template vehicle PZKA_Limo_Interior {
 		part SeatRearLeft
 		{
 			model Default 
 			{
-				file = PZKA_Vehicles_Limo_SeatRL,
+				file = PZKA_Vehicles_Normal_Limo_SeatRL,
 			}
 		}
 		part SeatRearRight
 		{
 			model Default 
 			{
-				file = PZKA_Vehicles_Limo_SeatRR,
+				file = PZKA_Vehicles_Normal_Limo_SeatRR,
 			}
 		}
 		
 		part Interior {
 			model Trunk
 			{
-				file = PZKA_Vehicles_Limo_internals,
+				file = PZKA_Vehicles_Normal_Limo_internals,
 			}			
 		}
 	}

@@ -2,13 +2,13 @@ module Base
 {
     model PZKA_Vehicles_Normal_Limo_Rearfill_Homelander
 	{
-		mesh = vehicles/Normal/pzka_Limo|RearFill_Limo_V_Homelander,
+		mesh = vehicles/Normal/pzka_Limo|RearFill_Limo_Homelander,
 		shader = vehicle_multiuv_noreflect,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Normal_Limo_Rearfill_Homelander_nr
 	{
-		mesh = vehicles/Normal/pzka_Limo|RearFill_Limo_V_Homelander,
+		mesh = vehicles/Normal/pzka_Limo|RearFill_Limo_Homelander,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}

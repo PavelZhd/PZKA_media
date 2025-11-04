@@ -1,32 +1,31 @@
 module Base
 {
-    model PZKA_Vehicles_Wagon_LightRL_Grisworld
+    model PZKA_Vehicles_Normal_Grisworld_LightRL
 	{
 		mesh = vehicles/Normal/pzka_Wagon|Grisworld_Light_RearLeft_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Wagon_LightRR_Grisworld
+	model PZKA_Vehicles_Normal_Grisworld_LightRR
 	{
 		mesh = vehicles/Normal/pzka_Wagon|Grisworld_Light_RearRight_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
 
-	template vehicle PZKA_Wagon_Lights_Grisworld {
-		template! = PZKA_Normal_Front_Lights_Grisworld,
+	template vehicle PZKA_Grisworld_RearLights {
 		part HeadlightRearLeft
 		{
 			model Default 
 			{
-				file = PZKA_Vehicles_Wagon_LightRL_Grisworld,
+				file = PZKA_Vehicles_Normal_Grisworld_LightRL,
 			}
 		}
 		part HeadlightRearRight
 		{
 			model Default 
 			{
-				file = PZKA_Vehicles_Wagon_LightRR_Grisworld,
+				file = PZKA_Vehicles_Normal_Grisworld_LightRR,
 			}
 		}
 	}

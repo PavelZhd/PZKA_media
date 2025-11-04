@@ -2,13 +2,13 @@ module Base
 {
     model PZKA_Vehicles_Normal_Limo_Rearfill_Hellion
 	{
-		mesh = vehicles/Normal/pzka_Limo|RearFill_F_Hellion,
+		mesh = vehicles/Normal/pzka_Limo|RearFill_Limo_Helion,
 		shader = vehicle_multiuv_noreflect,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Normal_Limo_Rearfill_Hellion_nr
 	{
-		mesh = vehicles/Normal/pzka_Limo|RearFill_F_Hellion,
+		mesh = vehicles/Normal/pzka_Limo|RearFill_Limo_Helion,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}

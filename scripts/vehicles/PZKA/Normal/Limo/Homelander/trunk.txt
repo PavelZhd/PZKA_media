@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_Normal_Limo_Trunk_Homelander
 	{
-		mesh = vehicles/pzka_NormalAnimatedTrunk|Trunk_Limo_Highlander_obj,
+		mesh = vehicles/Normal/pzka_Limo|Trunk_Limo_Highlander_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -10,7 +10,7 @@ module Base
 	}
 	model PZKA_Vehicles_Normal_Limo_Trunk_Homelander_nr
 	{
-		mesh = vehicles/pzka_NormalAnimatedTrunk|Trunk_Limo_Highlander_obj,
+		mesh = vehicles/Normal/pzka_Limo|Trunk_Limo_Highlander_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,

@@ -1,0 +1,40 @@
+module Base
+{
+	model PZKA_Vehicles_Normal_Wagon_Trunk_mayor
+	{
+		mesh = vehicles/Normal/pzka_Wagon|Trunk_WagonMayor_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkUpperBone 1.0,
+		boneWeight = TrunkLowerBone 1.0,
+	}
+	model PZKA_Vehicles_Normal_Wagon_Trunk_mayor_nr
+	{
+		mesh = vehicles/Normal/pzka_Wagon|Trunk_WagonMayor_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkUpperBone 1.0,
+		boneWeight = TrunkLowerBone 1.0,
+	}
+	
+	template vehicle PZKA_Wagon_Trunk_mayor {
+		part TrunkDoor {
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Wagon_Trunk_mayor,
+			}
+		}
+		template! = PZKA_Wagon_RearWindow,
+	}
+	template vehicle PZKA_Wagon_Trunk_mayor_nr {
+		part TrunkDoor {
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Wagon_Trunk_mayor_nr,
+			}
+		}
+		template! = PZKA_Wagon_RearWindow,
+	}
+}

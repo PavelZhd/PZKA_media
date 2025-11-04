@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_Normal_Hearse_nr
 	{
-		mesh = vehicles/pzka_Normal_Hearse|Hearse,
+		mesh = vehicles/Normal/pzka_Hearse|Hearse,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}

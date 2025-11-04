@@ -5,13 +5,13 @@ module Base
 		template! = PZKA_Normal_Limo_Reardoors,		
 		template! = PZKA_Limo_RearWindow,
 		template! = PZKA_Normal_shared,
-		template! = PZKA_Normal_Limo_Interior,
+		template! = PZKA_Limo_Interior,
 	}
 	template vehicle PZKA_Limo_base_nr {
 		template! = PZKA_Normal_front_nr,
 		template! = PZKA_Normal_Limo_Reardoors_nr,		
 		template! = PZKA_Limo_RearWindow,
 		template! = PZKA_Normal_shared,
-		template! = PZKA_Normal_Limo_Interior,
+		template! = PZKA_Limo_Interior,
 	}
 }

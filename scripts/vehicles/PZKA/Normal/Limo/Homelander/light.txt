@@ -2,13 +2,13 @@ module Base
 {
     model PZKA_Vehicles_Normal_Limo_LightRL_Homelander
 	{
-		mesh = vehicles/Normal/pzka_Limo|Light_Limo_Homelander_RearLeft_obj,
+		mesh = vehicles/Normal/pzka_Limo|Light_Limo_Hightlander_RearLeft_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Normal_Limo_LightRR_Homelander
 	{
-		mesh = vehicles/Normal/pzka_Limo|Light_Limo_Homelander_RearRight_obj,
+		mesh = vehicles/Normal/pzka_Limo|Light_Limo_Hightlander_RearRight_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}

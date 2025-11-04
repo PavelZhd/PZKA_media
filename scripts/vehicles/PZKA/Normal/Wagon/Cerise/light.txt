@@ -1,32 +1,32 @@
 module Base
 {
-    model PZKA_Vehicles_Wagon_LightRL_Cerise
+    model PZKA_Vehicles_Normal_Wagon_LightRL_Cerise
 	{
 		mesh = vehicles/Normal/pzka_Wagon|Cerise_Wagon_Light_RearLeft_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Wagon_LightRR_Cerise
+	model PZKA_Vehicles_Normal_Wagon_LightRR_Cerise
 	{
 		mesh = vehicles/Normal/pzka_Wagon|Cerise_Wagon_Light_RearRight_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
 
-	template vehicle PZKA_Wagon_Lights_Cerise {
+	template vehicle PZKA_Wagon_RearLights_Cerise {
 		template! = PZKA_Normal_Front_Lights_Cerise,
 		part HeadlightRearLeft
 		{
 			model Default 
 			{
-				file = PZKA_Vehicles_Wagon_LightRL_Cerise,
+				file = PZKA_Vehicles_Normal_Wagon_LightRL_Cerise,
 			}
 		}
 		part HeadlightRearRight
 		{
 			model Default 
 			{
-				file = PZKA_Vehicles_Wagon_LightRR_Cerise,
+				file = PZKA_Vehicles_Normal_Wagon_LightRR_Cerise,
 			}
 		}
 	}

@@ -1,0 +1,66 @@
+module Base
+{
+	model PZKA_Vehicles_Normal_Grisworld_Trunk
+	{
+		mesh = vehicles/Normal/pzka_Wagon|Trunk_Wagon_Grisworld_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkGrisBone 1.0,
+	}
+	model PZKA_Vehicles_Normal_Grisworld_Trunk_nr
+	{
+		mesh = vehicles/Normal/pzka_Wagon|Trunk_Wagon_Grisworld_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkGrisBone 1.0,
+	}
+	model PZKA_Normal_Normal_Grisworld_RearWindow
+	{
+		mesh = vehicles/Normal/pzka_Wagon|RearWindow_Grisworld_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Normal_Normal_Grisworld_RearWindow_static
+	{
+		mesh = vehicles/Normal/pzka_Wagon|RearWindow_Grisworld_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Grisworld_RearWindow_nr {
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Normal_Normal_Grisworld_RearWindow,
+			}
+			model Static
+			{
+				file = PZKA_Normal_Normal_Grisworld_RearWindow_static,
+			}
+		}
+	}
+	
+	template vehicle PZKA_Grisworld_Trunk {
+		part TrunkDoor {
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Grisworld_Trunk,
+			}
+		}
+		template! = PZKA_Grisworld_RearWindow_nr,		
+	}
+	template vehicle PZKA_Grisworld_Trunk_nr {
+		part TrunkDoor {
+			model Default
+			{
+				file = PZKA_Vehicles_Normal_Grisworld_Trunk_nr,
+			}
+		}
+		template! = PZKA_Grisworld_RearWindow_nr,		
+	}
+}
