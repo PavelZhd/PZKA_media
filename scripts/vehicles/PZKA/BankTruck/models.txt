@@ -1,34 +1,17 @@
 module Base
 {
-	model PZKA_Vehicles_BankTrunk_a
+	model PZKA_Vehicles_BankTrunk
 	{
 		mesh = vehicles/PZKA_BankTruck|Vehicle_TruckBank,
 		shader = vehicle_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_BankTrunk_nr_a
+	model PZKA_Vehicles_BankTrunk_nr
 	{
 		mesh = vehicles/PZKA_BankTruck|Vehicle_TruckBank,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
-		scale = 0.01,
-	}
-
-	
-	
-	
-	
-	
-		
-
-	
-	
-	
-	model PZKA_Vehicles_BankTrunk_Lightbar
-	{
-		mesh = vehicles/PZKA_BankTruck|Lightbar,
-		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
 }

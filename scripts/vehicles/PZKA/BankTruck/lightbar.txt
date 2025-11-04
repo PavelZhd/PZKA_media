@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicles_BankTrunk_Lightbar
+	{
+		mesh = vehicles/PZKA_BankTruck|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_BankTruck_lightbar {
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_Lightbar,
+			}
+		}
+	}
+}

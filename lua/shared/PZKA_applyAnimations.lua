@@ -3,6 +3,14 @@ local PZKA = require "PZKA_addAnimations"
 local SLE = getActivatedMods():contains("\\SimpleLightbarsExpandedPZK")
 local VVE = getActivatedMods():contains("\\VVehicleEnhancer") or getActivatedMods():contains("\\Ze_VVehicleEnhancer_42B")
 
+PZKA.addToProfile("pzka_2SeatsF",{"PZKA_SeatFrontLeft","PZKA_SeatFrontRight"})
+PZKA.addToProfile("pzka_2SeatsM",{"PZKA_SeatMiddleLeft","PZKA_SeatMiddleRight"})
+PZKA.addToProfile("pzka_2SeatsR",{"PZKA_SeatRearLeft","PZKA_SeatRearRight"})
+
+PZKA.addToProfile("pzka_4SeatsR",{"pzka_2SeatsF","pzka_2SeatsR"})
+PZKA.addToProfile("pzka_4SeatsM",{"pzka_2SeatsF","pzka_2SeatsM"})
+PZKA.addToProfile("pzka_6Seats",{"pzka_4SeatsR","pzka_2SeatsM"})
+
 PZKA.MakeDoorSeatProfile("pzka_2FrontDoors",{"FLW","FRW"})
 PZKA.ExpandDoorSeatProfile("4DoorsRW","pzka_2FrontDoors",{"RLW","RRW"})
 PZKA.ExpandDoorSeatProfile("4DoorsR","pzka_2FrontDoors",{"RL","RR"})
@@ -26,11 +34,11 @@ if not SLE then
     PZKA.addToProfile("VVA_sle_taxi",{"VVA_t_taxi"})
 end
 
-PZKA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_F","PZKA_Normal_SedanF",{"4DoorsRW","pzka_TrunkDoor","PZKA_Normal_SedanF_base"})
-PZKA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_F_nr","PZKA_Normal_SedanF_nr",{"4DoorsRW","pzka_TrunkDoor","PZKA_Normal_SedanF_base_nr"})
+PZKA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_F","PZKA_Normal_SedanF",{"pzka_4SeatsR","PZKA_Normal_SedanF_base"})
+PZKA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_F_nr","PZKA_Normal_SedanF_nr",{"pzka_4SeatsR","PZKA_Normal_SedanF_base_nr"})
 
-PZKA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_V","PZKA_Normal_SedanV",{"4DoorsRW","pzka_TrunkDoor","PZKA_Normal_SedanV_base"})
-PZKA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_V_nr","PZKA_Normal_SedanV_nr",{"4DoorsRW","pzka_TrunkDoor","PZKA_Normal_SedanV_base_nr"})
+PZKA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_V","PZKA_Normal_SedanV",{"pzka_4SeatsR","PZKA_Normal_SedanV_base"})
+PZKA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_V_nr","PZKA_Normal_SedanV_nr",{"pzka_4SeatsR","PZKA_Normal_SedanV_base_nr"})
 
 -- Cerise Sedan
 PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedan","PZKA_Normal_Sedan_F",{"PZKA_SedanF_Cerise"})
@@ -115,10 +123,10 @@ PZKA.CopyTemplateToVehicle("pzkChevalierNyalaLSU","pzkChevalierNyala_nr",{"pzka_
 PZKA.CopyTemplateToVehicle("pzkChevalierNyalaMall", "pzkChevalierNyalaLSU")
 
 -- Hearse
-PZKA.ApplyTemplateToVehicle("pzkHearse","PZKA_Vehicles_Normal_Hearse_nr",{"4DoorsRW","pzka_TrunkDoor","PZKA_Hearse_nr"})
+PZKA.ApplyTemplateToVehicle("pzkHearse","PZKA_Vehicles_Normal_Hearse_nr",{"pzka_4SeatsR","PZKA_Hearse_nr"})
 
 -- Limo
-PZKA.ApplyTemplateToVehicle("PZKA_Limo_Base","PZKA_Normal_Limo",{"4DoorsRW","pzka_TrunkDoor","PZKA_Limo_base"})
+PZKA.ApplyTemplateToVehicle("PZKA_Limo_Base","PZKA_Normal_Limo",{"pzka_4SeatsR","PZKA_Limo_base"})
 
 PZKA.CopyTemplateToVehicle("pzkLimo","PZKA_Limo_Base",{"PZKA_Limo_Nyala"})
 PZKA.CopyTemplateToVehicle("pzkChevalierCeriseLimo","PZKA_Limo_Base",{"PZKA_Limo_Cerise"})
@@ -127,8 +135,8 @@ PZKA.CopyTemplateToVehicle("pzkFranklinHomelanderLimo","PZKA_Limo_Base",{"PZKA_L
 PZKA.CopyTemplateToVehicle("pzkDashHellionLimo","PZKA_Limo_Base",{"PZKA_Limo_Hellion"})
 
 -- Station Wagon
-PZKA.ApplyTemplateToVehicle("PZKA_Normal_Wagon","PZKA_Normal_Wagon",{"4DoorsRW","pzka_TrunkDoor","PZKA_Normal_Wagon"})
-PZKA.ApplyTemplateToVehicle("PZKA_Normal_Wagon_nr","PZKA_Normal_Wagon_nr",{"4DoorsRW","pzka_TrunkDoor","PZKA_Normal_Wagon_nr"})
+PZKA.ApplyTemplateToVehicle("PZKA_Normal_Wagon","PZKA_Normal_Wagon",{"pzka_4SeatsR","PZKA_Normal_Wagon"})
+PZKA.ApplyTemplateToVehicle("PZKA_Normal_Wagon_nr","PZKA_Normal_Wagon_nr",{"pzka_4SeatsR","PZKA_Normal_Wagon_nr"})
 
 PZKA.CopyTemplateToVehicle("pzkCeriseStationWagon","PZKA_Normal_Wagon",{"PZKA_Wagon_Cerise"})
 PZKA.CopyTemplateToVehicle("pzkRapierStationWagon","PZKA_Normal_Wagon",{"PZKA_Wagon_Rapier"})
@@ -136,18 +144,16 @@ PZKA.CopyTemplateToVehicle("pzkDashMayorStationWagon","PZKA_Normal_Wagon",{"PZKA
 PZKA.CopyTemplateToVehicle("pzkTriumphTWDStationWagon","PZKA_Normal_Wagon",{"PZKA_Wagon_TWD"})
 PZKA.CopyTemplateToVehicle("pzkTriumphTWDStationWagonTaxi","PZKA_Normal_Wagon_nr",{"PZKA_Wagon_TWD", "pzka_sle_taxi","PZKA_Normal_TaxiSignWagon"})
 
-PZKA.ApplyTemplateToVehicle("pzkTriumphTWDStationWagonGriswold","PZKA_Grisworld_nr",{"4DoorsRW","pzka_TrunkDoor","PZKA_Normal_Wagon_nr","PZKA_Wagon_Grisworld_nr"})
-PZKA.ApplyTemplateToVehicle("pzkHearseGhoulbusters","PZKA_Ghoulbuster_nr",{"4DoorsRW","pzka_TrunkDoor","PZKA_Normal_Wagon_nr","PZKA_Ghoulbuster_nr"})
+PZKA.ApplyTemplateToVehicle("pzkTriumphTWDStationWagonGriswold","PZKA_Grisworld_nr",{"pzka_4SeatsR","PZKA_Normal_Wagon_nr","PZKA_Wagon_Grisworld_nr"})
+PZKA.ApplyTemplateToVehicle("pzkHearseGhoulbusters","PZKA_Ghoulbuster_nr",{"pzka_4SeatsR","PZKA_Normal_Wagon_nr","PZKA_Ghoulbuster_nr"})
 
-
-
-
+--Bank Truck
+PZKA.ApplyTemplateToVehicle("pzkFranklinBankTruck","PZKA_Vehicles_BankTrunk_nr",{"pzka_2SeatsF","PZKA_BankTruck_Bank"})
+PZKA.ApplyTemplateToVehicle("pzkFranklinSwatTruckLouisvilleSWAT","PZKA_Vehicles_BankTrunk_nr",{"pzka_2SeatsF","PZKA_BankTruck_Bank","pzka_t_lighbar","PZKA_BankTruck_lightbar"})
 
 
 --- OLD FRAMEWORK CODE
 
-PZKA.CreateAnimationProfile("pzkFranklinBankTruck","PZKA_Vehicles_BankTrunk_nr_a","PZKA_BankTruck_Light","PZKA_BankTruck_Bank",{"FLW","FRW","RR"},"PZKA_RearDoorVersionMed")
-PZKA.CreateAnimationProfile("pzkFranklinSwatTruckLouisvilleSWAT","PZKA_Vehicles_BankTrunk_nr_a","PZKA_BankTruck_Light","PZKA_BankTruck_lightbar",{"FLW","FRW","MR"},"PZKA_RearDoorVersionMed")
 
 
 

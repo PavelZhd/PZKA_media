@@ -25,6 +25,8 @@ module Base
 				file = PZKA_Vehicles_BankTrunk_Hood,
 			}
 		}
+		template! = PZKA_Hood,
+		template! = PZKA_Hood_Slow,
 	}
 	template vehicle PZKA_BankTruck_Hood_nr {
 		part EngineDoor
@@ -34,5 +36,7 @@ module Base
 				file = PZKA_Vehicles_BankTrunk_Hood_nr,
 			}
 		}
+		template! = PZKA_Hood,
+		template! = PZKA_Hood_Slow,
 	}
 }

@@ -1,0 +1,39 @@
+module Base
+{
+	template vehicle PZKA_BankTruck_shared {
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_BatteryR,
+				offset = -0.26118 0.143402 1.14078,
+			}		
+		}
+		template! = PZKA_BankTruck_Windshield,
+		template! = PZKA_Interior,
+		template! = PZKA_BankTruck_Interior,
+		template! = PZKA_BankTruck_Light,
+	}
+
+	template vehicle PZKA_BankTruck_base {
+		template! = PZKA_BankTruck_Hood,
+		template! = PZKA_BankTruck_FrontDoors,
+		template! = PZKA_BankTruck_RearDoor,
+		template! = PZKA_BankTruck_shared,
+	}
+	template vehicle PZKA_BankTruck_base_nr {
+		template! = PZKA_BankTruck_Hood_nr,
+		template! = PZKA_BankTruck_FrontDoors_nr,
+		template! = PZKA_BankTruck_RearDoor_nr,
+		template! = PZKA_BankTruck_shared,
+	}
+	
+	template vehicle PZKA_BankTruck_Bank {
+		template! = PZKA_BankTruck_base_nr,
+		template! = PZKA_BankTruck_RRDoor_nr,
+	}
+	template vehicle PZKA_BankTruck_Swat {
+		template! = PZKA_BankTruck_base_nr,
+		template! = PZKA_BankTruck_MRDoor_nr,
+	}
+}

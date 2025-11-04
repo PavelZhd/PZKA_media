@@ -1,5 +1,12 @@
 module Base
 {	
+	template vehicle PZKA_SeatFrontLeft {
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+	}
 	template vehicle PZKA_SeatFrontRight {
 		passenger FrontRight
 		{
