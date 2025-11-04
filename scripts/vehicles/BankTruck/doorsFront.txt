@@ -1,0 +1,107 @@
+module Base
+{	
+	model PZKA_Vehicles_BankTrunk_DoorFrontLeft
+	{
+		mesh = vehicles/PZKA_BankTruck|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_BankTrunk_DoorFrontRight
+	{
+		mesh = vehicles/PZKA_BankTruck|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_BankTrunk_WindowFrontLeft
+	{
+		mesh = vehicles/PZKA_BankTruck|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_BankTrunk_WindowFrontRight
+	{
+		mesh = vehicles/PZKA_BankTruck|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}	
+	model PZKA_Vehicles_BankTrunk_DoorFrontLeft_nr
+	{
+		mesh = vehicles/PZKA_BankTruck|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_BankTrunk_DoorFrontRight_nr
+	{
+		mesh = vehicles/PZKA_BankTruck|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle PZKA_BankTruck_FrontDoorWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_BankTrunk_WindowFrontLeft,
+            }           		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_BankTrunk_WindowFrontRight,
+            }       		
+	    }
+	}
+	template vehicle PZKA_BankTruck_FrontDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_DoorFrontRight,
+			}
+		}
+		template! = PZKA_BankTruck_FrontDoorWindows,
+	}
+	template vehicle PZKA_BankTruck_FrontDoors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_DoorFrontRight_nr,
+			}
+		}
+		template! = PZKA_BankTruck_FrontDoorWindows,
+	}
+}

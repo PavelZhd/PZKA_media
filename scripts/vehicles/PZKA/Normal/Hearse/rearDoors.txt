@@ -69,5 +69,7 @@ module Base
 			}
 		}
 		template! = PZKA_Hearse_RearDoorWindows,
+		template! = PZKA_DoorWindowRearLeft,
+		template! = PZKA_DoorWindowRearRight,
 	}
 }

@@ -1,0 +1,63 @@
+module Base
+{
+	template vehicle PZKA_WindowFL {
+		part WindowFrontLeft
+        {
+			anim ClosedToOpen
+            {
+            	anim = WindowFrontLeft_open,
+                animate = FALSE,
+            }
+		}
+	}
+	template vehicle PZKA_WindowFR {
+		part WindowFrontRight
+        {	
+        	anim ClosedToOpen
+        	{
+         		anim = WindowFrontRight_open,
+           		animate = FALSE,
+      		}
+	   	}
+	}	
+	template vehicle PZKA_WindowML {
+		part WindowMiddleLeft
+        {	
+        	anim ClosedToOpen
+            {
+            	anim = WindowRearLeft_open,
+                animate = FALSE,
+            }
+        }
+	}
+	template vehicle PZKA_WindowMR {
+		part WindowMiddleRight
+        {	
+        	anim ClosedToOpen
+        	{
+        		anim = WindowRearRight_open,
+            	animate = FALSE,
+            }
+        }
+	}	
+	template vehicle PZKA_WindowRL {
+		part WindowRearLeft
+        {	
+        	anim ClosedToOpen
+            {
+            	anim = WindowRearLeft_open,
+                animate = FALSE,
+            }
+        }
+	}
+	template vehicle PZKA_WindowRR {
+		part WindowRearRight
+        {	
+        	anim ClosedToOpen
+        	{
+        		anim = WindowRearRight_open,
+            	animate = FALSE,
+            }
+        }
+	}
+}

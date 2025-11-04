@@ -1,39 +1,11 @@
 module Base
 {
-	template vehicle PZKA_BankTrunk_shared {
-		part WindowFrontLeft
-        {
-			parent = DoorFrontLeft,
-			model Default
-            {
-            	file = PZKA_Vehicles_BankTrunk_WindowFrontLeft,
-            }           		
-        }
-		part WindowFrontRight
-    	{	
-        	parent = DoorFrontRight,
-			model Default
-            {
-                file = PZKA_Vehicles_BankTrunk_WindowFrontRight,
-            }       		
-	    }
+	template vehicle PZKA_BankTruck_shared {
 		
 		
-		part Windshield
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_BankTrunk_Windshield,
-			}			
-		}
-		part WindshieldRear
-		{
-			parent = DoorRear,
-			model Default
-			{
-				file = PZKA_Vehicles_BankTrunk_RearWindow,
-			}
-		}
+		
+		
+		
 
 		part SeatFrontLeft 
 		{
@@ -76,65 +48,17 @@ module Base
 		}
 	}
 
-	template vehicle PZKA_BankTrunk_MiddleDoor {
-		part DoorMiddleRight
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_BankTrunk_DoorRearRight_nr,
-			}
-		}
-		part WindowMiddleRight
-    	{	
-        	parent = DoorMiddleRight,
-			model Default
-            {
-                file = PZKA_Vehicles_BankTrunk_WindowRearRight,
-            }       		
-	    }
+	template vehicle PZKA_BankTruck_MiddleDoor {
+		
 	}
 
-	template vehicle PZKA_BankTrunk_RearDoor {
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_BankTrunk_DoorRearRight_nr,
-			}
-		}
-		part WindowRearRight
-    	{	
-        	parent = DoorRearRight,
-			model Default
-            {
-                file = PZKA_Vehicles_BankTrunk_WindowRearRight,
-            }       		
-	    }
+	template vehicle PZKA_BankTruck_RearDoor {
+		
 	}
 
-	template vehicle PZKA_BankTrunk_nr {
-		part DoorRear
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_BankTrunk_Trunk_nr,
-			}
-		}
-		part DoorFrontLeft
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_BankTrunk_DoorFrontLeft_nr,
-			}
-		}
-
-		part DoorFrontRight
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_BankTrunk_DoorFrontRight_nr,
-			}
-		}
+	template vehicle PZKA_BankTruck_nr {
+		
+		
 		part DoorMiddleRight
 		{
 			model Default
@@ -150,17 +74,17 @@ module Base
 				file = PZKA_Vehicles_BankTrunk_Hood_nr,
 			}
 		}
-		template! = PZKA_BankTrunk_shared,
+		template! = PZKA_BankTruck_shared,
 	}
 	
-	template vehicle PZKA_BankTrunk_Bank {
-		template! = PZKA_BankTrunk_nr,
-		template! = PZKA_BankTrunk_RearDoor,		
+	template vehicle PZKA_BankTruck_Bank {
+		template! = PZKA_BankTruck_nr,
+		template! = PZKA_BankTruck_RearDoor,		
 	}
 
-	template vehicle PZKA_BankTrunk_lightbar {
-		template! = PZKA_BankTrunk_nr,
-		template! = PZKA_BankTrunk_MiddleDoor,	
+	template vehicle PZKA_BankTruck_lightbar {
+		template! = PZKA_BankTruck_nr,
+		template! = PZKA_BankTruck_MiddleDoor,	
 		part ATA2RoofLightbar
 		{
 			model Default

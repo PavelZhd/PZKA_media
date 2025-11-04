@@ -25,6 +25,7 @@ module Base
 				file = PZKA_Vehicles_Normal_Hood,
 			}
 		}
+		template! = PZKA_EngineDoor,
 	}
 	template vehicle PZKA_Normal_Hood_nr {
 		part EngineDoor
@@ -34,5 +35,6 @@ module Base
 				file = PZKA_Vehicles_Normal_Hood_nr,
 			}
 		}
+		template! = PZKA_EngineDoor,
 	}
 }

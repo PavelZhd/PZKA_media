@@ -1,0 +1,60 @@
+module Base
+{	
+	model PZKA_Vehicles_BankTrunk_Trunk
+	{
+		mesh = vehicles/PZKA_BankTruck|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
+	}
+	model PZKA_Vehicles_BankTrunk_Trunk_nr
+	{
+		mesh = vehicles/PZKA_BankTruck|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
+	}
+
+	model PZKA_Vehicles_BankTrunk_RearWindow
+	{
+		mesh = vehicles/PZKA_BankTruck|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	
+	template vehicle PZKA_BankTruck_RearWindow {
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_RearWindow,
+			}
+		}
+	}
+	template vehicle PZKA_BankTruck_RearDoor {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_Trunk,
+			}
+		}
+		template!= PZKA_BankTruck_RearWindow,
+	}
+	template vehicle PZKA_BankTruck_RearDoor_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_Trunk_nr,
+			}
+		}
+		template!= PZKA_BankTruck_RearWindow,
+	}
+}

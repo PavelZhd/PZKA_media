@@ -1,0 +1,38 @@
+module Base
+{	
+	template vehicle PZKA_SeatFrontRight {
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+	}
+	template vehicle PZKA_SeatMiddleLeft {
+		passenger MiddleLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+	}
+	template vehicle PZKA_SeatMiddleRight {
+		passenger MiddleRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+	}
+	template vehicle PZKA_SeatRearLeft {
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+	}
+	template vehicle PZKA_SeatRearRight {
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+		}
+	}
+}

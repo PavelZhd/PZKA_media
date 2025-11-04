@@ -1,0 +1,19 @@
+module Base
+{	
+	model PZKA_Vehicles_BankTrunk_Windshield
+	{
+		mesh = vehicles/PZKA_BankTruck|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	
+	template vehicle PZKA_BankTruck_Windshield {
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_BankTrunk_Windshield,
+			}			
+		}
+	}
+}

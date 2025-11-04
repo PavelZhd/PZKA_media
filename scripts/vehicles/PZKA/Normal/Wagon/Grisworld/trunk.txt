@@ -52,7 +52,9 @@ module Base
 				file = PZKA_Vehicles_Normal_Grisworld_Trunk,
 			}
 		}
-		template! = PZKA_Grisworld_RearWindow_nr,		
+		template! = PZKA_Grisworld_RearWindow_nr,
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Reg,
 	}
 	template vehicle PZKA_Grisworld_Trunk_nr {
 		part TrunkDoor {
@@ -61,6 +63,8 @@ module Base
 				file = PZKA_Vehicles_Normal_Grisworld_Trunk_nr,
 			}
 		}
-		template! = PZKA_Grisworld_RearWindow_nr,		
+		template! = PZKA_Grisworld_RearWindow_nr,
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Reg,
 	}
 }
