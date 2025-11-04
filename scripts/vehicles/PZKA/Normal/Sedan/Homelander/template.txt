@@ -1,17 +1,17 @@
 module Base
 {	
 	template vehicle PZKA_SedanV_Homelander {
-		template! = PZKA_Normal_Front_fill_Homelander,
+		template! = PZKA_Normal_FrontFill_Homelander,
 		template! = PZKA_SedanV_Rearfill_Homelander,
 		template! = PZKA_SedanV_Trunk_Homelander,
-		template! = PZKA_Normal_Front_Lights_Homelander,
+		template! = PZKA_Normal_FrontLights_Homelander,
 		template! = PZKA_SedanV_RearLights_Homelander,
 	}
 	template vehicle PZKA_SedanV_Homelander_nr {
-		template! = PZKA_Normal_Front_fill_Homelander_nr,
+		template! = PZKA_Normal_FrontFill_Homelander_nr,
 		template! = PZKA_SedanV_Rearfill_Homelander_nr,
 		template! = PZKA_SedanV_Trunk_Homelander_nr,
-		template! = PZKA_Normal_Front_Lights_Homelander,
+		template! = PZKA_Normal_FrontLights_Homelander,
 		template! = PZKA_SedanV_RearLights_Homelander,
 	}
 }

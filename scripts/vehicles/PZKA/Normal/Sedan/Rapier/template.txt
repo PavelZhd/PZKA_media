@@ -1,17 +1,17 @@
 module Base
 {	
 	template vehicle PZKA_SedanF_Rapier {
-		template! = PZKA_Normal_Front_fill_Rapier,
+		template! = PZKA_Normal_FrontFill_Rapier,
 		template! = PZKA_SedanF_Rearfill_Rapier,
 		template! = PZKA_SedanF_Trunk,
-		template! = PZKA_Normal_Front_Lights_Rapier,
+		template! = PZKA_Normal_FrontLights_Rapier,
 		template! = PZKA_SedanF_RearLights_Rapier,
 	}
 	template vehicle PZKA_SedanF_Rapier_nr {
-		template! = PZKA_Normal_Front_fill_Rapier_nr,
+		template! = PZKA_Normal_FrontFill_Rapier_nr,
 		template! = PZKA_SedanF_Rearfill_Rapier_nr,
 		template! = PZKA_SedanF_Trunk_nr,
-		template! = PZKA_Normal_Front_Lights_Rapier,
+		template! = PZKA_Normal_FrontLights_Rapier,
 		template! = PZKA_SedanF_RearLights_Rapier,
 	}
 }

@@ -1,30 +1,30 @@
 module Base
 {
-	model PZKA_Normal_Front_LightFL_Hellion
+	model PZKA_Normal_LightFL_Hellion
 	{
 		mesh = vehicles/Normal/pzka_Shared|Hellion_Light_FrontLeft_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
-	model PZKA_Normal_Front_LightFR_Hellion
+	model PZKA_Normal_LightFR_Hellion
 	{
 		mesh = vehicles/Normal/pzka_Shared|Hellion_Light_FrontRight_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
-	template vehicle PZKA_Normal_Front_Lights_Hellion {
+	template vehicle PZKA_Normal_FrontLights_Hellion {
 		part HeadlightLeft
 		{
 			model Default 
 			{
-				file = PZKA_Normal_Front_LightFL_Hellion,
+				file = PZKA_Normal_LightFL_Hellion,
 			}
 		}
 		part HeadlightRight
 		{
 			model Default 
 			{
-				file = PZKA_Normal_Front_LightFR_Hellion,
+				file = PZKA_Normal_LightFR_Hellion,
 			}
 		}
 	}

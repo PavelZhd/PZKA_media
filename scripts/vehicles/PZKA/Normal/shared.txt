@@ -1,18 +1,18 @@
 module Base
 {
-	model PZKA_Normal_Detective		
+	model PZKA_Vehicles_Normal_Detective		
 	{
 		mesh = vehicles/Normal/pzka_Shared|Detective,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
-	model PZKA_Normal_TaxiShort			
+	model PZKA_Vehicles_Normal_TaxiShort			
 	{
 		mesh = vehicles/Normal/pzka_Shared|Taxi_short,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
-	model PZKA_Normal_TaxiWagon		
+	model PZKA_Vehicles_Normal_TaxiWagon		
 	{
 		mesh = vehicles/Normal/pzka_Shared|Taxi_wagon,
 		shader = vehicle_norandom_multiuv_noreflect,
@@ -25,7 +25,7 @@ module Base
 		{
 			model Default
 			{
-				file = PZKA_Normal_Detective,
+				file = PZKA_Vehicles_Normal_Detective,
 			}
 		}
 	}
@@ -34,7 +34,7 @@ module Base
 		{
 			model Default
 			{
-				file = PZKA_Normal_TaxiShort,
+				file = PZKA_Vehicles_Normal_TaxiShort,
 			}
 		}
 	}
@@ -43,7 +43,7 @@ module Base
 		{
 			model Default
 			{
-				file = PZKA_Normal_TaxiWagon,
+				file = PZKA_Vehicles_Normal_TaxiWagon,
 			}
 		}
 	}

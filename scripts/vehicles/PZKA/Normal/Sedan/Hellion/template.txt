@@ -1,17 +1,17 @@
 module Base
 {	
 	template vehicle PZKA_SedanF_Hellion {
-		template! = PZKA_Normal_Front_fill_Hellion,
+		template! = PZKA_Normal_FrontFill_Hellion,
 		template! = PZKA_SedanF_Rearfill_Hellion,
 		template! = PZKA_SedanF_Trunk_Hellion,
-		template! = PZKA_Normal_Front_Lights_Hellion,
+		template! = PZKA_Normal_FrontLights_Hellion,
 		template! = PZKA_SedanF_RearLights_Hellion,
 	}
 	template vehicle PZKA_SedanF_Hellion_nr {
-		template! = PZKA_Normal_Front_fill_Hellion_nr,
+		template! = PZKA_Normal_FrontFill_Hellion_nr,
 		template! = PZKA_SedanF_Rearfill_Hellion_nr,
 		template! = PZKA_SedanF_Trunk_Hellion_nr,
-		template! = PZKA_Normal_Front_Lights_Hellion,
+		template! = PZKA_Normal_FrontLights_Hellion,
 		template! = PZKA_SedanF_RearLights_Hellion,
 	}
 }

@@ -17,7 +17,7 @@ module Base
 		boneWeight = HoodBone 1.0,
 	}
 
-	template vehicle PZKA_Normal_hood {
+	template vehicle PZKA_Normal_Hood {
 		part EngineDoor
 		{
 			model Default
@@ -25,8 +25,9 @@ module Base
 				file = PZKA_Vehicles_Normal_Hood,
 			}
 		}
+		template! = PZKA_EngineDoor,
 	}
-	template vehicle PZKA_Normal_hood_nr {
+	template vehicle PZKA_Normal_Hood_nr {
 		part EngineDoor
 		{
 			model Default
@@ -34,5 +35,6 @@ module Base
 				file = PZKA_Vehicles_Normal_Hood_nr,
 			}
 		}
+		template! = PZKA_EngineDoor,
 	}
 }

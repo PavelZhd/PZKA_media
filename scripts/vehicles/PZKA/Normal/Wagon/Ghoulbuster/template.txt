@@ -1,15 +1,15 @@
 module Base
 {	
 	template vehicle PZKA_Ghoulbuster {
-		template! = PZKA_Normal_Front_fill_Ghoulbuster,
+		template! = PZKA_Normal_FrontFill_Ghoulbuster,
 		template! = PZKA_Grisworld_Trunk,
-		template! = PZKA_Normal_Front_Lights_Ghoulbuster,
+		template! = PZKA_Normal_FrontLights_Ghoulbuster,
 		template! = PZKA_Ghoulbuster_RearLights,
 	}
 	template vehicle PZKA_Ghoulbuster_nr {
-		template! = PZKA_Normal_Front_fill_Ghoulbuster_nr,
+		template! = PZKA_Normal_FrontFill_Ghoulbuster_nr,
 		template! = PZKA_Ghoulbuster_Trunk_nr,
-		template! = PZKA_Normal_Front_Lights_Ghoulbuster,
+		template! = PZKA_Normal_FrontLights_Ghoulbuster,
 		template! = PZKA_Ghoulbuster_RearLights,
 	}
 }

@@ -36,39 +36,4 @@ module Base
 		template! = PZKA_Normal_Sedan_rear_seats,
 		template! = PZKA_Normal_SedanF_interior_trunk,
 	}
-
-	template vehicle PZKA_Normal_SedanV {
-		template! = PZKA_Normal_SedanV_Trunk,
-		template! = PZKA_Normal_SedanV_base,
-	}
-	template vehicle PZKA_Normal_SedanV_nr {
-		template! = PZKA_Normal_SedanV_Trunk_nr,
-		template! = PZKA_Normal_SedanV_base_nr,
-	}
-
-	template vehicle PZKA_Normal_SedanF {
-		template! = PZKA_Normal_SedanF_Trunk,
-		template! = PZKA_Normal_SedanF_base,
-	}
-	template vehicle PZKA_Normal_SedanF_nr {
-		template! = PZKA_Normal_SedanF_Trunk_nr,
-		template! = PZKA_Normal_SedanF_base_nr,
-	}
-	template vehicle PZKA_Normal_SedanF_Hellion {
-		template! = PZKA_Normal_SedanF_Trunk_hellion,
-		template! = PZKA_Normal_SedanF_base,
-	}
-	template vehicle PZKA_Normal_SedanF_Hellion_nr {
-		template! = PZKA_Normal_SedanF_Trunk_hellion_nr,
-		template! = PZKA_Normal_SedanF_base_nr,
-	}
-	template vehicle PZKA_Normal_SedanV_Homelander {
-		template! = PZKA_Normal_SedanV_Trunk_Homelander,
-		template! = PZKA_Normal_SedanV_base,
-	}
-	template vehicle PZKA_Normal_SedanV_Homelander_nr {
-		template! = PZKA_Normal_SedanV_Trunk_Homelander_nr,
-		template! = PZKA_Normal_SedanV_base_nr,
-	}
-
 }

@@ -1,12 +1,12 @@
 module Base
 {
-    model PZKA_Vehicles_Wagon_LightRL_Ghoulbuster
+    model PZKA_Vehicles_Wagon_Ghoulbuster_LightRL
 	{
 		mesh = vehicles/Normal/pzka_Wagon|Ghoulbuster_Light_RearLeft_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Wagon_LightRR_Ghoulbuster
+	model PZKA_Vehicles_Wagon_Ghoulbuster_LightRR
 	{
 		mesh = vehicles/Normal/pzka_Wagon|Ghoulbuster_Light_RearRight_obj,
 		shader = vehicle_multiuv_vva,
@@ -18,14 +18,14 @@ module Base
 		{
 			model Default 
 			{
-				file = PZKA_Vehicles_Wagon_LightRL_Ghoulbuster,
+				file = PZKA_Vehicles_Wagon_Ghoulbuster_LightRL,
 			}
 		}
 		part HeadlightRearRight
 		{
 			model Default 
 			{
-				file = PZKA_Vehicles_Wagon_LightRR_Ghoulbuster,
+				file = PZKA_Vehicles_Wagon_Ghoulbuster_LightRR,
 			}
 		}
 	}

@@ -1,37 +1,37 @@
 module Base
 {
-    model PZKA_Normal_Front_fill_Grisworld
+    model PZKA_Normal_FrontFill_Grisworld
 	{
 		mesh = vehicles/Normal/pzka_Wagon|Grisworld_Grill,
 		shader = vehicle_multiuv_noreflect,
 		scale = 0.01,
 	}
-	model PZKA_Normal_Front_fill_Grisworld_nr
+	model PZKA_Normal_FrontFill_Grisworld_nr
 	{
 		mesh = vehicles/Normal/pzka_Wagon|Grisworld_Grill,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
 
-    template vehicle PZKA_Normal_Front_fill_Grisworld
+    template vehicle PZKA_Normal_FrontFill_Grisworld
     {
         template! = PZKA_Frontfill,
         part Frontfill
 		{
             model Grisworld
 			{
-                file = PZKA_Normal_Front_fill_Grisworld,
+                file = PZKA_Normal_FrontFill_Grisworld,
             }
         }
     }    
-    template vehicle PZKA_Normal_Front_fill_Grisworld_nr
+    template vehicle PZKA_Normal_FrontFill_Grisworld_nr
     {
         template! = PZKA_Frontfill,
         part Frontfill
 		{
             model Grisworld
 			{
-                file = PZKA_Normal_Front_fill_Grisworld_nr,
+                file = PZKA_Normal_FrontFill_Grisworld_nr,
             }
         }
     }    

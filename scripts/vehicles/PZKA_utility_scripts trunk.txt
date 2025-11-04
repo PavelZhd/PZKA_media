@@ -1,0 +1,74 @@
+module Base
+{
+	template vehicle PZKA_TrunkDoor {
+		part TrunkDoor
+		{
+			anim Close
+			{
+				anim = Trunk_closing,
+			}
+
+			anim Open
+			{
+				anim = Trunk_closing,
+				reverse = TRUE,
+			}
+
+			anim Closed
+			{
+				anim = Trunk_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Trunk_closing,
+				animate = FALSE,
+			}
+		}
+	}	
+	
+	template vehicle PZKA_TrunkDoor_Slow {
+		part TrunkDoor
+		{
+			anim Close
+			{
+				rate = 0.625,
+			}
+
+			anim Open
+			{
+				rate = 0.5,
+			}
+		}
+	}
+	template vehicle PZKA_TrunkDoor_Reg {
+		part TrunkDoor
+		{
+			anim Close
+			{
+				rate = 1.25,
+			}
+
+			anim Open
+			{
+				rate = 1.0,
+			}
+		}
+	}
+	template vehicle PZKA_TrunkDoor_Fast {
+		part TrunkDoor
+		{
+			anim Close
+			{
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				rate = 2.0,
+			}
+		}
+	}
+}

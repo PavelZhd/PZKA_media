@@ -26,6 +26,8 @@ module Base
 				file = PZKA_Normal_SedanV_Trunk_Homelander,
 			}
 		}
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Fast,
 	}
 	template vehicle PZKA_SedanV_Trunk_Homelander_nr
 	{
@@ -36,5 +38,7 @@ module Base
 				file = PZKA_Normal_SedanV_Trunk_Homelander_nr,
 			}
 		}
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Fast,
 	}
 }

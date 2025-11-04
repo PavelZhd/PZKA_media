@@ -1,0 +1,74 @@
+module Base
+{
+	template vehicle PZKA_Hood {
+		part EngineDoor
+		{
+			anim Close
+			{
+				anim = Hood_closing,
+			}
+
+			anim Open
+			{
+				anim = Hood_closing,
+				reverse = TRUE,
+			}
+
+			anim Closed
+			{
+				anim = Hood_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Hood_closing,
+				animate = FALSE,
+			}
+		}	
+	}	
+	
+	template vehicle PZKA_Hood_Slow {
+		part EngineDoor
+		{
+			anim Close
+			{
+				rate = 0.625,
+			}
+
+			anim Open
+			{
+				rate = 0.5,
+			}
+		}
+	}
+	template vehicle PZKA_Hood_Reg {
+		part EngineDoor
+		{
+			anim Close
+			{
+				rate = 1.25,
+			}
+
+			anim Open
+			{
+				rate = 1.0,
+			}
+		}
+	}
+	template vehicle PZKA_Hood_Fast {
+		part EngineDoor
+		{
+			anim Close
+			{
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				rate = 2.0,
+			}
+		}
+	}
+}

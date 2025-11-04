@@ -1,17 +1,17 @@
 module Base
 {	
 	template vehicle PZKA_Wagon_Mayor {
-		template! = PZKA_Normal_Front_fill_Mayor,
+		template! = PZKA_Normal_FrontFill_Mayor,
 		template! = PZKA_Wagon_Rearfill_Mayor,
 		template! = PZKA_Wagon_Trunk_mayor,
-		template! = PZKA_Normal_Front_Lights_Mayor,
+		template! = PZKA_Normal_FrontLights_Mayor,
 		template! = PZKA_Wagon_RearLights_Mayor,
 	}
 	template vehicle PZKA_Wagon_Mayor_nr {
-		template! = PZKA_Normal_Front_fill_Mayor_nr,
+		template! = PZKA_Normal_FrontFill_Mayor_nr,
 		template! = PZKA_Wagon_Rearfill_Mayor_nr,
 		template! = PZKA_Wagon_Trunk_mayor_nr,
-		template! = PZKA_Normal_Front_Lights_Mayor,
+		template! = PZKA_Normal_FrontLights_Mayor,
 		template! = PZKA_Wagon_RearLights_Mayor,
 	}
 }

@@ -12,13 +12,13 @@ module Base
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
-	model PZKA_Normal_Wagon_Grisworld_nr
+	model PZKA_Grisworld_nr
 	{
 		mesh = vehicles/Normal/pzka_Wagon|Grisworld,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
-	model PZKA_Normal_Wagon_Ghoulbuster_nr
+	model PZKA_Ghoulbuster_nr
 	{
 		mesh = vehicles/Normal/pzka_Wagon|Ghoulbuster,
 		shader = vehicle_norandom_multiuv_noreflect,

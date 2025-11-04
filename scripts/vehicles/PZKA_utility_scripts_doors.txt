@@ -1,0 +1,428 @@
+module Base
+{
+	template vehicle PZKA_DoorFL {
+		part DoorFrontLeft
+		{
+			anim Close
+			{
+				anim = DoorFrontLeft_closing,
+			}
+
+			anim Open
+			{
+				anim = DoorFrontLeft_closing,
+				reverse = TRUE,
+			}
+
+			anim Closed
+			{
+				anim = DoorFrontLeft_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorFrontLeft_closing,
+				animate = FALSE,
+			}
+		}
+	}
+	template vehicle PZKA_DoorFL_Slow {
+		part DoorFrontLeft
+		{
+			anim Close
+			{
+				rate = 0.625,
+			}
+
+			anim Open
+			{
+				rate = 0.5,
+			}
+		}
+	}
+	template vehicle PZKA_DoorFL_Reg {
+		part DoorFrontLeft
+		{
+			anim Close
+			{
+				rate = 1.25,
+			}
+
+			anim Open
+			{
+				rate = 1.0,
+			}
+		}
+	}
+	template vehicle PZKA_DoorFL_Fast {
+		part DoorFrontLeft
+		{
+			anim Close
+			{
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				rate = 2.0,
+			}
+		}
+	}
+
+	template vehicle PZKA_DoorFR {
+		part DoorFrontRight
+		{
+			anim Close
+			{
+				anim = DoorFrontRight_closing,
+			}
+
+			anim Open
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+			}
+
+			anim Closed
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorFrontRight_closing,
+				animate = FALSE,
+			}
+		}
+	}
+	template vehicle PZKA_DoorFR_Slow {
+		part DoorFrontRight
+		{
+			anim Close
+			{
+				rate = 0.625,
+			}
+
+			anim Open
+			{
+				rate = 0.5,
+			}
+		}
+	}
+	template vehicle PZKA_DoorFR_Reg {
+		part DoorFrontRight
+		{
+			anim Close
+			{
+				rate = 1.25,
+			}
+
+			anim Open
+			{
+				rate = 1.0,
+			}
+		}
+	}
+	template vehicle PZKA_DoorFR_Fast {
+		part DoorFrontRight
+		{
+			anim Close
+			{
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				rate = 2.0,
+			}
+		}
+	}
+
+	template vehicle PZKA_DoorML {
+		part PZKA_DoorMiddleLeft
+		{
+			anim Close
+			{
+				anim = DoorRearLeft_closing,
+			}
+
+			anim Open
+			{
+				anim = DoorRearLeft_closing,
+				reverse = TRUE,
+			}
+
+			anim Closed
+			{
+				anim = DoorRearLeft_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorRearLeft_closing,
+				animate = FALSE,
+			}
+		}
+	}
+	template vehicle PZKA_DoorML_Slow {
+		part PZKA_DoorMiddleLeft
+		{
+			anim Close
+			{
+				rate = 0.625,
+			}
+
+			anim Open
+			{
+				rate = 0.5,
+			}
+		}
+	}
+	template vehicle PZKA_DoorML_Reg {
+		part PZKA_DoorMiddleLeft
+		{
+			anim Close
+			{
+				rate = 1.25,
+			}
+
+			anim Open
+			{
+				rate = 1.0,
+			}
+		}
+	}
+	template vehicle PZKA_DoorML_Fast {
+		part PZKA_DoorMiddleLeft
+		{
+			anim Close
+			{
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				rate = 2.0,
+			}
+		}
+	}
+
+	template vehicle PZKA_DoorMR {
+		part DoorMiddleRight
+		{
+			anim Close
+			{
+				anim = DoorRearRight_closing,
+			}
+
+			anim Open
+			{
+				anim = DoorRearRight_closing,
+				reverse = TRUE,
+			}
+
+			anim Closed
+			{
+				anim = DoorRearRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorRearRight_closing,
+				animate = FALSE,
+			}
+		}
+	}
+	template vehicle PZKA_DoorMR_Slow {
+		part DoorMiddleRight
+		{
+			anim Close
+			{
+				rate = 0.625,
+			}
+
+			anim Open
+			{
+				rate = 0.5,
+			}
+		}
+	}
+	template vehicle PZKA_DoorMR_Reg {
+		part DoorMiddleRight
+		{
+			anim Close
+			{
+				rate = 1.25,
+			}
+
+			anim Open
+			{
+				rate = 1.0,
+			}
+		}
+	}
+	template vehicle PZKA_DoorMR_Fast {
+		part DoorMiddleRight
+		{
+			anim Close
+			{
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				rate = 2.0,
+			}
+		}
+	}
+
+	template vehicle PZKA_DoorRL {
+		part DoorRearLeft
+		{
+			anim Close
+			{
+				anim = DoorRearLeft_closing,
+			}
+
+			anim Open
+			{
+				anim = DoorRearLeft_closing,
+				reverse = TRUE,
+			}
+
+			anim Closed
+			{
+				anim = DoorRearLeft_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorRearLeft_closing,
+				animate = FALSE,
+			}
+		}
+	}
+	template vehicle PZKA_DoorRL_Slow {
+		part DoorRearLeft
+		{
+			anim Close
+			{
+				rate = 0.625,
+			}
+
+			anim Open
+			{
+				rate = 0.5,
+			}
+		}
+	}
+	template vehicle PZKA_DoorRL_Reg {
+		part DoorRearLeft
+		{
+			anim Close
+			{
+				rate = 1.25,
+			}
+
+			anim Open
+			{
+				rate = 1.0,
+			}
+		}
+	}
+	template vehicle PZKA_DoorRL_Fast {
+		part DoorRearLeft
+		{
+			anim Close
+			{
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				rate = 2.0,
+			}
+		}
+	}
+	
+	template vehicle PZKA_DoorRR {
+		part DoorRearRight
+		{
+			anim Close
+			{
+				anim = DoorRearRight_closing,
+			}
+
+			anim Open
+			{
+				anim = DoorRearRight_closing,
+				reverse = TRUE,
+			}
+
+			anim Closed
+			{
+				anim = DoorRearRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorRearRight_closing,
+				animate = FALSE,
+			}
+		}
+	}
+	template vehicle PZKA_DoorRR_Slow {
+		part DoorRearRight
+		{
+			anim Close
+			{
+				rate = 0.625,
+			}
+
+			anim Open
+			{
+				rate = 0.5,
+			}
+		}
+	}
+	template vehicle PZKA_DoorRR_Reg {
+		part DoorRearRight
+		{
+			anim Close
+			{
+				rate = 1.25,
+			}
+
+			anim Open
+			{
+				rate = 1.0,
+			}
+		}
+	}
+	template vehicle PZKA_DoorRR_Fast {
+		part DoorRearRight
+		{
+			anim Close
+			{
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				rate = 2.0,
+			}
+		}
+	}
+}

@@ -106,6 +106,8 @@ module Base
 			}
 		}
 		template! = PZKA_Normal_Limo_RearDoorWindows,
+		template! = PZKA_DoorWindowRearLeft,
+		template! = PZKA_DoorWindowRearRight,
 	}
 	template vehicle PZKA_Normal_Limo_Reardoors_nr {
 		part DoorRearLeft
@@ -124,5 +126,7 @@ module Base
 			}
 		}
 		template! = PZKA_Normal_Limo_RearDoorWindows,
+		template! = PZKA_DoorWindowRearLeft,
+		template! = PZKA_DoorWindowRearRight,
 	}
 }

@@ -1,0 +1,74 @@
+module Base
+{
+	template vehicle PZKA_DoorRear {
+		part DoorRear
+		{
+			anim Close
+			{
+				anim = Trunk_closing,
+			}
+
+			anim Open
+			{
+				anim = Trunk_closing,
+				reverse = TRUE,
+			}
+
+			anim Closed
+			{
+				anim = Trunk_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Trunk_closing,
+				animate = FALSE,
+			}
+		}
+	}	
+	
+	template vehicle PZKA_DoorRear_Slow {
+		part DoorRear
+		{
+			anim Close
+			{
+				rate = 0.625,
+			}
+
+			anim Open
+			{
+				rate = 0.5,
+			}
+		}
+	}
+	template vehicle PZKA_DoorRear_Reg {
+		part DoorRear
+		{
+			anim Close
+			{
+				rate = 1.25,
+			}
+
+			anim Open
+			{
+				rate = 1.0,
+			}
+		}
+	}
+	template vehicle PZKA_DoorRear_Fast {
+		part DoorRear
+		{
+			anim Close
+			{
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				rate = 2.0,
+			}
+		}
+	}
+}

@@ -1,12 +1,12 @@
 module Base
 {
-    model PZKA_Vehicles_Normal_WagonF_Rearfill_TWD
+    model PZKA_Vehicles_Normal_Wagon_Rearfill_TWD
 	{
 		mesh = vehicles/Normal/pzka_Wagon|TWD_Wagon_RearFill,
 		shader = vehicle_multiuv_noreflect,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Normal_WagonF_Rearfill_TWD_nr
+	model PZKA_Vehicles_Normal_Wagon_Rearfill_TWD_nr
 	{
 		mesh = vehicles/Normal/pzka_Wagon|TWD_Wagon_RearFill,
 		shader = vehicle_norandom_multiuv_noreflect,
@@ -20,7 +20,7 @@ module Base
 		{
             model TWD
 			{
-                file = PZKA_Vehicles_Normal_WagonF_Rearfill_TWD,
+                file = PZKA_Vehicles_Normal_Wagon_Rearfill_TWD,
             }
         }
     }    
@@ -31,7 +31,7 @@ module Base
 		{
             model TWD
 			{
-                file = PZKA_Vehicles_Normal_WagonF_Rearfill_TWD_nr,
+                file = PZKA_Vehicles_Normal_Wagon_Rearfill_TWD_nr,
             }
         }
     }    

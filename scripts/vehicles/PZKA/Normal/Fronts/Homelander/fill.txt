@@ -1,37 +1,37 @@
 module Base
 {
-    model PZKA_Normal_Front_fill_Homelander
+    model PZKA_Normal_FrontFill_Homelander
 	{
 		mesh = vehicles/Normal/pzka_Shared|Homelander_Grill,
 		shader = vehicle_multiuv_noreflect,
 		scale = 0.01,
 	}
-	model PZKA_Normal_Front_fill_Homelander_nr
+	model PZKA_Normal_FrontFill_Homelander_nr
 	{
 		mesh = vehicles/Normal/pzka_Shared|Homelander_Grill,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
 
-    template vehicle PZKA_Normal_Front_fill_Homelander
+    template vehicle PZKA_Normal_FrontFill_Homelander
     {
         template! = PZKA_Frontfill,
         part Frontfill
 		{
             model Homelander
 			{
-                file = PZKA_Normal_Front_fill_Homelander,
+                file = PZKA_Normal_FrontFill_Homelander,
             }
         }
     }    
-    template vehicle PZKA_Normal_Front_fill_Homelander_nr
+    template vehicle PZKA_Normal_FrontFill_Homelander_nr
     {
         template! = PZKA_Frontfill,
         part Frontfill
 		{
             model Homelander
 			{
-                file = PZKA_Normal_Front_fill_Homelander_nr,
+                file = PZKA_Normal_FrontFill_Homelander_nr,
             }
         }
     }    

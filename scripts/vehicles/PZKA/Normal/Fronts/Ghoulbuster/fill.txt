@@ -1,37 +1,37 @@
 module Base
 {
-    model PZKA_Normal_Front_fill_Ghoulbuster
+    model PZKA_Normal_FrontFill_Ghoulbuster
 	{
 		mesh = vehicles/Normal/pzka_Wagon|Ghoulbuster_Grill,
 		shader = vehicle_multiuv_noreflect,
 		scale = 0.01,
 	}
-	model PZKA_Normal_Front_fill_Ghoulbuster_nr
+	model PZKA_Normal_FrontFill_Ghoulbuster_nr
 	{
 		mesh = vehicles/Normal/pzka_Wagon|Ghoulbuster_Grill,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
 
-    template vehicle PZKA_Normal_Front_fill_Ghoulbuster
+    template vehicle PZKA_Normal_FrontFill_Ghoulbuster
     {
         template! = PZKA_Frontfill,
         part Frontfill
 		{
             model Ghoulbuster
 			{
-                file = PZKA_Normal_Front_fill_Ghoulbuster,
+                file = PZKA_Normal_FrontFill_Ghoulbuster,
             }
         }
     }    
-    template vehicle PZKA_Normal_Front_fill_Ghoulbuster_nr
+    template vehicle PZKA_Normal_FrontFill_Ghoulbuster_nr
     {
         template! = PZKA_Frontfill,
         part Frontfill
 		{
             model Ghoulbuster
 			{
-                file = PZKA_Normal_Front_fill_Ghoulbuster_nr,
+                file = PZKA_Normal_FrontFill_Ghoulbuster_nr,
             }
         }
     }    
