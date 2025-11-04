@@ -1,0 +1,40 @@
+module Base
+{	
+	model PZKA_Normal_SedanV_Trunk_Homelander
+	{
+		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_Homelander_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Normal_SedanV_Trunk_Homelander_nr
+	{
+		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_Homelander_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+
+	template vehicle PZKA_SedanV_Trunk_Homelander
+	{
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Normal_SedanV_Trunk_Homelander,
+			}
+		}
+	}
+	template vehicle PZKA_SedanV_Trunk_Homelander_nr
+	{
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Normal_SedanV_Trunk_Homelander_nr,
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+module Base
+{
+	template vehicle PZKA_Hearse_nr {
+		template! = PZKA_Hearse_Trunk_nr,
+		template! = PZKA_Normal_front_nr,
+		template! = PZKA_Hearse_RearDoors_nr,
+		template! = PZKA_Normal_shared,
+		template! = PZKA_Hearse_RearSeats,
+		template! = PZKA_Normal_Front_fill_Nyala_nr,
+		template! = PZKA_Normal_Front_Lights_Nyala,		
+		template! = PZKA_Hearse_RearLights
+	}	
+}

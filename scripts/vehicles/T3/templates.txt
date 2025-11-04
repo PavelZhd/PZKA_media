@@ -1,0 +1,183 @@
+module Base
+{
+	template vehicle PZKA__T3_shared {
+
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+                file = PZKA_Vehicles_T3_WindowFrontLeft,
+            }
+        }
+		part WindowFrontRight
+    	{	
+            parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_T3_WindowFrontRight,
+            }
+	    }
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_T3_Windshield,
+			}			
+		}
+
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_T3_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_T3_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_T3_SeatFR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.20761 0.022249 1.14082,
+			}
+		}
+
+		part Inreior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_T3_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle PZKA__T3_seat {
+		template! = PZKA__T3_shared,
+		part WindshieldRear
+		{
+			model Static
+			{
+				file = PZKA_Vehicles_T3_RearWindowStatic,
+			}
+		}
+	}
+
+	template vehicle PZKA__T3_Hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_T3_Hood,
+			}
+		}
+		part PZKA_fill
+        {
+            model T3_1 {
+                file = PZKA_Vehicles_T3_Front1,
+            }
+            model T3_2 {
+                file = PZKA_Vehicles_T3_Front2,
+            }
+
+            category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = false,
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+            	init = Vehicles.Init.AdjustLightGeometry,
+	    	}
+        }
+	}
+
+	template vehicle PZKA__T3_RearWindows {
+		part WindowRearLeft
+        {	
+        	model Default
+            {
+        		file = PZKA_Vehicles_T3_WindowRearLeft,
+    		}
+		}
+		part WindowRearRight
+        {	
+    		parent = DoorRearRight,
+			model Default
+    		{
+        		file = PZKA_Vehicles_T3_WindowRearRight,
+    		}
+    	}
+	}
+
+	template vehicle PZKA__T3_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_T3_Trunk,
+			}
+		}
+	}
+
+	template vehicle PZKA__T3_2Doors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_T3_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_T3_DoorFrontRight,
+			}
+		}
+	}
+
+	template vehicle PZKA__T3_3DoorsR {
+		template! = PZKA__T3_2Doors,		
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_T3_DoorRearRight,
+			}
+		}
+		template!= PZKA__T3_RearWindows,
+	}
+
+	template vehicle PZKA_T3 {
+		template! = PZKA__T3_Trunk,
+		template! = PZKA__T3_3DoorsR,
+		template! = PZKA__T3_Hood,
+		template! = PZKA__T3_seat,
+	}
+}

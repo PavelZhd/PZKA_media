@@ -1,0 +1,15 @@
+module Base
+{	
+	template vehicle PZKA_Wagon_Grisworld {
+		template! = PZKA_Normal_Front_fill_Grisworld,
+		template! = PZKA_Grisworld_Trunk,
+		template! = PZKA_Normal_Front_Lights_Grisworld,
+		template! = PZKA_Grisworld_RearLights,
+	}
+	template vehicle PZKA_Wagon_Grisworld_nr {
+		template! = PZKA_Normal_Front_fill_Grisworld_nr,
+		template! = PZKA_Grisworld_Trunk_nr,
+		template! = PZKA_Normal_Front_Lights_Grisworld,
+		template! = PZKA_Grisworld_RearLights,
+	}
+}

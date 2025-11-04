@@ -1,0 +1,35 @@
+module Base
+{
+	model PZKA_Normal_Wagon
+	{
+		mesh = vehicles/Normal/pzka_Wagon|Wagon,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+	}
+	model PZKA_Normal_Wagon_nr
+	{
+		mesh = vehicles/Normal/pzka_Wagon|Wagon,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+	model PZKA_Normal_Wagon_Grisworld_nr
+	{
+		mesh = vehicles/Normal/pzka_Wagon|Grisworld,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+	model PZKA_Normal_Wagon_Ghoulbuster_nr
+	{
+		mesh = vehicles/Normal/pzka_Wagon|Ghoulbuster,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+	
+
+
+	template vehicle PZKA_Normal_Wagon_shared_base 
+	{
+		template! = PZKA_Normal_Sedan_textured_seats,
+		template! = PZKA_Normal_shared,
+	}
+}

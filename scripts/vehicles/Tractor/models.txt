@@ -1,0 +1,112 @@
+module Base
+{
+	model PZKA_Vehicles_Tractor_1_nr_a
+	{
+		mesh = vehicles/pzka_Tractor|Tractor,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Tractor_2_nr_a
+	{
+		mesh = vehicles/pzka_Tractor|Tractor_2,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Tractor_3_nr_a
+	{
+		mesh = vehicles/pzka_Tractor|Tractor_3,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Tractor_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Tractor|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Tractor_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Tractor|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+
+	model PZKA_Vehicles_Tractor_WindowRearLeft
+	{
+		mesh = vehicles/pzka_Tractor|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,		
+	}
+	model PZKA_Vehicles_Tractor_WindowRearRight
+	{
+		mesh = vehicles/pzka_Tractor|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,		
+	}
+	
+	model PZKA_Vehicles_Tractor_Windshield
+	{
+		mesh = vehicles/pzka_Tractor|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Tractor_RearWindow
+	{
+		mesh = vehicles/pzka_Tractor|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Tractor_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Tractor|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Tractor_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Tractor|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Tractor_Hood_1_nr
+	{
+		mesh = vehicles/pzka_Tractor|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Hood1Bone 1.0,
+		boneWeight = Hood2Bone 1.0,
+		boneWeight = Hood3Bone 1.0,
+		boneWeight = Hood4Bone 1.0,
+	}
+	model PZKA_Vehicles_Tractor_Hood_2_nr
+	{
+		mesh = vehicles/pzka_Tractor|Hood_2_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Hood_3Bone 1.0,
+	}
+	model PZKA_Vehicles_Tractor_Hood_3_nr
+	{
+		mesh = vehicles/pzka_Tractor|Hood_3_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Hood_3Bone 1.0,
+	}
+}

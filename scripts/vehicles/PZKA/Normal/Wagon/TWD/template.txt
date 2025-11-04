@@ -1,0 +1,17 @@
+module Base
+{	
+	template vehicle PZKA_Wagon_TWD {
+		template! = PZKA_Normal_Front_fill_TWD,
+		template! = PZKA_Wagon_Rearfill_TWD,
+		template! = PZKA_Wagon_Trunk,
+		template! = PZKA_Normal_Front_Lights_TWD,
+		template! = PZKA_Wagon_RearLights_TWD,
+	}
+	template vehicle PZKA_Wagon_TWD_nr {
+		template! = PZKA_Normal_Front_fill_TWD_nr,
+		template! = PZKA_Wagon_Rearfill_TWD_nr,
+		template! = PZKA_SedanF_Trunk_nr,
+		template! = PZKA_Normal_Front_Lights_TWD,
+		template! = PZKA_Wagon_RearLights_TWD,
+	}
+}

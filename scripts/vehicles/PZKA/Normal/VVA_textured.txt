@@ -1,0 +1,34 @@
+module Base
+{	
+	model VVA_Vehicles_Normal_SeatFL
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_SeatFR
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle PZKA_Normal_textured_seats_front {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_SeatFR,
+			}
+		}
+	}
+}

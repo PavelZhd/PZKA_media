@@ -1,0 +1,77 @@
+module Base
+{
+	model PZKA_Normal_SedanF_Trunk_Cerise
+	{
+		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_Cerise_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkFlatSedanBone 1.0,
+	}
+	model PZKA_Normal_SedanF_Trunk_Cerise_nr
+	{
+		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_Cerise_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkFlatSedanBone 1.0,
+	}
+	model PZKA_Normal_SedanV_Trunk_TWD
+	{
+		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_TWD_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Normal_SedanV_Trunk_TWD_nr
+	{
+		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_TWD_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	
+	template vehicle PZKA_SedanF_Trunk
+	{
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Normal_SedanF_Trunk_Cerise,
+			}
+		}
+	}
+	template vehicle PZKA_SedanF_Trunk_nr
+	{
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Normal_SedanF_Trunk_Cerise_nr,
+			}
+		}
+	}
+	
+	template vehicle PZKA_SedanV_Trunk
+	{
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Normal_SedanV_Trunk_TWD,
+			}
+		}
+	}
+	template vehicle PZKA_SedanV_Trunk_nr
+	{
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Normal_SedanV_Trunk_TWD_nr,
+			}
+		}
+	}
+}

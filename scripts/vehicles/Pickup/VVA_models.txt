@@ -1,0 +1,132 @@
+module Base
+{
+	model VVA_Vehicles_PickUpTruck_a
+	{
+		mesh = vehicles/VVA_PickUpVan|Vehicles_PickUpTruck,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_PickUpTruck_NoRandom_a
+	{
+		mesh = vehicles/VVA_PickUpVan|Vehicles_PickUpTruck,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_PickUp_Lightbar
+	{
+		mesh = vehicles/VVA_PickUpVan|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+
+	model VVA_Vehicles_PickUp_DoorFrontLeft
+	{
+		mesh = vehicles/VVA_PickUpVan|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_PickUp_DoorFrontRight
+	{
+		mesh = vehicles/VVA_PickUpVan|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_PickUp_WindowFrontLeft
+	{
+		mesh = vehicles/VVA_PickUpVan|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model VVA_Vehicles_PickUp_WindowFrontRight
+	{
+		mesh = vehicles/VVA_PickUpVan|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	
+	
+	model VVA_Vehicles_PickUp_Hood
+	{
+		mesh = vehicles/VVA_PickUpVan|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = HoodBone 1.0,
+	}
+	model VVA_Vehicles_PickUpTruck_Windshield
+	{
+		mesh = vehicles/VVA_PickUpVan|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_PickUpTruck_RearWindow
+	{
+		mesh = vehicles/VVA_PickUpVan|RearWindow_truck_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_PickUpTruck_LightFL
+	{
+		mesh = vehicles/VVA_PickUpVan|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_PickUpTruck_LightFR
+	{
+		mesh = vehicles/VVA_PickUpVan|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_PickUpTruck_LightRL
+	{
+		mesh = vehicles/VVA_PickUpVan|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_PickUpTruck_LightRR
+	{
+		mesh = vehicles/VVA_PickUpVan|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	model VVA_Vehicles_PickUp_DoorFrontLeft_nr
+	{
+		mesh = vehicles/VVA_PickUpVan|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_PickUp_DoorFrontRight_nr
+	{
+		mesh = vehicles/VVA_PickUpVan|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_PickUp_Hood_nr
+	{
+		mesh = vehicles/VVA_PickUpVan|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = HoodBone 1.0,
+	}
+}

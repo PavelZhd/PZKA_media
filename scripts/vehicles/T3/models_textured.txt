@@ -1,0 +1,24 @@
+module Base
+{
+	model PZKA_Vehicles_T3_internals
+	{
+		mesh = vehicles/pzka_T3|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkMinivanT3-2shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_T3_SeatFL
+	{
+		mesh = vehicles/pzka_T3|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkMinivanT3-2shell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_T3_SeatFR
+	{
+		mesh = vehicles/pzka_T3|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkMinivanT3-2shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

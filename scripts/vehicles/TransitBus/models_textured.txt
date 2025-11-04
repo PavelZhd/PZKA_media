@@ -1,0 +1,52 @@
+module Base
+{
+	model PZKA_Vehicles_TransitBus_internals
+	{
+		mesh = vehicles/pzka_TransitBus|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_TransitBus_SeatFL
+	{
+		mesh = vehicles/pzka_TransitBus|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_TransitBus_SeatFR
+	{
+		mesh = vehicles/pzka_TransitBus|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_TransitBus_SeatML
+	{
+		mesh = vehicles/pzka_TransitBus|Seat_MiddleLeft_obj,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_TransitBus_SeatMR
+	{
+		mesh = vehicles/pzka_TransitBus|Seat_MiddleRight_obj,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_TransitBus_SeatRL
+	{
+		mesh = vehicles/pzka_TransitBus|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_TransitBus_SeatRR
+	{
+		mesh = vehicles/pzka_TransitBus|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

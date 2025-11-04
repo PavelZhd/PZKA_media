@@ -1,0 +1,17 @@
+module Base
+{	
+	template vehicle PZKA_SedanV_TWD {
+		template! = PZKA_Normal_Front_fill_TWD,
+		template! = PZKA_SedanV_Rearfill_TWD,
+		template! = PZKA_SedanV_Trunk,
+		template! = PZKA_Normal_Front_Lights_TWD,
+		template! = PZKA_SedanV_RearLights_TWD,
+	}
+	template vehicle PZKA_SedanV_TWD_nr {
+		template! = PZKA_Normal_Front_fill_TWD_nr,
+		template! = PZKA_SedanV_Rearfill_TWD_nr,
+		template! = PZKA_SedanV_Trunk_nr,
+		template! = PZKA_Normal_Front_Lights_TWD,
+		template! = PZKA_SedanV_RearLights_TWD,
+	}
+}

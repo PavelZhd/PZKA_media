@@ -1,0 +1,25 @@
+module Base
+{
+	
+	template vehicle PZKA_Wagon_Reardoors {
+		template! = PZKA_Normal_Wagon_doorRL,
+		template! = PZKA_Normal_Wagon_doorRR,
+	}
+	template vehicle PZKA_Wagon_Reardoors_nr {
+		template! = PZKA_Normal_Wagon_doorRL_nr,
+		template! = PZKA_Normal_Wagon_doorRR_nr,
+	}
+
+	template vehicle PZKA_Normal_Wagon {
+		template! = PZKA_Normal_front,		
+		template! = PZKA_Wagon_Reardoors,
+		template! = PZKA_Normal_shared,
+		template! = PZKA_Normal_Sedan_rear_seats,
+	}
+	template vehicle PZKA_Normal_Wagon_nr {
+		template! = PZKA_Normal_front_nr,		
+		template! = PZKA_Wagon_Reardoors_nr,
+		template! = PZKA_Normal_shared,
+		template! = PZKA_Normal_Sedan_rear_seats,
+	}
+}

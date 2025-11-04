@@ -1,0 +1,27 @@
+module Base
+{
+	model VVA_Vehicles_SportsCar_internals
+	{
+		mesh = vehicles/VVA_SportCar|Vehicles_Interior,
+		
+		texture = Vehicles/vehicle_sportscarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_SportsCar_SeatFL
+	{
+		mesh = vehicles/VVA_SportCar|Seat_FrontLeft_obj,
+		
+		texture =  Vehicles/vehicle_sportscarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_SportsCar_SeatFR
+	{
+		mesh = vehicles/VVA_SportCar|Seat_FrontRight_obj,
+		
+		texture =  Vehicles/vehicle_sportscarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

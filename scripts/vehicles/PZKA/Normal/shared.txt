@@ -1,0 +1,50 @@
+module Base
+{
+	model PZKA_Normal_Detective		
+	{
+		mesh = vehicles/Normal/pzka_Shared|Detective,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+	model PZKA_Normal_TaxiShort			
+	{
+		mesh = vehicles/Normal/pzka_Shared|Taxi_short,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+	model PZKA_Normal_TaxiWagon		
+	{
+		mesh = vehicles/Normal/pzka_Shared|Taxi_wagon,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+
+	
+	template vehicle PZKA_Normal_detective {
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = PZKA_Normal_Detective,
+			}
+		}
+	}
+	template vehicle PZKA_Normal_TaxiSignShort {
+		part ATA2RoofTaxiSign
+		{
+			model Default
+			{
+				file = PZKA_Normal_TaxiShort,
+			}
+		}
+	}
+	template vehicle PZKA_Normal_TaxiSignWagon {
+		part ATA2RoofTaxiSign
+		{
+			model Default
+			{
+				file = PZKA_Normal_TaxiWagon,
+			}
+		}
+	}
+}

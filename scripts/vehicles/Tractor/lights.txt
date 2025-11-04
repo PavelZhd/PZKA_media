@@ -1,0 +1,159 @@
+module Base
+{
+	model PZKA_Vehicles_Tractor_LightFL
+	{
+		mesh = vehicles/pzka_Tractor|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Tractor_LightFR
+	{
+		mesh = vehicles/pzka_Tractor|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Tractor_LightFL_1
+	{
+		mesh = vehicles/pzka_Tractor|Light_FrontLeft_1_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Tractor_LightFR_1
+	{
+		mesh = vehicles/pzka_Tractor|Light_FrontRight_1_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Tractor_LightFL_2
+	{
+		mesh = vehicles/pzka_Tractor|Light_FrontLeft_2_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Tractor_LightFR_2
+	{
+		mesh = vehicles/pzka_Tractor|Light_FrontRight_2_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Tractor_LightFL_3
+	{
+		mesh = vehicles/pzka_Tractor|Light_FrontLeft_3_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Tractor_LightFR_3
+	{
+		mesh = vehicles/pzka_Tractor|Light_FrontRight_3_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Tractor_LightRL
+	{
+		mesh = vehicles/pzka_Tractor|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Tractor_LightRR
+	{
+		mesh = vehicles/pzka_Tractor|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle pzka_Tractor_Light_shared {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Tractor_LightFL,
+			}
+			area = Headlights,
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Tractor_LightFR,
+			}
+			area = Headlights,
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Tractor_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Tractor_LightRR,
+			}
+		}
+	}
+	template vehicle pzka_Tractor_Light_1 {
+		template! = pzka_Tractor_Light_shared,
+		part HeadlightLeft 
+		{
+			model Front
+			{
+				file = PZKA_Vehicles_Tractor_LightFL_1,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Front
+			{
+				file = PZKA_Vehicles_Tractor_LightFR_1,
+			}
+		}
+	}
+	template vehicle pzka_Tractor_Light_2 {
+		template! = pzka_Tractor_Light_shared,
+		part HeadlightLeft 
+		{
+			model Front
+			{
+				file = PZKA_Vehicles_Tractor_LightFL_2,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Front
+			{
+				file = PZKA_Vehicles_Tractor_LightFR_2,
+			}
+		}
+	}
+	template vehicle pzka_Tractor_Light_3 {
+		template! = pzka_Tractor_Light_shared,
+		part HeadlightLeft 
+		{
+			model Front
+			{
+				file = PZKA_Vehicles_Tractor_LightFL_3,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Front
+			{
+				file = PZKA_Vehicles_Tractor_LightFR_3,
+			}
+		}
+	}	
+}

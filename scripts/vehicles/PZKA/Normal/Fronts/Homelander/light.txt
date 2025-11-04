@@ -1,0 +1,31 @@
+module Base
+{
+	model PZKA_Normal_Front_LightFL_Homelander
+	{
+		mesh = vehicles/Normal/pzka_Shared|Homelander_Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Normal_Front_LightFR_Homelander
+	{
+		mesh = vehicles/Normal/pzka_Shared|Homelander_Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Normal_Front_Lights_Homelander {
+		part HeadlightLeft
+		{
+			model Default 
+			{
+				file = PZKA_Normal_Front_LightFL_Homelander,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default 
+			{
+				file = PZKA_Normal_Front_LightFR_Homelander,
+			}
+		}
+	}
+}

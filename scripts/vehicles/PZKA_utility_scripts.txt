@@ -1717,7 +1717,6 @@ module Base
 		}
 	}
 	template vehicle PZKA_RearDoorVersion {
-		template! = PZKA_RearDoorShared,
 		part DoorRear
 		{
 			anim Close
@@ -1732,7 +1731,6 @@ module Base
 		}
 	}
 	template vehicle PZKA_RearDoorVersionMed {
-		template! = PZKA_RearDoorShared,
 		part DoorRear
 		{
 			anim Close
@@ -1747,7 +1745,6 @@ module Base
 		}
 	}
 	template vehicle PZKA_RearDoorVersionSlow {
-		template! = PZKA_RearDoorShared,
 		part DoorRear
 		{
 			anim Close
@@ -1941,6 +1938,19 @@ module Base
 			}
 		}
 	}
+	template vehicle PZKA_Interior {
+		part Interior
+		{
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+	    	}
+		}
+	}
 	template vehicle PZKA_lightbar {
 		part ATA2RoofLightbar
 		{
@@ -1955,4 +1965,42 @@ module Base
 	    	}
 		}
 	}
+	template vehicle PZKA_taxi {
+		part ATA2RoofTaxiSign
+		{
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+	template vehicle PZKA_Frontfill {
+        part Frontfill
+		{
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+	    	}
+		}
+    }
+    template vehicle PZKA_Rearfill {
+        part Rearfill
+		{
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+	    	}
+		}
+    }
 }

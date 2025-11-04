@@ -1,0 +1,175 @@
+module Base
+{
+	template vehicle PZKA_ChevTow_shared {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = VVA_Vehicles_PickUp_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = VVA_Vehicles_PickUp_WindowFrontRight,
+            }
+	    }		
+		
+		part Windshield
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUpTruck_Windshield,
+			}			
+		}
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUpTruck_RearWindow,
+			}
+		}
+
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUpTruck_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUpTruck_SeatFR,
+			}
+		}
+
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.167113 0.00465 0.900133,
+			}
+		}
+
+		part Interior 
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_PickUpTruck_internals,
+			}			
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+
+	template vehicle PZKA_Pickup {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUp_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUp_DoorFrontRight,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUp_Hood,
+			}
+		}
+		template! = PZKA_ChevTow_shared,
+	}
+
+	template vehicle PZKA_Pickup_nr {
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUp_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUp_DoorFrontRight_nr,
+			}
+		}
+
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUp_Hood_nr,
+			}
+		}
+		template! = PZKA_ChevTow_shared,
+	}
+	
+	template vehicle PZKA_ChevTow {
+		template! = PZKA_Pickup,
+		template! = PZKA_lightbar,
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUp_Lightbar,
+			}
+		}
+	}
+	template vehicle PZKA_ChevTow_nr {
+		template! = PZKA_Pickup_nr,
+		template! = PZKA_lightbar,
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUp_Lightbar,
+			}
+		}
+	}
+	template vehicle PZKA_Pickup_Woodboard {
+		template! = PZKA_Pickup,
+		part Interior
+		{
+			model Boards
+			{
+				file = PZKA_Vehicles_Pickup_WoodBoards,
+			}
+		}
+	}
+	template vehicle PZKA_Pickup_Woodboard_nr {
+		template! = PZKA_Pickup_nr,
+		part Interior
+		{
+			model Boards
+			{
+				file = PZKA_Vehicles_Pickup_WoodBoards,
+			}
+		}
+	}
+	
+}
