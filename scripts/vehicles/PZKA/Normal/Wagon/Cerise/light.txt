@@ -14,7 +14,7 @@ module Base
 	}
 
 	template vehicle PZKA_Wagon_RearLights_Cerise {
-		template! = PZKA_Normal_Front_Lights_Cerise,
+		template! = PZKA_Normal_FrontLights_Cerise,
 		part HeadlightRearLeft
 		{
 			model Default 

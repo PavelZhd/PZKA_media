@@ -25,7 +25,7 @@ module Base
 		boneWeight = FrontRightDoorBone 1.0,
 	}
 
-	template vehicle PZKA_Normal_windowFR {
+	template vehicle PZKA_Normal_WindowFR {
 		part WindowFrontRight
         {	
             parent = DoorFrontRight,
@@ -43,7 +43,7 @@ module Base
 				file = VVA_Vehicles_Normal_DoorFrontRight,
 			}
 		}
-		template! = PZKA_Normal_windowFR,
+		template! = PZKA_Normal_WindowFR,
 	}
 	template vehicle PZKA_Normal_doorFR_nr {
 		part DoorFrontRight
@@ -53,7 +53,7 @@ module Base
 				file = VVA_Vehicles_Normal_DoorFrontRight_nr,
 			}
 		}
-		template! = PZKA_Normal_windowFR,
+		template! = PZKA_Normal_WindowFR,
 	}
 
 }

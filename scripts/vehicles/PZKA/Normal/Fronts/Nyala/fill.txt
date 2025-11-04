@@ -1,37 +1,37 @@
 module Base
 {
-    model PZKA_Normal_Front_fill_Nyala
+    model PZKA_Normal_FrontFill_Nyala
 	{
 		mesh = vehicles/Normal/pzka_Shared|Nyala_Grill,
 		shader = vehicle_multiuv_noreflect,
 		scale = 0.01,
 	}
-	model PZKA_Normal_Front_fill_Nyala_nr
+	model PZKA_Normal_FrontFill_Nyala_nr
 	{
 		mesh = vehicles/Normal/pzka_Shared|Nyala_Grill,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
 
-    template vehicle PZKA_Normal_Front_fill_Nyala
+    template vehicle PZKA_Normal_FrontFill_Nyala
     {
         template! = PZKA_Frontfill,
         part Frontfill
 		{
             model Nyala
 			{
-                file = PZKA_Normal_Front_fill_Nyala,
+                file = PZKA_Normal_FrontFill_Nyala,
             }
         }
     }    
-    template vehicle PZKA_Normal_Front_fill_Nyala_nr
+    template vehicle PZKA_Normal_FrontFill_Nyala_nr
     {
         template! = PZKA_Frontfill,
         part Frontfill
 		{
             model Nyala
 			{
-                file = PZKA_Normal_Front_fill_Nyala_nr,
+                file = PZKA_Normal_FrontFill_Nyala_nr,
             }
         }
     }    

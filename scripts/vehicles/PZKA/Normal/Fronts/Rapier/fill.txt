@@ -1,37 +1,37 @@
 module Base
 {
-    model PZKA_Normal_Front_fill_Rapier
+    model PZKA_Normal_FrontFill_Rapier
 	{
 		mesh = vehicles/Normal/pzka_Shared|Rapier_Grill,
 		shader = vehicle_multiuv_noreflect,
 		scale = 0.01,
 	}
-	model PZKA_Normal_Front_fill_Rapier_nr
+	model PZKA_Normal_FrontFill_Rapier_nr
 	{
 		mesh = vehicles/Normal/pzka_Shared|Rapier_Grill,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
 
-    template vehicle PZKA_Normal_Front_fill_Rapier
+    template vehicle PZKA_Normal_FrontFill_Rapier
     {
         template! = PZKA_Frontfill,
         part Frontfill
 		{
             model Rapier
 			{
-                file = PZKA_Normal_Front_fill_Rapier,
+                file = PZKA_Normal_FrontFill_Rapier,
             }
         }
     }    
-    template vehicle PZKA_Normal_Front_fill_Rapier_nr
+    template vehicle PZKA_Normal_FrontFill_Rapier_nr
     {
         template! = PZKA_Frontfill,
         part Frontfill
 		{
             model Rapier
 			{
-                file = PZKA_Normal_Front_fill_Rapier_nr,
+                file = PZKA_Normal_FrontFill_Rapier_nr,
             }
         }
     }    

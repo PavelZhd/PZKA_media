@@ -1,17 +1,17 @@
 module Base
 {	
 	template vehicle PZKA_Wagon_Cerise {
-		template! = PZKA_Normal_Front_fill_Cerise,
+		template! = PZKA_Normal_FrontFill_Cerise,
 		template! = PZKA_Wagon_Rearfill_Cerise,
 		template! = PZKA_Wagon_Trunk,
-		template! = PZKA_Normal_Front_Lights_Cerise,
+		template! = PZKA_Normal_FrontLights_Cerise,
 		template! = PZKA_Wagon_RearLights_Cerise,
 	}
 	template vehicle PZKA_Wagon_Cerise_nr {
-		template! = PZKA_Normal_Front_fill_Cerise_nr,
+		template! = PZKA_Normal_FrontFill_Cerise_nr,
 		template! = PZKA_Wagon_Rearfill_Cerise_nr,
-		template! = PZKA_SedanF_Trunk_nr,
-		template! = PZKA_Normal_Front_Lights_Cerise,
+		template! = PZKA_Wagon_Trunk_nr,
+		template! = PZKA_Normal_FrontLights_Cerise,
 		template! = PZKA_Wagon_RearLights_Cerise,
 	}
 }

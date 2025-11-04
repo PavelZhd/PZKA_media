@@ -136,8 +136,8 @@ PZKA.CopyTemplateToVehicle("pzkDashMayorStationWagon","PZKA_Normal_Wagon",{"PZKA
 PZKA.CopyTemplateToVehicle("pzkTriumphTWDStationWagon","PZKA_Normal_Wagon",{"PZKA_Wagon_TWD"})
 PZKA.CopyTemplateToVehicle("pzkTriumphTWDStationWagonTaxi","PZKA_Normal_Wagon_nr",{"PZKA_Wagon_TWD", "pzka_sle_taxi","PZKA_Normal_TaxiSignWagon"})
 
-PZKA.ApplyTemplateToVehicle("pzkTriumphTWDStationWagonGriswold","PZKA_Normal_Wagon_Grisworld_nr",{"4DoorsRW","pzka_TrunkDoor","PZKA_Normal_Wagon_nr","PZKA_Wagon_Grisworld_nr"})
-PZKA.ApplyTemplateToVehicle("pzkHearseGhoulbusters","PZKA_Normal_Wagon_Ghoulbuster_nr",{"4DoorsRW","pzka_TrunkDoor","PZKA_Normal_Wagon_nr","PZKA_Ghoulbuster_nr"})
+PZKA.ApplyTemplateToVehicle("pzkTriumphTWDStationWagonGriswold","PZKA_Grisworld_nr",{"4DoorsRW","pzka_TrunkDoor","PZKA_Normal_Wagon_nr","PZKA_Wagon_Grisworld_nr"})
+PZKA.ApplyTemplateToVehicle("pzkHearseGhoulbusters","PZKA_Ghoulbuster_nr",{"4DoorsRW","pzka_TrunkDoor","PZKA_Normal_Wagon_nr","PZKA_Ghoulbuster_nr"})
 
 
 

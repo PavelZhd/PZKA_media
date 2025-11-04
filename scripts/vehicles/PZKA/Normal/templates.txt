@@ -2,7 +2,7 @@ module Base
 {
 	template vehicle PZKA_Normal_shared {
 		template! = PZKA_Normal_Windshield,
-		template! = PZKA_Normal_textured_seats_front,
+		template! = PZKA_Normal_FrontSeats,
 		part Battery 
 		{
 			model Default 
@@ -12,18 +12,18 @@ module Base
 			}
 		}
 		template! = PZKA_Interior,
-		template! = PZKA_Normal_textured_internals_base,
+		template! = PZKA_Normal_Interior,
 	}
 
 	template vehicle PZKA_Normal_front {
-		template! = PZKA_Normal_doorFL,
-		template! = PZKA_Normal_doorFR,
-		template! = PZKA_Normal_hood,
+		template! = PZKA_Normal_DoorFL,
+		template! = PZKA_Normal_DoorFR,
+		template! = PZKA_Normal_Hood,
 	}
 	template vehicle PZKA_Normal_front_nr {
-		template! = PZKA_Normal_doorFL_nr,
-		template! = PZKA_Normal_doorFR_nr,
-		template! = PZKA_Normal_hood_nr,
+		template! = PZKA_Normal_DoorFL_nr,
+		template! = PZKA_Normal_DoorFR_nr,
+		template! = PZKA_Normal_Hood_nr,
 	}
     
     

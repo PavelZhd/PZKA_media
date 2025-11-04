@@ -1,8 +1,8 @@
---local VVAmodule = require "VVA_core"
+local VVAmodule = require "VVA_core"
 
---if not VVAmodule then
-if true then -- Temp for testing without version mismatch
+if not VVAmodule or VVAmodule.version < 2 then
 	VVAmodule = {}
+	VVAmodule.version = 2
 	local vehicles = {}
 	local profiles = {}
 
