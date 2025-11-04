@@ -4,6 +4,7 @@ module Base
 	{
 		mesh = vehicles/Normal/vva_Normal_static|Seat_FrontLeft_obj,
 		texture = Vehicles/vehicle_carnormalshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.004,
 	}
@@ -11,6 +12,7 @@ module Base
 	{
 		mesh = vehicles/Normal/vva_Normal_static|Seat_FrontRight_obj,
 		texture = Vehicles/vehicle_carnormalshell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.004,
 	}

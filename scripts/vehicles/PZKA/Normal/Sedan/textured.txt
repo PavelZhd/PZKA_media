@@ -4,12 +4,14 @@ module Base
 	{
 		mesh = vehicles/Normal/pzka_Sedan|Vehicles_Interior_SedanV,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
+		shader = vehiclewheel,
 		scale = 0.01,
 	}
 	model PZKA_Normal_SedanF_interior_trunk
 	{
 		mesh = vehicles/Normal/pzka_Sedan|Vehicles_Interior_SedanF,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
+		shader = vehiclewheel,
 		scale = 0.01,
 	}
 

@@ -4,6 +4,7 @@ module Base
 	{
 		mesh = vehicles/Normal/pzka_Shared|Vehicles_Interior_Short,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
+		shader = vehiclewheel,
 		static = TRUE,
 		scale = 0.01,
 	}
