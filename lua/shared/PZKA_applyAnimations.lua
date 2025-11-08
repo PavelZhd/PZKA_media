@@ -151,6 +151,49 @@ PZKA.ApplyTemplateToVehicle("pzkHearseGhoulbusters","PZKA_Ghoulbuster_nr",{"pzka
 PZKA.ApplyTemplateToVehicle("pzkFranklinBankTruck","PZKA_Vehicles_BankTrunk_nr",{"pzka_2SeatsF","PZKA_BankTruck_Bank"})
 PZKA.ApplyTemplateToVehicle("pzkFranklinSwatTruckLouisvilleSWAT","PZKA_Vehicles_BankTrunk_nr",{"pzka_2SeatsF","PZKA_BankTruck_Bank","pzka_t_lighbar","PZKA_BankTruck_lightbar"})
 
+-- FranklinTruck
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckBed", "PZKA_Vehicles_FranklinTruck_TruckBed",{"pzka_2SeatsF","PZKA_FranklinTruck"})
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckSemi", "PZKA_Vehicles_FranklinTruck_TruckSemi",{"pzka_2SeatsF","PZKA_FranklinTruck_Semi"})
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckSemiMadMax", "PZKA_Vehicles_FranklinTruck_TruckSemi_nr",{"pzka_2SeatsF","PZKA_FranklinTruck_Semi_nr"})
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckShort", "PZKA_Vehicles_FranklinTruck_TruckBedShort",{"pzka_2SeatsF","PZKA_FranklinTruck_Short"})
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckMcCoy", "PZKA_Vehicles_FranklinTruck_Logging_nr",{"pzka_2SeatsF","PZKA_FranklinTruck"})
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckFlatbed", "PZKA_Vehicles_FranklinTruck_TruckFlatbed",{"pzka_2SeatsF","PZKA_FranklinTruck"})
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckFlatbedPublicWorks", "PZKA_Vehicles_FranklinTruck_TruckFlatbed_nr",{"pzka_2SeatsF","PZKA_FranklinTruck_nr"})
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckDump", "PZKA_Vehicles_FranklinTruck_Dump",{"pzka_2SeatsF","PZKA_FranklinTruck_Dump"})
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckDumpPublicWorks", "PZKA_Vehicles_FranklinTruck_Dump_nr",{"pzka_2SeatsF","PZKA_FranklinTruck_Dump_nr"})
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckBox", "PZKA_Vehicles_FranklinTruck_TruckBox",{"pzka_2SeatsF","PZKA_FranklinTruck_Box"})
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckBoxLectromax", "PZKA_Vehicles_FranklinTruck_TruckBox_nr",{"pzka_2SeatsF","PZKA_FranklinTruck_Box_nr"})
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckCab", "PZKA_Vehicles_FranklinTruck_Sleeper",{"pzka_4SeatsR","PZKA_FranklinTruck_Sleeper"})
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckTow", "PZKA_Vehicles_FranklinTruck_Tow",{"pzka_2SeatsF","PZKA_FranklinTruck_Tow","pzka_t_lighbar","PZKA_FranklinTruck_Tow_lightbar"})
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckUtility", "PZKA_Vehicles_FranklinTruck_Utility",{"pzka_2SeatsF","PZKA_FranklinTruck_Utility","pzka_t_lighbar","PZKA_FranklinTruck_Tow_lightbar"})
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckFire", "PZKA_Vehicles_FranklinTruck_Fire_nr",{"pzka_2SeatsF","PZKA_FranklinTruck_Fire_nr","pzka_t_lighbar","PZKA_FranklinTruck_lightbar","PZKA_FranklinTruck_Fire_lightbar"})
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckGarbage", "PZKA_Vehicles_FranklinTruck_Garbage",{"pzka_2SeatsF","PZKA_FranklinTruck_Garbage","pzka_t_lighbar","PZKA_FranklinTruck_lightbar"})
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckMil", "PZKA_Vehicles_FranklinTruck_Military_nr",{"pzka_2SeatsF","PZKA_FranklinTruck_Military_nr"})
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckPropane", "PZKA_Vehicles_FranklinTruck_Propane",{"pzka_2SeatsF","PZKA_FranklinTruck_Propane","pzka_t_lighbar","PZKA_FranklinTruck_lightbar"})
+PZKA.CopyTemplateToVehicle("pzkFranklinTruckPropane2", "pzkFranklinTruckPropane")
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckFireTanker", "PZKA_Vehicles_FranklinTruck_Tanker_nr",{"pzka_2SeatsF","PZKA_FranklinTruck_Tanker_nr","pzka_t_lighbar","PZKA_FranklinTruck_lightbar"})
+PZKA.CopyTemplateToVehicle("pzkFranklinTruckTankerFossoil", "pzkFranklinTruckFireTanker")
+PZKA.CopyTemplateToVehicle("pzkFranklinTruckTankerMil", "pzkFranklinTruckFireTanker")
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckMilTankerWater", "PZKA_Vehicles_FranklinTruck_Tanker2_nr",{"pzka_2SeatsF","PZKA_FranklinTruck_Tanker2_nr","pzka_t_lighbar","PZKA_FranklinTruck_lightbar"})
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckTankerSeptic", "PZKA_Vehicles_FranklinTruck_Tanker2",{"pzka_2SeatsF","PZKA_FranklinTruck_Tanker2","pzka_t_lighbar","PZKA_FranklinTruck_lightbar"})
+PZKA.CopyTemplateToVehicle("pzkFranklinTruckTankerWater","pzkFranklinTruckTankerSeptic")
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckRV", "PZKA_Vehicles_FranklinTruck_RV",{"pzka_4SeatsR","PZKA_FranklinTruck_RV"})
+
 
 --- OLD FRAMEWORK CODE
 
@@ -218,33 +261,7 @@ else
     PZKA.CreateAnimationProfile("pzkVanSeatsTaxi", "VVA_Vehicles_VanSeats_nr_a", "PZKA_Van_Lights", "PZKA_Van_Taxi",{"FLW","FRW","MLW","MRW"}, "PZKA_RearDoorVersionMed",{"FL","FR","ML","MR","RL","RR"})
 end
 
-PZKA.CreateAnimationProfile("pzkFranklinTruckBed", "PZKA_Vehicles_Truck_Bed_a","PZKA_Truck_Bed_specific","PZKA_Truck_animatedDoors",{"FLW","FRW"}, "PZKA_OpenBedVersion")
-PZKA.CloneAnimationProfile("pzkFranklinTruckFlatbed","pzkFranklinTruckBed","PZKA_Vehicles_Truck_FlatBed_a")
-PZKA.CloneAnimationProfile("pzkFranklinTruckSemi","pzkFranklinTruckBed","PZKA_Vehicles_Truck_Semi_a","PZKA_Truck_Semi_specific")
-PZKA.CloneAnimationProfile("pzkFranklinTruckShort","pzkFranklinTruckBed","PZKA_Vehicles_Truck_Short_a","PZKA_Truck_Short_specific")
 
-PZKA.CreateAnimationProfile("pzkFranklinTruckCab", "PZKA_Vehicles_Truck_Cab_a","PZKA_Truck_Cab_specific","PZKA_Truck_animatedDoors",{"FLW","FRW","RLW","RRW"}, "PZKA_OpenBedVersion")
-
-PZKA.CreateAnimationProfile("pzkFranklinTruckBox", "PZKA_Vehicles_Truck_Box_a","PZKA_Truck_Box_specific","PZKA_Truck_animatedDoors",{"FLW","FRW"}, "PZKA_RearDoorVersionMed")
-PZKA.CloneAnimationProfile("pzkFranklinTruckDump","pzkFranklinTruckBox","PZKA_Vehicles_Truck_Dump_a","PZKA_Truck_Dump_specific")
-PZKA.CloneAnimationProfile("pzkFranklinTruckPropane","pzkFranklinTruckBox","PZKA_Vehicles_Truck_Propane_a","PZKA_Truck_Propane_specific")
-PZKA.CloneAnimationProfile("pzkFranklinTruckTow","pzkFranklinTruckBox","PZKA_Vehicles_Truck_Tow_a","PZKA_Truck_Tow_specific")
-PZKA.CloneAnimationProfile("pzkFranklinTruckUtility","pzkFranklinTruckBox","PZKA_Vehicles_Truck_Utility_a","PZKA_Truck_Utility_Specific")
-
-PZKA.CloneAnimationProfile("pzkFranklinTruckFire","pzkFranklinTruckBox","PZKA_Vehicles_Truck_Fire_a","PZKA_Truck_Fire_specific","PZKA_Truck_animatedDoors_nr")
-PZKA.CloneAnimationProfile("pzkFranklinTruckGarbage","pzkFranklinTruckFire","PZKA_Vehicles_Truck_Garbage_a","PZKA_Truck_Garbage_specific")
-PZKA.CloneAnimationProfile("pzkFranklinTruckMil","pzkFranklinTruckFire","PZKA_Vehicles_Truck_Mil_a","PZKA_Truck_Mil_specific")
-PZKA.CloneAnimationProfile("pzkFranklinTruckMilTankerWater","pzkFranklinTruckFire","PZKA_Vehicles_Truck_Tanker2_a_nr","PZKA_Truck_Tanker2_NR_specific")
-PZKA.CloneAnimationProfile("pzkFranklinTruckPropane2","pzkFranklinTruckFire","PZKA_Vehicles_Truck_Propane_a_nr","PZKA_Truck_Propane_nr_specific")
-
-PZKA.CloneAnimationProfile("pzkFranklinTruckFireTanker","pzkFranklinTruckFire","PZKA_Vehicles_Truck_Tanker_nr_a","PZKA_Truck_Tanker_NR_specific")
-PZKA.CloneAnimationProfile("pzkFranklinTruckTankerFossoil", "pzkFranklinTruckFireTanker")
-PZKA.CloneAnimationProfile("pzkFranklinTruckTankerMil", "pzkFranklinTruckFireTanker")
-
-PZKA.CloneAnimationProfile("pzkFranklinTruckTankerSeptic","pzkFranklinTruckMilTankerWater","PZKA_Vehicles_Truck_Tanker2_a",false,"PZKA_Truck_animatedDoors")
-PZKA.CloneAnimationProfile("pzkFranklinTruckTankerWater","pzkFranklinTruckTankerSeptic")
-
-PZKA.CreateAnimationProfile("pzkFranklinTruckRV", "PZKA_Vehicles_Truck_RV_a","PZKA_Truck_RV_lights","PZKA_Truck_RV_animatedDoors",{"FLW","FRW","RR"},"PZKA_RearDoorVersionMed",{"FL","FR","RL","RR"})
 
 PZKA.CreateAnimationProfile("pzkCarMuscle", "PZKA_Vehicles_Muscle_a","PZKA_Muscle_lights","PZKA_Muscle_animatedDoors",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkCarMuscleCabrio", "PZKA_Vehicles_MuscleCabrio_a","PZKA_Muscle_lights","PZKA_MuscleCabrio_animatedDoors",{"FL","FR"},"PZKA_TrunkDoorVersion")

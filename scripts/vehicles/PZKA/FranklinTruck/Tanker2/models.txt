@@ -1,0 +1,17 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinTruck_Tanker2
+	{
+		mesh = vehicles/FranklinTruck/pzka_Tanker2|Vehicles_TruckTanker2,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_Tanker2_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_Tanker2|Vehicles_TruckTanker2,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

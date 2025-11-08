@@ -1,0 +1,82 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinTruck_Dump_DumpArea
+	{
+		mesh = vehicles/FranklinTruck/pzka_Dump|DumpArea,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = DumpAreaBone 1.0,		
+	}
+	model PZKA_Vehicles_FranklinTruck_Dump_DumpArea_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_Dump|DumpArea,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = DumpAreaBone 1.0,
+	}
+
+	template vehicle PZKA_FranklinTruck_Dump_DumpArea_def {
+		part DumpArea
+		{
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+			door
+			{}		
+
+			anim Close
+			{
+				anim = DumpArea_closing,
+				reverse = TRUE,
+				rate = 1,
+			}
+
+			anim Open
+			{
+				anim = DumpArea_closing,
+				rate = 1,
+			}
+
+			anim Closed
+			{
+				anim = DumpArea_closing,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DumpArea_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+	}
+
+	template vehicle PZKA_FranklinTruck_Dump_DumpArea {
+		template! = PZKA_FranklinTruck_Dump_DumpArea_def,
+		part DumpArea
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Dump_DumpArea,
+			}			
+		}
+	}
+	template vehicle PZKA_FranklinTruck_Dump_DumpArea_nr {
+		template! = PZKA_FranklinTruck_Dump_DumpArea_def,
+		part DumpArea
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Dump_DumpArea_nr,
+			}			
+		}
+	}
+}

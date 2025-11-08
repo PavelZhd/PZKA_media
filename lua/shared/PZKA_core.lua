@@ -1,6 +1,6 @@
 local VVAmodule = require "VVA_core"
 
-if not VVAmodule or VVAmodule.version < 2 then
+if (not VVAmodule) or (not VVAmodule.version) or VVAmodule.version < 2 then
 	VVAmodule = {}
 	VVAmodule.version = 2
 	local vehicles = {}

@@ -1,0 +1,42 @@
+module Base
+{	
+	model PZKA_Vehicles_FranklinTruck_Hood
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinTruck_Hood_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	
+	template vehicle PZKA_FranklinTruck_Hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Hood,
+			}
+		}
+		template! = PZKA_Hood,
+		template! = PZKA_Hood_Slow,
+	}
+	template vehicle PZKA_FranklinTruck_Hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Hood_nr,
+			}
+		}
+		template! = PZKA_Hood,
+		template! = PZKA_Hood_Slow,
+	}
+}

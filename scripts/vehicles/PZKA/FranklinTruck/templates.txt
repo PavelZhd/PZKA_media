@@ -1,0 +1,57 @@
+module Base
+{
+	template vehicle PZKA_FranklinTruck_shared {
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_BatteryR,
+				offset = -0.322412 0.245977 1.18161,
+			}		
+		}
+		template! = PZKA_FranklinTruck_Windshield,
+		template! = PZKA_Interior,
+		template! = PZKA_FranklinTruck_Interior,
+		template! = PZKA_FranklinTruck_FrontLight,
+	}
+
+	template vehicle PZKA_FranklinTruck_base {
+		template! = PZKA_FranklinTruck_Hood,
+		template! = PZKA_FranklinTruck_FrontDoors,
+		template! = PZKA_FranklinTruck_RearDoor,
+		template! = PZKA_FranklinTruck_shared,
+	}
+	template vehicle PZKA_FranklinTruck_base_nr {
+		template! = PZKA_FranklinTruck_Hood_nr,
+		template! = PZKA_FranklinTruck_FrontDoors_nr,
+		template! = PZKA_FranklinTruck_RearDoor_nr,
+		template! = PZKA_FranklinTruck_shared,
+	}
+	
+	template vehicle PZKA_FranklinTruck {
+		template! = PZKA_FranklinTruck_RearWindow,
+		template! = PZKA_FranklinTruck_base,
+		template! = PZKA_FranklinTruck_Lights,
+	}
+	template vehicle PZKA_FranklinTruck_Short {
+		template! = PZKA_FranklinTruck_RearWindow,
+		template! = PZKA_FranklinTruck_base,
+		template! = PZKA_FranklinTruck_Short_Lights,
+	}
+	template vehicle PZKA_FranklinTruck_Semi {
+		template! = PZKA_FranklinTruck_RearWindow,
+		template! = PZKA_FranklinTruck_base,
+		template! = PZKA_FranklinTruck_Semi_Lights,
+	}
+
+	template vehicle PZKA_FranklinTruck_nr {
+		template! = PZKA_FranklinTruck_RearWindow,
+		template! = PZKA_FranklinTruck_base_nr,
+		template! = PZKA_FranklinTruck_Lights,
+	}
+	template vehicle PZKA_FranklinTruck_Semi_nr {
+		template! = PZKA_FranklinTruck_RearWindow,
+		template! = PZKA_FranklinTruck_base_nr,
+		template! = PZKA_FranklinTruck_Semi_Lights,
+	}
+}

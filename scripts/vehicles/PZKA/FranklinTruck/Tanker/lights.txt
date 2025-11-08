@@ -1,0 +1,34 @@
+module Base
+{	
+	model PZKA_Vehicles_FranklinTruck_Tanker_LightRL
+	{
+		mesh = vehicles/FranklinTruck/pzka_Tanker|Light_Tanker1_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_Tanker_LightRR
+	{
+		mesh = vehicles/FranklinTruck/pzka_Tanker|Light_Tanker1_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FranklinTruck_Tanker_Lights {		
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Tanker_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Tanker_LightRR,
+			}
+		}
+	}
+}

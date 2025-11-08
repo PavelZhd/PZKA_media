@@ -1,0 +1,10 @@
+module Base
+{
+	
+	template vehicle PZKA_FranklinTruck_Utility {
+		template! = PZKA_FranklinTruck_Utility_RearDoor,
+		template! = PZKA_FranklinTruck_RearWindowAsAdd,
+		template! = PZKA_FranklinTruck_base,
+		template! = PZKA_FranklinTruck_Utility_Lights,
+	}
+}

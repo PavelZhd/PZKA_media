@@ -1,0 +1,42 @@
+module Base
+{	
+	model PZKA_Vehicles_FranklinTruck_Garbage_Trunk
+	{
+		mesh = vehicles/FranklinTruck/pzka_Garbage|Trunk_Garbage_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TruckGarbageBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinTruck_Garbage_Trunk_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_Garbage|Trunk_Garbage_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TruckGarbageBone 1.0,
+	}
+
+	template vehicle PZKA_FranklinTruck_Garbage_RearDoor {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Garbage_Trunk,
+			}
+		}
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Fast,
+	}
+	template vehicle PZKA_FranklinTruck_Garbage_RearDoor_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Garbage_Trunk_nr,
+			}
+		}
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Fast,
+	}
+}

@@ -1,0 +1,20 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinTruck_RV_Interior
+	{
+		mesh = vehicles/FranklinTruck/pzka_RV|Vehicles_Interior_RV,
+		texture = Vehicles/Vehicle_pzkFranklinTruckRVshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FranklinTruck_RV_Interior {		
+		part Interior 
+		{
+			model RV
+			{
+				file = PZKA_Vehicles_FranklinTruck_RV_Interior,
+			}
+		}
+	}
+}

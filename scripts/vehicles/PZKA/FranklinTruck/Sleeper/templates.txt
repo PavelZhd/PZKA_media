@@ -1,0 +1,9 @@
+module Base
+{
+	template vehicle PZKA_FranklinTruck_Sleeper {
+		template! = PZKA_FranklinTruck_base,
+		template! = PZKA_FranklinTruck_Sleeper_RearDoors,
+		template! = PZKA_FranklinTruck_Sleeper_RearWindow,
+		template! = PZKA_FranklinTruck_Lights,
+	}
+}

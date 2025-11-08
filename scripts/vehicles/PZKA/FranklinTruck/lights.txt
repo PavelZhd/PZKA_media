@@ -1,0 +1,131 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinTruck_LightFL
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}	
+	model PZKA_Vehicles_FranklinTruck_LightFR
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinTruck_LightRL
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_LightRR
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FranklinTruck_FrontLight {
+		part HeadlightLeft 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_LightFR,
+			}
+		}
+	}
+	template vehicle PZKA_FranklinTruck_Lights {		
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_LightRR,
+			}
+		}
+	}
+
+	
+	model PZKA_Vehicles_FranklinTruck_Semi_LightRL
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Light_Semi_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_Semi_LightRR
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Light_Semi_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FranklinTruck_Semi_Lights {		
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Semi_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Semi_LightRR,
+			}
+		}
+	}
+
+	model PZKA_Vehicles_FranklinTruck_Short_LightRL
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Light_Short_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_Short_LightRR
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Light_Short_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FranklinTruck_Short_Lights {		
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Short_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Short_LightRR,
+			}
+		}
+	}
+}
