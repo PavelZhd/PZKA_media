@@ -1,0 +1,32 @@
+module Base
+{
+	model PZKA_Vehicles_TruckBus_a
+	{
+		mesh = vehicles/pzka_TruckBus|Vehicle_TruckBus,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_TruckBus_Bars_a
+	{
+		mesh = vehicles/pzka_TruckBus|Vehicle_TruckBusBars,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_TruckBus_a_nr
+	{
+		mesh = vehicles/pzka_TruckBus|Vehicle_TruckBus,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_TruckBus_Bars_a_nr
+	{
+		mesh = vehicles/pzka_TruckBus|Vehicle_TruckBusBars,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

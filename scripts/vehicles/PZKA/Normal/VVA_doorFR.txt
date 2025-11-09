@@ -35,7 +35,7 @@ module Base
             }
 	    }
 	}
-	template vehicle PZKA_Normal_doorFR {
+	template vehicle PZKA_Normal_DoorFR {
 		part DoorFrontRight
 		{
 			model Default
@@ -46,7 +46,7 @@ module Base
 		template! = PZKA_Normal_WindowFR,
 		template! = PZKA_DoorWindowFrontRight,
 	}
-	template vehicle PZKA_Normal_doorFR_nr {
+	template vehicle PZKA_Normal_DoorFR_nr {
 		part DoorFrontRight
 		{
 			model Default

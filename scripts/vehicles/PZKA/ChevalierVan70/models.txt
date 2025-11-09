@@ -1,0 +1,10 @@
+module Base
+{
+	model PZKA_Vehicles_ChevalierVan70_a
+	{
+		mesh = vehicles/pzka_CVan70|Vehicles_ChevalierVan70,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

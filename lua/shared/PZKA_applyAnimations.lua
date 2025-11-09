@@ -194,6 +194,18 @@ PZKA.CopyTemplateToVehicle("pzkFranklinTruckTankerWater","pzkFranklinTruckTanker
 
 PZKA.ApplyTemplateToVehicle("pzkFranklinTruckRV", "PZKA_Vehicles_FranklinTruck_RV",{"pzka_4SeatsR","PZKA_FranklinTruck_RV"})
 
+-- Frnaklin Bus
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckBus","PZKA_Vehicles_TruckBus_a_nr",{"PZKA_FranklinBus_nr"})
+PZKA.CopyTemplateToVehicle("pzkFranklinTruckBusAirport","pzkFranklinTruckBus")
+PZKA.InheritTemplateToVehicle("pzkFranklinTruckBusArmy","pzkFranklinTruckBus","PZKA_Vehicles_TruckBus_Bars_a_nr")
+PZKA.CopyTemplateToVehicle("pzkFranklinTruckBusPrison","pzkFranklinTruckBusArmy")
+
+-- Chevaliuer Van70
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierVan70","PZKA_Vehicles_ChevalierVan70_a",{"PZKA_CVan70"})
+PZKA.ApplyTemplateToVehicle("pzkDashVan70","PZKA_Vehicles_DashVan70_a",{"PZKA_DashVan70"})
+PZKA.ApplyTemplateToVehicle("pzkDashVan70Riddle","PZKA_Vehicles_Riddle_a",{"PZKA_Riddle_nr"})
 
 --- OLD FRAMEWORK CODE
 
@@ -205,11 +217,6 @@ PZKA.CreateAnimationProfile("pzkContinentalBayer3304D","PZKA_Vehicles_Bayer_a","
 PZKA.CreateAnimationProfile("pzkContinentalBayer3302D","PZKA_Vehicles_Bayer_2D_a","PZKA_Bayer4D_Light","PZKA_Bayer2D_animatedDoors",{"FLW","FRW","RLOW","RROW"}, "PZKA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkContinentalBayer330Sport","PZKA_Vehicles_Bayer_Sport_a","PZKA_Bayer4D_Light","PZKA_BayerSport_animatedDoors",{"FLW","FRW","RLOW","RROW"}, "PZKA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkContinentalBayer330Cabrio","PZKA_Vehicles_Bayer_Cabrio_a","PZKA_Bayer4D_Light","PZKA_BayerCabrio_animatedDoors",{"FL","FR"}, "PZKA_TrunkDoorVersion",{"FL","FR","RL","RR"})
-
-PZKA.CreateAnimationProfile("pzkFranklinTruckBus","PZKA_Vehicles_TruckBus_a","PZKA_TruckBus_Lights","PZKA_TruckBus_animatedDoors_nr",{"FR"}, "PZKA_RearDoorVersionMed",{"FL","FR","ML","MR","RL","RR"})
-PZKA.CloneAnimationProfile("pzkFranklinTruckBusAirport","pzkFranklinTruckBus")
-PZKA.CloneAnimationProfile("pzkFranklinTruckBusArmy","pzkFranklinTruckBus","PZKA_Vehicles_TruckBus_Bars_a")
-PZKA.CloneAnimationProfile("pzkFranklinTruckBusPrison","pzkFranklinTruckBusArmy")
 
 
 
@@ -363,9 +370,6 @@ PZKA.CloneAnimationProfile("pzkChevalierMaroca80KST","pzkChevalierMaroca80Bullet
 PZKA.CloneAnimationProfile("pzkChevalierMaroca80LV","pzkChevalierMaroca80Bulletin")
 PZKA.CloneAnimationProfile("pzkChevalierMaroca80Muld","pzkChevalierMaroca80Bulletin")
 
-PZKA.CreateAnimationProfile("pzkChevalierVan70","PZKA_Vehicles_Van70_a","PZKA_Van70Chev_Lights","PZKA_Van70Chev_animatedDoors",{"FLW","FRW","ML","MR"}, "PZKA_RearDoorVersionMed",{"FL","FR","ML","MR","RL","RR"})
-PZKA.CloneAnimationProfile("pzkDashVan70","pzkChevalierVan70","PZKA_Vehicles_Van70Dash_a","PZKA_Van70Dash_Lights","PZKA_Van70Dash_animatedDoors")
-PZKA.CreateAnimationProfile("pzkDashVan70Riddle","PZKA_Vehicles_Van70_riddle_a","PZKA_Van70Dash_Lights","PZKA_Van70_animatedDoors_nr",{"FLW","FRW","RL","RR"}, "PZKA_RearDoorVersionMed",{"FL","FR","ML","MR","RL","RR"})
 
 PZKA.CreateAnimationProfile("pzkDashRoyal","PZKA_Vehicles_Royal_a","PZKA_Royal_Lights_Royal","PZKA_DashRoyal_sedan_Royal",{"FLW","FRW"}, "PZKA_TrunkDoorVersion")
 PZKA.CloneAnimationProfile("pzkDashRoyalGrand","pzkDashRoyal")

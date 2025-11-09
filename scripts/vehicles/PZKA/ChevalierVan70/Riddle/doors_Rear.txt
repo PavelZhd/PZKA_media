@@ -1,0 +1,40 @@
+module Base
+{
+	model PZKA_Vehicles_Riddle_DoorRearLeft_nr
+	{
+		mesh = vehicles/pzka_CVan70|Door_RearLeft_Riddle_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorFrontBone 1.0,
+		boneWeight = RearLeftDoorRearBone 1.0,
+	}
+	model PZKA_Vehicles_Riddle_DoorRearLeft_nr
+	{
+		mesh = vehicles/pzka_CVan70|Door_RearRight_Riddle_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorFrontBone 1.0,
+		boneWeight = RearRightDoorRearBone 1.0,
+	}
+
+	template vehicle PZKA_Riddle_RearDoors_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Riddle_DoorRearLeft_nr,
+			}
+		}
+		template! = PZKA_DoorRearLeft,
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Riddle_DoorRearLeft_nr,
+			}
+		}
+		template! = PZKA_DoorRearRight,
+	}	
+}

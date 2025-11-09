@@ -1,0 +1,67 @@
+module Base
+{
+	
+	model PZKA_Vehicles_TruckBus_LightFL
+	{
+		mesh = vehicles/pzka_TruckBus|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}	
+	model PZKA_Vehicles_TruckBus_LightFR
+	{
+		mesh = vehicles/pzka_TruckBus|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_TruckBus_LightRL
+	{
+		mesh = vehicles/pzka_TruckBus|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_TruckBus_LightRR
+	{
+		mesh = vehicles/pzka_TruckBus|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+
+	template vehicle PZKA_FranklinBus_Lights {
+		part HeadlightLeft 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_LightRR,
+			}
+		}
+	}
+}

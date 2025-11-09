@@ -1,0 +1,10 @@
+module Base
+{	
+	model PZKA_Vehicles_Riddle_a
+	{
+		mesh = vehicles/pzka_CVan70|Vehicles_DashVan70Riddle,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

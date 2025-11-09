@@ -34,26 +34,26 @@ module Base
 			anim Close
 			{
 				anim = DumpArea_closing,
-				reverse = TRUE,
 				rate = 1,
 			}
 
 			anim Open
 			{
 				anim = DumpArea_closing,
+				reverse = TRUE,
 				rate = 1,
 			}
 
 			anim Closed
 			{
 				anim = DumpArea_closing,
+				reverse = TRUE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
 				anim = DumpArea_closing,
-				reverse = TRUE,
 				animate = FALSE,
 			}
 		}

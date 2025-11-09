@@ -1,0 +1,19 @@
+module Base
+{	
+	model PZKA_Vehicles_CVan70_RearWindow_Dash_static
+	{
+		mesh = vehicles/pzka_CVan70|RearWindow_Dash_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_DashVan70_rearWindowStatic {
+		part WindshieldRear
+		{
+			model Static
+			{
+				file = PZKA_Vehicles_CVan70_RearWindow_Dash_static,
+			}
+		}
+	}
+}

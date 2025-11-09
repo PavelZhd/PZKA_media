@@ -3,7 +3,6 @@ module Base
 	model PZKA_Vehicles_Van70_internals
 	{
 		mesh = vehicles/pzka_CVan70|Vehicles_Interior,
-		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkChevalierVan70shell,
 		static = TRUE,
 		scale = 0.01,
@@ -12,7 +11,6 @@ module Base
 	model PZKA_Vehicles_Van70_SeatFL
 	{
 		mesh = vehicles/pzka_CVan70|Seat_FrontLeft_obj,
-		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkChevalierVan70shell,
 		static = TRUE,
 		scale = 0.01,
@@ -20,7 +18,6 @@ module Base
 	model PZKA_Vehicles_Van70_SeatFR
 	{
 		mesh = vehicles/pzka_CVan70|Seat_FrontRight_obj,
-		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkChevalierVan70shell,
 		static = TRUE,
 		scale = 0.01,
@@ -28,7 +25,6 @@ module Base
 	model PZKA_Vehicles_Van70_SeatML
 	{
 		mesh = vehicles/pzka_CVan70|Seat_MiddleLeft_obj,
-		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkChevalierVan70shell,
 		static = TRUE,
 		scale = 0.01,
@@ -36,7 +32,6 @@ module Base
 	model PZKA_Vehicles_Van70_SeatMR
 	{
 		mesh = vehicles/pzka_CVan70|Seat_MiddleRight_obj,
-		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkChevalierVan70shell,
 		static = TRUE,
 		scale = 0.01,
@@ -44,7 +39,6 @@ module Base
 	model PZKA_Vehicles_Van70_SeatRL
 	{
 		mesh = vehicles/pzka_CVan70|Seat_RearLeft_obj,
-		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkChevalierVan70shell,
 		static = TRUE,
 		scale = 0.01,
@@ -52,9 +46,62 @@ module Base
 	model PZKA_Vehicles_Van70_SeatRR
 	{
 		mesh = vehicles/pzka_CVan70|Seat_RearRight_obj,
-		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkChevalierVan70shell,
 		static = TRUE,
 		scale = 0.01,
+	}
+
+	template vehicle PZKA_CVan70_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_SeatFR,
+			}
+		}
+		part SeatMiddleLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_SeatML,
+			}
+		}
+		part SeatMiddleRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_SeatMR,
+			}
+		}
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_SeatRL,
+			}
+		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_SeatRR,
+			}
+		}		
+
+		template! = PZKA_Interior,
+		part Inreior 
+		{						
+			model Default 
+			{
+				file = PZKA_Vehicles_Van70_internals,
+			}
+		}
 	}
 }

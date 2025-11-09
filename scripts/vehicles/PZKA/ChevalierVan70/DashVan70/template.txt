@@ -1,0 +1,12 @@
+module Base
+{
+	template vehicle PZKA_DashVan70 {
+		template! = PZKA_CVan70_RearDoor,
+		template! = PZKA_CVan70_FrontDoor,		
+		template! = PZKA_CVan70_MiddleDoors,
+		template! = PZKA_CVan70_Hood,		
+		template! = PZKA_DashVan70_Lights,
+		template! = PZKA_CVan70_shared,
+		template! = PZKA_DashVan70_rearWindowStatic,
+	}
+}
