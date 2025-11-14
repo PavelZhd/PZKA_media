@@ -1,0 +1,41 @@
+module Base
+{
+	model PZKA_Vehicles_CVan70_Hood
+	{
+		mesh = vehicles/pzka_CVan70|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_CVan70_Hood_nr
+	{
+		mesh = vehicles/pzka_CVan70|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	
+
+	template vehicle PZKA_CVan70_Hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_CVan70_Hood,
+			}
+		}
+		template! = PZKA_EngineDoor,
+	}
+	template vehicle PZKA_CVan70_Hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_CVan70_Hood_nr,
+			}
+		}
+		template! = PZKA_EngineDoor,
+	}
+}

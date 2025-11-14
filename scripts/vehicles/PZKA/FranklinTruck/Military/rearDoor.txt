@@ -1,0 +1,42 @@
+module Base
+{	
+	model PZKA_Vehicles_FranklinTruck_Military_Trunk
+	{
+		mesh = vehicles/FranklinTruck/pzka_Military|Trunk_Military_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkMilitaryBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinTruck_Military_Trunk_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_Military|Trunk_Military_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkMilitaryBone 1.0,
+	}
+
+	template vehicle PZKA_FranklinTruck_Military_RearDoor {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Military_Trunk,
+			}
+		}
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Fast,
+	}
+	template vehicle PZKA_FranklinTruck_Military_RearDoor_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Military_Trunk_nr,
+			}
+		}
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Fast,
+	}
+}

@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinTruck_Fire_Lightbar
+	{
+		mesh = vehicles/FranklinTruck/pzka_Fire|LightbarFire,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FranklinTruck_Fire_lightbar {
+		part ATA2RoofLightbar
+		{
+			model Rear
+			{
+				file = PZKA_Vehicles_FranklinTruck_Fire_Lightbar,
+			}
+		}
+	}
+}

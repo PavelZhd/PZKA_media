@@ -1,0 +1,17 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinTruck_Garbage
+	{
+		mesh = vehicles/FranklinTruck/pzka_Garbage|Vehicles_TruckGarbage,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_Garbage_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_Garbage|Vehicles_TruckGarbage,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

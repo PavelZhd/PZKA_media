@@ -1,0 +1,75 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinTruck_TruckBed
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Vehicles_TruckBed,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_TruckBedShort
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Vehicles_TruckBedShort,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_TruckFlatbed
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Vehicles_TruckFlatbed,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_TruckSemi
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Vehicles_TruckSemi,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_Logging
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Vehicles_Loggong,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+
+	model PZKA_Vehicles_FranklinTruck_TruckBed_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Vehicles_TruckBed,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_TruckBedShort_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Vehicles_TruckBedShort,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_TruckFlatbed_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Vehicles_TruckFlatbed,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_TruckSemi_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Vehicles_TruckSemi,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_Logging_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Vehicles_Loggong,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

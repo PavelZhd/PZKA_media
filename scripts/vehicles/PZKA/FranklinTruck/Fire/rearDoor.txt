@@ -1,0 +1,44 @@
+module Base
+{	
+	model PZKA_Vehicles_FranklinTruck_Fire_Trunk
+	{
+		mesh = vehicles/FranklinTruck/pzka_Fire|Trunk_Fire_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkFireRightBone 1.0,
+		boneWeight = TrunkFireLeftBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinTruck_Fire_Trunk_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_Fire|Trunk_Fire_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkFireRightBone 1.0,
+		boneWeight = TrunkFireLeftBone 1.0,
+	}
+
+	template vehicle PZKA_FranklinTruck_Fire_RearDoor {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Fire_Trunk,
+			}
+		}
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Fast,
+	}
+	template vehicle PZKA_FranklinTruck_Fire_RearDoor_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Fire_Trunk_nr,
+			}
+		}
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Fast,
+	}
+}

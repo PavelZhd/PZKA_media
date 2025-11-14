@@ -1,0 +1,17 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinTruck_Fire
+	{
+		mesh = vehicles/FranklinTruck/pzka_Fire|Vehicles_TruckFireEngine,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_Fire_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_Fire|Vehicles_TruckFireEngine,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

@@ -1,0 +1,74 @@
+module Base
+{	
+	model PZKA_Vehicles_FranklinTruck_RV_DoorRearRight
+	{
+		mesh = vehicles/FranklinTruck/pzka_RV|Door_RV_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightRVDoorBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinTruck_RV_WindowRearRight
+	{
+		mesh = vehicles/FranklinTruck/pzka_RV|Window_RV_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FranklinTruck_RV_WindowRearRight_static
+	{
+		mesh = vehicles/FranklinTruck/pzka_RV|Window_RV_RearRight_s_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_RV_DoorRearRight_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_RV|Door_RV_RearRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightRVDoorBone 1.0,
+	}
+
+	template vehicle PZKA_FranklinTruck_RV_RearDoorWindows {
+		
+		part WindowRearRight
+    	{	
+        	parent = DoorRearRight,
+			model Default
+            {
+                file = PZKA_Vehicles_FranklinTruck_RV_WindowRearRight,
+            }
+			model Static
+            {
+                file = PZKA_Vehicles_FranklinTruck_RV_WindowRearRight_static,
+            }
+	    }
+	}
+	template vehicle PZKA_FranklinTruck_RV_RearDoors {
+		
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_RV_DoorRearRight,
+			}
+		}
+		template! = PZKA_FranklinTruck_RV_RearDoorWindows,
+		template! = PZKA_DoorRR,
+		template! = PZKA_DoorRR_Reg,
+	}
+	template vehicle PZKA_FranklinTruck_RV_RearDoors_nr {
+		
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_RV_DoorRearRight_nr,
+			}
+		}
+		template! = PZKA_FranklinTruck_RV_RearDoorWindows,
+		template! = PZKA_DoorRR,
+		template! = PZKA_DoorRR_Reg,
+	}
+}

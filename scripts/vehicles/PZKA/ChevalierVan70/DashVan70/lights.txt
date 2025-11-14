@@ -1,0 +1,62 @@
+module Base
+{
+	model PZKA_Vehicles_CVan70_LightFL_Dash
+	{
+		mesh = vehicles/pzka_CVan70|Light_Dash_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_CVan70_LightFR_Dash
+	{
+		mesh = vehicles/pzka_CVan70|Light_Dash_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_CVan70_LightRL_Dash
+	{
+		mesh = vehicles/pzka_CVan70|Light_Dash_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_CVan70_LightRR_Dash
+	{
+		mesh = vehicles/pzka_CVan70|Light_Dash_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_DashVan70_Lights {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_CVan70_LightFL_Dash,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_CVan70_LightFR_Dash,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_CVan70_LightRL_Dash,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_CVan70_LightRR_Dash,
+			}
+		}
+	}
+}

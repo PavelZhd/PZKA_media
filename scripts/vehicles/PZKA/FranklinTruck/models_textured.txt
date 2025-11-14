@@ -1,0 +1,48 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinTruck_internals
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkFranklinTruckBedMilshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_SeatFL
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkFranklinTruckBedMilshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FranklinTruck_SeatFR
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkFranklinTruckBedMilshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FranklinTruck_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_SeatFR,
+			}
+		}
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_FranklinTruck_internals,
+			}
+		}
+	}
+}

@@ -1,6 +1,6 @@
 local PZKACore = require "PZKA_core"
 
-local PZKAModule = { }
+local PZKAModule = {}
 PZKAModule.IsProfileDefined = PZKACore.IsProfileDefined
 PZKAModule.IsVehicleDefined = PZKACore.IsVehicleDefined
 PZKAModule.addToProfile = PZKACore.addToProfile

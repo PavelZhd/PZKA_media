@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinTruck_Sleeper_RearWindow
+	{
+		mesh = vehicles/FranklinTruck/pzka_Sleeper|RearWindow_Sleeper_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FranklinTruck_Sleeper_RearWindow {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Sleeper_RearWindow,
+			}
+		}
+	}
+}

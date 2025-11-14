@@ -1,0 +1,31 @@
+module Base
+{	
+	template vehicle PZKA_FranklinBus_shared {
+		template! = PZKA_Interior,
+		template! = PZKA_FranklinBus_Interior,
+		template! = PZKA_FranklinBus_Windshield,
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_BatteryR,
+				offset = -0.322412 0.245977 1.18161,
+			}
+		}
+		template! = PZKA_FranklinBus_Lights,
+	}
+
+	template vehicle PZKA_FranklinBus {
+		template! = PZKA_FranklinBus_DoorRear,
+		template! = PZKA_FranklinBus_FrontDoors,
+		template! = PZKA_FranklinBus_Hood,
+		template! = PZKA_FranklinBus_shared,
+	}
+	
+	template vehicle PZKA_FranklinBus_nr {
+		template! = PZKA_FranklinBus_DoorRear_nr,
+		template! = PZKA_FranklinBus_FrontDoors_nr,
+		template! = PZKA_FranklinBus_Hood_nr,
+		template! = PZKA_FranklinBus_shared,
+	}
+}

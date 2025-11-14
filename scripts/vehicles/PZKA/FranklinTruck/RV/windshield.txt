@@ -1,0 +1,19 @@
+module Base
+{	
+	model PZKA_Vehicles_FranklinTruck_RV_Windshield
+	{
+		mesh = vehicles/FranklinTruck/pzka_RV|Windshield_RV_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	
+	template vehicle PZKA_FranklinTruck_RV_Windshield {
+		part Windshield
+		{
+			model RV
+			{
+				file = PZKA_Vehicles_FranklinTruck_RV_Windshield,
+			}			
+		}
+	}
+}

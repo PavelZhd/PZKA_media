@@ -1,0 +1,13 @@
+module Base
+{
+	
+	template vehicle PZKA_FranklinTruck_RV {
+		template! = PZKA_FranklinTruck_RV_RearDoor,
+		template! = PZKA_FranklinTruck_RV_RearDoors,
+		template! = PZKA_FranklinTruck_base,
+		template! = PZKA_FranklinTruck_RV_Windshield,
+		template! = PZKA_FranklinTruck_RV_RearWindow,
+		template! = PZKA_FranklinTruck_RV_Interior,
+		template! = PZKA_FranklinTruck_RV_Lights,
+	}
+}

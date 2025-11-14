@@ -1,0 +1,17 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinTruck_Utility
+	{
+		mesh = vehicles/FranklinTruck/pzka_Utility|Vehicles_TruckUtility,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FranklinTruck_Utility_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_Utility|Vehicles_TruckUtility,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

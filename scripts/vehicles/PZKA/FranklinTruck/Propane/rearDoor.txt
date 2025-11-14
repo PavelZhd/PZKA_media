@@ -1,0 +1,42 @@
+module Base
+{	
+	model PZKA_Vehicles_FranklinTruck_Propane_Trunk
+	{
+		mesh = vehicles/FranklinTruck/pzka_Propane|Trunk_Propane_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkPropaneBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinTruck_Propane_Trunk_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_Propane|Trunk_Propane_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkPropaneBone 1.0,
+	}
+
+	template vehicle PZKA_FranklinTruck_Propane_RearDoor {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Propane_Trunk,
+			}
+		}
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Fast,
+	}
+	template vehicle PZKA_FranklinTruck_Propane_RearDoor_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Propane_Trunk_nr,
+			}
+		}
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Fast,
+	}
+}

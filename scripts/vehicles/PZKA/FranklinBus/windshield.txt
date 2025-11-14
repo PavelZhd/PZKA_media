@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicles_TruckBus_Windshield
+	{
+		mesh = vehicles/pzka_TruckBus|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FranklinBus_Windshield {
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_Windshield,
+			}			
+		}
+	}
+}

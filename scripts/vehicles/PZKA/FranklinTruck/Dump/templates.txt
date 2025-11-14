@@ -1,0 +1,18 @@
+module Base
+{
+	
+	template vehicle PZKA_FranklinTruck_Dump {
+		template! = PZKA_FranklinTruck_Dump_RearDoor,
+		template! = PZKA_FranklinTruck_RearWindowAsAdd,
+		template! = PZKA_FranklinTruck_Dump_DumpArea,
+		template! = PZKA_FranklinTruck_base,
+		template! = PZKA_FranklinTruck_Short_Lights,
+	}
+	template vehicle PZKA_FranklinTruck_Dump_nr {
+		template! = PZKA_FranklinTruck_Dump_RearDoor_nr,
+		template! = PZKA_FranklinTruck_RearWindowAsAdd,
+		template! = PZKA_FranklinTruck_Dump_DumpArea_nr,
+		template! = PZKA_FranklinTruck_base_nr,
+		template! = PZKA_FranklinTruck_Short_Lights,
+	}
+}

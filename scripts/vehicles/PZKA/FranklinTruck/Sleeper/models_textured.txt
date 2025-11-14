@@ -1,0 +1,34 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinTruck_Sleeper_SeatRL
+	{
+		mesh = vehicles/FranklinTruck/pzka_Sleeper|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBedshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_FranklinTruck_Sleeper_SeatRR
+	{
+		mesh = vehicles/FranklinTruck/pzka_Sleeper|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkFranklinTruckBedshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FranklinTruck_Sleeper_RearSeats {
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Sleeper_SeatRL,
+			}
+		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Sleeper_SeatRR,
+			}
+		}
+	}
+}

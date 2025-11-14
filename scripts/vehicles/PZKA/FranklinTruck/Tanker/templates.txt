@@ -1,0 +1,15 @@
+module Base
+{	
+	template vehicle PZKA_FranklinTruck_Tanker {
+		template! = PZKA_FranklinTruck_Tanker_RearDoor,
+		template! = PZKA_FranklinTruck_base,
+		template! = PZKA_FranklinTruck_RearWindowAsAdd,
+		template! = PZKA_FranklinTruck_Tanker_Lights,
+	}
+	template vehicle PZKA_FranklinTruck_Tanker_nr {
+		template! = PZKA_FranklinTruck_Tanker_RearDoor_nr,
+		template! = PZKA_FranklinTruck_base_nr,
+		template! = PZKA_FranklinTruck_RearWindowAsAdd,
+		template! = PZKA_FranklinTruck_Tanker_Lights,
+	}
+}

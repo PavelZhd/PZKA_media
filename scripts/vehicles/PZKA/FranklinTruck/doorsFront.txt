@@ -1,0 +1,111 @@
+module Base
+{	
+	model PZKA_Vehicles_FranklinTruck_DoorFrontLeft
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinTruck_DoorFrontRight
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinTruck_WindowFrontLeft
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_FranklinTruck_WindowFrontRight
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}	
+	model PZKA_Vehicles_FranklinTruck_DoorFrontLeft_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinTruck_DoorFrontRight_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle PZKA_FranklinTruck_FrontDoorWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_FranklinTruck_WindowFrontLeft,
+            }           		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_FranklinTruck_WindowFrontRight,
+            }       		
+	    }
+	}
+	template vehicle PZKA_FranklinTruck_FrontDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_DoorFrontRight,
+			}
+		}
+		template! = PZKA_FranklinTruck_FrontDoorWindows,
+		template! = PZKA_DoorWindowFrontLeft,
+		template! = PZKA_DoorWindowFrontRight,
+	}
+	template vehicle PZKA_FranklinTruck_FrontDoors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_DoorFrontRight_nr,
+			}
+		}
+		template! = PZKA_FranklinTruck_FrontDoorWindows,
+		template! = PZKA_DoorWindowFrontLeft,
+		template! = PZKA_DoorWindowFrontRight,
+	}
+}

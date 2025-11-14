@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicles_FranklinTruck_Lightbar
+	{
+		mesh = vehicles/FranklinTruck/pzka_FranklinTruck|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FranklinTruck_lightbar {
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Lightbar,
+			}
+		}
+	}
+}

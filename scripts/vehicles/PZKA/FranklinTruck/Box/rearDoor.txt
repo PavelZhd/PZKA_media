@@ -1,0 +1,66 @@
+module Base
+{	
+	model PZKA_Vehicles_FranklinTruck_Box_Trunk
+	{
+		mesh = vehicles/FranklinTruck/pzka_Box|Trunk_Box_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBoxBone 1.0,
+		boneWeight = TrunkBoxBone5 1.0,
+		boneWeight = TrunkBoxBone6 1.0,
+		boneWeight = TrunkBoxBone7 1.0,
+		boneWeight = TrunkBoxBone8 1.0,
+		boneWeight = TrunkBoxBone9 1.0,
+		boneWeight = TrunkBoxBone10 1.0,
+		boneWeight = TrunkBoxBone11 1.0,
+		boneWeight = TrunkBoxBone12 1.0,
+		boneWeight = TrunkBoxBone13 1.0,
+		boneWeight = TrunkBoxBone14 1.0,
+		boneWeight = TrunkBoxBone15 1.0,
+		boneWeight = TrunkBoxBone16 1.0,
+	}
+	model PZKA_Vehicles_FranklinTruck_Box_Trunk_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_Box|Trunk_Box_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBoxBone 1.0,
+		boneWeight = TrunkBoxBone5 1.0,
+		boneWeight = TrunkBoxBone6 1.0,
+		boneWeight = TrunkBoxBone7 1.0,
+		boneWeight = TrunkBoxBone8 1.0,
+		boneWeight = TrunkBoxBone9 1.0,
+		boneWeight = TrunkBoxBone10 1.0,
+		boneWeight = TrunkBoxBone11 1.0,
+		boneWeight = TrunkBoxBone12 1.0,
+		boneWeight = TrunkBoxBone13 1.0,
+		boneWeight = TrunkBoxBone14 1.0,
+		boneWeight = TrunkBoxBone15 1.0,
+		boneWeight = TrunkBoxBone16 1.0,
+	}
+
+	template vehicle PZKA_FranklinTruck_Box_RearDoor {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Box_Trunk,
+			}
+		}
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Fast,
+	}
+	template vehicle PZKA_FranklinTruck_Box_RearDoor_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FranklinTruck_Box_Trunk_nr,
+			}
+		}
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Fast,
+	}
+}

@@ -1,0 +1,46 @@
+module Base
+{	
+	model PZKA_Vehicles_FranklinTruck_Utility_Trunk
+	{
+		mesh = vehicles/FranklinTruck/pzka_Utility|Trunk_Utility_obj,
+		shader = vehicle_multiuv_noreflect,
+		//static = FALSE,
+		scale = 0.01,
+		//boneWeight = TrunkUtilityBone 1.0,
+	}
+	model PZKA_Vehicles_FranklinTruck_Utility_Trunk_nr
+	{
+		mesh = vehicles/FranklinTruck/pzka_Utility|Trunk_Utility_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		//static = FALSE,
+		scale = 0.01,
+		//boneWeight = TrunkUtilityBone 1.0,
+	}
+
+	template vehicle PZKA_FranklinTruck_Utility_RearDoor {
+		//part DoorRear
+		
+		part Interior
+		{
+			model Utility
+			{
+				file = PZKA_Vehicles_FranklinTruck_Utility_Trunk,
+			}
+		}
+		//template! = PZKA_DoorRear,
+		//template! = PZKA_DoorRear_Fast,
+	}
+	template vehicle PZKA_FranklinTruck_Utility_RearDoor_nr {
+		//part DoorRear
+
+		part Interior
+		{
+			model Utility
+			{
+				file = PZKA_Vehicles_FranklinTruck_Utility_Trunk_nr,
+			}
+		}
+		//template! = PZKA_DoorRear,
+		//template! = PZKA_DoorRear_Fast,
+	}
+}

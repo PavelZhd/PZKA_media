@@ -1,0 +1,55 @@
+module Base
+{
+	model PZKA_Vehicles_TruckBus_Trunk_nr
+	{
+		mesh = vehicles/pzka_TruckBus|DoorRear_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoorLeftBone 1.0,
+		boneWeight = RearDoorRightBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	model PZKA_Vehicles_TruckBus_RearWindow
+	{
+		mesh = vehicles/pzka_TruckBus|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FranklinBus_RearWindow {
+		part WindshieldRear
+		{
+            parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_RearWindow,
+			}
+		}
+	}
+	
+	template vehicle PZKA_FranklinBus_DoorRear {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_Trunk,
+			}
+		}
+		template! = PZKA_FranklinBus_RearWindow,
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Reg,
+	}
+	template vehicle PZKA_FranklinBus_DoorRear_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_TruckBus_Trunk_nr,
+			}
+		}
+		template! = PZKA_FranklinBus_RearWindow,
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Reg,
+	}
+}
