@@ -59,7 +59,22 @@ module Base
 	template vehicle PZKA_EngineDoor {
 		template! = PZKA_Hood,
 		template! = PZKA_Hood_Fast,
-	}	
+	}
+	template vehicle PZKA_OpenBedVersion {}
+	
+	template vehicle PZKA_RearDoorVersionMed {
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Reg,
+	}
+	template vehicle PZKA_RearDoorVersionSlow {
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Slow,
+	}
+
+	template vehicle PZKA_TrunkDoorVersion {
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Fast,
+	}
 	
 	
 	template vehicle PZKA_ATA2AirScoopHoodFix

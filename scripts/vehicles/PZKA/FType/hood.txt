@@ -1,0 +1,40 @@
+module Base
+{
+	model PZKA_Vehicles_FType_Hood
+	{
+		mesh = vehicles/FType/pzka_Shared|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_FType_Hood_nr
+	{
+		mesh = vehicles/FType/pzka_Shared|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+
+	template vehicle PZKA_FType_hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUp_Hood,
+			}
+		}
+		template! = PZKA_EngineDoor,
+	}	
+	template vehicle PZKA_FType_hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUp_Hood_nr,
+			}
+		}
+		template! = PZKA_EngineDoor,
+	}
+}

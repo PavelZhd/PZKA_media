@@ -6,6 +6,7 @@ module Base
 		template! = PZKA_Riddle_RearDoors_nr,
 		template! = PZKA_CVan70_Hood_nr,		
 		template! = PZKA_DashVan70_Lights,
-		template! = PZKA_CVan70_shared,
+		template! = PZKA_CVan70_Windshield,
+		template! = PZKA_CVan70_4SeatInterior,		
 	}
 }

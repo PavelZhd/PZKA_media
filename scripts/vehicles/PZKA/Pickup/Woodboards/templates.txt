@@ -1,0 +1,17 @@
+module Base
+{
+	template vehicle PZKA_Woodboard {
+		template! = PZKA_Pickup_hood,
+		template! = PZKA_Pickup_FrontDoors,
+		template! = pzka_Woodboarded_Lights,
+		template! = PZKA_Woodboards_Boards,
+		template! = PZKA_Pickup_Base,
+	}
+	template vehicle PZKA_Woodboard_nr {
+		template! = PZKA_Pickup_hood_nr,
+		template! = PZKA_Pickup_FrontDoors_nr,
+		template! = pzka_Woodboarded_Lights,
+		template! = PZKA_Woodboards_Boards,
+		template! = PZKA_Pickup_Base,
+	}
+}

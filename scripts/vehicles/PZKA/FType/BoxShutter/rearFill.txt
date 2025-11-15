@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Ftype_BoxShutter_Rear
+	{		
+		mesh = vehicles/FType/pzka_BoxShutter|Box_Shutter,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_BoxShutter_Rear_nr
+	{		
+		mesh = vehicles/FType/pzka_BoxShutter|Box_Shutter,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FType_BoxShutter_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model CUCV
+			{
+				file = PZKA_Vehicles_Ftype_BoxShutter_Rear,
+			}
+		}
+	}
+	template vehicle PZKA_FType_BoxShutter_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Ambulance
+			{
+				file = PZKA_Vehicles_Ftype_BoxShutter_Rear_nr,
+			}
+		}
+	}
+}

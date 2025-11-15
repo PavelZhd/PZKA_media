@@ -1,29 +1,28 @@
 local PZKA = require "PZKA_addAnimations"
 
 local SLE = getActivatedMods():contains("\\SimpleLightbarsExpandedPZK")
+local CullSeats = getActivatedMods():contains("\\VVA_cullseats") or getActivatedMods():contains("\\PZKA_cullseats")
 local VVE = getActivatedMods():contains("\\VVehicleEnhancer") or getActivatedMods():contains("\\Ze_VVehicleEnhancer_42B")
 
-PZKA.addToProfile("pzka_2SeatsF",{"PZKA_SeatFrontLeft","PZKA_SeatFrontRight"})
-PZKA.addToProfile("pzka_2SeatsM",{"PZKA_SeatMiddleLeft","PZKA_SeatMiddleRight"})
-PZKA.addToProfile("pzka_2SeatsR",{"PZKA_SeatRearLeft","PZKA_SeatRearRight"})
+PZKA.addToProfile("pzka_C_2SeatsF",{"PZKA_SeatFrontLeft","PZKA_SeatFrontRight"})
+PZKA.addToProfile("pzka_C_2SeatsM",{"PZKA_SeatMiddleLeft","PZKA_SeatMiddleRight"})
+PZKA.addToProfile("pzka_C_2SeatsR",{"PZKA_SeatRearLeft","PZKA_SeatRearRight"})
+
+PZKA.muteInProfile("pzka_2SeatsF",{})
+PZKA.muteInProfile("pzka_2SeatsM",{})
+PZKA.muteInProfile("pzka_2SeatsR",{})
+if not CullSeats then
+    PZKA.addToProfile("pzka_2SeatsF",{"pzka_C_2SeatsF"})
+    PZKA.addToProfile("pzka_2SeatsM",{"pzka_C_2SeatsM"})
+    PZKA.addToProfile("pzka_2SeatsR",{"pzka_C_2SeatsR"})
+end
+
 
 PZKA.addToProfile("pzka_4SeatsR",{"pzka_2SeatsF","pzka_2SeatsR"})
 PZKA.addToProfile("pzka_4SeatsM",{"pzka_2SeatsF","pzka_2SeatsM"})
 PZKA.addToProfile("pzka_6Seats",{"pzka_4SeatsR","pzka_2SeatsM"})
 
-PZKA.MakeDoorSeatProfile("pzka_2FrontDoors",{"FLW","FRW"})
-PZKA.ExpandDoorSeatProfile("4DoorsRW","pzka_2FrontDoors",{"RLW","RRW"})
-PZKA.ExpandDoorSeatProfile("4DoorsR","pzka_2FrontDoors",{"RL","RR"})
-PZKA.ExpandDoorSeatProfile("4DoorsMW","pzka_2FrontDoors",{"MLW","MRW"})
-PZKA.ExpandDoorSeatProfile("4DoorsM","pzka_2FrontDoors",{"ML","MR"})
 
-PZKA.addToProfile("pzka_TrunkDoor",{"VVA_TrunkDoorVersion","VVA_TrunkDoorFast"})
-PZKA.addToProfile("pzka_TrunkDoor2",{"VVA_TrunkDoorVersion","VVA_TrunkDoorMed"})
-PZKA.addToProfile("pzka_TrunkDoor4",{"VVA_TrunkDoorVersion","VVA_TrunkDoorSlow"})
-
-PZKA.addToProfile("pzka_RearDoor",{"PZKA_RearDoorShared","PZKA_RearDoorVersion"})
-PZKA.addToProfile("pzka_RearDoor2",{"PZKA_RearDoorShared","PZKA_RearDoorVersionMed"})
-PZKA.addToProfile("pzka_RearDoor4",{"PZKA_RearDoorShared","PZKA_RearDoorVersionSlow"})
 
 PZKA.addToProfile("pzka_t_lighbar",{"PZKA_lightbar"})
 PZKA.addToProfile("pzka_t_taxi",{"PZKA_taxi"})
@@ -196,16 +195,37 @@ PZKA.ApplyTemplateToVehicle("pzkFranklinTruckRV", "PZKA_Vehicles_FranklinTruck_R
 
 -- Frnaklin Bus
 
-PZKA.ApplyTemplateToVehicle("pzkFranklinTruckBus","PZKA_Vehicles_TruckBus_a_nr",{"PZKA_FranklinBus_nr"})
+PZKA.ApplyTemplateToVehicle("pzkFranklinTruckBus","PZKA_Vehicles_TruckBus_a_nr",{"pzka_2SeatsF","PZKA_FranklinBus_nr"})
 PZKA.CopyTemplateToVehicle("pzkFranklinTruckBusAirport","pzkFranklinTruckBus")
 PZKA.InheritTemplateToVehicle("pzkFranklinTruckBusArmy","pzkFranklinTruckBus","PZKA_Vehicles_TruckBus_Bars_a_nr")
 PZKA.CopyTemplateToVehicle("pzkFranklinTruckBusPrison","pzkFranklinTruckBusArmy")
 
 -- Chevaliuer Van70
 
-PZKA.ApplyTemplateToVehicle("pzkChevalierVan70","PZKA_Vehicles_ChevalierVan70_a",{"PZKA_CVan70"})
-PZKA.ApplyTemplateToVehicle("pzkDashVan70","PZKA_Vehicles_DashVan70_a",{"PZKA_DashVan70"})
-PZKA.ApplyTemplateToVehicle("pzkDashVan70Riddle","PZKA_Vehicles_Riddle_a",{"PZKA_Riddle_nr"})
+PZKA.ApplyTemplateToVehicle("pzkChevalierVan70","PZKA_Vehicles_ChevalierVan70_a",{"pzka_6Seats","PZKA_CVan70"})
+PZKA.ApplyTemplateToVehicle("pzkDashVan70","PZKA_Vehicles_DashVan70_a",{"pzka_6Seats","PZKA_DashVan70"})
+PZKA.ApplyTemplateToVehicle("pzkDashVan70Riddle","PZKA_Vehicles_Riddle_a",{"pzka_4SeatsR","PZKA_Riddle_nr"})
+
+-- Pickup
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierTowTruck","PZKA_Vehicles_ChevTow_a",{"pzka_2SeatsF","PZKA_Pickup","pzka_t_lighbar","PZKA_Pickup_Lightbar"})
+PZKA.ApplyTemplateToVehicle("pzkChevalierTowTruck_nr","PZKA_Vehicles_ChevTow_nr_a",{"pzka_2SeatsF","PZKA_Pickup_nr","pzka_t_lighbar","PZKA_Pickup_Lightbar"})
+PZKA.CopyTemplateToVehicle("pzkChevalierTowTruckFire","pzkChevalierTowTruck_nr")
+PZKA.CopyTemplateToVehicle("pzkChevalierTowTruckPoliceLouisvilleCounty","pzkChevalierTowTruck_nr")
+PZKA.CopyTemplateToVehicle("pzkChevalierTowTruckStatePolice","pzkChevalierTowTruck_nr")
+
+PZKA.ApplyTemplateToVehicle("pzkPickUpTruckWoodboarded","VVA_Vehicles_PickUpTruck_a",{"pzka_2SeatsF","PZKA_Woodboard"})
+
+-- FType
+---- Box
+PZKA.ApplyTemplateToVehicle("pzkFTypeBox_nr","PZKA_Vehicles_Ftype_Box_Base_nr",{"pzka_2SeatsF","PZKA_FType_CUCV"})
+PZKA.CopyTemplateToVehicle("pzkF350BoxCUCV","pzkFTypeBox_nr",{"pzka_t_lighbar","PZKA_FType_LightbarCUCV"})
+PZKA.CopyTemplateToVehicle("pzkF350BoxSwat","pzkFTypeBox_nr",{"pzka_t_lighbar","PZKA_FType_Lightbar"})
+
+PZKA.ApplyTemplateToVehicle("pzkF350BoxAmbulance","PZKA_Vehicles_Ftype_Box_Base_nr",{"pzka_2SeatsF","PZKA_FType_Ampulance","pzka_t_lighbar","PZKA_FType_Lightbar"})
+
+PZKA.ApplyTemplateToVehicle("pzkF350BoxUmoveit","PZKA_Vehicles_Ftype_Box_Base_nr",{"pzka_2SeatsF","PZKA_FType_BoxShutter_nr"})
+
 
 --- OLD FRAMEWORK CODE
 
@@ -337,10 +357,6 @@ PZKA.CloneAnimationProfile("pzkFranklin250FWagonLong","pzkFranklin150FWagonMediu
 PZKA.CreateAnimationProfile("pzkFranklin250FPickupWagonLong","PZKA_Vehicles_Ftype_Long_Wagon_Base1","PZKA_FType_CrewLong_F350_Lights","PZKA_FType_Long_Wagon_F350",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 PZKA.CloneAnimationProfile("pzkDashIntruder250WagonLong","pzkFranklin250FPickupWagonLong","PZKA_Vehicles_Ftype_Long_Wagon_Base2","PZKA_FType_CrewLong_Intruder_Lights","PZKA_FType_Long_Wagon_Intruder")
 
-PZKA.CreateAnimationProfile("pzkF350BoxCUCV","PZKA_Vehicles_Ftype_Box_Base_nr","PZKA_FType_BOX_CUCV_Lights","PZKA_FType_Box_CUCV",{"FLW","FRW"},"PZKA_RearDoorVersionMed")
-PZKA.CloneAnimationProfile("pzkF350BoxUmoveit","pzkF350BoxCUCV","PZKA_Vehicles_Ftype_Box_Base","PZKA_FType_BOX_UMove_Lights","PZKA_FType_Box_UMove")
-PZKA.CloneAnimationProfile("pzkF350BoxAmbulance","pzkF350BoxCUCV","PZKA_Vehicles_Ftype_Box_Base_nr","PZKA_FType_BOX_Ambulance_Lights","PZKA_FType_Box_Ambulance")
-PZKA.CloneAnimationProfile("pzkF350BoxSwat","pzkF350BoxCUCV","PZKA_Vehicles_Ftype_Box_Base_nr",false,"PZKA_FType_Box_SWAT")
 
 PZKA.CreateAnimationProfile("pzkFtypeTowTruck","PZKA_Vehicles_Ftype_Tow_Base","PZKA_FType_Tow_Lights","PZKA_FType_Tow",{"FLW","FRW"},"PZKA_OpenBedVersion")
 
@@ -428,12 +444,6 @@ PZKA.CreateAnimationProfile("pzkPeterbuilt","PZKA_Vehicles_Peterbuilt_a","pzka_P
 PZKA.CloneAnimationProfile("pzkPeterbuiltFossoil","pzkPeterbuilt","PZKA_Vehicles_Peterbuilt_nr_a",false,"PZKA_Peterbuilt_nr")
 PZKA.CloneAnimationProfile("pzkPeterbuiltPop","pzkPeterbuiltFossoil")
 
-PZKA.CreateAnimationProfile("pzkChevalierTowTruck","PZKA_Vehicles_ChevTow_a","pzka_ChevalierTow_Light","PZKA_ChevTow",{"FLW","FRW"},"PZKA_OpenBedVersion")
-PZKA.CloneAnimationProfile("pzkChevalierTowTruckFire","pzkChevalierTowTruck","PZKA_Vehicles_ChevTow_nr_a",false,"PZKA_ChevTow_nr")
-PZKA.CloneAnimationProfile("pzkChevalierTowTruckPoliceLouisvilleCounty","pzkChevalierTowTruckFire")
-PZKA.CloneAnimationProfile("pzkChevalierTowTruckStatePolice","pzkChevalierTowTruckFire")
-
-PZKA.CreateAnimationProfile("pzkPickUpTruckWoodboarded","VVA_Vehicles_PickUpTruck_a","pzka_ChevalierTow_Light","PZKA_Pickup_Woodboard",{"FLW","FRW"},"PZKA_OpenBedVersion")
 
 PZKA.CreateAnimationProfile("pzkContinentalBug","PZKA_Vehicles_Bug_a","pzka_Bug_Light","PZKA_Bug",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
 PZKA.CloneAnimationProfile("pzkContinentalBugHerbie","pzkContinentalBug","PZKA_Vehicles_Bug_nr_a",false,"PZKA_Bug_nr")

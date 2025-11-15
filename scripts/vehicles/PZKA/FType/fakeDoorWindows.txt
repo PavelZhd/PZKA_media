@@ -1,0 +1,45 @@
+module Base
+{
+	model VVA_Vehicles_FType_FakeDoorWindowRL
+	{
+		mesh = vehicles/FType/pzka_Shared|Window_FakeDoors_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_FType_FakeDoorWindowRL
+	{
+		mesh = vehicles/FType/pzka_Shared|Window_FakeDoors_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_FType_FakeDoorRearWindow	
+	{
+		mesh = vehicles/FType/pzka_Shared|RearWindow_FakeDoor_Picup_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FType_RearWindows_FakeDoors {
+		part WindowRearLeft
+        {	
+        	model Default
+        	{
+           		file = PZKA_Vehicles_FType_FakeWindow_RearLeft,
+        	}
+        }
+		part WindowRearRight
+        {	
+        	model Default
+            {
+            	file = PZKA_Vehicles_FType_FakeWindow_RearRight,
+			}
+        }
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_FakeDoors_Pickup_RearWindow,
+			}
+		}
+	}
+}

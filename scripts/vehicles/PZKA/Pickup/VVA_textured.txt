@@ -24,4 +24,30 @@ module Base
 		static = TRUE,
 		scale = 0.004,
 	}
+
+	template vehicle PZKA_Pickup_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUpTruck_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickUpTruck_SeatFR,
+			}
+		}
+
+		template! = PZKA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = VVA_Vehicles_PickUpTruck_internals,
+			}
+		}
+	}
 }

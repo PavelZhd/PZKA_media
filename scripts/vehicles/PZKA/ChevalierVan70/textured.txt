@@ -50,8 +50,7 @@ module Base
 		static = TRUE,
 		scale = 0.01,
 	}
-
-	template vehicle PZKA_CVan70_Interior {
+	template vehicle PZKA_CVan70_InteriorBase {
 		part SeatFrontLeft 
 		{
 			model Default
@@ -65,7 +64,20 @@ module Base
 			{
 				file = PZKA_Vehicles_Van70_SeatFR,
 			}
+		}		
+
+		template! = PZKA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = PZKA_Vehicles_Van70_internals,
+			}
 		}
+	}
+
+	template vehicle PZKA_CVan70_Interior {
+		
 		part SeatMiddleLeft 
 		{
 			model Default
@@ -93,15 +105,24 @@ module Base
 			{
 				file = PZKA_Vehicles_Van70_SeatRR,
 			}
-		}		
-
-		template! = PZKA_Interior,
-		part Inreior 
-		{						
-			model Default 
+		}
+		template! = PZKA_CVan70_InteriorBase,
+	}
+	template vehicle PZKA_CVan70_4SeatInterior {		
+		part SeatRearLeft 
+		{
+			model Default
 			{
-				file = PZKA_Vehicles_Van70_internals,
+				file = PZKA_Vehicles_Van70_SeatML,
 			}
 		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van70_SeatMR,
+			}
+		}
+		template! = PZKA_CVan70_InteriorBase,
 	}
 }

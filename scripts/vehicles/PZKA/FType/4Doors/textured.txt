@@ -1,0 +1,36 @@
+module Base
+{
+	model VVA_Vehicles_FType_SeatRL
+	{
+		mesh = vehicles/FType/pzka_4Door|Seat_RearLeft_obj,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_FType_SeatRR
+	{
+		mesh = vehicles/FType/pzka_4Door|Seat_RearRight_obj,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FType_4Door_Interior {
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FType_SeatRL,
+			}
+		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FType_SeatRR,
+			}
+		}
+	}
+}

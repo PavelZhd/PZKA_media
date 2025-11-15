@@ -1,0 +1,20 @@
+module Base
+{
+	model PZKA_Vehicles_Woodbord_Boards
+	{
+		mesh = vehicles/pzka_ChevalierTow|WoodBoards,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Woodboards_Boards {
+		part Interior 
+		{						
+			model Boards 
+			{
+				file = PZKA_Vehicles_Woodbord_Boards,
+			}
+		}
+	}
+}

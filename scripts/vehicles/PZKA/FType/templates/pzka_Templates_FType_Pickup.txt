@@ -61,33 +61,14 @@ module Base
 	}
 
 	template vehicle PZKA_FType_FakeDoor_Windows {
-		part WindowRearLeft
-        {	
-        	model Default
-        	{
-           		file = PZKA_Vehicles_FType_FakeWindow_RearLeft,
-        	}
-        }
-		part WindowRearRight
-        {	
-        	model Default
-            {
-            	file = PZKA_Vehicles_FType_FakeWindow_RearRight,
-			}
-        }
+
 	}
 
 	template vehicle PZKA_FType_FakeDoor_Pickup_animated {
 		template! = PZKA_FType_shared2Doors,
 		template! = PZKA_FType_FakeDoor_Windows,
 		
-		part WindshieldRear
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_FType_FakeDoors_Pickup_RearWindow,
-			}
-		}
+		
 	}
 	template vehicle PZKA_FType_4Door_Pickup_animated {
 		template! = PZKA_FType_shared4Doors,

@@ -1,0 +1,69 @@
+module Base
+{
+	model PZKA_Vehicles_FType_BoxShutter_Doors_Trunk
+	{
+		mesh = vehicles/FType/pzka_BoxShutter|Trunk_BoxShutter_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkShutterBone 1.0,
+		boneWeight = TrunkShutter2Bone 1.0,
+		boneWeight = TrunkShutter3Bone 1.0,
+		boneWeight = TrunkShutter4Bone 1.0,
+		boneWeight = TrunkShutter5Bone 1.0,
+		boneWeight = TrunkShutter6Bone 1.0,
+		boneWeight = TrunkShutter7Bone 1.0,
+		boneWeight = TrunkShutter8Bone 1.0,
+		boneWeight = TrunkShutter9Bone 1.0,
+		boneWeight = TrunkShutter10Bone 1.0,
+		boneWeight = TrunkShutter11Bone 1.0,
+		boneWeight = TrunkShutter12Bone 1.0,
+		boneWeight = TrunkShutter13Bone 1.0,
+		boneWeight = TrunkShutter14Bone 1.0,
+	}
+	model PZKA_Vehicles_FType_BoxShutter_Doors_Trunk_nr
+	{
+		mesh = vehicles/FType/pzka_BoxShutter|Trunk_BoxShutter_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkShutterBone 1.0,
+		boneWeight = TrunkShutter2Bone 1.0,
+		boneWeight = TrunkShutter3Bone 1.0,
+		boneWeight = TrunkShutter4Bone 1.0,
+		boneWeight = TrunkShutter5Bone 1.0,
+		boneWeight = TrunkShutter6Bone 1.0,
+		boneWeight = TrunkShutter7Bone 1.0,
+		boneWeight = TrunkShutter8Bone 1.0,
+		boneWeight = TrunkShutter9Bone 1.0,
+		boneWeight = TrunkShutter10Bone 1.0,
+		boneWeight = TrunkShutter11Bone 1.0,
+		boneWeight = TrunkShutter12Bone 1.0,
+		boneWeight = TrunkShutter13Bone 1.0,
+		boneWeight = TrunkShutter14Bone 1.0,
+	}
+	
+	template vehicle PZKA_FType_BoxShutter_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_BoxShutter_Doors_Trunk,
+			}
+		}
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Fast,
+	}
+	template vehicle PZKA_FType_BoxShutter_Trunk_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_BoxShutter_Doors_Trunk_nr,
+			}
+		}
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Fast,
+	}
+
+}

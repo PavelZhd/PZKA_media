@@ -1,0 +1,49 @@
+module Base
+{
+	model VVA_Vehicles_FType_Lightbar
+	{
+		mesh = vehicles/FType/pzka_Shared|Lightbar,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_FType_LightbarTow
+	{
+		mesh = vehicles/FType/pzka_Shared|Lightbar_Tow,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_FType_LightbarCUCV
+	{
+		mesh = vehicles/FType/pzka_Shared|CUCVLight,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FType_Lightbar {
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FType_Lightbar,
+			}			
+		}
+	}
+	template vehicle PZKA_FType_LightbarTow {
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FType_LightbarTow,
+			}			
+		}
+	}
+	template vehicle PZKA_FType_LightbarCUCV {
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FType_LightbarCUCV,
+			}			
+		}
+	}
+}

@@ -1,13 +1,13 @@
 module Base
 {	
-	model PZKA_Vehicles_FType_Box_LightFL
+	model PZKA_Vehicles_FType_Front_CUCV_LightFL
 	{
 		mesh = vehicles/pzka_FType_light|Light_CUCV_FrontLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,
 	}	
-	model PZKA_Vehicles_FType_Box_LightFR
+	model PZKA_Vehicles_FType_Front_CUCV_LightFR
 	{
 		mesh = vehicles/pzka_FType_light|Light_CUCV_FrontRight_obj,
 		shader = vehicle_multiuv_vva,
@@ -15,19 +15,19 @@ module Base
 		scale = 0.01,
 	}	
 	
-	template vehicle PZKA_FType_Box_FrontLights {
+	template vehicle PZKA_FType_Front_CUCV_FrontLights {
 		part HeadlightLeft 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_FType_Box_LightFL,
+				file = PZKA_Vehicles_FType_Front_CUCV_LightFL,
 			}
 		}
 		part HeadlightRight 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_FType_Box_LightFR,
+				file = PZKA_Vehicles_FType_Front_CUCV_LightFR,
 			}
 		}		
 	}
@@ -48,7 +48,7 @@ module Base
 	}
 	template vehicle PZKA_FType_BOX_CUCV_Lights {
 		
-		template! = PZKA_FType_Box_FrontLights,
+		template! = PZKA_FType_Front_CUCV_FrontLights,
 		part HeadlightRearLeft
 		{
 			model Default
@@ -81,7 +81,7 @@ module Base
 	}
 	template vehicle PZKA_FType_BOX_Ambulance_Lights {
 		
-		template! = PZKA_FType_Box_FrontLights,
+		template! = PZKA_FType_Front_CUCV_FrontLights,
 		part HeadlightRearLeft
 		{
 			model Default
@@ -114,7 +114,7 @@ module Base
 	}
 	template vehicle PZKA_FType_BOX_UMove_Lights {
 		
-		template! = PZKA_FType_Box_FrontLights,
+		template! = PZKA_FType_Front_CUCV_FrontLights,
 		part HeadlightRearLeft
 		{
 			model Default

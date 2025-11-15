@@ -1,0 +1,53 @@
+module Base
+{
+	model VVA_Vehicles_FType_internals
+	{
+		mesh = vehicles/FType/pzka_Shared|Vehicles_Interior,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_FType_SeatFL
+	{
+		mesh = vehicles/FType/pzka_Shared|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_FType_SeatFR
+	{
+		mesh = vehicles/FType/pzka_Shared|Seat_FrontRight_obj,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FType_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FType_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FType_SeatFR,
+			}
+		}
+
+		template! = PZKA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = VVA_Vehicles_FType_internals,
+			}
+		}
+	}
+}

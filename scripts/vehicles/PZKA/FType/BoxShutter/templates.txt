@@ -1,0 +1,19 @@
+module Base
+{
+	template vehicle PZKA_FType_BoxShutter {
+		template! = PZKA_FType_Base,
+		template! = PZKA_FType_BoxShutter_Trunk,
+		template! = PZKA_FType_Front_CUCV_Fill,
+		template! = PZKA_FType_Front_CUCV_FrontLights,
+		template! = PZKA_FType_BoxShutter_RearFill,
+		template! = PZKA_FType_BoxShutter_Lights,
+	}
+	template vehicle PZKA_FType_BoxShutter_nr {
+		template! = PZKA_FType_Base_nr,
+		template! = PZKA_FType_BoxShutter_Trunk_nr,
+		template! = PZKA_FType_Front_CUCV_Fill_nr,
+		template! = PZKA_FType_Front_CUCV_FrontLights,
+		template! = PZKA_FType_BoxShutter_RearFill_nr,
+		template! = PZKA_FType_BoxShutter_Lights,
+	}
+}

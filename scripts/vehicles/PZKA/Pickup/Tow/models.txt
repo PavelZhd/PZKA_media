@@ -14,13 +14,4 @@ module Base
 		invertX = FALSE,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Pickup_WoodBoards
-	{
-		mesh = vehicles/pzka_ChevalierTow|WoodBoards,
-		shader = vehicle_norandom_multiuv_noreflect,
-		invertX = FALSE,
-		scale = 0.01,
-	}
-
-
 }

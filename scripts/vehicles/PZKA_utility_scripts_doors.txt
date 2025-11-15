@@ -143,7 +143,7 @@ module Base
 	}
 
 	template vehicle PZKA_DoorML {
-		part PZKA_DoorMiddleLeft
+		part DoorMiddleLeft
 		{
 			anim Close
 			{
@@ -171,7 +171,7 @@ module Base
 		}
 	}
 	template vehicle PZKA_DoorML_Slow {
-		part PZKA_DoorMiddleLeft
+		part DoorMiddleLeft
 		{
 			anim Close
 			{
@@ -185,7 +185,7 @@ module Base
 		}
 	}
 	template vehicle PZKA_DoorML_Reg {
-		part PZKA_DoorMiddleLeft
+		part DoorMiddleLeft
 		{
 			anim Close
 			{
@@ -199,7 +199,7 @@ module Base
 		}
 	}
 	template vehicle PZKA_DoorML_Fast {
-		part PZKA_DoorMiddleLeft
+		part DoorMiddleLeft
 		{
 			anim Close
 			{

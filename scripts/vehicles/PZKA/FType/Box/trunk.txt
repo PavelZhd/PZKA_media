@@ -1,0 +1,66 @@
+module Base
+{
+	model PZKA_Vehicles_FType_Box_Doors_RearWindow
+	{
+		mesh = vehicles/FType/pzka_Box|RearWindow_Anbulance_obj,
+		shader = vehicle_multiuv_vva,
+		invertX = FALSE,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Box_Doors_Trunk
+	{
+		mesh = vehicles/FType/pzka_Box|Trunk_Ambulance_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = AmbulanceTrunkRightBone 1.0,
+		boneWeight = AmbulanceTrunkLeftBone 1.0,
+	}
+	model PZKA_Vehicles_FType_Box_Doors_Trunk_nr
+	{
+		mesh = vehicles/FType/pzka_Box|Trunk_Ambulance_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = AmbulanceTrunkRightBone 1.0,
+		boneWeight = AmbulanceTrunkLeftBone 1.0,
+	}
+
+	template vehicle PZKA_FType_Box_TrunkWindow {
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Box_Doors_RearWindow,
+			}
+		}
+	}
+	
+	template vehicle PZKA_FType_Box_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Box_Doors_Trunk,
+			}
+		}
+		template! = PZKA_FType_Box_TrunkWindow,
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Reg,
+	}
+	template vehicle PZKA_FType_Box_Trunk_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Box_Doors_Trunk_nr,
+			}
+		}
+		template! = PZKA_FType_Box_TrunkWindow,
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Reg,
+	}
+
+}

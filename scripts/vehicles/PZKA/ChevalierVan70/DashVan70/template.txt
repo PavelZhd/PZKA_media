@@ -6,7 +6,8 @@ module Base
 		template! = PZKA_CVan70_MiddleDoors,
 		template! = PZKA_CVan70_Hood,		
 		template! = PZKA_DashVan70_Lights,
-		template! = PZKA_CVan70_shared,
+		template! = PZKA_CVan70_Windshield,
+		template! = PZKA_CVan70_Interior,
 		template! = PZKA_DashVan70_rearWindowStatic,
 	}
 }

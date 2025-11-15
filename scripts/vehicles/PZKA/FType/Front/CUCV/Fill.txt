@@ -1,0 +1,38 @@
+module Base
+{	
+	model PZKA_Vehicles_FType_Front_CUCV_Fill
+	{
+		mesh = vehicles/FType/pzka_Front|Grill_CUCV,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Front_CUCV_Fill_nr
+	{
+		mesh = vehicles/FType/pzka_Front|Grill_CUCV,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	
+	template vehicle PZKA_FType_Front_CUCV_Fill {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model CUCV
+			{
+				file = PZKA_Vehicles_FType_Front_CUCV_Fill,
+			}
+		}
+	}
+	template vehicle PZKA_FType_Front_CUCV_Fill_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model CUCV
+			{
+				file = PZKA_Vehicles_FType_Front_CUCV_Fill_nr,
+			}
+		}
+	}
+}
