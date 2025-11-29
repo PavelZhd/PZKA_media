@@ -1,15 +1,15 @@
 module Base
 {
-	model PZKA_Vehicles_Ftype_Box_RearCUCV_nr
+	model PZKA_Vehicles_Ftype_Box_CUCV_rearFill_nr
 	{		
-		mesh = vehicles/FType/pzka_Box|Comp_Box_Door,
+		mesh = vehicles/FType/pzka_Box|Box_Door,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Ftype_Box_Ambulance_nr
+	model PZKA_Vehicles_Ftype_Box_Ambulance_rearFill_nr
 	{		
-		mesh = vehicles/FType/pzka_Box|Comp_Box_DoorAmbulance,
+		mesh = vehicles/FType/pzka_Box|Box_DoorAmbulance,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
@@ -21,7 +21,7 @@ module Base
 		{
 			model CUCV
 			{
-				file = PZKA_Vehicles_FType_Front_CUCV_Fill_nr,
+				file = PZKA_Vehicles_Ftype_Box_CUCV_rearFill_nr,
 			}
 		}
 	}
@@ -31,7 +31,7 @@ module Base
 		{
 			model Ambulance
 			{
-				file = PZKA_Vehicles_FType_Front_Ambulance_Fill_nr,
+				file = PZKA_Vehicles_Ftype_Box_Ambulance_rearFill_nr,
 			}
 		}
 	}

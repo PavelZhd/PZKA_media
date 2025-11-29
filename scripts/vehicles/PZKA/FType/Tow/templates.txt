@@ -1,0 +1,11 @@
+module Base
+{
+	template vehicle PZKA_FType_Tow {
+		template! = PZKA_FType_Base,
+		template! = PZKA_FType_NIntruder_FrontFill,
+		template! = PZKA_FType_NIntruder_FrontLights,
+		template! = PZKA_FType_Tow_RearFill,
+		template! = PZKA_FType_Tow_RearLights,		
+	}
+
+}

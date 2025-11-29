@@ -1,13 +1,13 @@
 module Base
 {	
-	model PZKA_Vehicles_FType_Front_Intruder11_LightFL
+	model PZKA_Vehicles_FType_Intruder11_LightFL
 	{
 		mesh = vehicles/pzka_FType_light|Light_Intruder11_FrontLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,
 	}	
-	model PZKA_Vehicles_FType_Front_Intruder11_LightFR
+	model PZKA_Vehicles_FType_Intruder11_LightFR
 	{
 		mesh = vehicles/pzka_FType_light|Light_Intruder11_FrontRight_obj,
 		shader = vehicle_multiuv_vva,
@@ -15,19 +15,19 @@ module Base
 		scale = 0.01,
 	}	
 	
-	template vehicle PZKA_FType_Front_Intruder11_FrontLights {
+	template vehicle PZKA_FType_Intruder11_FrontLights {
 		part HeadlightLeft 
 		{
-			model Default
+			model Intruder_11
 			{
-				file = PZKA_Vehicles_FType_Front_Intruder11_LightFL,
+				file = PZKA_Vehicles_FType_Intruder11_LightFL,
 			}
 		}
 		part HeadlightRight 
 		{
-			model Default
+			model Intruder_11
 			{
-				file = PZKA_Vehicles_FType_Front_Intruder11_LightFR,
+				file = PZKA_Vehicles_FType_Intruder11_LightFR,
 			}
 		}		
 	}

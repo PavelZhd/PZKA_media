@@ -1,13 +1,13 @@
 module Base
 {	
-	model PZKA_Vehicles_FType_Front_F350_15_LightFL
+	model PZKA_Vehicles_FType_F350_15_LightFL
 	{
 		mesh = vehicles/pzka_FType_light|Light_F350_12345_FrontLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,
 	}	
-	model PZKA_Vehicles_FType_Front_F350_15_LightFR
+	model PZKA_Vehicles_FType_F350_15_LightFR
 	{
 		mesh = vehicles/pzka_FType_light|Light_F350_12345_FrontRight_obj,
 		shader = vehicle_multiuv_vva,
@@ -15,19 +15,19 @@ module Base
 		scale = 0.01,
 	}	
 	
-	template vehicle PZKA_FType_Front_F350_15_FrontLights {
+	template vehicle PZKA_FType_F350_15_FrontLights {
 		part HeadlightLeft 
 		{
-			model Default
+			model F350_15
 			{
-				file = PZKA_Vehicles_FType_Front_F350_15_LightFL,
+				file = PZKA_Vehicles_FType_F350_15_LightFL,
 			}
 		}
 		part HeadlightRight 
 		{
-			model Default
+			model F350_15
 			{
-				file = PZKA_Vehicles_FType_Front_F350_15_LightFR,
+				file = PZKA_Vehicles_FType_F350_15_LightFR,
 			}
 		}		
 	}

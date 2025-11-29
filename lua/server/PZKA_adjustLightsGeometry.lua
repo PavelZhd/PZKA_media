@@ -106,9 +106,56 @@ FillPartsMap["Base.pzkPickUpTruck93"]  = {
     ["Intruder_6"] = "a5a6a7a8a9a",
     ["Intruder_11"] = "a10a11a12a",
 }
+FillPartsMap["Base.pzkDash150Utility"]  = {
+    ["Intruder_1"] = "a0a1a",
+    ["Intruder_6"] = "a2a3a",
+    ["Intruder_11"] = "a4a5a",
+}
+FillPartsMap["Base.pzkDash150BoxFlatbed"] = FillPartsMap["Base.pzkDash150Utility"]
+
+FillPartsMap["Base.pzkDash150UtilityAirport"]  = {
+    ["Intruder_1"] = "a0a",
+    ["Intruder_6"] = "a1a",
+    ["Intruder_11"] = "a2a",
+}
+FillPartsMap["Base.pzkDash150UtilityMoore"] = FillPartsMap["Base.pzkDash150UtilityAirport"]
+FillPartsMap["Base.pzkDash150UtilityNewCoalfieldMechanic"] = FillPartsMap["Base.pzkDash150UtilityAirport"]
+FillPartsMap["Base.pzkDash150UtilityIrvingtonSpeedway"] = FillPartsMap["Base.pzkDash150UtilityAirport"]
+FillPartsMap["Base.pzkDash150UtilityRanger"] = FillPartsMap["Base.pzkDash150UtilityAirport"]
+FillPartsMap["Base.pzkDash150UtilityPublicWorks"] = FillPartsMap["Base.pzkDash150UtilityAirport"]
+FillPartsMap["Base.pzkDash150UtilityFire"] = FillPartsMap["Base.pzkDash150UtilityAirport"]
+FillPartsMap["Base.pzkDash150UtilityLVPD"] = FillPartsMap["Base.pzkDash150UtilityAirport"]
+FillPartsMap["Base.pzkDash150UtilityMuldPD"] = FillPartsMap["Base.pzkDash150UtilityAirport"]
+FillPartsMap["Base.pzkDash150UtilityKSTPD"] = FillPartsMap["Base.pzkDash150UtilityAirport"]
+FillPartsMap["Base.pzkDash150UtilityBulletinPD"] = FillPartsMap["Base.pzkDash150UtilityAirport"]
+FillPartsMap["Base.pzkDash150BoxFlatbedPublicWorks"] = FillPartsMap["Base.pzkDash150UtilityAirport"]
+
+
 FillPartsMap["Base.pzkDashIntruder250PickupLong"]  = FillPartsMap["Base.pzkPickUpTruck93"]
 FillPartsMap["Base.pzkDashIntruder150RegVan"]  = FillPartsMap["Base.pzkPickUpTruck93"]
 FillPartsMap["Base.pzkDashIntruder250WagonLong"]  = FillPartsMap["Base.pzkPickUpTruck93"]
+
+FillPartsMap["Base.pzkF150Utility"]  = {
+    ["F350_15"] = "a0a1a2a3a",
+    ["F350_68"] = "a4a5a",
+}
+FillPartsMap["Base.pzkF150BoxFlatbed"] = FillPartsMap["Base.pzkF150Utility"]
+
+FillPartsMap["Base.pzkF150UtilityAirport"]  = {
+    ["F350_15"] = "a0a1a",
+    ["F350_68"] = "a2a",
+}
+FillPartsMap["Base.pzkF150UtilityMoore"] = FillPartsMap["Base.pzkF150UtilityAirport"]
+FillPartsMap["Base.pzkF150UtilityNewCoalfieldMechanic"] = FillPartsMap["Base.pzkF150UtilityAirport"]
+FillPartsMap["Base.pzkF150UtilityIrvingtonSpeedway"] = FillPartsMap["Base.pzkF150UtilityAirport"]
+FillPartsMap["Base.pzkF150UtilityRanger"] = FillPartsMap["Base.pzkF150UtilityAirport"]
+FillPartsMap["Base.pzkF150UtilityPublicWorks"] = FillPartsMap["Base.pzkF150UtilityAirport"]
+FillPartsMap["Base.pzkF150UtilityFire"] = FillPartsMap["Base.pzkF150UtilityAirport"]
+FillPartsMap["Base.pzkF150UtilityLVPD"] = FillPartsMap["Base.pzkF150UtilityAirport"]
+FillPartsMap["Base.pzkF150UtilityMuldPD"] = FillPartsMap["Base.pzkF150UtilityAirport"]
+FillPartsMap["Base.pzkF150UtilityKSTPD"] = FillPartsMap["Base.pzkF150UtilityAirport"]
+FillPartsMap["Base.pzkF150UtilityBulletinPD"] = FillPartsMap["Base.pzkF150UtilityAirport"]
+FillPartsMap["Base.pzkF150BoxFlatbedPublicWorks"] = FillPartsMap["Base.pzkF150UtilityAirport"]
 
 FillPartsMap["Base.pzkFranklin350FPickupCrewLong"] = {
     ["F350_15"] = "a0a1a2a3a4a",
@@ -129,6 +176,27 @@ FillPartsMap["Base.pzkChevalierPickupCrewLong"] = {
     ["Province_56"] = "a4a5a",
     ["Province_78"] = "a6a7a",
 }
+FillPartsMap["Base.pzkChevalier150Utility"] = FillPartsMap["Base.pzkChevalierPickupCrewLong"]
+FillPartsMap["Base.pzkChevalier150BoxFlatbed"] = FillPartsMap["Base.pzkChevalierPickupCrewLong"]
+
+FillPartsMap["Base.pzkChevalier150UtilityAirport"] = {
+    ["Province_12"] = "a0a",
+    ["Province_34"] = "a1a",
+    ["Province_56"] = "a2a",
+    ["Province_78"] = "a3a",
+}
+FillPartsMap["Base.pzkChevalier150UtilityMoore"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
+FillPartsMap["Base.pzkChevalier150UtilityNewCoalfieldMechanic"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
+FillPartsMap["Base.pzkChevalier150UtilityIrvingtonSpeedway"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
+FillPartsMap["Base.pzkChevalier150UtilityRanger"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
+FillPartsMap["Base.pzkChevalier150UtilityPublicWorks"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
+FillPartsMap["Base.pzkChevalier150UtilityFire"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
+FillPartsMap["Base.pzkChevalier150UtilityLVPD"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
+FillPartsMap["Base.pzkChevalier150UtilityMuldPD"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
+FillPartsMap["Base.pzkChevalier150UtilityKSTPD"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
+FillPartsMap["Base.pzkChevalier150UtilityBulletinPD"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
+FillPartsMap["Base.pzkChevalier150BoxFlatbedPublicWorks"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
+
 FillPartsMap["Base.pzkChevalierE6"] = {
     ["Province_12"] = "aa",
     ["Province_34"] = "a0a1a",
@@ -229,7 +297,7 @@ function Vehicles.Init.AdjustLightGeometry(vehicle, part)
             end
         else 
             for modelName, match in pairs(fillData) do
-                --part:setModelVisible(modelName, false)
+                part:setModelVisible(modelName, false)
             end
         end
     end    

@@ -22,7 +22,7 @@ module Base
 		{
 			model Default
 			{
-				file = VVA_Vehicles_PickUp_Hood,
+				file = PZKA_Vehicles_FType_Hood,
 			}
 		}
 		template! = PZKA_EngineDoor,
@@ -32,7 +32,7 @@ module Base
 		{
 			model Default
 			{
-				file = VVA_Vehicles_PickUp_Hood_nr,
+				file = PZKA_Vehicles_FType_Hood_nr,
 			}
 		}
 		template! = PZKA_EngineDoor,

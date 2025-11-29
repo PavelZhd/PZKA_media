@@ -1,13 +1,13 @@
 module Base
 {	
-	model PZKA_Vehicles_FType_Front_Intruder11_Fill
+	model PZKA_Vehicles_FType_Intruder11_FrontFill
 	{
 		mesh = vehicles/FType/pzka_Front|Grill_Intruder11,
 		shader = vehicle_multiuv_noreflect,
 		static = TRUE,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_FType_Front_Intruder11_Fill_nr
+	model PZKA_Vehicles_FType_Intruder11_FrontFill_nr
 	{
 		mesh = vehicles/FType/pzka_Front|Grill_Intruder11,
 		shader = vehicle_norandom_multiuv_noreflect,
@@ -15,23 +15,21 @@ module Base
 		scale = 0.01,
 	}
 	
-	template vehicle PZKA_FType_Front_Intruder11_Fill {
-		template! = PZKA_Frontfill,
+	template vehicle PZKA_FType_Intruder11_FrontFill_model {
 		part Frontfill
 		{
-			model Intruder11
+			model Intruder_11
 			{
-				file = PZKA_Vehicles_FType_Front_Intruder11_Fill,
+				file = PZKA_Vehicles_FType_Intruder11_FrontFill,
 			}
 		}
 	}
-	template vehicle PZKA_FType_Front_Intruder11_Fill_nr {
-		template! = PZKA_Frontfill,
+	template vehicle PZKA_FType_Intruder11_FrontFill_model_nr {
 		part Frontfill
 		{
-			model Intruder11
+			model Intruder_11
 			{
-				file = PZKA_Vehicles_FType_Front_Intruder11_Fill_nr,
+				file = PZKA_Vehicles_FType_Intruder11_FrontFill_nr,
 			}
 		}
 	}

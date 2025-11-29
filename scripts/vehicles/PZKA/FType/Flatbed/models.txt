@@ -1,0 +1,17 @@
+module Base
+{
+	model PZKA_Vehicles_Ftype_Flatbed_Base
+	{
+		mesh = vehicles/FType/pzka_Flatbed|Base_Flatbed,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Flatbed_Base_nr
+	{		
+		mesh = vehicles/FType/pzka_Flatbed|Base_Flatbed,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

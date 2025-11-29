@@ -4,7 +4,7 @@ module Base
 	{
 		mesh = vehicles/FType/pzka_Shared|Vehicles_Interior,
 		
-		texture = Vehicles/vehicle_pickupshell,
+		texture = Vehicles/Vehicle_pzkChevalierProvinceshell,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -12,7 +12,7 @@ module Base
 	{
 		mesh = vehicles/FType/pzka_Shared|Seat_FrontLeft_obj,
 		
-		texture = Vehicles/vehicle_pickupshell,
+		texture = Vehicles/Vehicle_pzkChevalierProvinceshell,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -20,7 +20,7 @@ module Base
 	{
 		mesh = vehicles/FType/pzka_Shared|Seat_FrontRight_obj,
 		
-		texture = Vehicles/vehicle_pickupshell,
+		texture = Vehicles/Vehicle_pzkChevalierProvinceshell,
 		static = TRUE,
 		scale = 0.01,
 	}

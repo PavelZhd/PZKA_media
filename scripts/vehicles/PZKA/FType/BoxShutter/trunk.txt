@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_FType_BoxShutter_Doors_Trunk
 	{
-		mesh = vehicles/FType/pzka_BoxShutter|Trunk_BoxShutter_obj,
+		mesh = vehicles/FType/pzka_BoxShutter|Trunk_Box_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -23,7 +23,7 @@ module Base
 	}
 	model PZKA_Vehicles_FType_BoxShutter_Doors_Trunk_nr
 	{
-		mesh = vehicles/FType/pzka_BoxShutter|Trunk_BoxShutter_obj,
+		mesh = vehicles/FType/pzka_BoxShutter|Trunk_Box_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,

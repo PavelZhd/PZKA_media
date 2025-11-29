@@ -1,13 +1,13 @@
 module Base
 {	
-	model PZKA_Vehicles_FType_Front_Province56_LightFL
+	model PZKA_Vehicles_FType_Province56_LightFL
 	{
 		mesh = vehicles/pzka_FType_light|Light_Province56_FrontLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,
 	}	
-	model PZKA_Vehicles_FType_Front_Province56_LightFR
+	model PZKA_Vehicles_FType_Province56_LightFR
 	{
 		mesh = vehicles/pzka_FType_light|Light_Province56_FrontRight_obj,
 		shader = vehicle_multiuv_vva,
@@ -15,19 +15,19 @@ module Base
 		scale = 0.01,
 	}	
 	
-	template vehicle PZKA_FType_Front_Province56_FrontLights {
+	template vehicle PZKA_FType_Province56_FrontLights {
 		part HeadlightLeft 
 		{
-			model Default
+			model Province_56
 			{
-				file = PZKA_Vehicles_FType_Front_Province56_LightFL,
+				file = PZKA_Vehicles_FType_Province56_LightFL,
 			}
 		}
 		part HeadlightRight 
 		{
-			model Default
+			model Province_56
 			{
-				file = PZKA_Vehicles_FType_Front_Province56_LightFR,
+				file = PZKA_Vehicles_FType_Province56_LightFR,
 			}
 		}		
 	}

@@ -1,0 +1,70 @@
+module Base
+{
+	template vehicle PZKA_FType_Province_FrontLight_models {
+		template! = PZKA_FType_Province12_FrontLights,
+		template! = PZKA_FType_Province34_FrontLights,
+		template! = PZKA_FType_Province56_FrontLights,
+		template! = PZKA_FType_Province78_FrontLights,		
+	}
+	template vehicle PZKA_FType_Province_FrontLights {
+		template! = PZKA_FType_Province_FrontLight_models,
+		template! = PZKA_VariableFrontLights,
+	}
+
+    template vehicle PZKA_FType_Province_12_FrontFill {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Province12_FrontFill_model,
+	}
+	template vehicle PZKA_FType_Province_34_FrontFill {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Province34_FrontFill_model,
+	}
+	template vehicle PZKA_FType_Province_56_FrontFill {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Province56_FrontFill_model,
+	}
+	template vehicle PZKA_FType_Province_78_FrontFill {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Province78_FrontFill_model,
+	}
+	template vehicle PZKA_FType_Province_FrontFill_models {
+		template! = PZKA_FType_Province12_FrontFill_model,
+		template! = PZKA_FType_Province34_FrontFill_model,
+		template! = PZKA_FType_Province56_FrontFill_model,
+		template! = PZKA_FType_Province78_FrontFill_model,
+        
+	}
+	template vehicle PZKA_FType_Province_FrontFill {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Province_FrontFill_models,
+		template! = PZKA_VariableFrontFill,
+	}
+
+    template vehicle PZKA_FType_Province_12_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Province12_FrontFill_model_nr,
+	}
+	template vehicle PZKA_FType_Province_34_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Province34_FrontFill_model_nr,
+	}
+	template vehicle PZKA_FType_Province_56_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Province56_FrontFill_model_nr,
+	}
+	template vehicle PZKA_FType_Province_78_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Province78_FrontFill_model_nr,
+	}
+	template vehicle PZKA_FType_Province_FrontFill_models_nr {
+		template! = PZKA_FType_Province12_FrontFill_model_nr,
+		template! = PZKA_FType_Province34_FrontFill_model_nr,
+		template! = PZKA_FType_Province56_FrontFill_model_nr,
+		template! = PZKA_FType_Province78_FrontFill_model_nr,
+	}
+	template vehicle PZKA_FType_Province_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Province_FrontFill_models_nr,
+		template! = PZKA_VariableFrontFill,
+	}
+}

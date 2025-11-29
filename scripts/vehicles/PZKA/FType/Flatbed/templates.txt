@@ -1,0 +1,40 @@
+module Base
+{
+	template vehicle PZKA_FType_Flatbed_shared {
+		template! = PZKA_FType_Base,
+		template! = PZKA_FType_Utility_RearWindow,
+		template! = PZKA_FType_Flatbed_RearLights,		
+	}
+
+	template vehicle PZKA_FType_Flatbed_F350 {
+		template! = PZKA_FType_F350_FrontFill,
+		template! = PZKA_FType_F350_FrontLights,
+		template! = PZKA_FType_Flatbed_shared,
+	}	
+	template vehicle PZKA_FType_Flatbed_Intruder {
+		template! = PZKA_FType_Intruder_FrontFill,
+		template! = PZKA_FType_Intruder_FrontLights,
+		template! = PZKA_FType_Flatbed_shared,
+	}		
+	template vehicle PZKA_FType_Flatbed_Province {
+		template! = PZKA_FType_Province_FrontFill,
+		template! = PZKA_FType_Province_FrontLights,
+		template! = PZKA_FType_Flatbed_shared,
+	}
+	
+	template vehicle PZKA_FType_Flatbed_F350_nr {
+		template! = PZKA_FType_F350_FrontFill_nr,
+		template! = PZKA_FType_F350_FrontLights,
+		template! = PZKA_FType_Flatbed_shared,
+	}	
+	template vehicle PZKA_FType_Flatbed_Intruder_nr {
+		template! = PZKA_FType_Intruder_FrontFill_nr,
+		template! = PZKA_FType_Intruder_FrontLights,
+		template! = PZKA_FType_Flatbed_shared,
+	}		
+	template vehicle PZKA_FType_Flatbed_Province_nr {
+		template! = PZKA_FType_Province_FrontFill_nr,
+		template! = PZKA_FType_Province_FrontLights,
+		template! = PZKA_FType_Flatbed_shared,
+	}
+}

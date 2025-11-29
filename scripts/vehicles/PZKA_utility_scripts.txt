@@ -198,4 +198,78 @@ module Base
 	    	}
 		}
     }
+	template vehicle PZKA_VariableFrontLights {
+		part HeadlightLeft 
+		{
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+		part HeadlightRight 
+		{
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+	}
+	template vehicle PZKA_VariableRearLights {
+		part HeadlightRearLeft 
+		{
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			lua
+	    	{
+				create = Vehicles.Create.Headlight,
+				init = Vehicles.Init.AdjustLightGeometryHeadlight,
+				update = Vehicles.Update.Headlight,
+	    	}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+	}
+	
+	template vehicle PZKA_VariableFrontFill {
+		part Frontfill
+        {
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+            	init = Vehicles.Init.AdjustLightGeometry,
+	    	}
+        }
+	}
+	
+	template vehicle PZKA_VariableRearFill {
+		part Rearfill
+        {
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+            	init = Vehicles.Init.AdjustLightGeometry,
+	    	}
+        }
+	}
 }

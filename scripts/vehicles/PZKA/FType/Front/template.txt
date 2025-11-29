@@ -1,0 +1,83 @@
+module Base
+{
+	template vehicle PZKA_FType_FrontLights {
+		template! = PZKA_FType_F350_FrontLight_models,
+		template! = PZKA_FType_Intruder_FrontLight_models,
+		template! = PZKA_FType_Province_FrontLight_models,
+		template! = PZKA_VariableFrontLights,
+	}
+
+    template vehicle PZKA_FType_FrontFill {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_F350_FrontFill_models,
+		template! = PZKA_FType_Intruder_FrontFill_models,
+        template! = PZKA_FType_Province_FrontFill_models,
+		template! = PZKA_VariableFrontFill,
+	}
+    template vehicle PZKA_FType_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_F350_FrontFill_models_nr,
+		template! = PZKA_FType_Intruder_FrontFill_models_nr,
+        template! = PZKA_FType_Province_FrontFill_models_nr,
+		template! = PZKA_VariableFrontFill,
+	}
+
+	
+	template vehicle PZKA_FType_NIntruder_FrontLights {
+		template! = PZKA_FType_F350_FrontLight_models,
+		template! = PZKA_FType_Province_FrontLight_models,
+		template! = PZKA_VariableFrontLights,
+	}
+
+    template vehicle PZKA_FType_NIntruder_FrontFill {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_F350_FrontFill_models,
+		template! = PZKA_FType_Province_FrontFill_models,
+		template! = PZKA_VariableFrontFill,
+	}
+    template vehicle PZKA_FType_NIntruder_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_F350_FrontFill_models_nr,
+		template! = PZKA_FType_Province_FrontFill_models_nr,
+		template! = PZKA_VariableFrontFill,
+	}
+
+	template vehicle PZKA_FType_NF350_FrontLights {
+		template! = PZKA_FType_Intruder_FrontLight_models,
+		template! = PZKA_FType_Province_FrontLight_models,
+		template! = PZKA_VariableFrontLights,
+	}
+
+    template vehicle PZKA_FType_NF350_FrontFill {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Intruder_FrontFill_models,
+        template! = PZKA_FType_Province_FrontFill_models,
+		template! = PZKA_VariableFrontFill,
+	}
+    template vehicle PZKA_FType_NF350_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Intruder_FrontFill_models_nr,
+        template! = PZKA_FType_Province_FrontFill_models_nr,
+		template! = PZKA_VariableFrontFill,
+	}
+
+	
+	template vehicle PZKA_FType_NProv_FrontLights {
+		template! = PZKA_FType_F350_FrontLight_models,
+		template! = PZKA_FType_Intruder_FrontLight_models,
+		template! = PZKA_VariableFrontLights,
+	}
+
+    template vehicle PZKA_FType_NProv_FrontFill {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_F350_FrontFill_models,
+		template! = PZKA_FType_Intruder_FrontFill_models,
+        template! = PZKA_VariableFrontFill,
+	}
+    template vehicle PZKA_FType_NProv_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_F350_FrontFill_models_nr,
+		template! = PZKA_FType_Intruder_FrontFill_models_nr,
+        template! = PZKA_VariableFrontFill,
+	}
+}

@@ -1,0 +1,66 @@
+module Base
+{
+	model PZKA_Vehicles_FType_Reg_LightRL
+	{
+		mesh = vehicles/FType/pzka_Reg|Light_SWAT_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Reg_LightRR
+	{
+		mesh = vehicles/FType/pzka_Reg|Light_SWAT_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FType_Reg_RearLights {
+		
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Reg_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Reg_LightRR,
+			}
+		}
+	}
+
+	model PZKA_Vehicles_FType_Box_Ambulance_LightRL
+	{
+		mesh = vehicles/FType/pzka_Reg|Light_Ambulance_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Box_Ambulance_LightRR
+	{
+		mesh = vehicles/FType/pzka_Reg|Light_Ambulance_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FType_Box_Ambulance_RearLights {
+		
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Box_Ambulance_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Box_Ambulance_LightRR,
+			}
+		}
+	}	
+}

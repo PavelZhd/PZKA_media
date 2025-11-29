@@ -18,14 +18,14 @@ module Base
 	template vehicle PZKA_FType_Front_CUCV_FrontLights {
 		part HeadlightLeft 
 		{
-			model Default
+			model CUCV
 			{
 				file = PZKA_Vehicles_FType_Front_CUCV_LightFL,
 			}
 		}
 		part HeadlightRight 
 		{
-			model Default
+			model CUCV
 			{
 				file = PZKA_Vehicles_FType_Front_CUCV_LightFR,
 			}

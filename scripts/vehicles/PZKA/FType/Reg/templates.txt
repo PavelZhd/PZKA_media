@@ -2,19 +2,19 @@ module Base
 {
 	template vehicle PZKA_FType_Ampulance {
 		template! = PZKA_FType_Base_nr,
-		template! = PZKA_FType_Box_Trunk_nr,
+		template! = PZKA_FType_Reg_Trunk_nr,
 		template! = PZKA_FType_Front_CUCV_Fill_nr,
 		template! = PZKA_FType_Front_CUCV_FrontLights,
-		template! = PZKA_FType_Box_RearFill_Ambulance,
-		template! = PZKA_FType_Box_Ambulance_RearLights,
+		template! = PZKA_FType_Reg_RearFill_Ambulance,
+		template! = PZKA_FType_Reg_Ambulance_RearLights,
 	}
 
 	template vehicle PZKA_FType_CUCV {
 		template! = PZKA_FType_Base_nr,
-		template! = PZKA_FType_Box_Trunk_nr,
+		template! = PZKA_FType_Reg_Trunk_nr,
 		template! = PZKA_FType_Front_CUCV_Fill_nr,
 		template! = PZKA_FType_Front_CUCV_FrontLights,
-		template! = PZKA_FType_Box_RearFill_CUCV,
-		template! = PZKA_FType_Box_CUCV_RearLights,
+		template! = PZKA_FType_Reg_RearFill_CUCV,
+		template! = PZKA_FType_Reg_CUCV_RearLights,
 	}
 }

@@ -226,6 +226,75 @@ PZKA.ApplyTemplateToVehicle("pzkF350BoxAmbulance","PZKA_Vehicles_Ftype_Box_Base_
 
 PZKA.ApplyTemplateToVehicle("pzkF350BoxUmoveit","PZKA_Vehicles_Ftype_Box_Base_nr",{"pzka_2SeatsF","PZKA_FType_BoxShutter_nr"})
 
+---- Tow
+
+PZKA.ApplyTemplateToVehicle("pzkFtypeTowTruck","PZKA_Vehicles_FType_Tow_Base",{"pzka_2SeatsF","PZKA_FType_Tow","pzka_t_lighbar","PZKA_FType_LightbarTow"})
+
+---- Utility
+
+PZKA.ApplyTemplateToVehicle("pzkChevalier150Utility","PZKA_Vehicles_Ftype_Utility_Base",{"pzka_2SeatsF","PZKA_FType_Utility_Province"})
+PZKA.ApplyTemplateToVehicle("pzkDash150Utility","PZKA_Vehicles_Ftype_Utility_Base",{"pzka_2SeatsF","PZKA_FType_Utility_Intruder"})
+PZKA.ApplyTemplateToVehicle("pzkF150Utility","PZKA_Vehicles_Ftype_Utility_Base",{"pzka_2SeatsF","PZKA_FType_Utility_F350"})
+
+PZKA.ApplyTemplateToVehicle("pzkChevalier150UtilityNR","PZKA_Vehicles_Ftype_Utility_Base_nr",{"pzka_2SeatsF","PZKA_FType_Utility_Province_nr"})
+PZKA.CopyTemplateToVehicle("pzkChevalier150UtilityMoore","pzkChevalier150UtilityNR")
+PZKA.CopyTemplateToVehicle("pzkChevalier150UtilityNewCoalfieldMechanic","pzkChevalier150UtilityNR")
+
+PZKA.CopyTemplateToVehicle("pzkChevalier150UtilityService","pzkChevalier150UtilityNR",{"pzka_t_lighbar","PZKA_FType_LightbarTow"})
+PZKA.CopyTemplateToVehicle("pzkChevalier150UtilityAirport","pzkChevalier150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkChevalier150UtilityIrvingtonSpeedway","pzkChevalier150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkChevalier150UtilityRanger","pzkChevalier150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkChevalier150UtilityPublicWorks","pzkChevalier150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkChevalier150UtilityFire","pzkChevalier150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkChevalier150UtilityLVPD","pzkChevalier150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkChevalier150UtilityMuldPD","pzkChevalier150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkChevalier150UtilityKSTPD","pzkChevalier150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkChevalier150UtilityBulletinPD","pzkChevalier150UtilityService")
+
+
+PZKA.ApplyTemplateToVehicle("pzkDash150UtilityNR","PZKA_Vehicles_Ftype_Utility_Base_nr",{"pzka_2SeatsF","PZKA_FType_Utility_Intruder_nr"})
+PZKA.CopyTemplateToVehicle("pzkDash150UtilityMoore","pzkDash150UtilityNR")
+PZKA.CopyTemplateToVehicle("pzkDash150UtilityNewCoalfieldMechanic","pzkDash150UtilityNR")
+
+PZKA.CopyTemplateToVehicle("pzkDash150UtilityService","pzkDash150UtilityNR",{"pzka_t_lighbar","PZKA_FType_LightbarTow"})
+PZKA.CopyTemplateToVehicle("pzkDash150UtilityAirport","pzkDash150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkDash150UtilityIrvingtonSpeedway","pzkDash150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkDash150UtilityRanger","pzkDash150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkDash150UtilityPublicWorks","pzkDash150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkDash150UtilityFire","pzkDash150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkDash150UtilityLVPD","pzkDash150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkDash150UtilityMuldPD","pzkDash150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkDash150UtilityKSTPD","pzkDash150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkDash150UtilityBulletinPD","pzkDash150UtilityService")
+
+
+PZKA.ApplyTemplateToVehicle("pzkF150UtilityNR","PZKA_Vehicles_Ftype_Utility_Base_nr",{"pzka_2SeatsF","PZKA_FType_Utility_Province_nr","pzka_t_lighbar","PZKA_FType_LightbarTow"})
+PZKA.CopyTemplateToVehicle("pzkF150UtilityMoore","pzkF150UtilityNR")
+PZKA.CopyTemplateToVehicle("pzkF150UtilityNewCoalfieldMechanic","pzkF150UtilityNR")
+
+PZKA.CopyTemplateToVehicle("pzkF150UtilityService","pzkF150UtilityNR",{"pzka_t_lighbar","PZKA_FType_LightbarTow"})
+PZKA.CopyTemplateToVehicle("pzkF150UtilityAirport","pzkF150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkF150UtilityIrvingtonSpeedway","pzkF150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkF150UtilityRanger","pzkF150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkF150UtilityPublicWorks","pzkF150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkF150UtilityFire","pzkF150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkF150UtilityLVPD","pzkF150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkF150UtilityMuldPD","pzkF150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkF150UtilityKSTPD","pzkF150UtilityService")
+PZKA.CopyTemplateToVehicle("pzkF150UtilityBulletinPD","pzkF150UtilityService")
+
+---- Flatbed
+PZKA.ApplyTemplateToVehicle("pzkChevalier150BoxFlatbed","PZKA_Vehicles_Ftype_Flatbed_Base",{"pzka_2SeatsF","PZKA_FType_Flatbed_Province"})
+PZKA.ApplyTemplateToVehicle("pzkChevalier150BoxFlatbedPublicWorks","PZKA_Vehicles_Ftype_Flatbed_Base_nr",{"pzka_2SeatsF","PZKA_FType_Flatbed_Province_nr","pzka_t_lighbar","PZKA_FType_LightbarTow"})
+
+PZKA.ApplyTemplateToVehicle("pzkDash150BoxFlatbed","PZKA_Vehicles_Ftype_Flatbed_Base",{"pzka_2SeatsF","PZKA_FType_Flatbed_Intruder"})
+PZKA.ApplyTemplateToVehicle("pzkDash150BoxFlatbedPublicWorks","PZKA_Vehicles_Ftype_Flatbed_Base_nr",{"pzka_2SeatsF","PZKA_FType_Flatbed_Intruder_nr","pzka_t_lighbar","PZKA_FType_LightbarTow"})
+
+PZKA.ApplyTemplateToVehicle("pzkF150BoxFlatbed","PZKA_Vehicles_Ftype_Flatbed_Base",{"pzka_2SeatsF","PZKA_FType_Flatbed_F350"})
+PZKA.ApplyTemplateToVehicle("pzkF150BoxFlatbedPublicWorks","PZKA_Vehicles_Ftype_Flatbed_Base_nr",{"pzka_2SeatsF","PZKA_FType_Flatbed_F350_nr","pzka_t_lighbar","PZKA_FType_LightbarTow"})
+
+---- Reg
+
 
 --- OLD FRAMEWORK CODE
 
@@ -358,7 +427,6 @@ PZKA.CreateAnimationProfile("pzkFranklin250FPickupWagonLong","PZKA_Vehicles_Ftyp
 PZKA.CloneAnimationProfile("pzkDashIntruder250WagonLong","pzkFranklin250FPickupWagonLong","PZKA_Vehicles_Ftype_Long_Wagon_Base2","PZKA_FType_CrewLong_Intruder_Lights","PZKA_FType_Long_Wagon_Intruder")
 
 
-PZKA.CreateAnimationProfile("pzkFtypeTowTruck","PZKA_Vehicles_Ftype_Tow_Base","PZKA_FType_Tow_Lights","PZKA_FType_Tow",{"FLW","FRW"},"PZKA_OpenBedVersion")
 
 PZKA.CreateAnimationProfile("pzkChevalierCerise93Wagon","PZKA_Vehicles_Wagon_Cerise93_a","PZKA_Wagon_Cerise93_Lights","PZKA_Wagon_Cerise93_animatedDoors",{"FLW","FRW","RLW","RRW"}, "PZKA_TrunkDoorVersion")
 PZKA.CloneAnimationProfile("pzkChevalierCerise93WagonFire","pzkChevalierCerise93Wagon","PZKA_Vehicles_Wagon_Cerise93_nr_a","PZKA_Wagon_Cerise93_Lights","PZKA_Wagon_Cerise93_animatedDoors_lightbar")
