@@ -1,0 +1,108 @@
+module Base
+{
+	model PZKA_Vehicles_FType_Med_RearWindow
+	{
+		mesh = vehicles/FType/pzka_Med|RearWindow_Med_Wagon_obj,
+		shader = vehicle_multiuv_vva,
+		invertX = FALSE,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Med_Trunk
+	{
+		mesh = vehicles/FType/pzka_Med|Trunk_Med_Wagon_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = MedTrunkUpperBone 1.0,
+		boneWeight = MedTrunkLowerProvinceBone 1.0,
+	}
+	model PZKA_Vehicles_FType_Med_Trunk_F350
+	{
+		mesh = vehicles/FType/pzka_Med|Trunk_Med_Wagon_F350_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = MedTrunkUpperBone 1.0,
+		boneWeight = MedTrunkLowerF350Bone 1.0,
+	}
+	model PZKA_Vehicles_FType_Med_Trunk_nr
+	{
+		mesh = vehicles/FType/pzka_Med|Trunk_Med_Wagon_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = MedTrunkUpperBone 1.0,
+		boneWeight = MedTrunkLowerProvinceBone 1.0,
+	}
+	model PZKA_Vehicles_FType_Med_Trunk_F350_nr
+	{
+		mesh = vehicles/FType/pzka_Med|Trunk_Med_Wagon_F350_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = MedTrunkUpperBone 1.0,
+		boneWeight = MedTrunkLowerF350Bone 1.0,
+	}
+
+	template vehicle PZKA_FType_Med_TrunkWindow {
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Med_RearWindow,
+			}
+		}
+	}
+	
+	template vehicle PZKA_FType_Med_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Med_Trunk,
+			}
+		}
+		template! = PZKA_FType_Med_TrunkWindow,
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Med,
+	}
+	template vehicle PZKA_FType_Med_Trunk_F350 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Med_Trunk_F350,
+			}
+		}
+		template! = PZKA_FType_Med_TrunkWindow,
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Med,
+	}
+	template vehicle PZKA_FType_Med_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Med_Trunk_nr,
+			}
+		}
+		template! = PZKA_FType_Med_TrunkWindow,
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Med,
+	}
+	template vehicle PZKA_FType_Med_Trunk_F350_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Med_Trunk_F350_nr,
+			}
+		}
+		template! = PZKA_FType_Med_TrunkWindow,
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Med,
+	}
+
+}

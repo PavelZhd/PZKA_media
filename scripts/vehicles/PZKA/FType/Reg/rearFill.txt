@@ -1,37 +1,235 @@
 module Base
 {
-	model PZKA_Vehicles_Ftype_Reg_CUCV_rearFill_nr
+	model PZKA_Vehicles_Ftype_Reg_RearFill_F350
 	{		
-		mesh = vehicles/FType/pzka_Reg|Box_Door,
+		mesh = vehicles/FType/pzka_Reg|Reg_Tail_F350,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Reg_RearFill_Intruder
+	{		
+		mesh = vehicles/FType/pzka_Reg|Reg_Tail_Intruder,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Reg_RearFill_Province
+	{		
+		mesh = vehicles/FType/pzka_Reg|Reg_Tail_Province,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Ftype_Reg_RearFill_Pickup_F350
+	{		
+		mesh = vehicles/FType/pzka_Reg|RearFill_Reg_PickUp_F350,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Reg_RearFill_Wagon_F350
+	{		
+		mesh = vehicles/FType/pzka_Reg|RearFill_Reg_Wagon_F350,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Reg_RearFill_Pickup_Province
+	{		
+		mesh = vehicles/FType/pzka_Reg|RearFill_Reg_PickUp_Province,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Reg_RearFill_Wagon_Province
+	{		
+		mesh = vehicles/FType/pzka_Reg|RearFill_Reg_Wagon_Province,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Ftype_Reg_RearFill_F350_nr
+	{		
+		mesh = vehicles/FType/pzka_Reg|Reg_Tail_F350,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Ftype_Reg_Ambulance_rearFill_nr
+	model PZKA_Vehicles_Ftype_Reg_RearFill_Intruder_nr
 	{		
-		mesh = vehicles/FType/pzka_Reg|Box_DoorAmbulance,
+		mesh = vehicles/FType/pzka_Reg|Reg_Tail_Intruder,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Reg_RearFill_Province_nr
+	{		
+		mesh = vehicles/FType/pzka_Reg|Reg_Tail_Province,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
 	}
 
-	template vehicle PZKA_FType_Reg_RearFill_CUCV {
-		template! = PZKA_Rearfill,
+	model PZKA_Vehicles_Ftype_Reg_RearFill_Pickup_F350_nr
+	{		
+		mesh = vehicles/FType/pzka_Reg|RearFill_Reg_PickUp_F350,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Reg_RearFill_Wagon_F350_nr
+	{		
+		mesh = vehicles/FType/pzka_Reg|RearFill_Reg_Wagon_F350,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Reg_RearFill_Pickup_Province_nr
+	{		
+		mesh = vehicles/FType/pzka_Reg|RearFill_Reg_PickUp_Province,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Reg_RearFill_Wagon_Province_nr
+	{		
+		mesh = vehicles/FType/pzka_Reg|RearFill_Reg_Wagon_Province,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FType_Reg_RearFill_F350 {
 		part Rearfill
 		{
-			model CUCV
+			model F350
 			{
-				file = PZKA_Vehicles_Ftype_Reg_CUCV_rearFill_nr,
+				file = PZKA_Vehicles_Ftype_Reg_RearFill_F350,
 			}
 		}
 	}
-	template vehicle PZKA_FType_Reg_RearFill_Ambulance {
-		template! = PZKA_Rearfill,
+	template vehicle PZKA_FType_Reg_RearFill_Intruder {
 		part Rearfill
 		{
-			model Ambulance
+			model Intruder
 			{
-				file = PZKA_Vehicles_Ftype_Reg_Ambulance_rearFill_nr,
+				file = PZKA_Vehicles_Ftype_Reg_RearFill_Intruder,
+			}
+		}
+	}
+	template vehicle PZKA_FType_Reg_RearFill_Province {
+		part Rearfill
+		{
+			model Province
+			{
+				file = PZKA_Vehicles_Ftype_Reg_RearFill_Province,
+			}
+		}
+	}
+	
+	
+	template vehicle PZKA_FType_Reg_Pickup_RearFill_F350 {
+		part Rearfill
+		{
+			model Pickup
+			{
+				file = PZKA_Vehicles_Ftype_Reg_RearFill_Pickup_F350,
+			}
+		}
+	}
+	template vehicle PZKA_FType_Reg_Pickup_RearFill_Province {
+		part Rearfill
+		{
+			model Pickup
+			{
+				file = PZKA_Vehicles_Ftype_Reg_RearFill_Pickup_Province,
+			}
+		}
+	}
+	template vehicle PZKA_FType_Reg_Wagon_RearFill_F350 {
+		part Rearfill
+		{
+			model Wagon
+			{
+				file = PZKA_Vehicles_Ftype_Reg_RearFill_Wagon_F350,
+			}
+		}
+	}
+	template vehicle PZKA_FType_Reg_Wagon_RearFill_Province {
+		part Rearfill
+		{
+			model Wagon
+			{
+				file = PZKA_Vehicles_Ftype_Reg_RearFill_Wagon_Province,
+			}
+		}
+	}
+
+	template vehicle PZKA_FType_Reg_RearFill_F350_nr {
+		part Rearfill
+		{
+			model F350
+			{
+				file = PZKA_Vehicles_Ftype_Reg_RearFill_F350_nr,
+			}
+		}
+	}
+	template vehicle PZKA_FType_Reg_RearFill_Intruder_nr {
+		part Rearfill
+		{
+			model Intruder
+			{
+				file = PZKA_Vehicles_Ftype_Reg_RearFill_Intruder_nr,
+			}
+		}
+	}
+	template vehicle PZKA_FType_Reg_RearFill_Province_nr {
+		part Rearfill
+		{
+			model Province
+			{
+				file = PZKA_Vehicles_Ftype_Reg_RearFill_Province_nr,
+			}
+		}
+	}
+	
+	
+	template vehicle PZKA_FType_Reg_Pickup_RearFill_F350_nr {
+		part Rearfill
+		{
+			model Pickup
+			{
+				file = PZKA_Vehicles_Ftype_Reg_RearFill_Pickup_F350_nr,
+			}
+		}
+	}
+	template vehicle PZKA_FType_Reg_Pickup_RearFill_Province_nr {
+		part Rearfill
+		{
+			model Pickup
+			{
+				file = PZKA_Vehicles_Ftype_Reg_RearFill_Pickup_Province_nr,
+			}
+		}
+	}
+	template vehicle PZKA_FType_Reg_Wagon_RearFill_F350_nr {
+		part Rearfill
+		{
+			model Wagon
+			{
+				file = PZKA_Vehicles_Ftype_Reg_RearFill_Wagon_F350_nr,
+			}
+		}
+	}
+	template vehicle PZKA_FType_Reg_Wagon_RearFill_Province_nr {
+		part Rearfill
+		{
+			model Wagon
+			{
+				file = PZKA_Vehicles_Ftype_Reg_RearFill_Wagon_Province_nr,
 			}
 		}
 	}

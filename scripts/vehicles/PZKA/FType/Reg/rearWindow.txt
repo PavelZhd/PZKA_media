@@ -1,0 +1,18 @@
+module Base
+{
+	model VVA_Vehicles_FType_Reg_Pickup_RearWindow
+	{
+		mesh = vehicles/FType/pzka_Reg|RearWindow_Reg_PickUp_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FType_Reg_Pickup_RearWindow {
+		part WindshieldRear
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_FType_Reg_Pickup_RearWindow,
+            }            		
+        }
+	}
+}

@@ -1,15 +1,30 @@
 module Base
 {
-	model PZKA_Vehicles_Ftype_Reg_Base
+	model PZKA_Vehicles_Ftype_Reg_Pickup_Base
 	{		
-		mesh = vehicles/FType/pzka_Reg|Vehicles_RegBase,
+		mesh = vehicles/FType/pzka_Reg|Base_Pickup,
 		shader = vehicle_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Ftype_Reg_Base_nr
+	model PZKA_Vehicles_Ftype_Reg_Wagon_Base
 	{		
-		mesh = vehicles/FType/pzka_Reg|Vehicles_RegBase,
+		mesh = vehicles/FType/pzka_Reg|Base_RegWagon,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Ftype_Reg_Pickup_Base_nr
+	{		
+		mesh = vehicles/FType/pzka_Reg|Base_Pickup,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Reg_Wagon_Base_nr
+	{		
+		mesh = vehicles/FType/pzka_Reg|Base_RegWagon,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.01,

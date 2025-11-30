@@ -1,0 +1,99 @@
+module Base
+{
+	model PZKA_Vehicles_FType_Long_LightRL_F350
+	{
+		mesh = vehicles/FType/pzka_Long|Light_Long_F350_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Long_LightRR_F350
+	{
+		mesh = vehicles/FType/pzka_Long|Light_Long_F350_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FType_Long_RearLights_F350 {
+		
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Long_LightRL_F350,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Long_LightRR_F350,
+			}
+		}
+	}
+
+	model PZKA_Vehicles_FType_Long_LightRL_Intruder
+	{
+		mesh = vehicles/FType/pzka_Long|Light_Long_Intruder_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Long_LightRR_Intruder
+	{
+		mesh = vehicles/FType/pzka_Long|Light_Long_Intruder_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FType_Long_RearLights_Intruder {
+		
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Long_LightRL_Intruder,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Long_LightRR_Intruder,
+			}
+		}
+	}
+	
+
+	model PZKA_Vehicles_FType_Long_LightRL_Province
+	{
+		mesh = vehicles/FType/pzka_Long|Light_Long_Province_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Long_LightRR_Province
+	{
+		mesh = vehicles/FType/pzka_Long|Light_Long_Intruder_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FType_Long_RearLights_Province {
+		
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Long_LightRL_Province,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Long_LightRR_Province,
+			}
+		}
+	}
+}

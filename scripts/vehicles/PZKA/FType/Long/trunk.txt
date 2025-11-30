@@ -1,0 +1,108 @@
+module Base
+{
+	model PZKA_Vehicles_FType_Long_RearWindow
+	{
+		mesh = vehicles/FType/pzka_Long|RearWindow_Long_Wagon_obj,
+		shader = vehicle_multiuv_vva,
+		invertX = FALSE,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_Long_Trunk
+	{
+		mesh = vehicles/FType/pzka_Long|Trunk_Long_Wagon_Province,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = LongTrunkUpperBone 1.0,
+		boneWeight = LongTrunkLowerProvinceBone 1.0,
+	}
+	model PZKA_Vehicles_FType_Long_Trunk_F350
+	{
+		mesh = vehicles/FType/pzka_Long|Trunk_Long_Wagon_F350_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = LongTrunkUpperBone 1.0,
+		boneWeight = LongTrunkLowerF350Bone 1.0,
+	}
+	model PZKA_Vehicles_FType_Long_Trunk_nr
+	{
+		mesh = vehicles/FType/pzka_Long|Trunk_Long_Wagon_Province,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = LongTrunkUpperBone 1.0,
+		boneWeight = LongTrunkLowerProvinceBone 1.0,
+	}
+	model PZKA_Vehicles_FType_Long_Trunk_F350_nr
+	{
+		mesh = vehicles/FType/pzka_Long|Trunk_Long_Wagon_F350_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = LongTrunkUpperBone 1.0,
+		boneWeight = LongTrunkLowerF350Bone 1.0,
+	}
+
+	template vehicle PZKA_FType_Long_TrunkWindow {
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Long_RearWindow,
+			}
+		}
+	}
+	
+	template vehicle PZKA_FType_Long_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Long_Trunk,
+			}
+		}
+		template! = PZKA_FType_Long_TrunkWindow,
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Long,
+	}
+	template vehicle PZKA_FType_Long_Trunk_F350 {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Long_Trunk_F350,
+			}
+		}
+		template! = PZKA_FType_Long_TrunkWindow,
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Long,
+	}
+	template vehicle PZKA_FType_Long_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Long_Trunk_nr,
+			}
+		}
+		template! = PZKA_FType_Long_TrunkWindow,
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Long,
+	}
+	template vehicle PZKA_FType_Long_Trunk_F350_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_Long_Trunk_F350_nr,
+			}
+		}
+		template! = PZKA_FType_Long_TrunkWindow,
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Long,
+	}
+
+}

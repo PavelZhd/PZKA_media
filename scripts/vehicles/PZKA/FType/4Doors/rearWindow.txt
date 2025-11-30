@@ -1,17 +1,17 @@
 module Base
 {
-	model VVA_Vehicles_FType_4Door_RearWindow
+	model VVA_Vehicles_FType_4Door_RearWindow_Pickup
 	{
 		mesh = vehicles/FType/pzka_4Door|RearWindow_4DoorPickup_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
-	template vehicle PZKA_FType_RearWindow_4Door {
-		part Windshield
+	template vehicle PZKA_FType_4Door_Pickup_RearWindow {
+		part WindshieldRear
 		{
 			model Default
 			{
-				file = VVA_Vehicles_FType_Windshield,
+				file = VVA_Vehicles_FType_4Door_RearWindow_Pickup,
 			}			
 		}
 	}

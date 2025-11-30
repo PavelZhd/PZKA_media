@@ -295,6 +295,46 @@ PZKA.ApplyTemplateToVehicle("pzkF150BoxFlatbedPublicWorks","PZKA_Vehicles_Ftype_
 
 ---- Reg
 
+PZKA.ApplyTemplateToVehicle("pzkChevalierE6","PZKA_Vehicles_Ftype_Reg_Pickup_Base",{"pzka_2SeatsF","PZKA_FType_Reg_Pickup_Province"})
+PZKA.CopyTemplateToVehicle("pzkChevalierF6","pzkChevalierE6")
+PZKA.ApplyTemplateToVehicle("pzkFranklin150FPickupReg","PZKA_Vehicles_Ftype_Reg_Pickup_Base",{"pzka_2SeatsF","PZKA_FType_Reg_Pickup_F350"})
+PZKA.ApplyTemplateToVehicle("pzkPickUpTruck93","PZKA_Vehicles_Ftype_Reg_Pickup_Base",{"pzka_2SeatsF","PZKA_FType_Reg_Pickup_Intruder"})
+
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierE6Van","PZKA_Vehicles_Ftype_Reg_Wagon_Base",{"pzka_2SeatsF","PZKA_FType_Reg_Wagon_Province"})
+PZKA.CopyTemplateToVehicle("pzkChevalierF6Van","pzkChevalierE6Van")
+PZKA.ApplyTemplateToVehicle("pzkFranklin150van","PZKA_Vehicles_Ftype_Reg_Wagon_Base",{"pzka_2SeatsF","PZKA_FType_Reg_Wagon_F350"})
+PZKA.ApplyTemplateToVehicle("pzkDashIntruder150RegVan","PZKA_Vehicles_Ftype_Reg_Wagon_Base",{"pzka_2SeatsF","PZKA_FType_Reg_Wagon_Intruder"})
+
+---- Med
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierPickupCrewMedium","PZKA_Vehicles_Ftype_Med_Pickup_Base",{"pzka_2SeatsF","PZKA_FType_Med_Pickup_Province"})
+PZKA.ApplyTemplateToVehicle("pzkFranklin150FPickupMedium","PZKA_Vehicles_Ftype_Med_Pickup_Base",{"pzka_2SeatsF","PZKA_FType_Med_Pickup_F350"})
+
+PZKA.ApplyTemplateToVehicle("pzkFranklin150FWagonMedium","PZKA_Vehicles_Ftype_Med_Wagon_Base",{"pzka_2SeatsF","PZKA_FType_Med_Wagon_F350"})
+PZKA.CopyTemplateToVehicle("pzkFranklin250FWagonLong","pzkFranklin150FWagonMedium")
+
+---- CrewMed
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierProvince","PZKA_Vehicles_Ftype_CrewMed_Wagon_Base",{"pzka_2SeatsF","PZKA_FType_CrewMed_Wagon_Province"})
+
+---- Long
+
+PZKA.ApplyTemplateToVehicle("pzkDashIntruder250PickupLong","PZKA_Vehicles_Ftype_Long_Pickup_Base",{"pzka_2SeatsF","PZKA_FType_Long_Pickup_Intruder"})
+PZKA.ApplyTemplateToVehicle("pzkFranklin250FPickupCrewLong","PZKA_Vehicles_Ftype_Long_Pickup_Base",{"pzka_2SeatsF","PZKA_FType_Long_Pickup_F350"})
+
+PZKA.ApplyTemplateToVehicle("pzkFranklin250FPickupWagonLong","PZKA_Vehicles_Ftype_Long_Wagon_Base",{"pzka_2SeatsF","PZKA_FType_Long_Wagon_F350"})
+PZKA.ApplyTemplateToVehicle("pzkDashIntruder250WagonLong","PZKA_Vehicles_Ftype_Long_Wagon_Base",{"pzka_2SeatsF","PZKA_FType_Long_Wagon_Intruder"})
+
+---- CrewLong
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierPickupCrewLong","PZKA_Vehicles_Ftype_CrewLong_Pickup_Base",{"pzka_2SeatsF","PZKA_FType_CrewLong_Pickup_Province"})
+PZKA.ApplyTemplateToVehicle("pzkFranklin350FPickupCrewLong","PZKA_Vehicles_Ftype_CrewLong_Pickup_Base",{"pzka_2SeatsF","PZKA_FType_CrewLong_Pickup_F350"})
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierProvinceLong","PZKA_Vehicles_Ftype_CrewLong_Wagon_Base",{"pzka_2SeatsF","PZKA_FType_CrewLong_Wagon_Province"})
+PZKA.ApplyTemplateToVehicle("pzkFranklin350FWagonLong","PZKA_Vehicles_Ftype_CrewLong_Wagon_Base",{"pzka_2SeatsF","PZKA_FType_CrewLong_Wagon_F350"})
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierProvinceLongCUCV","PZKA_Vehicles_Ftype_CrewLong_Wagon_Base_nr",{"pzka_2SeatsF","PZKA_FType_CrewLong_Wagon_Province_nr"})
 
 --- OLD FRAMEWORK CODE
 
@@ -395,36 +435,6 @@ PZKA.CreateAnimationProfile("pzkChevalierLaserOffroader","PZKA_Vehicles_Galloper
 
 PZKA.CloneAnimationProfile("pzkDashIntruder150short","pzkChevalierLaserModern","PZKA_Vehicles_Galloper_2D_Base_a","PZKA_IntruderShort_Lights","PZKA_IntruderShort")
 
-PZKA.CreateAnimationProfile("pzkChevalierPickupCrewLong","PZKA_Vehicles_Ftype_CrewLong_Pickup_Base2","PZKA_FType_CrewLong_Province_Lights","PZKA_FType_CrewLong_Pickup_Province",{"FLW","FRW","RLW","RRW"},"PZKA_OpenBedVersion")
-PZKA.CloneAnimationProfile("pzkFranklin350FPickupCrewLong","pzkChevalierPickupCrewLong","PZKA_Vehicles_Ftype_CrewLong_Pickup_Base1","PZKA_FType_CrewLong_F350_Lights","PZKA_FType_CrewLong_Pickup_F350")
-
-PZKA.CreateAnimationProfile("pzkChevalierE6","PZKA_Vehicles_Ftype_Reg_Pickup_Base2","PZKA_FType_Reg_Province_Lights","PZKA_FType_Reg_Pickup_Province",{"FLW","FRW"},"PZKA_OpenBedVersion")
-PZKA.CloneAnimationProfile("pzkChevalierF6","pzkChevalierE6")
-PZKA.CloneAnimationProfile("pzkFranklin150FPickupReg","pzkChevalierE6","PZKA_Vehicles_Ftype_Reg_Pickup_Base1","PZKA_FType_Reg_F350_Lights","PZKA_FType_Reg_Pickup_F350")
-PZKA.CloneAnimationProfile("pzkPickUpTruck93","pzkChevalierE6","PZKA_Vehicles_Ftype_Reg_Pickup_Base2","PZKA_FType_Reg_Intruder_Lights","PZKA_FType_Reg_Pickup_Intruder")
-
-PZKA.CreateAnimationProfile("pzkDashIntruder250PickupLong","PZKA_Vehicles_Ftype_Long_Pickup_Base2","PZKA_FType_CrewLong_Intruder_Lights","PZKA_FType_Long_Pickup_Intruder",{"FLW","FRW"},"PZKA_OpenBedVersion")
-PZKA.CloneAnimationProfile("pzkFranklin250FPickupCrewLong","pzkDashIntruder250PickupLong","PZKA_Vehicles_Ftype_Long_Pickup_Base1","PZKA_FType_CrewLong_F350_Lights","PZKA_FType_Long_Pickup_F350")
-
-PZKA.CreateAnimationProfile("pzkChevalierPickupCrewMedium","PZKA_Vehicles_Ftype_Med_Pickup_Base2","PZKA_FType_Med_Province_Lights","PZKA_FType_Med_Pickup_Province",{"FLW","FRW"},"PZKA_OpenBedVersion")
-PZKA.CloneAnimationProfile("pzkFranklin150FPickupMedium","pzkChevalierPickupCrewMedium","PZKA_Vehicles_Ftype_Med_Pickup_Base1","PZKA_FType_Med_F350_Lights","PZKA_FType_Med_Pickup_F350")
-
-PZKA.CreateAnimationProfile("pzkChevalierProvince","PZKA_Vehicles_Ftype_CrewMed_Wagon_Base2","PZKA_FType_CrewMed_Province_Lights","PZKA_FType_CrewMed_Wagon_Province",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
-
-PZKA.CreateAnimationProfile("pzkChevalierE6Van","PZKA_Vehicles_Ftype_Reg_Wagon_Base2","PZKA_FType_Reg_Province_Lights","PZKA_FType_Reg_Wagon_Province",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
-PZKA.CloneAnimationProfile("pzkChevalierF6Van","pzkChevalierE6Van","PZKA_Vehicles_Ftype_Reg_Wagon_Base2")
-PZKA.CloneAnimationProfile("pzkDashIntruder150RegVan","pzkChevalierF6Van","PZKA_Vehicles_Ftype_Reg_Wagon_Base2","PZKA_FType_Reg_Intruder_Lights","PZKA_FType_Reg_Wagon_Intruder")
-PZKA.CloneAnimationProfile("pzkFranklin150van","pzkChevalierF6Van","PZKA_Vehicles_Ftype_Reg_Wagon_Base1","PZKA_FType_Reg_F350_Lights","PZKA_FType_Reg_Wagon_F350")
-
-PZKA.CreateAnimationProfile("pzkChevalierProvinceLong","PZKA_Vehicles_Ftype_CrewLong_Wagon_Base2","PZKA_FType_CrewLong_Province_Lights","PZKA_FType_CrewLong_Wagon_Province",{"FLW","FRW","RLW","RRW"},"PZKA_TrunkDoorVersion")
-PZKA.CloneAnimationProfile("pzkChevalierProvinceLongCUCV","pzkChevalierProvinceLong","PZKA_Vehicles_Ftype_CrewLong_Wagon_Base2_nr",false,"PZKA_FType_CrewLong_Wagon_Province_nr")
-PZKA.CloneAnimationProfile("pzkFranklin350FWagonLong","pzkChevalierProvinceLong","PZKA_Vehicles_Ftype_CrewLong_Wagon_Base1","PZKA_FType_CrewLong_F350_Lights","PZKA_FType_CrewLong_Wagon_F350")
-
-PZKA.CreateAnimationProfile("pzkFranklin150FWagonMedium","PZKA_Vehicles_Ftype_Med_Wagon_Base1","PZKA_FType_Med_F350_Lights","PZKA_FType_Med_Wagon_F350",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
-PZKA.CloneAnimationProfile("pzkFranklin250FWagonLong","pzkFranklin150FWagonMedium")
-
-PZKA.CreateAnimationProfile("pzkFranklin250FPickupWagonLong","PZKA_Vehicles_Ftype_Long_Wagon_Base1","PZKA_FType_CrewLong_F350_Lights","PZKA_FType_Long_Wagon_F350",{"FLW","FRW"},"PZKA_TrunkDoorVersion")
-PZKA.CloneAnimationProfile("pzkDashIntruder250WagonLong","pzkFranklin250FPickupWagonLong","PZKA_Vehicles_Ftype_Long_Wagon_Base2","PZKA_FType_CrewLong_Intruder_Lights","PZKA_FType_Long_Wagon_Intruder")
 
 
 
