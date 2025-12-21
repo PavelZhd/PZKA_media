@@ -2,7 +2,7 @@ module Base
 {	
 	model PZKA_Vehicles_BankTrunk_Trunk
 	{
-		mesh = vehicles/PZKA_BankTruck|Trunk_obj,
+		mesh = vehicles/pzka_BankTruck|Trunk_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -11,7 +11,7 @@ module Base
 	}
 	model PZKA_Vehicles_BankTrunk_Trunk_nr
 	{
-		mesh = vehicles/PZKA_BankTruck|Trunk_obj,
+		mesh = vehicles/pzka_BankTruck|Trunk_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -21,7 +21,7 @@ module Base
 
 	model PZKA_Vehicles_BankTrunk_RearWindow
 	{
-		mesh = vehicles/PZKA_BankTruck|RearWindow_obj,
+		mesh = vehicles/pzka_BankTruck|RearWindow_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,

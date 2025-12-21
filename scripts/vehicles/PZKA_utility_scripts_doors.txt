@@ -425,4 +425,100 @@ module Base
 			}
 		}
 	}
+	template vehicle PZKA_VariableDoorFL {
+		part DoorFrontLeft
+		{
+			lua
+			{
+				create = Vehicles.Create.Door,
+				init = Vehicles.Init.AdjustLightGeometryDoor,
+				use = Vehicles.Use.Door,
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+	}
+	template vehicle PZKA_VariableDoorFR {
+		part DoorFrontRight
+		{
+			lua
+			{
+				create = Vehicles.Create.Door,
+				init = Vehicles.Init.AdjustLightGeometryDoor,
+				use = Vehicles.Use.Door,
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+	}
+	template vehicle PZKA_VariableDoorF {
+		template! = PZKA_VariableDoorFL,
+		template! = PZKA_VariableDoorFR,
+	}
+	template vehicle PZKA_VariableDoorML {
+		part DoorMiddleLeft
+		{
+			lua
+			{
+				create = Vehicles.Create.Door,
+				init = Vehicles.Init.AdjustLightGeometryDoor,
+				use = Vehicles.Use.Door,
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+	}
+	template vehicle PZKA_VariableDoorMR {
+		part DoorMiddleRight
+		{
+			lua
+			{
+				create = Vehicles.Create.Door,
+				init = Vehicles.Init.AdjustLightGeometryDoor,
+				use = Vehicles.Use.Door,
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+	}
+	template vehicle PZKA_VariableDoorM {
+		template! = PZKA_VariableDoorML,
+		template! = PZKA_VariableDoorMR,
+	}
+	template vehicle PZKA_VariableDoorRL {
+		part DoorRearLeft
+		{
+			lua
+			{
+				create = Vehicles.Create.Door,
+				init = Vehicles.Init.AdjustLightGeometryDoor,
+				use = Vehicles.Use.Door,
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+	}
+	template vehicle PZKA_VariableDoorRR {
+		part DoorRearRight
+		{
+			lua
+			{
+				create = Vehicles.Create.Door,
+				init = Vehicles.Init.AdjustLightGeometryDoor,
+				use = Vehicles.Use.Door,
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+	}
+	template vehicle PZKA_VariableDoorR {
+		template! = PZKA_VariableDoorRL,
+		template! = PZKA_VariableDoorRR,
+	}
 }

@@ -1,0 +1,48 @@
+module Base
+{
+	model PZKA_Vehicles_Marocco80_internals
+	{
+		mesh = vehicles/pzka_Marocco80|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkChevalierMaroca80-1shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Marocco80_SeatFL
+	{
+		mesh = vehicles/pzka_Marocco80|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkChevalierMaroca80-1shell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Marocco80_SeatFR
+	{
+		mesh = vehicles/pzka_Marocco80|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkChevalierMaroca80-1shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Marocco80_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_SeatFR,
+			}
+		}
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Marocco80_internals,
+			}
+		}
+	}
+}

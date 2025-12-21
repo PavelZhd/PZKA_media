@@ -1,0 +1,258 @@
+module Base
+{	
+	model PZKA_Vehicles_Van_DoorRearLeft
+	{
+		mesh = vehicles/Vans/pzka_VVans|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}	
+	model PZKA_Vehicles_Van_DoorRearRight
+	{
+		mesh = vehicles/Vans/pzka_VVans|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_Van_DoorRearLeft_nr
+	{
+		mesh = vehicles/Vans/pzka_VVans|Door_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Van_DoorRearRight_nr
+	{
+		mesh = vehicles/Vans/pzka_VVans|Door_RearRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	
+	
+	model PZKA_Vehicles_Van_WindowRearLeft
+	{
+		mesh = vehicles/Vans/pzka_VVans|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Van_WindowRearRight
+	{
+		mesh = vehicles/Vans/pzka_VVans|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+
+	template vehicle PZKA_Van_DoorWindowMR {
+		part WindowMiddleRight
+        {
+			parent = DoorMiddleRight,
+		}
+	}
+	template vehicle PZKA_Van_DoorWindowRR {
+		part WindowRearRight
+        {
+			parent = DoorRearRight,
+		}
+	}
+
+	template vehicle PZKA_Van_DoorWindowML {
+		part WindowMiddleLeft
+        {
+			parent = DoorMiddleLeft,
+		}
+	}
+	template vehicle PZKA_Van_DoorWindowRL {
+		part WindowRearLeft
+        {
+			parent = DoorRearLeft,
+		}
+	}
+	
+	template vehicle PZKA_Van_WindowML_model {
+		part WindowMiddleLeft
+        {
+			model Default
+        	{
+          		file = PZKA_Vehicles_Van_WindowRearLeft,
+        	}            		
+        }
+	}
+	template vehicle PZKA_Van_WindowRL_model {
+		part WindowRearLeft
+        {
+			model Default
+        	{
+          		file = PZKA_Vehicles_Van_WindowRearLeft,
+        	}            		
+        }
+	}	
+	template vehicle PZKA_Van_WindowMR_model {
+		part WindowMiddleRight
+        {
+			model Default
+        	{
+          		file = PZKA_Vehicles_Van_WindowRearRight,
+        	}            		
+        }
+	}
+	template vehicle PZKA_Van_WindowRR_model {
+		part WindowRearRight
+        {
+			model Default
+        	{
+          		file = PZKA_Vehicles_Van_WindowRearRight,
+        	}            		
+        }
+	}
+
+	template vehicle PZKA_Van_DoorML_model {
+		part DoorMiddleLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorRearLeft,
+			}
+		}
+	}
+	template vehicle PZKA_Van_DoorRL_model {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorRearLeft,
+			}
+		}
+	}
+	template vehicle PZKA_Van_DoorMR_model {
+		part DoorMiddleRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorRearRight,
+			}
+		}
+	}
+	template vehicle PZKA_Van_DoorRR_model {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorRearRight,
+			}
+		}
+	}
+
+	template vehicle PZKA_Van_DoorML_model_nr {
+		part DoorMiddleLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorRearLeft_nr,
+			}
+		}
+	}
+	template vehicle PZKA_Van_DoorRL_model_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorRearLeft_nr,
+			}
+		}
+	}
+	template vehicle PZKA_Van_DoorMR_model_nr {
+		part DoorMiddleRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorRearRight_nr,
+			}
+		}
+	}
+	template vehicle PZKA_Van_DoorRR_model_nr {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_DoorRearRight_nr,
+			}
+		}
+	}
+
+	template vehicle PZKA_Van_Door_ML {
+		template! = PZKA_Van_DoorML_model,
+		template! = PZKA_Van_WindowML_model,
+		template! = PZKA_Van_DoorWindowML,
+		template! = PZKA_DoorWindowMiddleLeft,
+	}	
+	template vehicle PZKA_Van_Door_RL {
+		template! = PZKA_Van_DoorRL_model,
+		template! = PZKA_Van_WindowRL_model,		
+		template! = PZKA_Van_DoorWindowRL,
+		template! = PZKA_DoorWindowRearLeft,
+	}
+	template vehicle PZKA_Van_Door_ML_nr {
+		template! = PZKA_Van_DoorML_model_nr,
+		template! = PZKA_Van_WindowML_model,		
+		template! = PZKA_Van_DoorWindowML,
+		template! = PZKA_DoorWindowMiddleLeft,
+	}	
+	template vehicle PZKA_Van_Door_RL_nr {
+		template! = PZKA_Van_DoorRL_model_nr,
+		template! = PZKA_Van_WindowRL_model,		
+		template! = PZKA_Van_DoorWindowRL,
+		template! = PZKA_DoorWindowRearLeft,
+	}
+
+	template vehicle PZKA_Van_Door_MR {
+		template! = PZKA_Van_DoorMR_model,
+		template! = PZKA_Van_WindowMR_model,
+		template! = PZKA_Van_DoorWindowMR,
+		template! = PZKA_DoorWindowMiddleRight,
+	}
+	template vehicle PZKA_Van_Door_RR {
+		template! = PZKA_Van_DoorRR_model,
+		template! = PZKA_Van_WindowRR_model,		
+		template! = PZKA_Van_DoorWindowRR,
+		template! = PZKA_DoorWindowRearRight,
+	}
+	template vehicle PZKA_Van_Door_MR_nr {
+		template! = PZKA_Van_DoorMR_model_nr,
+		template! = PZKA_Van_WindowMR_model,		
+		template! = PZKA_Van_DoorWindowMR,
+		template! = PZKA_DoorWindowMiddleRight,
+	}
+	template vehicle PZKA_Van_Door_RR_nr {
+		template! = PZKA_Van_DoorRR_model_nr,
+		template! = PZKA_Van_WindowRR_model,		
+		template! = PZKA_Van_DoorWindowRR,
+		template! = PZKA_DoorWindowRearRight,
+	}
+	
+	template vehicle PZKA_Van_MiddleDoors {
+		template! = PZKA_Van_Door_ML,
+		template! = PZKA_Van_Door_MR,
+	}	
+	template vehicle PZKA_Van_RearDoors {
+		template! = PZKA_Van_Door_RL,
+		template! = PZKA_Van_Door_RR,
+	}
+	template vehicle PZKA_Van_MiddleDoors_nr {
+		template! = PZKA_Van_Door_ML_nr,
+		template! = PZKA_Van_Door_MR_nr,
+	}	
+	template vehicle PZKA_Van_RearDoors_nr {
+		template! = PZKA_Van_Door_RL_nr,
+		template! = PZKA_Van_Door_RR_nr,
+	}	
+}

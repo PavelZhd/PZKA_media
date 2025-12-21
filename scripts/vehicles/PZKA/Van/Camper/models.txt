@@ -1,0 +1,10 @@
+module Base
+{
+	model PZKA_Vehicles_Van_Camper_a
+	{
+		mesh = vehicles/Vans/pzka_VanCamper|Vehicles_VanCamper,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+}

@@ -2,7 +2,7 @@ module Base
 {	
 	model PZKA_Vehicles_BankTrunk_DoorFrontLeft
 	{
-		mesh = vehicles/PZKA_BankTruck|Door_FrontLeft_obj,
+		mesh = vehicles/pzka_BankTruck|Door_FrontLeft_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -10,7 +10,7 @@ module Base
 	}
 	model PZKA_Vehicles_BankTrunk_DoorFrontRight
 	{
-		mesh = vehicles/PZKA_BankTruck|Door_FrontRight_obj,
+		mesh = vehicles/pzka_BankTruck|Door_FrontRight_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -18,7 +18,7 @@ module Base
 	}
 	model PZKA_Vehicles_BankTrunk_WindowFrontLeft
 	{
-		mesh = vehicles/PZKA_BankTruck|Window_FrontLeft_obj,
+		mesh = vehicles/pzka_BankTruck|Window_FrontLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
@@ -27,7 +27,7 @@ module Base
 	}
 	model PZKA_Vehicles_BankTrunk_WindowFrontRight
 	{
-		mesh = vehicles/PZKA_BankTruck|Window_FrontRight_obj,
+		mesh = vehicles/pzka_BankTruck|Window_FrontRight_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
@@ -35,7 +35,7 @@ module Base
 	}	
 	model PZKA_Vehicles_BankTrunk_DoorFrontLeft_nr
 	{
-		mesh = vehicles/PZKA_BankTruck|Door_FrontLeft_obj,
+		mesh = vehicles/pzka_BankTruck|Door_FrontLeft_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -43,7 +43,7 @@ module Base
 	}
 	model PZKA_Vehicles_BankTrunk_DoorFrontRight_nr
 	{
-		mesh = vehicles/PZKA_BankTruck|Door_FrontRight_obj,
+		mesh = vehicles/pzka_BankTruck|Door_FrontRight_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,

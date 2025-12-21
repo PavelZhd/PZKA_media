@@ -1,0 +1,150 @@
+module Base
+{
+	model PZKA_Vehicles_Van_Base_interior
+	{
+		mesh = vehicles/Vans/pzka_VVans|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkvancampershell,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_Cargo_interior
+	{
+		mesh = vehicles/Vans/pzka_VVans|Vehicles_Interior_cargo,
+		texture = Vehicles/vehicle_pzkvancampershell,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_Seats_interior
+	{
+		mesh = vehicles/Vans/pzka_VVans|Vehicles_Interior_seats,
+		texture = Vehicles/vehicle_pzkvancampershell,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_Van_Police_interior
+	{
+		mesh = vehicles/Vans/pzka_VVans|Vehicles_Interior_police,
+		texture = Vehicles/vehicle_pzkvancampershell,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_Seats_NRL
+	{
+		mesh = vehicles/Vans/pzka_VVans|Vehicles_Interior_seatsNoRL,
+		texture = Vehicles/vehicle_pzkvancampershell,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_Van_NRL
+	{
+		mesh = vehicles/Vans/pzka_VVans|Vehicles_Interior_NoRL,
+		texture = Vehicles/vehicle_pzkvancampershell,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_interiorBars
+	{
+		mesh = vehicles/Vans/pzka_VVans|Interior_Bars,
+		texture = Vehicles/vehicle_pzkvancampershell,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_VVan_interiorFill
+	{
+		mesh = vehicles/Vans/pzka_VVans|InteriorFill_obj,
+		texture = Vehicles/vehicle_pzkvancampershell,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_VVan_engine
+	{
+		mesh = vehicles/Vans/pzka_VVans|VType_Engine,
+		texture = Vehicles/vehicle_pzkvancampershell,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Van_Interior_Base {
+		part Interior 
+		{
+			model Base
+			{
+				file = PZKA_Vehicles_Van_Base_interior,
+			}
+		}
+	}
+	template vehicle PZKA_Van_Interior_Cargo {
+		part Interior 
+		{	
+			model Type
+			{
+				file = PZKA_Vehicles_Van_Cargo_interior,
+			}
+		}
+	}
+	template vehicle PZKA_Van_Interior_Multi {
+		part Interior 
+		{	
+			model Type
+			{
+				file = PZKA_Vehicles_Van_Police_interior,
+			}
+		}
+	}
+	template vehicle PZKA_Van_Interior_Seats {
+		part Interior 
+		{	
+			model Type
+			{
+				file = PZKA_Vehicles_Van_Seats_interior,
+			}
+		}
+	}
+	template vehicle PZKA_Van_Interior_NRL {
+		part Interior 
+		{	
+			model Type
+			{
+				file = PZKA_Vehicles_Van_NRL,
+			}
+		}
+	}
+	template vehicle PZKA_Van_Interior_Seats_NRL {
+		part Interior 
+		{	
+			model Type
+			{
+				file = PZKA_Vehicles_Van_Seats_NRL,
+			}
+		}
+	}
+	template vehicle PZKA_Van_InteriorBars {
+		part Interior 
+		{	
+			model Bars
+			{
+				file = PZKA_Vehicles_Van_interiorBars,
+			}
+		}
+	}
+	
+	template vehicle PZKA_VVan_InteriorFill {
+		part Interior 
+		{	
+			model Rear
+			{
+				file = PZKA_Vehicles_VVan_interiorFill,
+			}
+		}
+	}
+	template vehicle PZKA_VVan_Engine {
+		part Interior 
+		{	
+			model Engine
+			{
+				file = PZKA_Vehicles_VVan_engine,
+			}
+		}
+	}
+}

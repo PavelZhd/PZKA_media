@@ -2,21 +2,21 @@ module Base
 {
 	model PZKA_Vehicles_BankTrunk_internals
 	{
-		mesh = vehicles/PZKA_BankTruck|Vehicles_Interior,
+		mesh = vehicles/pzka_BankTruck|Vehicles_Interior,
 		texture = Vehicles/Vehicle_pzkFranklinTruckBankshell,
 		static = TRUE,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_BankTrunk_SeatFL
 	{
-		mesh = vehicles/PZKA_BankTruck|Seat_FrontLeft_obj,
+		mesh = vehicles/pzka_BankTruck|Seat_FrontLeft_obj,
 		texture = Vehicles/Vehicle_pzkFranklinTruckBankshell,
 		static = TRUE,
 		scale = 0.01,
 	}	
 	model PZKA_Vehicles_BankTrunk_SeatFR
 	{
-		mesh = vehicles/PZKA_BankTruck|Seat_FrontRight_obj,
+		mesh = vehicles/pzka_BankTruck|Seat_FrontRight_obj,
 		texture = Vehicles/Vehicle_pzkFranklinTruckBankshell,
 		static = TRUE,
 		scale = 0.01,

@@ -1,0 +1,122 @@
+module Base
+{
+	model VVA_Vehicles_Van_SeatFL
+	{
+		mesh = vehicles/VVA_Van|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_SeatFR
+	{
+		mesh = vehicles/VVA_Van|Seat_FrontRight_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_SeatML
+	{
+		mesh = vehicles/VVA_Van|Seat_MiddleLeft_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_SeatMR
+	{
+		mesh = vehicles/VVA_Van|Seat_MiddleRight_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_SeatRL
+	{
+		mesh = vehicles/VVA_Van|Seat_RearLeft_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_SeatRR
+	{
+		mesh = vehicles/VVA_Van|Seat_RearRight_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle PZKA_Van_SeatsFront {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_SeatFR,
+			}
+		}
+	}
+
+	template vehicle PZKA_Van_RSeatsM {
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VanSeats_SeatML,
+			}
+		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VanSeats_SeatMR,
+			}
+		}
+    }
+	template vehicle PZKA_Van_MSeatsM {
+		part SeatMiddleLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VanSeats_SeatML,
+			}
+		}
+		part SeatMiddleRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VanSeats_SeatMR,
+			}
+		}
+    }	
+	template vehicle PZKA_Van_RSeatsR {
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VanSeats_SeatRL,
+			}
+		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VanSeats_SeatRR,
+			}
+		}
+    }
+	
+	template vehicle PZKA_Van_4RearSears {
+		template! = PZKA_Van_MSeatsM,
+		template! = PZKA_Van_RSeatsR,
+	}
+}

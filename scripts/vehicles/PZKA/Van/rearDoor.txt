@@ -1,0 +1,129 @@
+module Base
+{	
+	model PZKA_Vehicles_VVan_Trunk
+	{
+		mesh = vehicles/Vans/pzka_VVan_Trunks|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
+	}
+	model PZKA_Vehicles_VVan_Trunk_Blind
+	{
+		mesh = vehicles/Vans/pzka_VVan_Trunks|Trunk_Blind_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
+	}
+	model PZKA_Vehicles_VVan_Trunk_nr
+	{
+		mesh = vehicles/Vans/pzka_VVan_Trunks|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
+	}
+	model PZKA_Vehicles_VVan_Trunk_Blind_nr
+	{
+		mesh = vehicles/Vans/pzka_VVan_Trunks|Trunk_Blind_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
+	}
+
+	model PZKA_Vehicles_VVan_RearWindow
+	{
+		mesh = vehicles/Vans/pzka_VVan_Trunks|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Van_RearWindow_static
+	{
+		mesh = vehicles/Vans/pzka_VVan_Trunks|RearWindow_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Van_RearWindow_static {
+		part WindshieldRear
+		{
+			model Static
+			{
+				file = PZKA_Vehicles_Van_RearWindow_static,
+			}
+		}
+	}
+	template vehicle PZKA_VVan_RearWindow {
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_VVan_RearWindow,
+			}
+		}
+	}
+
+	template vehicle PZKA_VVan_RearDoor {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VVan_Trunk,
+			}
+		}
+		template!= PZKA_VVan_RearWindow,
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Slow,
+	}
+	template vehicle PZKA_VVan_Seats_RearDoor {
+		template! = PZKA_VVan_RearDoor,
+		template! = PZKA_Van_RearWindow_static,
+	}
+	template vehicle PZKA_VVan_RearDoorBlind {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VVan_Trunk_Blind,
+			}
+		}
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Slow,
+	}
+	
+	template vehicle PZKA_VVan_RearDoor_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VVan_Trunk_nr,
+			}
+		}
+		template!= PZKA_VVan_RearWindow,
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Slow,
+	}
+	template vehicle PZKA_VVan_Seats_RearDoor_nr {
+		template! = PZKA_VVan_RearDoor_nr,
+		template! = PZKA_Van_RearWindow_static,
+	}
+	template vehicle PZKA_VVan_RearDoorBlind_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VVan_Trunk_Blind_nr,
+			}
+		}
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Slow,
+	}
+}

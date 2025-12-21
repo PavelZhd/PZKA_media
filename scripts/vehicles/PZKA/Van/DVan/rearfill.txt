@@ -1,0 +1,129 @@
+module Base
+{	
+	model PZKA_Vehicles_Vans_DVan_RearFill_1
+	{
+		mesh = vehicles/Vans/pzka_DVans|RearFill_DVan1,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Vans_DVan_RearFill_3
+	{
+		mesh = vehicles/Vans/pzka_DVans|RearFill_DVan3,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Vans_DVan_RearFill_1_nr
+	{
+		mesh = vehicles/Vans/pzka_DVans|RearFill_DVan1,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Vans_DVan_RearFill_3_nr
+	{
+		mesh = vehicles/Vans/pzka_DVans|RearFill_DVan3,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	
+	
+		
+	template vehicle PZKA_DVan_RearFill_model_1 {
+		part Rearfill
+		{
+			model DVan1
+			{
+				file = PZKA_Vehicles_Vans_DVan_RearFill_1,
+			}
+		}
+	}
+	template vehicle PZKA_DVan_RearFill_model_2 {
+		part Rearfill
+		{
+			model DVan2
+			{
+				file = PZKA_Vehicles_Vans_CVan_RearFill,
+			}
+		}
+	}
+	template vehicle PZKA_DVan_RearFill_model_3 {
+		part Rearfill
+		{
+			model DVan3
+			{
+				file = PZKA_Vehicles_Vans_DVan_RearFill_3,
+			}
+		}
+	}
+	template vehicle PZKA_DVan_RearFill_1 {
+		template! = PZKA_Rearfill,
+		template! = PZKA_DVan_RearFill_model_1,
+	}
+	template vehicle PZKA_DVan_RearFill_2 {
+		template! = PZKA_Rearfill,
+		template! = PZKA_DVan_RearFill_model_2,
+	}
+	template vehicle PZKA_DVan_RearFill_3 {
+		template! = PZKA_Rearfill,
+		template! = PZKA_DVan_RearFill_model_3,
+	}
+	template vehicle PZKA_DVan_RearFill_Var {
+		template! = PZKA_Rearfill,
+		template! = PZKA_DVan_RearFill_model_1,
+		template! = PZKA_DVan_RearFill_model_2,
+		template! = PZKA_DVan_RearFill_model_3,
+		template! = PZKA_VariableRearFill,
+	}
+
+	template vehicle PZKA_DVan_RearFill_model_1_nr {
+		part Rearfill
+		{
+			model DVan1
+			{
+				file = PZKA_Vehicles_Vans_DVan_RearFill_1_nr,
+			}
+		}
+	}
+	template vehicle PZKA_DVan_RearFill_model_2_nr {
+		part Rearfill
+		{
+			model DVan2
+			{
+				file = PZKA_Vehicles_Vans_CVan_RearFill_nr,
+			}
+		}
+	}
+	template vehicle PZKA_DVan_RearFill_model_3_nr {
+		part Rearfill
+		{
+			model DVan3
+			{
+				file = PZKA_Vehicles_Vans_DVan_RearFill_3_nr,
+			}
+		}
+	}
+	template vehicle PZKA_DVan_RearFill_1_nr {
+		template! = PZKA_Rearfill,
+		template! = PZKA_DVan_RearFill_model_1_nr,
+	}
+	template vehicle PZKA_DVan_RearFill_2_nr {
+		template! = PZKA_Rearfill,
+		template! = PZKA_DVan_RearFill_model_2_nr,
+	}
+	template vehicle PZKA_DVan_RearFill_3_nr {
+		template! = PZKA_Rearfill,
+		template! = PZKA_DVan_RearFill_model_3_nr,
+	}
+	template vehicle PZKA_DVan_RearFill_Var_nr {
+		template! = PZKA_Rearfill,
+		template! = PZKA_DVan_RearFill_model_1_nr,
+		template! = PZKA_DVan_RearFill_model_2_nr,
+		template! = PZKA_DVan_RearFill_model_3_nr,
+		template! = PZKA_VariableRearFill,
+	}
+	
+	
+}

@@ -1,0 +1,141 @@
+module Base
+{	
+	model PZKA_Vehicles_Vans_CVan_FrontFill1
+	{
+		mesh = vehicles/Vans/pzka_CVans|Grill_CVan1,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Vans_CVan_FrontFill2
+	{
+		mesh = vehicles/Vans/pzka_CVans|Grill_CVan2,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Vans_CVan_FrontFill3
+	{
+		mesh = vehicles/Vans/pzka_CVans|Grill_CVan3,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Vans_CVan_FrontFill1_nr
+	{
+		mesh = vehicles/Vans/pzka_CVans|Grill_CVan1,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Vans_CVan_FrontFill2_nr
+	{
+		mesh = vehicles/Vans/pzka_CVans|Grill_CVan2,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Vans_CVan_FrontFill3_nr
+	{
+		mesh = vehicles/Vans/pzka_CVans|Grill_CVan3,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	
+		
+	template vehicle PZKA_CVan_FrontFill1_model {
+		part Frontfill
+		{
+			model CVan1
+			{
+				file = PZKA_Vehicles_Vans_CVan_FrontFill1,
+			}
+		}
+	}
+	template vehicle PZKA_CVan_FrontFill2_model {
+		part Frontfill
+		{
+			model CVan2
+			{
+				file = PZKA_Vehicles_Vans_CVan_FrontFill2,
+			}
+		}
+	}
+	template vehicle PZKA_CVan_FrontFill3_model {
+		part Frontfill
+		{
+			model CVan3
+			{
+				file = PZKA_Vehicles_Vans_CVan_FrontFill3,
+			}
+		}
+	}
+	template vehicle PZKA_CVan_FrontFill1_model_nr {
+		part Frontfill
+		{
+			model CVan1
+			{
+				file = PZKA_Vehicles_Vans_CVan_FrontFill1_nr,
+			}
+		}
+	}
+	template vehicle PZKA_CVan_FrontFill2_model_nr {
+		part Frontfill
+		{
+			model CVan2
+			{
+				file = PZKA_Vehicles_Vans_CVan_FrontFill2_nr,
+			}
+		}
+	}
+	template vehicle PZKA_CVan_FrontFill3_model_nr {
+		part Frontfill
+		{
+			model CVan3
+			{
+				file = PZKA_Vehicles_Vans_CVan_FrontFill3_nr,
+			}
+		}
+	}
+
+	template vehicle PZKA_CVan_FrontFill1 {
+		template! = PZKA_Frontfill,
+		template! = PZKA_CVan_FrontFill1_model,
+	}
+	template vehicle PZKA_CVan_FrontFill2 {
+		template! = PZKA_Frontfill,
+		template! = PZKA_CVan_FrontFill2_model,
+	}
+	template vehicle PZKA_CVan_FrontFill3 {
+		template! = PZKA_Frontfill,
+		template! = PZKA_CVan_FrontFill3_model,
+	}
+	template vehicle PZKA_CVan_FrontFill1_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_CVan_FrontFill1_model_nr,
+	}
+	template vehicle PZKA_CVan_FrontFill2_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_CVan_FrontFill2_model_nr,
+	}
+	template vehicle PZKA_CVan_FrontFill3_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_CVan_FrontFill3_model_nr,
+	}
+
+	template vehicle PZKA_CVan_FrontFill_var {
+		template! = PZKA_Frontfill,
+		template! = PZKA_CVan_FrontFill1_model,
+		template! = PZKA_CVan_FrontFill2_model,
+		template! = PZKA_CVan_FrontFill3_model,
+		template! = PZKA_VariableFrontFill,		
+	}
+	template vehicle PZKA_CVan_FrontFill_var_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_CVan_FrontFill1_model_nr,
+		template! = PZKA_CVan_FrontFill2_model_nr,
+		template! = PZKA_CVan_FrontFill3_model_nr,
+		template! = PZKA_VariableFrontFill,		
+	}
+}

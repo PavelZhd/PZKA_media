@@ -1,0 +1,35 @@
+module Base
+{
+	model PZKA_Vehicles_Van_Brig_LightRL
+	{
+		mesh = vehicles/Vans/pzka_VanBed|Light_Bed_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Van_Brig_LightRR
+	{
+		mesh = vehicles/Vans/pzka_VanBed|Light_Bed_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Van_Brig_Lights {
+		template! = PZKA_VVan_Lights_Front,
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_LightRR,
+			}
+		}
+	}
+}

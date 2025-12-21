@@ -1,0 +1,100 @@
+module Base
+{	
+	model PZKA_Vehicles_Van_CVan_DoorRearRight
+	{
+		mesh = vehicles/Vans/pzka_CVans|Door_RearRight_CVan_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorCVan1Bone 1.0,
+		boneWeight = RearRightDoorCVan2Bone 1.0,
+	}
+
+	model PZKA_Vehicles_Van_CVan_DoorRearRight_nr
+	{
+		mesh = vehicles/Vans/pzka_CVans|Door_RearRight_CVan_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorCVan1Bone 1.0,
+		boneWeight = RearRightDoorCVan2Bone 1.0,
+	}
+	
+	
+	model PZKA_Vehicles_Van_CVan_WindowRearRight
+	{
+		mesh = vehicles/Vans/pzka_CVans|Window_RearRight_CVan_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightWindowCVanBone 1.0,
+	}
+
+	template vehicle PZKA_CVan_WindowMR_model {
+		part WindowMiddleRight
+        {
+			model Default
+        	{
+          		file = PZKA_Vehicles_Van_CVan_WindowRearRight,
+        	}            		
+        }
+	}
+	template vehicle PZKA_CVan_WindowRR_model {
+		part WindowRearRight
+        {
+			model Default
+        	{
+          		file = PZKA_Vehicles_Van_CVan_WindowRearRight,
+        	}            		
+        }
+	}
+
+	template vehicle PZKA_CVan_Door_MR {
+		part DoorMiddleRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_CVan_DoorRearRight,
+			}
+		}
+		template! = PZKA_CVan_WindowMR_model,
+		template! = PZKA_Van_DoorWindowMR,
+		template! = PZKA_DoorWindowMiddleRight,
+	}
+	template vehicle PZKA_CVan_Door_RR {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_CVan_DoorRearRight,
+			}
+		}
+		template! = PZKA_CVan_WindowRR_model,		
+		template! = PZKA_Van_DoorWindowRR,
+		template! = PZKA_DoorWindowRearRight,
+	}
+	template vehicle PZKA_CVan_Door_MR_nr {
+		part DoorMiddleRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_CVan_DoorRearRight_nr,
+			}
+		}
+		template! = PZKA_CVan_WindowMR_model,		
+		template! = PZKA_Van_DoorWindowMR,
+		template! = PZKA_DoorWindowMiddleRight,
+	}
+	template vehicle PZKA_CVan_Door_RR_nr {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_CVan_DoorRearRight_nr,
+			}
+		}
+		template! = PZKA_CVan_WindowRR_model,		
+		template! = PZKA_Van_DoorWindowRR,
+		template! = PZKA_DoorWindowRearRight,
+	}
+}

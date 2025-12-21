@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicles_Marocco80_Base
+	{
+		mesh = vehicles/pzka_Marocco80|Vehicles_Marocco_Base,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Marocco80_Base_nr
+	{
+		mesh = vehicles/pzka_Marocco80|Vehicles_Marocco_Base,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+}

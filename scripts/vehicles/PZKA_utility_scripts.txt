@@ -35,6 +35,10 @@ module Base
 		template! = PZKA_DoorFR_Reg,
 		template! = PZKA_WindowFR,
 	}
+	template vehicle PZKA_DoorsWindowFront {
+		template! = PZKA_DoorWindowFrontLeft,
+		template! = PZKA_DoorWindowFrontRight,
+	}
 	template vehicle PZKA_DoorWindowMiddleLeft {
 		template! = PZKA_DoorML,
 		template! = PZKA_DoorML_Reg,
@@ -173,7 +177,7 @@ module Base
 		}
 	}
 	template vehicle PZKA_Frontfill {
-        part Frontfill
+		part Frontfill
 		{
 			category = nodisplay,
             specificItem = false,
@@ -184,20 +188,22 @@ module Base
 			    create = Vehicles.Create.Default,
 	    	}
 		}
-    }
-    template vehicle PZKA_Rearfill {
+	}
+
+	template vehicle PZKA_Rearfill {
         part Rearfill
 		{
 			category = nodisplay,
             specificItem = false,
             itemType = Base.LightBulb,
-            setAllModelsVisible = true,
+            setAllModelsVisible = true,	
 			lua
 	    	{
 			    create = Vehicles.Create.Default,
 	    	}
 		}
     }
+	
 	template vehicle PZKA_VariableFrontLights {
 		part HeadlightLeft 
 		{

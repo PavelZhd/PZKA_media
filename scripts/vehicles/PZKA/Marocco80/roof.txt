@@ -1,0 +1,99 @@
+module Base
+{	
+	model PZKA_Vehicles_Marocco80_Roof
+	{
+		mesh = vehicles/pzka_Marocco80|Roof_full,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Marocco80_Roof_sport
+	{
+		mesh = vehicles/pzka_Marocco80|Roof_sport,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Marocco80_Roof_nr
+	{
+		mesh = vehicles/pzka_Marocco80|Roof_full,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Marocco80_Roof_sport_nr
+	{
+		mesh = vehicles/pzka_Marocco80|Roof_sport,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle pzka_Marocco80_roof {	
+		part Frontfill
+        {
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_Roof,
+			}
+        }
+	}
+	template vehicle pzka_Marocco80_roof_sport {	
+		part Frontfill
+        {
+			model Sport
+			{
+				file = PZKA_Vehicles_Marocco80_Roof_sport,
+			}
+        }
+	}
+	template vehicle pzka_Marocco80_basicRoof {
+		template! = pzka_Marocco80_roof,
+		template! = PZKA_Frontfill,		
+	}
+	template vehicle pzka_Marocco80_sportRoof {
+		template! = pzka_Marocco80_roof_sport,
+		template! = PZKA_Frontfill,		
+	}
+	template vehicle pzka_Marocco80_variableRoof {
+		template! = pzka_Marocco80_roof,
+		template! = pzka_Marocco80_roof_sport,
+		template! = PZKA_Frontfill,
+		template! = PZKA_VariableFrontFill,	
+	}
+
+	template vehicle pzka_Marocco80_roof_nr {	
+		part Frontfill
+        {
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_Roof_nr,
+			}
+        }
+	}
+	template vehicle pzka_Marocco80_roof_sport_nr {	
+		part Frontfill
+        {
+			model Sport
+			{
+				file = PZKA_Vehicles_Marocco80_Roof_sport_nr,
+			}
+        }
+	}
+	template vehicle pzka_Marocco80_basicRoof_nr {
+		template! = pzka_Marocco80_roof_nr,
+		template! = PZKA_Frontfill,		
+	}
+	template vehicle pzka_Marocco80_sportRoof_nr {
+		template! = pzka_Marocco80_roof_sport_nr,
+		template! = PZKA_Frontfill,		
+	}
+	template vehicle pzka_Marocco80_variableRoof_nr {
+		template! = pzka_Marocco80_roof_nr,
+		template! = pzka_Marocco80_roof_sport_nr,
+		template! = PZKA_Frontfill,		
+		template! = PZKA_VariableFrontFill,
+	}
+	
+}

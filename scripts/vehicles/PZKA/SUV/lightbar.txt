@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicles_SUV_Lightbar
+	{
+		mesh = vehicles/pzka_SUV|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_SUV_Lightbar {
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SUV_Lightbar,
+			}			
+		}
+	}
+}

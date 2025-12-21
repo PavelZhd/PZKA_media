@@ -1,0 +1,37 @@
+module Base
+{
+	model PZKA_Vehicles_FVan_interiorFill
+	{
+		mesh = vehicles/Vans/pzka_FVans|InteriorRear_FVan_obj,
+		texture = Vehicles/Vehicle_pzkCVan1-1,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FVan_engine
+	{
+		mesh = vehicles/Vans/pzka_FVans|Engine_FVan,
+		texture = Vehicles/Vehicle_pzkCVan1-1,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	
+	template vehicle PZKA_FVan_InteriorFill {
+		part Interior 
+		{	
+			model Rear2
+			{
+				file = PZKA_Vehicles_FVan_interiorFill,
+			}
+		}
+	}
+	template vehicle PZKA_FVan_Engine {
+		part Interior 
+		{	
+			model Engine
+			{
+				file = PZKA_Vehicles_FVan_engine,
+			}
+		}
+	}
+}

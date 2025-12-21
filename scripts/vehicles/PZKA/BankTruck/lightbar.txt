@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_BankTrunk_Lightbar
 	{
-		mesh = vehicles/PZKA_BankTruck|Lightbar,
+		mesh = vehicles/pzka_BankTruck|Lightbar,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}

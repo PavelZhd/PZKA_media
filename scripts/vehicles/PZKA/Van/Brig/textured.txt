@@ -1,0 +1,36 @@
+module Base
+{
+	model PZKA_Vehicles_Van_Brig_SeatRL
+	{
+		mesh = vehicles/pzka_Van_Bed|Seat_Bed_RearLeft_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/vehicle_pzkvanbrigshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Van_Brig_SeatRR
+	{
+		mesh = vehicles/pzka_Van_Bed|Seat_Bed_RearRight_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/vehicle_pzkvanbrigshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	
+	template vehicle PZKA_Van_Brig_RSeats {
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_SeatRL,
+			}
+		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Van_Brig_SeatRR,
+			}
+		}
+    }
+}

@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_BankTrunk_LightFL
 	{
-		mesh = vehicles/PZKA_BankTruck|Light_FrontLeft_obj,
+		mesh = vehicles/pzka_BankTruck|Light_FrontLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
@@ -10,7 +10,7 @@ module Base
 	}	
 	model PZKA_Vehicles_BankTrunk_LightFR
 	{
-		mesh = vehicles/PZKA_BankTruck|Light_FrontRight_obj,
+		mesh = vehicles/pzka_BankTruck|Light_FrontRight_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
@@ -18,14 +18,14 @@ module Base
 	}
 	model PZKA_Vehicles_BankTrunk_LightRL
 	{
-		mesh = vehicles/PZKA_BankTruck|Light_RearLeft_obj,
+		mesh = vehicles/pzka_BankTruck|Light_RearLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_BankTrunk_LightRR
 	{
-		mesh = vehicles/PZKA_BankTruck|Light_RearRight_obj,
+		mesh = vehicles/pzka_BankTruck|Light_RearRight_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,

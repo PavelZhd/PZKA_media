@@ -1,0 +1,22 @@
+module Base
+{
+    model PZKA_Vehicles_Van_Camper_interior
+	{
+		mesh = vehicles/Vans/pzka_VanCamper|Vehicles_Interior_Camper,
+		texture = Vehicles/vehicle_pzkvancampershell,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	
+	template vehicle PZKA_Van_Camper_Interior {
+		template! = PZKA_Van_Interior_Base,
+		part Interior 
+		{	
+			model Type
+			{
+				file = PZKA_Vehicles_Van_Camper_interior,
+			}
+		}
+	}
+}

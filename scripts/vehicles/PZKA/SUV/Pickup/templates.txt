@@ -1,0 +1,18 @@
+module Base
+{
+	
+	template vehicle PZKA_SUV_P_shared {
+		template! = PZKA_SUV_common,
+		template! = PZKA_SUV_P_Light,		
+	}
+	template vehicle PZKA_SUV_P {
+		template! = PZKA_SUV_P_shared,
+		template! = PZKA_SUV_P_FrontDoors,
+		template! = PZKA_SUV_hood,		
+	}
+	template vehicle PZKA_SUV_P_nr {
+		template! = PZKA_SUV_P_shared,
+		template! = PZKA_SUV_P_FrontDoors_nr,
+		template! = PZKA_SUV_hood_nr,
+	}
+}

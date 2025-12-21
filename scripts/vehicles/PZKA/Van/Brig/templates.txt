@@ -1,0 +1,12 @@
+module Base
+{
+	template vehicle PZKA_Van_Brig {
+		template! = PZKA_Van_Brig_RearDoors,
+		template! = PZKA_Van_Brig_RearWindow,		
+		template! = PZKA_Van_Interior_Base,
+		template! = PZKA_Van_Shared,
+		template! = PZKA_VVan_Common0,
+		template! = PZKA_VVan_hood,
+		template! = PZKA_Van_Brig_Lights,
+	}
+}

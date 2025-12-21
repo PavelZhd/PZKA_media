@@ -1,0 +1,50 @@
+module Base
+{	
+	model PZKA_Vehicles_Van_taxisign
+	{
+		mesh = vehicles/Vans/pzka_VVans|TaxiSign,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,		
+	}
+	
+	model PZKA_Vehicles_Van_Lightbar
+	{
+		mesh = vehicles/Vans/pzka_VVans|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,		
+	}
+		
+	model PZKA_Vehicles_VanAmbulance_Lightbar
+	{
+		mesh = vehicles/Vans/pzka_VVans|Lightbar_Ambulance,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,		
+	}
+	
+	template vehicle PZKA_Van_Taxi {
+        part ATA2RoofTaxiSign 
+		{
+			model Decor {
+				file = PZKA_Vehicles_Van_taxisign,
+			}
+		}
+    }
+	template vehicle PZKA_Van_Lightbar {
+        part ATA2RoofLightbar
+		{
+			model Normal
+			{
+				file = PZKA_Vehicles_Van_Lightbar,
+			}
+		}
+    }
+	template vehicle PZKA_VanAmbulance_Lightbar {
+        part ATA2RoofLightbar
+		{
+			model Normal
+			{
+				file = PZKA_Vehicles_VanAmbulance_Lightbar,
+			}
+		}
+    }
+}

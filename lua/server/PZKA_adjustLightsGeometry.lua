@@ -271,6 +271,27 @@ FillPartsMap["Base.pzkMinivanT3"] = {
 }
 FillPartsMap["Base.pzkMinivanT3C"] = FillPartsMap["Base.pzkMinivanT3"] 
 
+FillPartsMap["Base.pzkCVanCargo"] = {
+    ["CVan1"] = "a0a",
+    ["CVan2"] = "a1a",
+    ["CVan3"] = "aa",
+}
+FillPartsMap["Base.pzkCVan"] = FillPartsMap["Base.pzkCVanCargo"] 
+FillPartsMap["Base.pzkCVanMultivan"] = FillPartsMap["Base.pzkCVanCargo"] 
+FillPartsMap["Base.pzkCVan6Seats"] = FillPartsMap["Base.pzkCVanCargo"] 
+
+FillPartsMap["Base.pzkFVanCargo"] = {
+    ["FVan1"] = "a0a3a6a",
+    ["FVan2"] = "a1a4a7a",
+    ["FVan3"] = "a2a5a8a",
+}
+FillPartsMap["Base.pzkFVan"] = FillPartsMap["Base.pzkFVanCargo"] 
+FillPartsMap["Base.pzkFVanSpiffo"] = FillPartsMap["Base.pzkFVanCargo"] 
+FillPartsMap["Base.pzkFVanMultivan"] = FillPartsMap["Base.pzkFVanCargo"] 
+FillPartsMap["Base.pzkFVan6Seats"] = FillPartsMap["Base.pzkFVanCargo"] 
+
+
+
 function Vehicles.Init.AdjustLightGeometry(vehicle, part)
     local fillData = FillPartsMap[vehicle:getScriptName()]
     if fillData then

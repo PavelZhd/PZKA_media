@@ -1,0 +1,37 @@
+module Base
+{    
+    model PZKA_Vehicles_VVan_LightRL
+	{
+		mesh = vehicles/Vans/pzka_VVan_Trunks|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_VVan_LightRR
+	{
+		mesh = vehicles/Vans/pzka_VVan_Trunks|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_VVan_Lights {
+		template! = PZKA_VVan_Lights_Front,
+		part HeadlightRearLeft 
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_VVan_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_VVan_LightRR,
+			}
+		}
+	}
+}
