@@ -15,14 +15,14 @@ module Base
 	template vehicle PZKA_Normal_FrontLights_Homelander {
 		part HeadlightLeft
 		{
-			model Default 
+			model Homelander 
 			{
 				file = PZKA_Normal_LightFL_Homelander,
 			}
 		}
 		part HeadlightRight
 		{
-			model Default 
+			model Homelander 
 			{
 				file = PZKA_Normal_LightFR_Homelander,
 			}

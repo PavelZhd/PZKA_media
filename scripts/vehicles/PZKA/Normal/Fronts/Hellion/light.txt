@@ -15,14 +15,14 @@ module Base
 	template vehicle PZKA_Normal_FrontLights_Hellion {
 		part HeadlightLeft
 		{
-			model Default 
+			model Hellion 
 			{
 				file = PZKA_Normal_LightFL_Hellion,
 			}
 		}
 		part HeadlightRight
 		{
-			model Default 
+			model Hellion 
 			{
 				file = PZKA_Normal_LightFR_Hellion,
 			}

@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Ftype_Box_CUCV_rearFill_nr
+	{		
+		mesh = vehicles/FType/pzka_Box|Box_Door,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Box_Ambulance_rearFill_nr
+	{		
+		mesh = vehicles/FType/pzka_Box|Box_DoorAmbulance,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_FType_Box_RearFill_CUCV {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model CUCV
+			{
+				file = PZKA_Vehicles_Ftype_Box_CUCV_rearFill_nr,
+			}
+		}
+	}
+	template vehicle PZKA_FType_Box_RearFill_Ambulance {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Ambulance
+			{
+				file = PZKA_Vehicles_Ftype_Box_Ambulance_rearFill_nr,
+			}
+		}
+	}
+}

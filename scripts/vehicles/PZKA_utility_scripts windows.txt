@@ -60,4 +60,95 @@ module Base
             }
         }
 	}
+
+	template vehicle PZKA_VariableWindowFL {
+		part WindowFrontLeft
+       	{
+			lua
+			{
+				create = Vehicles.Create.Window,
+				init = Vehicles.Init.AdjustLightGeometryWindow,				
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+    	}
+	}
+	template vehicle PZKA_VariableWindowFR {
+		part WindowFrontRight
+       	{
+			lua
+			{
+				create = Vehicles.Create.Window,
+				init = Vehicles.Init.AdjustLightGeometryWindow,				
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+    	}
+	}
+	template vehicle PZKA_VariableWindowsF {
+		template! = PZKA_VariableWindowFL,
+		template! = PZKA_VariableWindowFR,
+	}
+	template vehicle PZKA_VariableWindowML {
+		part WindowMiddleLeft
+       	{
+			lua
+			{
+				create = Vehicles.Create.Window,
+				init = Vehicles.Init.AdjustLightGeometryWindow,				
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+    	}
+	}
+	template vehicle PZKA_VariableWindowMR {
+		part WindowMiddleRight
+       	{
+			lua
+			{
+				create = Vehicles.Create.Window,
+				init = Vehicles.Init.AdjustLightGeometryWindow,				
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+    	}
+	}
+	template vehicle PZKA_VariableWindowsM {
+		template! = PZKA_VariableWindowML,
+		template! = PZKA_VariableWindowMR,
+	}
+	template vehicle PZKA_VariableWindowRL {
+		part WindowRearLeft
+       	{
+			lua
+			{
+				create = Vehicles.Create.Window,
+				init = Vehicles.Init.AdjustLightGeometryWindow,				
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+    	}
+	}
+	template vehicle PZKA_VariableWindowRR {
+		part WindowRearRight
+       	{
+			lua
+			{
+				create = Vehicles.Create.Window,
+				init = Vehicles.Init.AdjustLightGeometryWindow,				
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+    	}
+	}
+	template vehicle PZKA_VariableWindowsR {
+		template! = PZKA_VariableWindowRL,
+		template! = PZKA_VariableWindowRR,
+	}
 }

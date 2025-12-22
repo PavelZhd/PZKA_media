@@ -1,0 +1,70 @@
+module Base
+{
+	model PZKA_Vehicles_CVan_interior_WRL
+	{
+		mesh = vehicles/Vans/pzka_CVans|Vehicles_Interior_WRL,
+		texture = Vehicles/Vehicle_pzkCVan1-1,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_CVan_interior_Seats_WRL
+	{
+		mesh = vehicles/Vans/pzka_CVans|Vehicles_Interior_seatsWRL,
+		texture = Vehicles/Vehicle_pzkCVan1-1,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_CVan_interiorFill
+	{
+		mesh = vehicles/Vans/pzka_CVans|InteriorRear_CVan_obj,
+		texture = Vehicles/Vehicle_pzkCVan1-1,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_CVan_engine
+	{
+		mesh = vehicles/Vans/pzka_CVans|Engine_CVan,
+		texture = Vehicles/Vehicle_pzkCVan1-1,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_CVan_Interior_WRL {
+		part Interior 
+		{	
+			model Type
+			{
+				file = PZKA_Vehicles_CVan_interior_WRL,
+			}
+		}
+	}
+	template vehicle PZKA_CVan_Interior_Seats_WRL {
+		part Interior 
+		{	
+			model Type
+			{
+				file = PZKA_Vehicles_CVan_interior_Seats_WRL,
+			}
+		}
+	}
+	
+	template vehicle PZKA_CVan_InteriorFill {
+		part Interior 
+		{	
+			model Rear2
+			{
+				file = PZKA_Vehicles_CVan_interiorFill,
+			}
+		}
+	}
+	template vehicle PZKA_CVan_Engine {
+		part Interior 
+		{	
+			model Engine
+			{
+				file = PZKA_Vehicles_CVan_engine,
+			}
+		}
+	}
+}

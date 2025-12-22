@@ -1,0 +1,51 @@
+module Base
+{
+	
+	template vehicle pzka_Phoenix75_shared {
+		template! = pzka_Marocco80_common,
+		template! = pzka_Phoenix75_trunk,
+		template! = pzka_Phoenix75_hood,
+		template! = pzka_Phoenix75_windshield,		
+		template! = pzka_Phoenix75_Light,
+	}
+
+	template vehicle pzka_Phoenix75 {
+		template! = pzka_Phoenix75_shared,
+		template! = pzka_Marocco80_basicRoof,
+		template! = pzka_Marocco80_FrontDoors,
+	}
+	template vehicle pzka_Phoenix75_sport {
+		template! = pzka_Phoenix75_shared,
+		template! = pzka_Marocco80_sportRoof,
+		template! = pzka_Marocco80_FrontDoors_sport,
+	}
+	template vehicle pzka_Phoenix75_variable {
+		template! = pzka_Phoenix75_shared,
+		template! = pzka_Marocco80_variableRoof,
+		template! = pzka_Marocco80_FrontDoors_variable,
+	}
+
+	template vehicle pzka_Phoenix75_shared_nr {
+		template! = pzka_Marocco80_common,
+		template! = pzka_Phoenix75_trunk_nr,
+		template! = pzka_Phoenix75_hood_nr,
+		template! = pzka_Phoenix75_windshield,		
+		template! = pzka_Phoenix75_Light,
+	}
+
+	template vehicle pzka_Phoenix75_nr {
+		template! = pzka_Phoenix75_shared_nr,
+		template! = pzka_Marocco80_basicRoof_nr,
+		template! = pzka_Marocco80_FrontDoors_nr,
+	}
+	template vehicle pzka_Phoenix75_sport_nr {
+		template! = pzka_Phoenix75_shared_nr,
+		template! = pzka_Marocco80_sportRoof_nr,
+		template! = pzka_Marocco80_FrontDoors_sport_nr,
+	}
+	template vehicle pzka_Phoenix75_variable_nr {
+		template! = pzka_Phoenix75_shared_nr,
+		template! = pzka_Marocco80_variableRoof_nr,
+		template! = pzka_Marocco80_FrontDoors_variable_nr,
+	}
+}

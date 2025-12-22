@@ -1,0 +1,131 @@
+module Base
+{
+	template vehicle PZKA_FType_CrewLong_shared {
+		template! = PZKA_FType_Base,
+		template! = PZKA_Rearfill,
+		template! = PZKA_FType_RearDoors,
+	}
+	template vehicle PZKA_FType_CrewLong_shared_nr {
+		template! = PZKA_FType_Base_nr,
+		template! = PZKA_Rearfill,
+		template! = PZKA_FType_RearDoors_nr,
+	}
+
+	template vehicle PZKA_FType_CrewLong_Pickup_F350 {
+		template! = PZKA_FType_CrewLong_shared,
+		template! = PZKA_FType_4Door_Pickup_RearWindow,
+		template! = PZKA_FType_F350_FrontFill,
+		template! = PZKA_FType_F350_FrontLights,
+		template! = PZKA_FType_Long_Pickup_RearFill_F350,
+		template! = PZKA_FType_Long_RearFill_F350,
+		template! = PZKA_FType_Long_RearLights_F350,
+	}
+	template vehicle PZKA_FType_CrewLong_Pickup_Intruder {
+		template! = PZKA_FType_CrewLong_shared,
+		template! = PZKA_FType_4Door_Pickup_RearWindow,
+		template! = PZKA_FType_Intruder_FrontFill,
+		template! = PZKA_FType_Intruder_FrontLights,
+		template! = PZKA_FType_Long_Pickup_RearFill_Province,
+		template! = PZKA_FType_Long_RearFill_Intruder,
+		template! = PZKA_FType_Long_RearLights_Intruder,		
+	}
+	template vehicle PZKA_FType_CrewLong_Pickup_Province {
+		template! = PZKA_FType_CrewLong_shared,
+		template! = PZKA_FType_4Door_Pickup_RearWindow,
+		template! = PZKA_FType_Province_FrontFill,
+		template! = PZKA_FType_Province_FrontLights,
+		template! = PZKA_FType_Long_Pickup_RearFill_Province,
+		template! = PZKA_FType_Long_RearFill_Province,
+		template! = PZKA_FType_Long_RearLights_Province,	
+	}
+	template vehicle PZKA_FType_CrewLong_Wagon_F350 {
+		template! = PZKA_FType_CrewLong_shared,
+		template! = PZKA_FType_Long_Trunk_F350,
+		template! = PZKA_FType_CrewLong_Wagon_WindowsRear,
+		template! = PZKA_FType_F350_FrontFill,
+		template! = PZKA_FType_F350_FrontLights,
+		template! = PZKA_FType_Long_Wagon_RearFill_F350,
+		template! = PZKA_FType_Long_RearFill_F350,
+		template! = PZKA_FType_Long_RearLights_F350,	
+	}
+	template vehicle PZKA_FType_CrewLong_Wagon_Intruder {
+		template! = PZKA_FType_CrewLong_shared,
+		template! = PZKA_FType_Long_Trunk,
+		template! = PZKA_FType_CrewLong_Wagon_WindowsRear,
+		template! = PZKA_FType_Intruder_FrontFill,
+		template! = PZKA_FType_Intruder_FrontLights,
+		template! = PZKA_FType_Long_Wagon_RearFill_Province,
+		template! = PZKA_FType_Long_RearFill_Intruder,
+		template! = PZKA_FType_Long_RearLights_Intruder,		
+	}
+	template vehicle PZKA_FType_CrewLong_Wagon_Province {
+		template! = PZKA_FType_CrewLong_shared,
+		template! = PZKA_FType_Long_Trunk,
+		template! = PZKA_FType_CrewLong_Wagon_WindowsRear,
+		template! = PZKA_FType_Province_FrontFill,
+		template! = PZKA_FType_Province_FrontLights,
+		template! = PZKA_FType_Long_Wagon_RearFill_Province,
+		template! = PZKA_FType_Long_RearFill_Province,
+		template! = PZKA_FType_Long_RearLights_Province,		
+	}
+
+	template vehicle PZKA_FType_CrewLong_Pickup_F350_nr {
+		template! = PZKA_FType_CrewLong_shared_nr,
+		template! = PZKA_FType_4Door_Pickup_RearWindow,
+		template! = PZKA_FType_F350_FrontFill_nr,
+		template! = PZKA_FType_F350_FrontLights,
+		template! = PZKA_FType_Long_Pickup_RearFill_F350_nr,
+		template! = PZKA_FType_Long_RearFill_F350_nr,
+		template! = PZKA_FType_Long_RearLights_F350,
+	}
+	template vehicle PZKA_FType_CrewLong_Pickup_Intruder_nr {
+		template! = PZKA_FType_CrewLong_shared_nr,
+		template! = PZKA_FType_4Door_Pickup_RearWindow,
+		template! = PZKA_FType_Intruder_FrontFill_nr,
+		template! = PZKA_FType_Intruder_FrontLights,
+		template! = PZKA_FType_Long_Pickup_RearFill_Province_nr,
+		template! = PZKA_FType_Long_RearFill_Intruder_nr,
+		template! = PZKA_FType_Long_RearLights_Intruder,		
+	}
+	template vehicle PZKA_FType_CrewLong_Pickup_Province_nr {
+		template! = PZKA_FType_CrewLong_shared_nr,
+		template! = PZKA_FType_4Door_Pickup_RearWindow,
+		template! = PZKA_FType_Province_FrontFill_nr,
+		template! = PZKA_FType_Province_FrontLights,
+		template! = PZKA_FType_Long_Pickup_RearFill_Province_nr,
+		template! = PZKA_FType_Long_RearFill_Province_nr,
+		template! = PZKA_FType_Long_RearLights_Province,	
+	}
+	template vehicle PZKA_FType_CrewLong_Wagon_F350_nr {
+		template! = PZKA_FType_CrewLong_shared_nr,
+		template! = PZKA_FType_Long_Trunk_F350_nr,
+		template! = PZKA_FType_CrewLong_Wagon_WindowsRear,
+		template! = PZKA_FType_F350_FrontFill_nr,
+		template! = PZKA_FType_F350_FrontLights,
+		template! = PZKA_FType_Long_Wagon_RearFill_F350_nr,
+		template! = PZKA_FType_Long_RearFill_F350_nr,
+		template! = PZKA_FType_Long_RearLights_F350,	
+	}
+	template vehicle PZKA_FType_CrewLong_Wagon_Intruder_nr {
+		template! = PZKA_FType_CrewLong_shared_nr,
+		template! = PZKA_FType_Long_Trunk_nr,
+		template! = PZKA_FType_CrewLong_Wagon_WindowsRear,
+		template! = PZKA_FType_Intruder_FrontFill_nr,
+		template! = PZKA_FType_Intruder_FrontLights,
+		template! = PZKA_FType_Long_Wagon_RearFill_Province_nr,
+		template! = PZKA_FType_Long_RearFill_Intruder_nr,
+		template! = PZKA_FType_Long_RearLights_Intruder,		
+	}
+	template vehicle PZKA_FType_CrewLong_Wagon_Province_nr {
+		template! = PZKA_FType_CrewLong_shared_nr,
+		template! = PZKA_FType_Long_Trunk_nr,
+		template! = PZKA_FType_CrewLong_Wagon_WindowsRear,
+		template! = PZKA_FType_Province_FrontFill_nr,
+		template! = PZKA_FType_Province_FrontLights,
+		template! = PZKA_FType_Long_Wagon_RearFill_Province_nr,
+		template! = PZKA_FType_Long_RearFill_Province_nr,
+		template! = PZKA_FType_Long_RearLights_Province,		
+	}
+	
+	
+}

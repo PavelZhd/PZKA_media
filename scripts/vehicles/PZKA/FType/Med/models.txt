@@ -1,0 +1,32 @@
+module Base
+{
+	model PZKA_Vehicles_Ftype_Med_Pickup_Base
+	{		
+		mesh = vehicles/FType/pzka_Med|Base_Med_Pickup,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Med_Wagon_Base
+	{		
+		mesh = vehicles/FType/pzka_Med|Base_Med_Wagon,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	
+	model PZKA_Vehicles_Ftype_Med_Pickup_Base_nr
+	{		
+		mesh = vehicles/FType/pzka_Med|Base_Med_Pickup,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Med_Wagon_Base_nr
+	{		
+		mesh = vehicles/FType/pzka_Med|Base_Med_Wagon,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

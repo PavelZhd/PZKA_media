@@ -1,0 +1,35 @@
+module Base
+{
+	model PZKA_Vehicles_Van_Camper_WindowRearLeft
+	{
+		mesh = vehicles/Vans/pzka_VanCamper|Window_Camper_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Van_Camper_RearWindow
+	{
+		mesh = vehicles/Vans/pzka_VanCamper|RearWindow_Camper_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,		
+	}
+
+	template vehicle PZKA_Van_Camper_Windows {
+		part WindowRearLeft
+        {
+		    model Default
+            {
+            	file = PZKA_Vehicles_Van_Camper_WindowRearLeft,
+        	}            		
+        }
+		part WindshieldRear
+		{
+			model Static
+			{
+				file = PZKA_Vehicles_Van_Camper_RearWindow,
+			}
+		}
+	}
+
+	
+}

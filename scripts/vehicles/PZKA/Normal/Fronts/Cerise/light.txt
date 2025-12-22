@@ -15,14 +15,14 @@ module Base
 	template vehicle PZKA_Normal_FrontLights_Cerise {
 		part HeadlightLeft
 		{
-			model Default 
+			model Cerise 
 			{
 				file = PZKA_Normal_LightFL_Cerise,
 			}
 		}
 		part HeadlightRight
 		{
-			model Default 
+			model Cerise 
 			{
 				file = PZKA_Normal_LightFR_Cerise,
 			}

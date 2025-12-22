@@ -1,0 +1,48 @@
+module Base
+{
+	model PZKA_Vehicles_Ftype_Tow_F350_rearFill
+	{		
+		mesh = vehicles/FType/pzka_Tow|Tow_Rear_F350,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Tow_Province_rearFill
+	{		
+		mesh = vehicles/FType/pzka_Tow|Tow_Rear_Province,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Tow_F350_rearFill_nr
+	{		
+		mesh = vehicles/FType/pzka_Tow|Tow_Rear_F350,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Ftype_Tow_Province_rearFill_nr
+	{		
+		mesh = vehicles/FType/pzka_Tow|Tow_Rear_Province,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	
+
+	template vehicle PZKA_FType_Tow_RearFill {
+		template! = PZKA_Rearfill,
+		template! = PZKA_VariableRearFill,
+		part Rearfill
+		{
+			model F350
+			{
+				file = PZKA_Vehicles_Ftype_Tow_F350_rearFill,
+			}
+			model Province
+			{
+				file = PZKA_Vehicles_Ftype_Tow_Province_rearFill,
+			}
+		}
+	}
+}

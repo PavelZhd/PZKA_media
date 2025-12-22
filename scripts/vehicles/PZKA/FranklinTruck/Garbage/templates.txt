@@ -1,9 +1,9 @@
 module Base
 {
 	
-	template vehicle PZKA_FranklinTruck_Garbage {
-		template! = PZKA_FranklinTruck_Garbage_RearDoor,
-		template! = PZKA_FranklinTruck_base,
+	template vehicle PZKA_FranklinTruck_Garbage_nr {
+		template! = PZKA_FranklinTruck_Garbage_RearDoor_nr,
+		template! = PZKA_FranklinTruck_base_nr,
 		template! = PZKA_FranklinTruck_RearWindowAsAdd,
 		template! = PZKA_FranklinTruck_Garbage_Lights,
 	}

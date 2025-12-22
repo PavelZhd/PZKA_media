@@ -1,0 +1,64 @@
+module Base
+{
+	template vehicle pzka_Marocco80_common {
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.168631 0.002214 0.697425,
+			}
+		}
+		template! = pzka_Marocco80_rearWindow,
+		template! = PZKA_Interior,
+		template! = PZKA_Marocco80_Interior,
+	}
+
+	template vehicle pzka_Marocco80_shared {
+		template! = pzka_Marocco80_common,
+		template! = pzka_Marocco80_trunk,
+		template! = pzka_Marocco80_hood,
+		template! = pzka_Marocco80_windshield,		
+		template! = pzka_Marocco80_Light,
+	}
+
+	template vehicle pzka_Marocco80 {
+		template! = pzka_Marocco80_shared,
+		template! = pzka_Marocco80_basicRoof,
+		template! = pzka_Marocco80_FrontDoors,
+	}
+	template vehicle pzka_Marocco80_sport {
+		template! = pzka_Marocco80_shared,
+		template! = pzka_Marocco80_sportRoof,
+		template! = pzka_Marocco80_FrontDoors_sport,
+	}
+	template vehicle pzka_Marocco80_variable {
+		template! = pzka_Marocco80_shared,
+		template! = pzka_Marocco80_variableRoof,
+		template! = pzka_Marocco80_FrontDoors_variable,
+	}
+
+	template vehicle pzka_Marocco80_shared_nr {
+		template! = pzka_Marocco80_common,
+		template! = pzka_Marocco80_trunk_nr,
+		template! = pzka_Marocco80_hood_nr,
+		template! = pzka_Marocco80_windshield,		
+		template! = pzka_Marocco80_Light,
+	}
+
+	template vehicle pzka_Marocco80_nr {
+		template! = pzka_Marocco80_shared_nr,
+		template! = pzka_Marocco80_basicRoof_nr,
+		template! = pzka_Marocco80_FrontDoors_nr,
+	}
+	template vehicle pzka_Marocco80_sport_nr {
+		template! = pzka_Marocco80_shared_nr,
+		template! = pzka_Marocco80_sportRoof_nr,
+		template! = pzka_Marocco80_FrontDoors_sport_nr,
+	}
+	template vehicle pzka_Marocco80_variable_nr {
+		template! = pzka_Marocco80_shared_nr,
+		template! = pzka_Marocco80_variableRoof_nr,
+		template! = pzka_Marocco80_FrontDoors_variable_nr,
+	}
+}

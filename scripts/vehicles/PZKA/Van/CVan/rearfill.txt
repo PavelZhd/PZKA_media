@@ -1,0 +1,39 @@
+module Base
+{	
+	model PZKA_Vehicles_Vans_CVan_RearFill
+	{
+		mesh = vehicles/Vans/pzka_CVans|TailFill_CType_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Vans_CVan_RearFill_nr
+	{
+		mesh = vehicles/Vans/pzka_CVans|TailFill_CType_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	
+		
+	template vehicle PZKA_CVan_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model CVan1
+			{
+				file = PZKA_Vehicles_Vans_CVan_RearFill,
+			}
+		}
+	}
+	template vehicle PZKA_CVan_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model CVan1
+			{
+				file = PZKA_Vehicles_Vans_CVan_RearFill,
+			}
+		}
+	}
+}

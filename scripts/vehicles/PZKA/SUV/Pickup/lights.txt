@@ -1,0 +1,49 @@
+module Base
+{
+	
+	model PZKA_Vehicles_SUV_P_LightRL
+	{
+		mesh = vehicles/pzka_SUV|Light_RearLeft_P_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_SUV_P_LightRR
+	{
+		mesh = vehicles/pzka_SUV|Light_RearRight_P_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_SUV_P_Light {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SUV_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SUV_LightFR,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SUV_P_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SUV_P_LightRR,
+			}
+		}
+	}
+}

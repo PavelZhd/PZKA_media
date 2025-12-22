@@ -1,0 +1,83 @@
+module Base
+{
+	model PZKA_Vehicles_SUV_internals
+	{
+		mesh = vehicles/pzka_SUV|Vehicles_Interior,
+		
+		texture = Vehicles/vehicle_suvshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_SUV_SeatFL
+	{
+		mesh = vehicles/pzka_SUV|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/vehicle_suvshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_SUV_SeatFR
+	{
+		mesh = vehicles/pzka_SUV|Seat_FrontRight_obj,
+		
+		texture = Vehicles/vehicle_suvshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_SUV_SeatRL
+	{
+		mesh = vehicles/pzka_SUV|Seat_RearLeft_obj,
+		
+		texture = Vehicles/vehicle_suvshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_SUV_SeatRR
+	{
+		mesh = vehicles/pzka_SUV|Seat_RearRight_obj,
+		
+		texture = Vehicles/vehicle_suvshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_SUV_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SUV_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SUV_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SUV_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SUV_SeatRR,
+			}
+		}
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_SUV_internals,
+			}
+		}
+	}
+}

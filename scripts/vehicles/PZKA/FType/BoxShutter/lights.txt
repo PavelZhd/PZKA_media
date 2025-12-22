@@ -1,0 +1,34 @@
+module Base
+{	
+	model PZKA_Vehicles_FType_BoxShutter_LightRL
+	{
+		mesh = vehicles/FType/pzka_BoxShutter|Light_UMove_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_FType_BoxShutter_LightRR
+	{
+		mesh = vehicles/FType/pzka_BoxShutter|Light_UMove_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FType_BoxShutter_Lights {		
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_BoxShutter_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FType_BoxShutter_LightRR,
+			}
+		}
+	}
+	
+}

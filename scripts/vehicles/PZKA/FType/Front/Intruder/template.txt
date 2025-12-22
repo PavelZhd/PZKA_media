@@ -1,0 +1,58 @@
+module Base
+{
+	template vehicle PZKA_FType_Intruder_FrontLight_models {
+		template! = PZKA_FType_Intruder1_FrontLights,
+		template! = PZKA_FType_Intruder6_FrontLights,
+		template! = PZKA_FType_Intruder11_FrontLights,
+	}
+	template vehicle PZKA_FType_Intruder_FrontLights {
+		template! = PZKA_FType_Intruder_FrontLight_models,
+		template! = PZKA_VariableFrontLights,
+	}
+
+    template vehicle PZKA_FType_Intruder1_FrontFill {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Intruder1_FrontFill_model,
+	}	
+	template vehicle PZKA_FType_Intruder6_FrontFill {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Intruder6_FrontFill_model,
+	}	
+	template vehicle PZKA_FType_Intruder11_FrontFill {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Intruder11_FrontFill_model,
+	}
+	template vehicle PZKA_FType_Intruder_FrontFill_models {
+		template! = PZKA_FType_Intruder1_FrontFill_model,
+		template! = PZKA_FType_Intruder6_FrontFill_model,
+		template! = PZKA_FType_Intruder11_FrontFill_model,
+	}
+	template vehicle PZKA_FType_Intruder_FrontFill {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Intruder_FrontFill_models,
+        template! = PZKA_VariableFrontFill,
+	}
+
+	template vehicle PZKA_FType_Intruder1_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Intruder1_FrontFill_model_nr,
+	}	
+	template vehicle PZKA_FType_Intruder6_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Intruder6_FrontFill_model_nr,
+	}	
+	template vehicle PZKA_FType_Intruder11_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Intruder11_FrontFill_model_nr,
+	}
+	template vehicle PZKA_FType_Intruder_FrontFill_models_nr {
+		template! = PZKA_FType_Intruder1_FrontFill_model_nr,
+		template! = PZKA_FType_Intruder6_FrontFill_model_nr,
+		template! = PZKA_FType_Intruder11_FrontFill_model_nr,
+	}
+	template vehicle PZKA_FType_Intruder_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		template! = PZKA_FType_Intruder_FrontFill_models_nr,
+        template! = PZKA_VariableFrontFill,
+	}
+}

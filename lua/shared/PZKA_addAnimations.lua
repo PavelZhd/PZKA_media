@@ -59,7 +59,7 @@ PZKAModule.AddExtraTemplate = function(vehicleId, extraTemplate)
 end
 PZKAModule.CreateAnimationProfile = function(vehicleId, model, lights, template, doors, rear, seats, module, extra)
 	local vt = PZKACore.TeplateHandler(vehicleId, module)
-	local templates = {lights,template,rear,extra}
+	local templates = {lights,template,"PZKA_EngineDoor",rear,extra}
 	for i, door in pairs(doors) do
 		if doorTemplatesMap[door] then
 			table.insert(templates, doorTemplatesMap[door])

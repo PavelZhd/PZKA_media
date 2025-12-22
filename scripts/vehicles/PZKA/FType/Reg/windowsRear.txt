@@ -1,0 +1,28 @@
+module Base
+{
+	model VVA_Vehicles_FType_Reg_WindowRL
+	{
+		mesh = vehicles/FType/pzka_Reg|Window_Reg_Wagon_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_FType_Reg_WindowRR
+	{
+		mesh = vehicles/FType/pzka_Reg|Window_Reg_Wagon_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	template vehicle PZKA_FType_Reg_Wagon_WindowsRear {
+		part WindshieldRear
+        {
+			model StaticL
+            {
+            	file = VVA_Vehicles_FType_Reg_WindowRL,
+            }            		
+        	model StaticR
+            {
+                file = VVA_Vehicles_FType_Reg_WindowRR,
+            }
+	    }
+	}
+}

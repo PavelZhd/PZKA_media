@@ -1,0 +1,190 @@
+module Base
+{    
+	model VVA_Vehicles_DVan_LightFL_1
+	{
+		mesh = vehicles/Vans/pzka_DVans|Light_FrontLeft_DVan1_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_DVan_LightFR_1
+	{
+		mesh = vehicles/Vans/pzka_DVans|Light_FrontRight_DVan1_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_DVan_Lights_Front_1 {
+        part HeadlightLeft 
+		{
+			model DVan1
+			{
+				file = VVA_Vehicles_DVan_LightFL_1,
+			}
+		}
+		part HeadlightRight 
+		{
+			model DVan1
+			{
+				file = VVA_Vehicles_DVan_LightFR_1,
+			}
+
+		}		
+    }
+
+	model VVA_Vehicles_DVan_LightFL_2
+	{
+		mesh = vehicles/Vans/pzka_DVans|Light_FrontLeft_DVan2_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_DVan_LightFR_2
+	{
+		mesh = vehicles/Vans/pzka_DVans|Light_FrontRight_DVan2_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_DVan_Lights_Front_2 {
+        part HeadlightLeft 
+		{
+			model DVan2
+			{
+				file = VVA_Vehicles_DVan_LightFL_2,
+			}
+		}
+		part HeadlightRight 
+		{
+			model DVan2
+			{
+				file = VVA_Vehicles_DVan_LightFR_2,
+			}
+
+		}		
+    }
+
+	model VVA_Vehicles_DVan_LightFL_3
+	{
+		mesh = vehicles/Vans/pzka_DVans|Light_FrontLeft_DVan3_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_DVan_LightFR_3
+	{
+		mesh = vehicles/Vans/pzka_DVans|Light_FrontRight_DVan3_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_DVan_Lights_Front_3 {
+        part HeadlightLeft 
+		{
+			model DVan3
+			{
+				file = VVA_Vehicles_DVan_LightFL_3,
+			}
+		}
+		part HeadlightRight 
+		{
+			model DVan3
+			{
+				file = VVA_Vehicles_DVan_LightFR_3,
+			}
+
+		}		
+    }
+	template vehicle PZKA_DVan_Lights_Front_var {
+		template! = PZKA_DVan_Lights_Front_1,
+		template! = PZKA_DVan_Lights_Front_2,
+		template! = PZKA_DVan_Lights_Front_3,
+		template! = PZKA_VariableFrontLights,
+	}
+
+    model PZKA_Vehicles_DVan_LightRL_1
+	{
+		mesh = vehicles/Vans/pzka_DVans|Light_RearLeft_DVan1_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_DVan_LightRR_1
+	{
+		mesh = vehicles/Vans/pzka_DVans|Light_RearRight_DVan1_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_DVan_RearLights_1 {
+		part HeadlightRearLeft 
+		{
+			model DVan1
+			{
+				file = PZKA_Vehicles_DVan_LightRL_1,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model DVan1
+			{
+				file = PZKA_Vehicles_DVan_LightRR_1,
+			}
+		}
+	}
+	template vehicle PZKA_DVan_RearLights_2 {
+		part HeadlightRearLeft 
+		{
+			model DVan2
+			{
+				file = PZKA_Vehicles_CVan_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model DVan2
+			{
+				file = PZKA_Vehicles_CVan_LightRR,
+			}
+		}
+	}
+	model PZKA_Vehicles_DVan_LightRL_3
+	{
+		mesh = vehicles/Vans/pzka_DVans|Light_RearLeft_DVan3_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_DVan_LightRR_3
+	{
+		mesh = vehicles/Vans/pzka_DVans|Light_RearRight_DVan3_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_DVan_RearLights_3 {
+		part HeadlightRearLeft 
+		{
+			model DVan3
+			{
+				file = PZKA_Vehicles_DVan_LightRL_3,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model DVan3
+			{
+				file = PZKA_Vehicles_DVan_LightRR_3,
+			}
+		}
+	}
+	
+	template vehicle PZKA_DVan_RearLights_var {
+		template! = PZKA_DVan_RearLights_1,
+		template! = PZKA_DVan_RearLights_2,
+		template! = PZKA_DVan_RearLights_3,
+		template! = PZKA_VariableRearLights,
+	}
+}

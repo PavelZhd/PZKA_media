@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicles_Van_Brig_RearWindow
+	{
+		mesh = vehicles/Vans/pzka_VanBed|RearWindow_Bed_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Van_Brig_RearWindow {
+		part WindshieldRear
+		{
+			model Static
+			{
+				file = PZKA_Vehicles_Van_Brig_RearWindow,
+			}
+		}
+	}
+}

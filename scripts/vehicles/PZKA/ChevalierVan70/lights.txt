@@ -35,28 +35,28 @@ module Base
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Van70Chev_LightFL,
+				file = PZKA_Vehicles_CVan70_LightFL,
 			}
 		}
 		part HeadlightRight 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Van70Chev_LightFR,
+				file = PZKA_Vehicles_CVan70_LightFR,
 			}
 		}
 		part HeadlightRearLeft 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Van70Chev_LightRL,
+				file = PZKA_Vehicles_CVan70_LightRL,
 			}
 		}
 		part HeadlightRearRight 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Van70Chev_LightRR,
+				file = PZKA_Vehicles_CVan70_LightRR,
 			}
 		}
 	}

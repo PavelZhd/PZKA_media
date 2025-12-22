@@ -1,0 +1,126 @@
+module Base
+{
+	template vehicle PZKA_CVan_Common {
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.24366 -0.023509 1.00457,
+			}
+		}
+		template! = PZKA_CVan_Engine,
+		template! = PZKA_CVan_InteriorFill,
+	}
+
+	template vehicle PZKA_CVan_Shared {
+		template! = PZKA_Van_Shared,
+		template! = PZKA_CVan_Common,
+		template! = PZKA_CVan_hood,
+	}
+	template vehicle PZKA_CVan_Shared_nr {
+		template! = PZKA_Van_Shared_nr,
+		template! = PZKA_CVan_Common,		
+		template! = PZKA_CVan_hood_nr,
+	}
+    
+	template vehicle PZKA_CVan_1 {
+		template! = PZKA_CVan_FrontFill1,
+		template! = PZKA_CVan_Lights_Front_1,
+		template! = PZKA_CVan_RearFill,
+		template! = PZKA_CVan_RearLights,
+	}
+	template vehicle PZKA_CVan_2 {
+		template! = PZKA_CVan_FrontFill2,
+		template! = PZKA_CVan_Lights_Front_2,
+		template! = PZKA_CVan_RearFill,
+		template! = PZKA_CVan_RearLights,
+	}
+	template vehicle PZKA_CVan_3 {
+		template! = PZKA_CVan_FrontFill3,
+		template! = PZKA_CVan_Lights_Front_3,
+		template! = PZKA_CVan_RearFill,
+		template! = PZKA_CVan_RearLights,
+	}
+	template vehicle PZKA_CVan_Var {
+		template! = PZKA_CVan_FrontFill_var,
+		template! = PZKA_CVan_Lights_Front_var,
+		template! = PZKA_CVan_RearFill,
+		template! = PZKA_CVan_RearLights,
+	}
+
+	template vehicle PZKA_CVan_1_nr {
+		template! = PZKA_CVan_FrontFill1_nr,
+		template! = PZKA_CVan_Lights_Front_1,
+		template! = PZKA_CVan_RearFill_nr,
+		template! = PZKA_CVan_RearLights,
+	}
+	template vehicle PZKA_CVan_2_nr {
+		template! = PZKA_CVan_FrontFill2_nr,
+		template! = PZKA_CVan_Lights_Front_2,
+		template! = PZKA_CVan_RearFill_nr,
+		template! = PZKA_CVan_RearLights,
+	}
+	template vehicle PZKA_CVan_3_nr {
+		template! = PZKA_CVan_FrontFill3_nr,
+		template! = PZKA_CVan_Lights_Front_3,
+		template! = PZKA_CVan_RearFill_nr,
+		template! = PZKA_CVan_RearLights,
+	}
+	template vehicle PZKA_CVan_Var_nr {
+		template! = PZKA_CVan_FrontFill_var_nr,
+		template! = PZKA_CVan_Lights_Front_var,
+		template! = PZKA_CVan_RearFill_nr,
+		template! = PZKA_CVan_RearLights,
+	}
+
+    template vehicle PZKA_CVan_Cargo {
+		template! = PZKA_CVan_RearDoor,
+		template! = PZKA_Van_Interior_Cargo,
+		template! = PZKA_CVan_Shared,
+	}
+    template vehicle PZKA_CVan_Cargo_Blind {
+		template! = PZKA_CVan_RearDoorBlind,
+		template! = PZKA_Van_Interior_Cargo,
+		template! = PZKA_CVan_Shared,
+	}
+	template vehicle PZKA_CVan_Multi {
+		template! = PZKA_CVan_Door_RR,
+		template! = PZKA_Van_WindowRL_static,
+		template! = PZKA_CVan_RearDoor,		
+		template! = PZKA_CVan_Interior_WRL,
+		template! = PZKA_CVan_Shared,
+	}
+	template vehicle PZKA_CVan_Seats {
+		template! = PZKA_Van_Door_MR,
+		template! = PZKA_Van_WindowML_static,
+		template! = PZKA_CVan_Seats_RearDoor,		
+		template! = PZKA_CVan_Interior_Seats_WRL,
+		template! = PZKA_CVan_Shared,
+	}
+
+	template vehicle PZKA_CVan_Cargo_nr {
+		template! = PZKA_CVan_RearDoor_nr,
+		template! = PZKA_Van_Interior_Cargo,
+		template! = PZKA_CVan_Shared_nr,
+	}
+    template vehicle PZKA_CVan_Cargo_Blind_nr {
+		template! = PZKA_CVan_RearDoorBlind_nr,
+		template! = PZKA_Van_Interior_Cargo,
+		template! = PZKA_CVan_Shared_nr,
+	}
+	template vehicle PZKA_CVan_Multi_nr {
+		template! = PZKA_CVan_Door_RR_nr,
+		template! = PZKA_Van_WindowRL_static,
+		template! = PZKA_CVan_RearDoor_nr,		
+		template! = PZKA_CVan_Interior_WRL,
+		template! = PZKA_CVan_Shared_nr,
+	}
+	template vehicle PZKA_CVan_Seats_nr {
+		template! = PZKA_CVan_Door_MR_nr,
+		template! = PZKA_Van_WindowML_static,
+		template! = PZKA_CVan_Seats_RearDoor_nr,		
+		template! = PZKA_CVan_Interior_Seats_WRL,
+		template! = PZKA_CVan_Shared_nr,
+	}
+}

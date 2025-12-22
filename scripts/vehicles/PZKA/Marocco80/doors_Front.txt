@@ -1,0 +1,247 @@
+module Base
+{
+	model PZKA_Vehicles_Marocco80_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_Marocco80_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Marocco80|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Marocco80_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Marocco80|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+
+	model PZKA_Vehicles_Marocco80_DoorFrontLeft_sport
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontLeft_sport_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorSportBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_DoorFrontRight_sport
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontRight_sport_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorSportBone 1.0,
+	}
+
+	model PZKA_Vehicles_Marocco80_WindowFrontLeft_sport
+	{
+		mesh = vehicles/pzka_Marocco80|Window_FrontLeft_sport_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorSportBone 1.0,
+		boneWeight = FrontLeftWindowSportBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_WindowFrontRight_sport
+	{
+		mesh = vehicles/pzka_Marocco80|Window_FrontRight_sport_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorSportBone 1.0,
+		boneWeight = FrontRightWindowSportBone 1.0,
+	}
+	
+	model PZKA_Vehicles_Marocco80_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_DoorFrontLeft_sport_nr
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontLeft_sport_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Marocco80_DoorFrontRight_sport_nr
+	{
+		mesh = vehicles/pzka_Marocco80|Door_FrontRight_sport_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	
+	template vehicle pzka_Marocco80_FrontDoorWindows {
+		part WindowFrontLeft
+       	{
+			model Default
+        	{
+        		file = PZKA_Vehicles_Marocco80_WindowFrontLeft,
+    		}
+    	}
+		part WindowFrontRight
+       	{	
+     		model Default
+    		{
+        		file = PZKA_Vehicles_Marocco80_WindowFrontRight,
+    		}
+	   	}
+	}
+	template vehicle pzka_Marocco80_FrontDoorWindows_sport {
+		part WindowFrontLeft
+       	{
+			model Sport
+        	{
+        		file = PZKA_Vehicles_Marocco80_WindowFrontLeft_sport,
+    		}
+    	}
+		part WindowFrontRight
+       	{	
+     		model Sport
+    		{
+        		file = PZKA_Vehicles_Marocco80_WindowFrontRight_sport,
+    		}
+	   	}
+	}
+
+	
+
+	template vehicle pzka_Marocco80_FrontDoors_models {	
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_DoorFrontLeft,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_DoorFrontRight,
+			}
+		}
+		template! = pzka_Marocco80_FrontDoorWindows,
+	}
+
+	template vehicle pzka_Marocco80_FrontDoors_sport_models {
+		part DoorFrontLeft
+		{
+			model Sport
+			{
+				file = PZKA_Vehicles_Marocco80_DoorFrontLeft_sport,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Sport
+			{
+				file = PZKA_Vehicles_Marocco80_DoorFrontRight_sport,
+			}
+		}
+		template! = pzka_Marocco80_FrontDoorWindows_sport,
+	}
+
+	template vehicle pzka_Marocco80_FrontDoors {
+		template! = pzka_Marocco80_FrontDoors_models,
+		template! = PZKA_DoorsWindowFront,
+	}
+	template vehicle pzka_Marocco80_FrontDoors_sport {
+		template! = pzka_Marocco80_FrontDoors_sport_models,
+		template! = PZKA_DoorsWindowFront,
+	}
+	template vehicle pzka_Marocco80_FrontDoors_variable {
+		template! = pzka_Marocco80_FrontDoors_models,
+		template! = pzka_Marocco80_FrontDoors_sport_models,
+		template! = PZKA_DoorsWindowFront,
+		template! = PZKA_VariableDoorF,
+		template! = PZKA_VariableWindowsF,
+	}
+
+
+	template vehicle pzka_Marocco80_FrontDoors_models_nr {	
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_DoorFrontLeft_nr,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocco80_DoorFrontRight_nr,
+			}
+		}
+		template! = pzka_Marocco80_FrontDoorWindows,
+		template! = PZKA_DoorsWindowFront,
+	}
+
+	template vehicle pzka_Marocco80_FrontDoors_sport_models_nr {
+		part DoorFrontLeft
+		{
+			model Sport
+			{
+				file = PZKA_Vehicles_Marocco80_DoorFrontLeft_sport_nr,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Sport
+			{
+				file = PZKA_Vehicles_Marocco80_DoorFrontRight_sport_nr,
+			}
+		}
+		template! = pzka_Marocco80_FrontDoorWindows_sport,
+	}
+
+	template vehicle pzka_Marocco80_FrontDoors_nr{
+		template! = pzka_Marocco80_FrontDoors_models_nr,
+		template! = PZKA_DoorsWindowFront,
+	}
+	template vehicle pzka_Marocco80_FrontDoors_sport_nr{
+		template! = pzka_Marocco80_FrontDoors_sport_models_nr,
+		template! = PZKA_DoorsWindowFront,
+	}
+	template vehicle pzka_Marocco80_FrontDoors_variable_nr{
+		template! = pzka_Marocco80_FrontDoors_models_nr,
+		template! = pzka_Marocco80_FrontDoors_sport_models_nr,
+		template! = PZKA_DoorsWindowFront,		
+		template! = PZKA_VariableDoorF,
+		template! = PZKA_VariableWindowsF,
+	}
+}

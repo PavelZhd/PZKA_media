@@ -1,0 +1,41 @@
+module Base
+{
+	model PZKA_Vehicles_FVan_Hood
+	{
+		mesh = vehicles/Vans/pzka_Van_Hoods|Hood_FVan_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_FVan_Hood_nr
+	{
+		mesh = vehicles/Vans/pzka_Van_Hoods|Hood_FVan_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+
+	
+	template vehicle PZKA_FVan_hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FVan_Hood,
+			}
+		}
+		template! = PZKA_EngineDoor,
+    }
+	template vehicle PZKA_FVan_hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_FVan_Hood_nr,
+			}
+		}
+		template! = PZKA_EngineDoor,
+    }
+}

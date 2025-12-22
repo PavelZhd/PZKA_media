@@ -1,0 +1,111 @@
+module Base
+{
+	model PZKA_Vehicles_SUV_DoorRearLeft
+	{
+		mesh = vehicles/pzka_SUV|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_SUV_DoorRearRight
+	{
+		mesh = vehicles/pzka_SUV|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_SUV_WindowRearLeft
+	{
+		mesh = vehicles/pzka_SUV|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_SUV_WindowRearRight
+	{
+		mesh = vehicles/pzka_SUV|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_SUV_DoorRearLeft_nr
+	{
+		mesh = vehicles/pzka_SUV|Door_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_SUV_DoorRearRight_nr
+	{
+		mesh = vehicles/pzka_SUV|Door_RearRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+
+	template vehicle PZKA_SUV_RearDoorWindows {
+		part WindowRearLeft
+        {
+			parent = DoorRearLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_SUV_WindowRearLeft,
+            }            		
+        }
+		part WindowRearRight
+    	{	
+        	parent = DoorRearRight,
+			model Default
+            {
+                file = PZKA_Vehicles_SUV_WindowRearRight,
+            }
+	    }
+	}
+
+	template vehicle PZKA_SUV_RearDoors {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SUV_DoorRearLeft,
+			}
+		}
+		template! = PZKA_DoorWindowRearLeft,
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SUV_DoorRearRight,
+			}
+		}
+		template! = PZKA_DoorWindowRearRight,
+		template! = PZKA_SUV_RearDoorWindows,
+	}
+	template vehicle PZKA_SUV_RearDoors_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SUV_DoorRearLeft_nr,
+			}
+		}
+		template! = PZKA_DoorWindowRearLeft,
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SUV_DoorRearRight_nr,
+			}
+		}
+		template! = PZKA_DoorWindowRearRight,
+		template! = PZKA_SUV_RearDoorWindows,
+	}
+}
