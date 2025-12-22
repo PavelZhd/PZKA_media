@@ -15,14 +15,14 @@ module Base
 	template vehicle PZKA_Normal_FrontLights_Rapier {
 		part HeadlightLeft
 		{
-			model Default 
+			model Rapier 
 			{
 				file = PZKA_Normal_LightFL_Rapier,
 			}
 		}
 		part HeadlightRight
 		{
-			model Default 
+			model Rapier 
 			{
 				file = PZKA_Normal_LightFR_Rapier,
 			}

@@ -15,14 +15,14 @@ module Base
 	template vehicle PZKA_Normal_FrontLights_Mayor {
 		part HeadlightLeft
 		{
-			model Default 
+			model Mayor 
 			{
 				file = PZKA_Normal_LightFL_Mayor,
 			}
 		}
 		part HeadlightRight
 		{
-			model Default 
+			model Mayor 
 			{
 				file = PZKA_Normal_LightFR_Mayor,
 			}

@@ -15,14 +15,14 @@ module Base
 	template vehicle PZKA_Normal_FrontLights_TWD {
 		part HeadlightLeft
 		{
-			model Default 
+			model TWD 
 			{
 				file = PZKA_Normal_LightFL_TWD,
 			}
 		}
 		part HeadlightRight
 		{
-			model Default 
+			model TWD 
 			{
 				file = PZKA_Normal_LightFR_TWD,
 			}

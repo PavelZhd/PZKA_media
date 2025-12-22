@@ -13,9 +13,8 @@ module Base
 		scale = 0.01,
 	}
 
-    template vehicle PZKA_Normal_FrontFill_Mayor
+    template vehicle PZKA_Normal_FrontFill_Mayor_model
     {
-        template! = PZKA_Frontfill,
         part Frontfill
 		{
             model Mayor
@@ -23,10 +22,9 @@ module Base
                 file = PZKA_Normal_FrontFill_Mayor,
             }
         }
-    }    
-    template vehicle PZKA_Normal_FrontFill_Mayor_nr
+    }
+    template vehicle PZKA_Normal_FrontFill_Mayor_model_nr
     {
-        template! = PZKA_Frontfill,
         part Frontfill
 		{
             model Mayor
@@ -34,5 +32,15 @@ module Base
                 file = PZKA_Normal_FrontFill_Mayor_nr,
             }
         }
-    }    
+    }
+    template vehicle PZKA_Normal_FrontFill_Mayor
+    {
+        template! = PZKA_Frontfill,
+        template! = PZKA_Normal_FrontFill_Mayor_model,
+    }
+    template vehicle PZKA_Normal_FrontFill_Mayor_nr
+    {
+        template! = PZKA_Frontfill,
+        template! = PZKA_Normal_FrontFill_Mayor_model_nr,
+    }
 }

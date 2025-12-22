@@ -13,9 +13,8 @@ module Base
 		scale = 0.01,
 	}
 
-    template vehicle PZKA_Normal_FrontFill_Homelander
+    template vehicle PZKA_Normal_FrontFill_Homelander_model
     {
-        template! = PZKA_Frontfill,
         part Frontfill
 		{
             model Homelander
@@ -23,10 +22,9 @@ module Base
                 file = PZKA_Normal_FrontFill_Homelander,
             }
         }
-    }    
-    template vehicle PZKA_Normal_FrontFill_Homelander_nr
+    }
+    template vehicle PZKA_Normal_FrontFill_Homelander_model_nr
     {
-        template! = PZKA_Frontfill,
         part Frontfill
 		{
             model Homelander
@@ -34,5 +32,15 @@ module Base
                 file = PZKA_Normal_FrontFill_Homelander_nr,
             }
         }
-    }    
+    }
+    template vehicle PZKA_Normal_FrontFill_Homelander
+    {
+        template! = PZKA_Frontfill,
+        template! = PZKA_Normal_FrontFill_Homelander_model,
+    }
+    template vehicle PZKA_Normal_FrontFill_Homelander_nr
+    {
+        template! = PZKA_Frontfill,
+        template! = PZKA_Normal_FrontFill_Homelander_model_nr,
+    }
 }
