@@ -1,0 +1,21 @@
+module Base
+{
+	template vehicle PZKA_Limo_Trunk_Rapier_model {
+		part TrunkDoor
+		{
+			model Rapier
+			{
+				file = PZKA_Vehicles_Normal_Limo_Trunk_Cerise,
+			}
+		}
+	}
+	template vehicle PZKA_Limo_Trunk_Rapier_model_nr {
+		part TrunkDoor
+		{
+			model Rapier
+			{
+				file = PZKA_Vehicles_Normal_Limo_Trunk_Cerise_nr,
+			}
+		}
+	}
+}
