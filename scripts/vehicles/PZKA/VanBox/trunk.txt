@@ -1,0 +1,63 @@
+module Base
+{
+	model PZKA_Vehicles_VanBox_Trunk
+	{
+		mesh = vehicles/pzka_VanBox|Trunk_BoxAmbulace_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBoxAmbulanceRightBone 1.0,
+		boneWeight = TrunkBoxAmbulanceLeftBone 1.0,
+	}
+	model PZKA_Vehicles_VanBox_Trunk_nr
+	{
+		mesh = vehicles/pzka_VanBox|Trunk_BoxAmbulace_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBoxAmbulanceRightBone 1.0,
+		boneWeight = TrunkBoxAmbulanceLeftBone 1.0,
+	}
+
+	model PZKA_Vehicles_VanBox_RearWindow
+	{
+		mesh = vehicles/pzka_VanBox|RearWindow_BoxAmbulance_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	
+	template vehicle PZKA_VanBox_RearWindow {
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = PZKA_Vehicles_VanBox_RearWindow,
+			}
+		}
+	}
+
+	template vehicle PZKA_VanBox_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VanBox_Trunk,
+			}
+		}
+		template! = PZKA_RearDoorVersionMed,
+		template! = PZKA_VanBox_RearWindow,
+	}
+	template vehicle PZKA_VanBox_Trunk_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VanBox_Trunk_nr,
+			}
+		}
+		template! = PZKA_RearDoorVersionMed,
+		template! = PZKA_VanBox_RearWindow,
+	}
+}

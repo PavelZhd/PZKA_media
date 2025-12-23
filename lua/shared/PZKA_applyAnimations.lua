@@ -435,6 +435,14 @@ PZKA.ApplyTemplateToVehicle("pzkFVanSpiffo","VVA_Vehicles_FVan_Cargo_nr",{"pzka_
 PZKA.ApplyTemplateToVehicle("pzkFVanMultivan","VVA_Vehicles_FVan_Multi",{"pzka_4SeatsR","PZKA_FVan_Multi","PZKA_FVan_Var","PZKA_Van_RSeatsM"})
 PZKA.ApplyTemplateToVehicle("pzkFVan6Seats","VVA_Vehicles_FVan_Seats",{"pzka_6Seats","PZKA_FVan_Seats","PZKA_FVan_Var","PZKA_Van_4RearSears"})
 
+---- VanBox
+
+PZKA.ApplyTemplateToVehicle("pzkVanBoxAmbulance","PZKA_Vehicles_VanBox_nr",{"pzka_2SeatsF","PZKA_VanBox_nr","pzka_t_lighbar","PZKA_Van_Lightbar"})
+PZKA.CopyTemplateToVehicle("pzkVanBoxFiretruck","pzkVanBoxAmbulance")
+PZKA.CopyTemplateToVehicle("pzkVanBoxSwat","pzkVanBoxAmbulance")
+
+PZKA.ApplyTemplateToVehicle("pzkVanBox","PZKA_Vehicles_VanBox_Shutter",{"pzka_2SeatsF","PZKA_VanBox_Shutter"})
+
 --- OLD FRAMEWORK CODE
 
 
@@ -466,10 +474,6 @@ PZKA.CloneAnimationProfile("pzkStepVanIceCream","pzkStepVanMilk","PZKA_Vehicle_S
 PZKA.CloneAnimationProfile("pzkStepVanPierogi","pzkStepVanMilk","PZKA_Vehicle_StepVan_Food_NoRandom_a",false,"PZKA_StepVan_Pierogi")
 
 
-PZKA.CreateAnimationProfile("pzkVanBox","PZKA_Vehicles_Van_Box_a","PZKA_Van_Box_Lights","PZKA_Van_Box_animatedDoors",{"FLW","FRW"}, "PZKA_RearDoorVersionMed")
-PZKA.CloneAnimationProfile("pzkVanBoxAmbulance","pzkVanBox","PZKA_Vehicles_Van_BoxAmbulance_a","PZKA_Van_BoxAmbulance_Lights","PZKA_Van_BoxAmbulance_animatedDoors")
-PZKA.CloneAnimationProfile("pzkVanBoxFiretruck","pzkVanBoxAmbulance")
-PZKA.CloneAnimationProfile("pzkVanBoxSwat","pzkVanBoxAmbulance")
 
 
 

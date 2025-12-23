@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicles_VanBox_Windshield
+	{
+		mesh = vehicles/pzka_VanBox|Windshield_Box_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_VanBox_Winshield {
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_VanBox_Windshield,
+			}			
+		}
+	}
+}
