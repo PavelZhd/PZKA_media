@@ -7,6 +7,7 @@ module Base
 		template! = PZKA_Van_Shared,
 		template! = PZKA_VVan_Common0,
 		template! = PZKA_VVan_Lights,
+		template! = PZKA_VVan_RearDoor,
 		template! = PZKA_VVan_hood,
 	}
 }
