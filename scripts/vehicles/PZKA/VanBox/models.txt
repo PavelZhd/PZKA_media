@@ -1,0 +1,18 @@
+module Base
+{
+	model PZKA_Vehicles_VanBox
+	{
+		mesh = vehicles/pzka_VanBox|Vehicle_BoxVanLights,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_VanBox_nr
+	{
+		mesh = vehicles/pzka_VanBox|Vehicle_BoxVanLights,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+}

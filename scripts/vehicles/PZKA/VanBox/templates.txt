@@ -1,0 +1,31 @@
+module Base
+{
+	template vehicle PZKA_VanBox_shared {		
+		template != PZKA_VanBox_Winshield,
+		template != PZKA_Van_Common,
+		template != PZKA_VVan_Common0,
+		template != PZKA_VanBox_FrontLights,
+	}
+
+	template vehicle PZKA_VanBox_Base {
+		template != PZKA_VanBox_shared,
+		template != PZKA_VanBox_FrontDoors,
+		template != PZKA_VanBox_Hood,
+	}
+	template vehicle PZKA_VanBox_Base_nr {
+		template != PZKA_VanBox_shared,
+		template != PZKA_VanBox_FrontDoors_nr,
+		template != PZKA_VanBox_Hood_nr,
+	}
+
+	template vehicle PZKA_VanBox {
+		template! = PZKA_VanBox_Trunk,
+		template! = PZKA_VanBox_Base,
+		template! = PZKA_VanBox_RearLights,
+	}
+	template vehicle PZKA_VanBox_nr {
+		template! = PZKA_VanBox_Trunk_nr,
+		template! = PZKA_VanBox_Base_nr,
+		template! = PZKA_VanBox_RearLights,
+	}
+}
