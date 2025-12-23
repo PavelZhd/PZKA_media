@@ -3,7 +3,7 @@ module Base
 	model VVA_Vehicles_Van_SeatFL
 	{
 		mesh = vehicles/VVA_Van|Seat_FrontLeft_obj,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_vanspiffoshell,
 		static = TRUE,
 		scale = 0.004,
@@ -11,7 +11,7 @@ module Base
 	model VVA_Vehicles_Van_SeatFR
 	{
 		mesh = vehicles/VVA_Van|Seat_FrontRight_obj,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_vanspiffoshell,
 		static = TRUE,
 		scale = 0.004,
@@ -19,7 +19,7 @@ module Base
 	model VVA_Vehicles_SeatML
 	{
 		mesh = vehicles/VVA_Van|Seat_MiddleLeft_obj,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_vanspiffoshell,
 		static = TRUE,
 		scale = 0.004,
@@ -27,7 +27,7 @@ module Base
 	model VVA_Vehicles_SeatMR
 	{
 		mesh = vehicles/VVA_Van|Seat_MiddleRight_obj,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_vanspiffoshell,
 		static = TRUE,
 		scale = 0.004,
@@ -35,7 +35,7 @@ module Base
 	model VVA_Vehicles_SeatRL
 	{
 		mesh = vehicles/VVA_Van|Seat_RearLeft_obj,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_vanspiffoshell,
 		static = TRUE,
 		scale = 0.004,
@@ -43,7 +43,7 @@ module Base
 	model VVA_Vehicles_SeatRR
 	{
 		mesh = vehicles/VVA_Van|Seat_RearRight_obj,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_vanspiffoshell,
 		static = TRUE,
 		scale = 0.004,

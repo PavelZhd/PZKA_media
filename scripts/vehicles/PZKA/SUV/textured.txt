@@ -3,7 +3,7 @@ module Base
 	model PZKA_Vehicles_SUV_internals
 	{
 		mesh = vehicles/pzka_SUV|Vehicles_Interior,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_suvshell,
 		static = TRUE,
 		scale = 0.01,
@@ -11,7 +11,7 @@ module Base
 	model PZKA_Vehicles_SUV_SeatFL
 	{
 		mesh = vehicles/pzka_SUV|Seat_FrontLeft_obj,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_suvshell,
 		static = TRUE,
 		scale = 0.01,
@@ -19,7 +19,7 @@ module Base
 	model PZKA_Vehicles_SUV_SeatFR
 	{
 		mesh = vehicles/pzka_SUV|Seat_FrontRight_obj,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_suvshell,
 		static = TRUE,
 		scale = 0.01,
@@ -27,7 +27,7 @@ module Base
 	model PZKA_Vehicles_SUV_SeatRL
 	{
 		mesh = vehicles/pzka_SUV|Seat_RearLeft_obj,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_suvshell,
 		static = TRUE,
 		scale = 0.01,
@@ -35,7 +35,7 @@ module Base
 	model PZKA_Vehicles_SUV_SeatRR
 	{
 		mesh = vehicles/pzka_SUV|Seat_RearRight_obj,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_suvshell,
 		static = TRUE,
 		scale = 0.01,

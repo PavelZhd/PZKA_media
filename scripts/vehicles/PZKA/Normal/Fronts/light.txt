@@ -1,0 +1,11 @@
+module Base
+{
+    template vehicle PZKA_Normal_FrontLights {	
+		template! = PZKA_Normal_FrontLights_Cerise,
+		template! = PZKA_Normal_FrontLights_Hellion,
+		template! = PZKA_Normal_FrontLights_Homelander,
+		template! = PZKA_Normal_FrontLights_Nyala,
+		template! = PZKA_Normal_FrontLights_Rapier,
+		template! = PZKA_VariableFrontLights,
+	}
+}

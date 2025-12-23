@@ -125,13 +125,13 @@ PZKA.CopyTemplateToVehicle("pzkChevalierNyalaMall", "pzkChevalierNyalaLSU")
 PZKA.ApplyTemplateToVehicle("pzkHearse","PZKA_Vehicles_Normal_Hearse_nr",{"pzka_4SeatsR","PZKA_Hearse_nr"})
 
 -- Limo
-PZKA.ApplyTemplateToVehicle("PZKA_Limo_Base","PZKA_Normal_Limo",{"pzka_4SeatsR","PZKA_Limo_base"})
+PZKA.ApplyTemplateToVehicle("pzkLimo","PZKA_Normal_Limo",{"pzka_4SeatsR","PZKA_Limo"})
 
-PZKA.CopyTemplateToVehicle("pzkLimo","PZKA_Limo_Base",{"PZKA_Limo_Nyala"})
-PZKA.CopyTemplateToVehicle("pzkChevalierCeriseLimo","PZKA_Limo_Base",{"PZKA_Limo_Cerise"})
-PZKA.CopyTemplateToVehicle("pzkDashRapierLimo","PZKA_Limo_Base",{"PZKA_Limo_Rapier"})
-PZKA.CopyTemplateToVehicle("pzkFranklinHomelanderLimo","PZKA_Limo_Base",{"PZKA_Limo_Homelander"})
-PZKA.CopyTemplateToVehicle("pzkDashHellionLimo","PZKA_Limo_Base",{"PZKA_Limo_Hellion"})
+--PZKA.CopyTemplateToVehicle("pzkLimo","PZKA_Limo_Base",{"PZKA_Limo_Nyala"})
+--PZKA.CopyTemplateToVehicle("pzkChevalierCeriseLimo","PZKA_Limo_Base",{"PZKA_Limo_Cerise"})
+--PZKA.CopyTemplateToVehicle("pzkDashRapierLimo","PZKA_Limo_Base",{"PZKA_Limo_Rapier"})
+--PZKA.CopyTemplateToVehicle("pzkFranklinHomelanderLimo","PZKA_Limo_Base",{"PZKA_Limo_Homelander"})
+--PZKA.CopyTemplateToVehicle("pzkDashHellionLimo","PZKA_Limo_Base",{"PZKA_Limo_Hellion"})
 
 -- Station Wagon
 PZKA.ApplyTemplateToVehicle("PZKA_Normal_Wagon","PZKA_Normal_Wagon",{"pzka_4SeatsR","PZKA_Normal_Wagon"})
@@ -381,11 +381,12 @@ PZKA.CopyTemplateToVehicle("pzkVanZSquad","pzkVanMultivanPayday")
 
 PZKA.ApplyTemplateToVehicle("pzkVanPublicWorks","VVA_Vehicles_VVan_Police",{"pzka_4SeatsR","PZKA_VVan_Multi_nr","PZKA_Van_RSeatsM","pzka_t_lighbar","PZKA_Van_Lightbar","PZKA_Van_InteriorBars"})
 
-PZKA.ApplyTemplateToVehicle("pzkVanPoliceLouisvillePD","VVA_Vehicles_VVan_Police",{"pzka_4SeatsR","PZKA_VVan_Multi_nr","PZKA_Van_RSeatsM","pzka_sle_lighbar","PZKA_Van_Lightbar","PZKA_Van_InteriorBars"})
-PZKA.CopyTemplateToVehicle("pzkVanPoliceMeadeSheriff","pzkVanPoliceLouisvillePD")
-PZKA.CopyTemplateToVehicle("pzkVanPoliceWestPoint","pzkVanPoliceLouisvillePD")
+PZKA.ApplyTemplateToVehicle("pzkVanPolice","VVA_Vehicles_VVan_Police",{"pzka_4SeatsR","PZKA_VVan_Multi_nr","PZKA_Van_RSeatsM","pzka_sle_lighbar","PZKA_Van_Lightbar","PZKA_Van_InteriorBars"})
+--PZKA.ApplyTemplateToVehicle("pzkVanPoliceLouisvillePD","VVA_Vehicles_VVan_Police",{"pzka_4SeatsR","PZKA_VVan_Multi_nr","PZKA_Van_RSeatsM","pzka_sle_lighbar","PZKA_Van_Lightbar","PZKA_Van_InteriorBars"})
+--PZKA.CopyTemplateToVehicle("pzkVanPoliceMeadeSheriff","pzkVanPoliceLouisvillePD")
+--PZKA.CopyTemplateToVehicle("pzkVanPoliceWestPoint","pzkVanPoliceLouisvillePD")
 
-PZKA.ApplyTemplateToVehicle("pzkVanSeatsTaxi","VVA_Vehicles_VVan_Seats_nr",{"pzka_6Seats","PZKA_VVan_Seats_nr","PZKA_Van_4RearSears","pzka_sle_taxi","PZKA_Van_Taxi"})
+PZKA.ApplyTemplateToVehicle("Vehicles_VanSeatsTaxi","VVA_Vehicles_VVan_Seats_nr",{"pzka_6Seats","PZKA_VVan_Seats_nr","PZKA_Van_4RearSears","pzka_sle_taxi","PZKA_Van_Taxi"})
 
 ---- Camper
 

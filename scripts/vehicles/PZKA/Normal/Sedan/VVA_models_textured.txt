@@ -3,6 +3,7 @@ module Base
 	model VVA_Vehicles_Normal_SeatRL
 	{
 		mesh = vehicles/Normal/vva_Normal_static|Seat_RearLeft_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.004,
@@ -10,6 +11,7 @@ module Base
 	model VVA_Vehicles_Normal_SeatRR
 	{
 		mesh = vehicles/Normal/vva_Normal_static|Seat_RearRight_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.004,

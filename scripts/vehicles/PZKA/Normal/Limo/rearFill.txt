@@ -1,0 +1,21 @@
+module Base
+{
+    template vehicle PZKA_Limo_RearFill {	
+		template! = PZKA_Rearfill,
+        template! = PZKA_Limo_Rearfill_Cerise_model,
+        template! = PZKA_Limo_Rearfill_Hellion_model,
+        template! = PZKA_Limo_Rearfill_Homelander_model,
+        template! = PZKA_Limo_Rearfill_Nyala_model,
+        template! = PZKA_Limo_Rearfill_Rapier_model,
+		template! = PZKA_VariableRearFill,
+	}
+	template vehicle PZKA_Limo_RearFill_nr {	
+		template! = PZKA_Rearfill,
+        template! = PZKA_Limo_Rearfill_Cerise_model_nr,
+        template! = PZKA_Limo_Rearfill_Hellion_model_nr,
+        template! = PZKA_Limo_Rearfill_Homelander_model_nr,
+        template! = PZKA_Limo_Rearfill_Nyala_model_nr,
+        template! = PZKA_Limo_Rearfill_Rapier_model_nr,
+		template! = PZKA_VariableRearFill,
+	}
+}

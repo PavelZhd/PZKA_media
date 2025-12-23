@@ -16,14 +16,14 @@ module Base
 	template vehicle PZKA_Limo_RearLights_Cerise {
 		part HeadlightRearLeft
 		{
-			model Default 
+			model Cerise 
 			{
 				file = PZKA_Vehicles_Normal_Limo_LightRL_Cerise,
 			}
 		}
 		part HeadlightRearRight
 		{
-			model Default 
+			model Cerise 
 			{
 				file = PZKA_Vehicles_Normal_Limo_LightRR_Cerise,
 			}

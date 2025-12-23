@@ -3,6 +3,7 @@ module Base
     model PZKA_Vehicles_Van_Camper_interior
 	{
 		mesh = vehicles/Vans/pzka_VanCamper|Vehicles_Interior_Camper,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_pzkvancampershell,
 		invertX = FALSE,
 		scale = 0.01,

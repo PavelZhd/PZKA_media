@@ -13,9 +13,8 @@ module Base
 		scale = 0.01,
 	}
 
-    template vehicle PZKA_Limo_Rearfill_Nyala
+    template vehicle PZKA_Limo_Rearfill_Nyala_model
     {
-        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model Nyala
@@ -24,9 +23,8 @@ module Base
             }
         }
     }    
-    template vehicle PZKA_Limo_Rearfill_Nyala_nr
+    template vehicle PZKA_Limo_Rearfill_Nyala_model_nr
     {
-        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model Nyala

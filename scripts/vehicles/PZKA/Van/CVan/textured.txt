@@ -3,6 +3,7 @@ module Base
 	model PZKA_Vehicles_CVan_interior_WRL
 	{
 		mesh = vehicles/Vans/pzka_CVans|Vehicles_Interior_WRL,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkCVan1-1,
 		invertX = FALSE,
 		scale = 0.01,
@@ -10,6 +11,7 @@ module Base
 	model PZKA_Vehicles_CVan_interior_Seats_WRL
 	{
 		mesh = vehicles/Vans/pzka_CVans|Vehicles_Interior_seatsWRL,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkCVan1-1,
 		invertX = FALSE,
 		scale = 0.01,
@@ -18,6 +20,7 @@ module Base
 	model PZKA_Vehicles_CVan_interiorFill
 	{
 		mesh = vehicles/Vans/pzka_CVans|InteriorRear_CVan_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkCVan1-1,
 		invertX = FALSE,
 		scale = 0.01,
@@ -25,6 +28,7 @@ module Base
 	model PZKA_Vehicles_CVan_engine
 	{
 		mesh = vehicles/Vans/pzka_CVans|Engine_CVan,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkCVan1-1,
 		invertX = FALSE,
 		scale = 0.01,

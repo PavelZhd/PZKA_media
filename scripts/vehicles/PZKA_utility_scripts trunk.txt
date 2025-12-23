@@ -71,4 +71,19 @@ module Base
 			}
 		}
 	}
+	template vehicle PZKA_VariableTrunk {
+		part TrunkDoor
+        {
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.AdjustLightGeometryDoor,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+        }
+	}
 }

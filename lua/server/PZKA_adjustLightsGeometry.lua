@@ -31,6 +31,14 @@ function CopyFillMapRecord(vehicleId, fromId)
     FillPartsMap[vehicleId] = FillPartsMap[fromId]
 end
 
+FillPartsMap["Base.pzkLimo"] = {
+    ["Cerise"] = "a2a",
+    ["Hellion"] = "a1a",
+    ["Homelander"] = "a4a",
+    ["Nyala"] = "a0a",
+    ["Rapier"] = "a3a",
+}
+
 FillPartsMap["Base.pzkFranklinGalloper"] = {
     ["Filla0a1a2a3a4a"] = "a0a1a2a3a4a",
     ["Filla5a6a7a"] = "a5a6a7a",

@@ -3,6 +3,7 @@ module Base
 	model PZKA_Vehicles_FVan_interiorFill
 	{
 		mesh = vehicles/Vans/pzka_FVans|InteriorRear_FVan_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkCVan1-1,
 		invertX = FALSE,
 		scale = 0.01,
@@ -10,6 +11,7 @@ module Base
 	model PZKA_Vehicles_FVan_engine
 	{
 		mesh = vehicles/Vans/pzka_FVans|Engine_FVan,
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkCVan1-1,
 		invertX = FALSE,
 		scale = 0.01,

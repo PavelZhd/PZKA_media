@@ -16,14 +16,14 @@ module Base
 	template vehicle PZKA_Limo_RearLights_Hellion {
 		part HeadlightRearLeft
 		{
-			model Default 
+			model Hellion 
 			{
 				file = PZKA_Vehicles_Limo_LightRL_Hellion,
 			}
 		}
 		part HeadlightRearRight
 		{
-			model Default 
+			model Hellion 
 			{
 				file = PZKA_Vehicles_Limo_LightRR_Hellion,
 			}
