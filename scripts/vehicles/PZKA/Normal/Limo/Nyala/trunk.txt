@@ -1,0 +1,21 @@
+module Base
+{
+	template vehicle PZKA_Limo_Trunk_Nyala_model {
+		part TrunkDoor
+		{
+			model Nyala
+			{
+				file = PZKA_Vehicles_Normal_Limo_Trunk_Cerise,
+			}
+		}
+	}
+	template vehicle PZKA_Limo_Trunk_Nyala_model_nr {
+		part TrunkDoor
+		{
+			model Nyala
+			{
+				file = PZKA_Vehicles_Normal_Limo_Trunk_Cerise_nr,
+			}
+		}
+	}
+}

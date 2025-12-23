@@ -13,18 +13,17 @@ module Base
 		scale = 0.01,
 	}
 
-	template vehicle PZKA_Limo_Lights_Rapier {
-		template! = PZKA_Normal_FrontLights_Rapier,
+	template vehicle PZKA_Limo_RearLights_Rapier {
 		part HeadlightRearLeft
 		{
-			model Default 
+			model Rapier 
 			{
 				file = PZKA_Vehicles_Limo_LightRL_Rapier,
 			}
 		}
 		part HeadlightRearRight
 		{
-			model Default 
+			model Rapier 
 			{
 				file = PZKA_Vehicles_Limo_LightRR_Rapier,
 			}

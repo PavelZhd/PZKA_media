@@ -16,14 +16,14 @@ module Base
 	template vehicle PZKA_Limo_RearLights_Homelander {
 		part HeadlightRearLeft
 		{
-			model Default 
+			model Homelander 
 			{
 				file = PZKA_Vehicles_Normal_Limo_LightRL_Homelander,
 			}
 		}
 		part HeadlightRearRight
 		{
-			model Default 
+			model Homelander 
 			{
 				file = PZKA_Vehicles_Normal_Limo_LightRR_Homelander,
 			}

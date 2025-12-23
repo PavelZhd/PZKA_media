@@ -1,40 +1,23 @@
 module Base
 {
-	model PZKA_Vehicles_Normal_Limo_Trunk
-	{
-		mesh = vehicles/Normal/pzka_Limo|Trunk_Limo_Cerise_obj,
-		shader = vehicle_multiuv_noreflect,
-		static = FALSE,
-		scale = 0.01,
-		boneWeight = TrunkLimoBone 1.0,
-	}
-	model PZKA_Vehicles_Normal_Limo_Trunk_nr
-	{
-		mesh = vehicles/Normal/pzka_Limo|Trunk_Limo_Cerise_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
-		static = FALSE,
-		scale = 0.01,
-		boneWeight = TrunkLimoBone 1.0,
-	}
-
 	template vehicle PZKA_Limo_Trunk {
-		part TrunkDoor
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_Limo_Trunk,
-			}
-		}
-		template! = VVA_TrunkDoorVersion,
+		template! = PZKA_Limo_Trunk_Cerise_model,
+		template! = PZKA_Limo_Trunk_Hellion_model,
+		template! = PZKA_Limo_Trunk_Homelander_model,
+		template! = PZKA_Limo_Trunk_Nyala_model,
+		template! = PZKA_Limo_Trunk_Rapier_model,
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Fast,
+		template! = PZKA_VariableTrunk,
 	}
 	template vehicle PZKA_Limo_Trunk_nr {
-		part TrunkDoor
-		{
-			model Default
-			{
-				file = PZKA_Vehicles_Normal_Limo_Trunk_Trunk_nr,
-			}
-		}
-		template! = VVA_TrunkDoorVersion,
+		template! = PZKA_Limo_Trunk_Cerise_model_nr,
+		template! = PZKA_Limo_Trunk_Hellion_model_nr,
+		template! = PZKA_Limo_Trunk_Homelander_model_nr,
+		template! = PZKA_Limo_Trunk_Nyala_model_nr,
+		template! = PZKA_Limo_Trunk_Rapier_model_nr,
+		template! = PZKA_TrunkDoor,
+		template! = PZKA_TrunkDoor_Fast,
+		template! = PZKA_VariableTrunk,
 	}
 }

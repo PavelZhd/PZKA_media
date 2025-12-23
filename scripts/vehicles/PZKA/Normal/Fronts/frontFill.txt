@@ -1,0 +1,21 @@
+module Base
+{
+    template vehicle PZKA_Normal_FrontFill {	
+		template! = PZKA_Frontfill,
+        template! = PZKA_Normal_FrontFill_Cerise_model,
+        template! = PZKA_Normal_FrontFill_Hellion_model,
+        template! = PZKA_Normal_FrontFill_Homelander_model,
+        template! = PZKA_Normal_FrontFill_Nyala_model,
+        template! = PZKA_Normal_FrontFill_Rapier_model,
+		template! = PZKA_VariableFrontFill,
+	}
+	template vehicle PZKA_Normal_FrontFill_nr {	
+		template! = PZKA_Frontfill,
+        template! = PZKA_Normal_FrontFill_Cerise_model_nr,
+        template! = PZKA_Normal_FrontFill_Hellion_model_nr,
+        template! = PZKA_Normal_FrontFill_Homelander_model_nr,
+        template! = PZKA_Normal_FrontFill_Nyala_model_nr,
+        template! = PZKA_Normal_FrontFill_Rapier_model_nr,
+		template! = PZKA_VariableFrontFill,
+	}
+}

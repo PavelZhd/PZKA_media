@@ -1,0 +1,11 @@
+module Base
+{
+    template vehicle PZKA_Limo_RearLights {	
+		template! = PZKA_Limo_RearLights_Cerise,
+		template! = PZKA_Limo_RearLights_Hellion,
+		template! = PZKA_Limo_RearLights_Homelander,
+		template! = PZKA_Limo_RearLights_Nyala,
+		template! = PZKA_Limo_RearLights_Rapier,
+		template! = PZKA_VariableRearLights,
+	}
+}

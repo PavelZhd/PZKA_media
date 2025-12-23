@@ -13,9 +13,8 @@ module Base
 		scale = 0.01,
 	}
 
-    template vehicle PZKA_Limo_Rearfill_Hellion
+    template vehicle PZKA_Limo_Rearfill_Hellion_model
     {
-        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model Hellion
@@ -24,9 +23,8 @@ module Base
             }
         }
     }    
-    template vehicle PZKA_Limo_Rearfill_Hellion_nr
+    template vehicle PZKA_Limo_Rearfill_Hellion_model_nr
     {
-        template! = PZKA_Rearfill,
         part Rearfill
 		{
             model Hellion

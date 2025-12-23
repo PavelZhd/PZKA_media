@@ -16,14 +16,14 @@ module Base
 	template vehicle PZKA_Limo_RearLights_Nyala {
 		part HeadlightRearLeft
 		{
-			model Default 
+			model Nyala 
 			{
 				file = PZKA_Vehicles_Normal_Limo_LightRL_Nyala,
 			}
 		}
 		part HeadlightRearRight
 		{
-			model Default 
+			model Nyala 
 			{
 				file = PZKA_Vehicles_Normal_Limo_LightRR_Nyala,
 			}

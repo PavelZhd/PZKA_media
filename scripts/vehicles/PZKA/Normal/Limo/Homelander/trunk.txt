@@ -17,24 +17,22 @@ module Base
 		boneWeight = TrunkLimoBone 1.0,
 	}
 
-	template vehicle PZKA_Limo_Trunk_Homelander {
+	template vehicle PZKA_Limo_Trunk_Homelander_model {
 		part TrunkDoor
 		{
-			model Default
+			model Homelander
 			{
 				file = PZKA_Vehicles_Normal_Limo_Trunk_Homelander,
 			}
 		}
-		template! = VVA_TrunkDoorVersion,
 	}
-	template vehicle PZKA_Limo_Trunk_Homelander_nr {
+	template vehicle PZKA_Limo_Trunk_Homelander_model_nr {
 		part TrunkDoor
 		{
-			model Default
+			model Homelander
 			{
 				file = PZKA_Vehicles_Normal_Limo_Trunk_Homelander_nr,
 			}
 		}
-		template! = VVA_TrunkDoorVersion,
 	}
 }

@@ -17,24 +17,22 @@ module Base
 		boneWeight = TrunkLimoBone 1.0,
 	}
 
-	template vehicle PZKA_Limo_Trunk_Hellion {
+	template vehicle PZKA_Limo_Trunk_Hellion_model {
 		part TrunkDoor
 		{
-			model Default
+			model Hellion
 			{
 				file = PZKA_Vehicles_Normal_Limo_Hellion_Trunk,
 			}
 		}
-		template! = VVA_TrunkDoorVersion,
 	}
-	template vehicle PZKA_Limo_Trunk_Hellion_nr {
+	template vehicle PZKA_Limo_Trunk_Hellion_model_nr {
 		part TrunkDoor
 		{
-			model Default
+			model Hellion
 			{
 				file = PZKA_Vehicles_Normal_Limo_Hellion_Trunk_nr,
 			}
 		}
-		template! = VVA_TrunkDoorVersion,
 	}
 }

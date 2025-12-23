@@ -3,7 +3,7 @@ module Base
 	model VVA_Vehicles_FType_internals
 	{
 		mesh = vehicles/FType/pzka_Shared|Vehicles_Interior,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkChevalierProvinceshell,
 		static = TRUE,
 		scale = 0.01,
@@ -11,7 +11,7 @@ module Base
 	model VVA_Vehicles_FType_SeatFL
 	{
 		mesh = vehicles/FType/pzka_Shared|Seat_FrontLeft_obj,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkChevalierProvinceshell,
 		static = TRUE,
 		scale = 0.01,
@@ -19,7 +19,7 @@ module Base
 	model VVA_Vehicles_FType_SeatFR
 	{
 		mesh = vehicles/FType/pzka_Shared|Seat_FrontRight_obj,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkChevalierProvinceshell,
 		static = TRUE,
 		scale = 0.01,

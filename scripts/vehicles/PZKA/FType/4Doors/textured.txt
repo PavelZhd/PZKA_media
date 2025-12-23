@@ -3,7 +3,7 @@ module Base
 	model VVA_Vehicles_FType_SeatRL
 	{
 		mesh = vehicles/FType/pzka_4Door|Seat_RearLeft_obj,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_pickupshell,
 		static = TRUE,
 		scale = 0.01,
@@ -11,7 +11,7 @@ module Base
 	model VVA_Vehicles_FType_SeatRR
 	{
 		mesh = vehicles/FType/pzka_4Door|Seat_RearRight_obj,
-		
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_pickupshell,
 		static = TRUE,
 		scale = 0.01,
