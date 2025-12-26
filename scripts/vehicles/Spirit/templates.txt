@@ -81,7 +81,7 @@ module Base
 				create = Vehicles.Create.Default,
 	    	}
 		}
-		template! = pzka_LightHostAnimate,
+		template! = VVA_LightHostAnimate,
 
 		/*passenger FrontLeft
 		{
@@ -134,7 +134,7 @@ module Base
 		}
 		template! = PZKA_Spirit_shared,
 				
-		part PZKA_LightsHost
+		part LightsHost
 		{
 			model Default
 			{

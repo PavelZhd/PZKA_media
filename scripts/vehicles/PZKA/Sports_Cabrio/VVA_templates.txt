@@ -1,0 +1,28 @@
+module Base
+{
+	template vehicle VVA_Sport_shared {
+		template! = VVA_Sport_Windshield,
+		template! = VVA_SportCabrio_Light,
+		template! = VVA_Sport_seats,
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.107747 -0.009731 0.732048,
+			}
+		}
+		template! = VVA_Interior,
+		template! = VVA_Sport_Engine,
+	}
+	template vehicle VVA_Sport_Base {
+		template! = VVA_Sport_Hood,
+		template! = VVA_Sport_LightHost,
+		template! = VVA_Sport_shared,
+	}
+	template vehicle VVA_Sport_Base_nr {
+		template! = VVA_Sport_Hood_nr,
+		template! = VVA_Sport_LightHost_nr,
+		template! = VVA_Sport_shared,
+	}
+}

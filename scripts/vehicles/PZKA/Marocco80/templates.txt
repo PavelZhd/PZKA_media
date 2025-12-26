@@ -10,7 +10,7 @@ module Base
 			}
 		}
 		template! = pzka_Marocco80_rearWindow,
-		template! = PZKA_Interior,
+		template! = VVA_Interior,
 		template! = PZKA_Marocco80_Interior,
 	}
 

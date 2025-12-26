@@ -1,0 +1,84 @@
+module Base
+{
+	model VVA_Vehicles_SportsCar_LightFL
+	{
+		mesh = vehicles/VVA_SportCar|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = LeftLightsBone 1.0
+	}
+	model VVA_Vehicles_SportsCar_LightFR
+	{
+		mesh = vehicles/VVA_SportCar|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RightLightsBone 1.0,
+	}
+	model VVA_Vehicles_SportsCar_LightRL
+	{
+		mesh = vehicles/VVA_SportCar|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_SportsCar_LightRR
+	{
+		mesh = vehicles/VVA_SportCar|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_SportsCar_LightFL_static
+	{
+		mesh = vehicles/VVA_SportCar|Light_FrontLeft_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_SportsCar_LightFR_static
+	{
+		mesh = vehicles/VVA_SportCar|Light_FrontRight_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_SportCabrio_Light {
+		part HeadlightLeft 
+		{
+			parent = LightsHost,
+			model Default
+			{
+				file = VVA_Vehicles_SportsCar_LightFL,
+			}
+			model Static
+			{
+				file = VVA_Vehicles_SportsCar_LightFL_static,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = LightsHost,
+			model Default
+			{
+				file = VVA_Vehicles_SportsCar_LightFR,
+			}
+			model Static
+			{
+				file = VVA_Vehicles_SportsCar_LightFR_static,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SportsCar_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SportsCar_LightRR,
+			}
+		}
+	}
+}

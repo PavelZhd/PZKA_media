@@ -1,0 +1,74 @@
+module Base
+{
+	model PZKA_Vehicles_SportCabrio_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Sport|Door_Cabrio_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_SportCabrio_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Sport|Door_Cabrio_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_SportCabrio_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Sport|Door_Cabrio_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_SportCabrio_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Sport|Door_Cabrio_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle PZKA_SportCabrio_FrontDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SportCabrio_DoorFrontLeft,
+			}
+		}
+		template! = PZKA_DoorFrontLeft
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SportCabrio_DoorFrontRight,
+			}
+		}
+		template! = PZKA_DoorFrontRight
+	}
+	template vehicle PZKA_SportCabrio_FrontDoors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SportCabrio_DoorFrontLeft_nr,
+			}
+		}
+		template! = PZKA_DoorFrontLeft
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SportCabrio_DoorFrontRight_nr,
+			}
+		}
+		template! = PZKA_DoorFrontRight
+	}
+}

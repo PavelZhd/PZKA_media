@@ -73,7 +73,7 @@ module Base
 				create = Vehicles.Create.Default,
 	    		}
 		}
-		template! = pzka_LightHostAnimate,
+		template! = VVA_LightHostAnimate,
 	}
 
 	template vehicle PZKA_Phoenix {
@@ -109,7 +109,7 @@ module Base
 		}
 		template! = PZKA_Phoenix_shared,
 				
-		part PZKA_LightsHost
+		part LightsHost
 		{
 			model Default
 			{
@@ -150,7 +150,7 @@ module Base
 			}
 		}
 		template! = PZKA_Phoenix_shared,
-		part PZKA_LightsHost
+		part LightsHost
 		{
 			model Default
 			{

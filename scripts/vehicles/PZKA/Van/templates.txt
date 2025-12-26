@@ -2,7 +2,7 @@ module Base
 {
 	template vehicle PZKA_Van_Common {
 		template! = PZKA_Van_SeatsFront,
-		template! = PZKA_Interior,
+		template! = VVA_Interior,
 		template! = PZKA_Van_Interior_Base,
 	}
 	template vehicle PZKA_Van_Shared {

@@ -241,7 +241,7 @@ module Base
 	}
 	template vehicle PZKA_Offroad_lightbar {
 		template! = PZKA_Offroad_R_nr,
-		template! = PZKA_lightbar,
+		template! = VVA_lightbar,
 		part ATA2RoofLightbar
 		{
 			model Normal

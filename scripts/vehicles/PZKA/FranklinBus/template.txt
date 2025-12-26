@@ -1,7 +1,7 @@
 module Base
 {	
 	template vehicle PZKA_FranklinBus_shared {
-		template! = PZKA_Interior,
+		template! = VVA_Interior,
 		template! = PZKA_FranklinBus_Interior,
 		template! = PZKA_FranklinBus_Windshield,
 		part Battery 

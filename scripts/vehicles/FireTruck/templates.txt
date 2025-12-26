@@ -119,7 +119,7 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 			}
 		}*/ 
-		template! = PZKA_lightbar,
+		template! = VVA_lightbar,
 		part ATA2RoofLightbar
 		{
 			model Default

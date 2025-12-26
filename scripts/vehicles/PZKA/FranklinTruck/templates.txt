@@ -10,7 +10,7 @@ module Base
 			}		
 		}
 		template! = PZKA_FranklinTruck_Windshield,
-		template! = PZKA_Interior,
+		template! = VVA_Interior,
 		template! = PZKA_FranklinTruck_Interior,
 		template! = PZKA_FranklinTruck_FrontLight,
 	}

@@ -47,7 +47,7 @@ module Base
 	template vehicle pzka_Initial_Light {
 		part HeadlightLeft 
 		{
-			parent = PZKA_LightsHost,
+			parent = LightsHost,
 			model Default
 			{
 				file = PZKA_Vehicles_Initial_LightFL,
@@ -59,7 +59,7 @@ module Base
 		}
 		part HeadlightRight 
 		{
-			parent = PZKA_LightsHost,
+			parent = LightsHost,
 			model Default
 			{
 				file = PZKA_Vehicles_Initial_LightFR,

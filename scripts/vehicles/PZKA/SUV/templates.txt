@@ -10,7 +10,7 @@ module Base
 				offset = -0.242633 0.002052 0.881262,
 			}
 		}
-		template! = PZKA_Interior,
+		template! = VVA_Interior,
 		template! = PZKA_SUV_Interior,
 	}
 	template vehicle PZKA_SUV_shared {

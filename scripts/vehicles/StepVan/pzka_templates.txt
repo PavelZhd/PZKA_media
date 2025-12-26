@@ -139,7 +139,7 @@ module Base
 	template vehicle PZKA_StepVan_Icecream {
 		template! = PZKA_StepVan_Doors,
 		template! = PZKA_StepVan_SharedFood,
-		template! = PZKA_taxi,
+		template! = VVA_taxi,
 		part ATA2RoofTaxiSign 
 		{
 			model Decor {
@@ -150,7 +150,7 @@ module Base
 	template vehicle PZKA_StepVan_Hotdog {
 		template! = PZKA_StepVan_Doors,
 		template! = PZKA_StepVan_SharedFood,
-		template! = PZKA_taxi,
+		template! = VVA_taxi,
 		part ATA2RoofTaxiSign 
 		{
 			model Decor {
@@ -161,7 +161,7 @@ module Base
 	template vehicle PZKA_StepVan_Taco {
 		template! = PZKA_StepVan_Doors,
 		template! = PZKA_StepVan_SharedFood,
-		template! = PZKA_taxi,
+		template! = VVA_taxi,
 		part ATA2RoofTaxiSign 
 		{
 			model Decor {
@@ -172,7 +172,7 @@ module Base
 	template vehicle PZKA_StepVan_Pierogi {
 		template! = PZKA_StepVan_Doors,
 		template! = PZKA_StepVan_SharedFood,
-		template! = PZKA_taxi,
+		template! = VVA_taxi,
 		part ATA2RoofTaxiSign 
 		{
 			model Decor {
@@ -183,7 +183,7 @@ module Base
 	template vehicle PZKA_StepVan_SWAT {
 		template! = PZKA_StepVan_Doors,
 		template! = PZKA_StepVan_Shared,
-		template! = PZKA_lightbar,
+		template! = VVA_lightbar,
 		part ATA2RoofLightbar 
 		{
 			model Decor {

@@ -1,0 +1,14 @@
+module Base
+{
+	template vehicle PZKA_SportCabrio {
+		template! = VVA_Sport_Base,
+		template! = PZKA_SportCabrio_FrontDoors,
+		template! = PZKA_SportCabrio_Trunk,
+	}
+	template vehicle PZKA_SportCabrio_nr {
+		template! = VVA_Sport_Base_nr,
+		template! = PZKA_SportCabrio_FrontDoors_nr,
+		template! = PZKA_SportCabrio_Trunk_nr,
+	}
+
+}

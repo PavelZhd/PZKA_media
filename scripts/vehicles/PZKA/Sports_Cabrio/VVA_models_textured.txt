@@ -24,4 +24,30 @@ module Base
 		static = TRUE,
 		scale = 0.01,
 	}
+	
+	template vehicle VVA_Sport_seats {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SportsCar_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SportsCar_SeatFR,
+			}
+		}
+	}
+	template vehicle VVA_Sport_Engine {
+		part Inreior 
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_SportsCar_internals,
+			}
+		}
+	}
 }

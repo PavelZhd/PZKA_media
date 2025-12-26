@@ -10,7 +10,7 @@ module Base
 			}		
 		}
 		template! = PZKA_BankTruck_Windshield,
-		template! = PZKA_Interior,
+		template! = VVA_Interior,
 		template! = PZKA_BankTruck_Interior,
 		template! = PZKA_BankTruck_Light,
 	}
