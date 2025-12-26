@@ -1,4 +1,4 @@
-local PZKACore = require "VVA_core"
+local PZKACore = require "PZKA_core"
 
 local PZKAModule = {}
 PZKAModule.IsProfileDefined = PZKACore.IsProfileDefined
@@ -10,7 +10,7 @@ PZKAModule.TeplateHandler = PZKACore.TeplateHandler
 PZKAModule.ApplyTemplateToVehicle = PZKACore.ApplyTemplateToVehicle
 PZKAModule.CopyTemplateToVehicle = PZKACore.CopyTemplateToVehicle
 PZKAModule.InheritTemplateToVehicle = PZKACore.InheritTemplateToVehicle
-PZKAModule.IsVehicleAnimated =  PZKACore.IsVehicleDefined
+PZKAModule.IsVehicleAnimated = PZKACore.IsVehicleDefined
 
 local doorTemplatesMap = {
 		["FL"] = "VVA_DoorFrontLeft",
