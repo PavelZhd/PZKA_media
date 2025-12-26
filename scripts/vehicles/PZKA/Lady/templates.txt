@@ -1,20 +1,23 @@
 module Base
 {
 	template vehicle PZKA_Lady_shared {		
-		template! = VVA_Sport_common,
+		template! = VVA_Sport_interior,
 		template! = PZKA_Lady_Windshield,
+		template! = pzka_Lady_Light,
 	}
 
 	template vehicle PZKA_Lady {
 		template! = PZKA_Lady_Trunk,
 		template! = PZKA_Lady_Hood,
 		template! = PZKA_Lady_FrontDoors,
-		template! = VVA_Sport_interior,
+		template! = PZKA_Lady_LightsHost,
+		template! = PZKA_Lady_shared,
 	}
 	template vehicle PZKA_Lady_nr {
 		template! = PZKA_Lady_Trunk_nr,
 		template! = PZKA_Lady_Hood_nr,
 		template! = PZKA_Lady_FrontDoors_nr,
-		template! = VVA_Sport_interior,
+		template! = PZKA_Lady_LightsHost_nr,
+		template! = PZKA_Lady_shared,
 	}
 }
