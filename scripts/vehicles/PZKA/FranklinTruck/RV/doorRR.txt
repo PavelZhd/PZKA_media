@@ -55,8 +55,8 @@ module Base
 			}
 		}
 		template! = PZKA_FranklinTruck_RV_RearDoorWindows,
-		template! = PZKA_DoorRR,
-		template! = PZKA_DoorRR_Reg,
+		template! = VVA_DoorRR,
+		template! = VVA_DoorRR_Reg,
 	}
 	template vehicle PZKA_FranklinTruck_RV_RearDoors_nr {
 		
@@ -68,7 +68,7 @@ module Base
 			}
 		}
 		template! = PZKA_FranklinTruck_RV_RearDoorWindows,
-		template! = PZKA_DoorRR,
-		template! = PZKA_DoorRR_Reg,
+		template! = VVA_DoorRR,
+		template! = VVA_DoorRR_Reg,
 	}
 }
