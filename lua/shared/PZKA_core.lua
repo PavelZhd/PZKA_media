@@ -58,7 +58,9 @@ if (not VVAmodule) or (not VVAmodule.version) or VVAmodule.version < 2 then
 	local function plusTemplates(vehicleObj, templates) 
 		--print('VVA: handler Plus call for '..vehicleObj.vehicleId)
 		for i, template in pairs(templates) do
-			vehicleObj.plus[template] = 1
+			if (template) then
+				vehicleObj.plus[template] = 1
+			end
 		end
 	end
 	local function minusTemplates(vehicleObj, templates) 

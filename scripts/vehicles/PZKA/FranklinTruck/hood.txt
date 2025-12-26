@@ -25,8 +25,7 @@ module Base
 				file = PZKA_Vehicles_FranklinTruck_Hood,
 			}
 		}
-		template! = PZKA_Hood,
-		template! = PZKA_Hood_Slow,
+		template! = VVA_EngineDoorHeadlights,
 	}
 	template vehicle PZKA_FranklinTruck_Hood_nr {
 		part EngineDoor
@@ -36,7 +35,6 @@ module Base
 				file = PZKA_Vehicles_FranklinTruck_Hood_nr,
 			}
 		}
-		template! = PZKA_Hood,
-		template! = PZKA_Hood_Slow,
+		template! = VVA_EngineDoorHeadlights,
 	}
 }
