@@ -27,7 +27,7 @@ module Base
 				file = PZKA_Vehicles_Riddle_DoorRearLeft_nr,
 			}
 		}
-		template! = PZKA_DoorRearLeft,
+		template! = VVA_DoorRearLeft,
 		part DoorRearRight
 		{
 			model Default
@@ -35,6 +35,6 @@ module Base
 				file = PZKA_Vehicles_Riddle_DoorRearRight_nr,
 			}
 		}
-		template! = PZKA_DoorRearRight,
+		template! = VVA_DoorRearRight,
 	}	
 }

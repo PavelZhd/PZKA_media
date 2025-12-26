@@ -63,7 +63,7 @@ module Base
 				file = PZKA_Vehicles_Van_DoorRearLeft_blind,
 			}
 		}
-		template! = PZKA_DoorRearLeft,
+		template! = VVA_DoorRearLeft,
 	}
 	template vehicle PZKA_Van_Door_blind_RR {
 		part DoorRearRight
@@ -73,7 +73,7 @@ module Base
 				file = PZKA_Vehicles_Van_DoorRearRight_blind,
 			}
 		}
-		template! = PZKA_DoorRearRight,
+		template! = VVA_DoorRearRight,
 	}
 
 	template vehicle PZKA_Van_Door_blind_ML_nr {
@@ -105,7 +105,7 @@ module Base
 				file = PZKA_Vehicles_Van_DoorRearLeft_blind_nr,
 			}
 		}
-		template! = PZKA_DoorRearLeft,
+		template! = VVA_DoorRearLeft,
 	}
 	template vehicle PZKA_Van_Door_blind_RR_nr {
 		part DoorRearRight
@@ -115,7 +115,7 @@ module Base
 				file = PZKA_Vehicles_Van_DoorRearRight_blind_nr,
 			}
 		}
-		template! = PZKA_DoorRearRight,
+		template! = VVA_DoorRearRight,
 	}
 
 	template vehicle PZKA_Van_MiddleDoors_Blind {

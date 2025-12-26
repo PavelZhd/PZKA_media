@@ -65,8 +65,7 @@ module Base
 			}
 		}
 		template! = PZKA_FVan_RearWindow,
-		template! = PZKA_DoorRear,
-		template! = PZKA_DoorRear_Reg,
+		template! = VVA_RearDoorVersionMed,
 	}
 	template vehicle PZKA_FVan_Seats_RearDoor {
 		template! = PZKA_FVan_RearDoor,
@@ -80,8 +79,7 @@ module Base
 				file = PZKA_Vehicles_FVan_Trunk_Blind,
 			}
 		}
-		template! = PZKA_DoorRear,
-		template! = PZKA_DoorRear_Fast,
+		template! = VVA_RearDoorVersionBlind,
 	}
 	
 	template vehicle PZKA_FVan_RearDoor_nr {
@@ -93,8 +91,7 @@ module Base
 			}
 		}
 		template! = PZKA_FVan_RearWindow,
-		template! = PZKA_DoorRear,
-		template! = PZKA_DoorRear_Reg,
+		template! = VVA_RearDoorVersionMed,
 	}
 	template vehicle PZKA_FVan_Seats_RearDoor_nr {
 		template! = PZKA_FVan_RearDoor_nr,
@@ -108,7 +105,6 @@ module Base
 				file = PZKA_Vehicles_FVan_Trunk_Blind_nr,
 			}
 		}
-		template! = PZKA_DoorRear,
-		template! = PZKA_DoorRear_Fast,
+		template! = VVA_RearDoorVersionBlind,
 	}
 }

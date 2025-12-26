@@ -27,8 +27,7 @@ module Base
 				file = PZKA_Vehicles_FranklinTruck_Utility_Trunk,
 			}
 		}
-		//template! = PZKA_DoorRear,
-		//template! = PZKA_DoorRear_Fast,
+		//template! = VVA_RearDoorVersionBlind,
 	}
 	template vehicle PZKA_FranklinTruck_Utility_RearDoor_nr {
 		//part DoorRear
@@ -40,7 +39,6 @@ module Base
 				file = PZKA_Vehicles_FranklinTruck_Utility_Trunk_nr,
 			}
 		}
-		//template! = PZKA_DoorRear,
-		//template! = PZKA_DoorRear_Fast,
+		//template! = VVA_RearDoorVersionBlind,
 	}
 }

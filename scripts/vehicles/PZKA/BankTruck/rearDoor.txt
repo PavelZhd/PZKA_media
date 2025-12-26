@@ -46,8 +46,7 @@ module Base
 			}
 		}
 		template!= PZKA_BankTruck_RearWindow,
-		template! = PZKA_DoorRear,
-		template! = PZKA_DoorRear_Reg,
+		template! = VVA_RearDoorVersionMed,
 	}
 	template vehicle PZKA_BankTruck_RearDoor_nr {
 		part DoorRear
@@ -58,7 +57,6 @@ module Base
 			}
 		}
 		template!= PZKA_BankTruck_RearWindow,
-		template! = PZKA_DoorRear,
-		template! = PZKA_DoorRear_Reg,
+		template! = VVA_RearDoorVersionMed,
 	}
 }

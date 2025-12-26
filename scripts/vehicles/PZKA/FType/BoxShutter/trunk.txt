@@ -51,8 +51,7 @@ module Base
 				file = PZKA_Vehicles_FType_BoxShutter_Doors_Trunk,
 			}
 		}
-		template! = PZKA_DoorRear,
-		template! = PZKA_DoorRear_Fast,
+		template! = VVA_RearDoorVersionBlind,
 	}
 	template vehicle PZKA_FType_BoxShutter_Trunk_nr {
 		part DoorRear
@@ -62,8 +61,7 @@ module Base
 				file = PZKA_Vehicles_FType_BoxShutter_Doors_Trunk_nr,
 			}
 		}
-		template! = PZKA_DoorRear,
-		template! = PZKA_DoorRear_Fast,
+		template! = VVA_RearDoorVersionBlind,
 	}
 
 }
