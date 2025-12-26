@@ -44,7 +44,7 @@ module Base
 			}
 		}
 		template! = PZKA_Normal_Wagon_windowRR,
-		template! = PZKA_DoorWindowRearRight,
+		template! = VVA_DoorWindowRearRight,
 	}
 	template vehicle PZKA_Normal_Wagon_doorRR_nr {
 		part DoorRearRight
@@ -55,6 +55,6 @@ module Base
 			}
 		}
 		template! = PZKA_Normal_Wagon_windowRR,
-		template! = PZKA_DoorWindowRearRight,
+		template! = VVA_DoorWindowRearRight,
 	}
 }

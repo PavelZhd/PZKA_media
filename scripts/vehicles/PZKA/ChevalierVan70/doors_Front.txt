@@ -85,8 +85,8 @@ module Base
 			}
 		}
 		template! = PZKA_ChevalierVan70_FrontDoorWindows,
-		template! = PZKA_DoorWindowFrontLeft,
-		template! = PZKA_DoorWindowFrontRight,
+		template! = VVA_DoorWindowFrontLeft,
+		template! = VVA_DoorWindowFrontRight,
 	}
 	template vehicle PZKA_CVan70_FrontDoor_nr {
 		part DoorFrontLeft
@@ -104,7 +104,7 @@ module Base
 			}
 		}
 		template! = PZKA_ChevalierVan70_FrontDoorWindows,
-		template! = PZKA_DoorWindowFrontLeft,
-		template! = PZKA_DoorWindowFrontRight,
+		template! = VVA_DoorWindowFrontLeft,
+		template! = VVA_DoorWindowFrontRight,
 	}
 }

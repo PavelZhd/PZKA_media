@@ -25,6 +25,7 @@ module Base
 				file = VVA_Vehicles_SportsCar_Hood,
 			}
 		}
+		template! = VVA_EngineDoor,
 	}
 	template vehicle VVA_Sport_Hood_nr {
 		part EngineDoor
@@ -34,5 +35,6 @@ module Base
 				file = VVA_Vehicles_SportsCar_Hood_nr,
 			}
 		}
+		template! = VVA_EngineDoor,
 	}
 }

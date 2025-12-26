@@ -57,8 +57,7 @@ module Base
 			}
 		}
 		template! = PZKA_SUV_TrunkWindow,
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Reg,
+		template! = VVA_TrunkDoorWindowVersion,
 	}
 	template vehicle PZKA_SUV_Trunk_nr {
 		part TrunkDoor
@@ -69,8 +68,7 @@ module Base
 			}
 		}
 		template! = PZKA_SUV_TrunkWindow,
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Reg,
+		template! = VVA_TrunkDoorWindowVersion,
 	}
 
 }

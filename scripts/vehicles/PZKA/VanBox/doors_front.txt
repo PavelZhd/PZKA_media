@@ -70,8 +70,8 @@ module Base
 	}
 	template vehicle PZKA_VanBox_FrontDoors_Common {
 		template! = PZKA_VanBox_FrontWindows,
-		template! = PZKA_DoorWindowFrontLeft,
-		template! = PZKA_DoorWindowFrontRight,
+		template! = VVA_DoorWindowFrontLeft,
+		template! = VVA_DoorWindowFrontRight,
 	}
 	template vehicle PZKA_VanBox_FrontDoors {
 		part DoorFrontLeft

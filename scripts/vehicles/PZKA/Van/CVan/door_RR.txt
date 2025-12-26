@@ -59,7 +59,7 @@ module Base
 		}
 		template! = PZKA_CVan_WindowMR_model,
 		template! = PZKA_Van_DoorWindowMR,
-		template! = PZKA_DoorWindowMiddleRight,
+		template! = VVA_DoorWindowMiddleRight,
 	}
 	template vehicle PZKA_CVan_Door_RR {
 		part DoorRearRight
@@ -71,7 +71,7 @@ module Base
 		}
 		template! = PZKA_CVan_WindowRR_model,		
 		template! = PZKA_Van_DoorWindowRR,
-		template! = PZKA_DoorWindowRearRight,
+		template! = VVA_DoorWindowRearRight,
 	}
 	template vehicle PZKA_CVan_Door_MR_nr {
 		part DoorMiddleRight
@@ -83,7 +83,7 @@ module Base
 		}
 		template! = PZKA_CVan_WindowMR_model,		
 		template! = PZKA_Van_DoorWindowMR,
-		template! = PZKA_DoorWindowMiddleRight,
+		template! = VVA_DoorWindowMiddleRight,
 	}
 	template vehicle PZKA_CVan_Door_RR_nr {
 		part DoorRearRight
@@ -95,6 +95,6 @@ module Base
 		}
 		template! = PZKA_CVan_WindowRR_model,		
 		template! = PZKA_Van_DoorWindowRR,
-		template! = PZKA_DoorWindowRearRight,
+		template! = VVA_DoorWindowRearRight,
 	}
 }

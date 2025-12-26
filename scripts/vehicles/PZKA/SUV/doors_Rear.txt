@@ -76,7 +76,7 @@ module Base
 				file = PZKA_Vehicles_SUV_DoorRearLeft,
 			}
 		}
-		template! = PZKA_DoorWindowRearLeft,
+		template! = VVA_DoorWindowRearLeft,
 
 		part DoorRearRight
 		{
@@ -85,7 +85,7 @@ module Base
 				file = PZKA_Vehicles_SUV_DoorRearRight,
 			}
 		}
-		template! = PZKA_DoorWindowRearRight,
+		template! = VVA_DoorWindowRearRight,
 		template! = PZKA_SUV_RearDoorWindows,
 	}
 	template vehicle PZKA_SUV_RearDoors_nr {
@@ -96,7 +96,7 @@ module Base
 				file = PZKA_Vehicles_SUV_DoorRearLeft_nr,
 			}
 		}
-		template! = PZKA_DoorWindowRearLeft,
+		template! = VVA_DoorWindowRearLeft,
 
 		part DoorRearRight
 		{
@@ -105,7 +105,7 @@ module Base
 				file = PZKA_Vehicles_SUV_DoorRearRight_nr,
 			}
 		}
-		template! = PZKA_DoorWindowRearRight,
+		template! = VVA_DoorWindowRearRight,
 		template! = PZKA_SUV_RearDoorWindows,
 	}
 }

@@ -25,8 +25,7 @@ module Base
 				file = PZKA_Vehicles_Normal_Limo_Hellion_Trunk,
 			}
 		}
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Fast,
+		template! = VVA_TrunkDoorVersion,
 	}
 	template vehicle PZKA_Limo_Trunk_Hellion_nr {
 		part TrunkDoor
@@ -36,7 +35,6 @@ module Base
 				file = PZKA_Vehicles_Normal_Limo_Hellion_Trunk_nr,
 			}
 		}
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Fast,
+		template! = VVA_TrunkDoorVersion,
 	}
 }

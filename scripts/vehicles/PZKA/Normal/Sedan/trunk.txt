@@ -42,8 +42,7 @@ module Base
 				file = PZKA_Normal_SedanF_Trunk_Cerise,
 			}
 		}
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Fast,
+		template! = VVA_TrunkDoorVersion,
 	}
 	template vehicle PZKA_SedanF_Trunk_nr
 	{
@@ -54,8 +53,7 @@ module Base
 				file = PZKA_Normal_SedanF_Trunk_Cerise_nr,
 			}
 		}
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Fast,
+		template! = VVA_TrunkDoorVersion,
 	}
 	
 	template vehicle PZKA_SedanV_Trunk
@@ -67,8 +65,7 @@ module Base
 				file = PZKA_Normal_SedanV_Trunk_TWD,
 			}
 		}
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Fast,
+		template! = VVA_TrunkDoorVersion,
 	}
 	template vehicle PZKA_SedanV_Trunk_nr
 	{
@@ -79,7 +76,6 @@ module Base
 				file = PZKA_Normal_SedanV_Trunk_TWD_nr,
 			}
 		}
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Fast,
+		template! = VVA_TrunkDoorVersion,
 	}
 }

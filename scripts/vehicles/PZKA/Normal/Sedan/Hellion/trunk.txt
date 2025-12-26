@@ -26,8 +26,7 @@ module Base
 				file = PZKA_Normal_SedanF_Trunk_hellion,
 			}
 		}
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Fast,
+		template! = VVA_TrunkDoorVersion,
 	}
 	template vehicle PZKA_SedanF_Trunk_Hellion_nr
 	{
@@ -38,7 +37,6 @@ module Base
 				file = PZKA_Normal_SedanF_Trunk_hellion_nr,
 			}
 		}
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Fast,
+		template! = VVA_TrunkDoorVersion,
 	}
 }

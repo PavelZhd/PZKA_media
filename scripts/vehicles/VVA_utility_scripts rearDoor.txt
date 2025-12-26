@@ -1,6 +1,6 @@
 module Base
 {
-	template vehicle PZKA_DoorRear {
+	template vehicle VVA_DoorRear {
 		part DoorRear
 		{
 			anim Close
@@ -29,7 +29,7 @@ module Base
 		}
 	}	
 	
-	template vehicle PZKA_DoorRear_Slow {
+	template vehicle VVA_DoorRear_Slow {
 		part DoorRear
 		{
 			anim Close
@@ -43,7 +43,7 @@ module Base
 			}
 		}
 	}
-	template vehicle PZKA_DoorRear_Reg {
+	template vehicle VVA_DoorRear_Reg {
 		part DoorRear
 		{
 			anim Close
@@ -57,7 +57,7 @@ module Base
 			}
 		}
 	}
-	template vehicle PZKA_DoorRear_Fast {
+	template vehicle VVA_DoorRear_Fast {
 		part DoorRear
 		{
 			anim Close

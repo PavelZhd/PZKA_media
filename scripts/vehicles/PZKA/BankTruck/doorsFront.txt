@@ -85,8 +85,8 @@ module Base
 			}
 		}
 		template! = PZKA_BankTruck_FrontDoorWindows,
-		template! = PZKA_DoorWindowFrontLeft,
-		template! = PZKA_DoorWindowFrontRight,
+		template! = VVA_DoorWindowFrontLeft,
+		template! = VVA_DoorWindowFrontRight,
 	}
 	template vehicle PZKA_BankTruck_FrontDoors_nr {
 		part DoorFrontLeft
@@ -105,7 +105,7 @@ module Base
 			}
 		}
 		template! = PZKA_BankTruck_FrontDoorWindows,
-		template! = PZKA_DoorWindowFrontLeft,
-		template! = PZKA_DoorWindowFrontRight,
+		template! = VVA_DoorWindowFrontLeft,
+		template! = VVA_DoorWindowFrontRight,
 	}
 }

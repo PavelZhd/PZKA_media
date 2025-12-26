@@ -65,7 +65,7 @@ module Base
 			}
 		}
 		template! = PZKA_FType_CrewMed_TrunkWindow,
-		template! = PZKA_TrunkDoor,
+		template! = VVA_TrunkDoor,
 		template! = PZKA_TrunkDoor_CrewMed,
 	}
 	template vehicle PZKA_FType_CrewMed_Trunk_F350 {
@@ -77,7 +77,7 @@ module Base
 			}
 		}
 		template! = PZKA_FType_CrewMed_TrunkWindow,
-		template! = PZKA_TrunkDoor,
+		template! = VVA_TrunkDoor,
 		template! = PZKA_TrunkDoor_CrewMed,
 	}
 	template vehicle PZKA_FType_CrewMed_Trunk_nr {
@@ -89,7 +89,7 @@ module Base
 			}
 		}
 		template! = PZKA_FType_CrewMed_TrunkWindow,
-		template! = PZKA_TrunkDoor,
+		template! = VVA_TrunkDoor,
 		template! = PZKA_TrunkDoor_CrewMed,
 	}
 	template vehicle PZKA_FType_CrewMed_Trunk_F350_nr {
@@ -101,7 +101,7 @@ module Base
 			}
 		}
 		template! = PZKA_FType_CrewMed_TrunkWindow,
-		template! = PZKA_TrunkDoor,
+		template! = VVA_TrunkDoor,
 		template! = PZKA_TrunkDoor_CrewMed,
 	}
 

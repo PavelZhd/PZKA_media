@@ -27,8 +27,7 @@ module Base
 			}
 		}
 		template! = PZKA_Wagon_RearWindow,
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Reg,
+		template! = VVA_TrunkDoorWindowVersion,
 	}
 	template vehicle PZKA_Wagon_Trunk_mayor_nr {
 		part TrunkDoor {
@@ -38,7 +37,6 @@ module Base
 			}
 		}
 		template! = PZKA_Wagon_RearWindow,
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Reg,
+		template! = VVA_TrunkDoorWindowVersion,
 	}
 }

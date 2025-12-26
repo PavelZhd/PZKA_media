@@ -76,7 +76,7 @@ module Base
 				file = VVA_Vehicles_PickUp_DoorFrontLeft,
 			}
 		}
-		template! = PZKA_DoorWindowFrontLeft,
+		template! = VVA_DoorWindowFrontLeft,
 
 		part DoorFrontRight
 		{
@@ -85,7 +85,7 @@ module Base
 				file = VVA_Vehicles_PickUp_DoorFrontRight,
 			}
 		}
-		template! = PZKA_DoorWindowFrontRight,
+		template! = VVA_DoorWindowFrontRight,
 		template! = PZKA_Pickup_FrontDoorWindows,
 	}
 	template vehicle PZKA_Pickup_FrontDoors_nr {
@@ -96,7 +96,7 @@ module Base
 				file = VVA_Vehicles_PickUp_DoorFrontLeft_nr,
 			}
 		}
-		template! = PZKA_DoorWindowFrontLeft,
+		template! = VVA_DoorWindowFrontLeft,
 
 		part DoorFrontRight
 		{
@@ -105,7 +105,7 @@ module Base
 				file = VVA_Vehicles_PickUp_DoorFrontRight_nr,
 			}
 		}
-		template! = PZKA_DoorWindowFrontRight,
+		template! = VVA_DoorWindowFrontRight,
 		template! = PZKA_Pickup_FrontDoorWindows,
 	}
 }

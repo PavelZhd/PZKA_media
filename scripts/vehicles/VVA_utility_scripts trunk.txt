@@ -1,36 +1,36 @@
 module Base
 {
-	template vehicle PZKA_Hood {
-		part EngineDoor
+	template vehicle VVA_TrunkDoor {
+		part TrunkDoor
 		{
 			anim Close
 			{
-				anim = Hood_closing,
+				anim = Trunk_closing,
 			}
 
 			anim Open
 			{
-				anim = Hood_closing,
+				anim = Trunk_closing,
 				reverse = TRUE,
 			}
 
 			anim Closed
 			{
-				anim = Hood_closing,
+				anim = Trunk_closing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = Hood_closing,
+				anim = Trunk_closing,
 				animate = FALSE,
 			}
-		}	
+		}
 	}	
 	
-	template vehicle PZKA_Hood_Slow {
-		part EngineDoor
+	template vehicle VVA_TrunkDoor_Slow {
+		part TrunkDoor
 		{
 			anim Close
 			{
@@ -43,8 +43,8 @@ module Base
 			}
 		}
 	}
-	template vehicle PZKA_Hood_Reg {
-		part EngineDoor
+	template vehicle VVA_TrunkDoor_Reg {
+		part TrunkDoor
 		{
 			anim Close
 			{
@@ -57,8 +57,8 @@ module Base
 			}
 		}
 	}
-	template vehicle PZKA_Hood_Fast {
-		part EngineDoor
+	template vehicle VVA_TrunkDoor_Fast {
+		part TrunkDoor
 		{
 			anim Close
 			{

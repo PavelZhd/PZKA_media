@@ -145,7 +145,7 @@ module Base
 				file = VVA_Vehicles_Van_DoorFrontLeft,
 			}
 		}
-		template! = PZKA_DoorWindowFrontLeft,
+		template! = VVA_DoorWindowFrontLeft,
 		part DoorFrontRight
 		{
 			model Default
@@ -153,7 +153,7 @@ module Base
 				file = VVA_Vehicles_Van_DoorFrontRight,
 			}
 		}
-		template! = PZKA_DoorWindowFrontRight,		
+		template! = VVA_DoorWindowFrontRight,		
 		template! = PZKA_Van_frontWindows,
 	}
 	template vehicle PZKA_VVan_hood {
@@ -164,7 +164,7 @@ module Base
 				file = VVA_Vehicles_Van_Hood,
 			}
 		}
-		template! = PZKA_EngineDoor,        
+		template! = VVA_EngineDoor,        
     }
 	template vehicle PZKA_Van_front_nr {
 		part DoorFrontLeft
@@ -174,7 +174,7 @@ module Base
 				file = VVA_Vehicles_Van_DoorFrontLeft_nr,
 			}
 		}
-		template! = PZKA_DoorWindowFrontLeft,
+		template! = VVA_DoorWindowFrontLeft,
 		part DoorFrontRight
 		{
 			model Default
@@ -182,7 +182,7 @@ module Base
 				file = VVA_Vehicles_Van_DoorFrontRight_nr,
 			}
 		}
-		template! = PZKA_DoorWindowFrontRight,
+		template! = VVA_DoorWindowFrontRight,
 		template! = PZKA_Van_frontWindows,        
     }
 	template vehicle PZKA_VVan_hood_nr {
@@ -193,6 +193,6 @@ module Base
 				file = VVA_Vehicles_Van_Hood_nr,
 			}
 		}
-		template! = PZKA_EngineDoor,        
+		template! = VVA_EngineDoor,        
     }
 }
