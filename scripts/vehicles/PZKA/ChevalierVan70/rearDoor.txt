@@ -46,8 +46,7 @@ module Base
 				file = PZKA_Vehicles_CVan70_Trunk,
 			}
 		}
-		template! = PZKA_DoorRear,
-		template! = PZKA_DoorRear_Reg,
+		template! = VVA_RearDoorVersionMed,
 		template! = PZKA_CVan70_RearWindow,
 	}
 

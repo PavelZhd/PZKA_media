@@ -35,12 +35,12 @@ module Base
 	}
 	template vehicle PZKA_FranklinBus_FrontWindows {		
 		part WindowFrontLeft
-        	{
+        {
 			model Default
-            		{
-                		file = PZKA_Vehicles_TruckBus_WindowFrontLeft,
-            		}            		
-        	}
+            {
+            	file = PZKA_Vehicles_TruckBus_WindowFrontLeft,
+            }            		
+        }
 		part WindowFrontRight
         {	
             parent = DoorFrontRight,
@@ -59,8 +59,8 @@ module Base
 			}
 		}
 		template!= PZKA_FranklinBus_FrontWindows,
-		template! = PZKA_DoorFR,
-		template! = PZKA_DoorFR_Reg,
+		template! = VVA_DoorFR,
+		template! = VVA_DoorFR_Reg,
 	}
 	
 	template vehicle PZKA_FranklinBus_FrontDoors_nr { 
@@ -72,7 +72,7 @@ module Base
 			}
 		}
 		template!= PZKA_FranklinBus_FrontWindows,
-		template! = PZKA_DoorFR,
-		template! = PZKA_DoorFR_Reg,
+		template! = VVA_DoorFR,
+		template! = VVA_DoorFR_Reg,
 	}	
 }

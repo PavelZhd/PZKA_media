@@ -47,8 +47,7 @@ module Base
 			}
 		}
 		template! = PZKA_FType_Box_TrunkWindow,
-		template! = PZKA_DoorRear,
-		template! = PZKA_DoorRear_Reg,
+		template! = VVA_RearDoorVersionMed,
 	}
 	template vehicle PZKA_FType_Box_Trunk_nr {
 		part DoorRear
@@ -59,8 +58,7 @@ module Base
 			}
 		}
 		template! = PZKA_FType_Box_TrunkWindow,
-		template! = PZKA_DoorRear,
-		template! = PZKA_DoorRear_Reg,
+		template! = VVA_RearDoorVersionMed,
 	}
 
 }
