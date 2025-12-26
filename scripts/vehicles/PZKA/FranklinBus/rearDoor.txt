@@ -37,8 +37,7 @@ module Base
 			}
 		}
 		template! = PZKA_FranklinBus_RearWindow,
-		template! = PZKA_DoorRear,
-		template! = PZKA_DoorRear_Reg,
+		template! = VVA_RearDoorVersionMed,
 	}
 	template vehicle PZKA_FranklinBus_DoorRear_nr {
 		part DoorRear
@@ -49,7 +48,6 @@ module Base
 			}
 		}
 		template! = PZKA_FranklinBus_RearWindow,
-		template! = PZKA_DoorRear,
-		template! = PZKA_DoorRear_Reg,
+		template! = VVA_RearDoorVersionMed,
 	}
 }
