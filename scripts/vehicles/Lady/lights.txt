@@ -49,7 +49,7 @@ module Base
 	template vehicle pzka_Lady_Light {
 		part HeadlightLeft 
 		{
-			parent = PZKA_LightsHost,
+			parent = LightsHost,
 			model Default
 			{
 				file = PZKA_Vehicles_Lady_LightFL,
@@ -61,7 +61,7 @@ module Base
 		}
 		part HeadlightRight 
 		{
-			parent = PZKA_LightsHost,
+			parent = LightsHost,
 			model Default
 			{
 				file = PZKA_Vehicles_Lady_LightFR,

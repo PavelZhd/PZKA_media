@@ -24,8 +24,8 @@ PZKA.addToProfile("pzka_6Seats",{"pzka_4SeatsR","pzka_2SeatsM"})
 
 
 
-PZKA.addToProfile("pzka_t_lighbar",{"PZKA_lightbar"})
-PZKA.addToProfile("pzka_t_taxi",{"PZKA_taxi"})
+PZKA.addToProfile("pzka_t_lighbar",{"VVA_lightbar"})
+PZKA.addToProfile("pzka_t_taxi",{"VVA_taxi"})
 PZKA.muteInProfile("pzka_sle_lighbar",{})
 PZKA.muteInProfile("pzka_sle_taxi",{})
 if not SLE then

@@ -1,0 +1,37 @@
+module Base
+{
+	model PZKA_Vehicles_SportCabrio_Trunk
+	{
+		mesh = vehicles/pzka_Sport|Trunk_Cabrio_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkCabrioBone 1.0,
+	}
+	model PZKA_Vehicles_SportCabrio_Trunk_nr
+	{
+		mesh = vehicles/pzka_Sport|Trunk_Cabrio_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkCabrioBone 1.0,
+	}
+	template vehicle PZKA_SportCabrio_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SportCabrio_Trunk,
+			}
+		}
+	}
+	template vehicle PZKA_SportCabrio_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SportCabrio_Trunk_nr,
+			}
+		}
+	}
+}

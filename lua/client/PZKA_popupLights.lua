@@ -8,7 +8,7 @@ if not vvaLightsFunctionOverride or vvaLightsFunctionOverride < 1 then
 		local vehicle = playerObj:getVehicle()
 		if not vehicle then return end
 		print("PZKA: (C) LightsOn local handler")
-		local part = vehicle:getPartById("PZKA_LightsHost")
+		local part = vehicle:getPartById("LightsHost")
 		if not part then return end
 		if vehicle:getHeadlightsOn() then
 			vehicle:playPartAnim(part, "Close")

@@ -96,8 +96,8 @@ module Base
 		}
 	}
 
-	template vehicle pzka_LightHostAnimate {
-		part PZKA_LightsHost
+	template vehicle VVA_LightHostAnimate {
+		part LightsHost
 		{
 			category = nodisplay,
             specificItem = false,
@@ -137,7 +137,7 @@ module Base
 			}
 		}
 	}
-	template vehicle PZKA_Interior {
+	template vehicle VVA_Interior {
 		part Interior
 		{
 			category = nodisplay,
@@ -150,7 +150,7 @@ module Base
 	    	}
 		}
 	}
-	template vehicle PZKA_lightbar {
+	template vehicle VVA_lightbar {
 		part ATA2RoofLightbar
 		{
 			category = nodisplay,
@@ -164,7 +164,7 @@ module Base
 	    	}
 		}
 	}
-	template vehicle PZKA_taxi {
+	template vehicle VVA_taxi {
 		part ATA2RoofTaxiSign
 		{
 			category = nodisplay,

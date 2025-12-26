@@ -41,7 +41,7 @@ module Base
 			}
 		}
 
-		template! = PZKA_Interior,
+		template! = VVA_Interior,
 		part Interior 
 		{						
 			model Default 

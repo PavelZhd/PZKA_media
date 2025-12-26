@@ -11,7 +11,7 @@ module Base
 				offset = 0.2401 -0.0115 1.0182,
 			}
 		}
-		template! = PZKA_Interior,
+		template! = VVA_Interior,
 		template! = PZKA_Normal_Interior,
 
 		

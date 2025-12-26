@@ -49,7 +49,7 @@ module Base
 	template vehicle pzka_Spirit_Light {
 		part HeadlightLeft 
 		{
-			parent = PZKA_LightsHost,
+			parent = LightsHost,
 			model Default
 			{
 				file = PZKA_Vehicles_Spirit_LightFL,
@@ -61,7 +61,7 @@ module Base
 		}
 		part HeadlightRight 
 		{
-			parent = PZKA_LightsHost,
+			parent = LightsHost,
 			model Default
 			{
 				file = PZKA_Vehicles_Spirit_LightFR,

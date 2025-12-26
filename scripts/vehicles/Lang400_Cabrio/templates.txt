@@ -80,8 +80,8 @@ module Base
 	    		}
 		}
 		
-		template! = pzka_LightHostAnimate,
-		part PZKA_LightsHost
+		template! = VVA_LightHostAnimate,
+		part LightsHost
 		{
 			model Default
 			{

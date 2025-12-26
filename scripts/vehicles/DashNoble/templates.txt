@@ -92,7 +92,7 @@ module Base
 	}
 
 	template vehicle pzka_DashNoble_LightHostAnimate {
-		part PZKA_LightsHost
+		part LightsHost
 		{
 			model Default
 			{
