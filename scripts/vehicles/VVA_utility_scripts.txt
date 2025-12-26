@@ -71,6 +71,10 @@ module Base
 
 	template vehicle VVA_OpenBedVersion {}
 	
+	template vehicle VVA_RearDoorVersionBlind {
+		template! = VVA_DoorRear,
+		template! = VVA_DoorRear_Fast,
+	}
 	template vehicle VVA_RearDoorVersionMed {
 		template! = VVA_DoorRear,
 		template! = VVA_DoorRear_Reg,
