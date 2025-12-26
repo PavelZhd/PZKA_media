@@ -4,9 +4,9 @@ local SLE = getActivatedMods():contains("\\SimpleLightbarsExpandedPZK")
 local CullSeats = getActivatedMods():contains("\\VVA_cullseats") or getActivatedMods():contains("\\PZKA_cullseats")
 local VVE = getActivatedMods():contains("\\VVehicleEnhancer") or getActivatedMods():contains("\\Ze_VVehicleEnhancer_42B")
 
-PZKA.addToProfile("pzka_C_2SeatsF",{"PZKA_SeatFrontLeft","PZKA_SeatFrontRight"})
-PZKA.addToProfile("pzka_C_2SeatsM",{"PZKA_SeatMiddleLeft","PZKA_SeatMiddleRight"})
-PZKA.addToProfile("pzka_C_2SeatsR",{"PZKA_SeatRearLeft","PZKA_SeatRearRight"})
+PZKA.addToProfile("pzka_C_2SeatsF",{"VVA_SeatFrontLeft","VVA_SeatFrontRight"})
+PZKA.addToProfile("pzka_C_2SeatsM",{"VVA_SeatMiddleLeft","VVA_SeatMiddleRight"})
+PZKA.addToProfile("pzka_C_2SeatsR",{"VVA_SeatRearLeft","VVA_SeatRearRight"})
 
 PZKA.muteInProfile("pzka_2SeatsF",{})
 PZKA.muteInProfile("pzka_2SeatsM",{})
@@ -445,7 +445,7 @@ PZKA.ApplyTemplateToVehicle("pzkVanBox","PZKA_Vehicles_VanBox_Shutter",{"pzka_2S
 
 -- Sport Cabrio
 
-PZKA.ApplyTemplateToVehicle("pzkChevalierCosetteCabrio","PZKA_Sport_Cabrio_Light",{"pzka_2SeatsF","PZKA_SportCabrio"})
+PZKA.ApplyTemplateToVehicle("pzkChevalierCosetteCabrio","PZKA_Vehicles_SportCabrio",{"pzka_2SeatsF","PZKA_SportCabrio"})
 
 -- Lady
 

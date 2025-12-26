@@ -63,7 +63,12 @@ module Base
 	template vehicle VVA_EngineDoor {
 		template! = VVA_Hood,
 		template! = VVA_Hood_Fast,
+	}	
+	template vehicle VVA_EngineDoorHeadlights {
+		template! = VVA_Hood,
+		template! = VVA_Hood_Slow,
 	}
+
 	template vehicle VVA_OpenBedVersion {}
 	
 	template vehicle VVA_RearDoorVersionMed {
