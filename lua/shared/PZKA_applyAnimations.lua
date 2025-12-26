@@ -140,8 +140,8 @@ PZKA.ApplyTemplateToVehicle("PZKA_Normal_Wagon_nr","PZKA_Normal_Wagon_nr",{"pzka
 PZKA.CopyTemplateToVehicle("pzkCeriseStationWagon","PZKA_Normal_Wagon",{"PZKA_Wagon_Cerise"})
 PZKA.CopyTemplateToVehicle("pzkRapierStationWagon","PZKA_Normal_Wagon",{"PZKA_Wagon_Rapier"})
 PZKA.CopyTemplateToVehicle("pzkDashMayorStationWagon","PZKA_Normal_Wagon",{"PZKA_Wagon_Mayor"})
-PZKA.CopyTemplateToVehicle("pzkTriumphTWDStationWagon","PZKA_Normal_Wagon",{"PZKA_Wagon_TWD"})
-PZKA.CopyTemplateToVehicle("pzkTriumphTWDStationWagonTaxi","PZKA_Normal_Wagon_nr",{"PZKA_Wagon_TWD", "pzka_sle_taxi","PZKA_Normal_TaxiSignWagon"})
+PZKA.CopyTemplateToVehicle("pzkTriumphStationWagon","PZKA_Normal_Wagon",{"PZKA_Wagon_TWD"})
+PZKA.CopyTemplateToVehicle("pzkTriumphStationWagonTaxi","PZKA_Normal_Wagon_nr",{"PZKA_Wagon_TWD", "pzka_sle_taxi","PZKA_Normal_TaxiSignWagon"})
 
 PZKA.ApplyTemplateToVehicle("pzkTriumphTWDStationWagonGriswold","PZKA_Grisworld_nr",{"pzka_4SeatsR","PZKA_Normal_Wagon_nr","PZKA_Wagon_Grisworld_nr"})
 PZKA.ApplyTemplateToVehicle("pzkHearseGhoulbusters","PZKA_Ghoulbuster_nr",{"pzka_4SeatsR","PZKA_Normal_Wagon_nr","PZKA_Ghoulbuster_nr"})
@@ -353,7 +353,7 @@ PZKA.ApplyTemplateToVehicle("pzkDashPhoenix75JP","PZKA_Vehicles_Phoehix75_Base_n
 
 -- SUV
 
-PZKA.ApplyTemplateToVehicle("pzkSuvDinoPark","PZKA_Vehicles_SUV_nr",{"pzka_4SeatsR","PZKA_SUV_nr"})
+PZKA.ApplyTemplateToVehicle("pzkSuvCustom","PZKA_Vehicles_SUV_nr",{"pzka_4SeatsR","PZKA_SUV_nr"})
 PZKA.CopyTemplateToVehicle("pzkSuvPleistoceneLand","pzkSuvDinoPark")
 
 PZKA.ApplyTemplateToVehicle("pzkSuvAirportSecurity","PZKA_Vehicles_SUV_nr",{"pzka_4SeatsR","PZKA_SUV_nr","pzka_t_lighbar","PZKA_SUV_Lightbar"})
@@ -463,9 +463,9 @@ PZKA.CloneAnimationProfile("pzkStepVanUPZ","pzkStepVanMilk")
 PZKA.CloneAnimationProfile("pzkStepVanFedLog","pzkStepVanMilk")
 if SLE then
     --PZKA.CloneAnimationProfile("pzkStepVanSwatLouisvilleSWAT","pzkStepVanMilk")   -- Change when SLE supports this van
-    PZKA.CloneAnimationProfile("pzkStepVanSwatLouisvilleSWAT","pzkStepVanMilk","VVA_Vehicle_StepVan_NoRandom_a",false,"PZKA_StepVan_SWAT")
+    PZKA.CloneAnimationProfile("pzkStepVanSwat","pzkStepVanMilk","VVA_Vehicle_StepVan_NoRandom_a",false,"PZKA_StepVan_SWAT")
 else
-    PZKA.CloneAnimationProfile("pzkStepVanSwatLouisvilleSWAT","pzkStepVanMilk","VVA_Vehicle_StepVan_NoRandom_a",false,"PZKA_StepVan_SWAT")
+    PZKA.CloneAnimationProfile("pzkStepVanSwat","pzkStepVanMilk","VVA_Vehicle_StepVan_NoRandom_a",false,"PZKA_StepVan_SWAT")
 end
 PZKA.CloneAnimationProfile("pzkStepVanPizza","pzkStepVanMilk","PZKA_Vehicle_StepVan_Food_NoRandom_a",false,"PZKA_StepVan_Pizza")
 PZKA.CloneAnimationProfile("pzkStepVanCoffe","pzkStepVanPizza")
