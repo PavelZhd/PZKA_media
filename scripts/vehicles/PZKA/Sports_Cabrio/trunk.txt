@@ -24,6 +24,7 @@ module Base
 				file = PZKA_Vehicles_SportCabrio_Trunk,
 			}
 		}
+		template! = VVA_TrunkDoorVersion,
 	}
 	template vehicle PZKA_SportCabrio_Trunk_nr {
 		part TrunkDoor
@@ -33,5 +34,6 @@ module Base
 				file = PZKA_Vehicles_SportCabrio_Trunk_nr,
 			}
 		}
+		template! = VVA_TrunkDoorVersion,
 	}
 }
