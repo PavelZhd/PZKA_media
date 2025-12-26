@@ -45,9 +45,7 @@ module Base
 				file = PZKA_Vehicles_Van_Camper_DoorRearRight,
 			}
 		}
-		template! = PZKA_DoorRR,
-		template! = PZKA_DoorRR_Reg,
-		template! = PZKA_Van_Camper_DoorWindowRR,		
+		template! = VVA_DoorWindowRearRight,
 	}
 	template vehicle PZKA_Van_Camper_DoorRR_nr {
 		part DoorRearRight
@@ -57,8 +55,6 @@ module Base
 				file = PZKA_Vehicles_Van_Camper_DoorRearRight_nr,
 			}
 		}
-		template! = PZKA_DoorRR,
-		template! = PZKA_DoorRR_Reg,
-		template! = PZKA_Van_Camper_DoorWindowRR,		
+		template! = VVA_DoorWindowRearRight,
 	}
 }
