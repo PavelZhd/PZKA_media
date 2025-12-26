@@ -443,6 +443,10 @@ PZKA.CopyTemplateToVehicle("pzkVanBoxSwat","pzkVanBoxAmbulance")
 
 PZKA.ApplyTemplateToVehicle("pzkVanBox","PZKA_Vehicles_VanBox_Shutter",{"pzka_2SeatsF","PZKA_VanBox_Shutter"})
 
+-- Sport Cabrio
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierCosetteCabrio","PZKA_Sport_Cabrio_Light",{"pzka_2SeatsF","PZKA_SportCabrio"})
+
 --- OLD FRAMEWORK CODE
 
 
@@ -522,7 +526,6 @@ PZKA.CloneAnimationProfile("pzkChevalierCerise93WagonFire","pzkChevalierCerise93
 PZKA.CloneAnimationProfile("pzkChevalierCerise93WagonLSU","pzkChevalierCerise93WagonFire")
 PZKA.CloneAnimationProfile("pzkChevalierCerise93WagonMall","pzkChevalierCerise93WagonFire")
 
-PZKA.CreateAnimationProfile("pzkChevalierCosetteCabrio","PZKA_Vehicles_Sport_Cabrio_a","PZKA_Sport_Cabrio_Light","PZKA_Sport_Cabrio_animatedDoors",{"FL","FR"}, "PZKA_TrunkDoorVersion")
 
 PZKA.CreateAnimationProfile("pzkChevalierMaroca","PZKA_Vehicles_Marocco_a","PZKA_Marocco_Light","PZKA_Marocco_animatedDoors",{"FLW","FRW"}, "PZKA_TrunkDoorVersion")
 if SLE then
