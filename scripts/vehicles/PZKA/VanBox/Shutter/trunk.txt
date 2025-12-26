@@ -49,7 +49,8 @@ module Base
 				file = PZKA_Vehicles_VanBox_Trunk_Shutter,
 			}
 		}
-		template! = PZKA_TrunkDoorVersion,
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Fast,
 	}
 
 	template vehicle PZKA_VanBox_Trunk_Shutter_nr {
@@ -60,6 +61,7 @@ module Base
 				file = PZKA_Vehicles_VanBox_Trunk_Shutter_nr,
 			}
 		}
-		template! = PZKA_TrunkDoorVersion,
+		template! = PZKA_DoorRear,
+		template! = PZKA_DoorRear_Fast,
 	}
 }
