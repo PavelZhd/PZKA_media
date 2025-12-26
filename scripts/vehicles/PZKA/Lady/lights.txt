@@ -1,0 +1,89 @@
+module Base
+{
+	model PZKA_Vehicles_Lady_LightFL
+	{
+		mesh = vehicles/pzka_Lady|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Lights3Bone 1.0,
+	}	
+	model PZKA_Vehicles_Lady_LightFR
+	{
+		mesh = vehicles/pzka_Lady|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Lights4Bone 1.0,
+	}
+	model PZKA_Vehicles_Lady_LightFL_static
+	{
+		mesh = vehicles/pzka_Lady|Light_FrontLeft_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Lady_LightFR_static
+	{
+		mesh = vehicles/pzka_Lady|Light_FrontRight_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Lady_LightRL
+	{
+		mesh = vehicles/pzka_Lady|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Lady_LightRR
+	{
+		mesh = vehicles/pzka_Lady|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+
+	template vehicle pzka_Lady_Light {
+		part HeadlightLeft 
+		{
+			parent = LightsHost,
+			model Default
+			{
+				file = PZKA_Vehicles_Lady_LightFL,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_Lady_LightFL_static,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = LightsHost,
+			model Default
+			{
+				file = PZKA_Vehicles_Lady_LightFR,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_Lady_LightFR_static,
+			}
+		}
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lady_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lady_LightRR,
+			}
+		}
+	}
+}
