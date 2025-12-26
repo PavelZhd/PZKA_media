@@ -87,7 +87,7 @@ module Base
 			}
 		}
 		template! = PZKA_FType_Reg_TrunkWindow,
-		template! = VVA_TrunkDoorVersion,
+		template! = VVA_TrunkDoorWindowVersion,
 	}
 	template vehicle PZKA_FType_Reg_Trunk_F350_nr {
 		part TrunkDoor
@@ -98,7 +98,7 @@ module Base
 			}
 		}
 		template! = PZKA_FType_Reg_TrunkWindow,
-		template! = VVA_TrunkDoorVersion,
+		template! = VVA_TrunkDoorWindowVersion,
 	}
 
 }

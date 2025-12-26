@@ -1,8 +1,6 @@
 module Base
 {
-	template vehicle VVA_Sport_shared {
-		template! = VVA_Sport_Windshield,
-		template! = VVA_SportCabrio_Light,
+	template vehicle VVA_Sport_interior {
 		template! = VVA_Sport_seats,
 		part Battery 
 		{
@@ -14,6 +12,11 @@ module Base
 		}
 		template! = VVA_Interior,
 		template! = VVA_Sport_Engine,
+	}
+	template vehicle VVA_Sport_shared {
+		template! = VVA_Sport_Windshield,
+		template! = VVA_SportCabrio_Light,
+		template! = VVA_Sport_interior,
 	}
 	template vehicle VVA_Sport_Base {
 		template! = VVA_Sport_Hood,

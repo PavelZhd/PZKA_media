@@ -447,6 +447,13 @@ PZKA.ApplyTemplateToVehicle("pzkVanBox","PZKA_Vehicles_VanBox_Shutter",{"pzka_2S
 
 PZKA.ApplyTemplateToVehicle("pzkChevalierCosetteCabrio","PZKA_Sport_Cabrio_Light",{"pzka_2SeatsF","PZKA_SportCabrio"})
 
+-- Lady
+
+PZKA.ApplyTemplateToVehicle("pzkMastersonLady","PZKA_Vehicles_Lady",{"pzka_2SeatsF","PZKA_Lady"})
+
+-- LadyZ
+
+
 --- OLD FRAMEWORK CODE
 
 
@@ -604,7 +611,6 @@ PZKA.CreateAnimationProfile("pzkMastersonLadyZ","PZKA_Vehicles_LadyZ_a","pzka_La
 
 PZKA.CreateAnimationProfile("pzkDashNoble","PZKA_Vehicles_DashNoble_a","pzka_DashNoble_Light","PZKA_DashNoble",{"FLW","FRW"},"VVA_TrunkDoorVersion")
 
-PZKA.CreateAnimationProfile("pzkMastersonLady","PZKA_Vehicles_Lady_a","pzka_Lady_Light","PZKA_Lady",{"FLW","FRW"},"VVA_TrunkDoorVersion")
 
 
 PZKA.CreateAnimationProfile("pzkContinentalCruiser","PZKA_Vehicles_Cruiser_a","PZKA_Cruiser_Light","PZKA_Cruiser",{"FLW","FRW","RLW","RRW"},"VVA_TrunkDoorVersion")

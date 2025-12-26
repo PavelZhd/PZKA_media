@@ -46,12 +46,12 @@ module Base
 		template! = PZKA_Lady_RearWindow,
 		template! = VVA_TrunkDoorWindowVersion,
 	}
-	template vehicle PZKA_Lady_Trunk {
+	template vehicle PZKA_Lady_Trunk_nr {
 		part TrunkDoor
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Lady_Trunk,
+				file = PZKA_Vehicles_Lady_Trunk_nr,
 			}		
 		}
 		template! = PZKA_Lady_RearWindow,
