@@ -61,7 +61,7 @@ module Base
 				file = PZKA_Vehicles_Van_Brig_DoorRearLeft,
 			}
 		}
-		template! = PZKA_DoorWindowRearLeft,
+		template! = VVA_DoorWindowRearLeft,
 
 		part DoorRearRight
 		{
@@ -70,7 +70,7 @@ module Base
 				file = PZKA_Vehicles_Van_Brig_DoorRearRight,
 			}
 		}
-		template! = PZKA_DoorWindowRearRight,
+		template! = VVA_DoorWindowRearRight,
 		template! = PZKA_Van_Brig_RearDoorWindow,
 	}
 }

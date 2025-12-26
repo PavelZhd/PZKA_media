@@ -1,0 +1,45 @@
+module Base
+{
+	model PZKA_Vehicles_Lady_LightHost
+	{
+		mesh = vehicles/pzka_Lady|Light_Host_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Lights1Bone 1.0,
+		boneWeight = Lights2Bone 1.0,
+		boneWeight = Lights3Bone 1.0,
+		boneWeight = Lights4Bone 1.0,
+	}
+	model PZKA_Vehicles_Lady_LightHost_nr
+	{
+		mesh = vehicles/pzka_Lady|Light_Host_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Lights1Bone 1.0,
+		boneWeight = Lights2Bone 1.0,
+		boneWeight = Lights3Bone 1.0,
+		boneWeight = Lights4Bone 1.0,
+	}
+	template vehicle PZKA_Lady_LightsHost {
+		template! = VVA_LightHostAnimate,
+		part LightsHost
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lady_LightHost,
+			}
+		}
+	}
+	template vehicle PZKA_Lady_LightsHost_nr {
+		template! = VVA_LightHostAnimate,
+		part LightsHost
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lady_LightHost_nr,
+			}
+		}
+	}
+}

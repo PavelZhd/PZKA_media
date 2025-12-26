@@ -49,7 +49,7 @@ end
 vehicleLayouts["PZKA_Vehicles_Sedan_a"] = {
 	exterior = "PZKA_Sedan_animatedDoors",
 	doors = "PZKA_FourDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_FourSeats",
 }
 vehicleLayouts["PZKA_Vehicles_SedanTaxi_a"] = vehicleLayouts["PZKA_Vehicles_Sedan_a"]
@@ -59,66 +59,66 @@ vehicleLayouts["PZKA_Vehicles_SedanSlickLights_NoRandom_a"] = vehicleLayouts["PZ
 vehicleLayouts["PZKA_Vehicles_DashRoyal_a"] = {
 	exterior = "PZKA_DashRoyal_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Tornado_a"] = {
 	exterior = "PZKA_Tornado_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 
 vehicleLayouts["PZKA_Vehicles_TruckBus_a"] = {
 	exterior = "PZKA_TruckBus_animatedDoors",
 	doors = "PZKA_FrontRightDoorOnly",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 
 vehicleLayouts["PZKA_Vehicles_MuscleCabrio_a"] = {
 	exterior = "PZKA_MuscleCabrio_animatedDoors",
 	doors = "PZKA_TwoDoorWindowless",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 
 vehicleLayouts["PZKA_Vehicles_Muscle_a"] = {
 	exterior = "PZKA_Muscle_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 
 vehicleLayouts["PZKA_Vehicles_Bayer_a"] = {
 	exterior = "PZKA_Bayer4D_animatedDoors",
 	doors = "PZKA_FourDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_FourSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Bayer_2D_a"] = {
 	exterior = "PZKA_Bayer2D_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_FourSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Bayer_Sport_a"] = {
 	exterior = "PZKA_BayerSport_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_FourSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Bayer_Cabrio_a"] = {
 	exterior = "PZKA_BayerCabrio_animatedDoors",
 	doors = "PZKA_TwoDoorWindowless",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_FourSeats",
 }
 
 vehicleLayouts["PZKA_Vehicles_Laser_a"] = {
 	exterior = "PZKA_Laser_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_FourSeats",
 }
 vehicleLayouts["PZKA_Vehicles_LaserLights_NoRandom_a"] = vehicleLayouts["PZKA_Vehicles_Laser_a"]
@@ -126,14 +126,14 @@ vehicleLayouts["PZKA_Vehicles_LaserLights_NoRandom_a"] = vehicleLayouts["PZKA_Ve
 vehicleLayouts["PZKA_Vehicles_Laser5D_a"] = {
 	exterior = "PZKA_Laser5D_animatedDoors",
 	doors = "PZKA_FourDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_FourSeats",
 }
 
 vehicleLayouts["PZKA_Vehicle_StepVan_NoRandom_a"] = {
 	exterior = "PZKA_StepVan_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicle_StepVan_SWAT_a"] = vehicleLayouts["PZKA_Vehicle_StepVan_NoRandom_a"]
@@ -142,7 +142,7 @@ vehicleLayouts["PZKA_Vehicle_StepVan_SWAT_a"] = vehicleLayouts["PZKA_Vehicle_Ste
 vehicleLayouts["PZKA_Vehicle_StepVan_IceCream_a"] = {
 	exterior = "PZKA_StepVan_Food_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicle_StepVan_HotDog_a"] = vehicleLayouts["PZKA_Vehicle_StepVan_IceCream_a"]
@@ -152,13 +152,13 @@ vehicleLayouts["PZKA_Vehicle_StepVan_Taco_a"] = vehicleLayouts["PZKA_Vehicle_Ste
 vehicleLayouts["PZKA_Vehicles_CarNormal_a"] = {
 	exterior = "PZKA_CarNormal_animatedDoors",
 	doors = "PZKA_FourDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_FourSeats",
 }
 vehicleLayouts["PZKA_Vehicles_CarLights_NoRandom_a"] = {
 	exterior = "PZKA_CarNormal_nr_animatedDoors",
 	doors = "PZKA_FourDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_FourSeats",
 }
 vehicleLayouts["PZKA_Vehicles_CarTaxi_a"] = vehicleLayouts["PZKA_Vehicles_CarLights_NoRandom_a"]
@@ -166,25 +166,25 @@ vehicleLayouts["PZKA_Vehicles_CarTaxi_a"] = vehicleLayouts["PZKA_Vehicles_CarLig
 vehicleLayouts["PZKA_Vehicles_CarSwagon_a"] = {
 	exterior = "PZKA_CarSwagon_animatedDoors",
 	doors = "PZKA_FourDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_FourSeats",
 }
 vehicleLayouts["PZKA_Vehicles_CarSwagonTaxi_a"] = {
 	exterior = "PZKA_CarSwagon_nr_animatedDoors",
 	doors = "PZKA_FourDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_FourSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Limo_a"] = {
 	exterior = "PZKA_Limo_animatedDoors",
 	doors = "PZKA_FourDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_FourSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Hearse_a"] = {
 	exterior = "PZKA_Hearse_animatedDoors",
 	doors = "PZKA_FourDoor",
-	rear = "PZKA_TrunkDoorVersion",
+	rear = "VVA_TrunkDoorVersion",
 	seats = "PZKA_FourSeats",
 }
 
@@ -213,7 +213,7 @@ vehicleLayouts["PZKA_Vehicles_Truck_Semi_a"]  = {
 vehicleLayouts["PZKA_Vehicles_Truck_Box_a"] = {
 	exterior = "PZKA_Truck_Box_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Truck_Cab_a"] = {
@@ -225,13 +225,13 @@ vehicleLayouts["PZKA_Vehicles_Truck_Cab_a"] = {
 vehicleLayouts["PZKA_Vehicles_Truck_Dump_a"] = {
 	exterior = "PZKA_Truck_Dump_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Truck_Mil_a"] = {
 	exterior = "PZKA_Truck_Mil_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Truck_Propane_a"]  = {
@@ -243,43 +243,43 @@ vehicleLayouts["PZKA_Vehicles_Truck_Propane_a"]  = {
 vehicleLayouts["PZKA_Vehicles_Truck_Garbage_a"] = {
 	exterior = "PZKA_Truck_Garbage_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Truck_Fire_a"] = {
 	exterior = "PZKA_Truck_Fire_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Truck_Tanker_nr_a"] = {
 	exterior = "PZKA_Truck_Tanker_NR_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Truck_Tanker_a"] = {
 	exterior = "PZKA_Truck_Tanker_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Truck_Tow_a"] = {
 	exterior = "PZKA_Truck_Tow_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Truck_Utility_a"] = {
 	exterior = "PZKA_Truck_Utility_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Truck_RV_a"] = {
 	exterior = "PZKA_Truck_RV_animatedDoors",
 	doors = "PZKA_2FRRDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 
@@ -294,13 +294,13 @@ vehicleLayouts["PZKA_Vehicles_Truck_RV_a"] = {
 vehicleLayouts["PZKA_Vehicles_Van_Box_a"] = {
 	exterior = "PZKA_Van_Box_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Van_BoxAmbulance_a"] = {
 	exterior = "PZKA_Van_BoxAmbulance_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Van_Brig_a"] = {
@@ -313,32 +313,32 @@ vehicleLayouts["PZKA_Vehicles_Van_Brig_a"] = {
 vehicleLayouts["PZKA_Vehicles_Van_Camper_a"] = {
 	exterior = "PZKA_Van_Camper_animatedDoors",
 	doors = "PZKA_2FRRDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 
 vehicleLayouts["PZKA_Vehicles_Van_Seats_a"] = {
 	exterior = "PZKA_Van_Seats_animatedDoors",
 	doors = "PZKA_FourDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_SixSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Van_Police_a"] = {
 	exterior = "PZKA_Van_Seats_nr_animatedDoors",
 	doors = "PZKA_FourDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_SixSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Van_McCoy_a"] = {
 	exterior = "PZKA_Van_McCoy_animatedDoors",
 	doors = "PZKA_TwoDoor",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_TwoSeats",
 }
 vehicleLayouts["PZKA_Vehicles_Van_Taxi_a"] = {
 	exterior = "PZKA_Van_Taxi_animatedDoors",
 	doors = "PZKA_VanSeatsDoors",
-	rear = "PZKA_RearDoorVersion",
+	rear = "VVA_RearDoorVersion",
 	seats = "PZKA_SixSeats",
 }
 

@@ -1,0 +1,63 @@
+module Base
+{
+	template vehicle VVA_WindowFL {
+		part WindowFrontLeft
+        {
+			anim ClosedToOpen
+            {
+            	anim = WindowFrontLeft_open,
+                animate = FALSE,
+            }
+		}
+	}
+	template vehicle VVA_WindowFR {
+		part WindowFrontRight
+        {	
+        	anim ClosedToOpen
+        	{
+         		anim = WindowFrontRight_open,
+           		animate = FALSE,
+      		}
+	   	}
+	}	
+	template vehicle VVA_WindowML {
+		part WindowMiddleLeft
+        {	
+        	anim ClosedToOpen
+            {
+            	anim = WindowRearLeft_open,
+                animate = FALSE,
+            }
+        }
+	}
+	template vehicle VVA_WindowMR {
+		part WindowMiddleRight
+        {	
+        	anim ClosedToOpen
+        	{
+        		anim = WindowRearRight_open,
+            	animate = FALSE,
+            }
+        }
+	}	
+	template vehicle VVA_WindowRL {
+		part WindowRearLeft
+        {	
+        	anim ClosedToOpen
+            {
+            	anim = WindowRearLeft_open,
+                animate = FALSE,
+            }
+        }
+	}
+	template vehicle VVA_WindowRR {
+		part WindowRearRight
+        {	
+        	anim ClosedToOpen
+        	{
+        		anim = WindowRearRight_open,
+            	animate = FALSE,
+            }
+        }
+	}
+}

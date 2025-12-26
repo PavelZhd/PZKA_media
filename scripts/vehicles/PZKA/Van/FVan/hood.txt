@@ -26,7 +26,7 @@ module Base
 				file = PZKA_Vehicles_FVan_Hood,
 			}
 		}
-		template! = PZKA_EngineDoor,
+		template! = VVA_EngineDoor,
     }
 	template vehicle PZKA_FVan_hood_nr {
 		part EngineDoor
@@ -36,6 +36,6 @@ module Base
 				file = PZKA_Vehicles_FVan_Hood_nr,
 			}
 		}
-		template! = PZKA_EngineDoor,
+		template! = VVA_EngineDoor,
     }
 }

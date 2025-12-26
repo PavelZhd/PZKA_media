@@ -26,7 +26,7 @@ module Base
 				file = PZKA_Vehicles_Marocco80_Trunk,
 			}
 		}
-		template! = PZKA_TrunkDoorVersion,
+		template! = VVA_TrunkDoorVersion,
 	}
 	template vehicle pzka_Marocco80_trunk_nr {
 		part TrunkDoor
@@ -36,6 +36,6 @@ module Base
 				file = PZKA_Vehicles_Marocco80_Trunk_nr,
 			}
 		}
-		template! = PZKA_TrunkDoorVersion,
+		template! = VVA_TrunkDoorVersion,
 	}
 }

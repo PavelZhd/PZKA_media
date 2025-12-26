@@ -46,7 +46,7 @@ module Base
 				file = PZKA_Vehicles_VanBox_Trunk,
 			}
 		}
-		template! = PZKA_RearDoorVersionMed,
+		template! = VVA_RearDoorVersionMed,
 		template! = PZKA_VanBox_RearWindow,
 	}
 	template vehicle PZKA_VanBox_Trunk_nr {
@@ -57,7 +57,7 @@ module Base
 				file = PZKA_Vehicles_VanBox_Trunk_nr,
 			}
 		}
-		template! = PZKA_RearDoorVersionMed,
+		template! = VVA_RearDoorVersionMed,
 		template! = PZKA_VanBox_RearWindow,
 	}
 }

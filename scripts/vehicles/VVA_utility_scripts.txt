@@ -1,0 +1,183 @@
+module Base
+{
+	template vehicle VVA_DoorFrontLeft {
+		template! = VVA_DoorFL,
+		template! = VVA_DoorFL_Fast,
+	}
+	template vehicle VVA_DoorFrontRight {
+		template! = VVA_DoorFR,
+		template! = VVA_DoorFR_Fast,
+	}	
+	template vehicle VVA_DoorMiddleLeft {
+		template! = VVA_DoorML,
+		template! = VVA_DoorML_Fast,
+	}
+	template vehicle VVA_DoorMiddleRight {
+		template! = VVA_DoorMR,
+		template! = VVA_DoorMR_Fast,
+	}	
+	template vehicle VVA_DoorRearLeft {
+		template! = VVA_DoorRL,
+		template! = VVA_DoorRL_Fast,
+	}
+	template vehicle VVA_DoorRearRight {
+		template! = VVA_DoorRR,
+		template! = VVA_DoorRR_Fast,
+	}
+	
+	template vehicle VVA_DoorWindowFrontLeft {
+		template! = VVA_DoorFL,
+		template! = VVA_DoorFL_Reg,
+		template! = VVA_WindowFL,
+	}
+	template vehicle VVA_DoorWindowFrontRight {
+		template! = VVA_DoorFR,
+		template! = VVA_DoorFR_Reg,
+		template! = VVA_WindowFR,
+	}
+	template vehicle VVA_DoorsWindowFront {
+		template! = VVA_DoorWindowFrontLeft,
+		template! = VVA_DoorWindowFrontRight,
+	}
+	template vehicle VVA_DoorWindowMiddleLeft {
+		template! = VVA_DoorML,
+		template! = VVA_DoorML_Reg,
+		template! = VVA_WindowML,
+	}
+	template vehicle VVA_DoorWindowMiddleRight {
+		template! = VVA_DoorMR,
+		template! = VVA_DoorMR_Reg,
+		template! = VVA_WindowMR,
+	}	
+	template vehicle VVA_DoorWindowRearLeft {
+		template! = VVA_DoorRL,
+		template! = VVA_DoorRL_Reg,
+		template! = VVA_WindowRL,
+	}
+	template vehicle VVA_DoorWindowRearRight {
+		template! = VVA_DoorRR,
+		template! = VVA_DoorRR_Reg,
+		template! = VVA_WindowRR,
+	}
+
+	template vehicle VVA_EngineDoor {
+		template! = VVA_Hood,
+		template! = VVA_Hood_Fast,
+	}
+	template vehicle VVA_OpenBedVersion {}
+	
+	template vehicle VVA_RearDoorVersionMed {
+		template! = VVA_DoorRear,
+		template! = VVA_DoorRear_Reg,
+	}
+	template vehicle VVA_RearDoorVersionSlow {
+		template! = VVA_DoorRear,
+		template! = VVA_DoorRear_Slow,
+	}
+
+	template vehicle VVA_TrunkDoorVersion {
+		template! = VVA_TrunkDoor,
+		template! = VVA_TrunkDoor_Fast,
+	}
+	template vehicle VVA_TrunkDoorWindowVersion {
+		template! = VVA_TrunkDoor,
+		template! = VVA_TrunkDoor_Reg,
+	}
+	
+	
+	template vehicle VVA_ATA2AirScoopHoodFix
+	{
+		part ATA2AirScoop
+		{			
+			table install
+			{
+				complete = ATATuning2.InstallComplete.AirScoop,
+			}
+			table uninstall
+			{
+				complete = ATATuning2.UninstallComplete.AirScoop,
+			}
+		}
+	}
+
+	template vehicle VVA_LightHostAnimate {
+		part LightsHost
+		{
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+			door
+			{}		
+
+			anim Close
+			{
+				anim = Lights_open,
+				reverse = TRUE,
+				rate = 1,
+			}
+
+			anim Open
+			{
+				anim = Lights_open,
+				rate = 1,
+			}
+
+			anim Closed
+			{
+				anim = Lights_open,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Lights_open,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+	}
+	template vehicle VVA_Interior {
+		part Interior
+		{
+			category = nodisplay,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+			    create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle VVA_lightbar {
+		part ATA2RoofLightbar
+		{
+			category = nodisplay,
+            area = Engine,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+	template vehicle VVA_taxi {
+		part ATA2RoofTaxiSign
+		{
+			category = nodisplay,
+			specificItem = false,
+			itemType = Base.LightBulb,
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+}

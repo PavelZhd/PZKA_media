@@ -193,50 +193,50 @@ module Base
 		template! = PZKA_Van_DoorML_model,
 		template! = PZKA_Van_WindowML_model,
 		template! = PZKA_Van_DoorWindowML,
-		template! = PZKA_DoorWindowMiddleLeft,
+		template! = VVA_DoorWindowMiddleLeft,
 	}	
 	template vehicle PZKA_Van_Door_RL {
 		template! = PZKA_Van_DoorRL_model,
 		template! = PZKA_Van_WindowRL_model,		
 		template! = PZKA_Van_DoorWindowRL,
-		template! = PZKA_DoorWindowRearLeft,
+		template! = VVA_DoorWindowRearLeft,
 	}
 	template vehicle PZKA_Van_Door_ML_nr {
 		template! = PZKA_Van_DoorML_model_nr,
 		template! = PZKA_Van_WindowML_model,		
 		template! = PZKA_Van_DoorWindowML,
-		template! = PZKA_DoorWindowMiddleLeft,
+		template! = VVA_DoorWindowMiddleLeft,
 	}	
 	template vehicle PZKA_Van_Door_RL_nr {
 		template! = PZKA_Van_DoorRL_model_nr,
 		template! = PZKA_Van_WindowRL_model,		
 		template! = PZKA_Van_DoorWindowRL,
-		template! = PZKA_DoorWindowRearLeft,
+		template! = VVA_DoorWindowRearLeft,
 	}
 
 	template vehicle PZKA_Van_Door_MR {
 		template! = PZKA_Van_DoorMR_model,
 		template! = PZKA_Van_WindowMR_model,
 		template! = PZKA_Van_DoorWindowMR,
-		template! = PZKA_DoorWindowMiddleRight,
+		template! = VVA_DoorWindowMiddleRight,
 	}
 	template vehicle PZKA_Van_Door_RR {
 		template! = PZKA_Van_DoorRR_model,
 		template! = PZKA_Van_WindowRR_model,		
 		template! = PZKA_Van_DoorWindowRR,
-		template! = PZKA_DoorWindowRearRight,
+		template! = VVA_DoorWindowRearRight,
 	}
 	template vehicle PZKA_Van_Door_MR_nr {
 		template! = PZKA_Van_DoorMR_model_nr,
 		template! = PZKA_Van_WindowMR_model,		
 		template! = PZKA_Van_DoorWindowMR,
-		template! = PZKA_DoorWindowMiddleRight,
+		template! = VVA_DoorWindowMiddleRight,
 	}
 	template vehicle PZKA_Van_Door_RR_nr {
 		template! = PZKA_Van_DoorRR_model_nr,
 		template! = PZKA_Van_WindowRR_model,		
 		template! = PZKA_Van_DoorWindowRR,
-		template! = PZKA_DoorWindowRearRight,
+		template! = VVA_DoorWindowRearRight,
 	}
 	
 	template vehicle PZKA_Van_MiddleDoors {

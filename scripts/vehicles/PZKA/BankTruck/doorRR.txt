@@ -55,8 +55,8 @@ module Base
 			}
 		}
 		template! = PZKA_BankTruck_MRDoorWindow,
-		template! = PZKA_DoorMR,
-		template! = PZKA_DoorMR_Reg,
+		template! = VVA_DoorMR,
+		template! = VVA_DoorMR_Reg,
 	}	
 	template vehicle PZKA_BankTruck_RRDoor {
 		part DoorRearRight
@@ -67,8 +67,8 @@ module Base
 			}
 		}
 		template! = PZKA_BankTruck_RRDoorWindow,
-		template! = PZKA_DoorRR,
-		template! = PZKA_DoorRR_Reg,
+		template! = VVA_DoorRR,
+		template! = VVA_DoorRR_Reg,
 	}
 	template vehicle PZKA_BankTruck_MRDoor_nr {
 		part DoorMiddleRight
@@ -79,8 +79,8 @@ module Base
 			}
 		}
 		template! = PZKA_BankTruck_MRDoorWindow,
-		template! = PZKA_DoorMR,
-		template! = PZKA_DoorMR_Reg,
+		template! = VVA_DoorMR,
+		template! = VVA_DoorMR_Reg,
 	}	
 	template vehicle PZKA_BankTruck_RRDoor_nr {
 		part DoorRearRight
@@ -91,7 +91,7 @@ module Base
 			}
 		}
 		template! = PZKA_BankTruck_RRDoorWindow,
-		template! = PZKA_DoorRR,
-		template! = PZKA_DoorRR_Reg,
+		template! = VVA_DoorRR,
+		template! = VVA_DoorRR_Reg,
 	}
 }

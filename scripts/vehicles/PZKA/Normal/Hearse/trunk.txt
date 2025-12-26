@@ -36,7 +36,6 @@ module Base
 			}
 		}
 		template! = PZKA_Hearse_RearWindow,
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Reg,
+		template! = VVA_TrunkDoorWindowVersion,
 	}	
 }

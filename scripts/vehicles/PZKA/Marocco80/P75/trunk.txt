@@ -25,7 +25,7 @@ module Base
 				file = PZKA_Vehicles_Phoenix75_Trunk,
 			}
 		}
-		template! = PZKA_TrunkDoorVersion,
+		template! = VVA_TrunkDoorVersion,
 	}
 	template vehicle pzka_Phoenix75_trunk_nr {
 		part TrunkDoor
@@ -35,6 +35,6 @@ module Base
 				file = PZKA_Vehicles_Phoenix75_Trunk_nr,
 			}
 		}
-		template! = PZKA_TrunkDoorVersion,
+		template! = VVA_TrunkDoorVersion,
 	}
 }

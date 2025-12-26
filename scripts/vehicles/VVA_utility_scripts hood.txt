@@ -1,6 +1,6 @@
 module Base
 {
-	template vehicle PZKA_Hood {
+	template vehicle VVA_Hood {
 		part EngineDoor
 		{
 			anim Close
@@ -29,7 +29,7 @@ module Base
 		}	
 	}	
 	
-	template vehicle PZKA_Hood_Slow {
+	template vehicle VVA_Hood_Slow {
 		part EngineDoor
 		{
 			anim Close
@@ -43,7 +43,7 @@ module Base
 			}
 		}
 	}
-	template vehicle PZKA_Hood_Reg {
+	template vehicle VVA_Hood_Reg {
 		part EngineDoor
 		{
 			anim Close
@@ -57,7 +57,7 @@ module Base
 			}
 		}
 	}
-	template vehicle PZKA_Hood_Fast {
+	template vehicle VVA_Hood_Fast {
 		part EngineDoor
 		{
 			anim Close

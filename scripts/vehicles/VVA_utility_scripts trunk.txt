@@ -1,7 +1,7 @@
 module Base
 {
-	template vehicle PZKA_DoorRear {
-		part DoorRear
+	template vehicle VVA_TrunkDoor {
+		part TrunkDoor
 		{
 			anim Close
 			{
@@ -29,8 +29,8 @@ module Base
 		}
 	}	
 	
-	template vehicle PZKA_DoorRear_Slow {
-		part DoorRear
+	template vehicle VVA_TrunkDoor_Slow {
+		part TrunkDoor
 		{
 			anim Close
 			{
@@ -43,8 +43,8 @@ module Base
 			}
 		}
 	}
-	template vehicle PZKA_DoorRear_Reg {
-		part DoorRear
+	template vehicle VVA_TrunkDoor_Reg {
+		part TrunkDoor
 		{
 			anim Close
 			{
@@ -57,8 +57,8 @@ module Base
 			}
 		}
 	}
-	template vehicle PZKA_DoorRear_Fast {
-		part DoorRear
+	template vehicle VVA_TrunkDoor_Fast {
+		part TrunkDoor
 		{
 			anim Close
 			{
@@ -70,5 +70,20 @@ module Base
 				rate = 2.0,
 			}
 		}
+	}
+	template vehicle PZKA_VariableTrunk {
+		part TrunkDoor
+        {
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.AdjustLightGeometryDoor,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+        }
 	}
 }
