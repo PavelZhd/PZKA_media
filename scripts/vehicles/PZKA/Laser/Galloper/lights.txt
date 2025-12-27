@@ -1,0 +1,84 @@
+module Base
+{
+	model PZKA_Vehicles_Galloper_LightFL15
+	{
+		mesh = vehicles/Laser/pzka_Galloper|Light_FrontLeft_Galloper15_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Galloper_LightFR15
+	{
+		mesh = vehicles/Laser/pzka_Galloper|Light_FrontRight_Galloper15_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Galloper_LightFL68
+	{
+		mesh = vehicles/Laser/pzka_Galloper|Light_FrontLeft_Galloper68_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Galloper_LightFR68
+	{
+		mesh = vehicles/Laser/pzka_Galloper|Light_FrontRight_Galloper68_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Galloper_LightRL
+	{
+		mesh = vehicles/Laser/pzka_Galloper|Light_Galloper_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Galloper_LightRR
+	{
+		mesh = vehicles/Laser/pzka_Galloper|Light_Galloper_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Galloper_Lights {
+		part HeadlightLeft 
+		{
+			model F350_15
+			{
+				file = PZKA_Vehicles_Galloper_LightFL15,
+			}
+			model F350_68
+			{
+				file = PZKA_Vehicles_Galloper_LightFL68,
+			}
+		}
+		part HeadlightRight 
+		{
+			model F350_15
+			{
+				file = PZKA_Vehicles_Galloper_LightFR15,
+			}
+			model F350_68
+			{
+				file = PZKA_Vehicles_Galloper_LightFR68,
+			}
+		}
+		template! = PZKA_VariableFrontLights,
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Galloper_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Galloper_LightRR,
+			}
+		}
+	}
+}

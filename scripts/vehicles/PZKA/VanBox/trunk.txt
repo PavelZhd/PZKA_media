@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_VanBox_Trunk
 	{
-		mesh = vehicles/pzka_VanBox|Trunk_BoxAmbulace_obj,
+		mesh = vehicles/pzka_VanBox|Trunk_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -11,7 +11,7 @@ module Base
 	}
 	model PZKA_Vehicles_VanBox_Trunk_nr
 	{
-		mesh = vehicles/pzka_VanBox|Trunk_BoxAmbulace_obj,
+		mesh = vehicles/pzka_VanBox|Trunk_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -21,7 +21,7 @@ module Base
 
 	model PZKA_Vehicles_VanBox_RearWindow
 	{
-		mesh = vehicles/pzka_VanBox|RearWindow_BoxAmbulance_obj,
+		mesh = vehicles/pzka_VanBox|RearWindow_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,

@@ -1,0 +1,14 @@
+module Base
+{
+	template vehicle PZKA_IntruderFill {
+		template! = PZKA_Intruder_FrontFill,
+		template! = PZKA_Laser_RearFill,
+		template! = PZKA_Intruder_Lights,		
+	}
+
+	template vehicle PZKA_IntruderFill_nr {
+		template! = PZKA_Intruder_FrontFill_nr,
+		template! = PZKA_Laser_RearFill_nr,
+		template! = PZKA_Intruder_Lights,		
+	}
+}

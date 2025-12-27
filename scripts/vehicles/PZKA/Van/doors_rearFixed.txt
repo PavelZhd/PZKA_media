@@ -110,57 +110,57 @@ module Base
 		template! = PZKA_Van_DoorML_model,
 		template! = PZKA_Van_WindowML_fixed_model,		
 		template! = PZKA_Van_DoorWindowML,
-		template! = PZKA_DoorML,
-		template! = PZKA_DoorML_Reg,
+		template! = VVA_DoorML,
+		template! = VVA_DoorML_Reg,
 	}
 	template vehicle PZKA_Van_Door_fixed_RL {
 		template! = PZKA_Van_DoorRL_model,
 		template! = PZKA_Van_WindowRL_fixed_model,		
 		template! = PZKA_Van_DoorWindowRL,
-		template! = PZKA_DoorRL,
-		template! = PZKA_DoorRL_Reg,
+		template! = VVA_DoorRL,
+		template! = VVA_DoorRL_Reg,
 	}
 	template vehicle PZKA_Van_Door_fixed_ML_nr {
 		template! = PZKA_Van_DoorML_model_nr,
 		template! = PZKA_Van_WindowML_fixed_model,		
 		template! = PZKA_Van_DoorWindowML,
-		template! = PZKA_DoorML,
-		template! = PZKA_DoorML_Reg,
+		template! = VVA_DoorML,
+		template! = VVA_DoorML_Reg,
 	}
 	template vehicle PZKA_Van_Door_fixed_RL_nr {
 		template! = PZKA_Van_DoorRL_model_nr,
 		template! = PZKA_Van_WindowRL_fixed_model,		
 		template! = PZKA_Van_DoorWindowRL,
-		template! = PZKA_DoorRL,
-		template! = PZKA_DoorRL_Reg,
+		template! = VVA_DoorRL,
+		template! = VVA_DoorRL_Reg,
 	}
 
 	template vehicle PZKA_Van_Door_fixed_MR {
 		template! = PZKA_Van_DoorMR_model,
 		template! = PZKA_Van_WindowMR_fixed_model,		
 		template! = PZKA_Van_DoorWindowMR,
-		template! = PZKA_DoorMR,
-		template! = PZKA_DoorMR_Reg,
+		template! = VVA_DoorMR,
+		template! = VVA_DoorMR_Reg,
 	}
 	template vehicle PZKA_Van_Door_fixed_RR {
 		template! = PZKA_Van_DoorRR_model,
 		template! = PZKA_Van_WindowRR_fixed_model,		
 		template! = PZKA_Van_DoorWindowRR,
-		template! = PZKA_DoorRR,
-		template! = PZKA_DoorRR_Reg,
+		template! = VVA_DoorRR,
+		template! = VVA_DoorRR_Reg,
 	}
 	template vehicle PZKA_Van_Door_fixed_MR_nr {
 		template! = PZKA_Van_DoorMR_model_nr,
 		template! = PZKA_Van_WindowMR_fixed_model,		
 		template! = PZKA_Van_DoorWindowMR,
-		template! = PZKA_DoorMR,
-		template! = PZKA_DoorMR_Reg,
+		template! = VVA_DoorMR,
+		template! = VVA_DoorMR_Reg,
 	}
 	template vehicle PZKA_Van_Door_fixed_RR_nr {
 		template! = PZKA_Van_DoorRR_model_nr,
 		template! = PZKA_Van_WindowRR_fixed_model,		
 		template! = PZKA_Van_DoorWindowRR,
-		template! = PZKA_DoorRR,
-		template! = PZKA_DoorRR_Reg,
+		template! = VVA_DoorRR,
+		template! = VVA_DoorRR_Reg,
 	}
 }

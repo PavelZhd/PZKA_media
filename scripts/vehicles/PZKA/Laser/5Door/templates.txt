@@ -1,0 +1,19 @@
+module Base
+{
+	template vehicle PZKA_Laser5D {
+		template! = PZKA_Laser5D_FrontDoors,
+		template! = PZKA_Laser5D_RearDoors,
+		template! = PZKA_Laser_Trunk,
+		template! = PZKA_Laser5D_RearWindowStatic,
+		template! = PZKA_Laser_Hood,
+		template! = PZKA_Laser_shared,
+	}
+	template vehicle PZKA_Laser5D_nr {
+		template! = PZKA_Laser5D_FrontDoors_nr,
+		template! = PZKA_Laser5D_RearDoors_nr,
+		template! = PZKA_Laser_Trunk_nr,
+		template! = PZKA_Laser5D_RearWindowStatic,
+		template! = PZKA_Laser_Hood_nr,
+		template! = PZKA_Laser_shared,
+	}
+}

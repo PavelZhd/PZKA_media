@@ -97,8 +97,8 @@ module Base
 				file = PZKA_Vehicles_CVan70_DoorRearLeft,
 			}
 		}
-		template! = PZKA_DoorML,
-		template! = PZKA_DoorML_Reg,
+		template! = VVA_DoorML,
+		template! = VVA_DoorML_Reg,
 
 		part DoorMiddleRight
 		{
@@ -107,8 +107,8 @@ module Base
 				file = PZKA_Vehicles_CVan70_DoorRearRight,
 			}
 		}
-		template! = PZKA_DoorMR,
-		template! = PZKA_DoorMR_Reg,
+		template! = VVA_DoorMR,
+		template! = VVA_DoorMR_Reg,
 		template! = PZKA_CVan70_MiddleDoorWindow,
 	}
 
@@ -120,8 +120,8 @@ module Base
 				file = PZKA_Vehicles_CVan70_DoorRearLeft_nr,
 			}
 		}
-		template! = PZKA_DoorRL,
-		template! = PZKA_DoorRL_Reg,
+		template! = VVA_DoorRL,
+		template! = VVA_DoorRL_Reg,
 		part DoorRearRight
 		{
 			model Default
@@ -129,8 +129,8 @@ module Base
 				file = PZKA_Vehicles_CVan70_DoorRearRight_nr,
 			}
 		}
-		template! = PZKA_DoorRR,
-		template! = PZKA_DoorRR_Reg,
+		template! = VVA_DoorRR,
+		template! = VVA_DoorRR_Reg,
 		template! = PZKA_CVan70_RearDoorWindow,
 	}	
 }

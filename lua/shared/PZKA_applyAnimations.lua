@@ -437,7 +437,7 @@ PZKA.ApplyTemplateToVehicle("pzkFVan6Seats","VVA_Vehicles_FVan_Seats",{"pzka_6Se
 
 ---- VanBox
 
-PZKA.ApplyTemplateToVehicle("pzkVanBoxAmbulance","PZKA_Vehicles_VanBox_nr",{"pzka_2SeatsF","PZKA_VanBox_nr","pzka_t_lighbar","PZKA_Van_Lightbar"})
+PZKA.ApplyTemplateToVehicle("pzkVanBoxAmbulance","PZKA_Vehicles_VanBox_nr",{"pzka_2SeatsF","PZKA_VanBox_nr","pzka_t_lighbar","PZKA_VanBox_Lightbar"})
 PZKA.CopyTemplateToVehicle("pzkVanBoxFiretruck","pzkVanBoxAmbulance")
 PZKA.CopyTemplateToVehicle("pzkVanBoxSwat","pzkVanBoxAmbulance")
 
@@ -453,6 +453,38 @@ PZKA.ApplyTemplateToVehicle("pzkMastersonLady","PZKA_Vehicles_Lady",{"pzka_2Seat
 
 -- LadyZ
 
+
+-- Laser
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierLaserModern","PZKA_Vehicles_Laser_2D",{"pzka_4SeatsR","PZKA_Laser","PZKA_LaserFill"})
+PZKA.ApplyTemplateToVehicle("pzkChevalierLaserCUCV","PZKA_Vehicles_Laser_2D_nr",{"pzka_4SeatsR","PZKA_Laser_nr","PZKA_LaserFill_nr"})
+PZKA.CopyTemplateToVehicle("pzkChevalierLaserFire","pzkChevalierLaserCUCV",{"pzka_t_lighbar","PZKA_Laser_Lightbar"})
+PZKA.CopyTemplateToVehicle("pzkChevalierLaserRanger","pzkChevalierLaserFire")
+PZKA.CopyTemplateToVehicle("pzkChevalierLaserLSU","pzkChevalierLaserFire")
+PZKA.CopyTemplateToVehicle("pzkChevalierLaserMall","pzkChevalierLaserLSU")
+PZKA.CopyTemplateToVehicle("pzkChevalierLaserPoliceBulletinSheriff","pzkChevalierLaserCUCV",{"pzka_sle_lighbar","PZKA_Laser_Lightbar"})
+PZKA.CopyTemplateToVehicle("pzkChevalierLaserPoliceKST","pzkChevalierLaserPoliceBulletinSheriff")
+PZKA.CopyTemplateToVehicle("pzkChevalierLaserPoliceLouisvilleCounty","pzkChevalierLaserPoliceBulletinSheriff")
+PZKA.CopyTemplateToVehicle("pzkChevalierLaserPoliceMuldraughPolice","pzkChevalierLaserPoliceBulletinSheriff")
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierLaserOffroader","PZKA_Vehicles_Laser_5D",{"pzka_4SeatsR","PZKA_Laser5D","PZKA_LaserFill"})
+
+---- Galloper
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinGalloper","PZKA_Vehicles_Laser_2D",{"pzka_4SeatsR","PZKA_Laser","PZKA_GalloperFill"})
+PZKA.ApplyTemplateToVehicle("pzkFranklinGalloperCUCV","PZKA_Vehicles_Laser_2D_nr",{"pzka_4SeatsR","PZKA_Laser_nr","PZKA_GalloperFill_nr"})
+PZKA.CopyTemplateToVehicle("pzkFranklinGalloperFire","pzkFranklinGalloperCUCV",{"pzka_t_lighbar","PZKA_Laser_Lightbar"})
+PZKA.CopyTemplateToVehicle("pzkFranklinGalloperRanger","pzkFranklinGalloperFire")
+PZKA.CopyTemplateToVehicle("pzkFranklinGalloperLSU","pzkFranklinGalloperFire")
+PZKA.CopyTemplateToVehicle("pzkFranklinGalloperMall","pzkFranklinGalloperFire")
+PZKA.CopyTemplateToVehicle("pzkFranklinGalloperPoliceKST","pzkFranklinGalloperCUCV",{"pzka_sle_lighbar","PZKA_Laser_Lightbar"})
+PZKA.CopyTemplateToVehicle("pzkFranklinGalloperPoliceLouisvilleCounty","pzkFranklinGalloperPoliceKST")
+PZKA.CopyTemplateToVehicle("pzkFranklinGalloperPoliceMuldraughPolice","pzkFranklinGalloperPoliceKST")
+PZKA.CopyTemplateToVehicle("pzkFranklinGalloperPoliceBulletinSheriff","pzkFranklinGalloperPoliceKST")
+
+---- Intruder
+
+PZKA.ApplyTemplateToVehicle("pzkDashIntruder150short","PZKA_Vehicles_Laser_2D",{"pzka_4SeatsR","PZKA_Laser","PZKA_IntruderFill"})
 
 --- OLD FRAMEWORK CODE
 
@@ -492,38 +524,9 @@ PZKA.CloneAnimationProfile("pzkStepVanPierogi","pzkStepVanMilk","PZKA_Vehicle_St
 PZKA.CreateAnimationProfile("pzkCarMuscle", "PZKA_Vehicles_Muscle_a","PZKA_Muscle_lights","PZKA_Muscle_animatedDoors",{"FLW","FRW"},"VVA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkCarMuscleCabrio", "PZKA_Vehicles_MuscleCabrio_a","PZKA_Muscle_lights","PZKA_MuscleCabrio_animatedDoors",{"FL","FR"},"VVA_TrunkDoorVersion")
 
-PZKA.CreateAnimationProfile("pzkChevalierLaserModern","PZKA_Vehicles_Galloper_2D_Base_a","PZKA_Laser_Lights","PZKA_Laser",{"FLW","FRW"},"VVA_TrunkDoorVersion",{"FL","FR","RL","RR"})
-PZKA.CloneAnimationProfile("pzkChevalierLaserFire","pzkChevalierLaserModern","PZKA_Vehicles_Galloper_2D_Base_a",false,"PZKA_Laser_Lightbar")
-PZKA.CloneAnimationProfile("pzkChevalierLaserRanger","pzkChevalierLaserFire")
-PZKA.CloneAnimationProfile("pzkChevalierLaserLSU","pzkChevalierLaserFire")
-PZKA.CloneAnimationProfile("pzkChevalierLaserMall","pzkChevalierLaserLSU")
-if SLE then
-    PZKA.CloneAnimationProfile("pzkChevalierLaserPoliceBulletinSheriff","pzkChevalierLaserModern","PZKA_Vehicles_Galloper_2D_Base_a",false,"PZKA_Laser_nr")
-else
-    PZKA.CloneAnimationProfile("pzkChevalierLaserPoliceBulletinSheriff","pzkChevalierLaserFire")
-end
-PZKA.CloneAnimationProfile("pzkChevalierLaserPoliceKST","pzkChevalierLaserPoliceBulletinSheriff")
-PZKA.CloneAnimationProfile("pzkChevalierLaserPoliceLouisvilleCounty","pzkChevalierLaserPoliceBulletinSheriff")
-PZKA.CloneAnimationProfile("pzkChevalierLaserPoliceMuldraughPolice","pzkChevalierLaserPoliceBulletinSheriff")
-PZKA.CloneAnimationProfile("pzkChevalierLaserCUCV","pzkChevalierLaserFire","PZKA_Vehicles_Galloper_2D_Base_a",false,"PZKA_Laser_nr")
 
-PZKA.CloneAnimationProfile("pzkFranklinGalloper","pzkChevalierLaserModern","PZKA_Vehicles_Galloper_2D_Base_a","PZKA_Galloper_Lights","PZKA_Galloper")
-PZKA.CloneAnimationProfile("pzkFranklinGalloperFire","pzkFranklinGalloper","PZKA_Vehicles_Galloper_2D_Base_a",false,"PZKA_Galloper_Lightbar")
-PZKA.CloneAnimationProfile("pzkFranklinGalloperRanger","pzkFranklinGalloperFire")
-PZKA.CloneAnimationProfile("pzkFranklinGalloperLSU","pzkFranklinGalloperFire")
-PZKA.CloneAnimationProfile("pzkFranklinGalloperMall","pzkFranklinGalloperFire")
-if SLE then
-    PZKA.CloneAnimationProfile("pzkFranklinGalloperPoliceKST","pzkFranklinGalloper","PZKA_Vehicles_Galloper_2D_Base_a",false,"PZKA_Galloper_nr")
-else    
-    PZKA.CloneAnimationProfile("pzkFranklinGalloperPoliceKST","pzkFranklinGalloperFire")
-end
-PZKA.CloneAnimationProfile("pzkFranklinGalloperPoliceLouisvilleCounty","pzkFranklinGalloperPoliceKST")
-PZKA.CloneAnimationProfile("pzkFranklinGalloperPoliceMuldraughPolice","pzkFranklinGalloperPoliceKST")
-PZKA.CloneAnimationProfile("pzkFranklinGalloperPoliceBulletinSheriff","pzkFranklinGalloperPoliceKST")
 
-PZKA.CreateAnimationProfile("pzkChevalierLaserOffroader","PZKA_Vehicles_Galloper_5D_Base_a","PZKA_Laser_Lights","PZKA_Laser5D",{"FLW","FRW","RLW","RRW"},"VVA_TrunkDoorVersion")
 
-PZKA.CloneAnimationProfile("pzkDashIntruder150short","pzkChevalierLaserModern","PZKA_Vehicles_Galloper_2D_Base_a","PZKA_IntruderShort_Lights","PZKA_IntruderShort")
 
 
 

@@ -1,0 +1,89 @@
+module Base
+{
+    model PZKA_Vehicles_Laser5D_DoorRearLeft
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Door5D_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_DoorRearRight
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Door5D_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+    model PZKA_Vehicles_Laser5D_DoorRearLeft_nr
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Door5D_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_DoorRearRight_nr
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Door5D_RearRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_WindowRearLeft
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Window5D_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_WindowRearRight
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Window5D_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	template vehicle PZKA_Laser5D_RearWindows {
+		part WindowRearLeft
+    	{	
+			parent = DoorRearLeft,
+			model Default
+        	{
+            	file = PZKA_Vehicles_Laser5D_WindowRearLeft,
+        	}
+        }
+		part WindowRearRight
+        {	
+			parent = DoorRearRight,
+			model Default
+    		{
+    			file = PZKA_Vehicles_Laser5D_WindowRearRight,
+    		}
+    	}
+	}
+	template vehicle PZKA_Laser5D_RearDoors {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser5D_DoorRearLeft,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser5D_DoorRearRight,
+			}
+		}
+		template! = PZKA_Laser5D_RearWindows,
+		template! = VVA_DoorWindowRearLeft,
+		template! = VVA_DoorWindowRearRight,
+	}
+}

@@ -2,14 +2,14 @@ module Base
 {
 	model PZKA_Vehicles_VanBox_LightRL_Shutter
 	{
-		mesh = vehicles/pzka_VanBox|Light_Box_RearLeft_obj,
+		mesh = vehicles/pzka_VanBoxShutter|Light_RearLeft_Shutter_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,
 	}	
 	model PZKA_Vehicles_VanBox_LightRR_Shutter
 	{
-		mesh = vehicles/pzka_VanBox|Light_Box_RearRight_obj,
+		mesh = vehicles/pzka_VanBoxShutter|Light_RearRight_Shutter_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,

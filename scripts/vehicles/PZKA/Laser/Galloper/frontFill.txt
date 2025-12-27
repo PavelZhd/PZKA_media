@@ -1,0 +1,57 @@
+module Base
+{
+	model PZKA_Vehicles_Laser_FrontFill_Galloper_15
+	{
+		mesh = vehicles/Laser/pzka_Galloper|FrontFill_Galloper_15,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_Laser_FrontFill_Galloper_68
+	{
+		mesh = vehicles/Laser/pzka_Galloper|FrontFill_Galloper_68,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Laser_FrontFill_Galloper_15_nr
+	{
+		mesh = vehicles/Laser/pzka_Galloper|FrontFill_Galloper_15,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_Laser_FrontFill_Galloper_68_nr
+	{
+		mesh = vehicles/Laser/pzka_Galloper|FrontFill_Galloper_68,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Galloper_FrontFill {
+        template! = PZKA_Frontfill,
+        part Frontfill
+        {
+            model F350_15 {
+                file = PZKA_Vehicles_Laser_FrontFill_Galloper_15,
+            }
+            model F350_68 {
+                file = PZKA_Vehicles_Laser_FrontFill_Galloper_68,
+            }
+        }
+		template! = PZKA_VariableFrontFill,
+    }
+	template vehicle PZKA_Galloper_FrontFill_nr {
+        template! = PZKA_Frontfill,
+        part Frontfill
+        {
+            model F350_15 {
+                file = PZKA_Vehicles_Laser_FrontFill_Galloper_15_nr,
+            }
+            model F350_68 {
+                file = PZKA_Vehicles_Laser_FrontFill_Galloper_68_nr,
+            }
+        }
+		template! = PZKA_VariableFrontFill,
+    }
+}

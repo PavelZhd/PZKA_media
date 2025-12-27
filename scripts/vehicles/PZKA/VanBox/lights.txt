@@ -2,14 +2,14 @@ module Base
 {
 	model PZKA_Vehicles_VanBox_LightFL
 	{
-		mesh = vehicles/pzka_VanBox|Light_Box_FrontLeft_obj,
+		mesh = vehicles/pzka_VanBox|Light_FrontLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,
 	}	
 	model PZKA_Vehicles_VanBox_LightFR
 	{
-		mesh = vehicles/pzka_VanBox|Light_Box_FrontRight_obj,
+		mesh = vehicles/pzka_VanBox|Light_FrontRight_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,
@@ -33,14 +33,14 @@ module Base
 
     model PZKA_Vehicles_VanBox_LightRL
 	{
-		mesh = vehicles/pzka_VanBox|Light_BoxAmb_RearLeft_obj,
+		mesh = vehicles/pzka_VanBox|Light_RearLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,
 	}	
 	model PZKA_Vehicles_VanBox_LightRR
 	{
-		mesh = vehicles/pzka_VanBox|Light_BoxAmb_RearRight_obj,
+		mesh = vehicles/pzka_VanBox|Light_RearRight_obj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,

@@ -1,0 +1,132 @@
+module Base
+{
+	model PZKA_Vehicles_Laser_LightFL12
+	{
+		mesh = vehicles/Laser/pzka_Laser|Light_FrontLeft_Laser12_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_LightFR12
+	{
+		mesh = vehicles/Laser/pzka_Laser|Light_FrontRight_Laser12_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Laser_LightFL34
+	{
+		mesh = vehicles/Laser/pzka_Laser|Light_FrontLeft_Laser34_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_LightFR34
+	{
+		mesh = vehicles/Laser/pzka_Laser|Light_FrontRight_Laser34_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Laser_LightFL56
+	{
+		mesh = vehicles/Laser/pzka_Laser|Light_FrontLeft_Laser56_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_LightFR56
+	{
+		mesh = vehicles/Laser/pzka_Laser|Light_FrontRight_Laser56_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Laser_LightFL78
+	{
+		mesh = vehicles/Laser/pzka_Laser|Light_FrontLeft_Laser78_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_LightFR78
+	{
+		mesh = vehicles/Laser/pzka_Laser|Light_FrontRight_Laser78_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Laser_LightRL
+	{
+		mesh = vehicles/Laser/pzka_Laser|Light_RearLeft_Laser_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Laser_LightRR
+	{
+		mesh = vehicles/Laser/pzka_Laser|Light_RearRight_Laser_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Laser_Lights {
+		part HeadlightLeft 
+		{
+			model Province_12
+			{
+				file = PZKA_Vehicles_Laser_LightFL12,
+			}
+			model Province_34
+			{
+				file = PZKA_Vehicles_Laser_LightFL34,
+			}
+			model Province_56
+			{
+				file = PZKA_Vehicles_Laser_LightFL56,
+			}
+			model Province_78
+			{
+				file = PZKA_Vehicles_Laser_LightFL78,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Province_12
+			{
+				file = PZKA_Vehicles_Laser_LightFR12,
+			}
+			model Province_34
+			{
+				file = PZKA_Vehicles_Laser_LightFR34,
+			}
+			model Province_56
+			{
+				file = PZKA_Vehicles_Laser_LightFR56,
+			}
+			model Province_78
+			{
+				file = PZKA_Vehicles_Laser_LightFR78,
+			}
+		}
+		template! = PZKA_VariableFrontLights,
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser_LightRR,
+			}
+		}
+	}
+}

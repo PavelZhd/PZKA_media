@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicles_Laser5D_RearWindow_static
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|RearWindow5D_sobj,
+		static = TRUE,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Laser5D_RearWindowStatic {
+		part WindshieldRear
+		{
+			model Static
+			{
+				file = PZKA_Vehicles_Laser5D_RearWindow_static,
+			}
+		}
+	}
+}

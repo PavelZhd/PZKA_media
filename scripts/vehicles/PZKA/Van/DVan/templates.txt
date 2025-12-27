@@ -1,7 +1,7 @@
 module Base
 {
 	template vehicle PZKA_DVan_Common {
-		template! = PZKA_VVan_Common0
+		template! = PZKA_VVan_Common0,
 		template! = PZKA_CVan_InteriorFill,
 	}
 

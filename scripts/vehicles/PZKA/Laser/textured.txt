@@ -1,0 +1,121 @@
+module Base
+{
+	model PZKA_Vehicles_Laser_internals
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Vehicles_Interior,
+		texture = Vehicles/vehicle_pzkFranklin350Fshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Laser_SeatFL
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_pzkFranklin350Fshell,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_SeatFR
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_pzkFranklin350Fshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Laser_SeatRL
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_pzkFranklin350Fshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Laser_SeatRR
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_pzkFranklin350Fshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Laser_SeatsFront {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser_SeatRR,
+			}
+		}
+
+		passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.32 -0.25 0.0,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+		passenger FrontRight
+		{
+			position inside
+			{
+				offset = -0.32 -0.25 0.0,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+		passenger RearLeft
+		{
+			position inside
+			{
+				offset = 0.28 -0.25 -0.72,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+		passenger RearRight
+		{
+			position inside
+			{
+				offset = -0.28 -0.25 -0.72,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+	}
+	template vehicle PZKA_Laser_Interior {
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.2564 0.0049 0.8498,
+			}
+		}
+		template! = VVA_Interior,
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Laser_internals,
+			}
+		}
+	}
+}

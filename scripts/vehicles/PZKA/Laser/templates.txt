@@ -1,0 +1,35 @@
+module Base
+{
+	template vehicle PZKA_Laser_shared {
+		template! = PZKA_Laser_Windshield,
+		template! = PZKA_Laser_SeatsFront,
+		template! = PZKA_Laser_Interior,		
+	}
+
+	template vehicle PZKA_Laser {
+		template! = PZKA_Laser_FrontDoors,
+		template! = PZKA_Laser_RearWindows,
+		template! = PZKA_Laser_Trunk,
+		template! = PZKA_Laser_Hood,
+		template! = PZKA_Laser_shared,
+	}
+	template vehicle PZKA_LaserFill {
+		template! = PZKA_Laser_FrontFill,
+		template! = PZKA_Laser_RearFill,
+		template! = PZKA_Laser_Lights,		
+	}
+
+	template vehicle PZKA_Laser_nr {
+		template! = PZKA_Laser_FrontDoors_nr,
+		template! = PZKA_Laser_RearWindows,
+		template! = PZKA_Laser_Trunk_nr,
+		template! = PZKA_Laser_Hood_nr,
+		template! = PZKA_Laser_shared,
+	}
+
+	template vehicle PZKA_LaserFill_nr {
+		template! = PZKA_Laser_FrontFill_nr,
+		template! = PZKA_Laser_RearFill_nr,
+		template! = PZKA_Laser_Lights,		
+	}
+}

@@ -42,7 +42,7 @@ module Base
 		}
 	}
 	template vehicle VVA_Sport_Engine {
-		part Inreior 
+		part Interior 
 		{
 			model Default 
 			{

@@ -1,0 +1,84 @@
+module Base
+{
+	model PZKA_Vehicles_Intruder_FrontFill_1
+	{
+		mesh = vehicles/Laser/pzka_Intruder|FrontFill_Intruder1,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Intruder_FrontFill_6
+	{
+		mesh = vehicles/Laser/pzka_Intruder|FrontFill_Intruder6,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Intruder_FrontFill_11
+	{
+		mesh = vehicles/Laser/pzka_Intruder|FrontFill_Intruder11,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Intruder_FrontFill_1_nr
+	{
+		mesh = vehicles/Laser/pzka_Intruder|FrontFill_Intruder1,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Intruder_FrontFill_6_nr
+	{
+		mesh = vehicles/Laser/pzka_Intruder|FrontFill_Intruder6,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Intruder_FrontFill_11_nr
+	{
+		mesh = vehicles/Laser/pzka_Intruder|FrontFill_Intruder11,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Intruder_FrontFill {
+        template! = PZKA_Frontfill,
+        part Frontfill
+        {
+			model Intruder_1
+			{
+				file = PZKA_Vehicles_Intruder_FrontFill_1,
+			}
+			model Intruder_6
+			{
+				file = PZKA_Vehicles_Intruder_FrontFill_6,
+			}
+			model Intruder_11
+			{
+				file = PZKA_Vehicles_Intruder_FrontFill_11,
+			}
+        }
+		template! = PZKA_VariableFrontFill,
+    }
+	template vehicle PZKA_Intruder_FrontFill_nr {
+        template! = PZKA_Frontfill,
+        part Frontfill
+        {
+			model Intruder_1
+			{
+				file = PZKA_Vehicles_Intruder_FrontFill_1_nr,
+			}
+			model Intruder_6
+			{
+				file = PZKA_Vehicles_Intruder_FrontFill_6_nr,
+			}
+			model Intruder_11
+			{
+				file = PZKA_Vehicles_Intruder_FrontFill_11_nr,
+			}
+        }
+		template! = PZKA_VariableFrontFill,
+    }
+}

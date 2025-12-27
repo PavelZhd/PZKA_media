@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_VanBox_Trunk_Shutter
 	{
-		mesh = vehicles/pzka_VanBox|Trunk_Box_obj,
+		mesh = vehicles/pzka_VanBoxShutter|Trunk_Shutter_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -22,7 +22,7 @@ module Base
 	}
 	model PZKA_Vehicles_VanBox_Trunk_Shutter_nr
 	{
-		mesh = vehicles/pzka_VanBox|Trunk_Box_obj,
+		mesh = vehicles/pzka_VanBoxShutter|Trunk_Shutter_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,

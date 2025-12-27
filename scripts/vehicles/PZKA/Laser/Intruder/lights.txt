@@ -1,0 +1,96 @@
+module Base
+{
+	model PZKA_Vehicles_Intruder_LightFL_1
+	{
+		mesh = vehicles/Laser/pzka_Intruder|Light_FrontLeft_Intruder1_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Intruder_LightFR_1
+	{
+		mesh = vehicles/Laser/pzka_Intruder|Light_FrontRight_Intruder1_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Intruder_LightFL_6
+	{
+		mesh = vehicles/Laser/pzka_Intruder|Light_FrontLeft_Intruder6_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Intruder_LightFR_6
+	{
+		mesh = vehicles/Laser/pzka_Intruder|Light_FrontRight_Intruder6_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Intruder_LightFL_11
+	{
+		mesh = vehicles/Laser/pzka_Intruder|Light_FrontLeft_Intruder11_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Intruder_LightFR_11
+	{
+		mesh = vehicles/Laser/pzka_Intruder|Light_FrontRight_Intruder11_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Intruder_Lights {
+		part HeadlightLeft 
+		{
+			model Intruder_1
+			{
+				file = PZKA_Vehicles_Intruder_LightFL_1,
+			}
+			model Intruder_6
+			{
+				file = PZKA_Vehicles_Intruder_LightFL_6,
+			}
+			model Intruder_11
+			{
+				file = PZKA_Vehicles_Intruder_LightFL_11,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Intruder_1
+			{
+				file = PZKA_Vehicles_Intruder_LightFR_1,
+			}
+			model Intruder_6
+			{
+				file = PZKA_Vehicles_Intruder_LightFR_6,
+			}
+			model Intruder_11
+			{
+				file = PZKA_Vehicles_Intruder_LightFR_11,
+			}
+		}
+		template! = PZKA_VariableFrontLights,
+		
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser_LightRR,
+			}
+		}
+	}
+}
