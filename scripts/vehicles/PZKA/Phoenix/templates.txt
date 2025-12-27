@@ -1,22 +1,7 @@
 module Base
 {
 	template vehicle PZKA_Phoenix_shared {
-		part WindowFrontLeft
-        {
-			parent = DoorFrontLeft,
-			model Default
-            {
-            	file = PZKA_Vehicles_Phoenix_WindowFrontLeft,
-            }           		
-        }
-		part WindowFrontRight
-    	{	
-        	parent = DoorFrontRight,
-			model Default
-            {
-                file = PZKA_Vehicles_Phoenix_WindowFrontRight,
-            }           		
-	    }		
+				
 		
 		part Windshield
 		{

@@ -20,5 +20,6 @@ module Base
 		texture = Vehicles/Vehicle_pzkDashPhoenixshell,
 		static = TRUE,
 		scale = 0.01,
-	}	
+	}
+	
 }

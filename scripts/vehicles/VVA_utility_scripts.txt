@@ -92,6 +92,10 @@ module Base
 		template! = VVA_TrunkDoor,
 		template! = VVA_TrunkDoor_Reg,
 	}
+	template vehicle VVA_TrunkDoorLightsVersion {
+		template! = VVA_TrunkDoor,
+		template! = VVA_TrunkDoor_Slow,
+	}
 	
 	
 	template vehicle VVA_ATA2AirScoopHoodFix
