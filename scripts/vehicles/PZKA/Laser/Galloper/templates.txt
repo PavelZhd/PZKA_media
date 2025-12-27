@@ -1,0 +1,14 @@
+module Base
+{
+	
+	template vehicle PZKA_GalloperFill {
+		template! = PZKA_Galloper_FrontFill,
+		template! = PZKA_Galloper_RearFill,
+		template! = PZKA_Galloper_Lights,		
+	}	
+	template vehicle PZKA_GalloperFill_nr {
+		template! = PZKA_Galloper_FrontFill_nr,
+		template! = PZKA_Galloper_RearFill_nr,
+		template! = PZKA_Galloper_Lights,		
+	}
+}

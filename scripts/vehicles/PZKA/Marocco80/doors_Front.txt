@@ -177,16 +177,16 @@ module Base
 
 	template vehicle pzka_Marocco80_FrontDoors {
 		template! = pzka_Marocco80_FrontDoors_models,
-		template! = PZKA_DoorsWindowFront,
+		template! = VVA_DoorsWindowFront,
 	}
 	template vehicle pzka_Marocco80_FrontDoors_sport {
 		template! = pzka_Marocco80_FrontDoors_sport_models,
-		template! = PZKA_DoorsWindowFront,
+		template! = VVA_DoorsWindowFront,
 	}
 	template vehicle pzka_Marocco80_FrontDoors_variable {
 		template! = pzka_Marocco80_FrontDoors_models,
 		template! = pzka_Marocco80_FrontDoors_sport_models,
-		template! = PZKA_DoorsWindowFront,
+		template! = VVA_DoorsWindowFront,
 		template! = PZKA_VariableDoorF,
 		template! = PZKA_VariableWindowsF,
 	}
@@ -208,7 +208,7 @@ module Base
 			}
 		}
 		template! = pzka_Marocco80_FrontDoorWindows,
-		template! = PZKA_DoorsWindowFront,
+		template! = VVA_DoorsWindowFront,
 	}
 
 	template vehicle pzka_Marocco80_FrontDoors_sport_models_nr {
@@ -231,16 +231,16 @@ module Base
 
 	template vehicle pzka_Marocco80_FrontDoors_nr{
 		template! = pzka_Marocco80_FrontDoors_models_nr,
-		template! = PZKA_DoorsWindowFront,
+		template! = VVA_DoorsWindowFront,
 	}
 	template vehicle pzka_Marocco80_FrontDoors_sport_nr{
 		template! = pzka_Marocco80_FrontDoors_sport_models_nr,
-		template! = PZKA_DoorsWindowFront,
+		template! = VVA_DoorsWindowFront,
 	}
 	template vehicle pzka_Marocco80_FrontDoors_variable_nr{
 		template! = pzka_Marocco80_FrontDoors_models_nr,
 		template! = pzka_Marocco80_FrontDoors_sport_models_nr,
-		template! = PZKA_DoorsWindowFront,		
+		template! = VVA_DoorsWindowFront,		
 		template! = PZKA_VariableDoorF,
 		template! = PZKA_VariableWindowsF,
 	}

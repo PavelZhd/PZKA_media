@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_VanBox_Windshield
 	{
-		mesh = vehicles/pzka_VanBox|Windshield_Box_obj,
+		mesh = vehicles/pzka_VanBox|Windshield_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}

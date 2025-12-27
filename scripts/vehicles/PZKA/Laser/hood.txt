@@ -1,38 +1,37 @@
 module Base
 {
-	model PZKA_Vehicles_VanBox_Hood
+    model PZKA_Vehicles_Laser_Hood
 	{
-		mesh = vehicles/pzka_VanBox|Hood_obj,
+		mesh = vehicles/Laser/pzka_Laser_Shared|Hood_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = HoodBone 1.0,
 	}
-	model PZKA_Vehicles_VanBox_Hood_nr
+	model PZKA_Vehicles_Laser_Hood_nr
 	{
-		mesh = vehicles/pzka_VanBox|Hood_obj,
+		mesh = vehicles/Laser/pzka_Laser_Shared|Hood_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = HoodBone 1.0,
 	}
-
-	template vehicle PZKA_VanBox_Hood {
+	template vehicle PZKA_Laser_Hood {
 		part EngineDoor
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_VanBox_Hood,
+				file = PZKA_Vehicles_Laser_Hood,
 			}
 		}
 		template! = VVA_EngineDoor,
 	}
-	template vehicle PZKA_VanBox_Hood_nr {
+	template vehicle PZKA_Laser_Hood_nr {
 		part EngineDoor
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_VanBox_Hood_nr,
+				file = PZKA_Vehicles_Laser_Hood_nr,
 			}
 		}
 		template! = VVA_EngineDoor,

@@ -41,7 +41,7 @@ module Base
 				file = PZKA_Vehicles_SportCabrio_DoorFrontLeft,
 			}
 		}
-		template! = VVA_DoorFrontLeft
+		template! = VVA_DoorFrontLeft,
 
 		part DoorFrontRight
 		{
@@ -50,7 +50,7 @@ module Base
 				file = PZKA_Vehicles_SportCabrio_DoorFrontRight,
 			}
 		}
-		template! = VVA_DoorFrontRight
+		template! = VVA_DoorFrontRight,
 	}
 	template vehicle PZKA_SportCabrio_FrontDoors_nr {
 		part DoorFrontLeft
@@ -60,7 +60,7 @@ module Base
 				file = PZKA_Vehicles_SportCabrio_DoorFrontLeft_nr,
 			}
 		}
-		template! = VVA_DoorFrontLeft
+		template! = VVA_DoorFrontLeft,
 
 		part DoorFrontRight
 		{
@@ -69,6 +69,6 @@ module Base
 				file = PZKA_Vehicles_SportCabrio_DoorFrontRight_nr,
 			}
 		}
-		template! = VVA_DoorFrontRight
+		template! = VVA_DoorFrontRight,
 	}
 }

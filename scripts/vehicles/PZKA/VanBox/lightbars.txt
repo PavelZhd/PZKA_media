@@ -1,0 +1,19 @@
+module Base
+{	
+	model PZKA_Vehicles_VanBox_Lightbar
+	{
+		mesh = vehicles/pzka_VanBox|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,		
+	}
+
+	template vehicle PZKA_VanBox_Lightbar {
+        part ATA2RoofLightbar
+		{
+			model Normal
+			{
+				file = PZKA_Vehicles_VanBox_Lightbar,
+			}
+		}
+    }
+}

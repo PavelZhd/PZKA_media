@@ -1,0 +1,63 @@
+module Base
+{
+    model PZKA_Vehicles_Laser_RearWindow
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkUpperBone 1.0,
+	}
+	model PZKA_Vehicles_Laser_Trunk
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkUpperBone 1.0,
+		boneWeight = TrunkLowerBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	model PZKA_Vehicles_Laser_Trunk_nr
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkUpperBone 1.0,
+		boneWeight = TrunkLowerBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	template vehicle PZKA_Laser_RearWindow {
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Laser_RearWindow,
+			}
+		}
+	}
+	template vehicle PZKA_Laser_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser_Trunk,
+			}
+		}
+		template! = PZKA_Laser_RearWindow,
+		template! = VVA_TrunkDoorWindowVersion,
+	}
+	template vehicle PZKA_Laser_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser_Trunk_nr,
+			}
+		}
+		template! = PZKA_Laser_RearWindow,
+		template! = VVA_TrunkDoorWindowVersion,
+	}
+}

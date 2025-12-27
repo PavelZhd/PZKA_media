@@ -1,0 +1,111 @@
+module Base
+{
+    
+	model PZKA_Vehicles_Laser5D_WindowFrontLeft
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Window5D_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_WindowFrontRight
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Window5D_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+
+	model PZKA_Vehicles_Laser5D_DoorFrontLeft
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Door5D_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_DoorFrontRight
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Door5D_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_DoorFrontLeft_nr
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Door5D_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Laser5D_DoorFrontRight_nr
+	{
+		mesh = vehicles/Laser/pzka_Laser_Shared|Door5D_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	template vehicle PZKA_Laser5D_FrontWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+        	{
+        		file = PZKA_Vehicles_Laser5D_WindowFrontLeft,
+        	}            		
+        }
+		part WindowFrontRight
+    	{	
+    		parent = DoorFrontRight,
+			model Default
+    		{
+        		file = PZKA_Vehicles_Laser5D_WindowFrontRight,
+    		}
+	   	}
+	}
+	template vehicle PZKA_Laser5D_FrontDoors {
+		
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser5D_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser5D_DoorFrontRight,
+			}
+		}
+		template! = PZKA_Laser5D_FrontWindows,
+		template! = VVA_DoorsWindowFront,
+	}
+	template vehicle PZKA_Laser5D_FrontDoors_nr {
+		
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser5D_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Laser5D_DoorFrontRight_nr,
+			}
+		}
+		template! = PZKA_Laser5D_FrontWindows,
+		template! = VVA_DoorsWindowFront,
+	}
+}

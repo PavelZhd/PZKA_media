@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_Galloper_RearFill
+	{
+		mesh = vehicles/Laser/pzka_Galloper|RearFill_Galloper,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Galloper_RearFill_nr
+	{
+		mesh = vehicles/Laser/pzka_Galloper|RearFill_Galloper,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Galloper_RearFill {
+		template! = PZKA_Rearfill,
+        part Frontfill
+        {
+			model Laser
+			{
+				file = PZKA_Vehicles_Galloper_RearFill,
+			}
+        }
+	}
+	template vehicle PZKA_Galloper_RearFill_nr {
+		template! = PZKA_Rearfill,
+        part Frontfill
+        {
+			model Laser
+			{
+				file = PZKA_Vehicles_Galloper_RearFill_nr,
+			}
+        }
+	}
+}

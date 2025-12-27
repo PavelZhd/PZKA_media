@@ -1,0 +1,106 @@
+module Base
+{
+	model PZKA_Vehicles_Laser_FrontFill_Laser12
+	{
+		mesh = vehicles/Laser/pzka_Laser|FrontFill_Laser12,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_FrontFill_Laser34
+	{
+		mesh = vehicles/Laser/pzka_Laser|FrontFill_Laser34,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_FrontFill_Laser56
+	{
+		mesh = vehicles/Laser/pzka_Laser|FrontFill_Laser56,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_FrontFill_Laser78
+	{
+		mesh = vehicles/Laser/pzka_Laser|FrontFill_Laser78,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Laser_FrontFill_Laser12_nr
+	{
+		mesh = vehicles/Laser/pzka_Laser|FrontFill_Laser12,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_FrontFill_Laser34_nr
+	{
+		mesh = vehicles/Laser/pzka_Laser|FrontFill_Laser34,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_FrontFill_Laser56_nr
+	{
+		mesh = vehicles/Laser/pzka_Laser|FrontFill_Laser56,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Laser_FrontFill_Laser78_nr
+	{
+		mesh = vehicles/Laser/pzka_Laser|FrontFill_Laser78,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Laser_FrontFill {
+		template! = PZKA_Frontfill,
+        part Frontfill
+        {
+			model Province_12
+			{
+				file = PZKA_Vehicles_Laser_FrontFill_Laser12,
+			}
+			model Province_34
+			{
+				file = PZKA_Vehicles_Laser_FrontFill_Laser34,
+			}
+			model Province_56
+			{
+				file = PZKA_Vehicles_Laser_FrontFill_Laser56,
+			}
+			model Province_78
+			{
+				file = PZKA_Vehicles_Laser_FrontFill_Laser78,
+			}
+        }
+		template! = PZKA_VariableFrontFill,
+	}
+	template vehicle PZKA_Laser_FrontFill_nr {
+		template! = PZKA_Frontfill,
+        part Frontfill
+        {
+			model Province_12
+			{
+				file = PZKA_Vehicles_Laser_FrontFill_Laser12_nr,
+			}
+			model Province_34
+			{
+				file = PZKA_Vehicles_Laser_FrontFill_Laser34_nr,
+			}
+			model Province_56
+			{
+				file = PZKA_Vehicles_Laser_FrontFill_Laser56_nr,
+			}
+			model Province_78
+			{
+				file = PZKA_Vehicles_Laser_FrontFill_Laser78_nr,
+			}
+        }
+		template! = PZKA_VariableFrontFill,
+	}
+}
