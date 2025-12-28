@@ -1,61 +1,61 @@
 module Base
 {
-	model PZKA_Vehicles_Phoenix_WindowFrontLeft
+	model PZKA_Vehicles_Marocca_WindowFrontLeft
 	{
-		mesh = vehicles/pzka_Phoenix|Window_FrontLeft_obj,
+		mesh = vehicles/pzka_Marocca|Window_FrontLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = FrontLeftWindowBone 1.0,
 
 	}
-	model PZKA_Vehicles_Phoenix_WindowFrontRight
+	model PZKA_Vehicles_Marocca_WindowFrontRight
 	{
-		mesh = vehicles/pzka_Phoenix|Window_FrontRight_obj,
+		mesh = vehicles/pzka_Marocca|Window_FrontRight_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model PZKA_Vehicles_Phoenix_DoorFrontLeft
+	model PZKA_Vehicles_Marocca_DoorFrontLeft
 	{
-		mesh = vehicles/pzka_Phoenix|Door_FrontLeft_obj,
+		mesh = vehicles/pzka_Marocca|Door_FrontLeft_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model PZKA_Vehicles_Phoenix_DoorFrontRight
+	model PZKA_Vehicles_Marocca_DoorFrontRight
 	{
-		mesh = vehicles/pzka_Phoenix|Door_FrontRight_obj,
+		mesh = vehicles/pzka_Marocca|Door_FrontRight_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model PZKA_Vehicles_Phoenix_DoorFrontLeft_nr
+	model PZKA_Vehicles_Marocca_DoorFrontLeft_nr
 	{
-		mesh = vehicles/pzka_Phoenix|Door_FrontLeft_obj,
+		mesh = vehicles/pzka_Marocca|Door_FrontLeft_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model PZKA_Vehicles_Phoenix_DoorFrontRight_nr
+	model PZKA_Vehicles_Marocca_DoorFrontRight_nr
 	{
-		mesh = vehicles/pzka_Phoenix|Door_FrontRight_obj,
+		mesh = vehicles/pzka_Marocca|Door_FrontRight_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	template vehicle PZKA_Phoenix_FrontWindows {
+	template vehicle PZKA_Marocca_FrontWindows {
 		part WindowFrontLeft
         {
 			parent = DoorFrontLeft,
 			model Default
             {
-            	file = PZKA_Vehicles_Phoenix_WindowFrontLeft,
+            	file = PZKA_Vehicles_Marocca_WindowFrontLeft,
             }           		
         }
 		part WindowFrontRight
@@ -63,44 +63,44 @@ module Base
         	parent = DoorFrontRight,
 			model Default
             {
-                file = PZKA_Vehicles_Phoenix_WindowFrontRight,
+                file = PZKA_Vehicles_Marocca_WindowFrontRight,
             }           		
 	    }
 	}
-	template vehicle PZKA_Phoenix_FrontDoors {
+	template vehicle PZKA_Marocca_FrontDoors {
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Phoenix_DoorFrontLeft,
+				file = PZKA_Vehicles_Marocca_DoorFrontLeft,
 			}
 		}
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Phoenix_DoorFrontRight,
+				file = PZKA_Vehicles_Marocca_DoorFrontRight,
 			}
 		}
 		template! = VVA_DoorsWindowFront,
-		template! = PZKA_Phoenix_FrontWindows,
+		template! = PZKA_Marocca_FrontWindows,
 	}
-	template vehicle PZKA_Phoenix_FrontDoors_nr {
+	template vehicle PZKA_Marocca_FrontDoors_nr {
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Phoenix_DoorFrontLeft_nr,
+				file = PZKA_Vehicles_Marocca_DoorFrontLeft_nr,
 			}
 		}
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Phoenix_DoorFrontRight_nr,
+				file = PZKA_Vehicles_Marocca_DoorFrontRight_nr,
 			}
 		}
 		template! = VVA_DoorsWindowFront,
-		template! = PZKA_Phoenix_FrontWindows,
+		template! = PZKA_Marocca_FrontWindows,
 	}
 }

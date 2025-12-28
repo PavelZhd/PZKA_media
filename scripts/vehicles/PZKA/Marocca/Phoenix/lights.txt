@@ -2,56 +2,56 @@ module Base
 {
 	model PZKA_Vehicles_Phoenix_LightFL
 	{
-		mesh = vehicles/pzka_Phoenix|Light_FrontLeft_obj,
+		mesh = vehicles/pzka_Phoenix|Light_FrontLeft_P_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
 	}	
 	model PZKA_Vehicles_Phoenix_LightFR
 	{
-		mesh = vehicles/pzka_Phoenix|Light_FrontRight_obj,
+		mesh = vehicles/pzka_Phoenix|Light_FrontRight_P_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Phoenix_LightFL_static
 	{
-		mesh = vehicles/pzka_Phoenix|Light_FrontLeft_sobj,
+		mesh = vehicles/pzka_Phoenix|Light_FrontLeft_P_sobj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,
 	}	
 	model PZKA_Vehicles_Phoenix_LightFR_static
 	{
-		mesh = vehicles/pzka_Phoenix|Light_FrontRight_sobj,
+		mesh = vehicles/pzka_Phoenix|Light_FrontRight_P_sobj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Phoenix_LightRL
 	{
-		mesh = vehicles/pzka_Phoenix|Light_RearLeft_obj,
+		mesh = vehicles/pzka_Phoenix|Light_RearLeft_P_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Phoenix_LightRR
 	{
-		mesh = vehicles/pzka_Phoenix|Light_RearRight_obj,
+		mesh = vehicles/pzka_Phoenix|Light_RearRight_P_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Phoenix_LightRL_static
 	{
-		mesh = vehicles/pzka_Phoenix|Light_RearLeft_sobj,
+		mesh = vehicles/pzka_Phoenix|Light_RearLeft_P_sobj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,
 	}	
 	model PZKA_Vehicles_Phoenix_LightRR_static
 	{
-		mesh = vehicles/pzka_Phoenix|Light_RearRight_sobj,
+		mesh = vehicles/pzka_Phoenix|Light_RearRight_P_sobj,
 		shader = vehicle_multiuv_vva,
 		static = TRUE,
 		scale = 0.01,

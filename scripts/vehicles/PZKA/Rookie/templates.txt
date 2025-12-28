@@ -1,0 +1,23 @@
+module Base
+{
+	template vehicle PZKA_Rookie_shared {
+		template! = PZKA_Rookie_Windshield,
+		template! = PZKA_Rookie_SeatsFront,
+		template! = PZKA_Rookie_Interior,		
+	}
+
+	template vehicle PZKA_Rookie {
+		template! = PZKA_Rookie_FrontDoors,
+		template! = PZKA_Rookie_RearWindows,
+		template! = PZKA_Rookie_Trunk,
+		template! = PZKA_Rookie_Hood,
+		template! = PZKA_Rookie_shared,
+	}
+	template vehicle PZKA_Rookie_nr {
+		template! = PZKA_Rookie_FrontDoors_nr,
+		template! = PZKA_Rookie_RearWindows,
+		template! = PZKA_Rookie_Trunk_nr,
+		template! = PZKA_Rookie_Hood_nr,
+		template! = PZKA_Rookie_shared,
+	}
+}

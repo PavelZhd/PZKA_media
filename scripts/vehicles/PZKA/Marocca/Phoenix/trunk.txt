@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_Phoenix_Trunk
 	{
-		mesh = vehicles/pzka_Phoenix|Trunk_obj,
+		mesh = vehicles/pzka_Phoenix|Trunk_P_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -10,7 +10,7 @@ module Base
 	}
 	model PZKA_Vehicles_Phoenix_Trunk_nr
 	{
-		mesh = vehicles/pzka_Phoenix|Trunk_obj,
+		mesh = vehicles/pzka_Phoenix|Trunk_P_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -18,7 +18,7 @@ module Base
 	}
 	model PZKA_Vehicles_Phoenix_RearWindow
 	{
-		mesh = vehicles/pzka_Phoenix|RearWindow_obj,
+		mesh = vehicles/pzka_Phoenix|RearWindow_P_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
@@ -43,7 +43,7 @@ module Base
 			}
 		}		
 		template! = PZKA_Phoenix_RearWindow,
-		template! = VVA_TrunkDoorVersion,
+		template! = VVA_TrunkDoorLightsVersion,
 	}
 	template vehicle pzka_Phoenix_trunk_nr {
 		part TrunkDoor

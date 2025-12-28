@@ -1,0 +1,41 @@
+module Base
+{
+	
+	model PZKA_Vehicles_Marocca_Hood
+	{
+		mesh = vehicles/pzka_Marocca_hood|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}	
+	model PZKA_Vehicles_Marocca_Hood_nr
+	{
+		mesh = vehicles/pzka_Marocca_hood|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+
+	template vehicle pzka_Marocca_hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocca_Hood,
+			}
+		}
+		template! = VVA_EngineDoor,
+	}
+	template vehicle pzka_Marocca_hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocca_Hood_nr,
+			}
+		}
+		template! = VVA_EngineDoor,
+	}
+}

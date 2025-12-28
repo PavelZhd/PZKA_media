@@ -1,0 +1,33 @@
+module Base
+{
+    model PZKA_Vehicles_Rookie_WindowRearLeft
+	{
+		mesh = vehicles/pzka_Rookie|Window_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.008,		
+	}
+	model PZKA_Vehicles_Rookie_WindowRearRight
+	{
+		mesh = vehicles/pzka_Rookie|Window_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.008,
+	}
+	template vehicle PZKA_Rookie_RearWindows {
+		part WindowRearLeft
+    	{	
+			model Default
+        	{
+            	file = PZKA_Vehicles_Rookie_WindowRearLeft,
+        	}
+        }
+		part WindowRearRight
+        {	
+			model Default
+    		{
+    			file = PZKA_Vehicles_Rookie_WindowRearRight,
+    		}
+    	}
+	}
+}

@@ -1,0 +1,59 @@
+module Base
+{
+	model PZKA_Vehicles_Marocca_Trunk
+	{
+		mesh = vehicles/pzka_Marocca|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Marocca_Trunk_nr
+	{
+		mesh = vehicles/pzka_Marocca|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_Marocca_RearWindow
+	{
+		mesh = vehicles/pzka_Marocca|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Marocca_RearWindow {
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Marocca_RearWindow,
+			}
+		}
+	}
+	template vehicle pzka_Marocca_trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocca_Trunk,
+			}
+		}		
+		template! = PZKA_Marocca_RearWindow,
+		template! = VVA_TrunkDoorWindowVersion,
+	}
+	template vehicle pzka_Marocca_trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocca_Trunk_nr,
+			}
+		}
+		template! = PZKA_Marocca_RearWindow,
+		template! = VVA_TrunkDoorWindowVersion,
+	}
+}

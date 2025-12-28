@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicles_Marocca_Windshield
+	{
+		mesh = vehicles/pzka_Marocca|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	template vehicle pzka_Marocca_windshield {
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocca_Windshield,
+			}			
+		}
+	}
+}
