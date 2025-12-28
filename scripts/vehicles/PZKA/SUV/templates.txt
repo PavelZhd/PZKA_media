@@ -1,7 +1,7 @@
 module Base
 {
-	template vehicle PZKA_SUV_common {
-		template! = PZKA_SUV_Windshield,
+	template vehicle VVA_SUV_common {
+		template! = VVA_SUV_Windshield,
 		part Battery 
 		{
 			model Default 
@@ -11,24 +11,24 @@ module Base
 			}
 		}
 		template! = VVA_Interior,
-		template! = PZKA_SUV_Interior,
+		template! = VVA_SUV_Interior,
 	}
-	template vehicle PZKA_SUV_shared {
-		template! = PZKA_SUV_common,
-		template! = PZKA_SUV_Light,		
+	template vehicle VVA_SUV_shared {
+		template! = VVA_SUV_common,
+		template! = VVA_SUV_Light,		
 	}
-	template vehicle PZKA_SUV {
-		template! = PZKA_SUV_shared,
-		template! = PZKA_SUV_Trunk,
-		template! = PZKA_SUV_FrontDoors,
-		template! = PZKA_SUV_RearDoors,
-		template! = PZKA_SUV_hood,		
+	template vehicle VVA_SUV {
+		template! = VVA_SUV_shared,
+		template! = VVA_SUV_Trunk,
+		template! = VVA_SUV_FrontDoors,
+		template! = VVA_SUV_RearDoors,
+		template! = VVA_SUV_hood,		
 	}
-	template vehicle PZKA_SUV_nr {
-		template! = PZKA_SUV_shared,
-		template! = PZKA_SUV_Trunk_nr,
-		template! = PZKA_SUV_FrontDoors_nr,
-		template! = PZKA_SUV_RearDoors_nr,
-		template! = PZKA_SUV_hood_nr,		
+	template vehicle VVA_SUV_nr {
+		template! = VVA_SUV_shared,
+		template! = VVA_SUV_Trunk_nr,
+		template! = VVA_SUV_FrontDoors_nr,
+		template! = VVA_SUV_RearDoors_nr,
+		template! = VVA_SUV_hood_nr,		
 	}
 }

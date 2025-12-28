@@ -1,38 +1,38 @@
 module Base
 {
-	model PZKA_Vehicles_SUV_Hood
+	model VVA_Vehicles_SUV_Hood
 	{
-		mesh = vehicles/pzka_SUV|Hood_obj,
+		mesh = vehicles/VVA_SUV|Hood_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 		boneWeight = HoodBone 1.0,
 	}
-	model PZKA_Vehicles_SUV_Hood_nr
+	model VVA_Vehicles_SUV_Hood_nr
 	{
-		mesh = vehicles/pzka_SUV|Hood_obj,
+		mesh = vehicles/VVA_SUV|Hood_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 		boneWeight = HoodBone 1.0,
 	}
 
-	template vehicle PZKA_SUV_hood {
+	template vehicle VVA_SUV_hood {
 		part EngineDoor
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_SUV_Hood,
+				file = VVA_Vehicles_SUV_Hood,
 			}
 		}
 		template! = VVA_EngineDoor,
 	}	
-	template vehicle PZKA_SUV_hood_nr {
+	template vehicle VVA_SUV_hood_nr {
 		part EngineDoor
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_SUV_Hood_nr,
+				file = VVA_Vehicles_SUV_Hood_nr,
 			}
 		}
 		template! = VVA_EngineDoor,

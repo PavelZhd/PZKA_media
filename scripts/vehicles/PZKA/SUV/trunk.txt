@@ -1,73 +1,73 @@
 module Base
 {
-	model PZKA_Vehicles_SUV_RearWindow
+	model VVA_Vehicles_SUV_RearWindow
 	{
-		mesh = vehicles/pzka_SUV|RearWindow_obj,
+		mesh = vehicles/VVA_SUV|RearWindow_obj,
 		shader = vehicle_multiuv_vva,
 		invertX = FALSE,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 	}
-	model PZKA_Vehicles_SUV_RearWindow_static
+	model VVA_Vehicles_SUV_RearWindow_static
 	{
-		mesh = vehicles/pzka_SUV|RearWindow_sobj,
+		mesh = vehicles/VVA_SUV|RearWindow_sobj,
 		shader = vehicle_multiuv_vva,
 		invertX = FALSE,
 		static = TRUE,
-		scale = 0.01,
+		scale = 0.004,
 	}
-	model PZKA_Vehicles_SUV_Trunk
+	model VVA_Vehicles_SUV_Trunk
 	{
-		mesh = vehicles/pzka_SUV|Trunk_obj,
+		mesh = vehicles/VVA_SUV|Trunk_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 		boneWeight = TrunkBone 1.0,
 	}
-	model PZKA_Vehicles_SUV_Trunk_nr
+	model VVA_Vehicles_SUV_Trunk_nr
 	{
-		mesh = vehicles/pzka_SUV|Trunk_obj,
+		mesh = vehicles/VVA_SUV|Trunk_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 		boneWeight = TrunkBone 1.0,
 	}
 
-	template vehicle PZKA_SUV_TrunkWindow {
+	template vehicle VVA_SUV_TrunkWindow {
 		part WindshieldRear
 		{
 			parent = TrunkDoor,
 			model Default
 			{
-				file = PZKA_Vehicles_SUV_RearWindow,
+				file = VVA_Vehicles_SUV_RearWindow,
 			}
 			model Static
 			{
-				file = PZKA_Vehicles_SUV_RearWindow_static,
+				file = VVA_Vehicles_SUV_RearWindow_static,
 			}
 		}
 	}
 	
-	template vehicle PZKA_SUV_Trunk {
+	template vehicle VVA_SUV_Trunk {
 		part TrunkDoor
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_SUV_Trunk,
+				file = VVA_Vehicles_SUV_Trunk,
 			}
 		}
-		template! = PZKA_SUV_TrunkWindow,
+		template! = VVA_SUV_TrunkWindow,
 		template! = VVA_TrunkDoorWindowVersion,
 	}
-	template vehicle PZKA_SUV_Trunk_nr {
+	template vehicle VVA_SUV_Trunk_nr {
 		part TrunkDoor
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_SUV_Trunk_nr,
+				file = VVA_Vehicles_SUV_Trunk_nr,
 			}
 		}
-		template! = PZKA_SUV_TrunkWindow,
+		template! = VVA_SUV_TrunkWindow,
 		template! = VVA_TrunkDoorWindowVersion,
 	}
 
