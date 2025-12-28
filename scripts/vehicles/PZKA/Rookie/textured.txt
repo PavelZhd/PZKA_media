@@ -1,0 +1,88 @@
+module Base
+{
+	model PZKA_Vehicles_Rookie_internals
+	{
+		mesh = vehicles/pzka_Rookie|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkChevalierRookieshell,
+		static = TRUE,
+		scale = 0.008,
+	}
+	model PZKA_Vehicles_Rookie_SeatFL
+	{
+		mesh = vehicles/pzka_Rookie|Seat_FrontLeft_obj,
+		texture = Vehicles/Vehicle_pzkChevalierRookieshell,
+		static = TRUE,
+		scale = 0.008,
+	}	
+	model PZKA_Vehicles_Rookie_SeatFR
+	{
+		mesh = vehicles/pzka_Rookie|Seat_FrontRight_obj,
+		texture = Vehicles/Vehicle_pzkChevalierRookieshell,
+		static = TRUE,
+		scale = 0.008,
+	}
+	model PZKA_Vehicles_Rookie_SeatRL
+	{
+		mesh = vehicles/pzka_Rookie|Seat_RearLeft_obj,
+		texture = Vehicles/Vehicle_pzkChevalierRookieshell,
+		static = TRUE,
+		scale = 0.008,
+	}
+	model PZKA_Vehicles_Rookie_SeatRR
+	{
+		mesh = vehicles/pzka_Rookie|Seat_RearRight_obj,
+		texture = Vehicles/Vehicle_pzkChevalierRookieshell,
+		static = TRUE,
+		scale = 0.008,
+	}
+	template vehicle PZKA_Rookie_SeatsFront {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Rookie_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Rookie_SeatFR,
+			}
+		}
+
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Rookie_SeatRL,
+			}
+		}
+
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Rookie_SeatRR,
+			}
+		}
+	}
+	template vehicle PZKA_Rookie_Interior {
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.161 0.00978 0.61148,
+			}
+		}
+		template! = VVA_Interior,
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Rookie_internals,
+			}
+		}
+	}
+}

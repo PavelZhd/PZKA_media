@@ -1,0 +1,20 @@
+module Base
+{	
+	model PZKA_Vehicles_Marocca_lights_a
+	{
+		mesh = vehicles/pzka_Marocca|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Marocca_lightbar {
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Marocca_lights_a,
+			}
+		}
+	}
+}

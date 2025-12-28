@@ -1,0 +1,22 @@
+module Base
+{
+	template vehicle PZKA_Marocca_shared {
+		template! = pzka_Marocca_windshield,
+		template! = VVA_Sport_interior,		
+	}
+
+	template vehicle PZKA_Marocca {
+		template! = PZKA_Marocca_FrontDoors,
+		template! = pzka_Marocca_trunk,
+		template! = pzka_Marocca_hood,
+		template! = pzka_Marocca_Light,
+		template! = PZKA_Marocca_shared,
+	}
+	template vehicle PZKA_Marocca_nr {
+		template! = PZKA_Marocca_FrontDoors_nr,
+		template! = pzka_Marocca_trunk_nr,
+		template! = pzka_Marocca_hood_nr,
+		template! = pzka_Marocca_Light,
+		template! = PZKA_Marocca_shared,
+	}
+}

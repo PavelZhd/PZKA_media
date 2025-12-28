@@ -1,0 +1,19 @@
+module Base
+{
+	template vehicle PZKA_Phoenix {
+		template! = PZKA_Phoenix_FrontDoors,
+		template! = pzka_Phoenix_trunk,
+		template! = pzka_Phoenix_hood,
+		template! = PZKA_Phoenix_LightHost,
+		template! = pzka_Phoenix_Light,
+		template! = PZKA_Marocca_shared,
+	}
+	template vehicle PZKA_Phoenix_nr {
+		template! = PZKA_Phoenix_FrontDoors_nr,
+		template! = pzka_Phoenix_trunk_nr,
+		template! = pzka_Phoenix_hood_nr,
+		template! = PZKA_Phoenix_LightHost_nr,
+		template! = pzka_Phoenix_Light,
+		template! = PZKA_Marocca_shared,
+	}
+}

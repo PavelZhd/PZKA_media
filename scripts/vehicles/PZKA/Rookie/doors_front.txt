@@ -1,0 +1,112 @@
+module Base
+{
+    model PZKA_Vehicles_Rookie_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Rookie|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.008,
+		boneWeight = FrontLeftWindowBone 1.0,
+
+	}
+	model PZKA_Vehicles_Rookie_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Rookie|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.008,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+
+	model PZKA_Vehicles_Rookie_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Rookie|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.008,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Rookie_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Rookie|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.008,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Rookie_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Rookie|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.008,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Rookie_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Rookie|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.008,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle PZKA_Rookie_FrontWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+        	{
+          		file = PZKA_Vehicles_Rookie_WindowFrontLeft,
+        	}            		
+		}
+		part WindowFrontRight
+        {	
+        	parent = DoorFrontRight,
+			model Default
+        	{
+            	file = PZKA_Vehicles_Rookie_WindowFrontRight,
+            }
+	    }
+	}
+	template vehicle PZKA_Rookie_FrontDoors {
+		
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Rookie_DoorFrontLeft,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Rookie_DoorFrontRight,
+			}
+		}
+		template! = PZKA_Rookie_FrontWindows,
+		template! = VVA_DoorsWindowFront,
+	}
+	template vehicle PZKA_Rookie_FrontDoors_nr {
+		
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Rookie_DoorFrontLeft_nr,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Rookie_DoorFrontRight_nr,
+			}
+		}
+		template! = PZKA_Rookie_FrontWindows,
+		template! = VVA_DoorsWindowFront,
+	}
+}
