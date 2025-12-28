@@ -1,82 +1,80 @@
 module Base
 {
-	model PZKA_Vehicles_SUV_internals
+	model VVA_Vehicles_SUV_internals
 	{
-		mesh = vehicles/pzka_SUV|Vehicles_Interior,
+		mesh = vehicles/VVA_SUV|Vehicles_Interior,
 		shader = vehiclewheel,
 		texture = Vehicles/vehicle_suvshell,
 		static = TRUE,
-		scale = 0.01,
+		scale = 0.004,
 	}
-	model PZKA_Vehicles_SUV_SeatFL
+	model VVA_Vehicles_SUV_SeatFL
 	{
-		mesh = vehicles/pzka_SUV|Seat_FrontLeft_obj,
+		mesh = vehicles/VVA_SUV|Seat_FrontLeft_obj,
 		shader = vehiclewheel,
 		texture = Vehicles/vehicle_suvshell,
 		static = TRUE,
-		scale = 0.01,
+		scale = 0.004,
 	}
-	model PZKA_Vehicles_SUV_SeatFR
+	model VVA_Vehicles_SUV_SeatFR
 	{
-		mesh = vehicles/pzka_SUV|Seat_FrontRight_obj,
+		mesh = vehicles/VVA_SUV|Seat_FrontRight_obj,
 		shader = vehiclewheel,
 		texture = Vehicles/vehicle_suvshell,
 		static = TRUE,
-		scale = 0.01,
+		scale = 0.004,
 	}
-	model PZKA_Vehicles_SUV_SeatRL
+	model VVA_Vehicles_SUV_SeatRL
 	{
-		mesh = vehicles/pzka_SUV|Seat_RearLeft_obj,
+		mesh = vehicles/VVA_SUV|Seat_RearLeft_obj,
 		shader = vehiclewheel,
 		texture = Vehicles/vehicle_suvshell,
 		static = TRUE,
-		scale = 0.01,
+		scale = 0.004,
 	}
-	model PZKA_Vehicles_SUV_SeatRR
+	model VVA_Vehicles_SUV_SeatRR
 	{
-		mesh = vehicles/pzka_SUV|Seat_RearRight_obj,
+		mesh = vehicles/VVA_SUV|Seat_RearRight_obj,
 		shader = vehiclewheel,
 		texture = Vehicles/vehicle_suvshell,
 		static = TRUE,
-		scale = 0.01,
+		scale = 0.004,
 	}
 
-	template vehicle PZKA_SUV_Interior {
+	template vehicle VVA_SUV_Interior {
 		part SeatFrontLeft 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_SUV_SeatFL,
+				file = VVA_Vehicles_SUV_SeatFL,
 			}
 		}
 		part SeatFrontRight 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_SUV_SeatFR,
+				file = VVA_Vehicles_SUV_SeatFR,
 			}
 		}
-
 		part SeatRearLeft 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_SUV_SeatRL,
+				file = VVA_Vehicles_SUV_SeatRL,
 			}
 		}
-
 		part SeatRearRight 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_SUV_SeatRR,
+				file = VVA_Vehicles_SUV_SeatRR,
 			}
 		}
 		part Interior 
 		{
 			model Default 
 			{
-				file = PZKA_Vehicles_SUV_internals,
+				file = VVA_Vehicles_SUV_internals,
 			}
 		}
 	}

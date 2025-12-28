@@ -48,10 +48,7 @@ PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedanFire","pzkChevalierCeriseSeda
 PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedanLSU","pzkChevalierCeriseSedanFire")
 PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedanMall","pzkChevalierCeriseSedanFire")
 
-PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedanPoliceKST","pzkChevalierCeriseSedan_nr",{"pzka_sle_lighbar","PZKA_Normal_Lightbar"})
-PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedanPoliceLouisvilleCounty","pzkChevalierCeriseSedanPoliceKST")
-PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedanPoliceMuldraughPolice","pzkChevalierCeriseSedanPoliceKST")
-PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedanPoliceBulletinSheriff","pzkChevalierCeriseSedanPoliceKST")
+PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedanPolice","pzkChevalierCeriseSedan_nr",{"pzka_sle_lighbar","PZKA_Normal_Lightbar"})
 
 PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedanTaxi","pzkChevalierCeriseSedan_nr",{"pzka_sle_taxi","VVA_Vehicles_Normal_TaxiSign"})
 -- Hellion Sedan
@@ -69,10 +66,7 @@ PZKA.CopyTemplateToVehicle("pzkDashMayor_nr","PZKA_Normal_Sedan_F_nr",{"PZKA_Sed
 PZKA.CopyTemplateToVehicle("pzkDashMayorLSU","pzkDashMayor_nr",{"pzka_t_lighbar","PZKA_Normal_Lightbar"})
 PZKA.CopyTemplateToVehicle("pzkDashMayorMall","pzkDashMayorLSU")
 
-PZKA.CopyTemplateToVehicle("pzkDashMayorPoliceMuldraughPolice","pzkDashMayor_nr",{"pzka_sle_lighbar","PZKA_Normal_Lightbar"})
-PZKA.CopyTemplateToVehicle("pzkDashMayorPoliceKST","pzkDashMayorPoliceMuldraughPolice")
-PZKA.CopyTemplateToVehicle("pzkDashMayorPoliceLouisvilleCounty","pzkDashMayorPoliceMuldraughPolice")
-PZKA.CopyTemplateToVehicle("pzkDashMayorPoliceBulletinSheriff","pzkDashMayorPoliceMuldraughPolice")
+PZKA.CopyTemplateToVehicle("pzkDashMayorPolice","pzkDashMayor_nr",{"pzka_sle_lighbar","PZKA_Normal_Lightbar"})
 
 PZKA.CopyTemplateToVehicle("pzkDashMayorTaxi","pzkDashMayor_nr",{"pzka_sle_taxi","VVA_Vehicles_Normal_TaxiSign"})
 
@@ -89,10 +83,7 @@ PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWDFire","pzkFranklinTriumphTWD_nr
 PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWDLSU","pzkFranklinTriumphTWDFire")
 PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWDMall","pzkFranklinTriumphTWDFire")
 
-PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWDPoliceBulletinSheriff","pzkFranklinTriumphTWD_nr",{"pzka_sle_lighbar","PZKA_Normal_Lightbar"})
-PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWDPoliceKST","pzkFranklinTriumphTWDPoliceBulletinSheriff")
-PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWDPoliceLouisvilleCounty","pzkFranklinTriumphTWDPoliceBulletinSheriff")
-PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWDPoliceMuldraughPolice","pzkFranklinTriumphTWDPoliceBulletinSheriff")
+PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWDPolice","pzkFranklinTriumphTWD_nr",{"pzka_sle_lighbar","PZKA_Normal_Lightbar"})
 
 PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWDTaxi","pzkFranklinTriumphTWD_nr",{"pzka_sle_taxi","VVA_Vehicles_Normal_TaxiSign"})
 
@@ -104,10 +95,7 @@ PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91_nr","PZKA_Normal_Sedan_V_nr"
 PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91LSU","pzkFranklinTriumphTWD91_nr",{"pzka_t_lighbar","PZKA_Normal_Lightbar"})
 PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91Mall","pzkFranklinTriumphTWD91LSU")
 
-PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91PoliceBulletinSheriff","pzkFranklinTriumphTWD91_nr",{"pzka_sle_lighbar","PZKA_Normal_Lightbar"})
-PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91PoliceKST","pzkFranklinTriumphTWD91PoliceBulletinSheriff")
-PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91PoliceLouisvilleCounty","pzkFranklinTriumphTWD91PoliceBulletinSheriff")
-PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91PoliceMuldraughPolice","pzkFranklinTriumphTWD91PoliceBulletinSheriff")
+PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91Police","pzkFranklinTriumphTWD91_nr",{"pzka_sle_lighbar","PZKA_Normal_Lightbar"})
 
 -- Homelander Sedan
 PZKA.CopyTemplateToVehicle("pzkFranklinHomelander","PZKA_Normal_Sedan_V",{"PZKA_SedanV_Homelander"})
@@ -127,12 +115,6 @@ PZKA.ApplyTemplateToVehicle("pzkHearse","PZKA_Vehicles_Normal_Hearse_nr",{"pzka_
 -- Limo
 PZKA.ApplyTemplateToVehicle("pzkLimo","PZKA_Normal_Limo",{"pzka_4SeatsR","PZKA_Limo"})
 
---PZKA.CopyTemplateToVehicle("pzkLimo","PZKA_Limo_Base",{"PZKA_Limo_Nyala"})
---PZKA.CopyTemplateToVehicle("pzkChevalierCeriseLimo","PZKA_Limo_Base",{"PZKA_Limo_Cerise"})
---PZKA.CopyTemplateToVehicle("pzkDashRapierLimo","PZKA_Limo_Base",{"PZKA_Limo_Rapier"})
---PZKA.CopyTemplateToVehicle("pzkFranklinHomelanderLimo","PZKA_Limo_Base",{"PZKA_Limo_Homelander"})
---PZKA.CopyTemplateToVehicle("pzkDashHellionLimo","PZKA_Limo_Base",{"PZKA_Limo_Hellion"})
-
 -- Station Wagon
 PZKA.ApplyTemplateToVehicle("PZKA_Normal_Wagon","PZKA_Normal_Wagon",{"pzka_4SeatsR","PZKA_Normal_Wagon"})
 PZKA.ApplyTemplateToVehicle("PZKA_Normal_Wagon_nr","PZKA_Normal_Wagon_nr",{"pzka_4SeatsR","PZKA_Normal_Wagon_nr"})
@@ -149,7 +131,7 @@ PZKA.ApplyTemplateToVehicle("pzkHearseGhoulbusters","PZKA_Ghoulbuster_nr",{"pzka
 --Bank Truck
 
 PZKA.ApplyTemplateToVehicle("pzkFranklinBankTruck","PZKA_Vehicles_BankTrunk_nr",{"pzka_2SeatsF","PZKA_BankTruck_Bank"})
-PZKA.ApplyTemplateToVehicle("pzkFranklinSwatTruckLouisvilleSWAT","PZKA_Vehicles_BankTrunk_nr",{"pzka_2SeatsF","PZKA_BankTruck_Bank","pzka_t_lighbar","PZKA_BankTruck_lightbar"})
+PZKA.ApplyTemplateToVehicle("pzkFranklinSwatTruck","PZKA_Vehicles_BankTrunk_nr",{"pzka_2SeatsF","PZKA_BankTruck_Bank","pzka_t_lighbar","PZKA_BankTruck_lightbar"})
 
 -- FranklinTruck
 
@@ -212,7 +194,7 @@ PZKA.ApplyTemplateToVehicle("pzkDashVan70Riddle","PZKA_Vehicles_Riddle_a",{"pzka
 PZKA.ApplyTemplateToVehicle("pzkChevalierTowTruck","PZKA_Vehicles_ChevTow_a",{"pzka_2SeatsF","PZKA_Pickup","pzka_t_lighbar","PZKA_Pickup_Lightbar"})
 PZKA.ApplyTemplateToVehicle("pzkChevalierTowTruck_nr","PZKA_Vehicles_ChevTow_nr_a",{"pzka_2SeatsF","PZKA_Pickup_nr","pzka_t_lighbar","PZKA_Pickup_Lightbar"})
 PZKA.CopyTemplateToVehicle("pzkChevalierTowTruckFire","pzkChevalierTowTruck_nr")
-PZKA.CopyTemplateToVehicle("pzkChevalierTowTruckPoliceLouisvilleCounty","pzkChevalierTowTruck_nr")
+PZKA.CopyTemplateToVehicle("pzkChevalierTowTruckPolice","pzkChevalierTowTruck_nr")
 PZKA.CopyTemplateToVehicle("pzkChevalierTowTruckStatePolice","pzkChevalierTowTruck_nr")
 
 PZKA.ApplyTemplateToVehicle("pzkPickUpTruckPublicWorks","VVA_Vehicles_PickUpTruck_NoRandom_a",{"pzka_2SeatsF","PZKA_VPickUp_nr","pzka_t_lighbar","PZKA_Pickup_Lightbar"})
@@ -353,13 +335,13 @@ PZKA.ApplyTemplateToVehicle("pzkDashPhoenix75JP","PZKA_Vehicles_Phoehix75_Base_n
 
 -- SUV
 
-PZKA.ApplyTemplateToVehicle("pzkSuvCustom","PZKA_Vehicles_SUV_nr",{"pzka_4SeatsR","PZKA_SUV_nr"})
+PZKA.ApplyTemplateToVehicle("pzkSuvCustom","VVA_Vehicles_SUV_nr",{"pzka_4SeatsR","VVA_SUV_nr"})
 PZKA.CopyTemplateToVehicle("pzkSuvPleistoceneLand","pzkSuvDinoPark")
 
-PZKA.ApplyTemplateToVehicle("pzkSuvAirportSecurity","PZKA_Vehicles_SUV_nr",{"pzka_4SeatsR","PZKA_SUV_nr","pzka_t_lighbar","PZKA_SUV_Lightbar"})
+PZKA.ApplyTemplateToVehicle("pzkSuvAirportSecurity","VVA_Vehicles_SUV_nr",{"pzka_4SeatsR","VVA_SUV_nr","pzka_t_lighbar","PZKA_SUV_Lightbar"})
 PZKA.CopyTemplateToVehicle("pzkSuvFire","pzkSuvAirportSecurity")
 PZKA.CopyTemplateToVehicle("pzkSuvRanger","pzkSuvAirportSecurity")
-PZKA.ApplyTemplateToVehicle("pzkSuvMeadeSheriff","PZKA_Vehicles_SUV_nr",{"pzka_4SeatsR","PZKA_SUV_nr","pzka_sle_lighbar","PZKA_SUV_Lightbar"})
+PZKA.ApplyTemplateToVehicle("pzkSuvMeadeSheriff","VVA_Vehicles_SUV_nr",{"pzka_4SeatsR","VVA_SUV_nr","pzka_sle_lighbar","PZKA_SUV_Lightbar"})
 PZKA.CopyTemplateToVehicle("pzkSuvPoliceLouisvillePD","pzkSuvMeadeSheriff")
 PZKA.CopyTemplateToVehicle("pzkSuvWestPoint","pzkSuvMeadeSheriff")
 
@@ -382,9 +364,6 @@ PZKA.CopyTemplateToVehicle("pzkVanZSquad","pzkVanMultivanPayday")
 PZKA.ApplyTemplateToVehicle("pzkVanPublicWorks","VVA_Vehicles_VVan_Police",{"pzka_4SeatsR","PZKA_VVan_Multi_nr","PZKA_Van_RSeatsM","pzka_t_lighbar","PZKA_Van_Lightbar","PZKA_Van_InteriorBars"})
 
 PZKA.ApplyTemplateToVehicle("pzkVanPolice","VVA_Vehicles_VVan_Police",{"pzka_4SeatsR","PZKA_VVan_Multi_nr","PZKA_Van_RSeatsM","pzka_sle_lighbar","PZKA_Van_Lightbar","PZKA_Van_InteriorBars"})
---PZKA.ApplyTemplateToVehicle("pzkVanPoliceLouisvillePD","VVA_Vehicles_VVan_Police",{"pzka_4SeatsR","PZKA_VVan_Multi_nr","PZKA_Van_RSeatsM","pzka_sle_lighbar","PZKA_Van_Lightbar","PZKA_Van_InteriorBars"})
---PZKA.CopyTemplateToVehicle("pzkVanPoliceMeadeSheriff","pzkVanPoliceLouisvillePD")
---PZKA.CopyTemplateToVehicle("pzkVanPoliceWestPoint","pzkVanPoliceLouisvillePD")
 
 PZKA.ApplyTemplateToVehicle("Vehicles_VanSeatsTaxi","VVA_Vehicles_VVan_Seats_nr",{"pzka_6Seats","PZKA_VVan_Seats_nr","PZKA_Van_4RearSears","pzka_sle_taxi","PZKA_Van_Taxi"})
 
@@ -463,10 +442,7 @@ PZKA.CopyTemplateToVehicle("pzkChevalierLaserFire","pzkChevalierLaserCUCV",{"pzk
 PZKA.CopyTemplateToVehicle("pzkChevalierLaserRanger","pzkChevalierLaserFire")
 PZKA.CopyTemplateToVehicle("pzkChevalierLaserLSU","pzkChevalierLaserFire")
 PZKA.CopyTemplateToVehicle("pzkChevalierLaserMall","pzkChevalierLaserLSU")
-PZKA.CopyTemplateToVehicle("pzkChevalierLaserPoliceBulletinSheriff","pzkChevalierLaserCUCV",{"pzka_sle_lighbar","PZKA_Laser_Lightbar"})
-PZKA.CopyTemplateToVehicle("pzkChevalierLaserPoliceKST","pzkChevalierLaserPoliceBulletinSheriff")
-PZKA.CopyTemplateToVehicle("pzkChevalierLaserPoliceLouisvilleCounty","pzkChevalierLaserPoliceBulletinSheriff")
-PZKA.CopyTemplateToVehicle("pzkChevalierLaserPoliceMuldraughPolice","pzkChevalierLaserPoliceBulletinSheriff")
+PZKA.CopyTemplateToVehicle("pzkChevalierLaserPolice","pzkChevalierLaserCUCV",{"pzka_sle_lighbar","PZKA_Laser_Lightbar"})
 
 PZKA.ApplyTemplateToVehicle("pzkChevalierLaserOffroader","PZKA_Vehicles_Laser_5D",{"pzka_4SeatsR","PZKA_Laser5D","PZKA_LaserFill"})
 
@@ -478,10 +454,7 @@ PZKA.CopyTemplateToVehicle("pzkFranklinGalloperFire","pzkFranklinGalloperCUCV",{
 PZKA.CopyTemplateToVehicle("pzkFranklinGalloperRanger","pzkFranklinGalloperFire")
 PZKA.CopyTemplateToVehicle("pzkFranklinGalloperLSU","pzkFranklinGalloperFire")
 PZKA.CopyTemplateToVehicle("pzkFranklinGalloperMall","pzkFranklinGalloperFire")
-PZKA.CopyTemplateToVehicle("pzkFranklinGalloperPoliceKST","pzkFranklinGalloperCUCV",{"pzka_sle_lighbar","PZKA_Laser_Lightbar"})
-PZKA.CopyTemplateToVehicle("pzkFranklinGalloperPoliceLouisvilleCounty","pzkFranklinGalloperPoliceKST")
-PZKA.CopyTemplateToVehicle("pzkFranklinGalloperPoliceMuldraughPolice","pzkFranklinGalloperPoliceKST")
-PZKA.CopyTemplateToVehicle("pzkFranklinGalloperPoliceBulletinSheriff","pzkFranklinGalloperPoliceKST")
+PZKA.CopyTemplateToVehicle("pzkFranklinGalloperPolice","pzkFranklinGalloperCUCV",{"pzka_sle_lighbar","PZKA_Laser_Lightbar"})
 
 ---- Intruder
 
@@ -560,14 +533,12 @@ PZKA.CloneAnimationProfile("pzkChevalierCerise93Fire","pzkChevalierCerise93","PZ
 PZKA.CloneAnimationProfile("pzkChevalierCerise93LSU","pzkChevalierCerise93Fire")
 PZKA.CloneAnimationProfile("pzkChevalierCerise93Mall","pzkChevalierCerise93Fire")
 if SLE then
-    PZKA.CloneAnimationProfile("pzkChevalierCerise93PoliceLouisvillePD","pzkChevalierCerise93","PZKA_Vehicles_Cerise93_Sedan_nr_a",false,"PZKA_Cerise93_sedan_C93_nr")
+    PZKA.CloneAnimationProfile("pzkChevalierCerise93Police","pzkChevalierCerise93","PZKA_Vehicles_Cerise93_Sedan_nr_a",false,"PZKA_Cerise93_sedan_C93_nr")
 else
-    PZKA.CloneAnimationProfile("pzkChevalierCerise93PoliceLouisvillePD","pzkChevalierCerise93Fire")
+    PZKA.CloneAnimationProfile("pzkChevalierCerise93Police","pzkChevalierCerise93Fire")
 end
-PZKA.CloneAnimationProfile("pzkChevalierCerise93PoliceMeadeSheriff","pzkChevalierCerise93PoliceLouisvillePD")
-PZKA.CloneAnimationProfile("pzkChevalierCerise93PoliceWestPoint","pzkChevalierCerise93PoliceLouisvillePD")
 if SLE then
-    PZKA.CloneAnimationProfile("pzkChevalierCerise93Taxi","pzkChevalierCerise93PoliceLouisvillePD")
+    PZKA.CloneAnimationProfile("pzkChevalierCerise93Taxi","pzkChevalierCerise93Police")
 else
     PZKA.CloneAnimationProfile("pzkChevalierCerise93Taxi","pzkChevalierCerise93","PZKA_Vehicles_Cerise93_Sedan_nr_a",false,"PZKA_Cerise93_sedan_C93_taxi")
 end
@@ -576,14 +547,14 @@ PZKA.CloneAnimationProfile("pzkFranklinTriumph","pzkChevalierCerise93","PZKA_Veh
 PZKA.CloneAnimationProfile("pzkFranklinTriumphLSU","pzkFranklinTriumph","PZKA_Vehicles_Triumph_Sedan_nr_a",false,"PZKA_Cerise93_sedan_Triumph_police")
 PZKA.CloneAnimationProfile("pzkFranklinTriumphMall","pzkFranklinTriumphLSU")
 if SLE then
-    PZKA.CloneAnimationProfile("pzkFranklinTriumphPoliceLouisvillePD","pzkFranklinTriumph","PZKA_Vehicles_Triumph_Sedan_nr_a",false,"PZKA_Cerise93_sedan_Triumph_nr")
+    PZKA.CloneAnimationProfile("pzkFranklinTriumphPolice","pzkFranklinTriumph","PZKA_Vehicles_Triumph_Sedan_nr_a",false,"PZKA_Cerise93_sedan_Triumph_nr")
 else
-    PZKA.CloneAnimationProfile("pzkFranklinTriumphPoliceLouisvillePD","pzkFranklinTriumphLSU")
+    PZKA.CloneAnimationProfile("pzkFranklinTriumphPolice","pzkFranklinTriumphLSU")
 end
-PZKA.CloneAnimationProfile("pzkFranklinTriumphPoliceMeadeSheriff","pzkFranklinTriumphPoliceLouisvillePD")
-PZKA.CloneAnimationProfile("pzkFranklinTriumphPoliceWestPoint","pzkFranklinTriumphPoliceLouisvillePD")
+--PZKA.CloneAnimationProfile("pzkFranklinTriumphPoliceMeadeSheriff","pzkFranklinTriumphPoliceLouisvillePD")
+--PZKA.CloneAnimationProfile("pzkFranklinTriumphPoliceWestPoint","pzkFranklinTriumphPoliceLouisvillePD")
 if SLE then
-    PZKA.CloneAnimationProfile("pzkFranklinTriumphTaxi","pzkFranklinTriumphPoliceLouisvillePD")
+    PZKA.CloneAnimationProfile("pzkFranklinTriumphTaxi","pzkFranklinTriumphPolice")
 else    
     PZKA.CloneAnimationProfile("pzkFranklinTriumphTaxi","pzkFranklinTriumph","PZKA_Vehicles_Triumph_Sedan_nr_a",false,"PZKA_Cerise93_sedan_Triumph_taxi")
 end
@@ -679,8 +650,8 @@ if VVE then
 else
     PZKA.CreateAnimationProfile("pzkDashRancherCabrio","PZKA_Vehicles_Offroad_C_a","PZKA_Offroad_Light","PZKA_Offroad_C",{"FL","FR"},"VVA_TrunkDoorVersion")
 end
-PZKA.CreateAnimationProfile("pzkDashRancherDinoPark","VVA_Vehicles_OffRoad_nr_a","PZKA_Offroad_Light","PZKA_Offroad_R_nr",{"FLW","FRW"},"VVA_TrunkDoorVersion")
-PZKA.CloneAnimationProfile("pzkDashRancherMail","pzkDashRancherDinoPark")
+PZKA.CreateAnimationProfile("pzkDashRancherCustom","VVA_Vehicles_OffRoad_nr_a","PZKA_Offroad_Light","PZKA_Offroad_R_nr",{"FLW","FRW"},"VVA_TrunkDoorVersion")
+--PZKA.CloneAnimationProfile("pzkDashRancherMail","pzkDashRancherDinoPark")
 PZKA.CreateAnimationProfile("pzkDashRancherRanger","VVA_Vehicles_OffRoad_nr_a","PZKA_Offroad_Light","PZKA_Offroad_lightbar",{"FLW","FRW"},"VVA_TrunkDoorVersion")
 
 PZKA.CreateAnimationProfile("pzkDashRunner","PZKA_Vehicles_Runner_a","PZKA_Runner_Light","PZKA_Runner",{"FLW","FRW"},"VVA_TrunkDoorVersion")
@@ -706,12 +677,12 @@ PZKA.CreateAnimationProfile("pzkFranklinStallion","PZKA_Vehicles_Stallion_a","PZ
 PZKA.CreateAnimationProfile("pzkFranklinStallion2","PZKA_Vehicles_Stallion2_a","PZKA_Stallion_Light2","PZKA_Stallion2",{"FLW","FRW"},"VVA_TrunkDoorVersion",{"FL","FR","RL","RR"})
 PZKA.CreateAnimationProfile("pzkFranklinStallionSport","PZKA_Vehicles_Stallion2_a","PZKA_Stallion_Light2","PZKA_Stallion2Sport",{"FLW","FRW"},"VVA_TrunkDoorVersion",{"FL","FR","RL","RR"})
 if SLE then
-    PZKA.CreateAnimationProfile("pzkFranklinStallionPoliceLouisvillePD","PZKA_Vehicles_Stallion2_nr_a","PZKA_Stallion_Light2","PZKA_Stallion2_nr",{"FLW","FRW"},"VVA_TrunkDoorVersion",{"FL","FR","RL","RR"})
+    PZKA.CreateAnimationProfile("pzkFranklinStallionPolice","PZKA_Vehicles_Stallion2_nr_a","PZKA_Stallion_Light2","PZKA_Stallion2_nr",{"FLW","FRW"},"VVA_TrunkDoorVersion",{"FL","FR","RL","RR"})
 else
-    PZKA.CreateAnimationProfile("pzkFranklinStallionPoliceLouisvillePD","PZKA_Vehicles_Stallion2_nr_a","PZKA_Stallion_Light2","PZKA_Stallion2_lightbar",{"FLW","FRW"},"VVA_TrunkDoorVersion",{"FL","FR","RL","RR"})
+    PZKA.CreateAnimationProfile("pzkFranklinStallionPolice","PZKA_Vehicles_Stallion2_nr_a","PZKA_Stallion_Light2","PZKA_Stallion2_lightbar",{"FLW","FRW"},"VVA_TrunkDoorVersion",{"FL","FR","RL","RR"})
 end
-PZKA.CloneAnimationProfile("pzkFranklinStallionPoliceMeadeSheriff","pzkFranklinStallionPoliceLouisvillePD")
-PZKA.CloneAnimationProfile("pzkFranklinStallionPoliceWestPoint","pzkFranklinStallionPoliceLouisvillePD")
+--PZKA.CloneAnimationProfile("pzkFranklinStallionPoliceMeadeSheriff","pzkFranklinStallionPoliceLouisvillePD")
+--PZKA.CloneAnimationProfile("pzkFranklinStallionPoliceWestPoint","pzkFranklinStallionPoliceLouisvillePD")
 
 PZKA.CreateAnimationProfile("pzkFranklinStallionKing","PZKA_Vehicles_StallionKing124_a","PZKA_StallionKing_Light1","PZKA_StallionKing1",{"FLW","FRW"},"VVA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkFranklinStallionKing2","PZKA_Vehicles_StallionKing124_a","PZKA_StallionKing_Light1","PZKA_StallionKing2",{"FLW","FRW"},"VVA_TrunkDoorVersion")
