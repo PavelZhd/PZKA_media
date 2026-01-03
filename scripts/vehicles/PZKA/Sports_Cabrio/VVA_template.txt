@@ -1,10 +1,8 @@
 module Base
 {
-	
-
-	template vehicle VVA_SportCar_shared {
-		template! = VVA_SportCar_Windshield,
-		template! = VVA_SportCar_Interior,
+	template vehicle VVA_SportCar_Interior {
+		template! = VVA_SportCar_Seats,
+		template! = VVA_SportCar_Engine,
 		part Battery 
 		{
 			model Default 
@@ -14,19 +12,21 @@ module Base
 			}
 		}
 	}
-
-	template vehicle PZKA_SportCar_Base {
-		template! = VVA_SportCar_hood,
-		template! = VVA_SportCar_LightHost,
+	template vehicle VVA_SportCar_shared {
+		template! = VVA_SportCar_Interior,
+		template! = VVA_SportCar_Windshield,
 		template! = VVA_SportCar_FrontLights,
 		template! = VVA_SportCar_RearLights,
+	}
+
+	template vehicle VVA_SportCar_Base {
+		template! = VVA_SportCar_hood,
+		template! = VVA_SportCar_LightHost,
 		template! = VVA_SportCar_shared,
 	}
 	template vehicle VVA_SportCar_Base_nr {
 		template! = VVA_SportCar_hood_nr,
 		template! = VVA_SportCar_LightHost_nr,
-		template! = VVA_SportCar_FrontLights,
-		template! = VVA_SportCar_RearLights,
 		template! = VVA_SportCar_shared,
 	}
 	
@@ -39,16 +39,5 @@ module Base
 		template! = VVA_SportCar_FrontDoors_nr,
 		template! = VVA_SportCar_Trunk_nr,
 		template! = VVA_SportCar_Base_nr,
-	}
-
-	template vehicle PZKA_SportCabrio {
-		template! = VVA_SportCar_Base,
-		template! = PZKA_SportCabrio_FrontDoors,
-		template! = PZKA_SportCabrio_Trunk,
-	}
-	template vehicle PZKA_SportCabrio_nr {
-		template! = VVA_SportCar_Base_nr,
-		template! = PZKA_SportCabrio_FrontDoors_nr,
-		template! = PZKA_SportCabrio_Trunk_nr,
 	}
 }
