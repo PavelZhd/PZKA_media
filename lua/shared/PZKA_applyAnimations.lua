@@ -1,8 +1,8 @@
 local PZKA = require "PZKA_addAnimations"
 
-local SLE = getActivatedMods():contains("\\SimpleLightbarsExpandedPZK")
-local CullSeats = getActivatedMods():contains("\\VVA_cullseats") or getActivatedMods():contains("\\PZKA_cullseats")
-local VVE = getActivatedMods():contains("\\VVehicleEnhancer") or getActivatedMods():contains("\\Ze_VVehicleEnhancer_42B")
+local SLE = getActivatedMods():contains("SimpleLightbarsExpanded")
+local CullSeats = getActivatedMods():contains("VVA_cullseats") or getActivatedMods():contains("PZKA_cullseats")
+local VVE = getActivatedMods():contains("VVehicleEnhancer")
 
 PZKA.addToProfile("pzka_C_2SeatsF",{"VVA_SeatFrontLeft","VVA_SeatFrontRight"})
 PZKA.addToProfile("pzka_C_2SeatsM",{"VVA_SeatMiddleLeft","VVA_SeatMiddleRight"})
