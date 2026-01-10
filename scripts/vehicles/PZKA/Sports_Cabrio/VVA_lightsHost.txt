@@ -1,6 +1,6 @@
 module Base
 {
-	model VVA_Vehicles_SportsCar_HeadlightMounts
+	model VVA_Vehicles_SportCar_HeadlightMounts
 	{
 		mesh = vehicles/VVA_SportCar|Light_Host_obj,
 		shader = vehicle_multiuv_noreflect,
@@ -9,7 +9,7 @@ module Base
 		boneWeight = LeftLightsBone 1.0,
 		boneWeight = RightLightsBone 1.0,
 	}
-	model VVA_Vehicles_SportsCar_HeadlightMounts_nr
+	model VVA_Vehicles_SportCar_HeadlightMounts_nr
 	{
 		mesh = vehicles/VVA_SportCar|Light_Host_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
@@ -19,13 +19,13 @@ module Base
 		boneWeight = RightLightsBone 1.0,
 	}
 
-	template vehicle VVA_Sport_LightHost {
+	template vehicle VVA_SportCar_LightHost {
 		template! = VVA_LightHostAnimate,
 		part LightsHost
 		{
 			model Default
 			{
-				file = VVA_Vehicles_SportsCar_HeadlightMounts,
+				file = VVA_Vehicles_SportCar_HeadlightMounts,
 			}
 		}
 	}
@@ -35,7 +35,7 @@ module Base
 		{
 			model Default
 			{
-				file = VVA_Vehicles_SportsCar_HeadlightMounts_nr,
+				file = VVA_Vehicles_SportCar_HeadlightMounts_nr,
 			}
 		}
 	}
