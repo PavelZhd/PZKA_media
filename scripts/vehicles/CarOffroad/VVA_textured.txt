@@ -1,0 +1,50 @@
+module Base
+{
+	model VVA_Vehicles_OffRoad_internals
+	{
+		mesh = vehicles/VVA_OffRoad|Vehicles_Interior,
+		texture = Vehicles/vehicle_offroadshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_OffRoad_SeatFL
+	{
+		mesh = vehicles/VVA_OffRoad|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_offroadshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_OffRoad_SeatFR
+	{
+		mesh = vehicles/VVA_OffRoad|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_offroadshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_OffRoad_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_SeatFR,
+			}
+		}
+
+		template! = VVA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = VVA_Vehicles_OffRoad_internals,
+			}
+		}
+	}
+}

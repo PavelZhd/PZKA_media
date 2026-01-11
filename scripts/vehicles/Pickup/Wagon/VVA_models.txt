@@ -1,0 +1,17 @@
+module Base
+{
+    model VVA_Vehicles_PickupVan
+	{
+		mesh = vehicles/PickUp/vva_PickupVan|Vehicles_PickUpVan,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+    model VVA_Vehicles_PickupVan_nr
+	{
+		mesh = vehicles/PickUp/vva_PickupVan|Vehicles_PickUpVan,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+}

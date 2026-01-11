@@ -502,6 +502,23 @@ PZKA.CopyTemplateToVehicle("pzkChevalierMarocaPoliceMeade","pzkChevalierMarocaPo
 PZKA.ApplyTemplateToVehicle("pzkDashPhoenix","PZKA_Vehicles_Phoenix_a",{"pzka_2SeatsF","PZKA_Phoenix"})
 PZKA.ApplyTemplateToVehicle("pzkDashPhoenixBandit","PZKA_Vehicles_Phoenix_nr_a",{"pzka_2SeatsF","PZKA_Phoenix_nr"})
 
+-- Offroad
+
+PZKA.ApplyTemplateToVehicle("pzkDashRancherDinoPark","VVA_Vehicles_OffRoad_nr",{"pzka_2SeatsF","VVA_OffRoad_nr"})
+PZKA.CopyTemplateToVehicle("pzkDashRancherMail","pzkDashRancherDinoPark")
+PZKA.CopyTemplateToVehicle("pzkDashRancherRanger","pzkDashRancherDinoPark",{"pzka_t_lighbar","PZKA_Offroad_Lightbar"})
+
+---- Cabrio
+if VVE then
+    PZKA.ApplyTemplateToVehicle("pzkDashRancherCabrio","PZKA_VVE_OffroadC",{"pzka_2SeatsF","VVA_VVE_OffRoadC_nr"})
+else
+    PZKA.ApplyTemplateToVehicle("pzkDashRancherCabrio","PZKA_Vehicles_OffroadC_a",{"pzka_2SeatsF","PZKA_OffRoadC"})
+end
+
+-- Lang4000Cabrio
+
+PZKA.ApplyTemplateToVehicle("pzkMerciaLang4000Cabrio","PZKA_Vehicles_Lang4000C",{"pzka_2SeatsF","PZKA_Lang4000C"})
+
 --- OLD FRAMEWORK CODE
 
 
@@ -681,14 +698,6 @@ PZKA.CreateAnimationProfile("pzkDashOhio","PZKA_Vehicles_Ohio_a","PZKA_Ohio_Ligh
 
 PZKA.CreateAnimationProfile("pzkDashPiranha","PZKA_Vehicles_Piranha_a","PZKA_Piranha_Light","PZKA_Piranha",{"FLW","FRW"},"VVA_TrunkDoorVersion")
 
-if VVE then
-    PZKA.CreateAnimationProfile("pzkDashRancherCabrio","PZKA_VVE_Offroad_a","PZKA_VVE_Offroad_Light","PZKA_VVE_Offroad",{"FL","FR"},"VVA_TrunkDoorVersion")
-else
-    PZKA.CreateAnimationProfile("pzkDashRancherCabrio","PZKA_Vehicles_Offroad_C_a","PZKA_Offroad_Light","PZKA_Offroad_C",{"FL","FR"},"VVA_TrunkDoorVersion")
-end
-PZKA.CreateAnimationProfile("pzkDashRancherDinoPark","VVA_Vehicles_OffRoad_nr_a","PZKA_Offroad_Light","PZKA_Offroad_R_nr",{"FLW","FRW"},"VVA_TrunkDoorVersion")
-PZKA.CloneAnimationProfile("pzkDashRancherMail","pzkDashRancherDinoPark")
-PZKA.CreateAnimationProfile("pzkDashRancherRanger","VVA_Vehicles_OffRoad_nr_a","PZKA_Offroad_Light","PZKA_Offroad_lightbar",{"FLW","FRW"},"VVA_TrunkDoorVersion")
 
 PZKA.CreateAnimationProfile("pzkDashRunner","PZKA_Vehicles_Runner_a","PZKA_Runner_Light","PZKA_Runner",{"FLW","FRW"},"VVA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkDashRunnerGeneral","PZKA_Vehicles_Runner_nr_a","PZKA_Runner_Light","PZKA_Runner_general",{"FLW","FRW"},"VVA_TrunkDoorVersion")
@@ -758,7 +767,6 @@ PZKA.CreateAnimationProfile("pzkMerciaLang12402D","PZKA_Vehicles_Lang1240_2D_a",
 
 PZKA.CreateAnimationProfile("pzkMerciaLangBerg","PZKA_Vehicles_Berg_a","PZKA_Berg_Light","PZKA_Berg",{"FLW","FRW","RLW","RRW"},"VVA_TrunkDoorVersion")
 
-PZKA.CreateAnimationProfile("pzkMerciaLang4000Cabrio","PZKA_Vehicles_Lang4000Cabrio_a","PZKA_Lang4000Cabrio_Light","PZKA_Lang4000Cabrio",{"FL","FR"},"VVA_TrunkDoorVersion")
 
 PZKA.CreateAnimationProfile("pzkMinivan2","PZKA_Vehicles_Minivan2_a","PZKA_Minivan2_Light","PZKA_Minivan2",{"FLW","FRW","RR"},"VVA_RearDoorVersionMed")
 PZKA.CreateAnimationProfile("pzkMinivanC22","PZKA_Vehicles_MinivanC22_a","PZKA_MinivanC22_Light","PZKA_MinivanC22",{"FLW","FRW","RR"},"VVA_RearDoorVersionMed")

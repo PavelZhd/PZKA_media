@@ -1,0 +1,20 @@
+module Base
+{
+	template vehicle VVA_PickupVan_common {
+		template! = VVA_PickupTruck_shared,
+		template! = VVA_PickupVan_Interior,		
+	}
+	template vehicle VVA_PickupVan {
+		template! = VVA_PickupTruck_FrontDoors,
+		template! = VVA_PickupTruck_hood,
+		template! = VVA_PickupVan_Trunk,
+		template! = VVA_PickupVan_common,
+	}
+	template vehicle VVA_PickupVan_nr {
+		template! = VVA_PickupTruck_FrontDoors_nr,
+		template! = VVA_PickupTruck_hood_nr,
+		template! = VVA_PickupVan_Trunk_nr,
+		template! = VVA_PickupVan_common,
+		
+	}
+}

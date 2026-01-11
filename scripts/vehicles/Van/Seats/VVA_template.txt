@@ -1,0 +1,21 @@
+module Base
+{
+	template vehicle VVA_VanSeats_shared {
+		template! = VVA_Van_shared,
+		template! = VVA_VanSeats_RearWindow,
+		template! = VVA_VanSeats_Interior,
+		template! = VVA_Van_AllSeats,
+	}
+	template vehicle VVA_VanSeats {
+		template! = VVA_Van_Base,
+		template! = VVA_Van_Trunk,
+		template! = VVA_VanSeats_MiddleDoors,
+		template! = VVA_VanSeats_shared,
+	}
+	template vehicle VVA_VanSeats_nr {
+		template! = VVA_Van_Base_nr,
+		template! = VVA_Van_Trunk_nr,
+		template! = VVA_VanSeats_MiddleDoors_nr,
+		template! = VVA_VanSeats_shared,
+	}
+}

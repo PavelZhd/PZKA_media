@@ -1,0 +1,72 @@
+module Base
+{
+	model VVA_Vehicles_Van_internals
+	{
+		mesh = vehicles/Vans/vva_Van_Common|Vehicles_Interior,
+		
+		texture = Vehicles/vehicle_vanambulanceshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_TrunkFill
+	{
+		mesh = vehicles/Vans/vva_Van_Common|InteriorFill_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_SeatFL
+	{
+		mesh = vehicles/Vans/vva_Van_Common|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_SeatFR
+	{
+		mesh = vehicles/Vans/vva_Van_Common|Seat_FrontRight_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_Van_FrontSeats {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_SeatFR,
+			}
+		}
+	}
+
+	template vehicle VVA_Van_Interior {
+		template! = VVA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = VVA_Vehicles_Van_internals,
+			}
+		}
+	}
+	template vehicle VVA_Van_TrunkFill {
+		part Interior 
+		{						
+			model TrunkFill 
+			{
+				file = VVA_Vehicles_Van_TrunkFill,
+			}
+		}
+	}
+}

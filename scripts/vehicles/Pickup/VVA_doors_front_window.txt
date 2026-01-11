@@ -1,0 +1,111 @@
+module Base
+{
+	model VVA_Vehicles_PickupTruck_DoorFrontLeft
+	{
+		mesh = vehicles/PickUp/vva_PickupTruck|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_PickupTruck_DoorFrontRight
+	{
+		mesh = vehicles/PickUp/vva_PickupTruck|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_PickupTruck_WindowFrontLeft
+	{
+		mesh = vehicles/PickUp/vva_PickupTruck|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model VVA_Vehicles_PickupTruck_WindowFrontRight
+	{
+		mesh = vehicles/PickUp/vva_PickupTruck|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model VVA_Vehicles_PickupTruck_DoorFrontLeft_nr
+	{
+		mesh = vehicles/PickUp/vva_PickupTruck|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_PickupTruck_DoorFrontRight_nr
+	{
+		mesh = vehicles/PickUp/vva_PickupTruck|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle VVA_PickupTruck_FrontDoorWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = VVA_Vehicles_PickupTruck_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = VVA_Vehicles_PickupTruck_WindowFrontRight,
+            }
+	    }
+	}
+
+	template vehicle VVA_PickupTruck_FrontDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickupTruck_DoorFrontLeft,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickupTruck_DoorFrontRight,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = VVA_PickupTruck_FrontDoorWindows,
+	}
+	template vehicle VVA_PickupTruck_FrontDoors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickupTruck_DoorFrontLeft_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickupTruck_DoorFrontRight_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = VVA_PickupTruck_FrontDoorWindows,
+	}
+}

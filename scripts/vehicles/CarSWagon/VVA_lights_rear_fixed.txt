@@ -1,0 +1,34 @@
+module Base
+{
+	model VVA_Vehicles_SWagon_LightRL
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Light_RearLeft_Wagon_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_SWagon_LightRR
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Light_RearRight_Wagon_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_SWagon_RearLights {
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SWagon_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SWagon_LightRR,
+			}
+		}
+	}
+}

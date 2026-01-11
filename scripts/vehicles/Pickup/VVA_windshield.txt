@@ -1,0 +1,18 @@
+module Base
+{
+	model VVA_Vehicles_PickupTruck_Windshield
+	{
+		mesh = vehicles/PickUp/vva_PickupTruck|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	template vehicle VVA_PickupTruck_Windshield {
+		part Windshield
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickupTruck_Windshield,
+			}			
+		}
+	}
+}

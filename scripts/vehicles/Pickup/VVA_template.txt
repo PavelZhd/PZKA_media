@@ -1,0 +1,33 @@
+module Base
+{
+	template vehicle VVA_PickupTruck_shared {
+		template! = VVA_PickupTruck_Windshield,
+		template! = VVA_PickupTruck_FrontLights,
+		template! = VVA_PickupTruck_RearLights,
+		template! = VVA_PickupTruck_Interior,
+		part Battery 
+		{
+			model Default 
+			{
+				file = VVA_Battery,
+				offset = 0.177196 0.0122296 0.85696,
+			}
+		}
+	}
+
+	template vehicle VVA_PickupTruck_common {
+		template! = VVA_PickupTruck_shared,
+		template! = VVA_PickupTruck_RearWindow,		
+	}
+	
+	template vehicle VVA_PickupTruck {
+		template! = VVA_PickupTruck_FrontDoors,
+		template! = VVA_PickupTruck_hood,
+		template! = VVA_PickupTruck_common,
+	}
+	template vehicle VVA_PickupTruck_nr {
+		template! = VVA_PickupTruck_FrontDoors_nr,
+		template! = VVA_PickupTruck_hood_nr,
+		template! = VVA_PickupTruck_common,
+	}
+}

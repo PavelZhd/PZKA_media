@@ -1,0 +1,62 @@
+module Base
+{
+    model VVA_Vehicles_Van_RearWindow
+	{
+		mesh = vehicles/Vans/vva_Van_Trunk|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_Trunk
+	{
+		mesh = vehicles/Vans/vva_Van_Trunk|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	model VVA_Vehicles_Van_Trunk_nr
+	{
+		mesh = vehicles/Vans/vva_Van_Trunk|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkLeftBone 1.0,
+		boneWeight = TrunkRightBone 1.0,
+		boneWeight = VehicleBone 1.0,
+	}
+	template vehicle VVA_Van_RearWindow {
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = VVA_Vehicles_Van_RearWindow,
+			}
+		}
+	}
+	template vehicle VVA_Van_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_Trunk,
+			}
+		}
+		template! = VVA_Van_RearWindow,
+		template! = VVA_RearDoorVersionSlow,
+	}
+	template vehicle VVA_Van_Trunk_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_Trunk_nr,
+			}
+		}
+		template! = VVA_Van_RearWindow,
+		template! = VVA_RearDoorVersionSlow,
+	}
+}

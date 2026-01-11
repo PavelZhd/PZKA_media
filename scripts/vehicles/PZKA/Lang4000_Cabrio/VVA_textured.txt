@@ -1,0 +1,43 @@
+module Base
+{
+	model PZKA_Vehicles_Lang4000_SeatFL
+	{
+		mesh = vehicles/pzka_Lang4000Cabrio|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_luxurycarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Lang4000_SeatFR
+	{
+		mesh = vehicles/pzka_Lang4000Cabrio|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_luxurycarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Lang4000_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang4000_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang4000_SeatFR,
+			}
+		}
+
+		template! = VVA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = VVA_Vehicles_Luxury_internals,
+			}
+		}
+	}
+}

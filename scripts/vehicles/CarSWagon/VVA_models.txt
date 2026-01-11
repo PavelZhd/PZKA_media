@@ -1,0 +1,17 @@
+module Base
+{
+    model VVA_Vehicles_SWagon
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Vehicles_CarStationWagon,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+    model VVA_Vehicles_SWagon_nr
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Vehicles_CarStationWagon,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+}

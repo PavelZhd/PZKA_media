@@ -1,0 +1,34 @@
+module Base
+{
+	model VVA_Vehicles_SUV_LightFL
+	{
+		mesh = vehicles/VVA_SUV|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_SUV_LightFR
+	{
+		mesh = vehicles/VVA_SUV|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_SUV_FrontLights {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_LightFR,
+			}
+		}
+	}
+}

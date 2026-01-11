@@ -1,0 +1,20 @@
+module Base
+{
+	template vehicle VVA_Luxury_shared {
+		template! = PZKA_LuxuryBase_shared,
+		template! = VVA_Luxury_RearWindow,
+	}
+	
+	template vehicle VVA_Luxury {
+		template! = VVA_Luxury_FrontDoors,
+		template! = VVA_Luxury_hood,
+		template! = VVA_Luxury_Trunk,
+		template! = VVA_Luxury_shared,
+	}
+	template vehicle VVA_Luxury_nr {
+		template! = VVA_Luxury_FrontDoors_nr,
+		template! = VVA_Luxury_hood_nr,
+		template! = VVA_Luxury_Trunk_nr,
+		template! = VVA_Luxury_shared,
+	}	
+}

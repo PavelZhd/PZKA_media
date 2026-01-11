@@ -1,0 +1,31 @@
+module Base
+{
+    model VVA_Vehicles_VanRadio
+	{
+		mesh = vehicles/Vans/vva_Van_static|Vehicles_VanRadio,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+    model VVA_Vehicles_VanRadie_nr
+	{
+		mesh = vehicles/Vans/vva_Van_static|Vehicles_VanRadio,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+    model VVA_Vehicles_VanRadioBlind
+	{
+		mesh = vehicles/Vans/vva_Van_static|Vehicles_VanRadioBlind,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+    model VVA_Vehicles_VanRadieBlind_nr
+	{
+		mesh = vehicles/Vans/vva_Van_static|Vehicles_VanRadioBlind,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+}

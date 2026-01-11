@@ -1,0 +1,58 @@
+module Base
+{
+    model VVA_Vehicles_OffRoad_RearWindow
+	{
+		mesh = vehicles/VVA_OffRoad|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_OffRoad_Trunk
+	{
+		mesh = vehicles/VVA_OffRoad|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_OffRoad_Trunk_nr
+	{
+		mesh = vehicles/VVA_OffRoad|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle VVA_OffRoad_RearWindow {
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_RearWindow,
+			}
+		}
+	}
+	template vehicle VVA_OffRoad_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_Trunk,
+			}
+		}
+		template! = VVA_OffRoad_RearWindow,
+		template! = VVA_TrunkDoorLightsVersion,
+	}
+	template vehicle VVA_OffRoad_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_Trunk_nr,
+			}
+		}
+		template! = VVA_OffRoad_RearWindow,
+		template! = VVA_TrunkDoorLightsVersion,
+	}
+}

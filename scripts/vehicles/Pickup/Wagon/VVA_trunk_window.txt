@@ -1,0 +1,60 @@
+module Base
+{
+    model VVA_Vehicles_PickupVan_RearWindow
+	{
+		mesh = vehicles/PickUp/vva_PickupVan|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_PickupVan_Trunk
+	{
+		mesh = vehicles/PickUp/vva_PickupVan|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkUpperBone 1.0,
+		boneWeight = TrunkLowerBone 1.0,
+	}
+	model VVA_Vehicles_PickupVan_Trunk_nr
+	{
+		mesh = vehicles/PickUp/vva_PickupVan|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkUpperBone 1.0,
+		boneWeight = TrunkLowerBone 1.0,
+	}
+	template vehicle VVA_PickupVan_RearWindow {
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = VVA_Vehicles_PickupVan_RearWindow,
+			}
+		}
+	}
+	template vehicle VVA_PickupVan_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickupVan_Trunk,
+			}
+		}
+		template! = VVA_PickupVan_RearWindow,
+		template! = VVA_TrunkDoorWindowVersion,
+	}
+	template vehicle VVA_PickupVan_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickupVan_Trunk_nr,
+			}
+		}
+		template! = VVA_PickupVan_RearWindow,
+		template! = VVA_TrunkDoorWindowVersion,
+	}
+}

@@ -1,0 +1,18 @@
+module Base
+{
+	
+	model PZKA_Vehicles_OffroadC_a
+	{
+		mesh = vehicles/pzka_Offroad|Offroad_C,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_OffroadC_nr_a
+	{
+		mesh = vehicles/pzka_Offroad|Offroad_C,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

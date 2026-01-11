@@ -1,0 +1,114 @@
+module Base
+{
+	model VVA_Vehicles_VanSeats_DoorRearLeft
+	{
+		mesh = vehicles/Vans/vva_Van_Seats|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_VanSeats_DoorRearRight
+	{
+		mesh = vehicles/Vans/vva_Van_Seats|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_VanSeats_WindowRearLeft
+	{
+		mesh = vehicles/Vans/vva_Van_Seats|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_VanSeats_WindowRearRight
+	{
+		mesh = vehicles/Vans/vva_Van_Seats|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_VanSeats_DoorRearLeft_nr
+	{
+		mesh = vehicles/Vans/vva_Van_Seats|Door_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_VanSeats_DoorRearRight_nr
+	{
+		mesh = vehicles/Vans/vva_Van_Seats|Door_RearRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+
+	template vehicle VVA_VanSeats_MiddleDoorWindows {
+		part WindowMiddleLeft
+        {
+			parent = DoorMiddleLeft,
+			model Default
+            {
+            	file = VVA_Vehicles_VanSeats_WindowRearLeft,
+            }            		
+        }
+		part WindowMiddleRight
+    	{	
+        	parent = DoorMiddleRight,
+			model Default
+            {
+                file = VVA_Vehicles_VanSeats_WindowRearRight,
+            }
+	    }
+	}
+
+	template vehicle VVA_VanSeats_MiddleDoors {
+		part DoorMiddleLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VanSeats_DoorRearLeft,
+			}
+		}
+		template! = VVA_DoorML,
+		template! = VVA_DoorML_Reg,
+
+		part DoorMiddleRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VanSeats_DoorRearRight,
+			}
+		}
+		template! = VVA_DoorMR,
+		template! = VVA_DoorMR_Reg,
+
+		template! = VVA_VanSeats_MiddleDoorWindows,
+	}
+	template vehicle VVA_VanSeats_MiddleDoors_nr {
+		part DoorMiddleLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VanSeats_DoorRearLeft_nr,
+			}
+		}
+		template! = VVA_DoorML,
+		template! = VVA_DoorML_Reg,
+
+		part DoorMiddleRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VanSeats_DoorRearRight_nr,
+			}
+		}
+		template! = VVA_DoorMR,
+		template! = VVA_DoorMR_Reg,
+		template! = VVA_VanSeats_MiddleDoorWindows,
+	}
+}

@@ -1,0 +1,34 @@
+module Base
+{
+	model VVA_Vehicles_Luxury_LightRL
+	{
+		mesh = vehicles/VVA_Luxury|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Luxury_LightRR
+	{
+		mesh = vehicles/VVA_Luxury|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_Luxury_RearLights {
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Luxury_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Luxury_LightRR,
+			}
+		}
+	}
+}

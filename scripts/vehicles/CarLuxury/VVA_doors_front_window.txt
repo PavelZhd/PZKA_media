@@ -1,0 +1,111 @@
+module Base
+{
+	model VVA_Vehicles_Luxury_DoorFrontLeft
+	{
+		mesh = vehicles/VVA_Luxury|Door_Left_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_Luxury_DoorFrontRight
+	{
+		mesh = vehicles/VVA_Luxury|Door_Right_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_Luxury_WindowFrontLeft
+	{
+		mesh = vehicles/VVA_Luxury|Window_Left_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model VVA_Vehicles_Luxury_WindowFrontRight
+	{
+		mesh = vehicles/VVA_Luxury|Window_Right_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model VVA_Vehicles_Luxury_DoorFrontLeft_nr
+	{
+		mesh = vehicles/VVA_Luxury|Door_Left_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_Luxury_DoorFrontRight_nr
+	{
+		mesh = vehicles/VVA_Luxury|Door_Right_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle VVA_Luxury_FrontDoorWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = VVA_Vehicles_Luxury_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = VVA_Vehicles_Luxury_WindowFrontRight,
+            }
+	    }
+	}
+
+	template vehicle VVA_Luxury_FrontDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Luxury_DoorFrontLeft,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Luxury_DoorFrontRight,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = VVA_Luxury_FrontDoorWindows,
+	}
+	template vehicle VVA_Luxury_FrontDoors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Luxury_DoorFrontLeft_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Luxury_DoorFrontRight_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = VVA_Luxury_FrontDoorWindows,
+	}
+}

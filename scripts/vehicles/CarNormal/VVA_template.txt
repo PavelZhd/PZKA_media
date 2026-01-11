@@ -1,0 +1,29 @@
+module Base
+{	
+	template vehicle VVA_Normal_common {
+		template! = PZKA_NormalBase_common,
+		template! = PZKA_NormalBase_RearSeats,
+		template! = VVA_Normal_FrontLights,
+	}
+	template vehicle VVA_Normal_shared {
+		template! = VVA_Normal_common,
+		template! = VVA_Normal_RearLights,
+		template! = VVA_Normal_RearWindow,
+		template! = VVA_Normal_InteriorTrunk,
+	}
+	
+	template vehicle VVA_Normal {
+		template! = VVA_Normal_FrontDoors,
+		template! = VVA_Normal_RearDoors,
+		template! = VVA_Normal_hood,
+		template! = VVA_Normal_Trunk,
+		template! = VVA_Normal_shared,
+	}
+	template vehicle VVA_Normal_nr {
+		template! = VVA_Normal_FrontDoors_nr,
+		template! = VVA_Normal_RearDoors_nr,
+		template! = VVA_Normal_hood_nr,
+		template! = VVA_Normal_Trunk_nr,
+		template! = VVA_Normal_shared,
+	}
+}

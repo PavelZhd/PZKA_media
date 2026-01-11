@@ -1,0 +1,111 @@
+module Base
+{
+	model VVA_Vehicles_Normal_DoorRearLeft
+	{
+		mesh = vehicles/Normal/vva_Normal_doorRL|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_Normal_DoorRearRight
+	{
+		mesh = vehicles/Normal/vva_Normal_doorRR|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_Normal_WindowRearLeft
+	{
+		mesh = vehicles/Normal/vva_Normal_doorRL|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model VVA_Vehicles_Normal_WindowRearRight
+	{
+		mesh = vehicles/Normal/vva_Normal_doorRR|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model VVA_Vehicles_Normal_DoorRearLeft_nr
+	{
+		mesh = vehicles/Normal/vva_Normal_doorRL|Door_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_Normal_DoorRearRight_nr
+	{
+		mesh = vehicles/Normal/vva_Normal_doorRR|Door_RearRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+
+	template vehicle VVA_Normal_RearDoorWindows {
+		part WindowRearLeft
+        {
+			parent = DoorRearLeft,
+			model Default
+            {
+            	file = VVA_Vehicles_Normal_WindowRearLeft,
+            }            		
+        }
+		part WindowRearRight
+    	{	
+        	parent = DoorRearRight,
+			model Default
+            {
+                file = VVA_Vehicles_Normal_WindowRearRight,
+            }
+	    }
+	}
+
+	template vehicle VVA_Normal_RearDoors {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_DoorRearLeft,
+			}
+		}
+		template! = VVA_DoorWindowRearLeft,
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_DoorRearRight,
+			}
+		}
+		template! = VVA_DoorWindowRearRight,
+		template! = VVA_Normal_RearDoorWindows,
+	}
+	template vehicle VVA_Normal_RearDoors_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_DoorRearLeft_nr,
+			}
+		}
+		template! = VVA_DoorWindowRearLeft,
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_DoorRearRight_nr,
+			}
+		}
+		template! = VVA_DoorWindowRearRight,
+		template! = VVA_Normal_RearDoorWindows,
+	}
+}

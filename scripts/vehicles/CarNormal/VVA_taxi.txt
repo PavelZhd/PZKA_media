@@ -1,0 +1,20 @@
+module Base
+{	
+	model VVA_Vehicles_Normal_Taxi
+	{
+		mesh = vehicles/Normal/vva_Normal_static|TaxiSign,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_Normal_Taxi {
+		part ATA2RoofTaxiSign
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_Taxi,
+			}
+		}
+	}
+}

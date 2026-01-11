@@ -1,0 +1,29 @@
+module Base
+{
+	template vehicle PZKA_OffRoadBase_shared {
+		template! = VVA_OffRoad_Windshield,
+		template! = VVA_OffRoad_FrontLights,
+		template! = VVA_OffRoad_RearLights,
+		template! = VVA_OffRoad_Interior,
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.22822 -0.02726 0.417085,
+			}
+		}
+	}
+	template vehicle PZKA_OffRoadC {
+		template! = PZKA_OffRoadC_FrontDoors,
+		template! = VVA_OffRoad_hood,
+		template! = PZKA_OffRoadC_Trunk,
+		template! = PZKA_OffRoadBase_shared,
+	}
+	template vehicle PZKA_OffRoadC_nr {
+		template! = PZKA_OffRoadC_FrontDoors_nr,
+		template! = VVA_OffRoad_hood_nr,
+		template! = PZKA_OffRoadC_Trunk_nr,
+		template! = PZKA_OffRoadBase_shared,
+	}
+}

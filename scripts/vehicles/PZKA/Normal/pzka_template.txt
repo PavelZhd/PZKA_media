@@ -1,0 +1,29 @@
+module Base
+{
+	template vehicle PZKA_NormalBase_common {
+		template! = VVA_Normal_Windshield,
+		part Battery 
+		{
+			model Default 
+			{
+				file = VVA_Battery,
+				offset = 0.2585032 -0.0391472 0.9228,
+			}
+		}
+		template! = PZKA_NormalBase_Interior,
+	}
+	template vehicle PZKA_Normal_shared {
+		template! = PZKA_NormalBase_common,
+	}
+
+	template vehicle PZKA_Normal_front {
+		template! = PZKA_Normal_DoorFL,
+		template! = PZKA_Normal_DoorFR,
+		template! = PZKA_Normal_Hood,
+	}
+	template vehicle PZKA_Normal_front_nr {
+		template! = PZKA_Normal_DoorFL_nr,
+		template! = PZKA_Normal_DoorFR_nr,
+		template! = PZKA_Normal_Hood_nr,
+	}
+}

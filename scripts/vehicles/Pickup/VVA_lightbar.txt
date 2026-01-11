@@ -1,0 +1,20 @@
+module Base
+{	
+	model VVA_Vehicles_PickupTruck_Lightbar
+	{
+		mesh = vehicles/PickUp/vva_PickupTruck|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_PickupTruck_Lightbar {
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickupTruck_Lightbar,
+			}
+		}
+	}
+}

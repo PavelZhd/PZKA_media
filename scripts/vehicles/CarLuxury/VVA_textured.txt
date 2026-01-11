@@ -1,0 +1,10 @@
+module Base
+{
+	model VVA_Vehicles_Luxury_internals
+	{
+		mesh = vehicles/VVA_Luxury|Vehicles_Interior,
+		texture = Vehicles/,
+		static = TRUE,
+		scale = 0.004,
+	}
+}

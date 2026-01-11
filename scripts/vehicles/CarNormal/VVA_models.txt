@@ -1,0 +1,17 @@
+module Base
+{
+    model VVA_Vehicles_Normal
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Vehicles_Normal,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+    model VVA_Vehicles_Normal_nr
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Vehicles_Normal,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+}

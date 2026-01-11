@@ -1,0 +1,116 @@
+module Base
+{
+	model VVA_Vehicles_Normal_Steerwheel
+	{
+		mesh = vehicles/Normal/vva_Normal_static|WheelWell,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_Engine
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Engine,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_AirFilter
+	{
+		mesh = vehicles/Normal/vva_Normal_static|AirFilter,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_InteriorTrunk
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Interior_SedanTrunt,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	
+	model VVA_Vehicles_Normal_SeatFL
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_SeatFR
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_SeatRL
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_SeatRR
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_Normal_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_SeatFR,
+			}
+		}
+		part SeatRearLeft
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_Normal_SeatRL,
+			}
+		}
+		part SeatRearRight
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_Normal_SeatRR,
+			}
+		}
+		template! = VVA_Interior,
+		part Interior 
+		{
+			model Steering
+			{
+				file = VVA_Vehicles_Normal_Steerwheel,
+			}
+			model Engine
+			{
+				file = VVA_Vehicles_Normal_Engine,
+			}
+			model Filter
+			{
+				file = VVA_Vehicles_Normal_AirFilter,
+			}
+		}
+	}
+	template vehicle VVA_Normal_InteriorTrunk {
+		part Interior 
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_Normal_InteriorTrunk,
+			}
+		}
+	}
+}

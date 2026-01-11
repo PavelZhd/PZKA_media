@@ -1,0 +1,32 @@
+module Base
+{
+	template vehicle VVA_SUV_shared {
+		template! = VVA_SUV_Windshield,
+		template! = VVA_SUV_FrontLights,
+		template! = VVA_SUV_RearLights,
+		template! = VVA_SUV_Interior,
+		part Battery 
+		{
+			model Default 
+			{
+				file = VVA_Battery,
+				offset = -0.254288 0.0145792 0.82148,
+			}
+		}
+	}
+	
+	template vehicle VVA_SUV {
+		template! = VVA_SUV_FrontDoors,
+		template! = VVA_SUV_RearDoors,
+		template! = VVA_SUV_hood,
+		template! = VVA_SUV_Trunk,
+		template! = VVA_SUV_shared,
+	}
+	template vehicle VVA_SUV_nr {
+		template! = VVA_SUV_FrontDoors_nr,
+		template! = VVA_SUV_RearDoors_nr,
+		template! = VVA_SUV_hood_nr,
+		template! = VVA_SUV_Trunk_nr,
+		template! = VVA_SUV_shared,
+	}
+}

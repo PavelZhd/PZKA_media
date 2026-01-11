@@ -1,0 +1,58 @@
+module Base
+{
+    model VVA_Vehicles_SportCar_RearWindow
+	{
+		mesh = vehicles/VVA_SportCar|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_SportCar_Trunk
+	{
+		mesh = vehicles/VVA_SportCar|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_SportCar_Trunk_nr
+	{
+		mesh = vehicles/VVA_SportCar|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle VVA_SportCar_RearWindow {
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = VVA_Vehicles_SportCar_RearWindow,
+			}
+		}
+	}
+	template vehicle VVA_SportCar_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SportCar_Trunk,
+			}
+		}
+		template! = VVA_SportCar_RearWindow,
+		template! = VVA_TrunkDoorLightsVersion,
+	}
+	template vehicle VVA_SportCar_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SportCar_Trunk_nr,
+			}
+		}
+		template! = VVA_SportCar_RearWindow,
+		template! = VVA_TrunkDoorLightsVersion,
+	}
+}

@@ -1,0 +1,21 @@
+module Base
+{
+	model VVA_Vehicles_PickupVan_internals
+	{
+		mesh = vehicles/PickUp/vva_PickupVan|Vehicles_Interior_van,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_PickupVan_Interior {
+		part Interior 
+		{						
+			model Trunk 
+			{
+				file = VVA_Vehicles_PickupVan_internals,
+			}
+		}
+	}
+}

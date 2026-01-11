@@ -1,0 +1,17 @@
+module Base
+{
+	template vehicle VVA_VanCargo_shared {
+		template! = VVA_Van_shared,
+		template! = VVA_VanCargo_Interior,
+	}
+	template vehicle VVA_Van {
+		template! = VVA_Van_Base,
+		template! = VVA_Van_Trunk,
+		template! = VVA_VanCargo_shared,
+	}
+	template vehicle VVA_Van_nr {
+		template! = VVA_Van_Base_nr,
+		template! = VVA_Van_Trunk_nr,
+		template! = VVA_VanCargo_shared,
+	}
+}

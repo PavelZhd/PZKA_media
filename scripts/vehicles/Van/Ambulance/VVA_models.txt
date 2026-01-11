@@ -1,0 +1,17 @@
+module Base
+{
+    model VVA_Vehicles_VanAmbulance
+	{
+		mesh = vehicles/Vans/vva_Van_static|Vehicles_VanAmbulance,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+    model VVA_Vehicles_VanAmbulance_nr
+	{
+		mesh = vehicles/Vans/vva_Van_static|Vehicles_VanAmbulance,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+}

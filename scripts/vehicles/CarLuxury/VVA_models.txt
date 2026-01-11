@@ -1,0 +1,17 @@
+module Base
+{
+    model VVA_Vehicles_Luxury
+	{
+		mesh = vehicles/VVA_Luxury|Vehicles_LuxuryCar,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+    model VVA_Vehicles_Luxury_nr
+	{
+		mesh = vehicles/VVA_Luxury|Vehicles_LuxuryCar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+}
