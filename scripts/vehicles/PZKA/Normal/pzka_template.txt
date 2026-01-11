@@ -17,12 +17,12 @@ module Base
 	}
 
 	template vehicle PZKA_Normal_front {
-		template! = PZKA_Normal_DoorFL,
+		template! = VVA_Normal_FrontDoors,
 		template! = PZKA_Normal_DoorFR,
 		template! = PZKA_Normal_Hood,
 	}
 	template vehicle PZKA_Normal_front_nr {
-		template! = PZKA_Normal_DoorFL_nr,
+		template! = VVA_Normal_FrontDoors_nr,
 		template! = PZKA_Normal_DoorFR_nr,
 		template! = PZKA_Normal_Hood_nr,
 	}
