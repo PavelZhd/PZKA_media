@@ -1,148 +1,17 @@
 module Base
 {
-	model VVA_Vehicle_StepVan_a
+    model VVA_Vehicles_StepVan
 	{
 		mesh = vehicles/VVA_StepVan|Vehicle_StepVan,
 		shader = vehicle_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.004,
 	}
-	model VVA_Vehicle_StepVan_NoRandom_a
+    model VVA_Vehicles_StepVan_nr
 	{
 		mesh = vehicles/VVA_StepVan|Vehicle_StepVan,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.004,
-	}
-	
-	model VVA_Vehicle_StepVan_DoorFrontLeft
-	{
-		mesh = vehicles/VVA_StepVan|Door_FrontLeft_obj,
-		shader = vehicle_multiuv_noreflect,
-		static = FALSE,
-		scale = 0.004,
-		boneWeight = FrontLeftDoorBone 1.0,
-	}
-	model VVA_Vehicle_StepVan_DoorFrontRight
-	{
-		mesh = vehicles/VVA_StepVan|Door_FrontRight_obj,
-		shader = vehicle_multiuv_noreflect,
-		static = FALSE,
-		scale = 0.004,
-		boneWeight = FrontRightDoorBone 1.0,
-	}
-	model VVA_Vehicle_StepVan_WindowFrontLeft
-	{
-		mesh = vehicles/VVA_StepVan|Window_FrontLeft_obj,
-		shader = vehicle_multiuv_vva,
-		static = FALSE,
-		scale = 0.004,
-		boneWeight = FrontLeftWindowBone 1.0,
-		boneWeight = VehicleBone 1.0,
-	}
-	model VVA_Vehicle_StepVan_WindowFrontRight
-	{
-		mesh = vehicles/VVA_StepVan|Window_FrontRight_obj,
-		shader = vehicle_multiuv_vva,
-		static = FALSE,
-		scale = 0.004,
-		boneWeight = FrontRightWindowBone 1.0,
-		boneWeight = VehicleBone 1.0,
-	}	
-	model VVA_Vehicles_StepVan_Trunk
-	{
-		mesh = vehicles/VVA_StepVan|Trunk_obj,
-		shader = vehicle_multiuv_noreflect,
-		static = FALSE,
-		scale = 0.004,
-		boneWeight = TrunkLeftBone 1.0,
-		boneWeight = TrunkRightBone 1.0,
-		boneWeight = VehicleBone 1.0,
-	}
-	model VVA_Vehicle_StepVan_Hood
-	{
-		mesh = vehicles/VVA_StepVan|Hood_obj,
-		shader = vehicle_multiuv_noreflect,
-		static = FALSE,
-		scale = 0.004,
-		boneWeight = HoodBone 1.0,
-	}
-	model VVA_Vehicle_StepVan_Windshield
-	{
-		mesh = vehicles/VVA_StepVan|Windshield_obj,
-		shader = vehicle_multiuv_vva,
-		scale = 0.004,
-	}
-	model VVA_Vehicle_StepVan_RearWindow
-	{
-		mesh = vehicles/VVA_StepVan|RearWindow_obj,
-		shader = vehicle_multiuv_vva,
-		static = FALSE,
-		scale = 0.004,
-		boneWeight = TrunkLeftBone 1.0,
-		boneWeight = TrunkRightBone 1.0,
-	}
-	model VVA_Vehicles_StepVan_LightFL
-	{
-		mesh = vehicles/VVA_StepVan|Light_FrontLeft_obj,
-		shader = vehicle_multiuv_vva,
-		static = TRUE,
-		scale = 0.004,
-	}
-	model VVA_Vehicles_StepVan_LightFR
-	{
-		mesh = vehicles/VVA_StepVan|Light_FrontRight_obj,
-		shader = vehicle_multiuv_vva,
-		static = TRUE,
-		scale = 0.004,
-	}
-	model VVA_Vehicles_StepVan_LightRL
-	{
-		mesh = vehicles/VVA_StepVan|Light_RearLeft_obj,
-		shader = vehicle_multiuv_vva,
-		static = TRUE,
-		scale = 0.004,
-	}
-	model VVA_Vehicles_StepVan_LightRR
-	{
-		mesh = vehicles/VVA_StepVan|Light_RearRight_obj,
-		shader = vehicle_multiuv_vva,
-		static = TRUE,
-		scale = 0.004,
-	}
-
-	model VVA_Vehicle_StepVan_DoorFrontLeft_nr
-	{
-		mesh = vehicles/VVA_StepVan|Door_FrontLeft_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
-		static = FALSE,
-		scale = 0.004,
-		boneWeight = FrontLeftDoorBone 1.0,
-	}
-	model VVA_Vehicle_StepVan_DoorFrontRight_nr
-	{
-		mesh = vehicles/VVA_StepVan|Door_FrontRight_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
-		static = FALSE,
-		scale = 0.004,
-		boneWeight = FrontRightDoorBone 1.0,
-	}
-	model VVA_Vehicles_StepVan_Trunk_nr
-	{
-		mesh = vehicles/VVA_StepVan|Trunk_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
-		static = FALSE,
-		scale = 0.004,
-		boneWeight = TrunkLeftBone 1.0,
-		boneWeight = TrunkRightBone 1.0,
-		boneWeight = VehicleBone 1.0,
-	}
-	model VVA_Vehicle_StepVan_Hood_nr
-	{
-		mesh = vehicles/VVA_StepVan|Hood_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
-		static = FALSE,
-		scale = 0.004,
-		boneWeight = HoodBone 1.0,
 	}
 }

@@ -1,6 +1,7 @@
 module Base
 {
 	template vehicle PZKA_CVan_Common {
+		template! = VVA_VanBase_shared,
 		part Battery 
 		{
 			model Default 
@@ -9,19 +10,20 @@ module Base
 				offset = -0.24366 -0.023509 1.00457,
 			}
 		}
+		template! = PZKA_Van_Interior_Base,
 		template! = PZKA_CVan_Engine,
 		template! = PZKA_CVan_InteriorFill,
 	}
 
 	template vehicle PZKA_CVan_Shared {
-		template! = PZKA_Van_Shared,
 		template! = PZKA_CVan_Common,
 		template! = PZKA_CVan_hood,
+		template! = VVA_Van_FrontDoors,
 	}
 	template vehicle PZKA_CVan_Shared_nr {
-		template! = PZKA_Van_Shared_nr,
-		template! = PZKA_CVan_Common,		
+		template! = PZKA_CVan_Common,
 		template! = PZKA_CVan_hood_nr,
+		template! = VVA_Van_FrontDoors_nr,
 	}
     
 	template vehicle PZKA_CVan_1 {
@@ -76,12 +78,12 @@ module Base
 
     template vehicle PZKA_CVan_Cargo {
 		template! = PZKA_CVan_RearDoor,
-		template! = PZKA_Van_Interior_Cargo,
+		template! = VVA_VanCargo_Interior,
 		template! = PZKA_CVan_Shared,
 	}
     template vehicle PZKA_CVan_Cargo_Blind {
 		template! = PZKA_CVan_RearDoorBlind,
-		template! = PZKA_Van_Interior_Cargo,
+		template! = VVA_VanCargo_Interior,
 		template! = PZKA_CVan_Shared,
 	}
 	template vehicle PZKA_CVan_Multi {
@@ -101,12 +103,12 @@ module Base
 
 	template vehicle PZKA_CVan_Cargo_nr {
 		template! = PZKA_CVan_RearDoor_nr,
-		template! = PZKA_Van_Interior_Cargo,
+		template! = VVA_VanCargo_Interior,
 		template! = PZKA_CVan_Shared_nr,
 	}
     template vehicle PZKA_CVan_Cargo_Blind_nr {
 		template! = PZKA_CVan_RearDoorBlind_nr,
-		template! = PZKA_Van_Interior_Cargo,
+		template! = VVA_VanCargo_Interior,
 		template! = PZKA_CVan_Shared_nr,
 	}
 	template vehicle PZKA_CVan_Multi_nr {

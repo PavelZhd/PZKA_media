@@ -1,0 +1,70 @@
+module Base
+{
+	model VVA_Vehicles_StepVan_internals
+	{
+		mesh = vehicles/VVA_StepVan|Vehicles_Interior,
+		
+		texture = Vehicles/vehicle_stepvanshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_StepVan_internals_trunk
+	{
+		mesh = vehicles/VVA_StepVan|Vehicles_InteriorTrunk,
+		
+		texture = Vehicles/vehicle_stepvanshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_StepVan_SeatFL
+	{
+		mesh = vehicles/VVA_StepVan|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/vehicle_stepvanshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_StepVan_SeatFR
+	{
+		mesh = vehicles/VVA_StepVan|Seat_FrontRight_obj,
+		
+		texture = Vehicles/vehicle_stepvanshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_StepVan_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_StepVan_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_StepVan_SeatFR,
+			}
+		}
+		
+		template! = VVA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = VVA_Vehicles_StepVan_internals,
+			}
+		}
+	}
+	template vehicle VVA_StepVan_InteriorTrunk {
+		part Interior 
+		{						
+			model Trunk 
+			{
+				file = VVA_Vehicles_StepVan_internals_trunk,
+			}
+		}
+	}
+}

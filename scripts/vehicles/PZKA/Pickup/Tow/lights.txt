@@ -29,7 +29,7 @@ module Base
 		scale = 0.01,
 	}
 
-	template vehicle pzka_Pickup_Lights {
+	template vehicle pzka_PickupTow_Lights {
 		part HeadlightLeft 
 		{
 			model Default

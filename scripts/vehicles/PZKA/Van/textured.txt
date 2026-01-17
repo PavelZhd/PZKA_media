@@ -7,20 +7,6 @@ module Base
 		invertX = FALSE,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_Van_Cargo_interior
-	{
-		mesh = vehicles/Vans/pzka_VVans|Vehicles_Interior_cargo,
-		texture = Vehicles/vehicle_pzkvancampershell,
-		invertX = FALSE,
-		scale = 0.01,
-	}
-	model PZKA_Vehicles_Van_Seats_interior
-	{
-		mesh = vehicles/Vans/pzka_VVans|Vehicles_Interior_seats,
-		texture = Vehicles/vehicle_pzkvancampershell,
-		invertX = FALSE,
-		scale = 0.01,
-	}
     model PZKA_Vehicles_Van_Police_interior
 	{
 		mesh = vehicles/Vans/pzka_VVans|Vehicles_Interior_police,
@@ -50,13 +36,6 @@ module Base
 		scale = 0.01,
 	}
 
-	model PZKA_Vehicles_VVan_interiorFill
-	{
-		mesh = vehicles/Vans/pzka_VVans|InteriorFill_obj,
-		texture = Vehicles/vehicle_pzkvancampershell,
-		invertX = FALSE,
-		scale = 0.01,
-	}
 	model PZKA_Vehicles_VVan_engine
 	{
 		mesh = vehicles/Vans/pzka_VVans|VType_Engine,
@@ -66,20 +45,12 @@ module Base
 	}
 
 	template vehicle PZKA_Van_Interior_Base {
+		template! = VVA_Interior,
 		part Interior 
 		{
 			model Base
 			{
 				file = PZKA_Vehicles_Van_Base_interior,
-			}
-		}
-	}
-	template vehicle PZKA_Van_Interior_Cargo {
-		part Interior 
-		{	
-			model Type
-			{
-				file = PZKA_Vehicles_Van_Cargo_interior,
 			}
 		}
 	}
@@ -125,25 +96,6 @@ module Base
 			model Bars
 			{
 				file = PZKA_Vehicles_Van_interiorBars,
-			}
-		}
-	}
-	
-	template vehicle PZKA_VVan_InteriorFill {
-		part Interior 
-		{	
-			model Rear
-			{
-				file = PZKA_Vehicles_VVan_interiorFill,
-			}
-		}
-	}
-	template vehicle PZKA_VVan_Engine {
-		part Interior 
-		{	
-			model Engine
-			{
-				file = PZKA_Vehicles_VVan_engine,
 			}
 		}
 	}

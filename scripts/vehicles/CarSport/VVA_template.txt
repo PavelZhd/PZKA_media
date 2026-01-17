@@ -1,22 +1,10 @@
 module Base
 {
 	template vehicle VVA_SportCar_Interior {
-		template! = VVA_SportCar_Seats,
-		template! = VVA_SportCar_Engine,
-		part Battery 
-		{
-			model Default 
-			{
-				file = VVA_Battery,
-				offset = 0.155199 0.028513 0.529966,
-			}
-		}
+		template! = PZKA_SportBase_shared,
 	}
 	template vehicle VVA_SportCar_shared {
-		template! = VVA_SportCar_Interior,
-		template! = VVA_SportCar_Windshield,
-		template! = VVA_SportCar_FrontLights,
-		template! = VVA_SportCar_RearLights,
+		template! = PZKA_Cosette_shared,
 	}
 
 	template vehicle VVA_SportCar_Base {

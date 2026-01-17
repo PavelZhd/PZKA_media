@@ -30,6 +30,6 @@ module Base
 	template vehicle PZKA_Normal_Wagon_shared_base 
 	{
 		template! = PZKA_Normal_Sedan_textured_seats,
-		template! = PZKA_Normal_shared,
+		template! = PZKA_NormalBase_common,
 	}
 }

@@ -1,6 +1,7 @@
 module Base
 {
 	template vehicle PZKA_FVan_Common {
+		template! = VVA_VanBase_shared,
 		part Battery 
 		{
 			model Default 
@@ -9,19 +10,20 @@ module Base
 				offset = -0.239962 0.071549 0.946823,
 			}
 		}
+		template! = PZKA_Van_Interior_Base,
 		template! = PZKA_FVan_Engine,
 		template! = PZKA_FVan_InteriorFill,
 	}
 
 	template vehicle PZKA_FVan_Shared {
-		template! = PZKA_Van_Shared,
 		template! = PZKA_FVan_Common,
 		template! = PZKA_FVan_hood,
+		template! = VVA_Van_FrontDoors,
 	}
 	template vehicle PZKA_FVan_Shared_nr {
-		template! = PZKA_Van_Shared_nr,
 		template! = PZKA_FVan_Common,		
 		template! = PZKA_FVan_hood_nr,
+		template! = VVA_Van_FrontDoors_nr,
 	}
     
 	template vehicle PZKA_FVan_1 {
@@ -76,12 +78,12 @@ module Base
 
     template vehicle PZKA_FVan_Cargo {
 		template! = PZKA_FVan_RearDoor,
-		template! = PZKA_Van_Interior_Cargo,
+		template! = VVA_VanCargo_Interior,
 		template! = PZKA_FVan_Shared,
 	}
     template vehicle PZKA_FVan_Cargo_Blind {
 		template! = PZKA_FVan_RearDoorBlind,
-		template! = PZKA_Van_Interior_Cargo,
+		template! = VVA_VanCargo_Interior,
 		template! = PZKA_FVan_Shared,
 	}
 	template vehicle PZKA_FVan_Multi {
@@ -93,18 +95,18 @@ module Base
 	template vehicle PZKA_FVan_Seats {
 		template! = PZKA_Van_MiddleDoors,
 		template! = PZKA_FVan_Seats_RearDoor,		
-		template! = PZKA_Van_Interior_Seats,
+		template! = VVA_VanSeats_Interior,
 		template! = PZKA_FVan_Shared,
 	}
 
 	template vehicle PZKA_FVan_Cargo_nr {
 		template! = PZKA_FVan_RearDoor_nr,
-		template! = PZKA_Van_Interior_Cargo,
+		template! = VVA_VanCargo_Interior,
 		template! = PZKA_FVan_Shared_nr,
 	}
     template vehicle PZKA_FVan_Cargo_Blind_nr {
 		template! = PZKA_FVan_RearDoorBlind_nr,
-		template! = PZKA_Van_Interior_Cargo,
+		template! = VVA_VanCargo_Interior,
 		template! = PZKA_FVan_Shared_nr,
 	}
 	template vehicle PZKA_FVan_Multi_nr {
@@ -116,7 +118,7 @@ module Base
 	template vehicle PZKA_FVan_Seats_nr {
 		template! = PZKA_Van_MiddleDoors_nr,
 		template! = PZKA_FVan_Seats_RearDoor_nr,		
-		template! = PZKA_Van_Interior_Seats,
+		template! = VVA_VanSeats_Interior,
 		template! = PZKA_FVan_Shared_nr,
 	}	
 }

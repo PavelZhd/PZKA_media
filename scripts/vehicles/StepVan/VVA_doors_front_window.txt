@@ -1,61 +1,61 @@
 module Base
 {
-	model VVA_Vehicles_PickUp_DoorFrontLeft
+	model VVA_Vehicles_StepVan_DoorFrontLeft
 	{
-		mesh = vehicles/VVA_PickUpVan|Door_FrontLeft_obj,
+		mesh = vehicles/VVA_StepVan|Door_FrontLeft_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.004,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model VVA_Vehicles_PickUp_DoorFrontRight
+	model VVA_Vehicles_StepVan_DoorFrontRight
 	{
-		mesh = vehicles/VVA_PickUpVan|Door_FrontRight_obj,
+		mesh = vehicles/VVA_StepVan|Door_FrontRight_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.004,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model VVA_Vehicles_PickUp_WindowFrontLeft
+	model VVA_Vehicles_StepVan_WindowFrontLeft
 	{
-		mesh = vehicles/VVA_PickUpVan|Window_FrontLeft_obj,
+		mesh = vehicles/VVA_StepVan|Window_FrontLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.004,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model VVA_Vehicles_PickUp_WindowFrontRight
+	model VVA_Vehicles_StepVan_WindowFrontRight
 	{
-		mesh = vehicles/VVA_PickUpVan|Window_FrontRight_obj,
+		mesh = vehicles/VVA_StepVan|Window_FrontRight_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.004,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model VVA_Vehicles_PickUp_DoorFrontLeft_nr
+	model VVA_Vehicles_StepVan_DoorFrontLeft_nr
 	{
-		mesh = vehicles/VVA_PickUpVan|Door_FrontLeft_obj,
+		mesh = vehicles/VVA_StepVan|Door_FrontLeft_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.004,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model VVA_Vehicles_PickUp_DoorFrontRight_nr
+	model VVA_Vehicles_StepVan_DoorFrontRight_nr
 	{
-		mesh = vehicles/VVA_PickUpVan|Door_FrontRight_obj,
+		mesh = vehicles/VVA_StepVan|Door_FrontRight_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.004,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
 
-	template vehicle PZKA_Pickup_FrontDoorWindows {
+	template vehicle VVA_StepVan_FrontDoorWindows {
 		part WindowFrontLeft
         {
 			parent = DoorFrontLeft,
 			model Default
             {
-            	file = VVA_Vehicles_PickUp_WindowFrontLeft,
+            	file = VVA_Vehicles_StepVan_WindowFrontLeft,
             }            		
         }
 		part WindowFrontRight
@@ -63,17 +63,17 @@ module Base
         	parent = DoorFrontRight,
 			model Default
             {
-                file = VVA_Vehicles_PickUp_WindowFrontRight,
+                file = VVA_Vehicles_StepVan_WindowFrontRight,
             }
 	    }
 	}
 
-	template vehicle PZKA_Pickup_FrontDoors {
+	template vehicle VVA_StepVan_FrontDoors {
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = VVA_Vehicles_PickUp_DoorFrontLeft,
+				file = VVA_Vehicles_StepVan_DoorFrontLeft,
 			}
 		}
 		template! = VVA_DoorWindowFrontLeft,
@@ -82,18 +82,18 @@ module Base
 		{
 			model Default
 			{
-				file = VVA_Vehicles_PickUp_DoorFrontRight,
+				file = VVA_Vehicles_StepVan_DoorFrontRight,
 			}
 		}
 		template! = VVA_DoorWindowFrontRight,
-		template! = PZKA_Pickup_FrontDoorWindows,
+		template! = VVA_StepVan_FrontDoorWindows,
 	}
-	template vehicle PZKA_Pickup_FrontDoors_nr {
+	template vehicle VVA_StepVan_FrontDoors_nr {
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = VVA_Vehicles_PickUp_DoorFrontLeft_nr,
+				file = VVA_Vehicles_StepVan_DoorFrontLeft_nr,
 			}
 		}
 		template! = VVA_DoorWindowFrontLeft,
@@ -102,10 +102,10 @@ module Base
 		{
 			model Default
 			{
-				file = VVA_Vehicles_PickUp_DoorFrontRight_nr,
+				file = VVA_Vehicles_StepVan_DoorFrontRight_nr,
 			}
 		}
 		template! = VVA_DoorWindowFrontRight,
-		template! = PZKA_Pickup_FrontDoorWindows,
+		template! = VVA_StepVan_FrontDoorWindows,
 	}
 }

@@ -7,4 +7,13 @@ module Base
 		static = TRUE,
 		scale = 0.004,
 	}
+	template vehicle PZKA_StepVan_Food_Interior {
+		part Inreior 
+		{
+			model Trunk
+			{
+				file = PZKA_Vehicle_StepVan_internals_food,
+			}
+		}
+	}
 }

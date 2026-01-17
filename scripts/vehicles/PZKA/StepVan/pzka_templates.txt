@@ -1,0 +1,7 @@
+module Base
+{
+	template vehicle VVA_StepVan_Food_nr {
+		template! = VVA_StepVan_nr,
+		template! = VVA_StepVan_Food_RearWindow,
+	}
+}

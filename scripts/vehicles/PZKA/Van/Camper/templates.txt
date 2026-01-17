@@ -1,13 +1,12 @@
 module Base
 {
 	template vehicle PZKA_Van_Camper {
+		template! = VVA_Van_Base,		
 		template! = PZKA_Van_Camper_DoorRR,
 		template! = PZKA_Van_Camper_Windows,
 		template! = PZKA_Van_Camper_Interior,
-		template! = PZKA_Van_Shared,
-		template! = PZKA_VVan_Common0,
-		template! = PZKA_VVan_Lights,
+		template! = PZKA_VVan_RearLights,
 		template! = PZKA_VVan_RearDoor,
-		template! = PZKA_VVan_hood,
+		template! = VVA_Van_sharedFront,
 	}
 }

@@ -1,34 +1,26 @@
 module Base
 {
-	template vehicle VVA_Van_common {
+	template vehicle VVA_VanBase_shared {
 		template! = VVA_Van_FrontSeats,
+		template! = VVA_Van_Windshield,
 	}
-	template vehicle VVA_Van_engine {
-		template! = VVA_Van_Interior,
-		part Battery 
-		{
-			model Default 
-			{
-				file = VVA_Battery90,
-				offset = -0.30242 0.0121768 0.94432,
-			}
-		}
+
+	template vehicle VVA_Van_sharedFront {
+		template! = VVA_VanBase_shared,
+		template! = VVA_Van_FrontLights,
+		template! = VVA_VVan_Engine,
 	}
 	template vehicle VVA_Van_shared {
-		template! = VVA_Van_Windshield,
-		template! = VVA_Van_engine,
+		template! = VVA_Van_sharedFront,
 		template! = VVA_Van_TrunkFill,
-		template! = VVA_Van_FrontLights,
-		template! = VVA_Van_RearLights,
+		template! = VVA_Van_RearLights,		
 	}
 	template vehicle VVA_Van_Base {
 		template! = VVA_Van_FrontDoors,
 		template! = VVA_Van_hood,
-		template! = VVA_Van_common,
 	}
 	template vehicle VVA_Van_Base_nr {
 		template! = VVA_Van_FrontDoors_nr,
 		template! = VVA_Van_hood_nr,
-		template! = VVA_Van_common,
 	}
 }

@@ -12,14 +12,14 @@ module Base
 
 	template vehicle PZKA_Normal_Wagon {
 		template! = PZKA_Normal_front,		
-		template! = PZKA_Wagon_Reardoors,
-		template! = PZKA_Normal_shared,
-		template! = PZKA_Normal_Sedan_rear_seats,
+		template! = VVA_SWagon_RearDoors,
+		template! = PZKA_NormalBase_common,
+		template! = PZKA_NormalBase_RearSeats,
 	}
 	template vehicle PZKA_Normal_Wagon_nr {
-		template! = PZKA_Normal_front_nr,		
-		template! = PZKA_Wagon_Reardoors_nr,
-		template! = PZKA_Normal_shared,
-		template! = PZKA_Normal_Sedan_rear_seats,
+		template! = PZKA_Normal_front_nr,
+		template! = PZKA_SWagon_RearDoors_nr,
+		template! = PZKA_NormalBase_common,
+		template! = PZKA_NormalBase_RearSeats,
 	}
 }

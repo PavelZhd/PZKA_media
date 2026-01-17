@@ -1,0 +1,60 @@
+module Base
+{
+    model VVA_Vehicles_StepVan_RearWindow
+	{
+		mesh = vehicles/VVA_StepVan|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_StepVan_Trunk
+	{
+		mesh = vehicles/VVA_StepVan|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkRightBone 1.0,
+		boneWeight = TrunkLeftBone 1.0,
+	}
+	model VVA_Vehicles_StepVan_Trunk_nr
+	{
+		mesh = vehicles/VVA_StepVan|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkRightBone 1.0,
+		boneWeight = TrunkLeftBone 1.0,
+	}
+	template vehicle VVA_StepVan_RearWindow {
+		part WindshieldRear
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = VVA_Vehicles_StepVan_RearWindow,
+			}
+		}
+	}
+	template vehicle VVA_StepVan_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_StepVan_Trunk,
+			}
+		}
+		template! = VVA_StepVan_RearWindow,
+		template! = VVA_RearDoorVersionMed,
+	}
+	template vehicle VVA_StepVan_Trunk_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_StepVan_Trunk_nr,
+			}
+		}
+		template! = VVA_StepVan_RearWindow,
+		template! = VVA_RearDoorVersionMed,
+	}
+}

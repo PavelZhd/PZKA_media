@@ -1,13 +1,5 @@
 module Base
 {
-	model PZKA_Vehicle_StepVan_Food_NoRandom_a
-	{
-		mesh = vehicles/pzka_StepVan|Vehicle_StepVan_Food,
-		shader = vehicle_norandom_multiuv_noreflect,
-		invertX = FALSE,
-		scale = 0.004,
-	}
-
 	model PZKA_Vehicle_StepVan_IceCream
 	{
 		mesh = vehicles/pzka_StepVan|IceCream,
@@ -50,11 +42,55 @@ module Base
 		invertX = FALSE,
 		scale = 0.004,
 	}
+
 	
-	model PZKA_Vehicle_StepVan_Food_RearWindow
-	{
-		mesh = vehicles/pzka_StepVan|WindowRear_food_sobj,
-		shader = vehicle_multiuv_vva,
-		scale = 0.004,
+	template vehicle PZKA_StepVan_Pizza {
+		part Inreior 
+		{
+			model RoofOven
+			{
+				file = PZKA_Vehicle_StepVan_Oven,
+			}
+		}
+	}
+	template vehicle PZKA_StepVan_Icecream {
+		part ATA2RoofTaxiSign 
+		{
+			model Decor {
+				file = PZKA_Vehicle_StepVan_IceCream,
+			}
+		}
+	}
+	template vehicle PZKA_StepVan_Hotdog {
+		part ATA2RoofTaxiSign 
+		{
+			model Decor {
+				file = PZKA_Vehicle_StepVan_HotDog,
+			}
+		}
+	}
+	template vehicle PZKA_StepVan_Taco {
+		part ATA2RoofTaxiSign 
+		{
+			model Decor {
+				file = PZKA_Vehicle_StepVan_Taco,
+			}
+		}
+	}
+	template vehicle PZKA_StepVan_Pierogi {
+		part ATA2RoofTaxiSign 
+		{
+			model Decor {
+				file = PZKA_Vehicle_StepVan_Pierogi,
+			}
+		}
+	}
+	template vehicle PZKA_StepVan_SWAT {
+		part ATA2RoofLightbar 
+		{
+			model Decor {
+				file = PZKA_Vehicle_StepVan_Lightbar,
+			}
+		}
 	}
 }

@@ -59,50 +59,8 @@ module Base
 	}
 
 	template vehicle VVA_Normal_Interior {
-		part SeatFrontLeft 
-		{
-			model Default
-			{
-				file = VVA_Vehicles_Normal_SeatFL,
-			}
-		}
-		part SeatFrontRight 
-		{
-			model Default
-			{
-				file = VVA_Vehicles_Normal_SeatFR,
-			}
-		}
-		part SeatRearLeft
-		{
-			model Default 
-			{
-				file = VVA_Vehicles_Normal_SeatRL,
-			}
-		}
-		part SeatRearRight
-		{
-			model Default 
-			{
-				file = VVA_Vehicles_Normal_SeatRR,
-			}
-		}
-		template! = VVA_Interior,
-		part Interior 
-		{
-			model Steering
-			{
-				file = VVA_Vehicles_Normal_Steerwheel,
-			}
-			model Engine
-			{
-				file = VVA_Vehicles_Normal_Engine,
-			}
-			model Filter
-			{
-				file = VVA_Vehicles_Normal_AirFilter,
-			}
-		}
+		template! = PZKA_NormalBase_Interior,
+		template! = PZKA_NormalBase_RearSeats,
 	}
 	template vehicle VVA_Normal_InteriorTrunk {
 		part Interior 

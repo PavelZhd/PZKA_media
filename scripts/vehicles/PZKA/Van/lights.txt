@@ -15,8 +15,7 @@ module Base
 		scale = 0.01,
 	}
 
-	template vehicle PZKA_VVan_Lights {
-		template! = PZKA_VVan_Lights_Front,
+	template vehicle PZKA_VVan_RearLights {
 		part HeadlightRearLeft 
 		{
 			parent = DoorRear,

@@ -1,0 +1,36 @@
+module Base
+{
+	model PZKA_Vehicles_SportCar_SeatFL
+	{
+		mesh = vehicles/pzka_Sport|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/vehicle_sportscarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_SportCar_SeatFR
+	{
+		mesh = vehicles/pzka_Sport|Seat_FrontRight_obj,
+		
+		texture = Vehicles/vehicle_sportscarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_SportCar_Seats {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SportCar_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_SportCar_SeatFR,
+			}
+		}
+	}
+}
