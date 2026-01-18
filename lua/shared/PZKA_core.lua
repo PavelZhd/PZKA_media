@@ -2,10 +2,9 @@ local VVAmodule = require "VVA_core"
 
 if (not VVAmodule) or (not VVAmodule.version) or VVAmodule.version < 2 then
 	VVAmodule = {}
-	VVAmodule.version = 2
 	local vehicles = {}
 	local profiles = {}
-
+	VVAmodule.version = 2
 	VVAmodule.IsProfileDefined = function(profileName)
 		return not not profiles[profileName]
 	end
@@ -56,7 +55,7 @@ if (not VVAmodule) or (not VVAmodule.version) or VVAmodule.version < 2 then
 	end
 
 	local function plusTemplates(vehicleObj, templates) 
-		--print('VVA: handler Plus call for '..vehicleObj.vehicleId)
+		--print('PZKA: handler Plus call for '..vehicleObj.vehicleId)
 		for i, template in pairs(templates) do
 			if (template) then
 				vehicleObj.plus[template] = 1
@@ -64,25 +63,27 @@ if (not VVAmodule) or (not VVAmodule.version) or VVAmodule.version < 2 then
 		end
 	end
 	local function minusTemplates(vehicleObj, templates) 
-		--print('VVA: handler Minus call for '..vehicleObj.vehicleId)
+		--print('PZKA: handler Minus call for '..vehicleObj.vehicleId)
 		for i, template in pairs(templates) do
-			vehicleObj.minus[template] = 1
+			if (template) then
+				vehicleObj.minus[template] = 1
+			end
 		end
 	end
 	local function setModel(vehicleObj, model)
-		--print('VVA: handler Model call for '..vehicleObj.vehicleId)
+		--print('PZKA: handler Model call for '..vehicleObj.vehicleId)
 		vehicleObj.model = model
 	end
 	local function inherit(vehicleObj, parent) 
-		--print('VVA: handler Parent call for '..vehicleObj.vehicleId)
+		--print('PZKA: handler Parent call for '..vehicleObj.vehicleId)
 		vehicleObj.parent = parent
 	end
 
-	VVAmodule.TeplateHandler = function (vehicleId, module) 
+	VVAmodule.TeplateHandler = function (vehicleId, module, erase) 
 		local mod = module or "Base"
 		local fullId = mod .. "." .. vehicleId
 		local v = vehicles[fullId]
-		if not v then
+		if erase or not v then
 			v = {vehicleId = vehicleId, plus = {}, minus = {}}
 			local h = {}
 			h.plus = function(templates)
@@ -104,6 +105,7 @@ if (not VVAmodule) or (not VVAmodule.version) or VVAmodule.version < 2 then
 			end
 			v.handler = h		
 			vehicles[fullId] = v
+			print('PZKA: Generated handler for '..fullId)
 		end
 		return v.handler
 	end
@@ -120,9 +122,18 @@ if (not VVAmodule) or (not VVAmodule.version) or VVAmodule.version < 2 then
 		return handler
 	end
 
-	
-	VVAmodule.CopyTemplateToVehicle = function(VehicleId,sourceId,templates,model,module,sourcemodule)
+	--[[VVAmodule.CopyTemplateToVehicle = function(VehicleId,sourceId,templates,module,sourcemodule)
+		local smod = sourcemodule or "Base"
 		local handler = VVAmodule.TeplateHandler(VehicleId,module)
+		handler.setParent(smod.."."..sourceId)
+		if templates then
+			handler.plus(templates)
+		end
+		return handler
+	end
+	]]
+	VVAmodule.CopyTemplateToVehicle = function(VehicleId,sourceId,templates,model,module,sourcemodule)
+		local handler = VVAmodule.TeplateHandler(VehicleId,module, true)
 		handler.setParent(sourceId, sourcemodule)
 		if model then
 			handler.setModel(model)
@@ -157,13 +168,8 @@ if (not VVAmodule) or (not VVAmodule.version) or VVAmodule.version < 2 then
 
 	local Applicator = {}
 	Applicator.Leaf = function (vehicleScript, vehicleid, template, applied)
-		if (template) then
-			print("PZKACORE -- adding template to vehicle"..vehicleid.." << "..template)
-			vehicleScript:Load(vehicleid, "{ template! = " .. template .. ",}")
-			applied[template] = 1
-		else
-			print("PZKACORE!! Error adding template to vehicle "..vehicleid.." << NONE")			
-		end
+		vehicleScript:Load(vehicleid, "{ template! = " .. template .. ",}")
+		applied[template] = 1
 	end
 
 	Applicator.Template = function (vehicleScript, vehicleid, template, unwrap, applied, minus)
@@ -171,12 +177,15 @@ if (not VVAmodule) or (not VVAmodule.version) or VVAmodule.version < 2 then
 			return 
 		end
 		if unwrap and unwrap[template] then
+			print('PZKA: template name '..template..'marked as Unwraped. Repeat mention interpreted as leaf')
 			Applicator.Leaf(vehicleScript, vehicleid, template, applied)
 		else
 			local p = profiles[template]
 			if not p then
+				print('PZKA: template name not located as composite. Applying as leaf '..template)
 				Applicator.Leaf(vehicleScript, vehicleid, template, applied)
 			else
+				--print('PZKA: applying templates from composite teplate '..template)
 				Applicator.TemplateBatch(vehicleScript, vehicleid, p.plus, combined(unwrap,{template = 1}), applied, combined(minus,p.minus))
 			end
 		end
@@ -190,14 +199,20 @@ if (not VVAmodule) or (not VVAmodule.version) or VVAmodule.version < 2 then
 	local function ApplyVehicleChanges(vehicleScript, vehicleid, vehicleData, modelset, unwrap, applied, minus)
 		if not vehicleData then return end
 		if not applied then applied = {} end
+		print('PZKA: Modifying vehicle: '..vehicleid..' based on vehicle profile '..vehicleData.vehicleId.." -- "..(modelset and "SET" or "UNSET"))
+		print('PZKA: Modifying vehicle: '..vehicleid..' model '..(vehicleData.model or "NOMODEL"))
 		if not modelset and vehicleData.model then
+			print('PZKA: Setting vehicle model: '..vehicleid..'->'..vehicleData.model)
 			vehicleScript:Load(vehicleid, "{ model { file = " .. vehicleData.model .. ",}}")
 			modelset = true
 		end
+		print('PZKA: Modifying vehicle: '..vehicleid..' parent '..(vehicleData.parent or "UNPARENTED"))
 		if vehicleData.parent then
+			print('PZKA: Modifying vehicle: '..vehicleid..' applying parent '..(vehicleData.parent or "UNPARENTED"))
 			ApplyVehicleChanges(vehicleScript, vehicleid, vehicles[vehicleData.parent], modelset, unwrap, applied, combined(minus,vehicleData.minus))	
 		end
 		if vehicleData.plus then
+			print('PZKA: applying templates from vehicle profile '..vehicleData.vehicleId)
 			Applicator.TemplateBatch(vehicleScript, vehicleid, vehicleData.plus, unwrap, applied, minus)
 		end
 	end
@@ -226,4 +241,5 @@ if (not VVAmodule) or (not VVAmodule.version) or VVAmodule.version < 2 then
 
 	Events.OnInitGlobalModData.Add(ApplyAnimationProfiles)
 end
+
 return VVAmodule
