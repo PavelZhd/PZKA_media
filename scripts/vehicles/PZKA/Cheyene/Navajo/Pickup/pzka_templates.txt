@@ -1,0 +1,8 @@
+module Base
+{
+	template vehicle PZKA_NavajoP {
+		template! = PZKA_NavajoP_RearWindow,
+		template! = PZKA_CheyeneBase,
+		template! = PZKA_Navajo_shared,
+	}
+}

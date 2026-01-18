@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicles_Cheyene_Lightbar
+	{
+		mesh = vehicles/pzka_Cheyene|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Cheyene_Lightbar {
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_Lightbar,
+			}
+		}
+	}
+}

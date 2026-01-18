@@ -539,6 +539,22 @@ PZKA.CopyTemplateToVehicle("pzkStepVanHotDog","PZKA_StepVanFood",{"pzka_t_taxi",
 PZKA.CopyTemplateToVehicle("pzkStepVanIceCream","PZKA_StepVanFood",{"pzka_t_taxi","PZKA_StepVan_Icecream"})
 PZKA.CopyTemplateToVehicle("pzkStepVanPierogi","PZKA_StepVanFood",{"pzka_t_taxi","PZKA_StepVan_Pierogi"})
 
+-- Cheyene
+
+PZKA.ApplyTemplateToVehicle("pzkDashCheyene","PZKA_Vehicles_Cheyene",{"pzka_4SeatsR","PZKA_Cheyene"})
+PZKA.ApplyTemplateToVehicle("PZKA_DashCheyene_nr","PZKA_Vehicles_Cheyene_nr",{"pzka_4SeatsR","PZKA_Cheyene_nr"})
+PZKA.CopyTemplateToVehicle("PZKA_DashCheyene_lightbar","PZKA_DashCheyene_nr",{"PZKA_Cheyene_Lightbar"})
+PZKA.CopyTemplateToVehicle("pzkDashCheyeneBFRF","PZKA_DashCheyene_lightbar",{"pzka_t_lighbar"})
+PZKA.CopyTemplateToVehicle("pzkDashCheyeneAirportSecurity","PZKA_DashCheyene_lightbar",{"pzka_t_lighbar"})
+PZKA.CopyTemplateToVehicle("pzkDashCheyeneBFRFSec","PZKA_DashCheyene_lightbar",{"pzka_t_lighbar"})
+PZKA.CopyTemplateToVehicle("pzkDashCheyeneMeadeSheriff","PZKA_DashCheyene_lightbar",{"pzka_sle_lighbar"})
+PZKA.CopyTemplateToVehicle("pzkDashCheyenePoliceLouisvillePD","pzkDashCheyeneMeadeSheriff")
+PZKA.CopyTemplateToVehicle("pzkDashCheyeneWestPoint","pzkDashCheyeneMeadeSheriff")
+
+---- Navajo
+
+PZKA.ApplyTemplateToVehicle("pzkDashNavajoP","PZKA_Vehicles_NavajoP",{"pzka_4SeatsR","PZKA_NavajoP"})
+PZKA.ApplyTemplateToVehicle("pzkDashNavajoW","PZKA_Vehicles_NavajoW",{"pzka_4SeatsR","PZKA_NavajoW"})
 
 --- OLD FRAMEWORK CODE
 
@@ -678,25 +694,11 @@ PZKA.CreateAnimationProfile("pzkMastersonIberiaVan2","PZKA_Vehicles_IberiaW2_a",
 
 PZKA.CreateAnimationProfile("pzkDashChampion","PZKA_Vehicles_Champion_a","PZKA_Champion_Light","PZKA_Champion",{"FLW","FRW"},"VVA_TrunkDoorVersion")
 
-PZKA.CreateAnimationProfile("pzkDashCheyene","PZKA_Vehicles_Cheyene_a","PZKA_Cheyene_Light","PZKA_Cheyene",{"FLW","FRW","RLW","RRW"},"VVA_TrunkDoorVersion")
-PZKA.CreateAnimationProfile("pzkDashCheyeneBFRF","PZKA_Vehicles_Cheyene_nr_a","PZKA_Cheyene_Light","PZKA_Cheyene_nr",{"FLW","FRW","RLW","RRW"},"VVA_TrunkDoorVersion")
-PZKA.CreateAnimationProfile("pzkDashCheyeneAirportSecurity","PZKA_Vehicles_Cheyene_nr_a","PZKA_Cheyene_Light","PZKA_Cheyene_lightbar",{"FLW","FRW","RLW","RRW"},"VVA_TrunkDoorVersion")
---PZKA.CloneAnimationProfile("pzkDashCheyeneBFRFSec","pzkDashCheyeneAirportSecurity","PZKA_Cheyene_Light","PZKA_Cheyene_lightbar",{"FLW","FRW","RLW","RRW"},"VVA_TrunkDoorVersion")
-if SLE then
-    PZKA.CreateAnimationProfile("pzkDashCheyeneMeadeSheriff","PZKA_Vehicles_Cheyene_nr_a","PZKA_Cheyene_Light","PZKA_Cheyene_nr",{"FLW","FRW","RLW","RRW"},"VVA_TrunkDoorVersion")
-else
-    PZKA.CloneAnimationProfile("pzkDashCheyeneMeadeSheriff","pzkDashCheyeneAirportSecurity")
-end
-PZKA.CloneAnimationProfile("pzkDashCheyenePoliceLouisvillePD","pzkDashCheyeneMeadeSheriff")
-PZKA.CloneAnimationProfile("pzkDashCheyeneWestPoint","pzkDashCheyeneMeadeSheriff")
-
 PZKA.CreateAnimationProfile("pzkDashDeluxo","PZKA_Vehicles_Deluxo_a","PZKA_Deluxo_Light","PZKA_Deluxo",{"FLW","FRW"},"VVA_TrunkDoorVersion")
 
 PZKA.CreateAnimationProfile("pzkDashElite2D","PZKA_Vehicles_Elite2D_a","PZKA_Elite2D_Light","PZKA_Elite2D",{"FLW","FRW"},"VVA_TrunkDoorVersion")
 PZKA.CreateAnimationProfile("pzkDashGTA","PZKA_Vehicles_GTA_a","PZKA_GTA_Light","PZKA_GTA",{"FLW","FRW"},"VVA_TrunkDoorVersion")
 
-PZKA.CreateAnimationProfile("pzkDashNavajoP","PZKA_Vehicles_NavajoP_a","PZKA_Navajo_Light","PZKA_NavajoP",{"FLW","FRW"},"PZKA_OpenBedVersion")
-PZKA.CreateAnimationProfile("pzkDashNavajoW","PZKA_Vehicles_NavajoW_a","PZKA_Navajo_Light","PZKA_NavajoW",{"FLW","FRW"},"VVA_TrunkDoorVersion")
 
 PZKA.CreateAnimationProfile("pzkDashOhio","PZKA_Vehicles_Ohio_a","PZKA_Ohio_Light","PZKA_Ohio",{"FL","FR"},"VVA_TrunkDoorVersion",{"FL","FR","RL"})
 

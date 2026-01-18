@@ -17,14 +17,14 @@ module Base
 		template! = VVA_PickupTruck_FrontDoors,
 		template! = VVA_PickupTruck_hood,
 		template! = VVA_PickupTruck_RearWindow,	
-		template! = VVA_PickupBase_shared,
+		template! = PZKA_PickupBase_shared,
 		template! = pzka_PickupTow_Lights,
 	}
 	template vehicle PZKA_PickupTow_nr {
 		template! = VVA_PickupTruck_FrontDoors_nr,
 		template! = VVA_PickupTruck_hood_nr,
 		template! = VVA_PickupTruck_RearWindow,	
-		template! = VVA_PickupBase_shared,
+		template! = PZKA_PickupBase_shared,
 		template! = pzka_PickupTow_Lights,
 	}
 }

@@ -1,0 +1,18 @@
+module Base
+{
+	template vehicle PZKA_Navajo_shared {
+		template! = PZKA_CheyeneBase_shared,
+		template! = PZKA_Navajo_RearLight,
+	}
+
+	template vehicle PZKA_NavajoW {
+		template! = PZKA_NavajoW_Trunk,
+		template! = PZKA_CheyeneBase,
+		template! = PZKA_Navajo_shared,
+	}
+	template vehicle PZKA_NavajoW_nr {
+		template! = PZKA_NavajoW_Trunk_nr,
+		template! = PZKA_CheyeneBase_nr,
+		template! = PZKA_Navajo_shared,
+	}
+}

@@ -2,7 +2,7 @@ module Base
 {
 	template vehicle PZKA_Marocca_shared {
 		template! = pzka_Marocca_windshield,
-		template! = VVA_Sport_interior,		
+		template! = PZKA_SportBase_shared,		
 	}
 
 	template vehicle PZKA_Marocca {

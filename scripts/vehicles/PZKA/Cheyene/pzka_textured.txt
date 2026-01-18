@@ -35,4 +35,45 @@ module Base
 		static = TRUE,
 		scale = 0.01,
 	}
+
+	template vehicle PZKA_Cheyene_interior_shared {		
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_SeatFR,
+			}
+		}
+		template! = VVA_Interior,
+		part Interior 
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_Cheyene_internals,
+			}
+		}
+	}
+	template vehicle PZKA_Cheyene_rearSeats {
+		part SeatRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_SeatRL,
+			}
+		}
+		part SeatRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_SeatRR,
+			}
+		}
+	}
 }
