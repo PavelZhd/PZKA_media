@@ -6,8 +6,7 @@ module Base
 		template! = PZKA_Limo_Trunk_Homelander_model,
 		template! = PZKA_Limo_Trunk_Nyala_model,
 		template! = PZKA_Limo_Trunk_Rapier_model,
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Fast,
+		template! = VVA_TrunkDoorVersion,
 		template! = PZKA_VariableTrunk,
 	}
 	template vehicle PZKA_Limo_Trunk_nr {
@@ -16,8 +15,7 @@ module Base
 		template! = PZKA_Limo_Trunk_Homelander_model_nr,
 		template! = PZKA_Limo_Trunk_Nyala_model_nr,
 		template! = PZKA_Limo_Trunk_Rapier_model_nr,
-		template! = PZKA_TrunkDoor,
-		template! = PZKA_TrunkDoor_Fast,
+		template! = VVA_TrunkDoorVersion,
 		template! = PZKA_VariableTrunk,
 	}
 }
