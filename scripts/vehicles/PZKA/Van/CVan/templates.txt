@@ -1,7 +1,7 @@
 module Base
 {
 	template vehicle PZKA_CVan_Common {
-		template! = VVA_VanBase_shared,
+		template! = PZKA_VanBase_shared,
 		part Battery 
 		{
 			model Default 

@@ -1,7 +1,7 @@
 module Base
 {
 	template vehicle PZKA_DVan_Common {
-		template! = VVA_VanBase_shared,
+		template! = PZKA_VanBase_shared,
 		template! = VVA_VVan_Engine,
 		template! = PZKA_CVan_InteriorFill,
 	}

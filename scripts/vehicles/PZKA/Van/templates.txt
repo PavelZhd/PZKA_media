@@ -1,6 +1,6 @@
 module Base
 {
-	template vehicle PZKA_VVan_Shared {
+		template vehicle PZKA_VVan_Shared {
 		template! = VVA_Van_shared,
 		template! = VVA_Van_Base,
 		template! = PZKA_VVan_RearDoor,
@@ -13,16 +13,15 @@ module Base
 		template! = PZKA_VVan_RearLights,	
 	}
 	
-	template vehicle VVA_VVan_Engine {
-		template! = VVA_Van_Interior,
-		part Battery 
-		{
-			model Default 
-			{
-				file = PZKA_Battery,
-				offset = -0.2374 0.0036 0.9535,
-			}
-		}
+	template vehicle PZKA_VanBase_shared {
+		template! = VVA_Van_FrontSeats,
+		template! = VVA_Van_Windshield,
+	}
+
+	template vehicle PZKA_VVan_sharedFront {
+		template! = PZKA_VanBase_shared,
+		template! = VVA_Van_FrontLights,
+		template! = VVA_Van_engine,
 	}
 	
     

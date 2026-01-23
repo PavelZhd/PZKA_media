@@ -5,6 +5,6 @@ module Base
 		template! = PZKA_Van_Brig_RearDoors,
 		template! = PZKA_Van_Brig_RearWindow,		
 		template! = PZKA_Van_Brig_Lights,
-		template! = VVA_Van_sharedFront,		
+		template! = PZKA_VVan_sharedFront,		
 	}
 }

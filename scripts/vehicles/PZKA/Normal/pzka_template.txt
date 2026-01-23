@@ -6,8 +6,8 @@ module Base
 		{
 			model Default 
 			{
-				file = VVA_Battery,
-				offset = 0.2585032 -0.0391472 0.9228,
+				file = PZKA_Battery,
+				offset = 0.240159 -0.011514 1.01822,
 			}
 		}
 		template! = PZKA_NormalBase_Interior,
