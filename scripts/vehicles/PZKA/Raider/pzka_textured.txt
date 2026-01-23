@@ -1,0 +1,53 @@
+module Base
+{
+	model PZKA_Vehicles_Raider_internals
+	{
+		mesh = vehicles/pzka_Raider|Vehicles_Interior,
+		
+		texture = Vehicles/Vehicle_pzkFranklinRaidershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Raider_SeatFL
+	{
+		mesh = vehicles/pzka_Raider|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/Vehicle_pzkFranklinRaidershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Raider_SeatFR
+	{
+		mesh = vehicles/pzka_Raider|Seat_FrontRight_obj,
+		
+		texture = Vehicles/Vehicle_pzkFranklinRaidershell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Raider_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Raider_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Raider_SeatFR,
+			}
+		}
+
+		template! = VVA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = PZKA_Vehicles_Raider_internals,
+			}
+		}
+	}
+}

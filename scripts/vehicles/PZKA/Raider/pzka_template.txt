@@ -1,0 +1,29 @@
+module Base
+{
+	template vehicle PZKA_Raider_shared {
+		template! = PZKA_Raider_Windshield,
+		template! = PZKA_Raider_RearWindow,
+		template! = PZKA_Raider_FrontLights,
+		template! = PZKA_Raider_RearLights,
+		template! = PZKA_Raider_Interior,
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.2324 0.002413 0.863324,
+			}
+		}
+	}
+	
+	template vehicle PZKA_Raider {
+		template! = PZKA_Raider_FrontDoors,
+		template! = PZKA_Raider_hood,
+		template! = PZKA_Raider_shared,
+	}
+	template vehicle PZKA_Raider_nr {
+		template! = PZKA_Raider_FrontDoors_nr,
+		template! = PZKA_Raider_hood_nr,
+		template! = PZKA_Raider_shared,
+	}
+}
