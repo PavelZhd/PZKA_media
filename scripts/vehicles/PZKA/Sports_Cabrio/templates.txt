@@ -1,7 +1,7 @@
 module Base
 {
 	template vehicle PZKA_SportBase_shared {
-		template! = VVA_SportCar_Interior,
+		template! = VVA_SportCar_Engine,		
 		part Battery 
 		{
 			model Default 

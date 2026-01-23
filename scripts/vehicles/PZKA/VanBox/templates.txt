@@ -3,7 +3,7 @@ module Base
 	template vehicle PZKA_VanBox_shared {		
 		template! = PZKA_VanBox_Winshield,
 		template! = VVA_Van_FrontSeats,
-		template! = VVA_VVan_Engine,
+		template! = VVA_Van_engine,
 		template! = PZKA_VanBox_FrontLights,
 	}
 

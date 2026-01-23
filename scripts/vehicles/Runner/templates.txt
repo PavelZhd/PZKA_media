@@ -37,7 +37,7 @@ module Base
 			model Default 
 			{
 				file = PZKA_Battery,
-				offset = 0.195763 0 0.80454,
+				offset = 0.192423 0.050445 0.812193,
 			}
 		}
 
