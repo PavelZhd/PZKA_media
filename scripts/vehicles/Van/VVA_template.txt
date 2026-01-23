@@ -9,7 +9,7 @@ module Base
 		{
 			model Default 
 			{
-				file = VVA_Battery90,
+				file = PZKA_BatteryR,
 				offset = -0.266048 0.006776 0.920315,
 			}
 		}
