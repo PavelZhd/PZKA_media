@@ -1,0 +1,71 @@
+module Base
+{
+    model PZKA_Vehicles_LABEL_RearWindow
+	{
+		mesh = vehicles/[FILENAME]|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_LABEL_RearWindow_static
+	{
+		mesh = vehicles/[FILENAME]|RearWindow_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_LABEL_Trunk
+	{
+		mesh = vehicles/[FILENAME]|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkUpperBone 1.0,
+		boneWeight = TrunkLowerBone 1.0,
+	}
+	model PZKA_Vehicles_LABEL_Trunk_nr
+	{
+		mesh = vehicles/[FILENAME]|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkUpperBone 1.0,
+		boneWeight = TrunkLowerBone 1.0,
+	}
+	template vehicle PZKA_LABEL_RearWindow {
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_LABEL_RearWindow,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_LABEL_RearWindow_static,
+			}
+		}
+	}
+	template vehicle PZKA_LABEL_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LABEL_Trunk,
+			}
+		}
+		template! = PZKA_LABEL_RearWindow,
+		template! = VVA_TrunkDoorWindowVersion,
+	}
+	template vehicle PZKA_LABEL_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LABEL_Trunk_nr,
+			}
+		}
+		template! = PZKA_LABEL_RearWindow,
+		template! = VVA_TrunkDoorWindowVersion,
+	}
+}

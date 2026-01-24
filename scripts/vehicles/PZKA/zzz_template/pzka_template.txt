@@ -1,0 +1,34 @@
+module Base
+{
+	template vehicle PZKA_LABEL_shared {
+		template! = PZKA_LABEL_Windshield,
+		template! = PZKA_LABEL_RearWindow,
+		template! = PZKA_LABEL_RearWindows,
+		template! = PZKA_LABEL_FrontLights,
+		template! = PZKA_LABEL_RearLights,
+		template! = PZKA_LABEL_Interior,
+		part Battery 
+		{
+			model Default 
+			{
+				file = VVA_Battery,
+				offset = 0.214052 -0.0327448 0.91484,
+			}
+		}
+	}
+	
+	template vehicle VVA_LABEL {
+		template! = PZKA_LABEL_FrontDoors,
+		template! = PZKA_LABEL_RearDoors,
+		template! = PZKA_LABEL_hood,
+		template! = PZKA_LABEL_Trunk,
+		template! = PZKA_LABEL_shared,
+	}
+	template vehicle PZKA_LABEL_nr {
+		template! = PZKA_LABEL_FrontDoors_nr,
+		template! = PZKA_LABEL_RearDoors_nr,
+		template! = PZKA_LABEL_hood_nr,
+		template! = PZKA_LABEL_Trunk_nr,
+		template! = PZKA_LABEL_shared,
+	}
+}

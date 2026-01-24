@@ -556,6 +556,20 @@ PZKA.CopyTemplateToVehicle("pzkDashCheyeneWestPoint","pzkDashCheyeneMeadeSheriff
 PZKA.ApplyTemplateToVehicle("pzkDashNavajoP","PZKA_Vehicles_NavajoP",{"pzka_4SeatsR","PZKA_NavajoP"})
 PZKA.ApplyTemplateToVehicle("pzkDashNavajoW","PZKA_Vehicles_NavajoW",{"pzka_4SeatsR","PZKA_NavajoW"})
 
+
+--W35
+
+PZKA.ApplyTemplateToVehicle("pzkTruckDashW35BedMil","PZKA_Vehicles_W35_nr",{"pzka_2SeatsF","PZKA_W35_nr","PZKA_W35_TarpFrame_nr"})
+
+---- Cabrio
+
+PZKA.ApplyTemplateToVehicle("pzkTruckDashW35CabrioMil","PZKA_Vehicles_W35Cabrio_nr",{"pzka_2SeatsF","PZKA_W35Cabrio_nr","PZKA_DoorsFront75"})
+
+---- Tanker
+
+PZKA.ApplyTemplateToVehicle("pzkTruckDashW35FuelMil","PZKA_Vehicles_W35Tanker_nr",{"pzka_2SeatsF","PZKA_W35Tanker_nr"})
+PZKA.CopyTemplateToVehicle("pzkTruckDashW35WaterMil","pzkTruckDashW35FuelMil")
+
 --- OLD FRAMEWORK CODE
 
 

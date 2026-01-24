@@ -1,0 +1,35 @@
+module Base
+{
+	template vehicle PZKA_W35_shared {
+		template! = PZKA_W35_Windshield,
+		template! = PZKA_W35_FrontLights,
+		template! = PZKA_W35_RearLights,
+		template! = PZKA_W35_Interior,
+		part Battery 
+		{
+			model Default 
+			{
+				file = VVA_Battery,
+				offset = -0.270187 0.209158 1.27237,
+			}
+		}
+	}
+
+	template vehicle PZKA_W35Truck_shared {
+		template! = PZKA_W35_shared,
+		template! = PZKA_W35_RearWindow,
+	}
+	
+	template vehicle PZKA_W35 {
+		template! = PZKA_W35_FrontDoors,
+		template! = PZKA_W35_hood,
+		template! = PZKA_W35_Trunk,
+		template! = PZKA_W35Truck_shared,
+	}
+	template vehicle PZKA_W35_nr {
+		template! = PZKA_W35_FrontDoors_nr,
+		template! = PZKA_W35_hood_nr,
+		template! = PZKA_W35_Trunk_nr,
+		template! = PZKA_W35Truck_shared,
+	}
+}
