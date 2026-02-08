@@ -1,0 +1,17 @@
+module Base
+{
+    model PZKA_Vehicles_LABEL
+	{
+		mesh = vehicles/[FILENAME]|2Door,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_LABEL_nr
+	{
+		mesh = vehicles/[FILENAME]|2Door,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

@@ -102,4 +102,23 @@ module Base
 	    	}
         }
 	}
+
+	template vehicle PZKA_DoorsFront75 {
+		part DoorFrontLeft {
+			lua
+			{
+				create = Vehicles.Create.Door75,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
+			}
+		}
+		part DoorFrontRight {
+			lua
+			{
+				create = Vehicles.Create.Door75,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
+			}
+		}
+	}
 }
