@@ -8,10 +8,13 @@ if (not VVAmodule) or (not VVAmodule.version) or VVAmodule.version < 2 then
 	VVAmodule.IsProfileDefined = function(profileName)
 		return not not profiles[profileName]
 	end
+	VVAmodule.IsVehicleDefinedFullId = function(fullId)
+		return not not vehicles[fullId]
+	end
 	VVAmodule.IsVehicleDefined = function(vehicleId, module)
 		local mod = module or "Base"
 		local fullId = mod .. "." .. vehicleId
-		return not not vehicles[fullId]
+		return VVAmodule.IsVehicleDefinedFullId(fullId)
 	end
 
 	VVAmodule.addToProfile = function(profileName, templates)
