@@ -1,0 +1,23 @@
+module Base
+{
+    template vehicle PZKA_D70_Hazmat_Trunk {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_Box_Trunk,
+			}
+		}
+		template! = VVA_DoorRearLeft,
+	}
+	template vehicle PZKA_D70_Hazmat_Trunk_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_Box_Trunk_nr,
+			}
+		}
+		template! = VVA_DoorRearLeft,
+	}
+}

@@ -1,0 +1,32 @@
+module Base
+{
+	template vehicle PZKA_D70Base_shared {
+		template! = PZKA_D70_Windshield,
+		template! = PZKA_D70_RearWindow,
+		template! = PZKA_D70_FrontLights,
+		template! = PZKA_D70_Interior,
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_BatteryR,
+				offset = -0.273654 0.313673 1.17264,
+			}
+		}
+	}
+	template vehicle PZKA_D70_shared {
+		template! = PZKA_D70Base_shared,
+		template! = PZKA_D70_FrontLights,		
+	}
+	
+	template vehicle PZKA_D70 {
+		template! = PZKA_D70_FrontDoors,
+		template! = PZKA_D70_hood,
+		template! = PZKA_D70_shared,
+	}
+	template vehicle PZKA_D70_nr {
+		template! = PZKA_D70_FrontDoors_nr,
+		template! = PZKA_D70_hood_nr,
+		template! = PZKA_D70_shared,
+	}
+}

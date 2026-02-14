@@ -1,0 +1,39 @@
+module Base
+{
+    model PZKA_Vehicles_D70_Tow_Trunk
+	{
+		mesh = vehicles/D70/pzka_D70_Tow|Trunk_Tow_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_D70_Tow_Trunk_nr
+	{
+		mesh = vehicles/D70/pzka_D70_Tow|Trunk_Tow_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle PZKA_D70_Tow_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_Tow_Trunk,
+			}
+		}
+		template! = VVA_RearDoorVersionBlind,
+	}
+	template vehicle PZKA_D70_Tow_Trunk_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_Tow_Trunk_nr,
+			}
+		}
+		template! = VVA_RearDoorVersionBlind,
+	}
+}

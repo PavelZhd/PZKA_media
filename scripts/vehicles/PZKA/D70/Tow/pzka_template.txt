@@ -1,0 +1,11 @@
+module Base
+{
+	template vehicle VVA_D70_Tow {
+		template! = PZKA_D70_Tow_Trunk,
+		template! = PZKA_D70_Tow_RearLights,
+	}
+	template vehicle PZKA_D70_Tow_nr {
+		template! = PZKA_D70_Tow_Trunk_nr,
+		template! = PZKA_D70_Tow_RearLights,
+	}
+}

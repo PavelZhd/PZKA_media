@@ -570,6 +570,21 @@ PZKA.ApplyTemplateToVehicle("pzkTruckDashW35CabrioMil","PZKA_Vehicles_W35Cabrio_
 PZKA.ApplyTemplateToVehicle("pzkTruckDashW35FuelMil","PZKA_Vehicles_W35Tanker_nr",{"pzka_2SeatsF","PZKA_W35Tanker_nr"})
 PZKA.CopyTemplateToVehicle("pzkTruckDashW35WaterMil","pzkTruckDashW35FuelMil")
 
+--D70
+
+PZKA.ApplyTemplateToVehicle("pzkTruckD70Box","PZKA_Vehicles_D70_Box",{"pzka_2SeatsF","PZKA_D70","VVA_D70_Box"})
+PZKA.ApplyTemplateToVehicle("pzkTruckD70Box2","PZKA_Vehicles_D70_2_Box",{"pzka_2SeatsF","PZKA_D70_2","VVA_D70_Box"})
+
+PZKA.ApplyTemplateToVehicle("pzkTruckD70BFRFHazmat","PZKA_Vehicles_D70_Hazmat_nr",{"pzka_2SeatsF","PZKA_D70_nr","PZKA_D70_Hazmat_nr"})
+
+PZKA.ApplyTemplateToVehicle("pzkTruckD70Dump","PZKA_Vehicles_D70_Dump",{"pzka_2SeatsF","PZKA_D70","VVA_D70_Dump"})
+PZKA.ApplyTemplateToVehicle("pzkTruckD70Dump2","PZKA_Vehicles_D70_2_Dump",{"pzka_2SeatsF","PZKA_D70_2","VVA_D70_Dump"})
+
+PZKA.ApplyTemplateToVehicle("pzkTruckD70Tow","PZKA_Vehicles_D70_Tow",{"pzka_2SeatsF","PZKA_D70","VVA_D70_Tow","pzka_t_lighbar","PZKA_D70_Lightbar"})
+PZKA.ApplyTemplateToVehicle("pzkTruckD70Tow2","PZKA_Vehicles_D70_2_Tow",{"pzka_2SeatsF","PZKA_D70_2","VVA_D70_Tow","pzka_t_lighbar","PZKA_D70_Lightbar"})
+PZKA.ApplyTemplateToVehicle("pzkTruckD70Tow2Bernie","PZKA_Vehicles_D70_2_Tow_nr",{"pzka_2SeatsF","PZKA_D70_Bernie_nr","VVA_D70_Tow_nr","pzka_t_lighbar","PZKA_D70_Lightbar"})
+PZKA.ApplyTemplateToVehicle("pzkTruckD70Tow2Wallace","PZKA_Vehicles_D70_Tow_nr",{"pzka_2SeatsF","PZKA_D70_nr","VVA_D70_Tow_nr","pzka_t_lighbar","PZKA_D70_Lightbar"})
+
 --- OLD FRAMEWORK CODE
 
 
