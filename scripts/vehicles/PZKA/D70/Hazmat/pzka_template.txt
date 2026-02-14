@@ -1,11 +1,17 @@
 module Base
 {
-	template vehicle VVA_D70_Hazmat {
-		template! = PZKA_D70_Hazmat_Trunk,
+	template vehicle PZKA_D70_Hazmat_shared {
+		template! = PZKA_D70_Hazmat_Interior,
+		template! = PZKA_D70_Hazmat_RearWindow,
+		template! = PZKA_D70_Hazmat_RearWindows,
 		template! = PZKA_D70_Box_RearLights,
+	}
+	template vehicle PZKA_D70_Hazmat {
+		template! = PZKA_D70_Hazmat_Trunk,
+		template! = PZKA_D70_Hazmat_shared,
 	}
 	template vehicle PZKA_D70_Hazmat_nr {
 		template! = PZKA_D70_Hazmat_Trunk_nr,
-		template! = PZKA_D70_Box_RearLights,
+		template! = PZKA_D70_Hazmat_shared,
 	}
 }

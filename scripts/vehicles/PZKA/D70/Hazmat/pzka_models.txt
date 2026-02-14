@@ -2,28 +2,28 @@ module Base
 {
     model PZKA_Vehicles_D70_Hazmat
 	{
-		mesh = vehicles/D70/pzka_D70_Box|D70Hazmat,
+		mesh = vehicles/D70/pzka_D70_Hazmat|D70Hazmat,
 		shader = vehicle_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
 	}
     model PZKA_Vehicles_D70_Hazmat_nr
 	{
-		mesh = vehicles/D70/pzka_D70_Box|D70Hazmat,
+		mesh = vehicles/D70/pzka_D70_Hazmat|D70Hazmat,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
 	}
     model PZKA_Vehicles_D70_2_Hazmat
 	{
-		mesh = vehicles/D70/pzka_D70_Box|D70Hazmat2,
+		mesh = vehicles/D70/pzka_D70_Hazmat|D70Hazmat2,
 		shader = vehicle_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
 	}
     model PZKA_Vehicles_D70_2_Hazmat_nr
 	{
-		mesh = vehicles/D70/pzka_D70_Box|D70Hazmat2,
+		mesh = vehicles/D70/pzka_D70_Hazmat|D70Hazmat2,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.01,

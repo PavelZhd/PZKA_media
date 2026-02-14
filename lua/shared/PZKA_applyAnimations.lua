@@ -539,6 +539,11 @@ PZKA.CopyTemplateToVehicle("pzkStepVanHotDog","PZKA_StepVanFood",{"pzka_t_taxi",
 PZKA.CopyTemplateToVehicle("pzkStepVanIceCream","PZKA_StepVanFood",{"pzka_t_taxi","PZKA_StepVan_Icecream"})
 PZKA.CopyTemplateToVehicle("pzkStepVanPierogi","PZKA_StepVanFood",{"pzka_t_taxi","PZKA_StepVan_Pierogi"})
 
+---- B30
+PZKA.ApplyTemplateToVehicle("pzkStepVanB30","PZKA_Vehicles_StepVanB30",{"pzka_2SeatsF","PZKA_StepVanB30"})
+PZKA.ApplyTemplateToVehicle("pzkStepVanB30Christmas","PZKA_Vehicles_StepVanB30_nr",{"pzka_2SeatsF","PZKA_StepVanB30_nr"})
+
+
 -- Cheyene
 
 PZKA.ApplyTemplateToVehicle("pzkDashCheyene","PZKA_Vehicles_Cheyene",{"pzka_4SeatsR","PZKA_Cheyene"})
