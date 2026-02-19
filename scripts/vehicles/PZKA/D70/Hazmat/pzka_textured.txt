@@ -1,0 +1,21 @@
+module Base
+{
+	model PZKA_Vehicles_D70_Hazmat_internals
+	{
+		mesh = vehicles/D70/pzka_D70_Hazmat|Hazmat_Interior,
+		texture = Vehicles/vehicle_pzkTruckD70BFRFHazmatshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_D70_Hazmat_Interior {
+		
+		part Interior 
+		{						
+			model Lab 
+			{
+				file = PZKA_Vehicles_D70_Hazmat_internals,
+			}
+		}
+	}
+}

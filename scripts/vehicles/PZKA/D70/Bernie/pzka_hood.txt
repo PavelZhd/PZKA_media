@@ -1,0 +1,40 @@
+module Base
+{
+	model PZKA_Vehicles_D70_Bernie_Hood
+	{
+		mesh = vehicles/D70/pzka_D70_2|Hood_Bernie_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Vehicles_D70_Bernie_Hood_nr
+	{
+		mesh = vehicles/D70/pzka_D70_2|Hood_Bernie_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	
+	template vehicle PZKA_D70_Bernie_hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_Bernie_Hood,
+			}
+		}
+		template! = VVA_EngineDoorHeadlights,
+	}	
+	template vehicle PZKA_D70_Bernie_hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_Bernie_Hood_nr,
+			}
+		}
+		template! = VVA_EngineDoorHeadlights,
+	}
+}

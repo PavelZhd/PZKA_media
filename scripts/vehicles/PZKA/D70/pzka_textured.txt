@@ -1,0 +1,53 @@
+module Base
+{
+	model PZKA_Vehicles_D70_internals
+	{
+		mesh = vehicles/D70/pzka_D70|Vehicles_Interior,
+		
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_D70_SeatFL
+	{
+		mesh = vehicles/D70/pzka_D70|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_D70_SeatFR
+	{
+		mesh = vehicles/D70/pzka_D70|Seat_FrontRight_obj,
+		
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_D70_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_SeatFR,
+			}
+		}
+
+		template! = VVA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = PZKA_Vehicles_D70_internals,
+			}
+		}
+	}
+}

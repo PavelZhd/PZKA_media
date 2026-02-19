@@ -11,13 +11,13 @@ module Base
 		{
 			model Default 
 			{
-				file = VVA_Battery,
+				file = PZKA_Battery,
 				offset = 0.214052 -0.0327448 0.91484,
 			}
 		}
 	}
 	
-	template vehicle VVA_LABEL {
+	template vehicle PZKA_LABEL {
 		template! = PZKA_LABEL_FrontDoors,
 		template! = PZKA_LABEL_RearDoors,
 		template! = PZKA_LABEL_hood,
