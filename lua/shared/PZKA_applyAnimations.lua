@@ -41,7 +41,7 @@ PZKA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_V_nr","PZKA_Normal_SedanV_nr",{"p
 
 -- Cerise Sedan
 PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedan","PZKA_Normal_Sedan_F",{"PZKA_SedanF_Cerise"})
-PZKA.CopyTemplateToVehicle("pzkChevalierCeriseDetective","pzkChevalierCeriseSedan",{"pzka_t_lighbar","PZKA_Normal_detective"})
+PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedanDetective","pzkChevalierCeriseSedan",{"pzka_t_lighbar","PZKA_Normal_detective"})
 
 PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedan_nr","PZKA_Normal_Sedan_F_nr",{"PZKA_SedanF_Cerise_nr"})
 PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedanFire","pzkChevalierCeriseSedan_nr",{"pzka_t_lighbar","VVA_Normal_Lightbar"})
@@ -72,7 +72,7 @@ PZKA.CopyTemplateToVehicle("pzkDashMayorTaxi","pzkDashMayor_nr",{"pzka_sle_taxi"
 
 -- Rapier Sedan
 PZKA.CopyTemplateToVehicle("Vehicles_pzkDashRapier","PZKA_Normal_Sedan_F",{"PZKA_SedanF_Rapier"})
-PZKA.CopyTemplateToVehicle("pzkDashRapierDetective","pzkDashRapier",{"pzka_t_lighbar","PZKA_Normal_detective"})
+PZKA.CopyTemplateToVehicle("pzkDashRapierDetective","Vehicles_pzkDashRapier",{"pzka_t_lighbar","PZKA_Normal_detective"})
 
 -- TWD Sedan
 PZKA.CopyTemplateToVehicle("pzkFranklinTriumphTWD","PZKA_Normal_Sedan_V",{"PZKA_SedanV_TWD"})
