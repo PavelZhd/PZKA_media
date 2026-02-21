@@ -346,9 +346,15 @@ PZKA.ApplyTemplateToVehicle("pzkPickupFranklin","PZKA_Vehicles_Raider",{"pzka_2S
 
 -- VVans
 
+PZKA.ApplyTemplateToVehicle("pzkVanilaVanAmbulance","VVA_Vehicles_VanAmbulance_nr",{"pzka_2SeatsF","VVA_Van_nr"})
 PZKA.ApplyTemplateToVehicle("pzkVanMcCoy","VVA_Vehicles_VanCargo_nr",{"pzka_2SeatsF","VVA_Van_nr"})
+PZKA.CopyTemplateToVehicle("pzkVanGigamart","pzkVanMcCoy")
 
 PZKA.ApplyTemplateToVehicle("pzkVanMultivan","VVA_Vehicles_VVan_Multu",{"pzka_4SeatsR","PZKA_VVan_Multi","VVA_Van_4Seats"})
+PZKA.ApplyTemplateToVehicle("pzkVanMultivanPayday","VVA_Vehicles_VVan_Police",{"pzka_4SeatsR","PZKA_VVan_Payday_nr","VVA_Van_4Seats"})
+PZKA.CopyTemplateToVehicle("pzkVanZSquad","pzkVanMultivanPayday")
+
+PZKA.ApplyTemplateToVehicle("pzkVanPublicWorks","VVA_Vehicles_VVan_Police",{"pzka_4SeatsR","PZKA_VVan_Multi_nr","VVA_Van_4Seats","pzka_t_lighbar","PZKA_Van_Lightbar","PZKA_Van_InteriorBars"})
 
 PZKA.ApplyTemplateToVehicle("pzkVanPolice","VVA_Vehicles_VVan_Police",{"pzka_4SeatsR","PZKA_VVan_Multi_nr","VVA_Van_4Seats","pzka_sle_lighbar","PZKA_Van_Lightbar","PZKA_Van_InteriorBars"})
 
