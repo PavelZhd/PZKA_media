@@ -60,6 +60,7 @@ PZKA.CopyTemplateToVehicle("pzkDashHellionTaxi","pzkDashHellion_nr",{"pzka_sle_t
 
 -- Mayor Sedan
 PZKA.CopyTemplateToVehicle("pzkDashMayor","PZKA_Normal_Sedan_F",{"PZKA_SedanF_Mayor"})
+PZKA.CopyTemplateToVehicle("Vehicles_pzkDashMayor","pzkDashMayor")
 PZKA.CopyTemplateToVehicle("pzkDashMayorDetective","pzkDashMayor",{"pzka_t_lighbar","PZKA_Normal_detective"})
 
 PZKA.CopyTemplateToVehicle("pzkDashMayor_nr","PZKA_Normal_Sedan_F_nr",{"PZKA_SedanF_Mayor_nr"})
@@ -359,6 +360,7 @@ PZKA.ApplyTemplateToVehicle("pzkVanPublicWorks","VVA_Vehicles_VVan_Police",{"pzk
 PZKA.ApplyTemplateToVehicle("pzkVanPolice","VVA_Vehicles_VVan_Police",{"pzka_4SeatsR","PZKA_VVan_Multi_nr","VVA_Van_4Seats","pzka_sle_lighbar","PZKA_Van_Lightbar","PZKA_Van_InteriorBars"})
 
 
+
 ---- Camper
 
 PZKA.ApplyTemplateToVehicle("pzkVanCamper","PZKA_Vehicles_Van_Camper_a",{"pzka_2SeatsF","PZKA_Van_Camper"})
@@ -621,7 +623,7 @@ else
     PZKA.CloneAnimationProfile("pzkFranklinTriumphPolice","pzkFranklinTriumphLSU")
 end
 if SLE then
-    PZKA.CloneAnimationProfile("pzkFranklinTriumphTaxi","pzkFranklinTriumphPoliceLouisvillePD")
+    PZKA.CloneAnimationProfile("pzkFranklinTriumphTaxi","pzkFranklinTriumphPolice")
 else    
     PZKA.CloneAnimationProfile("pzkFranklinTriumphTaxi","pzkFranklinTriumph","PZKA_Vehicles_Triumph_Sedan_nr_a",false,"PZKA_Cerise93_sedan_Triumph_taxi")
 end
