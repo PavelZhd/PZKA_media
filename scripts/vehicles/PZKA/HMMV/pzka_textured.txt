@@ -1,0 +1,82 @@
+module Base
+{
+	model PZKA_Vehicles_HMMV_internals
+	{
+		mesh = vehicles/HMMV/pzka_HMMV|Vehicles_Interior,
+		texture = Vehicles/HMMWV/Vehicle_pzkHMMWV1Civshell, 
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_HMMV_SeatFL
+	{
+		mesh = vehicles/HMMV/pzka_HMMV|Seat_FrontLeft_obj,
+		texture = Vehicles/HMMWV/Vehicle_pzkHMMWV1Civshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_SeatFR
+	{
+		mesh = vehicles/HMMV/pzka_HMMV|Seat_FrontRight_obj,
+		texture = Vehicles/HMMWV/Vehicle_pzkHMMWV1Civshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_SeatRL
+	{
+		mesh = vehicles/HMMV/pzka_HMMV|Seat_RearLeft_obj,
+		texture = Vehicles/HMMWV/Vehicle_pzkHMMWV1Civshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_SeatRR
+	{
+		mesh = vehicles/HMMV/pzka_HMMV|Seat_RearRight_obj,
+		texture = Vehicles/HMMWV/Vehicle_pzkHMMWV1Civshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_HMMV_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_SeatFR,
+			}
+		}
+
+		template! = VVA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = PZKA_Vehicles_HMMV_internals,
+			}
+		}
+	}
+
+	template vehicle PZKA_HMMV_RearSeats { 
+		part SeatRearLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_HMMV_SeatRL,
+			}
+		}
+		part SeatRearRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_HMMV_SeatRR,
+			}
+		}
+	}
+}

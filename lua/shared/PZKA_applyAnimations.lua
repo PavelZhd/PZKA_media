@@ -1,8 +1,9 @@
 local PZKA = require "PZKA_addAnimations"
+require "VVA_applyAnimations"
 
-local SLE = getActivatedMods():contains("SimpleLightbarsExpanded")
-local CullSeats = getActivatedMods():contains("VVA_cullseats") or getActivatedMods():contains("PZKA_cullseats")
-local VVE = getActivatedMods():contains("VVehicleEnhancer")
+local SLE =  PZKA.CheckModEnabled("SimpleLightbarsExpandedPZK")
+local CullSeats = PZKA.CheckModEnabled("VVA_cullseats") or PZKA.CheckModEnabled("PZKA_cullseats")
+local VVE = PZKA.CheckModEnabled("VVehicleEnhancer") or PZKA.CheckModEnabled("Ze_VVehicleEnhancer_42B")
 
 PZKA.addToProfile("pzka_C_2SeatsF",{"VVA_SeatFrontLeft","VVA_SeatFrontRight"})
 PZKA.addToProfile("pzka_C_2SeatsM",{"VVA_SeatMiddleLeft","VVA_SeatMiddleRight"})
@@ -554,6 +555,36 @@ PZKA.ApplyTemplateToVehicle("pzkTruckD70Tow2","PZKA_Vehicles_D70_2_Tow",{"pzka_2
 PZKA.ApplyTemplateToVehicle("pzkTruckD70Tow2Bernie","PZKA_Vehicles_D70_2_Tow_nr",{"pzka_2SeatsF","PZKA_D70_Bernie_nr","VVA_D70_Tow_nr","pzka_t_lighbar","PZKA_D70_Lightbar"})
 PZKA.ApplyTemplateToVehicle("pzkTruckD70Tow2Wallace","PZKA_Vehicles_D70_Tow_nr",{"pzka_2SeatsF","PZKA_D70_nr","VVA_D70_Tow_nr","pzka_t_lighbar","PZKA_D70_Lightbar"})
 
+-- TR2
+PZKA.ApplyTemplateToVehicle("pzkMastersonTR2Kouki","PZKA_Vehicles_MR2",{"pzka_2SeatsF","PZKA_MR2"})
+PZKA.ApplyTemplateToVehicle("pzkMastersonTR2Zenki","PZKA_Vehicles_MR2",{"pzka_2SeatsF","PZKA_MR2"})
+
+--HMMV
+---- 1
+PZKA.ApplyTemplateToVehicle("pzkHMMV","PZKA_Vehicles_HMMV_1",{"pzka_4SeatsR","PZKA_HMMV_1"})
+
+---- 2
+
+PZKA.ApplyTemplateToVehicle("pzkHMMV2","PZKA_Vehicles_HMMV_2",{"pzka_4SeatsR","PZKA_HMMV_2"})
+PZKA.ApplyTemplateToVehicle("pzkHMMV2Mil","PZKA_Vehicles_HMMV_2_nr",{"pzka_4SeatsR","PZKA_HMMV_2_nr"})
+
+---- 346
+
+PZKA.ApplyTemplateToVehicle("pzkHMMV3","PZKA_Vehicles_HMMV_3",{"pzka_4SeatsR","PZKA_HMMV_3"})
+PZKA.ApplyTemplateToVehicle("pzkHMMV3Mil","PZKA_Vehicles_HMMV_3_nr",{"pzka_4SeatsR","PZKA_HMMV_3_nr"})
+
+PZKA.ApplyTemplateToVehicle("pzkHMMV4Mil","PZKA_Vehicles_HMMV_4_nr",{"pzka_2SeatsF","PZKA_HMMV_4_nr"})
+PZKA.ApplyTemplateToVehicle("pzkHMMV6Mil","PZKA_Vehicles_HMMV_6_nr",{"pzka_2SeatsF","PZKA_HMMV_6_nr"})
+
+---- 5
+PZKA.ApplyTemplateToVehicle("pzkHMMV5Mil","PZKA_Vehicles_HMMV_5_nr",{"pzka_2SeatsF","PZKA_HMMV_5_nr"})
+
+-- Masterson Horizon
+
+PZKA.ApplyTemplateToVehicle("SmallCar02","PZKA_Vehicles_Small02",{"pzka_4SeatsR","PZKA_Small02"})
+
+
+
 --- OLD FRAMEWORK CODE
 
 
@@ -659,12 +690,6 @@ PZKA.CreateAnimationProfile("pzkDashNoble","PZKA_Vehicles_DashNoble_a","pzka_Das
 
 PZKA.CreateAnimationProfile("pzkContinentalCruiser","PZKA_Vehicles_Cruiser_a","PZKA_Cruiser_Light","PZKA_Cruiser",{"FLW","FRW","RLW","RRW"},"VVA_TrunkDoorVersion")
 
-PZKA.CreateAnimationProfile("pzkHMMV","PZKA_Vehicles_HMMV_1_a","PZKA_HMMV_Light_1","PZKA_HMMV_1",{"FLW","FRW","RLW","RRW"},"VVA_TrunkDoorVersion")
-PZKA.CreateAnimationProfile("pzkHMMV2","PZKA_Vehicles_HMMV_2_a","PZKA_HMMV_Light_2","PZKA_HMMV_2",{"FLW","FRW","RLW","RRW"},"VVA_TrunkDoorVersion")
-PZKA.CreateAnimationProfile("pzkHMMV2Mil","PZKA_Vehicles_HMMV_2_nr_a","PZKA_HMMV_Light_2","PZKA_HMMV_2_nr",{"FLW","FRW","RLW","RRW"},"VVA_TrunkDoorVersion")
-PZKA.CreateAnimationProfile("pzkHMMV3","PZKA_Vehicles_HMMV_3_a","PZKA_HMMV_Light_2","PZKA_HMMV_3",{"FLW","FRW","RLW","RRW"},"PZKA_OpenBedVersion")
-PZKA.CreateAnimationProfile("pzkHMMV3Mil","PZKA_Vehicles_HMMV_3_nr_a","PZKA_HMMV_Light_2","PZKA_HMMV_3_nr",{"FLW","FRW","RLW","RRW"},"PZKA_OpenBedVersion")
-PZKA.CreateAnimationProfile("pzkHMMV4Mil","PZKA_Vehicles_HMMV_4_nr_a","PZKA_HMMV_Light_2","PZKA_HMMV_4_nr",{"FLW","FRW"},"VVA_TrunkDoorVersion")
 
 PZKA.CreateAnimationProfile("pzkContinentalHammermanKnight","PZKA_Vehicles_Hammerman_a","PZKA_Hammerman_Light","PZKA_Hammerman",{"FLW","FRW","RLW","RRW"},"VVA_TrunkDoorVersion")
 

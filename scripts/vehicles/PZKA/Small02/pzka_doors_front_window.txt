@@ -1,0 +1,131 @@
+module Base
+{
+	model PZKA_Vehicles_Small02_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Small02|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Small02_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Small02|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Small02_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Small02|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Small02_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Small02|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Small02_RearWindowL
+	{
+		mesh = vehicles/pzka_Small02|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Small02_RearWindowR
+	{
+		mesh = vehicles/pzka_Small02|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Small02_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Small02|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Small02_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Small02|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle PZKA_Small02_FrontDoorWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Small02_WindowFrontLeft,
+            }
+			model Static
+            {
+            	file = PZKA_Vehicles_Small02_RearWindowL,
+            }
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Small02_WindowFrontRight,
+            }
+			model Static
+            {
+            	file = PZKA_Vehicles_Small02_RearWindowR,
+            }
+	    }
+	}
+
+	template vehicle PZKA_Small02_FrontDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Small02_DoorFrontLeft,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Small02_DoorFrontRight,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = PZKA_Small02_FrontDoorWindows,
+	}
+	template vehicle PZKA_Small02_FrontDoors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Small02_DoorFrontLeft_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Small02_DoorFrontRight_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = PZKA_Small02_FrontDoorWindows,
+	}
+}

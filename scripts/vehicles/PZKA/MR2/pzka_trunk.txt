@@ -1,0 +1,201 @@
+module Base
+{
+    model PZKA_Vehicles_MR2_TrunkF
+	{
+		mesh = vehicles/MR2/pzka_MR2|TrunkFront_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkFrontBone 1.0,
+	}
+	model PZKA_Vehicles_MR2_TrunkF_nr
+	{
+		mesh = vehicles/MR2/pzka_MR2|TrunkFront_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkFrontBone 1.0,
+	}
+	model PZKA_Vehicles_MR2_TrunkR
+	{
+		mesh = vehicles/MR2/pzka_MR2|TrunkRear_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkRearBone 1.0,
+	}
+	model PZKA_Vehicles_MR2_TrunkR_nr
+	{
+		mesh = vehicles/MR2/pzka_MR2|TrunkRear_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkRearBone 1.0,
+	}
+
+	template vehicle PZKA_MR2_Trunk_shared {
+		part TruckBedFront
+        {
+            mechanicArea = Engine,
+            area = TrunkFront,
+            category = bodywork,
+            itemType = Base.SmallTrunk1,
+            mechanicRequireKey = true,
+            repairMechanic = true,
+            durability = 5,
+            container
+            {
+				capacity = 25,
+                conditionAffectsCapacity = true,
+                test = Vehicles.ContainerAccess.FronTrunck,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+        }
+		part TrunkDoorFront
+		{
+
+            mechanicArea = Engine,
+            category = bodywork,
+            area = TrunkFront,
+            durability = 5,
+            door
+            {
+            }
+
+			anim Closed
+			{
+				anim = Trunk_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Trunk_closing,
+				animate = FALSE,
+			}
+
+            anim Open
+            {
+				anim = Trunk_closing,
+				reverse = TRUE,
+                sound = VehicleTrunkOpenStandard,
+            }
+            anim Close
+            {
+				anim = Trunk_closing,
+                sound = VehicleTrunkCloseStandard,
+            }
+            anim Lock
+            {
+                sound = VehicleTrunkLockStandard,
+            }
+            anim Unlock
+            {
+                sound = VehicleTrunkUnlockStandard,
+            }
+            anim IsLocked
+            {
+                sound = VehicleDoorIsLockedStandard,
+            }
+            anim ActorOpen
+            {
+                anim = WindowOpenSuccess,
+                rate = 0.15,
+                angle = 0.0 0.0 0.0,
+            }
+            anim ActorClose
+            {
+                anim = Attack_Shove,
+                rate = 0.3,
+                angle = 0.0 0.0 0.0,
+            }
+            itemType = Base.TrunkDoor3,
+            mechanicRequireKey = true,
+            repairMechanic = true,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 300,
+                skills = Mechanics:3,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Door,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 300,
+                skills = Mechanics:3,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+                complete = Vehicles.UninstallComplete.Door,
+            }
+            lua
+            {
+                create = Vehicles.Create.TrunkDoor,
+                init = Vehicles.Init.Door,
+                update = Vehicles.Update.TrunkDoor,
+                use = Vehicles.Use.TrunkDoor,
+            }
+		}
+	}
+	template vehicle PZKA_MR2_Trunk {		
+		template! = PZKA_MR2_Trunk_shared,
+		part TrunkDoor
+		{	
+			model Rear
+			{
+				file = PZKA_Vehicles_MR2_TrunkR,
+			}
+		}
+		template! = VVA_TrunkDoorVersion,
+		
+		part TrunkDoorFront
+		{	
+			model Rear
+			{
+				file = PZKA_Vehicles_MR2_TrunkF,
+			}
+		}
+	}
+	template vehicle PZKA_MR2_Trunk_nr {
+		template! = PZKA_MR2_Trunk_shared,
+		part TrunkDoor
+		{		
+			model Rear
+			{
+				file = PZKA_Vehicles_MR2_TrunkR_nr,
+			}
+		}
+		template! = VVA_TrunkDoorVersion,
+		part TrunkDoorFront
+		{	
+			model Rear
+			{
+				file = PZKA_Vehicles_MR2_TrunkF_nr,
+			}
+		}
+	}
+}

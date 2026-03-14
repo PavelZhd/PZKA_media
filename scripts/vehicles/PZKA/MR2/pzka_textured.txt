@@ -1,0 +1,52 @@
+module Base
+{
+	model PZKA_Vehicles_MR2_internals
+	{
+		mesh = vehicles/MR2/pzka_MR2|Vehicles_Interior,
+		texture = Vehicles/Vehicle_pzkMastersonTR2Kouki1-3shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MR2_SeatFL
+	{
+		mesh = vehicles/MR2/pzka_MR2|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/Vehicle_pzkMastersonTR2Kouki1-3shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MR2_SeatFR
+	{
+		mesh = vehicles/MR2/pzka_MR2|Seat_FrontRight_obj,
+		
+		texture = Vehicles/Vehicle_pzkMastersonTR2Kouki1-3shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_MR2_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MR2_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MR2_SeatFR,
+			}
+		}
+
+		template! = VVA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = PZKA_Vehicles_MR2_internals,
+			}
+		}
+	}
+}

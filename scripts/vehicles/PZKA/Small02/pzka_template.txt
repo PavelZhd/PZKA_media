@@ -1,0 +1,31 @@
+module Base
+{
+	template vehicle PZKA_Small02_shared {
+		template! = PZKA_Small02_Windshield,
+		template! = PZKA_Small02_RearWindow,
+		template! = PZKA_Small02_FrontLights,
+		template! = PZKA_Small02_RearLights,
+		template! = PZKA_Small02_Interior,
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_BatteryL,
+				offset = 0.220173 -0.009687 0.651168,
+			}
+		}
+	}
+	
+	template vehicle PZKA_Small02 {
+		template! = PZKA_Small02_FrontDoors,
+		template! = PZKA_Small02_hood,
+		template! = PZKA_Small02_Trunk,
+		template! = PZKA_Small02_shared,
+	}
+	template vehicle PZKA_Small02_nr {
+		template! = PZKA_Small02_FrontDoors_nr,
+		template! = PZKA_Small02_hood_nr,
+		template! = PZKA_Small02_Trunk_nr,
+		template! = PZKA_Small02_shared,
+	}
+}

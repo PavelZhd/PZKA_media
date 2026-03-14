@@ -1,0 +1,58 @@
+module Base
+{
+	model PZKA_Vehicles_MR2_LightFL
+	{
+		mesh = vehicles/MR2/pzka_MR2|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MR2_LightFR
+	{
+		mesh = vehicles/MR2/pzka_MR2|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MR2_LightFL_s
+	{
+		mesh = vehicles/MR2/pzka_MR2|Light_FrontLeft_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MR2_LightFR_s
+	{
+		mesh = vehicles/MR2/pzka_MR2|Light_FrontRight_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_MR2_FrontLights {
+		part HeadlightLeft 
+		{
+			parent = LightsHost,
+			model Default
+			{
+				file = PZKA_Vehicles_MR2_LightFL,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_MR2_LightFL_s,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = LightsHost,
+			model Default
+			{
+				file = PZKA_Vehicles_MR2_LightFR,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_MR2_LightFR_s,
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+module Base
+{
+	template vehicle PZKA_HMMV_1 {
+		template! = PZKA_HMMV_FrontDoors,
+		template! = PZKA_HMMV_RearDoors,
+		template! = PZKA_HMMV_1_Trunk,
+		template! = PZKA_HMMV,
+		template! = PZKA_HMMV_RearSeats,
+	}
+	template vehicle PZKA_HMMV_1_nr {
+		template! = PZKA_HMMV_FrontDoors_nr,
+		template! = PZKA_HMMV_RearDoors_nr,
+		template! = PZKA_HMMV_1_Trunk_nr,
+		template! = PZKA_HMMV_nr,
+		template! = PZKA_HMMV_RearSeats,
+	}
+}

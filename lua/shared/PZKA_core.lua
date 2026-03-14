@@ -1,10 +1,26 @@
 local VVAmodule = require "VVA_core"
+local thisVersion = 3
 
-if (not VVAmodule) or (not VVAmodule.version) or VVAmodule.version < 2 then
+if (not VVAmodule) or (not VVAmodule.version) or VVAmodule.version < thisVersion then
 	VVAmodule = {}
 	local vehicles = {}
 	local profiles = {}
-	VVAmodule.version = 2
+	VVAmodule.version = thisVersion
+
+	local prefix = ''
+	if getActivatedMods():contains("PZKAnimated") then
+		print("VVA core: No prefix")
+	end
+	if getActivatedMods():contains("\\PZKAnimated") then
+		prefix = '\\'
+		print("VVA core: '\\\\' prefix")
+	end
+
+
+	VVAmodule.CheckModEnabled = function(modName)
+		return getActivatedMods():contains(prefix..modName)
+	end
+
 	VVAmodule.IsProfileDefined = function(profileName)
 		return not not profiles[profileName]
 	end

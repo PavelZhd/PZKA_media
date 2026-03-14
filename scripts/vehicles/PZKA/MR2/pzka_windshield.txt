@@ -1,0 +1,40 @@
+module Base
+{
+	model PZKA_Vehicles_MR2_Windshield
+	{
+		mesh = vehicles/MR2/pzka_MR2|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MR2_Sunroof
+	{
+		mesh = vehicles/MR2/pzka_MR2|Sunroof_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	template vehicle PZKA_MR2_Windshield {
+		part Windshield
+		{
+			model MR2_1
+			{
+				file = PZKA_Vehicles_MR2_Windshield,
+			}
+			model MR2_2
+			{
+				file = PZKA_Vehicles_MR2_Windshield,
+			}
+			model MR2_3
+			{
+				file = PZKA_Vehicles_MR2_Sunroof,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+            	init = Vehicles.Init.AdjustLightGeometry,
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+	}
+}
