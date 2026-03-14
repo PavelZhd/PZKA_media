@@ -1,0 +1,185 @@
+module Base
+{
+	model PZKA_Vehicles_HMMV_DoorFrontLeft
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_FD|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_DoorFrontRight
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_FD|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_WindowFrontLeft
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_FD|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_WindowFrontRight
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_FD|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_DoorFrontLeft_nr
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_FD|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_DoorFrontRight_nr
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_FD|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	
+	model PZKA_Vehicles_HMMV_DoorFrontLeft_C
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_FD|Door_FrontLeft_C_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_DoorFrontRight_C
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_FD|Door_FrontRight_C_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_DoorFrontLeft_C_nr
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_FD|Door_FrontLeft_C_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_DoorFrontRight_C_nr
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_FD|Door_FrontRight_C_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle PZKA_HMMV_FrontDoorWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_HMMV_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_HMMV_WindowFrontRight,
+            }
+	    }
+	}
+
+	template vehicle PZKA_HMMV_FrontDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorFrontLeft,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorFrontRight,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = PZKA_HMMV_FrontDoorWindows,
+	}
+	template vehicle PZKA_HMMV_FrontDoors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorFrontLeft_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorFrontRight_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = PZKA_HMMV_FrontDoorWindows,
+	}
+
+	
+	template vehicle PZKA_HMMV_FrontDoors_C {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorFrontLeft_C,
+			}
+		}
+		template! = VVA_DoorFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorFrontRight_C,
+			}
+		}
+		template! = VVA_DoorFrontRight,
+	}
+	template vehicle PZKA_HMMV_FrontDoors_C_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorFrontLeft_C_nr,
+			}
+		}
+		template! = VVA_DoorFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_DoorFrontRight_C_nr,
+			}
+		}
+		template! = VVA_DoorFrontRight,
+	}
+}

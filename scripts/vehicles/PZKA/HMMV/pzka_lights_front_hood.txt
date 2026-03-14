@@ -1,0 +1,35 @@
+module Base
+{
+	model PZKA_Vehicles_HMMV_LightFL
+	{
+		mesh = vehicles/HMMV/pzka_HMMV|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_LightFR
+	{
+		mesh = vehicles/HMMV/pzka_HMMV|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_HMMV_FrontLights {
+		part HeadlightLeft 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_LightFR,
+			}
+		}
+	}
+}

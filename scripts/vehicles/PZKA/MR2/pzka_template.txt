@@ -1,0 +1,46 @@
+module Base
+{
+	template vehicle PZKA_MR2_shared {
+		template! = PZKA_MR2_Windshield,
+		template! = PZKA_MR2_RearWindow,
+		template! = PZKA_MR2_FrontLights,
+		template! = PZKA_MR2_RearLights,
+		template! = PZKA_MR2_Interior,
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.146672 -0.049689 -0.478426,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 -1.067 3.2 0.86,
+		}
+		area TrunkFront
+		{
+			xywh = 0.0000 2.132 1.48 0.86,
+		}
+	}
+	
+	template vehicle PZKA_MR2 {
+		template! = PZKA_MR2_FrontDoors,
+		template! = PZKA_MR2_RearDoors,
+		template! = PZKA_MR2_hood,
+		template! = PZKA_MR2_Trunk,
+		template! = PZKA_MR2_roof,
+		template! = PZKA_MR2_LightHost,
+		template! = PZKA_MR2_shared,
+	}
+	template vehicle PZKA_MR2_nr {
+		template! = PZKA_MR2_FrontDoors_nr,
+		template! = PZKA_MR2_RearDoors_nr,
+		template! = PZKA_MR2_hood_nr,
+		template! = PZKA_MR2_Trunk_nr,
+		template! = PZKA_MR2_roof_nr,
+		template! = PZKA_MR2_LightHost_nr,
+		template! = PZKA_MR2_shared,
+	}
+}

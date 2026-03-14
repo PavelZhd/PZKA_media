@@ -1,0 +1,38 @@
+module Base
+{
+	model PZKA_Vehicles_MR2_RearWindow
+	{
+		mesh = vehicles/MR2/pzka_MR2|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MR2_WindowRL
+	{
+		mesh = vehicles/MR2/pzka_MR2|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MR2_WindowRR
+	{
+		mesh = vehicles/MR2/pzka_MR2|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	template vehicle PZKA_MR2_RearWindow {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MR2_RearWindow,
+			}
+			model Left
+			{
+				file = PZKA_Vehicles_MR2_WindowRL,
+			}
+			model Right
+			{
+				file = PZKA_Vehicles_MR2_WindowRR,
+			}
+		}
+	}
+}

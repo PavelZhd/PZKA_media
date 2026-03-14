@@ -1,0 +1,84 @@
+module Base
+{	
+	model PZKA_Vehicles_MR2_Roof1
+	{
+		mesh = vehicles/MR2/pzka_MR2|Roof1,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MR2_Roof1_nr
+	{
+		mesh = vehicles/MR2/pzka_MR2|Roof1,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MR2_Roof2
+	{
+		mesh = vehicles/MR2/pzka_MR2_roofdoors|Roof2,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MR2_Roof2_nr
+	{
+		mesh = vehicles/MR2/pzka_MR2_roofdoors|Roof2,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MR2_Roof3
+	{
+		mesh = vehicles/MR2/pzka_MR2|Roof3,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_MR2_Roof3_nr
+	{
+		mesh = vehicles/MR2/pzka_MR2|Roof3,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	
+	template vehicle PZKA_MR2_roof {		
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model MR2_1
+			{
+				file = PZKA_Vehicles_MR2_Roof1,
+			}
+			model MR2_2
+			{
+				file = PZKA_Vehicles_MR2_Roof2,
+			}
+			model MR2_3
+			{
+				file = PZKA_Vehicles_MR2_Roof3,
+			}
+		}
+		template! = PZKA_VariableFrontFill,
+	}
+	template vehicle PZKA_MR2_roof_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model MR2_1
+			{
+				file = PZKA_Vehicles_MR2_Roof1_nr,
+			}
+			model MR2_2
+			{
+				file = PZKA_Vehicles_MR2_Roof2_nr,
+			}
+			model MR2_3
+			{
+				file = PZKA_Vehicles_MR2_Roof3_nr,
+			}
+		}
+		template! = PZKA_VariableFrontFill,
+	}
+}

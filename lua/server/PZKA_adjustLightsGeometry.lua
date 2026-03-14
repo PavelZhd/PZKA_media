@@ -276,6 +276,13 @@ FillPartsMap["Base.pzkFVanSpiffo"] = FillPartsMap["Base.pzkFVanCargo"]
 FillPartsMap["Base.pzkFVanMultivan"] = FillPartsMap["Base.pzkFVanCargo"] 
 FillPartsMap["Base.pzkFVan6Seats"] = FillPartsMap["Base.pzkFVanCargo"] 
 
+FillPartsMap["Base.pzkMastersonTR2Kouki"] = {
+    ["MR2_1"] = "a0a3a",
+    ["MR2_2"] = "a1a4a",
+    ["MR2_3"] = "a2a5a",
+}
+FillPartsMap["Base.pzkMastersonTR2Zenki"] = FillPartsMap["Base.pzkMastersonTR2Kouki"]
+
 
 
 function Vehicles.Init.AdjustLightGeometry(vehicle, part)
