@@ -360,6 +360,7 @@ PZKA.ApplyTemplateToVehicle("pzkVanPublicWorks","VVA_Vehicles_VVan_Police",{"pzk
 
 PZKA.ApplyTemplateToVehicle("pzkVanPolice","VVA_Vehicles_VVan_Police",{"pzka_4SeatsR","PZKA_VVan_Multi_nr","VVA_Van_4Seats","pzka_sle_lighbar","PZKA_Van_Lightbar","PZKA_Van_InteriorBars"})
 
+PZKA.ApplyTemplateToVehicle("Vehicles_VanSeatsTaxi","VVA_Vehicles_VanSeats_nr",{"pzka_6Seats","VVA_VanSeats_nr"})
 
 
 ---- Camper
