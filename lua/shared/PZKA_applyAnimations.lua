@@ -562,27 +562,27 @@ PZKA.ApplyTemplateToVehicle("pzkMastersonTR2Zenki","PZKA_Vehicles_MR2",{"pzka_2S
 
 --HMMV
 ---- 1
-PZKA.ApplyTemplateToVehicle("pzkHMMV","PZKA_Vehicles_HMMV_1",{"pzka_4SeatsR","PZKA_HMMV_1"})
+PZKA.ApplyTemplateToVehicle("pzkHMMV","PZKA_Vehicles_HMMV_old_1",{"pzka_4SeatsR","PZKA_HMMV_old_1"})
 
 ---- 2
 
-PZKA.ApplyTemplateToVehicle("pzkHMMV2","PZKA_Vehicles_HMMV_2",{"pzka_4SeatsR","PZKA_HMMV_2"})
-PZKA.ApplyTemplateToVehicle("pzkHMMV2Mil","PZKA_Vehicles_HMMV_2_nr",{"pzka_4SeatsR","PZKA_HMMV_2_nr"})
+PZKA.ApplyTemplateToVehicle("pzkHMMV2","PZKA_Vehicles_HMMV_old_2",{"pzka_4SeatsR","PZKA_HMMV_old_2"})
+--PZKA.ApplyTemplateToVehicle("pzkHMMV2Mil","PZKA_Vehicles_HMMV_2_nr",{"pzka_4SeatsR","PZKA_HMMV_2_nr"})
 
 ---- 346
 
-PZKA.ApplyTemplateToVehicle("pzkHMMV3","PZKA_Vehicles_HMMV_3",{"pzka_4SeatsR","PZKA_HMMV_3"})
-PZKA.ApplyTemplateToVehicle("pzkHMMV3Mil","PZKA_Vehicles_HMMV_3_nr",{"pzka_4SeatsR","PZKA_HMMV_3_nr"})
+PZKA.ApplyTemplateToVehicle("pzkHMMV3","PZKA_Vehicles_HMMV_old_3",{"pzka_4SeatsR","PZKA_HMMV_old_3"})
+--PZKA.ApplyTemplateToVehicle("pzkHMMV3Mil","PZKA_Vehicles_HMMV_3_nr",{"pzka_4SeatsR","PZKA_HMMV_3_nr"})
 
-PZKA.ApplyTemplateToVehicle("pzkHMMV4Mil","PZKA_Vehicles_HMMV_4_nr",{"pzka_2SeatsF","PZKA_HMMV_4_nr"})
-PZKA.ApplyTemplateToVehicle("pzkHMMV6Mil","PZKA_Vehicles_HMMV_6_nr",{"pzka_2SeatsF","PZKA_HMMV_6_nr"})
+--PZKA.ApplyTemplateToVehicle("pzkHMMV4Mil","PZKA_Vehicles_HMMV_4_nr",{"pzka_2SeatsF","PZKA_HMMV_4_nr"})
+--PZKA.ApplyTemplateToVehicle("pzkHMMV6Mil","PZKA_Vehicles_HMMV_6_nr",{"pzka_2SeatsF","PZKA_HMMV_6_nr"})
 
 ---- 5
-PZKA.ApplyTemplateToVehicle("pzkHMMV5Mil","PZKA_Vehicles_HMMV_5_nr",{"pzka_2SeatsF","PZKA_HMMV_5_nr"})
+--PZKA.ApplyTemplateToVehicle("pzkHMMV5Mil","PZKA_Vehicles_HMMV_5_nr",{"pzka_2SeatsF","PZKA_HMMV_5_nr"})
 
 -- Masterson Horizon
 
-PZKA.ApplyTemplateToVehicle("SmallCar02","PZKA_Vehicles_Small02",{"pzka_4SeatsR","PZKA_Small02"})
+--PZKA.ApplyTemplateToVehicle("SmallCar02","PZKA_Vehicles_Small02",{"pzka_4SeatsR","PZKA_Small02"})
 
 
 
