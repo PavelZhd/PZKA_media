@@ -1,0 +1,28 @@
+module Base
+{
+	template vehicle PZKA_HMMV_old_shared {
+		template! = PZKA_HMMV_old_Windshield,
+		template! = PZKA_HMMV_old_FrontLights,
+		template! = PZKA_HMMV_old_Interior,
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_HMM_old_Battery,
+			}
+		}
+	}
+	
+	template vehicle PZKA_HMMV_old {
+		template! = PZKA_HMMV_old_FrontDoors,
+		template! = PZKA_HMMV_old_RearDoors,
+		template! = PZKA_HMMV_old_hood,
+		template! = PZKA_HMMV_old_shared,
+	}
+	template vehicle PZKA_HMMV_old_nr {
+		template! = PZKA_HMMV_old_FrontDoors_nr,
+		template! = PZKA_HMMV_old_RearDoors_nr,
+		template! = PZKA_HMMV_old_hood_nr,
+		-template! = PZKA_HMMV_old_shared,
+	}
+}
