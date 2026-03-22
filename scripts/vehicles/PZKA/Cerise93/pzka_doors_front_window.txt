@@ -1,0 +1,111 @@
+module Base
+{
+	model PZKA_Vehicles_Cerise93_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Cerise93|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Cerise93|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Cerise93|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Cerise93|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Cerise93|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Cerise93|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontDoorBone 1.0,
+	}
+
+	template vehicle PZKA_Cerise93_FrontDoorWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Cerise93_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Cerise93_WindowFrontRight,
+            }
+	    }
+	}
+
+	template vehicle PZKA_Cerise93_FrontDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_DoorFrontLeft,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_DoorFrontRight,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = PZKA_Cerise93_FrontDoorWindows,
+	}
+	template vehicle PZKA_Cerise93_FrontDoors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_DoorFrontLeft_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_DoorFrontRight_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = PZKA_Cerise93_FrontDoorWindows,
+	}
+}

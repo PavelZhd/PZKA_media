@@ -1,0 +1,20 @@
+module Base
+{
+	template vehicle PZKA_SVU_Armor_[LABEL]_shared {
+		template! = PU_armor_[LABEL]_animated_hood,
+		template! = PU_armor_[LABEL]_animated_doorsF,
+		template! = PU_armor_[LABEL]_animated_doorsR,
+		template! = PU_armor_[LABEL]_animated_trunk,
+		template! = PU_armor_animated_fix,		
+	}
+
+	template vehicle PZKA_SVU_Armor_[LABEL] {
+		template! = PZKA_SVU_Armor_[LABEL]_hood,
+		template! = PZKA_SVU_Armor_[LABEL]_shared,
+	}
+	template vehicle PZKA_SVU_Armor_[LABEL]_nr {
+		template! = PZKA_SVU_Armor_[LABEL]_hood_nr,
+		template! = PZKA_SVU_Armor_[LABEL]_shared,
+	}
+
+}

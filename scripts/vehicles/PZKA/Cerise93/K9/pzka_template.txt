@@ -1,0 +1,22 @@
+module Base
+{
+	template vehicle PZKA_Cerise93_sharedK9 {
+		template! = PZKA_Cerise93_shared,
+		template! = PZKA_Cerise93_RearWindow,
+		template! = PZKA_Cerise93_K9Kennel,
+	}
+	
+	template vehicle PZKA_Cerise93_K9 {
+		template! = PZKA_Cerise93_FrontDoors,
+		template! = PZKA_Cerise93_RearDoors_K9,		
+		template! = PZKA_Cerise93_Trunk,
+		template! = PZKA_Cerise93_sharedK9,
+	}
+	template vehicle PZKA_Cerise93_K9_nr {
+		template! = PZKA_Cerise93_FrontDoors_nr,
+		template! = PZKA_Cerise93_RearDoors_K9_nr,		
+		template! = PZKA_Cerise93_Trunk_nr,
+		template! = PZKA_Cerise93_sharedK9,
+	}
+	
+}

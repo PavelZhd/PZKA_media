@@ -1,0 +1,39 @@
+module Base
+{	
+	template vehicle PZKA_Normal_SedanV_K9_base {
+		template! = PZKA_Normal_front,
+		template! = VVA_Normal_RearDoors_K9N,
+		template! = VVA_Normal_RearWindow,
+		template! = PZKA_NormalBase_common,
+		template! = PZKA_NormalBase_RearSeats,
+		template! = PZKA_Normal_SedanV_interior_trunk,
+		template! = VVA_Normal_InteriorKennel,
+	}
+	template vehicle PZKA_Normal_SedanV_K9_base_nr {
+		template! = PZKA_Normal_front_nr,
+		template! = VVA_Normal_RearDoors_K9N_nr,
+		template! = VVA_Normal_RearWindow,
+		template! = PZKA_NormalBase_common,
+		template! = PZKA_NormalBase_RearSeats,
+		template! = PZKA_Normal_SedanV_interior_trunk,
+		template! = VVA_Normal_InteriorKennel,
+	}
+	template vehicle PZKA_Normal_SedanF_K9_base {
+		template! = PZKA_Normal_front,
+		template! = VVA_Normal_RearDoors_K9C,,
+		template! = PZKA_Normal_SedanF_RearWindow,
+		template! = PZKA_NormalBase_common,
+		template! = PZKA_NormalBase_RearSeats,
+		template! = PZKA_Normal_SedanF_interior_trunk,
+		template! = VVA_Normal_InteriorKennel,
+	}
+	template vehicle PZKA_Normal_SedanF_K9_base_nr {
+		template! = PZKA_Normal_front_nr,
+		template! = VVA_Normal_RearDoors_K9C_nr,
+		template! = PZKA_Normal_SedanF_RearWindow,
+		template! = PZKA_NormalBase_common,
+		template! = PZKA_NormalBase_RearSeats,
+		template! = PZKA_Normal_SedanF_interior_trunk,
+		template! = VVA_Normal_InteriorKennel,
+	}
+}

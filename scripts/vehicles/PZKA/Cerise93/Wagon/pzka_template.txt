@@ -1,0 +1,31 @@
+module Base
+{
+	template vehicle PZKA_Cerise93_sharedW {
+		template! = PZKA_Cerise93_shared,
+		template! = PZKA_Cerise93_RearSeats,		
+	}
+	
+	
+	template vehicle PZKA_Cerise93_C93W {
+		template! = PZKA_Cerise93_hood,
+		template! = PZKA_Cerise93_FrontLights,
+		template! = PZKA_Cerise93_W_RearLights,
+	}
+	template vehicle PZKA_Cerise93_C93W_nr {
+		template! = PZKA_Cerise93_hood_nr,
+		template! = PZKA_Cerise93_FrontLights,
+		template! = PZKA_Cerise93_W_RearLights,
+	}
+
+	template vehicle PZKA_Cerise93_Wagon {
+		template! = PZKA_Cerise93,
+		template! = PZKA_Cerise93_W_Trunk,
+		template! = PZKA_Cerise93_sharedW,
+	}
+	template vehicle PZKA_Cerise93_Wagon_nr {
+		template! = PZKA_Cerise93_nr,
+		template! = PZKA_Cerise93_W_Trunk_nr,
+		template! = PZKA_Cerise93_sharedW,
+	}
+	
+}

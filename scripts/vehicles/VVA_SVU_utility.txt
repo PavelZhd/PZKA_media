@@ -1,0 +1,78 @@
+module Base
+{
+    template vehicle PU_armor_animated_fix {
+        part ATA2Protection*
+        {
+        	model anchorNormal {
+				file = VVA_SVU_Dummy,
+			}
+			model anchorRusted {
+				file = VVA_SVU_DummyRust,
+			}
+        	table install
+            {
+            	complete = ATATuning2.InstallComplete.AnchorTuning,
+            }
+            table uninstall
+            {
+            	complete = ATATuning2.UninstallComplete.AnchorTuning,
+            }
+            lua
+            {
+            	create = ATATuning2.Create.AnchorTuning,
+        		init = ATATuning2.Init.AnchorTuning,
+        		update = ATATuning2.Update.Protection,
+            }
+        }
+    }
+    template vehicle VVA_SVU_SwapHood
+	{
+		part EngineDoor
+		{
+			table install
+			{
+				complete = ATATuning2.InstallComplete.ScoopedHood,
+			}
+			table uninstall
+			{
+				complete = ATATuning2.UninstallComplete.ScoopedHood,
+			}
+			lua
+			{
+				create = ATATuning2.Create.ScoopedHood,
+				init = ATATuning2.Init.ScoopedHood,
+				update = Vehicles.Update.EngineDoor,
+				use = Vehicles.Use.EngineDoor,
+			}
+			setAllModelsVisible = false,
+		}
+        part ATA2AirScoop
+		{			
+			table install
+			{
+				complete = ATATuning2.InstallComplete.AirScoop,
+			}
+			table uninstall
+			{
+				complete = ATATuning2.UninstallComplete.AirScoop,
+			}			
+		}
+	}
+    
+	model VVA_SVU_Dummy
+	{
+		mesh = vehicles/vva_dummy,
+		shader = vehiclewheel,
+		texture = Vehicles/puv_parts,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_SVU_DummyRust
+	{
+		mesh = vehicles/vva_dummy,
+		shader = vehiclewheel,
+		texture = Vehicles/puv_parts_rusted,
+		static = TRUE,
+		scale = 0.004,
+	}
+}
