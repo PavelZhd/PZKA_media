@@ -1,0 +1,20 @@
+module Base
+{
+	model VVA_Vehicles_Normal_K9Kennel
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Kennel,
+		shader = vehicle_norandom_noreflect,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_Normal_InteriorKennel {
+		part Interior 
+		{
+			model Kennel 
+			{
+				file = VVA_Vehicles_Normal_K9Kennel,
+			}
+		}
+	}
+}

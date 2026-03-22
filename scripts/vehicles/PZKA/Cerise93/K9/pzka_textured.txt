@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicles_Cerise93_internalsKennel
+	{
+		mesh = vehicles/pzka_Cerise93|Kennel,
+		shader = vehicle_norandom_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Cerise93_K9Kennel {
+		part Interior 
+		{						
+			model Kennel 
+			{
+				file = PZKA_Vehicles_Cerise93_internalsKennel,
+			}
+		}
+	}
+}

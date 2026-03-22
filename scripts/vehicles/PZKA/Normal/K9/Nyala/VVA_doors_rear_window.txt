@@ -1,0 +1,77 @@
+module Base
+{
+	model VVA_Vehicles_Normal_DoorRearLeft_K9N
+	{
+		mesh = vehicles/Normal/vva_Normal_doorRL|Door_RearLeft_K9_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_Normal_DoorRearRight_K9N
+	{
+		mesh = vehicles/Normal/vva_Normal_doorRR|Door_RearRight_K9_obj,		
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_Normal_DoorRearLeft_K9N_nr
+	{
+		mesh = vehicles/Normal/vva_Normal_doorRL|Door_RearLeft_K9_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_Normal_DoorRearRight_K9N_nr
+	{
+		mesh = vehicles/Normal/vva_Normal_doorRR|Door_RearRight_K9_obj,		
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+
+	
+	template vehicle VVA_Normal_RearDoors_K9N {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_DoorRearLeft_K9N,
+			}
+		}
+		template! = VVA_DoorWindowRearLeft,
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_DoorRearRight_K9N,
+			}
+		}
+		template! = VVA_DoorWindowRearRight,
+		template! = VVA_Normal_RearDoorWindows,
+	}
+	template vehicle VVA_Normal_RearDoors_K9N_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_DoorRearLeft_K9N_nr,
+			}
+		}
+		template! = VVA_DoorWindowRearLeft,
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_DoorRearRight_K9N_nr,
+			}
+		}
+		template! = VVA_DoorWindowRearRight,
+		template! = VVA_Normal_RearDoorWindows,
+	}
+}

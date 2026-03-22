@@ -147,6 +147,16 @@ PZKA.CopyTemplateToVehicle("pzkTriumphTWDStationWagonTaxi","PZKA_Normal_Wagon_nr
 PZKA.ApplyTemplateToVehicle("pzkTriumphTWDStationWagonGriswold","PZKA_Grisworld_nr",{"pzka_4SeatsR","PZKA_Normal_Wagon_nr","PZKA_Wagon_Grisworld_nr"})
 PZKA.ApplyTemplateToVehicle("pzkHearseGhoulbusters","PZKA_Ghoulbuster_nr",{"pzka_4SeatsR","PZKA_Normal_Wagon_nr","PZKA_Ghoulbuster_nr"})
 
+-- K9
+---- Cerise
+PZKA.ApplyTemplateToVehicle("pzkChevalierCeriseSedanPoliceK9","PZKA_Normal_SedanF_nr",{"pzka_2SeatsF","PZKA_Normal_SedanF_K9_base_nr","PZKA_SedanF_Cerise_nr","pzka_sle_lighbar","VVA_Normal_Lightbar"})
+
+---- TWD
+PZKA.ApplyTemplateToVehicle("pzkFranklinTriumphTWDPoliceK9","PZKA_Normal_SedanV_nr",{"pzka_2SeatsF","PZKA_Normal_SedanV_K9_base_nr","PZKA_SedanV_TWD_nr","pzka_sle_lighbar","VVA_Normal_Lightbar"})
+
+---- Mayor
+PZKA.ApplyTemplateToVehicle("pzkDashMayorPoliceK9","PZKA_Normal_SedanF_nr",{"pzka_2SeatsF","PZKA_Normal_SedanF_K9_base_nr","PZKA_SedanF_Mayor_nr","pzka_sle_lighbar","VVA_Normal_Lightbar"})
+
 --Bank Truck
 
 PZKA.ApplyTemplateToVehicle("pzkFranklinBankTruck","PZKA_Vehicles_BankTrunk_nr",{"pzka_2SeatsF","PZKA_BankTruck_Bank"})
@@ -621,6 +631,56 @@ PZKA.ApplyTemplateToVehicle("pzkHMMV5Mil","PZKA_Vehicles_HMMV_5_nr",{"pzka_2Seat
 PZKA.ApplyTemplateToVehicle("SmallCar02","PZKA_Vehicles_Small02",{"pzka_4SeatsR","PZKA_Small02"})
 
 
+-- Cerise93
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierCerise93","PZKA_Vehicles_Cerise93",{"pzka_4SeatsR","PZKA_Cerise93_C93S","PZKA_Cerise93_Sedan"}) --
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierCerise93Service","PZKA_Vehicles_Cerise93_nr",{"pzka_4SeatsR","PZKA_Cerise93_C93S_nr","PZKA_Cerise93_Sedan_nr","PZKA_Cerise93_Lightbar"})
+PZKA.CopyTemplateToVehicle("pzkChevalierCerise93Fire","pzkChevalierCerise93Service",{"pzka_t_lighbar"})
+PZKA.CopyTemplateToVehicle("pzkChevalierCerise93LSU","pzkChevalierCerise93Service",{"pzka_t_lighbar"})
+PZKA.CopyTemplateToVehicle("pzkChevalierCerise93Mall","pzkChevalierCerise93Service",{"pzka_t_lighbar"})
+
+PZKA.CopyTemplateToVehicle("pzkChevalierCerise93PoliceLouisvillePD","pzkChevalierCerise93Service",{"pzka_sle_lighbar"})
+PZKA.CopyTemplateToVehicle("pzkChevalierCerise93PoliceMeadeSheriff","pzkChevalierCerise93PoliceLouisvillePD")
+PZKA.CopyTemplateToVehicle("pzkChevalierCerise93PoliceWestPoint","pzkChevalierCerise93PoliceLouisvillePD")
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierCerise93Taxi","PZKA_Vehicles_Cerise93_nr",{"pzka_4SeatsR","PZKA_Cerise93_C93S_nr","PZKA_Cerise93_Sedan_nr","pzka_sle_taxi","PZKA_Cerise93_Taxi"})
+
+---- K9
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierCerise93PoliceK9","PZKA_Vehicles_Cerise93_nr",{"pzka_2SeatsF","PZKA_Cerise93_C93S","PZKA_Cerise93_K9_nr","pzka_sle_lighbar","PZKA_Cerise93_Lightbar"})
+
+---- Wagon
+
+PZKA.ApplyTemplateToVehicle("pzkChevalierCerise93Wagon","PZKA_Vehicles_Cerise93_W",{"pzka_4SeatsR","PZKA_Cerise93_C93W","PZKA_Cerise93_Wagon"})
+PZKA.ApplyTemplateToVehicle("pzkChevalierCerise93WagonFire","PZKA_Vehicles_Cerise93_W_nr",{"pzka_4SeatsR","PZKA_Cerise93_C93W_nr","PZKA_Cerise93_Wagon_nr","pzka_t_lighbar","PZKA_Cerise93_Lightbar"})
+PZKA.CopyTemplateToVehicle("pzkChevalierCerise93WagonLSU","pzkChevalierCerise93WagonFire")
+PZKA.CopyTemplateToVehicle("pzkChevalierCerise93WagonMall","pzkChevalierCerise93WagonFire")
+
+-- Triumph
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTriumph","PZKA_Vehicles_Cerise93_Triumph",{"pzka_4SeatsR","PZKA_Cerise93_TriS", "PZKA_Cerise93_Sedan"})
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTriumphService","PZKA_Vehicles_Cerise93_Triumph_nr",{"pzka_4SeatsR","PZKA_Cerise93_TriS_nr", "PZKA_Cerise93_Sedan_nr","PZKA_Cerise93_Lightbar"})
+PZKA.CopyTemplateToVehicle("pzkFranklinTriumphLSU","pzkFranklinTriumphService",{"pzka_t_lighbar"})
+PZKA.CopyTemplateToVehicle("pzkFranklinTriumphMall","pzkFranklinTriumphService",{"pzka_t_lighbar"})
+
+PZKA.CopyTemplateToVehicle("pzkFranklinTriumphPoliceLouisvillePD","pzkFranklinTriumphService",{"pzka_sle_lighbar"})
+PZKA.CopyTemplateToVehicle("pzkFranklinTriumphPoliceMeadeSheriff","pzkFranklinTriumphPoliceLouisvillePD")
+PZKA.CopyTemplateToVehicle("pzkFranklinTriumphPoliceWestPoint","pzkFranklinTriumphPoliceLouisvillePD")
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTriumphTaxi","PZKA_Vehicles_Cerise93_Triumph_nr",{"pzka_4SeatsR","PZKA_Cerise93_TriS_nr","PZKA_Cerise93_Sedan_nr","pzka_sle_taxi","PZKA_Cerise93_Taxi"})
+
+---- K9
+PZKA.ApplyTemplateToVehicle("pzkChevalierTriumph3PoliceK9","PZKA_Vehicles_Cerise93_Triumph_nr",{"pzka_2SeatsF","PZKA_Cerise93_TriS_nr","PZKA_Cerise93_K9_nr","pzka_sle_lighbar","PZKA_Cerise93_Lightbar"})
+
+---- Wagon
+
+PZKA.ApplyTemplateToVehicle("pzkFranklinTriumphWagon","PZKA_Vehicles_Cerise93_TW",{"pzka_4SeatsR","PZKA_Cerise93_TriW", "PZKA_Cerise93_Wagon"})
+PZKA.ApplyTemplateToVehicle("pzkFranklinTriumphWagonLSU","PZKA_Vehicles_Cerise93_TW_nr",{"pzka_4SeatsR","PZKA_Cerise93_TriW_nr", "PZKA_Cerise93_Wagon_nr","pzka_t_lighbar","PZKA_Cerise93_Lightbar"})
+PZKA.CopyTemplateToVehicle("pzkFranklinTriumphWagonMall","pzkFranklinTriumphWagonLSU")
+
+
 
 --- OLD FRAMEWORK CODE
 
@@ -652,13 +712,6 @@ PZKA.CreateAnimationProfile("pzkCarMuscleCabrio", "PZKA_Vehicles_MuscleCabrio_a"
 
 
 
-PZKA.CreateAnimationProfile("pzkChevalierCerise93Wagon","PZKA_Vehicles_Wagon_Cerise93_a","PZKA_Wagon_Cerise93_Lights","PZKA_Wagon_Cerise93_animatedDoors",{"FLW","FRW","RLW","RRW"}, "VVA_TrunkDoorVersion")
-PZKA.CloneAnimationProfile("pzkChevalierCerise93WagonFire","pzkChevalierCerise93Wagon","PZKA_Vehicles_Wagon_Cerise93_nr_a","PZKA_Wagon_Cerise93_Lights","PZKA_Wagon_Cerise93_animatedDoors_lightbar")
-PZKA.CloneAnimationProfile("pzkChevalierCerise93WagonLSU","pzkChevalierCerise93WagonFire")
-PZKA.CloneAnimationProfile("pzkChevalierCerise93WagonMall","pzkChevalierCerise93WagonFire")
-
-
-
 
 
 PZKA.CreateAnimationProfile("pzkDashRoyal","PZKA_Vehicles_Royal_a","PZKA_Royal_Lights_Royal","PZKA_DashRoyal_sedan_Royal",{"FLW","FRW"}, "VVA_TrunkDoorVersion")
@@ -667,42 +720,7 @@ PZKA.CloneAnimationProfile("pzkDashTornado","pzkDashRoyal","PZKA_Vehicles_Tornad
 PZKA.CloneAnimationProfile("pzkChevalierDownhill","pzkDashRoyal","PZKA_Vehicles_Downhill_a","PZKA_Royal_Lights_Downhill","PZKA_DashRoyal_sedan_Downhill")
 PZKA.CreateAnimationProfile("pzkChevalierRoadrunner","PZKA_Vehicles_Roadrunner_a","PZKA_Royal_Lights_Roadrunner","PZKA_DashRoyal_roadrunner",{"FLW","FRW"}, "PZKA_OpenBedVersion")
 
-PZKA.CreateAnimationProfile("pzkChevalierCerise93","PZKA_Vehicles_Cerise93_Sedan_a","PZKA_Cerise93_Sedan_Lights","PZKA_Cerise93_sedan_C93",{"FLW","FRW","RLW","RRW"},"VVA_TrunkDoorVersion")
-PZKA.CloneAnimationProfile("pzkChevalierCerise93Fire","pzkChevalierCerise93","PZKA_Vehicles_Cerise93_Sedan_nr_a",false,"PZKA_Cerise93_sedan_C93_police")
-PZKA.CloneAnimationProfile("pzkChevalierCerise93LSU","pzkChevalierCerise93Fire")
-PZKA.CloneAnimationProfile("pzkChevalierCerise93Mall","pzkChevalierCerise93Fire")
-if SLE then
-    PZKA.CloneAnimationProfile("pzkChevalierCerise93PoliceLouisvillePD","pzkChevalierCerise93","PZKA_Vehicles_Cerise93_Sedan_nr_a",false,"PZKA_Cerise93_sedan_C93_nr")
-else
-    PZKA.CloneAnimationProfile("pzkChevalierCerise93PoliceLouisvillePD","pzkChevalierCerise93Fire")
-end
-PZKA.CloneAnimationProfile("pzkChevalierCerise93PoliceMeadeSheriff","pzkChevalierCerise93PoliceLouisvillePD")
-PZKA.CloneAnimationProfile("pzkChevalierCerise93PoliceWestPoint","pzkChevalierCerise93PoliceLouisvillePD")
-if SLE then
-    PZKA.CloneAnimationProfile("pzkChevalierCerise93Taxi","pzkChevalierCerise93PoliceLouisvillePD")
-else
-    PZKA.CloneAnimationProfile("pzkChevalierCerise93Taxi","pzkChevalierCerise93","PZKA_Vehicles_Cerise93_Sedan_nr_a",false,"PZKA_Cerise93_sedan_C93_taxi")
-end
 
-PZKA.CloneAnimationProfile("pzkFranklinTriumph","pzkChevalierCerise93","PZKA_Vehicles_Triumph_Sedan_a","PZKA_Triumph_Sedan_Lights","PZKA_Cerise93_sedan_Triumph")
-PZKA.CloneAnimationProfile("pzkFranklinTriumphLSU","pzkFranklinTriumph","PZKA_Vehicles_Triumph_Sedan_nr_a",false,"PZKA_Cerise93_sedan_Triumph_police")
-PZKA.CloneAnimationProfile("pzkFranklinTriumphMall","pzkFranklinTriumphLSU")
-if SLE then
-    PZKA.CloneAnimationProfile("pzkFranklinTriumphPoliceLouisvillePD","pzkFranklinTriumph","PZKA_Vehicles_Triumph_Sedan_nr_a",false,"PZKA_Cerise93_sedan_Triumph_nr")
-else
-    PZKA.CloneAnimationProfile("pzkFranklinTriumphPoliceLouisvillePD","pzkFranklinTriumphLSU")
-end
-PZKA.CloneAnimationProfile("pzkFranklinTriumphPoliceMeadeSheriff","pzkFranklinTriumphPoliceLouisvillePD")
-PZKA.CloneAnimationProfile("pzkFranklinTriumphPoliceWestPoint","pzkFranklinTriumphPoliceLouisvillePD")
-if SLE then
-    PZKA.CloneAnimationProfile("pzkFranklinTriumphTaxi","pzkFranklinTriumphPoliceLouisvillePD")
-else    
-    PZKA.CloneAnimationProfile("pzkFranklinTriumphTaxi","pzkFranklinTriumph","PZKA_Vehicles_Triumph_Sedan_nr_a",false,"PZKA_Cerise93_sedan_Triumph_taxi")
-end
-
-PZKA.CloneAnimationProfile("pzkFranklinTriumphWagon","pzkFranklinTriumph","PZKA_Vehicles_Triumph_Wagon_a","PZKA_Triumph_Wagon_Lights","PZKA_Cerise93_wagon_Triumph")
-PZKA.CloneAnimationProfile("pzkFranklinTriumphWagonLSU","pzkFranklinTriumphWagon","PZKA_Vehicles_Triumph_Wagon_nr_a",false,"PZKA_Cerise93_wagon_Triumph_police")
-PZKA.CloneAnimationProfile("pzkFranklinTriumphWagonMall","pzkFranklinTriumphWagonLSU")
 
 PZKA.CreateAnimationProfile("pzkAutowagenBunny","PZKA_Vehicles_Bunny_a","PZKA_Bunny_Light","PZKA_Bunny",{"FLW","FRW"},"VVA_TrunkDoorVersion",{"FL","FR","RL","RR"})
 
