@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_Cerise93_Hood
 	{
-		mesh = vehicles/pzka_Cerise93_a|Hood_C93_obj,
+		mesh = vehicles/pzka_Cerise93|Hood_C93_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -10,7 +10,7 @@ module Base
 	}
 	model PZKA_Vehicles_Cerise93_Hood_nr
 	{
-		mesh = vehicles/pzka_Cerise93_a|Hood_C93_obj,
+		mesh = vehicles/pzka_Cerise93|Hood_C93_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,

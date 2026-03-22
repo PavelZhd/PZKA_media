@@ -39,8 +39,8 @@ module Base
 		template! = PZKA_Cerise93_RearLights,
 	}
 
-	template vehicle PZKA_Cerise93_Sedan {
-		
+	template vehicle PZKA_Cerise93_Sedan {		
+		template! = PZKA_Cerise93,
 		template! = PZKA_Cerise93_Trunk,
 		template! = PZKA_Cerise93_sharedS,
 	}
@@ -48,9 +48,5 @@ module Base
 		template! = PZKA_Cerise93_nr,
 		template! = PZKA_Cerise93_Trunk_nr,
 		template! = PZKA_Cerise93_sharedS,
-	}
-	template vehicle PZKA_Cerise93_Sedan_dumped {
-		
-		template! = PZKA_Cerise93,
 	}
 }

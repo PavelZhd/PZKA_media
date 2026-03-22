@@ -43,10 +43,9 @@ module Base
 
 	model SVU_FR_Window_Cerise93_Light_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontlightleft,
+		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontlightright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
-        invertX = TRUE,
 		scale = 0.01,
 		static = FALSE,
 	}
@@ -404,6 +403,47 @@ module Base
 	model SVU_Door_RR_Cerise93_Reinforced_a
 	{
 		mesh = vehicles/SVU3/pzka_Cerise93|doorrearreinforcedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+	model SVU_R_Window_Cerise93Wagon_Light_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowlightrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_R_Window_Cerise93Wagon_Light_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowlightspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_R_Window_Cerise93Wagon_Heavy_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowheavyrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+    }
+	model SVU_R_Window_Cerise93Wagon_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowheavyspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_R_Window_Cerise93Wagon_Reinforced_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowreinforcedrear,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -877,6 +917,53 @@ module Base
 		template! = PU_armor_animated_fix,
 	}
 
+	template vehicle PU_armor_Cerise93_animated_wagon
+	{
+		part ATA2ProtectionWindshieldRear
+        {
+            model Light
+            {
+                file = SVU_R_Window_Cerise93Wagon_Light_a,
+            }
+            model Heavy
+            {
+                file = SVU_R_Window_Cerise93Wagon_Heavy_a,
+            }
+            model LightSpiked
+            {
+                file = SVU_R_Window_Cerise93Wagon_Light_Spiked_a,
+            }
+            model HeavySpiked
+            {
+                file = SVU_R_Window_Cerise93Wagon_Heavy_Spiked_a,
+            }
+            model LightRusted
+            {
+                file = SVU_R_Window_Cerise93Wagon_Light_a,
+            }
+            model HeavyRusted
+            {
+                file = SVU_R_Window_Cerise93Wagon_Heavy_a,
+            }
+            model LightSpikedRusted
+            {
+                file = SVU_R_Window_Cerise93Wagon_Light_Spiked_a,
+            }
+            model HeavySpikedRusted
+            {
+                file = SVU_R_Window_Cerise93Wagon_Heavy_Spiked_a,
+            }
+			model Reinforced
+			{
+				file = SVU_R_Window_Cerise93Wagon_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_R_Window_Cerise93Wagon_Reinforced_a,
+			}
+        }
+	}
+
 	template vehicle PZKA_SVU_Armor_Cerise93 {
 		part EngineDoor
 		{
@@ -899,5 +986,15 @@ module Base
 			}
 		}
 		template! = PU_armor_Cerise93_animated_shared,
+	}
+
+	template vehicle PZKA_SVU_Armor_Cerise93Wagon {
+		template! = PZKA_SVU_Armor_Cerise93,
+		template! = PU_armor_Cerise93_animated_wagon,
+	}
+	
+	template vehicle PZKA_SVU_Armor_Cerise93Wagon_nr {
+		template! = PZKA_SVU_Armor_Cerise93_nr,
+		template! = PU_armor_Cerise93_animated_wagon,
 	}
 }

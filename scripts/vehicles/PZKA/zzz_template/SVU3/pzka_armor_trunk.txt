@@ -1,0 +1,175 @@
+module Base
+{
+	model SVU_R_Window_[LABEL]_Light_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|windowlightrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_R_Window_[LABEL]_Light_Spiked_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|windowlightspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_R_Window_[LABEL]_Heavy_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|windowheavyrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+    }
+	model SVU_R_Window_[LABEL]_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|windowheavyspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_R_Window_[LABEL]_Reinforced_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|windowreinforcedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+	model SVU_Trunk_[LABEL]_Light_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|windowlightrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Trunk_[LABEL]_Light_Spiked_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|windowlightspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Trunk_[LABEL]_Heavy_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|windowheavyrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+    }
+	model SVU_Trunk_[LABEL]_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|windowheavyspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Trunk_[LABEL]_Reinforced_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|windowreinforcedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+	template vehicle PU_armor_[LABEL]_animated_trunk
+	{
+		part ATA2ProtectionWindshieldRear
+        {
+            model Light
+            {
+                file = SVU_R_Window_[LABEL]_Light_a,
+            }
+            model Heavy
+            {
+                file = SVU_R_Window_[LABEL]_Heavy_a,
+            }
+            model LightSpiked
+            {
+                file = SVU_R_Window_[LABEL]_Light_Spiked_a,
+            }
+            model HeavySpiked
+            {
+                file = SVU_R_Window_[LABEL]_Heavy_Spiked_a,
+            }
+            model LightRusted
+            {
+                file = SVU_R_Window_[LABEL]_Light_a,
+            }
+            model HeavyRusted
+            {
+                file = SVU_R_Window_[LABEL]_Heavy_a,
+            }
+            model LightSpikedRusted
+            {
+                file = SVU_R_Window_[LABEL]_Light_Spiked_a,
+            }
+            model HeavySpikedRusted
+            {
+                file = SVU_R_Window_[LABEL]_Heavy_Spiked_a,
+            }
+			model Reinforced
+			{
+				file = SVU_R_Window_[LABEL]_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_R_Window_[LABEL]_Reinforced_a,
+			}
+        }
+
+		part ATA2ProtectionTrunk
+        {
+            model Light
+            {
+                file = SVU_Trunk_[LABEL]_Light_a,
+            }
+            model Heavy
+            {
+                file = SVU_Trunk_[LABEL]_Heavy_a,
+            }
+            model LightSpiked
+            {
+                file = SVU_Trunk_[LABEL]_Light_Spiked_a,
+            }
+            model HeavySpiked
+            {
+                file = SVU_Trunk_[LABEL]_Heavy_Spiked_a,
+            }
+            model LightRusted
+            {
+                file = SVU_Trunk_[LABEL]_Light_a,
+            }
+            model HeavyRusted
+            {
+                file = SVU_Trunk_[LABEL]_Heavy_a,
+            }
+            model LightSpikedRusted
+            {
+                file = SVU_Trunk_[LABEL]_Light_Spiked_a,
+            }
+            model HeavySpikedRusted
+            {
+                file = SVU_Trunk_[LABEL]_Heavy_Spiked_a,
+            }
+			model Reinforced
+			{
+				file = SVU_Trunk_[LABEL]_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Trunk_[LABEL]_Reinforced_a,
+			}
+        }
+	}
+}

@@ -2,7 +2,7 @@ module Base
 {
     model PZKA_Vehicles_Cerise93_Trunk
 	{
-		mesh = vehicles/pzka_Cerise93_a|Trunk_Sedan_obj,
+		mesh = vehicles/pzka_Cerise93|Trunk_Sedan_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -10,13 +10,13 @@ module Base
 	}
 	model PZKA_Vehicles_Cerise93_Trunk_nr
 	{
-		mesh = vehicles/pzka_Cerise93_a|Trunk_Sedan_obj,
+		mesh = vehicles/pzka_Cerise93|Trunk_Sedan_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = TrunkSedanBone 1.0,
 	}
-	template vehicle pzka_Cerise93_Trunk {
+	template vehicle PZKA_Cerise93_Trunk {
 		part TrunkDoor
 		{
 			model Default
@@ -26,7 +26,7 @@ module Base
 		}
 		template! = VVA_TrunkDoorVersion,
 	}
-	template vehicle pzka_Cerise93_Trunk_nr {
+	template vehicle PZKA_Cerise93_Trunk_nr {
 		part TrunkDoor
 		{
 			model Default
