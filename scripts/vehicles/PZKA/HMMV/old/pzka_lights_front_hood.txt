@@ -14,20 +14,6 @@ module Base
 		static = FALSE,
 		scale = 0.01,
 	}
-	model PZKA_Vehicles_HMMV_old_LightFL_static
-	{
-		mesh = vehicles/pzka_HMMV|Light_FrontLeft_sobj,
-		shader = vehicle_multiuv_vva,
-		static = TRUE,
-		scale = 0.01,
-	}
-	model PZKA_Vehicles_HMMV_old_LightFR_static
-	{
-		mesh = vehicles/pzka_HMMV|Light_FrontRight_sobj,
-		shader = vehicle_multiuv_vva,
-		static = TRUE,
-		scale = 0.01,
-	}
 
 	template vehicle PZKA_HMMV_old_FrontLights {
 		part HeadlightLeft 
@@ -37,10 +23,6 @@ module Base
 			{
 				file = PZKA_Vehicles_HMMV_old_LightFL,
 			}
-			model Static
-			{
-				file = PZKA_Vehicles_HMMV_old_LightFL_static,
-			}
 		}
 		part HeadlightRight 
 		{
@@ -48,10 +30,6 @@ module Base
 			model Default
 			{
 				file = PZKA_Vehicles_HMMV_old_LightFR,
-			}
-			model Static
-			{
-				file = PZKA_Vehicles_HMMV_old_LightFR_static,
 			}
 		}
 	}

@@ -3,6 +3,7 @@ module Base
 	model VVA_Vehicles_Normal_Steerwheel
 	{
 		mesh = vehicles/Normal/vva_Normal_static|WheelWell,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.004,
@@ -10,6 +11,7 @@ module Base
 	model VVA_Vehicles_Normal_Engine
 	{
 		mesh = vehicles/Normal/vva_Normal_static|Engine,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.004,
@@ -17,6 +19,7 @@ module Base
 	model VVA_Vehicles_Normal_AirFilter
 	{
 		mesh = vehicles/Normal/vva_Normal_static|AirFilter,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.004,
@@ -24,6 +27,7 @@ module Base
 	model VVA_Vehicles_Normal_InteriorTrunk
 	{
 		mesh = vehicles/Normal/vva_Normal_static|Interior_SedanTrunt,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.004,
@@ -32,6 +36,7 @@ module Base
 	model VVA_Vehicles_Normal_SeatFL
 	{
 		mesh = vehicles/Normal/vva_Normal_static|Seat_FrontLeft_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.004,
@@ -39,6 +44,7 @@ module Base
 	model VVA_Vehicles_Normal_SeatFR
 	{
 		mesh = vehicles/Normal/vva_Normal_static|Seat_FrontRight_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.004,
@@ -46,6 +52,7 @@ module Base
 	model VVA_Vehicles_Normal_SeatRL
 	{
 		mesh = vehicles/Normal/vva_Normal_static|Seat_RearLeft_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.004,
@@ -53,6 +60,7 @@ module Base
 	model VVA_Vehicles_Normal_SeatRR
 	{
 		mesh = vehicles/Normal/vva_Normal_static|Seat_RearRight_obj,
+		shader = vehiclewheel,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.004,

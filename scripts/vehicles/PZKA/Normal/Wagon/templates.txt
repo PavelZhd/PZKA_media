@@ -12,7 +12,7 @@ module Base
 
 	template vehicle PZKA_Normal_Wagon {
 		template! = PZKA_Normal_front,		
-		template! = VVA_SWagon_RearDoors,
+		template! = PZKA_SWagon_RearDoors,
 		template! = PZKA_NormalBase_common,
 		template! = PZKA_NormalBase_RearSeats,
 	}
