@@ -16,9 +16,16 @@ if PZKA.CheckModEnabled("StandardizedVehicleUpgrades3V") then
 	LinkAnimationsToArmor("pzkChevalierCerise93Taxi", 		    "PZKA_SVU_Armor_Cerise93_nr")
 	LinkAnimationsToArmor("pzkChevalierCerise93PoliceK9", 		"PZKA_SVU_Armor_Cerise93_nr")
 
-    LinkAnimationsToArmor("pzkFranklinTriumph", 				"PZKA_SVU_Armor_Cerise93")
-	LinkAnimationsToArmor("pzkFranklinTriumphService", 		    "PZKA_SVU_Armor_Cerise93_nr")
-	LinkAnimationsToArmor("pzkFranklinTriumphTaxi", 		    "PZKA_SVU_Armor_Cerise93_nr")
-	LinkAnimationsToArmor("pzkChevalierTriumph3PoliceK9", 		"PZKA_SVU_Armor_Cerise93_nr")
+	LinkAnimationsToArmor("pzkChevalierCerise93Wagon", 		    "PZKA_SVU_Armor_Cerise93Wagon")
+	LinkAnimationsToArmor("pzkChevalierCerise93WagonFire", 		"PZKA_SVU_Armor_Cerise93Wagon_nr")
+
+
+    LinkAnimationsToArmor("pzkFranklinTriumph", 				"PZKA_SVU_Armor_Cerise93_Tri")
+	LinkAnimationsToArmor("pzkFranklinTriumphService", 		    "PZKA_SVU_Armor_Cerise93_Tri_nr")
+	LinkAnimationsToArmor("pzkFranklinTriumphTaxi", 		    "PZKA_SVU_Armor_Cerise93_Tri_nr")
+	LinkAnimationsToArmor("pzkChevalierTriumph3PoliceK9", 		"PZKA_SVU_Armor_Cerise93_Tri_nr")
+
+    LinkAnimationsToArmor("pzkFranklinTriumphWagon", 		    "PZKA_SVU_Armor_Cerise93Wagon_Tri")
+	LinkAnimationsToArmor("pzkFranklinTriumphWagonLSU", 		"PZKA_SVU_Armor_Cerise93Wagon_Tri_nr")
 
 end

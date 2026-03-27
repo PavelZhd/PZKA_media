@@ -20,14 +20,14 @@ module Base
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Cerise93_LightRL,
+				file = PZKA_Vehicles_Cerise93_TW_LightRL,
 			}
 		}
 		part HeadlightRearRight 
 		{
 			model Default
 			{
-				file = PZKA_Vehicles_Cerise93_LightRR,
+				file = PZKA_Vehicles_Cerise93_TW_LightRR,
 			}
 		}
 	}

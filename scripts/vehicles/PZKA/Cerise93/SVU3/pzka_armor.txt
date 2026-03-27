@@ -466,6 +466,22 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
+	model SVU_Cerise93_Triumph_Hood_Scoop_a
+	{
+		mesh = vehicles/pzka_Cerise93|Hood_scoop,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_Cerise93_Triumph_Hood_Scoop_nr_a
+	{
+		mesh = vehicles/pzka_Cerise93|Hood_scoop,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
 	
 
 	template vehicle PU_armor_Cerise93_animated_shared
@@ -921,7 +937,8 @@ module Base
 	{
 		part ATA2ProtectionWindshieldRear
         {
-            model Light
+            parent = TrunkDoor,
+			model Light
             {
                 file = SVU_R_Window_Cerise93Wagon_Light_a,
             }
@@ -995,6 +1012,40 @@ module Base
 	
 	template vehicle PZKA_SVU_Armor_Cerise93Wagon_nr {
 		template! = PZKA_SVU_Armor_Cerise93_nr,
+		template! = PU_armor_Cerise93_animated_wagon,
+	}
+
+	template vehicle PZKA_SVU_Armor_Cerise93_Tri {
+		part EngineDoor
+		{
+
+			model Scooped
+			{
+				file = SVU_Cerise93_Triumph_Hood_Scoop_a,				
+			}
+		}
+		template! = PU_armor_Cerise93_animated_shared,
+	}
+	
+	template vehicle PZKA_SVU_Armor_Cerise93_Tri_nr {
+		part EngineDoor
+		{
+
+			model Scooped
+			{
+				file = SVU_Cerise93_Triumph_Hood_Scoop_nr_a,
+			}
+		}
+		template! = PU_armor_Cerise93_animated_shared,
+	}
+
+	template vehicle PZKA_SVU_Armor_Cerise93Wagon_Tri {
+		template! = PZKA_SVU_Armor_Cerise93_Tri,
+		template! = PU_armor_Cerise93_animated_wagon,
+	}
+	
+	template vehicle PZKA_SVU_Armor_Cerise93Wagon_Tri_nr {
+		template! = PZKA_SVU_Armor_Cerise93_Tri_nr,
 		template! = PU_armor_Cerise93_animated_wagon,
 	}
 }
