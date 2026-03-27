@@ -48,7 +48,7 @@ module Base
 
 	model PZKA_Vehicles_Cerise93_DoorRearLeft_nr
 	{
-		mesh = vehicles/pzka_Cerise93|Door_RearLeft_obj,
+		mesh = vehicles/pzka_Cerise93a|Door_RearLeft_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -56,7 +56,7 @@ module Base
 	}
 	model PZKA_Vehicles_Cerise93_DoorRearRight_nr
 	{
-		mesh = vehicles/pzka_Cerise93|Door_RearRight_obj,
+		mesh = vehicles/pzka_Cerise93a|Door_RearRight_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
