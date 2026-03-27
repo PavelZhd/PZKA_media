@@ -101,8 +101,6 @@ module Base
 
 	template vehicle PU_armor_[LABEL]_animated_hood
 	{
-		template! = VVA_SVU_SwapHood,		
-
 		part ATA2ProtectionHood
 		{
 			parent = EngineDoor,
@@ -185,6 +183,30 @@ module Base
 			model ReinforcedRustedScoop
 			{
 				file = SVU_Hood_[LABEL]_Reinforced_Scoop_a,
+			}
+		}
+	}
+
+	template vehicle PZKA_SVU_Armor_[LABEL]_hood {
+		template! = VVA_SVU_SwapHood,		
+		part EngineDoor
+		{
+
+			model Scooped
+			{
+				file = SVU_[LABEL]_Hood_Scoop_a,				
+			}
+		}
+	}
+	
+	template vehicle PZKA_SVU_Armor_[LABEL]_hood_nr {
+		template! = VVA_SVU_SwapHood,		
+		part EngineDoor
+		{
+
+			model Scooped
+			{
+				file = SVU_[LABEL]_Hood_Scoop_nr_a,
 			}
 		}
 	}
