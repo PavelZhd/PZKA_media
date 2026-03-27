@@ -2,7 +2,7 @@ module Base
 {
 	model SVU_FL_Window_Cerise93_Light_a
  	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontlightleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowfrontlightleft,
 		texture = Vehicles/puv_parts,
  		shader = vehicle_armor,
  		scale = 0.01,
@@ -10,7 +10,7 @@ module Base
  	}
 	model SVU_FL_Window_Cerise93_Light_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontlightspikedleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowfrontlightspikedleft,
         texture = Vehicles/puv_parts,
         shader = vehicle_armor,
         scale = 0.01,
@@ -18,7 +18,7 @@ module Base
     }
 	model SVU_FL_Window_Cerise93_Heavy_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontheavyleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowfrontheavyleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -26,7 +26,7 @@ module Base
 	}
 	model SVU_FL_Window_Cerise93_Heavy_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontheavyspikedleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowfrontheavyspikedleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -34,7 +34,7 @@ module Base
 	}
 	model SVU_FL_Window_Cerise93_Reinforced_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontreinforcedleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowfrontreinforcedleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -43,7 +43,7 @@ module Base
 
 	model SVU_FR_Window_Cerise93_Light_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontlightright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowfrontlightright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -51,7 +51,7 @@ module Base
 	}
 	model SVU_FR_Window_Cerise93_Light_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontlightspikedright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowfrontlightspikedright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -59,7 +59,7 @@ module Base
 	}
 	model SVU_FR_Window_Cerise93_Heavy_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontheavyright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowfrontheavyright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -67,7 +67,7 @@ module Base
 	}
 	model SVU_FR_Window_Cerise93_Heavy_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontheavyspikedright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowfrontheavyspikedright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -75,7 +75,7 @@ module Base
 	}
 	model SVU_FR_Window_Cerise93_Reinforced_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontreinforcedright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowfrontreinforcedright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -84,7 +84,7 @@ module Base
 
 	model SVU_RL_Window_Cerise93_Light_a
  	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowrearlightleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowrearlightleft,
 		texture = Vehicles/puv_parts,
  		shader = vehicle_armor,
  		scale = 0.01,
@@ -92,7 +92,7 @@ module Base
  	}
 	model SVU_RL_Window_Cerise93_Light_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowrearlightspikedleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowrearlightspikedleft,
         texture = Vehicles/puv_parts,
         shader = vehicle_armor,
         scale = 0.01,
@@ -100,7 +100,7 @@ module Base
     }
 	model SVU_RL_Window_Cerise93_Heavy_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowrearheavyleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowrearheavyleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -108,7 +108,7 @@ module Base
 	}
 	model SVU_RL_Window_Cerise93_Heavy_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowrearheavyspikedleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowrearheavyspikedleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -116,7 +116,7 @@ module Base
 	}
 	model SVU_RL_Window_Cerise93_Reinforced_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowrearreinforcedleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowrearreinforcedleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -125,7 +125,7 @@ module Base
 
 	model SVU_RR_Window_Cerise93_Light_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowrearlightright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowrearlightright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -133,7 +133,7 @@ module Base
 	}
 	model SVU_RR_Window_Cerise93_Light_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowrearlightspikedright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowrearlightspikedright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -141,7 +141,7 @@ module Base
 	}
 	model SVU_RR_Window_Cerise93_Heavy_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowrearheavyright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowrearheavyright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -149,7 +149,7 @@ module Base
 	}
 	model SVU_RR_Window_Cerise93_Heavy_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowrearheavyspikedright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowrearheavyspikedright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -157,7 +157,7 @@ module Base
 	}
 	model SVU_RR_Window_Cerise93_Reinforced_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|windowrearreinforcedright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|windowrearreinforcedright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -247,7 +247,7 @@ module Base
 
 	model SVU_Door_FL_Cerise93_Light_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontlightleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorfrontlightleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -255,7 +255,7 @@ module Base
 	}
 	model SVU_Door_FL_Cerise93_Light_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontlightspikedleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorfrontlightspikedleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -263,7 +263,7 @@ module Base
 	}
 	model SVU_Door_FL_Cerise93_Heavy_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontheavyleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorfrontheavyleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -271,7 +271,7 @@ module Base
 	}
 	model SVU_Door_FL_Cerise93_Heavy_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontheavyspikedleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorfrontheavyspikedleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -279,7 +279,7 @@ module Base
 	}
 	model SVU_Door_FL_Cerise93_Reinforced_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontreinforcedleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorfrontreinforcedleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -288,7 +288,7 @@ module Base
 
 	model SVU_Door_FR_Cerise93_Light_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontlightspikedright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorfrontlightspikedright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -296,7 +296,7 @@ module Base
 	}
 	model SVU_Door_FR_Cerise93_Light_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontlightright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorfrontlightright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -304,7 +304,7 @@ module Base
 	}
 	model SVU_Door_FR_Cerise93_Heavy_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontheavyright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorfrontheavyright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -312,7 +312,7 @@ module Base
     	}
 	model SVU_Door_FR_Cerise93_Heavy_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontheavyspikedright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorfrontheavyspikedright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -320,7 +320,7 @@ module Base
 	}
 	model SVU_Door_FR_Cerise93_Reinforced_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontreinforcedright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorfrontreinforcedright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -329,7 +329,7 @@ module Base
 
 	model SVU_Door_RL_Cerise93_Light_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorrearlightleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorrearlightleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -337,7 +337,7 @@ module Base
 	}
 	model SVU_Door_RL_Cerise93_Light_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorrearlightspikedleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorrearlightspikedleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -345,7 +345,7 @@ module Base
 	}
 	model SVU_Door_RL_Cerise93_Heavy_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorrearheavyleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorrearheavyleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -353,7 +353,7 @@ module Base
 	}
 	model SVU_Door_RL_Cerise93_Heavy_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorrearheavyspikedleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorrearheavyspikedleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -361,7 +361,7 @@ module Base
 	}
 	model SVU_Door_RL_Cerise93_Reinforced_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorrearreinforcedleft,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorrearreinforcedleft,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -370,7 +370,7 @@ module Base
 
 	model SVU_Door_RR_Cerise93_Light_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorrearlightspikedright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorrearlightspikedright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -378,7 +378,7 @@ module Base
 	}
 	model SVU_Door_RR_Cerise93_Light_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorrearlightright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorrearlightright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -386,7 +386,7 @@ module Base
 	}
 	model SVU_Door_RR_Cerise93_Heavy_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorrearheavyright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorrearheavyright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -394,7 +394,7 @@ module Base
     }
 	model SVU_Door_RR_Cerise93_Heavy_Spiked_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorrearheavyspikedright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorrearheavyspikedright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
@@ -402,7 +402,7 @@ module Base
 	}
 	model SVU_Door_RR_Cerise93_Reinforced_a
 	{
-		mesh = vehicles/SVU3/pzka_Cerise93|doorrearreinforcedright,
+		mesh = vehicles/SVU3/pzka_Cerise93a|doorrearreinforcedright,
 		texture = Vehicles/puv_parts,
 		shader = vehicle_armor,
 		scale = 0.01,
