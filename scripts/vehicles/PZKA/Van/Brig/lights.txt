@@ -16,7 +16,6 @@ module Base
 	}
 
 	template vehicle PZKA_Van_Brig_Lights {
-		template! = PZKA_VVan_Lights_Front,
 		part HeadlightRearLeft 
 		{
 			model Default

@@ -1,0 +1,34 @@
+module Base
+{
+	model PZKA_Vehicles_D70_Box_LightRL
+	{
+		mesh = vehicles/D70/pzka_D70_Box|Light_RearLeft_Box_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_D70_Box_LightRR
+	{
+		mesh = vehicles/D70/pzka_D70_Box|Light_RearRight_Box_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_D70_Box_RearLights {
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_Box_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_Box_LightRR,
+			}
+		}
+	}
+}

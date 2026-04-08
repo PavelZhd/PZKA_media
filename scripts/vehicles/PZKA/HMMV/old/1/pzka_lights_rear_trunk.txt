@@ -1,0 +1,36 @@
+module Base
+{
+	model PZKA_Vehicles_HMMV_old_1_LightRL
+	{
+		mesh = vehicles/pzka_HMMV|Light_RearLeft_1_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_HMMV_old_1_LightRR
+	{
+		mesh = vehicles/pzka_HMMV|Light_RearRight_1_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_HMMV_old_1_RearLights {
+		part HeadlightRearLeft 
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_old_1_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_old_1_LightRR,
+			}
+		}
+	}
+}

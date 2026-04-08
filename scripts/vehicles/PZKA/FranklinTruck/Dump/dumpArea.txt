@@ -16,8 +16,7 @@ module Base
 		scale = 0.01,
 		boneWeight = DumpAreaBone 1.0,
 	}
-
-	template vehicle PZKA_FranklinTruck_Dump_DumpArea_def {
+	template vehicle PZKA_DumpArea_def {
 		part DumpArea
 		{
 			category = nodisplay,
@@ -60,7 +59,7 @@ module Base
 	}
 
 	template vehicle PZKA_FranklinTruck_Dump_DumpArea {
-		template! = PZKA_FranklinTruck_Dump_DumpArea_def,
+		template! = PZKA_DumpArea_def,
 		part DumpArea
 		{
 			model Default
@@ -70,7 +69,7 @@ module Base
 		}
 	}
 	template vehicle PZKA_FranklinTruck_Dump_DumpArea_nr {
-		template! = PZKA_FranklinTruck_Dump_DumpArea_def,
+		template! = PZKA_DumpArea_def,
 		part DumpArea
 		{
 			model Default

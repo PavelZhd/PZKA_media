@@ -1,0 +1,20 @@
+module Base
+{	
+	model PZKA_Vehicles_D70_Lightbar
+	{
+		mesh = vehicles/D70/pzka_D70_Tow|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_D70_Lightbar {
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_Lightbar,
+			}
+		}
+	}
+}

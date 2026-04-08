@@ -1,0 +1,81 @@
+module Base
+{
+	model PZKA_Vehicles_LABEL_internals
+	{
+		mesh = vehicles/[FILENAME]|Vehicles_Interior,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_LABEL_SeatFL
+	{
+		mesh = vehicles/[FILENAME]|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_LABEL_SeatFR
+	{
+		mesh = vehicles/[FILENAME]|Seat_FrontRight_obj,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_LABEL_SeatRL
+	{
+		mesh = vehicles/[FILENAME]|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_moderncarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_LABEL_SeatRR
+	{
+		mesh = vehicles/[FILENAME]|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_moderncarshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_LABEL_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LABEL_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LABEL_SeatFR,
+			}
+		}
+		part SeatRearLeft
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_LABEL_SeatRL,
+			}
+		}
+		part SeatRearRight
+		{
+			model Default 
+			{
+				file = PZKA_Vehicles_LABEL_SeatRR,
+			}
+		}
+
+		template! = VVA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = PZKA_Vehicles_LABEL_internals,
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+module Base
+{
+	model PZKA_Vehicles_LABEL_LightFL
+	{
+		mesh = vehicles/[FILENAME]|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_LABEL_LightFR
+	{
+		mesh = vehicles/[FILENAME]|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_LABEL_LightFL_static
+	{
+		mesh = vehicles/[FILENAME]|Light_FrontLeft_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_LABEL_LightFR_static
+	{
+		mesh = vehicles/[FILENAME]|Light_FrontRight_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_LABEL_FrontLights {
+		part HeadlightLeft 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_LABEL_LightFL,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_LABEL_LightFL_static,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_LABEL_LightFR,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_LABEL_LightFR_static,
+			}
+		}
+	}
+}

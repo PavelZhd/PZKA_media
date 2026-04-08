@@ -1,0 +1,20 @@
+module Base
+{	
+	model VVA_Vehicles_Normal_Lightbar
+	{
+		mesh = vehicles/Normal/vva_Normal_static|Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_Normal_Lightbar {
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_Lightbar,
+			}
+		}
+	}
+}

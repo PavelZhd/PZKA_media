@@ -1,0 +1,69 @@
+module Base
+{
+    model VVA_Vehicles_SWagon_RearWindow
+	{
+		mesh = vehicles/Normal/vva_Normal_trunkWagon|RearWindow_Wagon_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_SWagon_RearWindow_static
+	{
+		mesh = vehicles/Normal/vva_Normal_static|RearWindow_Wagon_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_SWagon_Trunk
+	{
+		mesh = vehicles/Normal/vva_Normal_trunkWagon|Trunk_Wagon_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_SWagon_Trunk_nr
+	{
+		mesh = vehicles/Normal/vva_Normal_trunkWagon|Trunk_Wagon_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle VVA_SWagon_RearWindow {
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = VVA_Vehicles_SWagon_RearWindow,
+			}
+			model Static
+			{
+				file = VVA_Vehicles_SWagon_RearWindow_static,
+			}
+		}
+	}
+	template vehicle VVA_SWagon_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SWagon_Trunk,
+			}
+		}
+		template! = VVA_SWagon_RearWindow,
+		template! = VVA_TrunkDoorWindowVersion,
+	}
+	template vehicle VVA_SWagon_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SWagon_Trunk_nr,
+			}
+		}
+		template! = VVA_SWagon_RearWindow,
+		template! = VVA_TrunkDoorWindowVersion,
+	}
+}

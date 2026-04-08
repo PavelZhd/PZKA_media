@@ -1,0 +1,39 @@
+module Base
+{
+	model VVA_Vehicles_Luxury_Trunk
+	{
+		mesh = vehicles/VVA_Luxury|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_Luxury_Trunk_nr
+	{
+		mesh = vehicles/VVA_Luxury|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle VVA_Luxury_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Luxury_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoorVersion,
+	}
+	template vehicle VVA_Luxury_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Luxury_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoorVersion,
+	}
+}

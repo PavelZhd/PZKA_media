@@ -1,0 +1,19 @@
+module Base
+{
+	
+	template vehicle PZKA_D70_2_shared {
+		template! = PZKA_D70Base_shared,
+		template! = PZKA_D70_2_FrontLights,		
+	}
+	
+	template vehicle PZKA_D70_2 {
+		template! = PZKA_D70_FrontDoors,
+		template! = PZKA_D70_2_hood,
+		template! = PZKA_D70_2_shared,
+	}
+	template vehicle PZKA_D70_2_nr {
+		template! = PZKA_D70_FrontDoors_nr,
+		template! = PZKA_D70_2_hood_nr,
+		template! = PZKA_D70_2_shared,
+	}
+}

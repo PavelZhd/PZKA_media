@@ -1,0 +1,13 @@
+module Base
+{
+	template vehicle PZKA_Cerise93_TriW {
+		template! = PZKA_Cerise93_Truimph_hood,
+		template! = PZKA_Cerise93_Truimph_FrontLights,
+		template! = PZKA_Cerise93_TW_RearLights,
+	}
+	template vehicle PZKA_Cerise93_TriW_nr {
+		template! = PZKA_Cerise93_Truimph_hood_nr,
+		template! = PZKA_Cerise93_Truimph_FrontLights,
+		template! = PZKA_Cerise93_TW_RearLights,
+	}
+}

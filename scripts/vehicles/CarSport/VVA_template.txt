@@ -1,0 +1,31 @@
+module Base
+{
+	template vehicle VVA_SportCar_Interior {
+		template! = PZKA_SportBase_shared,
+	}
+	template vehicle VVA_SportCar_shared {
+		template! = PZKA_Cosette_shared,
+	}
+
+	template vehicle VVA_SportCar_Base {
+		template! = VVA_SportCar_hood,
+		template! = VVA_SportCar_LightHost,
+		template! = VVA_SportCar_shared,
+	}
+	template vehicle VVA_SportCar_Base_nr {
+		template! = VVA_SportCar_hood_nr,
+		template! = VVA_SportCar_LightHost_nr,
+		template! = VVA_SportCar_shared,
+	}
+	
+	template vehicle VVA_SportCar {
+		template! = VVA_SportCar_FrontDoors,
+		template! = VVA_SportCar_Trunk,
+		template! = VVA_SportCar_Base,
+	}
+	template vehicle VVA_SportCar_nr {
+		template! = VVA_SportCar_FrontDoors_nr,
+		template! = VVA_SportCar_Trunk_nr,
+		template! = VVA_SportCar_Base_nr,
+	}
+}

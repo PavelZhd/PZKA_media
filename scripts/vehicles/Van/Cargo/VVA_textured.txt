@@ -1,0 +1,21 @@
+module Base
+{
+	model VVA_Vehicles_VanCargo_internals
+	{
+		mesh = vehicles/Vans/vva_Van_Common|Vehicles_Interior_cargo,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_VanCargo_Interior {
+		part Interior 
+		{						
+			model Trunk 
+			{
+				file = VVA_Vehicles_VanCargo_internals,
+			}
+		}
+	}
+}

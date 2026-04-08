@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicle_StepVan_internals_food
+	{
+		mesh = vehicles/pzka_StepVan|Vehicle_Interior_Food,
+		texture = Vehicles/vehicle_stepvanshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	template vehicle PZKA_StepVan_Food_Interior {
+		part Inreior 
+		{
+			model Trunk
+			{
+				file = PZKA_Vehicle_StepVan_internals_food,
+			}
+		}
+	}
+}

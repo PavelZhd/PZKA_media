@@ -1,0 +1,35 @@
+module Base
+{
+    model PZKA_Vehicles_W35_Trunk_static
+	{
+		mesh = vehicles/pzka_W35Truck|Trunk_sobj,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_W35_Trunk_static_nr
+	{
+		mesh = vehicles/pzka_W35Truck|Trunk_sobj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_W35Cabrio_Trunk {
+		part Interior
+		{
+			model Trunk
+			{
+				file = PZKA_Vehicles_W35_Trunk_static,
+			}
+		}
+	}
+	template vehicle PZKA_W35Cabrio_Trunk_nr {
+		part Interior
+		{
+			model Trunk
+			{
+				file = PZKA_Vehicles_W35_Trunk_static_nr,
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+module Base
+{
+	model PZKA_Vehicles_Cerise93_W_LightRL
+	{
+		mesh = vehicles/pzka_Cerise93|Light_RearLeft_Wagon_Cerise93_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cerise93_W_LightRR
+	{
+		mesh = vehicles/pzka_Cerise93|Light_RearRight_Wagon_Cerise93_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_Cerise93_W_RearLights {
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_W_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_W_LightRR,
+			}
+		}
+	}
+}

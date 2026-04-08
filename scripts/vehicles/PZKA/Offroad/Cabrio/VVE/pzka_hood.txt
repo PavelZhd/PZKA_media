@@ -1,0 +1,21 @@
+module Base
+{
+	model PZKA_VVE_Offroad_Hood_nr
+	{
+		mesh = vehicles/pzka_vve_offroad|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = HoodBone 1.0,
+	}	
+	template vehicle PZKA_VVE_OffRoad_hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_VVE_Offroad_Hood_nr,
+			}
+		}
+		template! = VVA_EngineDoor,
+	}
+}

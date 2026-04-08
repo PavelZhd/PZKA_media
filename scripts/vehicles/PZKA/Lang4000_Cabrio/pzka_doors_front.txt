@@ -1,0 +1,73 @@
+module Base
+{
+	model PZKA_Vehicles_Lang4000Cabrio_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Lang4000Cabrio|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Lang4000Cabrio_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Lang4000Cabrio|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Lang4000Cabrio_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Lang4000Cabrio|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Lang4000Cabrio_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Lang4000Cabrio|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	template vehicle PZKA_Lang4000C_FrontDoors {
+		template! = PZKA_CabrioC_frontDoors_shared,
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang4000Cabrio_DoorFrontLeft,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang4000Cabrio_DoorFrontRight,
+			}
+		}
+		template! = VVA_DoorFrontLeft,
+		template! = VVA_DoorFrontRight,
+	}
+	template vehicle PZKA_Lang4000C_FrontDoors_nr {
+		template! = PZKA_CabrioC_frontDoors_shared,
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang4000Cabrio_DoorFrontLeft_nr,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Lang4000Cabrio_DoorFrontRight_nr,
+			}
+		}
+		template! = VVA_DoorFrontLeft,
+		template! = VVA_DoorFrontRight,
+	}
+}

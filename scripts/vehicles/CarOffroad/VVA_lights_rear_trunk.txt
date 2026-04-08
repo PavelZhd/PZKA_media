@@ -1,0 +1,36 @@
+module Base
+{
+	model VVA_Vehicles_OffRoad_LightRL
+	{
+		mesh = vehicles/VVA_OffRoad|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_OffRoad_LightRR
+	{
+		mesh = vehicles/VVA_OffRoad|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_OffRoad_RearLights {
+		part HeadlightRearLeft 
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_LightRR,
+			}
+		}
+	}
+}

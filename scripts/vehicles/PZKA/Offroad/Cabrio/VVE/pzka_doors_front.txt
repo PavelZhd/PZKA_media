@@ -1,0 +1,37 @@
+module Base
+{
+	model PZKA_VVE_OffroadC_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_vve_offroad|Door_FrontLeft_С_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_VVE_OffroadC_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_vve_offroad|Door_FrontRight_С_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle PZKA_VVE_OffroadC_doorsFront_nr {
+		template = PZKA_CabrioC_frontDoors_shared,
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_VVE_OffroadC_DoorFrontLeft_nr,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_VVE_OffroadC_DoorFrontRight_nr,
+			}
+		}
+	}
+}

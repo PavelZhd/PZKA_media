@@ -1,0 +1,111 @@
+module Base
+{
+	model PZKA_Vehicles_Raider_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Raider|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Raider_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Raider|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Raider_WindowFrontLeft
+	{
+		mesh = vehicles/pzka_Raider|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Raider_WindowFrontRight
+	{
+		mesh = vehicles/pzka_Raider|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_Raider_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Raider|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_Raider_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Raider|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle PZKA_Raider_FrontDoorWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_Raider_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_Raider_WindowFrontRight,
+            }
+	    }
+	}
+
+	template vehicle PZKA_Raider_FrontDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Raider_DoorFrontLeft,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Raider_DoorFrontRight,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = PZKA_Raider_FrontDoorWindows,
+	}
+	template vehicle PZKA_Raider_FrontDoors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Raider_DoorFrontLeft_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Raider_DoorFrontRight_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = PZKA_Raider_FrontDoorWindows,
+	}
+}

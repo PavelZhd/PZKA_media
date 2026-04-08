@@ -1,0 +1,34 @@
+module Base
+{
+	model PZKA_Vehicles_StepVanB30_LightFL
+	{
+		mesh = vehicles/pzka_StepVanB30|Light_FrontLeft_B30_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model PZKA_Vehicles_StepVanB30_LightFR
+	{
+		mesh = vehicles/pzka_StepVanB30|Light_FrontRight_B30_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle PZKA_StepVanB30_FrontLights {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StepVanB30_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_StepVanB30_LightFR,
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+module Base
+{
+    model PZKA_Vehicles_D70_Box_Trunk
+	{
+		mesh = vehicles/D70/pzka_D70_Box|Trunk_Box_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBoxBone 1.0,
+		boneWeight = TrunkBoxBone7 1.0,
+		boneWeight = TrunkBoxBone8 1.0,
+		boneWeight = TrunkBoxBone9 1.0,
+		boneWeight = TrunkBoxBone10 1.0,
+		boneWeight = TrunkBoxBone11 1.0,
+		boneWeight = TrunkBoxBone12 1.0,
+		boneWeight = TrunkBoxBone13 1.0,
+		boneWeight = TrunkBoxBone14 1.0,
+		boneWeight = TrunkBoxBone15 1.0,
+		boneWeight = TrunkBoxBone16 1.0,
+	}
+	model PZKA_Vehicles_D70_Box_Trunk_nr
+	{
+		mesh = vehicles/D70/pzka_D70_Box|Trunk_Box_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBoxBone 1.0,
+		boneWeight = TrunkBoxBone7 1.0,
+		boneWeight = TrunkBoxBone8 1.0,
+		boneWeight = TrunkBoxBone9 1.0,
+		boneWeight = TrunkBoxBone10 1.0,
+		boneWeight = TrunkBoxBone11 1.0,
+		boneWeight = TrunkBoxBone12 1.0,
+		boneWeight = TrunkBoxBone13 1.0,
+		boneWeight = TrunkBoxBone14 1.0,
+		boneWeight = TrunkBoxBone15 1.0,
+		boneWeight = TrunkBoxBone16 1.0,
+	}
+	template vehicle PZKA_D70_Box_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_Box_Trunk,
+			}
+		}
+		template! = VVA_RearDoorVersionBlind,
+	}
+	template vehicle PZKA_D70_Box_Trunk_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_Box_Trunk_nr,
+			}
+		}
+		template! = VVA_RearDoorVersionBlind,
+	}
+}

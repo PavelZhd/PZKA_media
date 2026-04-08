@@ -1,0 +1,15 @@
+module Base
+{
+	template vehicle PZKA_W35Tanker {
+		template! = PZKA_W35_FrontDoors,
+		template! = PZKA_W35_hood,
+		template! = PZKA_W35Tanker_Trunk,
+		template! = PZKA_W35_shared,
+	}
+	template vehicle PZKA_W35Tanker_nr {
+		template! = PZKA_W35_FrontDoors_nr,
+		template! = PZKA_W35_hood_nr,
+		template! = PZKA_W35Tanker_Trunk_nr,
+		template! = PZKA_W35_shared,
+	}
+}

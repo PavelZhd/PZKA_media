@@ -1,0 +1,17 @@
+module Base
+{
+    model VVA_Vehicles_SportCar
+	{
+		mesh = vehicles/VVA_SportCar|Vehicles_SportsCar,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_SportCar_nr
+	{
+		mesh = vehicles/VVA_SportCar|Vehicles_SportsCar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

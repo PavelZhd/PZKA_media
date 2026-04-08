@@ -1,0 +1,22 @@
+module Base
+{
+	template vehicle VVA_SWagon_shared {
+		template! = VVA_Normal_common,
+		template! = VVA_SWagon_RearLights,
+	}
+	
+	template vehicle VVA_SWagon {
+		template! = VVA_Normal_FrontDoors,
+		template! = VVA_SWagon_RearDoors,
+		template! = VVA_Normal_hood,
+		template! = VVA_SWagon_Trunk,
+		template! = VVA_SWagon_shared,
+	}
+	template vehicle VVA_SWagon_nr {
+		template! = VVA_Normal_FrontDoors_nr,
+		template! = VVA_SWagon_RearDoors_nr,
+		template! = VVA_Normal_hood_nr,
+		template! = VVA_SWagon_Trunk_nr,
+		template! = VVA_SWagon_shared,
+	}
+}

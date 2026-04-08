@@ -1,0 +1,213 @@
+module Base
+{
+	model SVU_Hood_[LABEL]_Light_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|hoodlightfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_[LABEL]_Light_Scoop_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|hoodlightfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_[LABEL]_Light_Spiked_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|hoodlightspikedfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_[LABEL]_Light_Spiked_Scoop_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|hoodlightspikedfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_[LABEL]_Heavy_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|hoodheavyfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_[LABEL]_Heavy_Scoop_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|hoodheavyfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_[LABEL]_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|hoodheavyspikedfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_[LABEL]_Heavy_Spiked_Scoop_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|hoodheavyspikedfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_[LABEL]_Reinforced_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|hoodreinforcedfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_[LABEL]_Reinforced_Scoop_a
+	{
+		mesh = vehicles/SVU3/[FILENAME]|hoodreinforcedfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}	
+
+	model SVU_[LABEL]_Hood_Scoop_a
+	{
+		mesh = vehicles/[FILENAME]|Hood_C93_scoop,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_[LABEL]_Hood_Scoop_nr_a
+	{
+		mesh = vehicles/[FILENAME]|Hood_C93_scoop,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	
+
+	template vehicle PU_armor_[LABEL]_animated_hood
+	{
+		part ATA2ProtectionHood
+		{
+			parent = EngineDoor,
+			model Light
+			{
+				file = SVU_Hood_[LABEL]_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Hood_[LABEL]_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Hood_[LABEL]_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Hood_[LABEL]_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Hood_[LABEL]_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Hood_[LABEL]_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Hood_[LABEL]_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Hood_[LABEL]_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Hood_[LABEL]_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Hood_[LABEL]_Reinforced_a,
+			}
+			model LightScoop
+			{
+				file = SVU_Hood_[LABEL]_Light_Scoop_a,
+			}
+			model HeavyScoop
+			{
+				file = SVU_Hood_[LABEL]_Heavy_Scoop_a,
+			}
+			model LightSpikedScoop
+			{
+				file = SVU_Hood_[LABEL]_Light_Spiked_Scoop_a,
+			}
+			model HeavySpikedScoop
+			{
+				file = SVU_Hood_[LABEL]_Heavy_Spiked_Scoop_a,
+			}
+			model LightRustedScoop
+			{
+				file = SVU_Hood_[LABEL]_Light_Scoop_a,
+			}
+			model HeavyRustedScoop
+			{
+				file = SVU_Hood_[LABEL]_Heavy_Scoop_a,
+			}
+			model LightSpikedRustedScoop
+			{
+				file = SVU_Hood_[LABEL]_Light_Spiked_Scoop_a,
+			}
+			model HeavySpikedRustedScoop
+			{
+				file = SVU_Hood_[LABEL]_Heavy_Spiked_Scoop_a,
+			}
+			model ReinforcedScoop
+			{
+				file = SVU_Hood_[LABEL]_Reinforced_Scoop_a,
+			}
+			model ReinforcedRustedScoop
+			{
+				file = SVU_Hood_[LABEL]_Reinforced_Scoop_a,
+			}
+		}
+	}
+
+	template vehicle PZKA_SVU_Armor_[LABEL]_hood {
+		template! = VVA_SVU_SwapHood,		
+		part EngineDoor
+		{
+
+			model Scooped
+			{
+				file = SVU_[LABEL]_Hood_Scoop_a,				
+			}
+		}
+	}
+	
+	template vehicle PZKA_SVU_Armor_[LABEL]_hood_nr {
+		template! = VVA_SVU_SwapHood,		
+		part EngineDoor
+		{
+
+			model Scooped
+			{
+				file = SVU_[LABEL]_Hood_Scoop_nr_a,
+			}
+		}
+	}
+}

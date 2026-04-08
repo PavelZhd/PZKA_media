@@ -1,0 +1,47 @@
+module Base
+{
+	template vehicle PZKA_CheyeneBase_shared {
+		template! = PZKA_Cheyene_Windshield,
+		template! = PZKA_Cheyene_LightFront,
+		template! = PZKA_Cheyene_interior_shared,
+				
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.244173 0.002707 0.807961,
+			}
+		}
+	}
+
+	template vehicle PZKA_Cheyene_shared {
+		template! = PZKA_CheyeneBase_shared,
+		template! = PZKA_Cheyene_rearSeats,
+		template! = PZKA_Cheyene_RearLight,		
+	}
+	template vehicle PZKA_CheyeneBase {
+		template! = PZKA_Cheyene_FrontDoors,
+		template! = PZKA_Cheyene_hood,
+	}
+	template vehicle PZKA_CheyeneBase_nr {
+		template! = PZKA_Cheyene_FrontDoors_nr,
+		template! = PZKA_Cheyene_hood_nr,
+	}
+
+	
+	template vehicle PZKA_Cheyene {
+		template! = PZKA_Cheyene_shared,
+		template! = PZKA_CheyeneBase,
+
+		template! = PZKA_Cheyene_RearDoors,
+		template! = PZKA_Cheyene_Trunk,
+	}
+	template vehicle PZKA_Cheyene_nr {
+		template! = PZKA_Cheyene_shared,
+		template! = PZKA_CheyeneBase_nr,
+
+		template! = PZKA_Cheyene_RearDoors_nr,
+		template! = PZKA_Cheyene_Trunk_nr,
+	}
+}

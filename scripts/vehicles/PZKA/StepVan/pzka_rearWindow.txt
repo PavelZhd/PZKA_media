@@ -1,0 +1,19 @@
+module Base
+{
+	model PZKA_Vehicle_StepVan_Food_RearWindow
+	{
+		mesh = vehicles/pzka_StepVan|WindowRear_food_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	
+	template vehicle VVA_StepVan_Food_RearWindow {
+		part WindshieldRear
+		{
+			model Food
+			{
+				file = PZKA_Vehicle_StepVan_Food_RearWindow,
+			}
+		}
+	}
+}

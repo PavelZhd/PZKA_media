@@ -3,7 +3,44 @@ module Base
 	template vehicle PZKA_FType_Utility_shared {
 		template! = PZKA_FType_Base,
 		template! = PZKA_FType_Utility_RearWindow,
-		template! = PZKA_FType_Utility_RearLights,		
+		template! = PZKA_FType_Utility_RearLights,
+
+		wheel FrontLeft
+		{
+			offset = 0.659932 -0.6006 1.48694,
+		}
+
+		wheel FrontRight
+		{
+			offset = -0.659932 -0.6006 1.48694,
+		}
+
+		wheel RearLeft
+		{
+			offset = 0.728 -0.6006 -1.45054,
+		}
+
+		wheel RearRight
+		{
+			offset = -0.728 -0.6006 -1.45054,
+		}
+		model
+		{
+			offset = 0.0000 0.54 0.51688,
+		}
+		area Engine
+		{
+			xywh = 0.0000 3.02 1.7 0.86,
+		}
+		area TireFrontLeft
+		{
+			xywh = 1.28 1.997 0.86 0.86,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.28 1.997 0.86 0.86,
+		}
 	}
 
 	template vehicle PZKA_FType_Utility_F350 {

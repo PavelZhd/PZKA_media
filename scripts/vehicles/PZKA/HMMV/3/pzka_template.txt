@@ -1,0 +1,39 @@
+module Base
+{
+	template vehicle PZKA_HMMV_3 {
+		template! = PZKA_HMMV_FrontDoors,
+		template! = PZKA_HMMV_RearDoors,
+		template! = PZKA_HMMV_3_Trunk,
+		template! = PZKA_HMMV,
+		template! = PZKA_HMMV_RearSeats,
+	}
+	template vehicle PZKA_HMMV_3_nr {
+		template! = PZKA_HMMV_FrontDoors_nr,
+		template! = PZKA_HMMV_RearDoors_nr,
+		template! = PZKA_HMMV_3_Trunk_nr,
+		template! = PZKA_HMMV_nr,
+		template! = PZKA_HMMV_RearSeats,
+	}
+
+	
+	template vehicle PZKA_HMMV_4 {
+		template! = PZKA_HMMV_FrontDoors,
+		template! = PZKA_HMMV_3_Trunk,
+		template! = PZKA_HMMV,
+	}
+	template vehicle PZKA_HMMV_4_nr {
+		template! = PZKA_HMMV_FrontDoors_nr,
+		template! = PZKA_HMMV_3_Trunk_nr,
+		template! = PZKA_HMMV_nr,
+	}
+	template vehicle PZKA_HMMV_6 {
+		template! = PZKA_HMMV_FrontDoors_C,
+		template! = PZKA_HMMV_3_Trunk_nr,
+		template! = PZKA_HMMV,
+	}
+	template vehicle PZKA_HMMV_6_nr {
+		template! = PZKA_HMMV_FrontDoors_C_nr,
+		template! = PZKA_HMMV_3_Trunk_nr,
+		template! = PZKA_HMMV_nr,
+	}
+}

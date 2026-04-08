@@ -1,0 +1,18 @@
+module Base
+{
+	template vehicle VVA_VanRadio_shared {
+		template! = VVA_Van_shared,
+		template! = VVA_VanRadio_RearWindow,
+		template! = VVA_VanRadio_Interior,
+	}
+	template vehicle VVA_VanRadio {
+		template! = VVA_Van_Base,
+		template! = VVA_Van_Trunk,
+		template! = VVA_VanRadio_shared,
+	}
+	template vehicle VVA_VanRadio_nr {
+		template! = VVA_Van_Base_nr,
+		template! = VVA_Van_Trunk_nr,
+		template! = VVA_VanRadio_shared,
+	}
+}

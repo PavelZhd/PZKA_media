@@ -1,0 +1,22 @@
+module Base
+{
+	template vehicle PZKA_StepVanB30_shared {
+		template! = VVA_StepVan_Internals,
+		template! = VVA_StepVan_Windshield,
+		template! = PZKA_StepVanB30_FrontLights,
+		template! = VVA_StepVan_RearLights,
+		template! = VVA_StepVan_InteriorTrunk,
+	}
+	template vehicle PZKA_StepVanB30 {
+		template! = VVA_StepVan_FrontDoors,
+		template! = PZKA_StepVanB30_hood,
+		template! = VVA_StepVan_Trunk,
+		template! = PZKA_StepVanB30_shared,
+	}
+	template vehicle PZKA_StepVanB30_nr {
+		template! = VVA_StepVan_FrontDoors_nr,
+		template! = PZKA_StepVanB30_hood_nr,
+		template! = VVA_StepVan_Trunk_nr,
+		template! = PZKA_StepVanB30_shared,
+	}
+}

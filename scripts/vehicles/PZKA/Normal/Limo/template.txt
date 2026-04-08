@@ -5,22 +5,22 @@ module Base
 		template! = PZKA_Normal_Limo_Reardoors,		
 		template! = PZKA_Limo_RearWindow,
 		template! = PZKA_Limo_Trunk,
-		template! = PZKA_Normal_shared,
 		template! = PZKA_Limo_Interior,
 		template! = PZKA_Normal_FrontFill,
 		template! = PZKA_Normal_FrontLights,
 		template! = PZKA_Limo_RearFill,
 		template! = PZKA_Limo_RearLights,
+		template! = PZKA_NormalBase_common,
 	}
 	template vehicle PZKA_Limo_nr {
 		template! = PZKA_Normal_front_nr,
 		template! = PZKA_Normal_Limo_Reardoors_nr,		
 		template! = PZKA_Limo_RearWindow,
 		template! = PZKA_Limo_Trunk_nr,
-		template! = PZKA_Normal_shared,
 		template! = PZKA_Limo_Interior,
 		template! = PZKA_Normal_FrontFill_nr,
 		template! = PZKA_Limo_RearFill_nr,
 		template! = PZKA_Limo_RearLights,
+		template! = PZKA_NormalBase_common,
 	}
 }

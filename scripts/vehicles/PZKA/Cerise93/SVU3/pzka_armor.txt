@@ -1,0 +1,1051 @@
+module Base
+{
+	model SVU_FL_Window_Cerise93_Light_a
+ 	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontlightleft,
+		texture = Vehicles/puv_parts,
+ 		shader = vehicle_armor,
+ 		scale = 0.01,
+		static = FALSE,
+ 	}
+	model SVU_FL_Window_Cerise93_Light_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontlightspikedleft,
+        texture = Vehicles/puv_parts,
+        shader = vehicle_armor,
+        scale = 0.01,
+		static = FALSE,
+    }
+	model SVU_FL_Window_Cerise93_Heavy_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontheavyleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_FL_Window_Cerise93_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontheavyspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_FL_Window_Cerise93_Reinforced_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontreinforcedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+	model SVU_FR_Window_Cerise93_Light_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontlightright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Cerise93_Light_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontlightspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Cerise93_Heavy_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontheavyright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Cerise93_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontheavyspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Cerise93_Reinforced_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowfrontreinforcedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+	model SVU_RL_Window_Cerise93_Light_a
+ 	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowrearlightleft,
+		texture = Vehicles/puv_parts,
+ 		shader = vehicle_armor,
+ 		scale = 0.01,
+		static = FALSE,
+ 	}
+	model SVU_RL_Window_Cerise93_Light_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowrearlightspikedleft,
+        texture = Vehicles/puv_parts,
+        shader = vehicle_armor,
+        scale = 0.01,
+		static = FALSE,
+    }
+	model SVU_RL_Window_Cerise93_Heavy_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowrearheavyleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_RL_Window_Cerise93_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowrearheavyspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_RL_Window_Cerise93_Reinforced_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowrearreinforcedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+	model SVU_RR_Window_Cerise93_Light_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowrearlightright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_RR_Window_Cerise93_Light_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowrearlightspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_RR_Window_Cerise93_Heavy_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowrearheavyright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_RR_Window_Cerise93_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowrearheavyspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_RR_Window_Cerise93_Reinforced_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowrearreinforcedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+	model SVU_Hood_Cerise93_Light_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|hoodlightfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_Cerise93_Light_Scoop_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|hoodlightfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_Cerise93_Light_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|hoodlightspikedfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_Cerise93_Light_Spiked_Scoop_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|hoodlightspikedfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_Cerise93_Heavy_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|hoodheavyfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_Cerise93_Heavy_Scoop_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|hoodheavyfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_Cerise93_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|hoodheavyspikedfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_Cerise93_Heavy_Spiked_Scoop_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|hoodheavyspikedfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_Cerise93_Reinforced_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|hoodreinforcedfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Hood_Cerise93_Reinforced_Scoop_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|hoodreinforcedfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+	model SVU_Door_FL_Cerise93_Light_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontlightleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Cerise93_Light_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontlightspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Cerise93_Heavy_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontheavyleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Cerise93_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontheavyspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Cerise93_Reinforced_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontreinforcedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+	model SVU_Door_FR_Cerise93_Light_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontlightspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_FR_Cerise93_Light_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontlightright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_FR_Cerise93_Heavy_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontheavyright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+    	}
+	model SVU_Door_FR_Cerise93_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontheavyspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_FR_Cerise93_Reinforced_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorfrontreinforcedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+	model SVU_Door_RL_Cerise93_Light_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorrearlightleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_RL_Cerise93_Light_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorrearlightspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_RL_Cerise93_Heavy_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorrearheavyleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_RL_Cerise93_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorrearheavyspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_RL_Cerise93_Reinforced_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorrearreinforcedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+	model SVU_Door_RR_Cerise93_Light_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorrearlightspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_RR_Cerise93_Light_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorrearlightright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_RR_Cerise93_Heavy_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorrearheavyright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+    }
+	model SVU_Door_RR_Cerise93_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorrearheavyspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_RR_Cerise93_Reinforced_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|doorrearreinforcedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+	model SVU_R_Window_Cerise93Wagon_Light_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowlightrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_R_Window_Cerise93Wagon_Light_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowlightspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_R_Window_Cerise93Wagon_Heavy_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowheavyrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+    }
+	model SVU_R_Window_Cerise93Wagon_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowheavyspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_R_Window_Cerise93Wagon_Reinforced_a
+	{
+		mesh = vehicles/SVU3/pzka_Cerise93|windowreinforcedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+	model SVU_Cerise93_Hood_Scoop_a
+	{
+		mesh = vehicles/pzka_Cerise93|Hood_C93_scoop,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_Cerise93_Hood_Scoop_nr_a
+	{
+		mesh = vehicles/pzka_Cerise93|Hood_C93_scoop,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_Cerise93_Triumph_Hood_Scoop_a
+	{
+		mesh = vehicles/pzka_Cerise93|Hood_scoop,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_Cerise93_Triumph_Hood_Scoop_nr_a
+	{
+		mesh = vehicles/pzka_Cerise93|Hood_scoop,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	
+
+	template vehicle PU_armor_Cerise93_animated_shared
+	{
+		template! = VVA_SVU_SwapHood,		
+
+		part ATA2ProtectionWindowFrontLeft
+		{
+			parent = DoorFrontLeft,
+			model Light
+			{
+				file = SVU_FL_Window_Cerise93_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_FL_Window_Cerise93_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_FL_Window_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_FL_Window_Cerise93_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_FL_Window_Cerise93_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_FL_Window_Cerise93_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_FL_Window_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_FL_Window_Cerise93_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_FL_Window_Cerise93_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_FL_Window_Cerise93_Reinforced_a,
+			}
+		}
+		part ATA2ProtectionWindowFrontRight
+		{
+			parent = DoorFrontRight,
+			model Light
+			{
+				file = SVU_FR_Window_Cerise93_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_FR_Window_Cerise93_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_FR_Window_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_FR_Window_Cerise93_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_FR_Window_Cerise93_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_FR_Window_Cerise93_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_FR_Window_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_FR_Window_Cerise93_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_FR_Window_Cerise93_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_FR_Window_Cerise93_Reinforced_a,
+			}
+		}
+
+		part ATA2ProtectionWindowRearLeft
+		{
+			parent = DoorRearLeft,
+			model Light
+			{
+				file = SVU_RL_Window_Cerise93_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_RL_Window_Cerise93_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_RL_Window_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_RL_Window_Cerise93_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_RL_Window_Cerise93_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_RL_Window_Cerise93_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_RL_Window_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_RL_Window_Cerise93_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_RL_Window_Cerise93_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_RL_Window_Cerise93_Reinforced_a,
+			}
+		}
+		part ATA2ProtectionWindowRearRight
+		{
+			parent = DoorRearRight,
+			model Light
+			{
+				file = SVU_RR_Window_Cerise93_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_RR_Window_Cerise93_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_RR_Window_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_RR_Window_Cerise93_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_RR_Window_Cerise93_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_RR_Window_Cerise93_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_RR_Window_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_RR_Window_Cerise93_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_RR_Window_Cerise93_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_RR_Window_Cerise93_Reinforced_a,
+			}
+		}
+
+        	part ATA2ProtectionDoorFrontLeft
+		{
+			parent = DoorFrontLeft,
+			model Light
+			{
+				file = SVU_Door_FL_Cerise93_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Door_FL_Cerise93_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Door_FL_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Door_FL_Cerise93_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Door_FL_Cerise93_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Door_FL_Cerise93_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Door_FL_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Door_FL_Cerise93_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Door_FL_Cerise93_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Door_FL_Cerise93_Reinforced_a,
+			}
+		}
+
+		part ATA2ProtectionDoorFrontRight
+		{
+			parent = DoorFrontRight,
+			model Light
+			{
+				file = SVU_Door_FR_Cerise93_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Door_FR_Cerise93_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Door_FR_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Door_FR_Cerise93_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Door_FR_Cerise93_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Door_FR_Cerise93_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Door_FR_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Door_FR_Cerise93_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Door_FR_Cerise93_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Door_FR_Cerise93_Reinforced_a,
+			}
+		}
+
+        	part ATA2ProtectionDoorRearLeft
+		{
+			parent = DoorRearLeft,
+			model Light
+			{
+				file = SVU_Door_RL_Cerise93_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Door_RL_Cerise93_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Door_RL_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Door_RL_Cerise93_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Door_RL_Cerise93_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Door_RL_Cerise93_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Door_RL_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Door_RL_Cerise93_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Door_RL_Cerise93_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Door_RL_Cerise93_Reinforced_a,
+			}
+		}
+
+		part ATA2ProtectionDoorRearRight
+		{
+			parent = DoorRearRight,
+			model Light
+			{
+				file = SVU_Door_RR_Cerise93_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Door_RR_Cerise93_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Door_RR_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Door_RR_Cerise93_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Door_RR_Cerise93_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Door_RR_Cerise93_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Door_RR_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Door_RR_Cerise93_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Door_RR_Cerise93_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Door_RR_Cerise93_Reinforced_a,
+			}
+		}
+
+		part ATA2ProtectionHood
+		{
+			parent = EngineDoor,
+			model Light
+			{
+				file = SVU_Hood_Cerise93_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Hood_Cerise93_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Hood_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Hood_Cerise93_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Hood_Cerise93_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Hood_Cerise93_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Hood_Cerise93_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Hood_Cerise93_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Hood_Cerise93_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Hood_Cerise93_Reinforced_a,
+			}
+			model LightScoop
+			{
+				file = SVU_Hood_Cerise93_Light_Scoop_a,
+			}
+			model HeavyScoop
+			{
+				file = SVU_Hood_Cerise93_Heavy_Scoop_a,
+			}
+			model LightSpikedScoop
+			{
+				file = SVU_Hood_Cerise93_Light_Spiked_Scoop_a,
+			}
+			model HeavySpikedScoop
+			{
+				file = SVU_Hood_Cerise93_Heavy_Spiked_Scoop_a,
+			}
+			model LightRustedScoop
+			{
+				file = SVU_Hood_Cerise93_Light_Scoop_a,
+			}
+			model HeavyRustedScoop
+			{
+				file = SVU_Hood_Cerise93_Heavy_Scoop_a,
+			}
+			model LightSpikedRustedScoop
+			{
+				file = SVU_Hood_Cerise93_Light_Spiked_Scoop_a,
+			}
+			model HeavySpikedRustedScoop
+			{
+				file = SVU_Hood_Cerise93_Heavy_Spiked_Scoop_a,
+			}
+			model ReinforcedScoop
+			{
+				file = SVU_Hood_Cerise93_Reinforced_Scoop_a,
+			}
+			model ReinforcedRustedScoop
+			{
+				file = SVU_Hood_Cerise93_Reinforced_Scoop_a,
+			}
+		}
+		template! = PU_armor_animated_fix,
+	}
+
+	template vehicle PU_armor_Cerise93_animated_wagon
+	{
+		part ATA2ProtectionWindshieldRear
+        {
+            parent = TrunkDoor,
+			model Light
+            {
+                file = SVU_R_Window_Cerise93Wagon_Light_a,
+            }
+            model Heavy
+            {
+                file = SVU_R_Window_Cerise93Wagon_Heavy_a,
+            }
+            model LightSpiked
+            {
+                file = SVU_R_Window_Cerise93Wagon_Light_Spiked_a,
+            }
+            model HeavySpiked
+            {
+                file = SVU_R_Window_Cerise93Wagon_Heavy_Spiked_a,
+            }
+            model LightRusted
+            {
+                file = SVU_R_Window_Cerise93Wagon_Light_a,
+            }
+            model HeavyRusted
+            {
+                file = SVU_R_Window_Cerise93Wagon_Heavy_a,
+            }
+            model LightSpikedRusted
+            {
+                file = SVU_R_Window_Cerise93Wagon_Light_Spiked_a,
+            }
+            model HeavySpikedRusted
+            {
+                file = SVU_R_Window_Cerise93Wagon_Heavy_Spiked_a,
+            }
+			model Reinforced
+			{
+				file = SVU_R_Window_Cerise93Wagon_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_R_Window_Cerise93Wagon_Reinforced_a,
+			}
+        }
+	}
+
+	template vehicle PZKA_SVU_Armor_Cerise93 {
+		part EngineDoor
+		{
+
+			model Scooped
+			{
+				file = SVU_Cerise93_Hood_Scoop_a,				
+			}
+		}
+		template! = PU_armor_Cerise93_animated_shared,
+	}
+	
+	template vehicle PZKA_SVU_Armor_Cerise93_nr {
+		part EngineDoor
+		{
+
+			model Scooped
+			{
+				file = SVU_Cerise93_Hood_Scoop_nr_a,
+			}
+		}
+		template! = PU_armor_Cerise93_animated_shared,
+	}
+
+	template vehicle PZKA_SVU_Armor_Cerise93Wagon {
+		template! = PZKA_SVU_Armor_Cerise93,
+		template! = PU_armor_Cerise93_animated_wagon,
+	}
+	
+	template vehicle PZKA_SVU_Armor_Cerise93Wagon_nr {
+		template! = PZKA_SVU_Armor_Cerise93_nr,
+		template! = PU_armor_Cerise93_animated_wagon,
+	}
+
+	template vehicle PZKA_SVU_Armor_Cerise93_Tri {
+		part EngineDoor
+		{
+
+			model Scooped
+			{
+				file = SVU_Cerise93_Triumph_Hood_Scoop_a,				
+			}
+		}
+		template! = PU_armor_Cerise93_animated_shared,
+	}
+	
+	template vehicle PZKA_SVU_Armor_Cerise93_Tri_nr {
+		part EngineDoor
+		{
+
+			model Scooped
+			{
+				file = SVU_Cerise93_Triumph_Hood_Scoop_nr_a,
+			}
+		}
+		template! = PU_armor_Cerise93_animated_shared,
+	}
+
+	template vehicle PZKA_SVU_Armor_Cerise93Wagon_Tri {
+		template! = PZKA_SVU_Armor_Cerise93_Tri,
+		template! = PU_armor_Cerise93_animated_wagon,
+	}
+	
+	template vehicle PZKA_SVU_Armor_Cerise93Wagon_Tri_nr {
+		template! = PZKA_SVU_Armor_Cerise93_Tri_nr,
+		template! = PU_armor_Cerise93_animated_wagon,
+	}
+}

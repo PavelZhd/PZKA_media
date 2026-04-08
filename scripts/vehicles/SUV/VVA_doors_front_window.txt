@@ -1,0 +1,111 @@
+module Base
+{
+	model VVA_Vehicles_SUV_DoorFrontLeft
+	{
+		mesh = vehicles/VVA_SUV|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_SUV_DoorFrontRight
+	{
+		mesh = vehicles/VVA_SUV|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_SUV_WindowFrontLeft
+	{
+		mesh = vehicles/VVA_SUV|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model VVA_Vehicles_SUV_WindowFrontRight
+	{
+		mesh = vehicles/VVA_SUV|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model VVA_Vehicles_SUV_DoorFrontLeft_nr
+	{
+		mesh = vehicles/VVA_SUV|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_SUV_DoorFrontRight_nr
+	{
+		mesh = vehicles/VVA_SUV|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle VVA_SUV_FrontDoorWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = VVA_Vehicles_SUV_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = VVA_Vehicles_SUV_WindowFrontRight,
+            }
+	    }
+	}
+
+	template vehicle VVA_SUV_FrontDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorFrontLeft,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorFrontRight,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = VVA_SUV_FrontDoorWindows,
+	}
+	template vehicle VVA_SUV_FrontDoors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorFrontLeft_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_DoorFrontRight_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = VVA_SUV_FrontDoorWindows,
+	}
+}

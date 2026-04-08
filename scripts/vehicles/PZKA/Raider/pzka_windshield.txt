@@ -1,0 +1,18 @@
+module Base
+{
+	model PZKA_Vehicles_Raider_Windshield
+	{
+		mesh = vehicles/pzka_Raider|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Raider_Windshield {
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Raider_Windshield,
+			}			
+		}
+	}
+}

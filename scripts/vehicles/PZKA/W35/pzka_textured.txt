@@ -1,0 +1,53 @@
+module Base
+{
+	model PZKA_Vehicles_W35_internals
+	{
+		mesh = vehicles/pzka_W35Truck|Vehicles_Interior,
+		
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_W35_SeatFL
+	{
+		mesh = vehicles/pzka_W35Truck|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_W35_SeatFR
+	{
+		mesh = vehicles/pzka_W35Truck|Seat_FrontRight_obj,
+		
+		texture = Vehicles/Vehicle_pzkFranklinTruckBusshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_W35_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_W35_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_W35_SeatFR,
+			}
+		}
+
+		template! = VVA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = PZKA_Vehicles_W35_internals,
+			}
+		}
+	}
+}

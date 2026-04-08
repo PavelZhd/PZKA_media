@@ -1,0 +1,11 @@
+
+module Base
+{
+    model PZKA_HMMV_Battery
+	{
+		mesh = vehicles/HMMV/pzka_HMMV|Battery_obj,
+		texture = WorldItems/CarBattery,
+		static = TRUE,
+		scale = 0.01,
+	}
+}

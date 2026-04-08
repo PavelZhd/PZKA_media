@@ -1,0 +1,40 @@
+module Base
+{
+	model VVA_Vehicles_PickupTruck_Hood
+	{
+		mesh = vehicles/PickUp/vva_PickupTruck|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = HoodBone 1.0,
+	}
+	model VVA_Vehicles_PickupTruck_Hood_nr
+	{
+		mesh = vehicles/PickUp/vva_PickupTruck|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = HoodBone 1.0,
+	}
+	
+	template vehicle VVA_PickupTruck_hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickupTruck_Hood,
+			}
+		}
+		template! = VVA_EngineDoor,
+	}	
+	template vehicle VVA_PickupTruck_hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickupTruck_Hood_nr,
+			}
+		}
+		template! = VVA_EngineDoor,
+	}
+}

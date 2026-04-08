@@ -1,0 +1,34 @@
+module Base
+{
+	model VVA_Vehicles_OffRoad_LightFL
+	{
+		mesh = vehicles/VVA_OffRoad|Light_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_OffRoad_LightFR
+	{
+		mesh = vehicles/VVA_OffRoad|Light_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_OffRoad_FrontLights {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_LightFR,
+			}
+		}
+	}
+}

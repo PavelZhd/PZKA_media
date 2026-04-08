@@ -1,7 +1,7 @@
 module Base
 {
 	template vehicle PZKA_Lady_shared {		
-		template! = VVA_Sport_interior,
+		template! = PZKA_SportBase_shared,
 		template! = PZKA_Lady_Windshield,
 		template! = pzka_Lady_Light,
 	}

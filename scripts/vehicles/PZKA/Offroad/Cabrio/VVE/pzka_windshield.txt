@@ -1,0 +1,18 @@
+module Base
+{	
+	model PZKA_VVE_Offroad_Windshield
+	{
+		mesh = vehicles/pzka_vve_offroad|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	template vehicle PZKA_VVE_OffRoad_Windshield {
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_VVE_Offroad_Windshield,
+			}			
+		}
+	}
+}

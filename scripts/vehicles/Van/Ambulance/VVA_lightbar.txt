@@ -1,0 +1,20 @@
+module Base
+{	
+	model VVA_Vehicles_VanAmbulance_Lightbar
+	{
+		mesh = vehicles/Vans/vva_Van_Common|Ambulance_Lightbar,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_VanAmbulance_Lightbar {
+		part ATA2RoofLightbar
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VanAmbulance_Lightbar,
+			}
+		}
+	}
+}

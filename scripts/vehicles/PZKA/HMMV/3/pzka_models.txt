@@ -1,0 +1,49 @@
+module Base
+{
+    model PZKA_Vehicles_HMMV_3
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_3|HMMV3,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_HMMV_3_nr
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_3|HMMV3,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	
+    model PZKA_Vehicles_HMMV_4
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_3|HMMV4,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_HMMV_4_nr
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_3|HMMV4,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	
+    model PZKA_Vehicles_HMMV_6
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_3|HMMV6,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_HMMV_6_nr
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_3|HMMV6,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

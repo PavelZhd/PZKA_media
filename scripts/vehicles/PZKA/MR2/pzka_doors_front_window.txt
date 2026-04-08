@@ -1,0 +1,212 @@
+module Base
+{
+	model PZKA_Vehicles_MR2_DoorFrontLeft
+	{
+		mesh = vehicles/MR2/pzka_MR2_doors|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_MR2_DoorFrontRight
+	{
+		mesh = vehicles/MR2/pzka_MR2_doors|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_MR2_WindowFrontLeft
+	{
+		mesh = vehicles/MR2/pzka_MR2_doors|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_MR2_WindowFrontRight
+	{
+		mesh = vehicles/MR2/pzka_MR2_doors|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_MR2_DoorFrontLeft_nr
+	{
+		mesh = vehicles/MR2/pzka_MR2_doors|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_MR2_DoorFrontRight_nr
+	{
+		mesh = vehicles/MR2/pzka_MR2_doors|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model PZKA_Vehicles_MR2_DoorFrontLeft_roof
+	{
+		mesh = vehicles/MR2/pzka_MR2_roofdoors|Door_FrontLeft_Roof_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_MR2_DoorFrontRight_roof
+	{
+		mesh = vehicles/MR2/pzka_MR2_roofdoors|Door_FrontRight_Roof_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_MR2_WindowFrontLeft_roof
+	{
+		mesh = vehicles/MR2/pzka_MR2_roofdoors|Window_FrontLeft_Roof_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_MR2_WindowFrontRight_roof
+	{
+		mesh = vehicles/MR2/pzka_MR2_roofdoors|Window_FrontRight_Roof_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_MR2_DoorFrontLeft_roof_nr
+	{
+		mesh = vehicles/MR2/pzka_MR2_roofdoors|Door_FrontLeft_Roof_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_MR2_DoorFrontRight_roof_nr
+	{
+		mesh = vehicles/MR2/pzka_MR2_roofdoors|Door_FrontRight_Roof_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+
+	template vehicle PZKA_MR2_FrontDoorWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model MR2_1
+			{
+				file = PZKA_Vehicles_MR2_WindowFrontLeft,
+			}
+			model MR2_2
+			{
+				file = PZKA_Vehicles_MR2_WindowFrontLeft_roof,
+			}
+			model MR2_3
+			{
+				file = PZKA_Vehicles_MR2_WindowFrontLeft,
+			}
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model MR2_1
+            {
+                file = PZKA_Vehicles_MR2_WindowFrontRight,
+            }
+			model MR2_2
+            {
+                file = PZKA_Vehicles_MR2_WindowFrontRight_roof,
+            }
+			model MR2_3
+            {
+                file = PZKA_Vehicles_MR2_WindowFrontRight,
+            }
+	    }
+		template! = PZKA_VariableWindowsF,
+	}
+
+	template vehicle PZKA_MR2_FrontDoors {
+		part DoorFrontLeft
+		{
+			model MR2_1
+			{
+				file = PZKA_Vehicles_MR2_DoorFrontLeft,
+			}
+			model MR2_2
+			{
+				file = PZKA_Vehicles_MR2_DoorFrontLeft_roof,
+			}
+			model MR2_3
+			{
+				file = PZKA_Vehicles_MR2_DoorFrontLeft,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model MR2_1
+			{
+				file = PZKA_Vehicles_MR2_DoorFrontRight,
+			}
+			model MR2_2
+			{
+				file = PZKA_Vehicles_MR2_DoorFrontRight_roof,
+			}
+			model MR2_3
+			{
+				file = PZKA_Vehicles_MR2_DoorFrontRight,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = PZKA_MR2_FrontDoorWindows,
+		template! = PZKA_VariableDoorF,
+	}
+	template vehicle PZKA_MR2_FrontDoors_nr {
+		part DoorFrontLeft
+		{
+			model MR2_1
+			{
+				file = PZKA_Vehicles_MR2_DoorFrontLeft_nr,
+			}
+			model MR2_2
+			{
+				file = PZKA_Vehicles_MR2_DoorFrontLeft_roof_nr,
+			}
+			model MR2_3
+			{
+				file = PZKA_Vehicles_MR2_DoorFrontLeft_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model MR2_1
+			{
+				file = PZKA_Vehicles_MR2_DoorFrontRight_nr,
+			}
+			model MR2_2
+			{
+				file = PZKA_Vehicles_MR2_DoorFrontRight_roof_nr,
+			}
+			model MR2_3
+			{
+				file = PZKA_Vehicles_MR2_DoorFrontRight_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = PZKA_MR2_FrontDoorWindows,
+		template! = PZKA_VariableDoorF,
+	}
+}

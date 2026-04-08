@@ -1,0 +1,111 @@
+module Base
+{
+	model PZKA_Vehicles_D70_DoorFrontLeft
+	{
+		mesh = vehicles/D70/pzka_D70|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_D70_DoorFrontRight
+	{
+		mesh = vehicles/D70/pzka_D70|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_D70_WindowFrontLeft
+	{
+		mesh = vehicles/D70/pzka_D70|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model PZKA_Vehicles_D70_WindowFrontRight
+	{
+		mesh = vehicles/D70/pzka_D70|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model PZKA_Vehicles_D70_DoorFrontLeft_nr
+	{
+		mesh = vehicles/D70/pzka_D70|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_D70_DoorFrontRight_nr
+	{
+		mesh = vehicles/D70/pzka_D70|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle PZKA_D70_FrontDoorWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = PZKA_Vehicles_D70_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = PZKA_Vehicles_D70_WindowFrontRight,
+            }
+	    }
+	}
+
+	template vehicle PZKA_D70_FrontDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_DoorFrontLeft,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_DoorFrontRight,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = PZKA_D70_FrontDoorWindows,
+	}
+	template vehicle PZKA_D70_FrontDoors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_DoorFrontLeft_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_DoorFrontRight_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = PZKA_D70_FrontDoorWindows,
+	}
+}

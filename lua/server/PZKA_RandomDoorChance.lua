@@ -22,4 +22,10 @@ DoorChance = function(vehicle, part, chance)
     end
 end
 
+function Vehicles.Create.WindowMissing(vehicle, part)
+    print("PZKAN: Missing window spawn called")
+    --Vehicles.Create.Window(vehicle, part)    
+end
+
+
 return DoorChance

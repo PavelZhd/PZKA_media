@@ -1,0 +1,36 @@
+module Base
+{
+	model PZKA_Vehicles_D70_2_LightFL
+	{
+		mesh = vehicles/D70/pzka_D70_2|Light_FrontLeft_2_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_D70_2_LightFR
+	{
+		mesh = vehicles/D70/pzka_D70_2|Light_FrontRight_2_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_D70_2_FrontLights {
+		part HeadlightLeft 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_D70_2_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			parent = EngineDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_D70_2_LightFR,
+			}
+		}
+	}
+}

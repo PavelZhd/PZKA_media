@@ -1,0 +1,111 @@
+module Base
+{
+	model VVA_Vehicles_OffRoad_DoorFrontLeft
+	{
+		mesh = vehicles/VVA_OffRoad|Door_FrontLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_OffRoad_DoorFrontRight
+	{
+		mesh = vehicles/VVA_OffRoad|Door_FrontRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model VVA_Vehicles_OffRoad_WindowFrontLeft
+	{
+		mesh = vehicles/VVA_OffRoad|Window_FrontLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model VVA_Vehicles_OffRoad_WindowFrontRight
+	{
+		mesh = vehicles/VVA_OffRoad|Window_FrontRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model VVA_Vehicles_OffRoad_DoorFrontLeft_nr
+	{
+		mesh = vehicles/VVA_OffRoad|Door_FrontLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VVA_Vehicles_OffRoad_DoorFrontRight_nr
+	{
+		mesh = vehicles/VVA_OffRoad|Door_FrontRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle VVA_OffRoad_FrontDoorWindows {
+		part WindowFrontLeft
+        {
+			parent = DoorFrontLeft,
+			model Default
+            {
+            	file = VVA_Vehicles_OffRoad_WindowFrontLeft,
+            }            		
+        }
+		part WindowFrontRight
+    	{	
+        	parent = DoorFrontRight,
+			model Default
+            {
+                file = VVA_Vehicles_OffRoad_WindowFrontRight,
+            }
+	    }
+	}
+
+	template vehicle VVA_OffRoad_FrontDoors {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_DoorFrontLeft,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_DoorFrontRight,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = VVA_OffRoad_FrontDoorWindows,
+	}
+	template vehicle VVA_OffRoad_FrontDoors_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_DoorFrontLeft_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontLeft,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_OffRoad_DoorFrontRight_nr,
+			}
+		}
+		template! = VVA_DoorWindowFrontRight,
+		template! = VVA_OffRoad_FrontDoorWindows,
+	}
+}

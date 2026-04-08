@@ -1,0 +1,34 @@
+module Base
+{
+	model PZKA_Vehicles_D70_Tow_LightRL
+	{
+		mesh = vehicles/D70/pzka_D70_Tow|Light_RearLeft_Tow_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_D70_Tow_LightRR
+	{
+		mesh = vehicles/D70/pzka_D70_Tow|Light_RearRight_Tow_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_D70_Tow_RearLights {
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_Tow_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_D70_Tow_LightRR,
+			}
+		}
+	}
+}

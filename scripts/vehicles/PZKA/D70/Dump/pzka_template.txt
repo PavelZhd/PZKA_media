@@ -1,0 +1,13 @@
+module Base
+{
+	template vehicle VVA_D70_Dump {
+		template! = PZKA_D70_Dump_Trunk,
+		template! = PZKA_D70_Dump_Dump,
+		template! = PZKA_D70_Dump_RearLights,
+	}
+	template vehicle PZKA_D70_Dump_nr {
+		template! = PZKA_D70_Dump_Trunk_nr,
+		template! = PZKA_D70_Dump_Dump_nr,
+		template! = PZKA_D70_Dump_RearLights,
+	}
+}

@@ -2,8 +2,15 @@ module Base
 {
     model PZKA_Vehicles_Van_Camper_interior
 	{
+		mesh = vehicles/Vans/pzka_VanCamper|Vehicles_Interior_CamperWalls,
+		texture = Vehicles/vehicle_pzkvancampershell,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_Van_Camper_furniture
+	{
 		mesh = vehicles/Vans/pzka_VanCamper|Vehicles_Interior_Camper,
-		shader = vehiclewheel,
+		shader = vehicle_multiuv_noreflect,
 		texture = Vehicles/vehicle_pzkvancampershell,
 		invertX = FALSE,
 		scale = 0.01,
@@ -17,6 +24,10 @@ module Base
 			model Type
 			{
 				file = PZKA_Vehicles_Van_Camper_interior,
+			}
+			model Furniture
+			{
+				file = PZKA_Vehicles_Van_Camper_furniture,
 			}
 		}
 	}

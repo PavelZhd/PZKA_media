@@ -4,7 +4,7 @@ module Base
 		template! = PZKA_Hearse_Trunk_nr,
 		template! = PZKA_Normal_front_nr,
 		template! = PZKA_Hearse_RearDoors_nr,
-		template! = PZKA_Normal_shared,
+		template! = PZKA_NormalBase_common,
 		template! = PZKA_Hearse_RearSeats,
 		template! = PZKA_Normal_FrontFill_Nyala_nr,
 		template! = PZKA_Normal_FrontLights_Nyala,		

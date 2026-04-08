@@ -1,0 +1,36 @@
+module Base
+{
+	model VVA_Vehicles_Van_LightRL
+	{
+		mesh = vehicles/Vans/vva_Van_Trunk|Light_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_LightRR
+	{
+		mesh = vehicles/Vans/vva_Van_Trunk|Light_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_Van_RearLights {
+		part HeadlightRearLeft 
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = VVA_Vehicles_Van_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			parent = DoorRear,
+			model Default
+			{
+				file = VVA_Vehicles_Van_LightRR,
+			}
+		}
+	}
+}

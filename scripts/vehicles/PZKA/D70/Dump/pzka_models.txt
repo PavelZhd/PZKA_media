@@ -1,0 +1,32 @@
+module Base
+{
+    model PZKA_Vehicles_D70_Dump
+	{
+		mesh = vehicles/D70/pzka_D70_Dump|D70Dump,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_D70_Dump_nr
+	{
+		mesh = vehicles/D70/pzka_D70_Dump|D70Dump,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+    model PZKA_Vehicles_D70_2_Dump
+	{
+		mesh = vehicles/D70/pzka_D70_Dump|D70Dump2,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_D70_2_Dump_nr
+	{
+		mesh = vehicles/D70/pzka_D70_Dump|D70Dump2,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

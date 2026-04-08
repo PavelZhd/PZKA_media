@@ -1,0 +1,21 @@
+module Base
+{
+	model VVA_Vehicles_VanRadio_internals
+	{
+		mesh = vehicles/Vans/vva_Van_static|Vehicles_Interior_radio,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_VanRadio_Interior {
+		part Interior 
+		{						
+			model Trunk 
+			{
+				file = VVA_Vehicles_VanRadio_internals,
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+module Base
+{
+	template vehicle PZKA_Cerise93_shared {
+		template! = PZKA_Cerise93_Windshield,
+		template! = PZKA_Cerise93_Interior,
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = -0.208091 -0.036386 1.04046,
+			}
+		}
+	}
+	template vehicle PZKA_Cerise93_sharedS {
+		template! = PZKA_Cerise93_shared,
+		template! = PZKA_Cerise93_RearWindow,
+		template! = PZKA_Cerise93_RearSeats,
+		
+	}
+	
+	template vehicle PZKA_Cerise93 {
+		template! = PZKA_Cerise93_FrontDoors,
+		template! = PZKA_Cerise93_RearDoors,		
+	}
+	template vehicle PZKA_Cerise93_nr {
+		template! = PZKA_Cerise93_FrontDoors_nr,
+		template! = PZKA_Cerise93_RearDoors_nr,		
+	}
+
+	template vehicle PZKA_Cerise93_C93S {
+		template! = PZKA_Cerise93_hood,		
+		template! = PZKA_Cerise93_FrontLights,
+		template! = PZKA_Cerise93_RearLights,
+	}
+	template vehicle PZKA_Cerise93_C93S_nr {
+		template! = PZKA_Cerise93_hood_nr,
+		template! = PZKA_Cerise93_FrontLights,
+		template! = PZKA_Cerise93_RearLights,
+	}
+
+	template vehicle PZKA_Cerise93_Sedan {		
+		template! = PZKA_Cerise93,
+		template! = PZKA_Cerise93_Trunk,
+		template! = PZKA_Cerise93_sharedS,
+	}
+	template vehicle PZKA_Cerise93_Sedan_nr {
+		template! = PZKA_Cerise93_nr,
+		template! = PZKA_Cerise93_Trunk_nr,
+		template! = PZKA_Cerise93_sharedS,
+	}
+}

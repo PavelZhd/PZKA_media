@@ -1,0 +1,11 @@
+module Base
+{
+	template vehicle VVA_D70_Box {
+		template! = PZKA_D70_Box_Trunk,
+		template! = PZKA_D70_Box_RearLights,
+	}
+	template vehicle PZKA_D70_Box_nr {
+		template! = PZKA_D70_Box_Trunk_nr,
+		template! = PZKA_D70_Box_RearLights,
+	}
+}

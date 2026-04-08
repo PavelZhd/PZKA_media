@@ -1,0 +1,18 @@
+module Base
+{
+	model PZKA_Vehicles_Cheyene_Windshield
+	{
+		mesh = vehicles/pzka_Cheyene|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Cheyene_Windshield {
+		part Windshield
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_Windshield,
+			}			
+		}
+	}
+}

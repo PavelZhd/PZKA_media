@@ -1,0 +1,17 @@
+module Base
+{
+    model PZKA_Vehicles_Small02
+	{
+		mesh = vehicles/pzka_Small02|Small02,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_Small02_nr
+	{
+		mesh = vehicles/pzka_Small02|Small02,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

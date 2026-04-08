@@ -1,0 +1,17 @@
+module Base
+{
+    model VVA_Vehicles_VanSeats
+	{
+		mesh = vehicles/Vans/vva_Van_static|Vehicles_VanSeats,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+    model VVA_Vehicles_VanSeats_nr
+	{
+		mesh = vehicles/Vans/vva_Van_static|Vehicles_VanSeats,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+}

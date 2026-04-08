@@ -1,0 +1,18 @@
+module Base
+{
+	model PZKA_Vehicles_Cheyene_RearWindow_NP
+	{
+		mesh = vehicles/pzka_Cheyene|RearWindow_NP_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	template vehicle PZKA_NavajoP_RearWindow {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cheyene_RearWindow_NP,
+			}
+		}
+	}
+}

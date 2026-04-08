@@ -1,0 +1,42 @@
+module Base
+{
+	model PZKA_Vehicles_MR2_HeadlightMounts
+	{
+		mesh = vehicles/MR2/pzka_MR2|Lightshost_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = LightBoneL 1.0,
+		boneWeight = LightBoneR 1.0,
+	}
+	model PZKA_Vehicles_MR2_HeadlightMounts_nr
+	{
+		mesh = vehicles/MR2/pzka_MR2|Lightshost_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = LightBoneL 1.0,
+		boneWeight = LightBoneR 1.0,
+	}
+
+	template vehicle PZKA_MR2_LightHost {
+		template! = VVA_LightHostAnimate,
+		part LightsHost
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MR2_HeadlightMounts,
+			}
+		}
+	}
+	template vehicle PZKA_Sport_LightHost_nr {
+		template! = VVA_LightHostAnimate,
+		part LightsHost
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_MR2_HeadlightMounts_nr,
+			}
+		}
+	}
+}

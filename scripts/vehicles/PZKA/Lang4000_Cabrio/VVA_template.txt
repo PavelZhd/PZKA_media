@@ -1,0 +1,30 @@
+module Base
+{
+	template vehicle PZKA_LuxuryBase_shared {
+		template! = VVA_Luxury_Windshield,
+		template! = VVA_Luxury_FrontLights,
+		template! = VVA_Luxury_RearLights,
+		template! = PZKA_Lang4000_Interior,
+		part Battery 
+		{
+			model Default 
+			{
+				file = PZKA_Battery,
+				offset = 0.17477 -0.012792 0.86582,
+			}
+		}
+	}
+	
+	template vehicle PZKA_Lang4000C {
+		template! = PZKA_Lang4000C_FrontDoors,
+		template! = VVA_Luxury_hood,
+		template! = VVA_Luxury_Trunk,
+		template! = PZKA_LuxuryBase_shared,
+	}
+	template vehicle PZKA_Lang4000C_nr {
+		template! = PZKA_Lang4000C_FrontDoors_nr,
+		template! = VVA_Luxury_hood_nr,
+		template! = VVA_Luxury_Trunk_nr,
+		template! = PZKA_LuxuryBase_shared,
+	}	
+}

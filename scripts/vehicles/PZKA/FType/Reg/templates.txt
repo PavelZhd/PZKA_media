@@ -1,12 +1,51 @@
 module Base
 {
+	template vehicle PZKA_FType_Reg_Base {
+		template! = PZKA_Rearfill,
+				wheel FrontLeft
+		{
+			offset = 0.659932 -0.556 1.48694,
+		}
+
+		wheel FrontRight
+		{
+			offset = -0.659932 -0.556 1.48694,
+		}
+
+		wheel RearLeft
+		{
+			offset = 0.659932 -0.556 -0.97,
+		}
+
+		wheel RearRight
+		{
+			offset = -0.659932 -0.556 -0.97,
+		}
+		model
+		{
+			offset = 0.0000 0.417 -0.115,
+		}
+		area Engine
+		{
+			xywh = 0.0000 2.42 1.7 0.86,
+		}
+		area TireFrontLeft
+		{
+			xywh = 1.22 1.374 0.86 0.86,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.22 1.374 0.86 0.86,
+		}
+	}
 	template vehicle PZKA_FType_Reg_shared {
 		template! = PZKA_FType_Base,
-		template! = PZKA_Rearfill,		
+		template! = PZKA_FType_Reg_Base,		
 	}
 	template vehicle PZKA_FType_Reg_shared_nr {
 		template! = PZKA_FType_Base_nr,
-		template! = PZKA_Rearfill,		
+		template! = PZKA_FType_Reg_Base,		
 	}
 
 	template vehicle PZKA_FType_Reg_Pickup_F350 {

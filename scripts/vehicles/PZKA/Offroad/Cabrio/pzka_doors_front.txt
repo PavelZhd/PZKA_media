@@ -1,0 +1,130 @@
+module Base
+{	
+	model PZKA_Vehicles_OffroadC_DoorFrontLeft
+	{
+		mesh = vehicles/pzka_Offroad|Door_FrontLeft_C_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_OffroadC_DoorFrontRight
+	{
+		mesh = vehicles/pzka_Offroad|Door_FrontRight_C_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model PZKA_Vehicles_OffroadC_DoorFrontLeft_nr
+	{
+		mesh = vehicles/pzka_Offroad|Door_FrontLeft_C_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model PZKA_Vehicles_OffroadC_DoorFrontRight_nr
+	{
+		mesh = vehicles/pzka_Offroad|Door_FrontRight_C_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle PZKA_CabrioNoWindowsFront {
+		part WindowFrontLeft
+        {
+            parent = DoorFrontLeft,
+            area = SeatFrontLeft,
+            itemType = Base.FrontWindow,
+			category = door,
+            mechanicRequireKey = true,
+            durability = 2,
+            window
+            {
+                openable = true,
+            }
+			lua
+			{
+				create = Vehicles.Create.WindowMissing,
+				init = Vehicles.Init.Window,
+			}
+        }
+        part WindowFrontRight
+        {
+            parent = DoorFrontRight,
+            area = SeatFrontRight,
+            itemType = Base.FrontWindow,
+			category = door,
+            mechanicRequireKey = true,
+            durability = 2,
+            window
+            {
+                openable = true,
+            }
+			lua
+			{
+				create = Vehicles.Create.WindowMissing,
+				init = Vehicles.Init.Window,
+			}
+        }
+	}
+	template vehicle PZKA_CabrioC_frontDoors_shared {
+		template! = VVA_DoorFrontLeft,
+		template! = VVA_DoorFrontRight,
+
+		part DoorFrontLeft {
+			lua
+			{
+				create = Vehicles.Create.Door75,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
+			}
+		}
+		part DoorFrontRight {
+			lua
+			{
+				create = Vehicles.Create.Door75,
+				init = Vehicles.Init.Door,
+				use = Vehicles.Use.Door,
+			}
+		}
+	}
+
+	template vehicle PZKA_OffRoadC_FrontDoors {
+		template! = PZKA_CabrioC_frontDoors_shared,
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_OffroadC_DoorFrontLeft,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_OffroadC_DoorFrontRight,
+			}
+		}
+	}
+	template vehicle PZKA_OffRoadC_FrontDoors_nr {
+		template! = PZKA_CabrioC_frontDoors_shared,
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_OffroadC_DoorFrontLeft_nr,
+			}
+		}
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_OffroadC_DoorFrontRight_nr,
+			}
+		}
+	}
+}

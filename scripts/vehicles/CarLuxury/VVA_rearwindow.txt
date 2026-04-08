@@ -1,0 +1,28 @@
+module Base
+{
+	model VVA_Vehicles_Luxury_RearWindow
+	{
+		mesh = vehicles/VVA_Luxury|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Luxury_RearWindow2
+	{
+		mesh = vehicles/VVA_Luxury|RearWindow_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	template vehicle VVA_Luxury_RearWindow {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Luxury_RearWindow,
+			}
+			model Default2
+			{
+				file = VVA_Vehicles_Luxury_RearWindow2,
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+module Base
+{
+	model VVA_Vehicles_VanRadio_RearWindow
+	{
+		mesh = vehicles/Vans/vva_Van_static|Window_RearRight_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.004,
+	}
+	template vehicle VVA_VanRadio_RearWindow {
+		part WindshieldRear
+		{
+			model Static
+			{
+				file = VVA_Vehicles_VanRadio_RearWindow,
+			}
+		}
+	}
+}

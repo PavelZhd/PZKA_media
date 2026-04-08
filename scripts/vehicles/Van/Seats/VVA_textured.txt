@@ -1,0 +1,112 @@
+module Base
+{
+	model VVA_Vehicles_VanSeats_internals
+	{
+		mesh = vehicles/Vans/vva_Van_Common|Vehicles_Interior_seats,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_VanSeats_bars
+	{
+		mesh = vehicles/Vans/vva_Van_Common|Interior_Bars,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_SeatML
+	{
+		mesh = vehicles/Vans/vva_Van_Common|Seat_MiddleLeft_obj,
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_SeatMR
+	{
+		mesh = vehicles/Vans/vva_Van_Common|Seat_MiddleRight_obj,
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_SeatRL
+	{
+		mesh = vehicles/Vans/vva_Van_Common|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_SeatRR
+	{
+		mesh = vehicles/Vans/vva_Van_Common|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_VanSeats_Interior {
+		part Interior 
+		{						
+			model Trunk 
+			{
+				file = VVA_Vehicles_VanSeats_internals,
+			}
+		}
+	}
+	template vehicle VVA_VanSeats_Bars {
+		part Interior 
+		{						
+			model Bars 
+			{
+				file = VVA_Vehicles_VanSeats_bars,
+			}
+		}
+	}
+	template vehicle VVA_Van_AllSeats {
+		part SeatMiddleLeft
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_Van_SeatML,
+			}
+		}
+		part SeatMiddleRight
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_Van_SeatMR,
+			}
+		}
+		part SeatRearLeft
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_Van_SeatRL,
+			}
+		}
+		part SeatRearRight
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_Van_SeatRR,
+			}
+		}
+	}
+	template vehicle VVA_Van_4Seats {
+		part SeatRearLeft
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_Van_SeatML,
+			}
+		}
+		part SeatRearRight
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_Van_SeatMR,
+			}
+		}
+	}
+}

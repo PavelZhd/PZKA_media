@@ -1,0 +1,20 @@
+module Base
+{	
+	model PZKA_Vehicles_LABEL_Taxi
+	{
+		mesh = vehicles/[FILENAME]|TaxiSign,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle PZKA_LABEL_Taxi {
+		part ATA2RoofTaxiSign
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LABEL_Taxi,
+			}
+		}
+	}
+}

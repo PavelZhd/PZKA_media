@@ -1,0 +1,17 @@
+module Base
+{
+    model PZKA_Vehicles_HMMV_2
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_2|HMMV2,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model PZKA_Vehicles_HMMV_2_nr
+	{
+		mesh = vehicles/HMMV/pzka_HMMV_2|HMMV2,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

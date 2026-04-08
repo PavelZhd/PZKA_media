@@ -1,0 +1,39 @@
+module Base
+{
+    model PZKA_Vehicles_LABEL_Trunk
+	{
+		mesh = vehicles/[FILENAME]|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model PZKA_Vehicles_LABEL_Trunk_nr
+	{
+		mesh = vehicles/[FILENAME]|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle PZKA_LABEL_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LABEL_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoorVersion,
+	}
+	template vehicle PZKA_LABEL_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_LABEL_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoorVersion,
+	}
+}
