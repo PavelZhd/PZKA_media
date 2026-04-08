@@ -2,21 +2,21 @@ module Base
 {
 	model PZKA_Vehicles_Normal_Limo_internals
 	{
-		mesh = vehicles/Normal/pzka_Limo|Vehicles_Interior_Limo,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|Vehicles_Interior_Limo,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
 		static = TRUE,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Normal_Limo_SeatRL
 	{
-		mesh = vehicles/Normal/pzka_Limo|Seat_Limo_RearLeft_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|Seat_Limo_RearLeft_obj,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Normal_Limo_SeatRR
 	{
-		mesh = vehicles/Normal/pzka_Limo|Seat_Limo_RearRight_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|Seat_Limo_RearRight_obj,
 		texture = Vehicles/vehicle_carnormalshell,
 		static = TRUE,
 		scale = 0.01,

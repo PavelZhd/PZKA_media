@@ -2,7 +2,7 @@ module Base
 {
 	model VVA_Vehicles_Normal_DoorRearLeft_K9N
 	{
-		mesh = vehicles/Normal/vva_Normal_doorRL|Door_RearLeft_K9_obj,
+		mesh = vehicles/PZKA/Normal/vva_Normal_doorRL|Door_RearLeft_K9_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.004,
@@ -10,7 +10,7 @@ module Base
 	}
 	model VVA_Vehicles_Normal_DoorRearRight_K9N
 	{
-		mesh = vehicles/Normal/vva_Normal_doorRR|Door_RearRight_K9_obj,		
+		mesh = vehicles/PZKA/Normal/vva_Normal_doorRR|Door_RearRight_K9_obj,		
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.004,
@@ -18,7 +18,7 @@ module Base
 	}
 	model VVA_Vehicles_Normal_DoorRearLeft_K9N_nr
 	{
-		mesh = vehicles/Normal/vva_Normal_doorRL|Door_RearLeft_K9_obj,
+		mesh = vehicles/PZKA/Normal/vva_Normal_doorRL|Door_RearLeft_K9_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.004,
@@ -26,7 +26,7 @@ module Base
 	}
 	model VVA_Vehicles_Normal_DoorRearRight_K9N_nr
 	{
-		mesh = vehicles/Normal/vva_Normal_doorRR|Door_RearRight_K9_obj,		
+		mesh = vehicles/PZKA/Normal/vva_Normal_doorRR|Door_RearRight_K9_obj,		
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.004,

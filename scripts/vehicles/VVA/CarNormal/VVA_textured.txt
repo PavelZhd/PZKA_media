@@ -1,0 +1,142 @@
+module Base
+{
+	model VVA_Vehicles_Normal_Steerwheel
+	{
+		mesh = vehicles/VVA/Normal/static|WheelWell,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_Engine
+	{
+		mesh = vehicles/VVA/Normal/static|Engine,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_AirFilter
+	{
+		mesh = vehicles/VVA/Normal/static|AirFilter,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_InteriorTrunk
+	{
+		mesh = vehicles/VVA/Normal/static|Interior_SedanTrunt,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_PoliceSeparator
+	{
+		mesh = vehicles/VVA/Normal/static|Separator,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	
+	model VVA_Vehicles_Normal_SeatFL
+	{
+		mesh = vehicles/VVA/Normal/static|Seat_FrontLeft_obj,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_SeatFR
+	{
+		mesh = vehicles/VVA/Normal/static|Seat_FrontRight_obj,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_SeatRL
+	{
+		mesh = vehicles/VVA/Normal/static|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Normal_SeatRR
+	{
+		mesh = vehicles/VVA/Normal/static|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_carnormalshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_Normal_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Normal_SeatFR,
+			}
+		}
+		template! = VVA_Interior,
+		part Interior 
+		{
+			model Steering
+			{
+				file = VVA_Vehicles_Normal_Steerwheel,
+			}
+			model Engine
+			{
+				file = VVA_Vehicles_Normal_Engine,
+			}
+			model Filter
+			{
+				file = VVA_Vehicles_Normal_AirFilter,
+			}
+		}
+		part Battery 
+		{
+			model Default 
+			{
+				file = VVA_Battery,
+				offset = 0.2585032 -0.0391472 0.9228,
+			}
+		}
+	}
+	template vehicle VVA_Normal_SeatsRear {
+		part SeatRearLeft
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_Normal_SeatRL,
+			}
+		}
+		part SeatRearRight
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_Normal_SeatRR,
+			}
+		}
+	}
+	template vehicle VVA_Normal_InteriorTrunk {
+		part Interior 
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_Normal_InteriorTrunk,
+			}
+		}
+	}
+	template vehicle VVA_Normal_PoliceSeparator {
+		part Interior 
+		{
+			model Separator 
+			{
+				file = VVA_Vehicles_Normal_PoliceSeparator,
+			}
+		}
+	}
+}

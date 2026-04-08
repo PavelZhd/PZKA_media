@@ -1,0 +1,99 @@
+module Base
+{
+	
+	
+
+	model SVU_Hood_Normal_Light_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_hood|hoodlightfront,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Normal_Light_Scoop_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_hood|hoodlightfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Normal_Light_Spiked_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_hood|hoodlightspikedfront,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_Hood_Normal_Light_Spiked_Scoop_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_hood|hoodlightspikedfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_Hood_Normal_Heavy_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_hood|hoodheavyfront,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_Hood_Normal_Heavy_Scoop_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_hood|hoodheavyfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_Hood_Normal_Heavy_Spiked_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_hood|hoodheavyspikedfront,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Normal_Heavy_Spiked_Scoop_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_hood|hoodheavyspikedfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Normal_Reinforced_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_hood|hoodreinforcedfront,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Normal_Reinforced_Scoop_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_hood|hoodreinforcedfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+
+	model SVU_Normal_Hood_Scoop
+	{
+		mesh = vehicles/Normal/vva_Normal_hood|Hood_Scoop_obj,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.004,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_Normal_Hood_Scoop_nr
+	{
+		mesh = vehicles/Normal/vva_Normal_hood|Hood_Scoop_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.004,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+
+}

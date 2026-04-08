@@ -1,0 +1,77 @@
+module Base
+{
+	model VVA_Vehicles_Van_internals
+	{
+		mesh = vehicles/VVA/Vans/static|Vehicles_Interior,
+		
+		texture = Vehicles/vehicle_vanambulanceshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_TrunkFill
+	{
+		mesh = vehicles/VVA/Vans/static|InteriorFill_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_SeatFL
+	{
+		mesh = vehicles/VVA/Vans/static|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_Van_SeatFR
+	{
+		mesh = vehicles/VVA/Vans/static|Seat_FrontRight_obj,
+		
+		texture = Vehicles/vehicle_vanspiffoshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_Van_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_SeatFR,
+			}
+		}
+		template! = VVA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = VVA_Vehicles_Van_internals,
+			}
+		}
+		part Battery 
+		{
+			model Default 
+			{
+				file = VVA_Battery270,
+				offset = 0.244248 -0.023572 0.99608,
+			}
+		}
+	}
+	template vehicle VVA_Van_TrunkFill {
+		part Interior 
+		{						
+			model TrunkFill 
+			{
+				file = VVA_Vehicles_Van_TrunkFill,
+			}
+		}
+	}
+}

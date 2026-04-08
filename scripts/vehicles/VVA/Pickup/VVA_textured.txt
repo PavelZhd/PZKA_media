@@ -1,0 +1,61 @@
+module Base
+{
+	model VVA_Vehicles_PickupTruck_internals
+	{
+		mesh = vehicles/VVA/PickUp/static|Vehicles_Interior_truck,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_PickupTruck_SeatFL
+	{
+		mesh = vehicles/VVA/PickUp/static|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_PickupTruck_SeatFR
+	{
+		mesh = vehicles/VVA/PickUp/static|Seat_FrontRight_obj,
+		
+		texture = Vehicles/vehicle_pickupshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_PickupTruck_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickupTruck_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PickupTruck_SeatFR,
+			}
+		}
+
+		template! = VVA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = VVA_Vehicles_PickupTruck_internals,
+			}
+		}
+		part Battery 
+		{
+			model Default 
+			{
+				file = VVA_Battery,
+				offset = 0.177196 0.001222 0.74564,
+			}
+		}
+	}
+}

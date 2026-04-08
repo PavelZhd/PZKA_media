@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_SWagon_DoorRearRight
 	{
-		mesh = vehicles/Normal/pzka_Wagon_RRdoor|Door_RearRight_Wagon_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon_RRdoor|Door_RearRight_Wagon_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -10,7 +10,7 @@ module Base
 	}
 	model PZKA_Vehicles_SWagon_WindowRearRight
 	{
-		mesh = vehicles/Normal/pzka_Wagon_RRdoor|Window_RearRight_Wagon_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon_RRdoor|Window_RearRight_Wagon_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
@@ -18,7 +18,7 @@ module Base
 	}
 	model PZKA_Vehicles_SWagon_DoorRearRight_nr
 	{
-		mesh = vehicles/Normal/pzka_Wagon_RRdoor|Door_RearRight_Wagon_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon_RRdoor|Door_RearRight_Wagon_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,

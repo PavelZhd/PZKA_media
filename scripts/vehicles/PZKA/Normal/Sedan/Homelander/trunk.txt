@@ -2,7 +2,7 @@ module Base
 {	
 	model PZKA_Normal_SedanV_Trunk_Homelander
 	{
-		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_Homelander_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Sedan|Trunk_Sedan_Homelander_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -10,7 +10,7 @@ module Base
 	}
 	model PZKA_Normal_SedanV_Trunk_Homelander_nr
 	{
-		mesh = vehicles/Normal/pzka_Sedan|Trunk_Sedan_Homelander_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Sedan|Trunk_Sedan_Homelander_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,

@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_Normal_Wagon_Trunk
 	{
-		mesh = vehicles/Normal/pzka_Wagon|Trunk_Wagon_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon|Trunk_Wagon_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -11,7 +11,7 @@ module Base
 	}
 	model PZKA_Vehicles_Normal_Wagon_Trunk_nr
 	{
-		mesh = vehicles/Normal/pzka_Wagon|Trunk_Wagon_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon|Trunk_Wagon_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -20,14 +20,14 @@ module Base
 	}
 	model PZKA_Vehicles_Normal_Wagon_RearWindow
 	{
-		mesh = vehicles/Normal/pzka_Wagon|RearWindow_Wagon_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon|RearWindow_Wagon_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Normal_Wagon_RearWindow_static
 	{
-		mesh = vehicles/Normal/pzka_Wagon|RearWindow_Wagon_sobj,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon|RearWindow_Wagon_sobj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}

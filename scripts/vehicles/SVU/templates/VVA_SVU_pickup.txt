@@ -1,0 +1,567 @@
+module Base
+{
+	model SVU_FL_Window_Pickup2D_Light_a
+ 	{
+		mesh = vehicles/vva_svu_Pickup|windowfrontlightleft,
+		texture = Vehicles/puv_parts,
+ 		shader = vehicle_armor,
+ 		scale = 0.004,
+		static = FALSE,
+ 	}
+	model SVU_FL_Window_Pickup2D_Light_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Pickup|windowfrontlightspikedleft,
+    	texture = Vehicles/puv_parts,
+        shader = vehicle_armor,
+        scale = 0.004,
+		static = FALSE,
+    }
+	model SVU_FL_Window_Pickup2D_Heavy_a
+	{
+		mesh = vehicles/vva_svu_Pickup|windowfrontheavyleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FL_Window_Pickup2D_Heavy_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Pickup|windowfrontheavyspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FL_Window_Pickup2D_Reinforced_a
+	{
+		mesh = vehicles/vva_svu_Pickup|windowfrontreinforcedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_FR_Window_Pickup2D_Light_a
+	{
+		mesh = vehicles/vva_svu_Pickup|windowfrontlightright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Pickup2D_Light_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Pickup|windowfrontlightspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Pickup2D_Heavy_a
+	{
+		mesh = vehicles/vva_svu_Pickup|windowfrontheavyright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Pickup2D_Heavy_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Pickup|windowfrontheavyspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Pickup2D_Reinforced_a
+	{
+		mesh = vehicles/vva_svu_Pickup|windowfrontreinforcedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_Hood_Pickup2D_Light_a
+	{
+		mesh = vehicles/vva_svu_Pickup|hoodlightfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Pickup2D_Light_Scoop_a
+	{
+		mesh = vehicles/vva_svu_Pickup|hoodlightfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Pickup2D_Light_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Pickup|hoodlightspikedfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Pickup2D_Light_Spiked_Scoop_a
+	{
+		mesh = vehicles/vva_svu_Pickup|hoodlightspikedfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Pickup2D_Heavy_a
+	{
+		mesh = vehicles/vva_svu_Pickup|hoodheavyfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Pickup2D_Heavy_Scoop_a
+	{
+		mesh = vehicles/vva_svu_Pickup|hoodheavyfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Pickup2D_Heavy_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Pickup|hoodheavyspikedfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Pickup2D_Heavy_Spiked_Scoop_a
+	{
+		mesh = vehicles/vva_svu_Pickup|hoodheavyspikedfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Pickup2D_Reinforced_a
+	{
+		mesh = vehicles/vva_svu_Pickup|hoodreinforcedfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Pickup2D_Reinforced_Scoop_a
+	{
+		mesh = vehicles/vva_svu_Pickup|hoodreinforcedfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_Door_FL_Pickup2D_Light_a
+	{
+		mesh = vehicles/vva_svu_Pickup|doorfrontlightleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Pickup2D_Light_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Pickup|doorfrontlightspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Pickup2D_Heavy_a
+	{
+		mesh = vehicles/vva_svu_Pickup|doorfrontheavyleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Pickup2D_Heavy_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Pickup|doorfrontheavyspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Pickup2D_Reinforced_a
+	{
+		mesh = vehicles/vva_svu_Pickup|doorfrontreinforcedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_Door_FR_Pickup2D_Light_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Pickup|doorfrontlightspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FR_Pickup2D_Light_a
+	{
+		mesh = vehicles/vva_svu_Pickup|doorfrontlightright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FR_Pickup2D_Heavy_a
+	{
+		mesh = vehicles/vva_svu_Pickup|doorfrontheavyright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+    }
+	model SVU_Door_FR_Pickup2D_Heavy_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Pickup|doorfrontheavyspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FR_Pickup2D_Reinforced_a
+	{
+		mesh = vehicles/vva_svu_Pickup|doorfrontreinforcedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_Pickup2D_Hood_Scoop_a
+	{
+		mesh = vehicles/PickUp/vva_PickupTruck|Hood_Scoop_obj,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.004,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_Pickup2D_Hood_Scoop_nr_a
+	{
+		mesh = vehicles/PickUp/vva_PickupTruck|Hood_Scoop_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.004,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+
+	template vehicle PU_Armor_Pickup2D_shared {
+		template! = VVA_SVU_SwapHood,
+
+		part ATA2ProtectionWindowFrontLeft
+		{
+			parent = DoorFrontLeft,
+			model Light
+			{
+				file = SVU_FL_Window_Pickup2D_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_FL_Window_Pickup2D_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_FL_Window_Pickup2D_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_FL_Window_Pickup2D_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_FL_Window_Pickup2D_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_FL_Window_Pickup2D_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_FL_Window_Pickup2D_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_FL_Window_Pickup2D_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_FL_Window_Pickup2D_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_FL_Window_Pickup2D_Reinforced_a,
+			}
+		}
+		part ATA2ProtectionWindowFrontRight
+		{
+			parent = DoorFrontRight,
+			model Light
+			{
+				file = SVU_FR_Window_Pickup2D_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_FR_Window_Pickup2D_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_FR_Window_Pickup2D_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_FR_Window_Pickup2D_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_FR_Window_Pickup2D_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_FR_Window_Pickup2D_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_FR_Window_Pickup2D_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_FR_Window_Pickup2D_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_FR_Window_Pickup2D_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_FR_Window_Pickup2D_Reinforced_a,
+			}
+		}
+
+        part ATA2ProtectionDoorFrontLeft
+		{
+			parent = DoorFrontLeft,
+			model Light
+			{
+				file = SVU_Door_FL_Pickup2D_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Door_FL_Pickup2D_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Door_FL_Pickup2D_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Door_FL_Pickup2D_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Door_FL_Pickup2D_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Door_FL_Pickup2D_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Door_FL_Pickup2D_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Door_FL_Pickup2D_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Door_FL_Pickup2D_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Door_FL_Pickup2D_Reinforced_a,
+			}
+		}
+
+		part ATA2ProtectionDoorFrontRight
+		{
+			parent = DoorFrontRight,
+			model Light
+			{
+				file = SVU_Door_FR_Pickup2D_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Door_FR_Pickup2D_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Door_FR_Pickup2D_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Door_FR_Pickup2D_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Door_FR_Pickup2D_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Door_FR_Pickup2D_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Door_FR_Pickup2D_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Door_FR_Pickup2D_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Door_FR_Pickup2D_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Door_FR_Pickup2D_Reinforced_a,
+			}
+		}
+
+		part ATA2ProtectionHood
+		{
+			parent = EngineDoor,
+			model Light
+			{
+				file = SVU_Hood_Pickup2D_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Hood_Pickup2D_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Hood_Pickup2D_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Hood_Pickup2D_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Hood_Pickup2D_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Hood_Pickup2D_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Hood_Pickup2D_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Hood_Pickup2D_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Hood_Pickup2D_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Hood_Pickup2D_Reinforced_a,
+			}
+			model LightScoop
+			{
+				file = SVU_Hood_Pickup2D_Light_Scoop_a,
+			}
+			model HeavyScoop
+			{
+				file = SVU_Hood_Pickup2D_Heavy_Scoop_a,
+			}
+			model LightSpikedScoop
+			{
+				file = SVU_Hood_Pickup2D_Light_Spiked_Scoop_a,
+			}
+			model HeavySpikedScoop
+			{
+				file = SVU_Hood_Pickup2D_Heavy_Spiked_Scoop_a,
+			}
+			model LightRustedScoop
+			{
+				file = SVU_Hood_Pickup2D_Light_Scoop_a,
+			}
+			model HeavyRustedScoop
+			{
+				file = SVU_Hood_Pickup2D_Heavy_Scoop_a,
+			}
+			model LightSpikedRustedScoop
+			{
+				file = SVU_Hood_Pickup2D_Light_Spiked_Scoop_a,
+			}
+			model HeavySpikedRustedScoop
+			{
+				file = SVU_Hood_Pickup2D_Heavy_Spiked_Scoop_a,
+			}
+			model ReinforcedScoop
+			{
+				file = SVU_Hood_Pickup2D_Reinforced_Scoop_a,
+			}
+			model ReinforcedRustedScoop
+			{
+				file = SVU_Hood_Pickup2D_Reinforced_Scoop_a,
+			}
+		}
+        template! = PU_armor_animated_fix,		
+	}
+
+	template vehicle PU_Armor_Pickup2DTruck_shared
+	{
+		template! = PU_Armor_Pickup2D_shared,
+	}
+
+	template vehicle VVA_SVU_Hood_Pickup {
+		part EngineDoor
+		{
+			model Scooped
+			{
+				file = SVU_Pickup2D_Hood_Scoop_a,
+			}
+		}
+	}
+	template vehicle VVA_SVU_Hood_Pickup_nr {
+		part EngineDoor
+		{
+			model Scooped
+			{
+				file = SVU_Pickup2D_Hood_Scoop_nr_a,
+			}
+		}
+	}
+	template vehicle VVA_SVU_Armor_Pickup
+	{
+		template! = VVA_SVU_Hood_Pickup,
+		template! = PU_Armor_Pickup2DTruck_shared,
+    }
+	template vehicle VVA_SVU_Armor_Pickup_nr
+	{
+		template! = VVA_SVU_Hood_Pickup_nr,
+		template! = PU_Armor_Pickup2DTruck_shared,
+    }
+}

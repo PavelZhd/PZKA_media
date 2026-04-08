@@ -1,0 +1,24 @@
+module Base
+{
+	template vehicle VVA_OffRoad_shared {
+		template! = VVA_OffRoad_Windshield,
+		template! = VVA_OffRoad_RearWindows,
+		template! = VVA_OffRoad_FrontLights,
+		template! = VVA_OffRoad_RearLights,
+		template! = VVA_OffRoad_Interior,
+	}
+	
+	template vehicle VVA_OffRoad {
+		template! = VVA_OffRoad_FrontDoors,
+		template! = VVA_OffRoad_hood,
+		template! = VVA_OffRoad_Trunk,
+		template! = VVA_OffRoad_shared,
+	}
+	template vehicle VVA_OffRoad_nr {
+		template! = VVA_OffRoad_FrontDoors_nr,
+		template! = VVA_OffRoad_RearDoors_nr,
+		template! = VVA_OffRoad_hood_nr,
+		template! = VVA_OffRoad_Trunk_nr,
+		template! = VVA_OffRoad_shared,
+	}
+}

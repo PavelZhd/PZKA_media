@@ -2,13 +2,13 @@ module Base
 {
     model PZKA_Vehicles_Normal_SedanF_Rearfill_Mayor
 	{
-		mesh = vehicles/Normal/pzka_Sedan|RearFill_Sedan_F_Mayor,
+		mesh = vehicles/PZKA/Normal/pzka_Sedan|RearFill_Sedan_F_Mayor,
 		shader = vehicle_multiuv_noreflect,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Normal_SedanF_Rearfill_Mayor_nr
 	{
-		mesh = vehicles/Normal/pzka_Sedan|RearFill_Sedan_F_Mayor,
+		mesh = vehicles/PZKA/Normal/pzka_Sedan|RearFill_Sedan_F_Mayor,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}

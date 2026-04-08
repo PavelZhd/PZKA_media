@@ -1,0 +1,83 @@
+module Base
+{
+	model SVU_FL_Window_Normal_Light_a
+ 	{
+		mesh = vehicles/Normal/vva_svu_Normal_doorFL|windowfrontlightleft,
+		shader = vehicle_armor,
+ 		scale = 0.004,
+		static = FALSE,
+ 	}
+	model SVU_FL_Window_Normal_Light_Spiked_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_doorFL|windowfrontlightspikedleft,
+        texture = Vehicles/puv_parts,
+        shader = vehicle_armor,
+        scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FL_Window_Normal_Heavy_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_doorFL|windowfrontheavyleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FL_Window_Normal_Heavy_Spiked_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_doorFL|windowfrontheavyspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FL_Window_Normal_Reinforced_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_doorFL|windowfrontreinforcedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_Door_FL_Normal_Light_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_doorFL|doorfrontlightleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Normal_Light_Spiked_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_doorFL|doorfrontlightspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Normal_Heavy_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_doorFL|doorfrontheavyleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Normal_Heavy_Spiked_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_doorFL|doorfrontheavyspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Normal_Reinforced_a
+	{
+		mesh = vehicles/Normal/vva_svu_Normal_doorFL|doorfrontreinforcedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+}

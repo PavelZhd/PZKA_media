@@ -2,7 +2,7 @@ module Base
 {		
 	model PZKA_Vehicles_Normal_Limo_DoorRearLeft
 	{
-		mesh = vehicles/Normal/pzka_Limo|Door_Limo_RearLeft_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|Door_Limo_RearLeft_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -10,7 +10,7 @@ module Base
 	}
 	model PZKA_Vehicles_Normal_Limo_DoorRearRight
 	{
-		mesh = vehicles/Normal/pzka_Limo|Door_Limo_RearRight_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|Door_Limo_RearRight_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -18,7 +18,7 @@ module Base
 	}
 	model PZKA_Vehicles_Normal_Limo_DoorRearLeft_nr
 	{
-		mesh = vehicles/Normal/pzka_Limo|Door_Limo_RearLeft_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|Door_Limo_RearLeft_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -26,7 +26,7 @@ module Base
 	}
 	model PZKA_Vehicles_Normal_Limo_DoorRearRight_nr
 	{
-		mesh = vehicles/Normal/pzka_Limo|Door_Limo_RearRight_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|Door_Limo_RearRight_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -35,7 +35,7 @@ module Base
 
 	model PZKA_Vehicles_Normal_Limo_WindowRearLeft
 	{
-		mesh = vehicles/Normal/pzka_Limo|Window_Limo_RearLeft_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|Window_Limo_RearLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
@@ -43,7 +43,7 @@ module Base
 	}
 	model PZKA_Vehicles_Normal_Limo_WindowRearRight
 	{
-		mesh = vehicles/Normal/pzka_Limo|Window_Limo_RearRight_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|Window_Limo_RearRight_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
@@ -51,13 +51,13 @@ module Base
 	}
 	model PZKA_Vehicles_Normal_Limo_WindowRearLeft_static
 	{
-		mesh = vehicles/Normal/pzka_Limo|Window_Limo_RearLeft_sobj,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|Window_Limo_RearLeft_sobj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Normal_Limo_WindowRearRight_static
 	{
-		mesh = vehicles/Normal/pzka_Limo|Window_Limo_RearRight_sobj,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|Window_Limo_RearRight_sobj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}

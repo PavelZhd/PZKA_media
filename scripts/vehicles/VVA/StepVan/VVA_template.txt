@@ -1,0 +1,23 @@
+module Base
+{
+	template vehicle VVA_StepVan_shared {
+		template! = VVA_StepVan_Interior,
+		template! = VVA_StepVan_Windshield,
+		template! = VVA_StepVan_FrontLights,
+		template! = VVA_StepVan_RearLights,
+		template! = VVA_StepVan_InteriorTrunk,
+	}
+	
+	template vehicle VVA_StepVan {
+		template! = VVA_StepVan_FrontDoors,
+		template! = VVA_StepVan_hood,
+		template! = VVA_StepVan_Trunk,
+		template! = VVA_StepVan_shared,
+	}
+	template vehicle VVA_StepVan_nr {
+		template! = VVA_StepVan_FrontDoors_nr,
+		template! = VVA_StepVan_hood_nr,
+		template! = VVA_StepVan_Trunk_nr,
+		template! = VVA_StepVan_shared,
+	}
+}

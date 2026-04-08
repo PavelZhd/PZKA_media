@@ -2,13 +2,13 @@ module Base
 {
     model PZKA_Normal_FrontFill_Hellion
 	{
-		mesh = vehicles/Normal/pzka_Shared|Hellion_Grill,
+		mesh = vehicles/PZKA/Normal/pzka_Shared|Hellion_Grill,
 		shader = vehicle_multiuv_noreflect,
 		scale = 0.01,
 	}
 	model PZKA_Normal_FrontFill_Hellion_nr
 	{
-		mesh = vehicles/Normal/pzka_Shared|Hellion_Grill,
+		mesh = vehicles/PZKA/Normal/pzka_Shared|Hellion_Grill,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}

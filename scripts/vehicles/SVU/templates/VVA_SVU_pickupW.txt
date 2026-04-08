@@ -1,0 +1,188 @@
+module Base
+{
+	model SVU_R_Window_Pickup2D_Light_a
+	{
+		mesh = vehicles/vva_svu_PickupW|windowlightrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Pickup2D_Light_Spiked_a
+	{
+		mesh = vehicles/vva_svu_PickupW|windowlightspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Pickup2D_Heavy_a
+	{
+		mesh = vehicles/vva_svu_PickupW|windowheavyrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Pickup2D_Heavy_Spiked_a
+	{
+		mesh = vehicles/vva_svu_PickupW|windowheavyspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Pickup2D_Reinforced_a
+	{
+		mesh = vehicles/vva_svu_PickupW|windowreinforcedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_Trunk_Pickup2D_Light_a
+	{
+		mesh = vehicles/vva_svu_PickupW|trunklightrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Trunk_Pickup2D_Light_Spiked_a
+	{
+		mesh = vehicles/vva_svu_PickupW|trunklightspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Trunk_Pickup2D_Heavy_a
+	{
+		mesh = vehicles/vva_svu_PickupW|trunkheavyrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Trunk_Pickup2D_Heavy_Spiked_a
+	{
+		mesh = vehicles/vva_svu_PickupW|trunkheavyspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Trunk_Pickup2D_Reinforced_a
+	{
+		mesh = vehicles/vva_svu_PickupW|trunkreinforcedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	template vehicle PU_Armor_Pickup2DVan_shared
+	{
+		part ATA2ProtectionWindshieldRear
+		{
+			parent = TrunkDoor,
+			model Light
+			{
+				file = SVU_R_Window_Pickup2D_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_R_Window_Pickup2D_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_R_Window_Pickup2D_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_R_Window_Pickup2D_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_R_Window_Pickup2D_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_R_Window_Pickup2D_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_R_Window_Pickup2D_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_R_Window_Pickup2D_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_R_Window_Pickup2D_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_R_Window_Pickup2D_Reinforced_a,
+			}
+		}
+		part ATA2ProtectionTrunk
+		{
+			parent = TrunkDoor,
+			model Light
+			{
+				file = SVU_Trunk_Pickup2D_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Trunk_Pickup2D_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Trunk_Pickup2D_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Trunk_Pickup2D_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Trunk_Pickup2D_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Trunk_Pickup2D_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Trunk_Pickup2D_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Trunk_Pickup2D_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Trunk_Pickup2D_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Trunk_Pickup2D_Reinforced_a,
+			}
+		}
+		template! = PU_Armor_Pickup2D_shared,
+	}
+	
+	template vehicle VVA_SVU_Armor_PuckupVan
+	{
+		template! = VVA_SVU_Hood_Pickup,
+		template! = PU_Armor_Pickup2DVan_shared,
+    }
+	template vehicle VVA_SVU_Armor_PuckupVan_nr
+	{
+		template! = VVA_SVU_Hood_Pickup_nr,
+		template! = PU_Armor_Pickup2DVan_shared,
+    }
+}

@@ -2,13 +2,13 @@ module Base
 {
     model PZKA_Normal_FrontFill_Grisworld
 	{
-		mesh = vehicles/Normal/pzka_Wagon|Grisworld_Grill,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon|Grisworld_Grill,
 		shader = vehicle_multiuv_noreflect,
 		scale = 0.01,
 	}
 	model PZKA_Normal_FrontFill_Grisworld_nr
 	{
-		mesh = vehicles/Normal/pzka_Wagon|Grisworld_Grill,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon|Grisworld_Grill,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}

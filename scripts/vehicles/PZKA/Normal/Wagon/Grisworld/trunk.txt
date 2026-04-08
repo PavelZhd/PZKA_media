@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_Normal_Grisworld_Trunk
 	{
-		mesh = vehicles/Normal/pzka_Wagon|Trunk_Wagon_Grisworld_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon|Trunk_Wagon_Grisworld_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -10,7 +10,7 @@ module Base
 	}
 	model PZKA_Vehicles_Normal_Grisworld_Trunk_nr
 	{
-		mesh = vehicles/Normal/pzka_Wagon|Trunk_Wagon_Grisworld_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon|Trunk_Wagon_Grisworld_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -18,14 +18,14 @@ module Base
 	}
 	model PZKA_Normal_Normal_Grisworld_RearWindow
 	{
-		mesh = vehicles/Normal/pzka_Wagon|RearWindow_Grisworld_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon|RearWindow_Grisworld_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
 	}
 	model PZKA_Normal_Normal_Grisworld_RearWindow_static
 	{
-		mesh = vehicles/Normal/pzka_Wagon|RearWindow_Grisworld_sobj,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon|RearWindow_Grisworld_sobj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}

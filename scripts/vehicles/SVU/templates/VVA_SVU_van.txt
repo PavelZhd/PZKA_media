@@ -1,0 +1,829 @@
+module Base
+{
+	model SVU_FL_Window_Van_Light_a
+ 	{
+		mesh = vehicles/vva_svu_Van|windowfrontlightleft,
+		texture = Vehicles/puv_parts,
+ 		shader = vehicle_armor,
+ 		scale = 0.004,
+		static = FALSE,
+ 	}
+	model SVU_FL_Window_Van_Light_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Van|windowfrontlightspikedleft,
+        texture = Vehicles/puv_parts,
+        shader = vehicle_armor,
+        scale = 0.004,
+		static = FALSE,
+    }
+	model SVU_FL_Window_Van_Heavy_a
+	{
+		mesh = vehicles/vva_svu_Van|windowfrontheavyleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FL_Window_Van_Heavy_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Van|windowfrontheavyspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FL_Window_Van_Reinforced_a
+	{
+		mesh = vehicles/vva_svu_Van|windowfrontreinforcedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_FR_Window_Van_Light_a
+	{
+		mesh = vehicles/vva_svu_Van|windowfrontlightright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Van_Light_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Van|windowfrontlightspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Van_Heavy_a
+	{
+		mesh = vehicles/vva_svu_Van|windowfrontheavyright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Van_Heavy_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Van|windowfrontheavyspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Van_Reinforced_a
+	{
+		mesh = vehicles/vva_svu_Van|windowfrontreinforcedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_Hood_Van_Light_a
+	{
+		mesh = vehicles/vva_svu_Van|hoodlightfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Van_Light_Scoop_a
+	{
+		mesh = vehicles/vva_svu_Van|hoodlightfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Van_Light_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Van|hoodlightspikedfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Van_Light_Spiked_Scoop_a
+	{
+		mesh = vehicles/vva_svu_Van|hoodlightspikedfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Van_Heavy_a
+	{
+		mesh = vehicles/vva_svu_Van|hoodheavyfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Van_Heavy_Scoop_a
+	{
+		mesh = vehicles/vva_svu_Van|hoodheavyfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Van_Heavy_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Van|hoodheavyspikedfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Van_Heavy_Spiked_Scoop_a
+	{
+		mesh = vehicles/vva_svu_Van|hoodheavyspikedfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Van_Reinforced_a
+	{
+		mesh = vehicles/vva_svu_Van|hoodreinforcedfront,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_Van_Reinforced_Scoop_a
+	{
+		mesh = vehicles/vva_svu_Van|hoodreinforcedfrontscoop,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_R_Window_Van_Light_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|windowlightrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Van_Light_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|windowlightspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Van_Heavy_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|windowheavyrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Van_Heavy_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|windowheavyspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Van_Reinforced_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|windowreinforcedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_R_Window_Van_Light_radio_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|windowlightrear_radio,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Van_Light_Spiked_radio_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|windowlightspikedrear_radio,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Van_Heavy_radio_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|windowheavyrear_radio,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Van_Heavy_Spiked_radio_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|windowheavyspikedrear_radio,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Van_Reinforced_radio_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|windowreinforcedrear_radio,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_Trunk_Van_Light_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|trunklightrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Trunk_Van_Light_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|trunklightspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Trunk_Van_Heavy_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|trunkheavyrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Trunk_Van_Heavy_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|trunkheavyspikedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Trunk_Van_Reinforced_a
+	{
+		mesh = vehicles/vva_svu_Van_trunk|trunkreinforcedrear,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+
+	model SVU_Door_FL_Van_Light_a
+	{
+		mesh = vehicles/vva_svu_Van|doorfrontlightleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Van_Light_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Van|doorfrontlightspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Van_Heavy_a
+	{
+		mesh = vehicles/vva_svu_Van|doorfrontheavyleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Van_Heavy_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Van|doorfrontheavyspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Van_Reinforced_a
+	{
+		mesh = vehicles/vva_svu_Van|doorfrontreinforcedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_Door_FR_Van_Light_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Van|doorfrontlightspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FR_Van_Light_a
+	{
+		mesh = vehicles/vva_svu_Van|doorfrontlightright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FR_Van_Heavy_a
+	{
+		mesh = vehicles/vva_svu_Van|doorfrontheavyright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+    }
+	model SVU_Door_FR_Van_Heavy_Spiked_a
+	{
+		mesh = vehicles/vva_svu_Van|doorfrontheavyspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FR_Van_Reinforced_a
+	{
+		mesh = vehicles/vva_svu_Van|doorfrontreinforcedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_Van_Hood_Scoop_a
+	{
+		mesh = vehicles/Vans/vva_Van_Common|Hood_Scoop_obj,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Van_Hood_Scoop_nr_a
+	{
+		mesh = vehicles/Vans/vva_Van_Common|Hood_Scoop_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	template vehicle PU_armor_Van_common {
+
+		template! = VVA_SVU_SwapHood,
+
+		part ATA2ProtectionWindowFrontLeft
+		{
+			parent = DoorFrontLeft,
+			model Light
+			{
+				file = SVU_FL_Window_Van_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_FL_Window_Van_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_FL_Window_Van_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_FL_Window_Van_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_FL_Window_Van_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_FL_Window_Van_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_FL_Window_Van_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_FL_Window_Van_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_FL_Window_Van_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_FL_Window_Van_Reinforced_a,
+			}
+		}
+		part ATA2ProtectionWindowFrontRight
+		{
+			parent = DoorFrontRight,
+			model Light
+			{
+				file = SVU_FR_Window_Van_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_FR_Window_Van_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_FR_Window_Van_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_FR_Window_Van_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_FR_Window_Van_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_FR_Window_Van_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_FR_Window_Van_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_FR_Window_Van_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_FR_Window_Van_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_FR_Window_Van_Reinforced_a,
+			}
+		}
+
+        	part ATA2ProtectionDoorFrontLeft
+		{
+			parent = DoorFrontLeft,
+			model Light
+			{
+				file = SVU_Door_FL_Van_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Door_FL_Van_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Door_FL_Van_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Door_FL_Van_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Door_FL_Van_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Door_FL_Van_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Door_FL_Van_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Door_FL_Van_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Door_FL_Van_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Door_FL_Van_Reinforced_a,
+			}
+		}
+
+		part ATA2ProtectionDoorFrontRight
+		{
+			parent = DoorFrontRight,
+			model Light
+			{
+				file = SVU_Door_FR_Van_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Door_FR_Van_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Door_FR_Van_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Door_FR_Van_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Door_FR_Van_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Door_FR_Van_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Door_FR_Van_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Door_FR_Van_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Door_FR_Van_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Door_FR_Van_Reinforced_a,
+			}
+		}        	
+
+		part ATA2ProtectionHood
+		{
+			parent = EngineDoor,
+			model Light
+			{
+				file = SVU_Hood_Van_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Hood_Van_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Hood_Van_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Hood_Van_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Hood_Van_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Hood_Van_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Hood_Van_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Hood_Van_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Hood_Van_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Hood_Van_Reinforced_a,
+			}
+			model LightScoop
+			{
+				file = SVU_Hood_Van_Light_Scoop_a,
+			}
+			model HeavyScoop
+			{
+				file = SVU_Hood_Van_Heavy_Scoop_a,
+			}
+			model LightSpikedScoop
+			{
+				file = SVU_Hood_Van_Light_Spiked_Scoop_a,
+			}
+			model HeavySpikedScoop
+			{
+				file = SVU_Hood_Van_Heavy_Spiked_Scoop_a,
+			}
+			model LightRustedScoop
+			{
+				file = SVU_Hood_Van_Light_Scoop_a,
+			}
+			model HeavyRustedScoop
+			{
+				file = SVU_Hood_Van_Heavy_Scoop_a,
+			}
+			model LightSpikedRustedScoop
+			{
+				file = SVU_Hood_Van_Light_Spiked_Scoop_a,
+			}
+			model HeavySpikedRustedScoop
+			{
+				file = SVU_Hood_Van_Heavy_Spiked_Scoop_a,
+			}
+			model ReinforcedScoop
+			{
+				file = SVU_Hood_Van_Reinforced_Scoop_a,
+			}
+			model ReinforcedRustedScoop
+			{
+				file = SVU_Hood_Van_Reinforced_Scoop_a,
+			}
+		}
+		part ATA2ProtectionDoorsRear
+		{
+			parent = DoorRear,
+			model Light
+			{
+				file = SVU_Trunk_Van_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Trunk_Van_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Trunk_Van_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Trunk_Van_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Trunk_Van_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Trunk_Van_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Trunk_Van_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Trunk_Van_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Trunk_Van_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Trunk_Van_Reinforced_a,
+			}
+		}
+        template! = PU_armor_animated_fix,
+	}
+	template vehicle PU_armor_Van_shared 
+	{
+		part ATA2ProtectionWindshieldRear
+		{
+			parent = DoorRear,
+			model Light
+			{
+				file = SVU_R_Window_Van_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_R_Window_Van_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_R_Window_Van_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_R_Window_Van_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_R_Window_Van_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_R_Window_Van_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_R_Window_Van_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_R_Window_Van_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_R_Window_Van_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_R_Window_Van_Reinforced_a,
+			}
+		}
+		template! = PU_armor_Van_common,
+	}
+	template vehicle VVA_SVU_Hood_Van 
+	{
+		part EngineDoor
+		{
+			model Scooped
+			{
+				file = SVU_Van_Hood_Scoop_a,
+			}
+		}
+	}
+	template vehicle VVA_SVU_Hood_Van_nr
+	{
+		part EngineDoor
+		{
+			model Scooped
+			{
+				file = SVU_Van_Hood_Scoop_nr_a,
+			}
+		}
+	}
+	template vehicle VVA_SVU_Armor_Van
+	{
+		template! = VVA_SVU_Hood_Van,
+		template! = PU_armor_Van_shared,
+    }
+	template vehicle VVA_SVU_Armor_Van_nr
+	{
+		
+		template! = VVA_SVU_Hood_Van_nr,
+		template! = PU_armor_Van_shared,
+    }
+	
+	template vehicle VVA_SVU_Armor_VanRadio_nr
+	{
+		template! = VVA_SVU_Hood_Van_nr,
+		part ATA2ProtectionWindshieldRear
+		{
+			parent = DoorRear,
+			model Light
+			{
+				file = SVU_R_Window_Van_Light_radio_a,
+			}
+			model Heavy
+			{
+				file = SVU_R_Window_Van_Heavy_radio_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_R_Window_Van_Light_Spiked_radio_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_R_Window_Van_Heavy_Spiked_radio_a,
+			}
+			model LightRusted
+			{
+				file = SVU_R_Window_Van_Light_radio_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_R_Window_Van_Heavy_radio_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_R_Window_Van_Light_Spiked_radio_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_R_Window_Van_Heavy_Spiked_radio_a,
+			}
+			model Reinforced
+			{
+				file = SVU_R_Window_Van_Reinforced_radio_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_R_Window_Van_Reinforced_radio_a,
+			}
+		}
+		template! = PU_armor_Van_common,
+    }
+}

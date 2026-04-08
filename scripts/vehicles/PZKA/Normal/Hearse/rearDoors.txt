@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_Normal_Hearse_DoorRearLeft_nr
 	{
-		mesh = vehicles/Normal/pzka_Hearse|Door_Hearse_RearLeft_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Hearse|Door_Hearse_RearLeft_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -10,7 +10,7 @@ module Base
 	}
 	model PZKA_Vehicles_Normal_Hearse_DoorRearRight_nr
 	{
-		mesh = vehicles/Normal/pzka_Hearse|Door_Hearse_RearRight_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Hearse|Door_Hearse_RearRight_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 0.01,
@@ -19,7 +19,7 @@ module Base
 
 	model PZKA_Vehicles_Normal_Hearse_WindowRearLeft
 	{
-		mesh = vehicles/Normal/pzka_Hearse|Window_Hearse_RearLeft_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Hearse|Window_Hearse_RearLeft_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
@@ -27,7 +27,7 @@ module Base
 	}
 	model PZKA_Vehicles_Normal_Hearse_WindowRearRight
 	{
-		mesh = vehicles/Normal/pzka_Hearse|Window_Hearse_RearRight_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Hearse|Window_Hearse_RearRight_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,

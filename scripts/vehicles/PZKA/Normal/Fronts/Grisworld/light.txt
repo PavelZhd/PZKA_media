@@ -2,13 +2,13 @@ module Base
 {
 	model PZKA_Normal_LightFL_Grisworld
 	{
-		mesh = vehicles/Normal/pzka_Wagon|Grisworld_Light_FrontLeft_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon|Grisworld_Light_FrontLeft_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}
 	model PZKA_Normal_LightFR_Grisworld
 	{
-		mesh = vehicles/Normal/pzka_Wagon|Grisworld_Light_FrontRight_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Wagon|Grisworld_Light_FrontRight_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}

@@ -2,7 +2,7 @@ module Base
 {
 	model PZKA_Vehicles_Normal_Limo_RearWindow
 	{
-		mesh = vehicles/Normal/pzka_Limo|RearWindow_Limo_obj,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|RearWindow_Limo_obj,
 		shader = vehicle_multiuv_vva,
 		scale = 0.01,
 	}

@@ -1,0 +1,89 @@
+module Base
+{
+	model VVA_Vehicles_SUV_internals
+	{
+		mesh = vehicles/VVA/SUV|Vehicles_Interior,
+		
+		texture = Vehicles/vehicle_suvshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_SUV_SeatFL
+	{
+		mesh = vehicles/VVA/SUV|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/vehicle_suvshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_SUV_SeatFR
+	{
+		mesh = vehicles/VVA/SUV|Seat_FrontRight_obj,
+		
+		texture = Vehicles/vehicle_suvshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_SUV_SeatRL
+	{
+		mesh = vehicles/VVA/SUV|Seat_RearLeft_obj,
+		texture = Vehicles/vehicle_suvshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_SUV_SeatRR
+	{
+		mesh = vehicles/VVA/SUV|Seat_RearRight_obj,
+		texture = Vehicles/vehicle_suvshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_SUV_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_SUV_SeatFR,
+			}
+		}
+		part SeatRearLeft
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_SUV_SeatRL,
+			}
+		}
+		part SeatRearRight
+		{
+			model Default 
+			{
+				file = VVA_Vehicles_SUV_SeatRR,
+			}
+		}
+
+		template! = VVA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = VVA_Vehicles_SUV_internals,
+			}
+		}
+		part Battery 
+		{
+			model Default 
+			{
+				file = VVA_Battery180,
+				offset = -0.238432 0.0005728 0.81112,
+			}
+		}
+	}
+}

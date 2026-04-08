@@ -1,0 +1,78 @@
+module Base
+{
+	model VVA_Vehicles_StepVan_internals
+	{
+		mesh = vehicles/VVA/StepVan/static|Vehicles_Interior,
+		
+		texture = Vehicles/vehicle_stepvanshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_StepVan_internals_trunk
+	{
+		mesh = vehicles/VVA/StepVan/static|Vehicles_InteriorTrunk,
+		
+		texture = Vehicles/vehicle_stepvanshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_StepVan_SeatFL
+	{
+		mesh = vehicles/VVA/StepVan/static|Seat_FrontLeft_obj,
+		
+		texture = Vehicles/vehicle_stepvanshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Vehicles_StepVan_SeatFR
+	{
+		mesh = vehicles/VVA/StepVan/static|Seat_FrontRight_obj,
+		
+		texture = Vehicles/vehicle_stepvanshell,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_StepVan_Interior {
+		part SeatFrontLeft 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_StepVan_SeatFL,
+			}
+		}
+		part SeatFrontRight 
+		{
+			model Default
+			{
+				file = VVA_Vehicles_StepVan_SeatFR,
+			}
+		}
+		
+		template! = VVA_Interior,
+		part Interior 
+		{						
+			model Default 
+			{
+				file = VVA_Vehicles_StepVan_internals,
+			}
+		}
+		part Battery 
+		{
+			model Default 
+			{
+				file = VVA_Battery90,
+				offset = -0.232852 -0.109004 0.93436,
+			}
+		}
+	}
+	template vehicle VVA_StepVan_InteriorTrunk {
+		part Interior 
+		{						
+			model Trunk 
+			{
+				file = VVA_Vehicles_StepVan_internals_trunk,
+			}
+		}
+	}
+}

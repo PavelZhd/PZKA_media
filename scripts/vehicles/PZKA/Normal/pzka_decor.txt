@@ -2,19 +2,19 @@ module Base
 {
 	model PZKA_Vehicles_Normal_Detective		
 	{
-		mesh = vehicles/Normal/pzka_Shared|Detective,
+		mesh = vehicles/PZKA/Normal/pzka_Shared|Detective,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Normal_TaxiShort			
 	{
-		mesh = vehicles/Normal/pzka_Shared|Taxi_short,
+		mesh = vehicles/PZKA/Normal/pzka_Shared|Taxi_short,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Normal_TaxiWagon		
 	{
-		mesh = vehicles/Normal/pzka_Shared|Taxi_wagon,
+		mesh = vehicles/PZKA/Normal/pzka_Shared|Taxi_wagon,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}

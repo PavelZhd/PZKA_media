@@ -2,13 +2,13 @@ module Base
 {
     model PZKA_Vehicles_Normal_Limo_Rearfill_Cerise
 	{
-		mesh = vehicles/Normal/pzka_Limo|RearFill_Limo_Cerise,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|RearFill_Limo_Cerise,
 		shader = vehicle_multiuv_noreflect,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Normal_Limo_Rearfill_Cerise_nr
 	{
-		mesh = vehicles/Normal/pzka_Limo|RearFill_Limo_Cerise,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|RearFill_Limo_Cerise,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}

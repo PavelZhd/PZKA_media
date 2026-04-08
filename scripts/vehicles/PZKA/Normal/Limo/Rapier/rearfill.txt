@@ -2,13 +2,13 @@ module Base
 {
     model PZKA_Vehicles_Normal_Limo_Rearfill_Rapier
 	{
-		mesh = vehicles/Normal/pzka_Limo|RearFill_Limo_Rapier,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|RearFill_Limo_Rapier,
 		shader = vehicle_multiuv_noreflect,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Normal_Limo_Rearfill_Rapier_nr
 	{
-		mesh = vehicles/Normal/pzka_Limo|RearFill_Limo_Rapier,
+		mesh = vehicles/PZKA/Normal/pzka_Limo|RearFill_Limo_Rapier,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 0.01,
 	}
