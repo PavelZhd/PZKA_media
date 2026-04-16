@@ -1,0 +1,86 @@
+module Base
+{
+	model SVU_Trunk_SUV_Light_a
+ 	{
+		mesh = vehicles/SVU/VVA/SUV|trunklightrear,
+		shader = vehicle_armor,
+ 		scale = 0.004,
+		static = FALSE,
+ 	}
+	model SVU_Trunk_SUV_Light_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/SUV|trunklightspikedrear,
+        shader = vehicle_armor,
+        scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Trunk_SUV_Heavy_a
+	{
+		mesh = vehicles/SVU/VVA/SUV|trunkheavyrear,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Trunk_SUV_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/SUV|trunkheavyspikedrear,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Trunk_SUV_Reinforced_a
+	{
+		mesh = vehicles/SVU/VVA/SUV|trunkreinforcedrear,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+    template vehicle PU_armor_SUV_trunk {
+
+		part ATA2ProtectionTrunk
+		{
+			parent = TrunkDoor,			
+			model Light
+			{
+				file = SVU_Trunk_SUV_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Trunk_SUV_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Trunk_SUV_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Trunk_SUV_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Trunk_SUV_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Trunk_SUV_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Trunk_SUV_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Trunk_SUV_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Trunk_SUV_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Trunk_SUV_Reinforced_a,
+			}
+		}
+    }
+}

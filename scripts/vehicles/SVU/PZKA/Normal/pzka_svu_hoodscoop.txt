@@ -1,0 +1,41 @@
+module Base
+{
+	model PZKA_Normal_Hood_Scoop
+	{
+		mesh = vehicles/PZKA/Normal/pzka_Shared|Hood_Scoop_obj,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model PZKA_Normal_Hood_Scoop_nr
+	{
+		mesh = vehicles/PZKA/Normal/pzka_Shared|Hood_Scoop_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+
+	template vehicle PZKA_SVU_Hood_Normal {
+		template! = VVA_SVU_SwapHood,
+		part EngineDoor
+		{
+			model Scooped
+			{
+				file = PZKA_Normal_Hood_Scoop,				
+			}
+		}
+	}
+	template vehicle PZKA_SVU_Hood_Normal_nr {
+		template! = VVA_SVU_SwapHood,
+		part EngineDoor
+		{
+			model Scooped
+			{
+				file = PZKA_Normal_Hood_Scoop_nr,				
+			}
+		}
+	}
+
+}

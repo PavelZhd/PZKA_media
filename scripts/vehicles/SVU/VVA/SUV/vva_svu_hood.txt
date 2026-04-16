@@ -1,0 +1,164 @@
+module Base
+{
+model SVU_Hood_SUV_Light_a
+	{
+		mesh = vehicles/SVU/VVA/SUV|hoodlightfront,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_SUV_Light_Scoop_a
+	{
+		mesh = vehicles/SVU/VVA/SUV|hoodlightfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_SUV_Light_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/SUV|hoodlightspikedfront,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_Hood_SUV_Light_Spiked_Scoop_a
+	{
+		mesh = vehicles/SVU/VVA/SUV|hoodlightspikedfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_Hood_SUV_Heavy_a
+	{
+		mesh = vehicles/SVU/VVA/SUV|hoodheavyfront,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_Hood_SUV_Heavy_Scoop_a
+	{
+		mesh = vehicles/SVU/VVA/SUV|hoodheavyfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_Hood_SUV_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/SUV|hoodheavyspikedfront,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_SUV_Heavy_Spiked_Scoop_a
+	{
+		mesh = vehicles/SVU/VVA/SUV|hoodheavyspikedfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_SUV_Reinforced_a
+	{
+		mesh = vehicles/SVU/VVA/SUV|hoodreinforcedfront,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Hood_SUV_Reinforced_Scoop_a
+	{
+		mesh = vehicles/SVU/VVA/SUV|hoodreinforcedfrontscoop,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+    template vehicle PU_armor_SUV_hood {
+        part ATA2ProtectionHood
+		{
+			parent = EngineDoor,
+			model Light
+			{
+				file = SVU_Hood_SUV_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Hood_SUV_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Hood_SUV_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Hood_SUV_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Hood_SUV_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Hood_SUV_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Hood_SUV_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Hood_SUV_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Hood_SUV_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Hood_SUV_Reinforced_a,
+			}
+			model LightScoop
+			{
+				file = SVU_Hood_SUV_Light_Scoop_a,
+			}
+			model HeavyScoop
+			{
+				file = SVU_Hood_SUV_Heavy_Scoop_a,
+			}
+			model LightSpikedScoop
+			{
+				file = SVU_Hood_SUV_Light_Spiked_Scoop_a,
+			}
+			model HeavySpikedScoop
+			{
+				file = SVU_Hood_SUV_Heavy_Spiked_Scoop_a,
+			}
+			model LightRustedScoop
+			{
+				file = SVU_Hood_SUV_Light_Scoop_a,
+			}
+			model HeavyRustedScoop
+			{
+				file = SVU_Hood_SUV_Heavy_Scoop_a,
+			}
+			model LightSpikedRustedScoop
+			{
+				file = SVU_Hood_SUV_Light_Spiked_Scoop_a,
+			}
+			model HeavySpikedRustedScoop
+			{
+				file = SVU_Hood_SUV_Heavy_Spiked_Scoop_a,
+			}
+			model ReinforcedScoop
+			{
+				file = SVU_Hood_SUV_Reinforced_Scoop_a,
+			}
+			model ReinforcedRustedScoop
+			{
+				file = SVU_Hood_SUV_Reinforced_Scoop_a,
+			}
+		}
+    }
+}

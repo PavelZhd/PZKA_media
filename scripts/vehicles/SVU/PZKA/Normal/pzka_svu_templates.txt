@@ -1,0 +1,23 @@
+module Base
+{
+	template vehicle PZKA_SVU_Armor_Normal {
+		template! = PZKA_SVU_Hood_Normal,
+		template! = VVA_SVU_Armor_Normal_shared,		
+	}
+
+	template vehicle PZKA_SVU_Armor_Normal_nr {
+		template! = PZKA_SVU_Hood_Normal_nr,
+		template! = VVA_SVU_Armor_Normal_shared,
+	}
+
+	template vehicle PZKA_SVU_Armor_SWagon {
+		template! = PU_armor_SWagon_trunkWindow,
+		template! = PZKA_SVU_Armor_Normal,		
+	}
+
+	template vehicle PZKA_SVU_Armor_SWagon_nr {
+		template! = PU_armor_SWagon_trunkWindow,
+		template! = PZKA_SVU_Armor_Normal_nr,
+	}
+
+}

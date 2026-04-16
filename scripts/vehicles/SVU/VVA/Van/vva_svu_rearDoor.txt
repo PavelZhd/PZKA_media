@@ -1,0 +1,85 @@
+module Base
+{
+	model SVU_Trunk_Van_Light_a
+ 	{
+		mesh = vehicles/SVU/VVA/Van/trunk|trunklightrear,
+		shader = vehicle_armor,
+ 		scale = 0.004,
+		static = FALSE,
+ 	}
+	model SVU_Trunk_Van_Light_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/Van/trunk|trunklightspikedrear,
+        shader = vehicle_armor,
+        scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Trunk_Van_Heavy_a
+	{
+		mesh = vehicles/SVU/VVA/Van/trunk|trunkheavyrear,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Trunk_Van_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/Van/trunk|trunkheavyspikedrear,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Trunk_Van_Reinforced_a
+	{
+		mesh = vehicles/SVU/VVA/Van/trunk|trunkreinforcedrear,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+    template vehicle PU_armor_Van_trunk {
+		part ATA2ProtectionDoorsRear
+		{
+			parent = DoorRear,		
+			model Light
+			{
+				file = SVU_Trunk_Van_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Trunk_Van_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Trunk_Van_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Trunk_Van_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Trunk_Van_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Trunk_Van_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Trunk_Van_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Trunk_Van_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Trunk_Van_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Trunk_Van_Reinforced_a,
+			}
+		}
+    }
+}

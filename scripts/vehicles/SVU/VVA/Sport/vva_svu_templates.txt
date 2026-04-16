@@ -1,0 +1,19 @@
+module Base
+{
+	template vehicle VVA_SVU_Armor_Sport_shared {
+		template! = PU_armor_Sport_doorsF,
+		template! = PU_armor_Sport_hood,
+		template! = PU_armor_Sport_trunkWindow,
+		template! = PU_armor_animated_fix,
+	}
+	template vehicle VVA_SVU_Armor_Sport {
+		template! = VVA_SVU_Hood_Sport,
+		template! = VVA_SVU_Armor_Sport_shared,		
+	}
+
+	template vehicle VVA_SVU_Armor_Sport_nr {
+		template! = VVA_SVU_Hood_Sport_nr,
+		template! = VVA_SVU_Armor_Sport_shared,
+	}
+
+}

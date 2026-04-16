@@ -1,0 +1,31 @@
+module Base
+{
+	model VVA_Battery
+	{
+		mesh = vehicles/VVA/battery|Battery,
+		texture = WorldItems/CarBattery,
+		static = TRUE,
+		scale = 0.004,		
+	}
+	model VVA_Battery90
+	{
+		mesh = vehicles/VVA/battery|Battery90,
+		texture = WorldItems/CarBattery,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Battery180
+	{
+		mesh = vehicles/VVA/battery|Battery180,
+		texture = WorldItems/CarBattery,
+		static = TRUE,
+		scale = 0.004,
+	}
+	model VVA_Battery270
+	{
+		mesh = vehicles/VVA/battery|Battery270,
+		texture = WorldItems/CarBattery,
+		static = TRUE,
+		scale = 0.004,
+	}	
+}

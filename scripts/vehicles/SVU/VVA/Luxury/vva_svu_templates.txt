@@ -1,0 +1,18 @@
+module Base
+{
+	template vehicle VVA_SVU_Armor_Luxury_shared {
+		template! = PU_armor_Luxury_doorsF,
+		template! = PU_armor_Luxury_hood,
+		template! = PU_armor_animated_fix,
+	}
+	template vehicle VVA_SVU_Armor_Luxury {
+		template! = VVA_SVU_Hood_Luxury,
+		template! = VVA_SVU_Armor_Luxury_shared,		
+	}
+
+	template vehicle VVA_SVU_Armor_Luxury_nr {
+		template! = VVA_SVU_Hood_Luxury_nr,
+		template! = VVA_SVU_Armor_Luxury_shared,
+	}
+
+}

@@ -1,0 +1,35 @@
+module Base
+{
+	template vehicle VVA_SVU_Armor_Pickup_shared {
+		template! = PU_armor_Pickup_doorsF,
+		template! = PU_armor_Pickup_hood,
+		template! = PU_armor_animated_fix,
+	}
+	
+	template vehicle VVA_SVU_Armor_PickupVan_shared {	
+		template! = PU_armor_PickupVan_trunk,
+		template! = PU_armor_PickupVan_trunkWindow,
+		template! = VVA_SVU_Armor_Pickup_shared,
+	}
+	
+	template vehicle VVA_SVU_Armor_Pickup {
+		template! = VVA_SVU_Hood_Pickup,
+		template! = VVA_SVU_Armor_Pickup_shared,		
+	}
+
+	template vehicle VVA_SVU_Armor_Pickup_nr {
+		template! = VVA_SVU_Hood_Pickup_nr,
+		template! = VVA_SVU_Armor_Pickup_shared,
+	}
+
+	template vehicle VVA_SVU_Armor_PickupVan {
+		template! = VVA_SVU_Hood_Pickup,
+		template! = VVA_SVU_Armor_PickupVan_shared,		
+	}
+
+	template vehicle VVA_SVU_Armor_PickupVan_nr {
+		template! = VVA_SVU_Hood_Pickup_nr,
+		template! = VVA_SVU_Armor_PickupVan_shared,
+	}
+
+}

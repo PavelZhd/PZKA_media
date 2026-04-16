@@ -1,0 +1,20 @@
+module Base
+{
+	template vehicle VVA_SVU_Armor_Offroad_shared {
+		template! = PU_armor_Offroad_doorsF,
+		template! = PU_armor_Offroad_hood,
+		template! = PU_armor_Offroad_trunk,
+		template! = PU_armor_Offroad_trunkWindow,
+		template! = PU_armor_animated_fix,
+	}
+	template vehicle VVA_SVU_Armor_Offroad {
+		template! = VVA_SVU_Hood_Offroad,
+		template! = VVA_SVU_Armor_Offroad_shared,		
+	}
+
+	template vehicle VVA_SVU_Armor_Offroad_nr {
+		template! = VVA_SVU_Hood_Offroad_nr,
+		template! = VVA_SVU_Armor_Offroad_shared,
+	}
+
+}

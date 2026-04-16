@@ -1,0 +1,50 @@
+module Base
+{
+	template vehicle VVA_SVU_Armor_Van_shared {
+		template! = PU_armor_Van_doorsF,
+		template! = PU_armor_Van_hood,
+		template! = PU_armor_Van_trunk,
+		template! = PU_armor_animated_fix,
+	}
+
+	
+	template vehicle VVA_SVU_Armor_VanSeats_shared {
+		template! = PU_armor_VanSeats_doorsM,
+		template! = PU_armor_VanSeats_trunkWindow,
+		template! = VVA_SVU_Armor_Van_shared,
+	}
+
+	template vehicle VVA_SVU_Armor_Van {
+		template! = VVA_SVU_Hood_Van,
+		template! = PU_armor_Van_trunkWindow,
+		template! = VVA_SVU_Armor_Van_shared,
+	}
+	template vehicle VVA_SVU_Armor_Van_nr {
+		template! = VVA_SVU_Hood_Van_nr,
+		template! = PU_armor_Van_trunkWindow,
+		template! = VVA_SVU_Armor_Van_shared,
+	}
+
+	template vehicle VVA_SVU_Armor_VanRadio {
+		template! = VVA_SVU_Hood_Van,
+		template! = PU_armor_VanRadio_trunkWindow,
+		template! = VVA_SVU_Armor_Van_shared,
+	}
+	template vehicle VVA_SVU_Armor_VanRadio_nr {
+		template! = VVA_SVU_Hood_Van_nr,
+		template! = PU_armor_VanRadio_trunkWindow,
+		template! = VVA_SVU_Armor_Van_shared,
+	}
+
+	template vehicle VVA_SVU_Armor_VanSeats {
+		template! = VVA_SVU_Hood_Van,
+		template! = PU_armor_VanRadio_trunkWindow,
+		template! = VVA_SVU_Armor_VanSeats_shared,
+	}
+	template vehicle VVA_SVU_Armor_VanSeats_nr {
+		template! = VVA_SVU_Hood_Van_nr,
+		template! = PU_armor_VanRadio_trunkWindow,
+		template! = VVA_SVU_Armor_VanSeats_shared,
+	}
+
+}

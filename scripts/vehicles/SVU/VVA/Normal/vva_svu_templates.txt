@@ -1,0 +1,30 @@
+module Base
+{
+	template vehicle VVA_SVU_Armor_Normal_shared {
+
+		template! = PU_armor_Normal_doorsF,
+		template! = PU_armor_Normal_doorsR,
+		template! = PU_armor_Normal_hood,
+		template! = PU_armor_animated_fix,
+	}
+	template vehicle VVA_SVU_Armor_Normal {
+		template! = VVA_SVU_Hood_Normal,
+		template! = VVA_SVU_Armor_Normal_shared,		
+	}
+
+	template vehicle VVA_SVU_Armor_Normal_nr {
+		template! = VVA_SVU_Hood_Normal_nr,
+		template! = VVA_SVU_Armor_Normal_shared,
+	}
+
+	template vehicle VVA_SVU_Armor_SWagon {
+		template! = PU_armor_SWagon_trunkWindow,
+		template! = VVA_SVU_Armor_Normal,		
+	}
+
+	template vehicle VVA_SVU_Armor_SWagon_nr {
+		template! = PU_armor_SWagon_trunkWindow,
+		template! = VVA_SVU_Armor_Normal_nr,
+	}
+
+}

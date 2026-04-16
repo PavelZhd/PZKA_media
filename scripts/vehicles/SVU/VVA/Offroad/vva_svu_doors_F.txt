@@ -1,0 +1,346 @@
+module Base
+{
+	model SVU_FL_Window_Offroad_Light_a
+ 	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|windowfrontlightleft,
+		shader = vehicle_armor,
+ 		scale = 0.004,
+		static = FALSE,
+ 	}
+	model SVU_FL_Window_Offroad_Light_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|windowfrontlightspikedleft,
+        texture = Vehicles/puv_parts,
+        shader = vehicle_armor,
+        scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FL_Window_Offroad_Heavy_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|windowfrontheavyleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FL_Window_Offroad_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|windowfrontheavyspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FL_Window_Offroad_Reinforced_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|windowfrontreinforcedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_Door_FL_Offroad_Light_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|doorfrontlightleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Offroad_Light_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|doorfrontlightspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Offroad_Heavy_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|doorfrontheavyleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Offroad_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|doorfrontheavyspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FL_Offroad_Reinforced_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|doorfrontreinforcedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_FR_Window_Offroad_Light_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|windowfrontlightright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Offroad_Light_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|windowfrontlightspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Offroad_Heavy_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|windowfrontheavyright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Offroad_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|windowfrontheavyspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_FR_Window_Offroad_Reinforced_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|windowfrontreinforcedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+	model SVU_Door_FR_Offroad_Light_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|doorfrontlightspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FR_Offroad_Light_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|doorfrontlightright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FR_Offroad_Heavy_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|doorfrontheavyright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+    }
+	model SVU_Door_FR_Offroad_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|doorfrontheavyspikedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_Door_FR_Offroad_Reinforced_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/doorsF|doorfrontreinforcedright,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+    template vehicle PU_armor_Offroad_doorsF {
+        part ATA2ProtectionWindowFrontLeft
+		{
+			parent = DoorFrontLeft,
+			model Light
+			{
+				file = SVU_FL_Window_Offroad_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_FL_Window_Offroad_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_FL_Window_Offroad_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_FL_Window_Offroad_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_FL_Window_Offroad_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_FL_Window_Offroad_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_FL_Window_Offroad_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_FL_Window_Offroad_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_FL_Window_Offroad_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_FL_Window_Offroad_Reinforced_a,
+			}
+		}
+		part ATA2ProtectionWindowFrontRight
+		{
+			parent = DoorFrontRight,
+			model Light
+			{
+				file = SVU_FR_Window_Offroad_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_FR_Window_Offroad_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_FR_Window_Offroad_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_FR_Window_Offroad_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_FR_Window_Offroad_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_FR_Window_Offroad_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_FR_Window_Offroad_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_FR_Window_Offroad_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_FR_Window_Offroad_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_FR_Window_Offroad_Reinforced_a,
+			}
+		}
+
+        part ATA2ProtectionDoorFrontLeft
+		{
+			parent = DoorFrontLeft,
+			model Light
+			{
+				file = SVU_Door_FL_Offroad_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Door_FL_Offroad_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Door_FL_Offroad_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Door_FL_Offroad_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Door_FL_Offroad_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Door_FL_Offroad_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Door_FL_Offroad_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Door_FL_Offroad_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Door_FL_Offroad_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Door_FL_Offroad_Reinforced_a,
+			}
+		}
+
+		part ATA2ProtectionDoorFrontRight
+		{
+			parent = DoorFrontRight,
+			model Light
+			{
+				file = SVU_Door_FR_Offroad_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Door_FR_Offroad_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Door_FR_Offroad_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Door_FR_Offroad_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Door_FR_Offroad_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Door_FR_Offroad_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Door_FR_Offroad_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Door_FR_Offroad_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Door_FR_Offroad_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Door_FR_Offroad_Reinforced_a,
+			}
+		}
+    }
+}

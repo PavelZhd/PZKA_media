@@ -1,0 +1,20 @@
+module Base
+{
+	template vehicle VVA_SVU_Armor_StepVan_shared {
+		template! = PU_armor_StepVan_doorsF,
+		template! = PU_armor_StepVan_hood,
+		template! = PU_armor_StepVan_trunk,
+		template! = PU_armor_StepVan_trunkWindow,
+		template! = PU_armor_animated_fix,
+	}
+	template vehicle VVA_SVU_Armor_StepVan {
+		template! = VVA_SVU_Hood_StepVan,
+		template! = VVA_SVU_Armor_StepVan_shared,		
+	}
+
+	template vehicle VVA_SVU_Armor_StepVan_nr {
+		template! = VVA_SVU_Hood_StepVan_nr,
+		template! = VVA_SVU_Armor_StepVan_shared,
+	}
+
+}

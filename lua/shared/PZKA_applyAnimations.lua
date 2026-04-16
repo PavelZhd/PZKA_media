@@ -34,6 +34,8 @@ if not SLE then
     PZKA.addToProfile("VVA_sle_taxi",{"VVA_t_taxi"})
 end
 
+-- BEGIN: VVA-Related
+
 PZKA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_F","PZKA_Normal_SedanF",{"pzka_4SeatsR","PZKA_Normal_SedanF_base"})
 PZKA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_F_nr","PZKA_Normal_SedanF_nr",{"pzka_4SeatsR","PZKA_Normal_SedanF_base_nr"})
 
@@ -55,6 +57,11 @@ PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedanPoliceMuldraughPolice","pzkCh
 PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedanPoliceBulletinSheriff","pzkChevalierCeriseSedanPoliceKST")
 
 PZKA.CopyTemplateToVehicle("pzkChevalierCeriseSedanTaxi","pzkChevalierCeriseSedan_nr",{"pzka_sle_taxi","VVA_Vehicles_Normal_TaxiSign"})
+
+
+
+-- END: VVA-related
+
 -- Hellion Sedan
 PZKA.CopyTemplateToVehicle("pzkDashHellion","PZKA_Normal_Sedan_F",{"PZKA_SedanF_Hellion"})
 PZKA.CopyTemplateToVehicle("pzkDashHellionDetective","pzkDashHellion",{"pzka_t_lighbar","PZKA_Normal_detective"})

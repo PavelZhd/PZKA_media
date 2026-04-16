@@ -61,7 +61,7 @@ module Base
     
 	model VVA_SVU_Dummy
 	{
-		mesh = vehicles/vva_dummy,
+		mesh = vehicles/SVU/dummy,
 		shader = vehiclewheel,
 		texture = Vehicles/puv_parts,
 		static = TRUE,
@@ -69,7 +69,7 @@ module Base
 	}
 	model VVA_SVU_DummyRust
 	{
-		mesh = vehicles/vva_dummy,
+		mesh = vehicles/SVU/dummy,
 		shader = vehiclewheel,
 		texture = Vehicles/puv_parts_rusted,
 		static = TRUE,

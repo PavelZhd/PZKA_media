@@ -1,0 +1,85 @@
+module Base
+{
+	model SVU_R_Window_Offroad_Light_a
+ 	{
+		mesh = vehicles/SVU/VVA/Offroad/trunk|windowlightrear,
+		shader = vehicle_armor,
+ 		scale = 0.004,
+		static = FALSE,
+ 	}
+	model SVU_R_Window_Offroad_Light_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/trunk|windowlightspikedrear,
+        shader = vehicle_armor,
+        scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Offroad_Heavy_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/trunk|windowheavyrear,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Offroad_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/trunk|windowheavyspikedrear,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Offroad_Reinforced_a
+	{
+		mesh = vehicles/SVU/VVA/Offroad/trunk|windowreinforcedrear,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+    template vehicle PU_armor_Offroad_trunkWindow {
+        part ATA2ProtectionWindshieldRear
+		{
+			parent = TrunkDoor,
+			model Light
+			{
+				file = SVU_R_Window_Offroad_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_R_Window_Offroad_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_R_Window_Offroad_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_R_Window_Offroad_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_R_Window_Offroad_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_R_Window_Offroad_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_R_Window_Offroad_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_R_Window_Offroad_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_R_Window_Offroad_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_R_Window_Offroad_Reinforced_a,
+			}
+		}
+    }
+}

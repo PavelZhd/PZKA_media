@@ -1,0 +1,41 @@
+module Base
+{
+	model SVU_SUV_Hood_Scoop
+	{
+		mesh = vehicles/VVA/SUV|Hood_Scoop_obj,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.004,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_SUV_Hood_Scoop_nr
+	{
+		mesh = vehicles/VVA/SUV|Hood_Scoop_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.004,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+
+	template vehicle VVA_SVU_Hood_SUV {
+		template! = VVA_SVU_SwapHood,
+		part EngineDoor
+		{
+			model Scooped
+			{
+				file = SVU_SUV_Hood_Scoop,				
+			}
+		}
+	}
+	template vehicle VVA_SVU_Hood_SUV_nr {
+		template! = VVA_SVU_SwapHood,
+		part EngineDoor
+		{
+			model Scooped
+			{
+				file = SVU_SUV_Hood_Scoop_nr,				
+			}
+		}
+	}
+
+}

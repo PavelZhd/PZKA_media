@@ -1,0 +1,21 @@
+module Base
+{
+	template vehicle VVA_SVU_Armor_SUV_shared {
+		template! = PU_armor_SUV_doorsF,
+		template! = PU_armor_SUV_doorsR,
+		template! = PU_armor_SUV_hood,
+		template! = PU_armor_SUV_trunk,
+		template! = PU_armor_SUV_trunkWindow,
+		template! = PU_armor_animated_fix,
+	}
+	template vehicle VVA_SVU_Armor_SUV {
+		template! = VVA_SVU_Hood_SUV,
+		template! = VVA_SVU_Armor_SUV_shared,		
+	}
+
+	template vehicle VVA_SVU_Armor_SUV_nr {
+		template! = VVA_SVU_Hood_SUV_nr,
+		template! = VVA_SVU_Armor_SUV_shared,
+	}
+
+}

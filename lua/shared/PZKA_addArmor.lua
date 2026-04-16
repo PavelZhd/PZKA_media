@@ -11,6 +11,14 @@ if PZKA.CheckModEnabled("StandardizedVehicleUpgrades3V") then
 			handler.plus({armor})
 		end
 	end
+
+	-- BEGIN: VVA-related
+	LinkAnimationsToArmor("PZKA_Normal_Sedan_F", 				"PZKA_SVU_Armor_Normal")
+	--LinkAnimationsToArmor("PZKA_Normal_Sedan_F_nr", 			"PZKA_SVU_Armor_Normal_nr")	
+	LinkAnimationsToArmor("PZKA_Normal_Sedan_V", 				"PZKA_SVU_Armor_Normal")
+	LinkAnimationsToArmor("PZKA_Normal_Sedan_V_nr", 			"PZKA_SVU_Armor_Normal_nr")	
+	-- END: VVA-related
+
 	LinkAnimationsToArmor("pzkChevalierCerise93", 				"PZKA_SVU_Armor_Cerise93")
 	LinkAnimationsToArmor("pzkChevalierCerise93Service", 		"PZKA_SVU_Armor_Cerise93_nr")
 	LinkAnimationsToArmor("pzkChevalierCerise93Taxi", 		    "PZKA_SVU_Armor_Cerise93_nr")
