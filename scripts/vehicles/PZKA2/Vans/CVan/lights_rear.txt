@@ -1,0 +1,33 @@
+module Base
+{
+	model VVA_Vehicles_CVan_LightRL
+	{
+		mesh = vehicles/PZKA/Vans/CVan_static|Light_RearLeft_CVan_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_CVan_LightRR
+	{
+		mesh = vehicles/PZKA/Vans/CVan_static|Light_RearRight_CVan_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_CVan_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_CVan_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_CVan_LightRR,
+			}
+		}
+	}
+}

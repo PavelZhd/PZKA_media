@@ -1,0 +1,37 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Normal_short_Taxi
+	{
+		mesh = vehicles/PZKA/Normal/static|TaxiSign_short,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Normal_short_Taxi {
+		part VVATaxiSign
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_short_Taxi,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_Normal_wagon_Taxi
+	{
+		mesh = vehicles/PZKA/Normal/static|TaxiSign_wagon,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Normal_wagon_Taxi {
+		part VVATaxiSign
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_wagon_Taxi,
+			}
+		}
+	}
+}

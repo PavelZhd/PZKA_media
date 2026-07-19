@@ -1,0 +1,426 @@
+module Base
+{
+	model VVA_Vehicles_PZKASedan_Cerise_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_Cerise,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_Cerise_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_Cerise,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKASedan_Cerise_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Cerise_RearFill,
+			}
+		}
+		template! = VVA_PZKASedan_Cerise_RearLights,
+	}
+	template vehicle VVA_PZKASedan_Cerise_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Cerise_RearFill_nr,
+			}
+		}
+		template! = VVA_PZKASedan_Cerise_RearLights,
+	}
+	model VVA_Vehicles_PZKASedan_Hellion_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_Hellion,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_Hellion_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_Hellion,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKASedan_Hellion_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Hellion_RearFill,
+			}
+		}
+		template! = VVA_PZKASedan_Hellion_RearLights,
+	}
+	template vehicle VVA_PZKASedan_Hellion_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Hellion_RearFill_nr,
+			}
+		}
+		template! = VVA_PZKASedan_Hellion_RearLights,
+	}
+	model VVA_Vehicles_PZKASedan_Homelander_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_Homelander,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_Homelander_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_Homelander,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKASedan_Homelander_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Homelander_RearFill,
+			}
+		}
+		template! = VVA_PZKASedan_Homelander_RearLights,
+	}
+	template vehicle VVA_PZKASedan_Homelander_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Homelander_RearFill_nr,
+			}
+		}
+		template! = VVA_PZKASedan_Homelander_RearLights,
+	}
+	model VVA_Vehicles_PZKASedan_Mayor_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_Mayor,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_Mayor_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_Mayor,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKASedan_Mayor_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Mayor_RearFill,
+			}
+		}
+		template! = VVA_PZKASedan_Mayor_RearLights,
+	}
+	template vehicle VVA_PZKASedan_Mayor_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Mayor_RearFill_nr,
+			}
+		}
+		template! = VVA_PZKASedan_Mayor_RearLights,
+	}
+	model VVA_Vehicles_PZKASedan_Nayala_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_Nayala,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_Nayala_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_Nayala,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKASedan_Nayala_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Nayala_RearFill,
+			}
+		}
+		template! = VVA_PZKASedan_Nayala_RearLights,
+	}
+	template vehicle VVA_PZKASedan_Nayala_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Nayala_RearFill_nr,
+			}
+		}
+		template! = VVA_PZKASedan_Nayala_RearLights,
+	}
+	model VVA_Vehicles_PZKASedan_Nyala42_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_Nyala42,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_Nyala42_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_Nyala42,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKASedan_Nyala42_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Nyala42_RearFill,
+			}
+		}
+		template! = VVA_PZKASedan_Nyala42_RearLights,
+	}
+	template vehicle VVA_PZKASedan_Nyala42_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Nyala42_RearFill_nr,
+			}
+		}
+		template! = VVA_PZKASedan_Nyala42_RearLights,
+	}
+	model VVA_Vehicles_PZKASedan_Rapier_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_Rapier,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_Rapier_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_Rapier,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKASedan_Rapier_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Rapier_RearFill,
+			}
+		}
+		template! = VVA_PZKASedan_Rapier_RearLights,
+	}
+	template vehicle VVA_PZKASedan_Rapier_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Rapier_RearFill_nr,
+			}
+		}
+		template! = VVA_PZKASedan_Rapier_RearLights,
+	}
+	model VVA_Vehicles_PZKASedan_TWD_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_TWD,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_TWD_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_TWD,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKASedan_TWD_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_TWD_RearFill,
+			}
+		}
+		template! = VVA_PZKASedan_TWD_RearLights,
+	}
+	template vehicle VVA_PZKASedan_TWD_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_TWD_RearFill_nr,
+			}
+		}
+		template! = VVA_PZKASedan_TWD_RearLights,
+	}
+	model VVA_Vehicles_PZKASedan_TWD91_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_TWD91,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_TWD91_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/sedan|rearfill_PZKASedan_TWD91,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKASedan_TWD91_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_TWD91_RearFill,
+			}
+		}
+		template! = VVA_PZKASedan_TWD91_RearLights,
+	}
+	template vehicle VVA_PZKASedan_TWD91_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_TWD91_RearFill_nr,
+			}
+		}
+		template! = VVA_PZKASedan_TWD91_RearLights,
+	}
+	template vehicle VVA_PZKASedan_VariableRearFill
+	{
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model _Cerise
+			{
+				file = VVA_Vehicles_PZKASedan_Cerise_RearFill,
+			}
+			model _Hellion
+			{
+				file = VVA_Vehicles_PZKASedan_Hellion_RearFill,
+			}
+			model _Homelander
+			{
+				file = VVA_Vehicles_PZKASedan_Homelander_RearFill,
+			}
+			model _Mayor
+			{
+				file = VVA_Vehicles_PZKASedan_Mayor_RearFill,
+			}
+			model _Nayala
+			{
+				file = VVA_Vehicles_PZKASedan_Nayala_RearFill,
+			}
+			model _Nyala42
+			{
+				file = VVA_Vehicles_PZKASedan_Nyala42_RearFill,
+			}
+			model _Rapier
+			{
+				file = VVA_Vehicles_PZKASedan_Rapier_RearFill,
+			}
+			model _TWD
+			{
+				file = VVA_Vehicles_PZKASedan_TWD_RearFill,
+			}
+			model _TWD91
+			{
+				file = VVA_Vehicles_PZKASedan_TWD91_RearFill,
+			}
+		}
+		template! = PZKA_VariableRearFill,
+		template! = VVA_PZKASedan_VariableRearLights,
+	}
+	template vehicle VVA_PZKASedan_VariableRearFill_nr
+	{
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model _Cerise
+			{
+				file = VVA_Vehicles_PZKASedan_Cerise_RearFill_nr,
+			}
+			model _Hellion
+			{
+				file = VVA_Vehicles_PZKASedan_Hellion_RearFill_nr,
+			}
+			model _Homelander
+			{
+				file = VVA_Vehicles_PZKASedan_Homelander_RearFill_nr,
+			}
+			model _Mayor
+			{
+				file = VVA_Vehicles_PZKASedan_Mayor_RearFill_nr,
+			}
+			model _Nayala
+			{
+				file = VVA_Vehicles_PZKASedan_Nayala_RearFill_nr,
+			}
+			model _Nyala42
+			{
+				file = VVA_Vehicles_PZKASedan_Nyala42_RearFill_nr,
+			}
+			model _Rapier
+			{
+				file = VVA_Vehicles_PZKASedan_Rapier_RearFill_nr,
+			}
+			model _TWD
+			{
+				file = VVA_Vehicles_PZKASedan_TWD_RearFill_nr,
+			}
+			model _TWD91
+			{
+				file = VVA_Vehicles_PZKASedan_TWD91_RearFill_nr,
+			}
+		}
+		template! = PZKA_VariableRearFill,
+		template! = VVA_PZKASedan_VariableRearLights,
+	}
+}

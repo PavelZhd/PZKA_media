@@ -1,0 +1,35 @@
+module Base
+{
+	model VVA_Vehicles_Limo_SeatRL
+	{
+		mesh = vehicles/PZKA/Normal/limo|Seat_RearLeft_Limo_obj,
+
+		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Limo_SeatRR
+	{
+		mesh = vehicles/PZKA/Normal/limo|Seat_RearRight_Limo_obj,
+
+		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_Limo_SeatsR {
+		part SeatRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_SeatRL,
+			}
+		}
+		part SeatRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_SeatRR,
+			}
+		}
+	}
+}

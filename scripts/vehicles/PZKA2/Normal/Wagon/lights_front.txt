@@ -1,0 +1,63 @@
+module Base
+{
+	model VVA_Vehicles_PZKAWagon_Ghoulbuster_LightFL
+	{
+		mesh = vehicles/PZKA/Normal/wagon|Light_FrontLeft_PZKAWagon_Ghoulbuster_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKAWagon_Ghoulbuster_LightFR
+	{
+		mesh = vehicles/PZKA/Normal/wagon|Light_FrontRight_PZKAWagon_Ghoulbuster_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKAWagon_Ghoulbuster_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Ghoulbuster_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Ghoulbuster_LightFR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZKAWagon_Grisworld_LightFL
+	{
+		mesh = vehicles/PZKA/Normal/wagon|Light_FrontLeft_PZKAWagon_Grisworld_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKAWagon_Grisworld_LightFR
+	{
+		mesh = vehicles/PZKA/Normal/wagon|Light_FrontRight_PZKAWagon_Grisworld_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKAWagon_Grisworld_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Grisworld_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Grisworld_LightFR,
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+module Base
+{
+    model VVA_Vehicles_Van_Camper_RearWindow_static
+	{
+		mesh = vehicles/PZKA/Vans/Camper|RearWindow_Camper_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+		static = TRUE,
+	}
+	template vehicle VVA_Van_Camper_RearWindow {
+		part WindshieldRear
+		{
+			model Static
+			{
+				file = VVA_Vehicles_Van_Camper_RearWindow_static,
+			}
+		}
+	}
+}

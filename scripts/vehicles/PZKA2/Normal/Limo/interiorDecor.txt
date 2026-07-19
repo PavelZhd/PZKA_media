@@ -1,0 +1,20 @@
+module Base
+{
+	model VVA_Vehicles_Limo_decor
+	{
+		mesh = vehicles/PZKA/Normal/limo|decor_Limo,
+		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_Limo_Decor {
+		part Interior
+		{
+			model Decor
+			{
+				file = VVA_Vehicles_Limo_decor,
+			}
+		}
+	}
+}

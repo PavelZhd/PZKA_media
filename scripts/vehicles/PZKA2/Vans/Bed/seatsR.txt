@@ -1,0 +1,35 @@
+module Base
+{
+	model VVA_Vehicles_Van_Bed_SeatRL
+	{
+		mesh = vehicles/PZKA/Vans/Bed|Seat_RearLeft_Bed_obj,
+
+		texture = Vehicles/[TEXTURE],
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Van_Bed_SeatRR
+	{
+		mesh = vehicles/PZKA/Vans/Bed|Seat_RearRight_Bed_obj,
+
+		texture = Vehicles/[TEXTURE],
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_Van_Bed_SeatsR {
+		part SeatRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_Bed_SeatRL,
+			}
+		}
+		part SeatRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_Bed_SeatRR,
+			}
+		}
+	}
+}

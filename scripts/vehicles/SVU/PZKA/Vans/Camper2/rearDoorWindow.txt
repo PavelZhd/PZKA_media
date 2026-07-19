@@ -1,0 +1,106 @@
+module Base
+{
+	model SVU_R_Window_Van_Camper_Light_a
+ 	{
+		mesh = vehicles/SVU/PZKA/Vans/Camper_trunk|windowlightrear_Camper,
+		shader = vehicle_armor,
+ 		scale = 0.004,
+		static = FALSE,
+ 	}
+	model SVU_R_Window_Van_Camper_Light_Spiked_a
+	{
+		mesh = vehicles/SVU/PZKA/Vans/Camper_trunk|windowlightspikedrear_Camper,
+        shader = vehicle_armor,
+        scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Van_Camper_Heavy_a
+	{
+		mesh = vehicles/SVU/PZKA/Vans/Camper_trunk|windowheavyrear_Camper,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Van_Camper_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU/PZKA/Vans/Camper_trunk|windowheavyspikedrear_Camper,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+	model SVU_R_Window_Van_Camper_Reinforced_a
+	{
+		mesh = vehicles/SVU/PZKA/Vans/Camper_trunk|windowreinforcedrear_Camper,
+		shader = vehicle_armor,
+		scale = 0.004,
+		static = FALSE,
+	}
+
+    template vehicle PU_armor_Van_Camper_trunkWindow {
+        part ATA2ProtectionWindshieldRear
+		{
+			parent = DoorRear,
+			model anchorNormal {
+				file = VVA_SVU_Dummy,
+			}
+			model anchorRusted {
+				file = VVA_SVU_DummyRust,
+			}
+			model Light
+			{
+				file = SVU_R_Window_Van_Camper_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_R_Window_Van_Camper_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_R_Window_Van_Camper_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_R_Window_Van_Camper_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_R_Window_Van_Camper_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_R_Window_Van_Camper_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_R_Window_Van_Camper_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_R_Window_Van_Camper_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_R_Window_Van_Camper_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_R_Window_Van_Camper_Reinforced_a,
+			}
+
+			table install
+            {
+            	complete = ATATuning2.InstallComplete.AnchorTuning,
+            }
+            table uninstall
+            {
+            	complete = ATATuning2.UninstallComplete.AnchorTuning,
+            }
+            lua
+            {
+            	create = ATATuning2.Create.AnchorTuning,
+        		init = ATATuning2.Init.AnchorTuning,
+        		update = ATATuning2.Update.Protection,
+            }
+		}
+    }
+}

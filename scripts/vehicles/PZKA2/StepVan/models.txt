@@ -1,0 +1,31 @@
+module Base
+{
+    model VVA_Vehicles_PZK_StepVan_Food
+	{
+		mesh = vehicles/PZKA/StepVan/static|Model_Food,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+    model VVA_Vehicles_PZK_StepVan_Food_nr
+	{
+		mesh = vehicles/PZKA/StepVan/static|Model_Food,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+    model VVA_Vehicles_PZK_StepVan_B30
+	{
+		mesh = vehicles/PZKA/StepVan/static|Model_B30,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+    model VVA_Vehicles_PZK_StepVan_B30_nr
+	{
+		mesh = vehicles/PZKA/StepVan/static|Model_B30,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.004,
+	}
+}

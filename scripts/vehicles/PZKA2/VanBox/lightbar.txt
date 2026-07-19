@@ -1,0 +1,20 @@
+module Base
+{
+	model VVA_Vehicles_PZK_VanBox_Lightbar
+	{
+		mesh = vehicles/PZKA/VanBox/static|Lightbar,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_VanBox_Lightbar {
+		part VVALightbar
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_VanBox_Lightbar,
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Pickup_Hood
+	{
+		mesh = vehicles/PZKA/Pickup/hood|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	model VVA_Vehicles_PZK_Pickup_Hood_nr
+	{
+		mesh = vehicles/PZKA/Pickup/hood|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+	}
+	template vehicle VVA_PZK_Pickup_hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Pickup_Hood,
+			}
+		}
+		template! = VVA_Hood_Common,
+	}
+	template vehicle VVA_PZK_Pickup_hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Pickup_Hood_nr,
+			}
+		}
+		template! = VVA_Hood_Common,
+	}
+}

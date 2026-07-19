@@ -1,0 +1,11 @@
+module Base
+{
+    template vehicle VVA_PZK_VanBox_Front {
+		template! = VVA_PZK_VanBox_FrontLeft,
+		template! = VVA_PZK_VanBox_FrontRight,
+	}
+    template vehicle VVA_PZK_VanBox_Front_nr {
+		template! = VVA_PZK_VanBox_FrontLeft_nr,
+		template! = VVA_PZK_VanBox_FrontRight_nr,
+	}
+}

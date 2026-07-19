@@ -1,0 +1,183 @@
+module Base
+{
+	model VVA_Vehicles_Limo_Cerise_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/limo|Light_RearLeft_Limo_Cerise_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Limo_Cerise_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/limo|Light_RearRight_Limo_Cerise_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_Limo_Cerise_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Cerise_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Cerise_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_Limo_Hellion_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/limo|Light_RearLeft_Limo_Hellion_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Limo_Hellion_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/limo|Light_RearRight_Limo_Hellion_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_Limo_Hellion_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Hellion_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Hellion_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_Limo_Homelander_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/limo|Light_RearLeft_Limo_Homelander_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Limo_Homelander_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/limo|Light_RearRight_Limo_Homelander_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_Limo_Homelander_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Homelander_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Homelander_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_Limo_Nyala_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/limo|Light_RearLeft_Limo_Nyala_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Limo_Nyala_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/limo|Light_RearRight_Limo_Nyala_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_Limo_Nyala_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Nyala_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Nyala_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_Limo_Nyala42_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/limo|Light_RearLeft_Limo_Nyala42_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Limo_Nyala42_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/limo|Light_RearRight_Limo_Nyala42_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_Limo_Nyala42_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Nyala42_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Nyala42_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_Limo_Rapier_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/limo|Light_RearLeft_Limo_Rapier_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Limo_Rapier_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/limo|Light_RearRight_Limo_Rapier_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_Limo_Rapier_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Rapier_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Rapier_LightRR,
+			}
+		}
+	}
+}

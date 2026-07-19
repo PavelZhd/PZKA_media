@@ -1,0 +1,35 @@
+module Base
+{
+    model VVA_Vehicles_PZK_HMMV_3_RearWindow
+	{
+		mesh = vehicles/PZKA/HMMV/static|RearWindow_3_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_HMMV_3_RearWindow {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_3_RearWindow,
+			}
+		}
+	}
+    model VVA_Vehicles_PZK_HMMV_4_RearWindow
+	{
+		mesh = vehicles/PZKA/HMMV/static|RearWindow_4_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_HMMV_4_RearWindow {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_4_RearWindow,
+			}
+		}
+	}
+}

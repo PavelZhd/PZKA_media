@@ -1,0 +1,63 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Pickup_D100_LightRL
+	{
+		mesh = vehicles/PZKA/Pickup/static|Light_RearLeft_D100_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Pickup_D100_LightRR
+	{
+		mesh = vehicles/PZKA/Pickup/static|Light_RearRight_D100_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Pickup_D100_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Pickup_D100_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Pickup_D100_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_Pickup_Tow_LightRL
+	{
+		mesh = vehicles/PZKA/Pickup/static|Light_RearLeft_Tow_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Pickup_Tow_LightRR
+	{
+		mesh = vehicles/PZKA/Pickup/static|Light_RearRight_Tow_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Pickup_Tow_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Pickup_Tow_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Pickup_Tow_LightRR,
+			}
+		}
+	}
+}

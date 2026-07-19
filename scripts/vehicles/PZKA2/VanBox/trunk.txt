@@ -1,0 +1,52 @@
+module Base
+{
+	model VVA_Vehicles_PZK_VanBox_Trunk
+	{
+		mesh = vehicles/PZKA/VanBox/trunk|Trunk_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk.L 1.0,
+		boneWeight = Trunk.R 1.0,
+	}
+	model VVA_Vehicles_PZK_VanBox_Trunk_nr
+	{
+		mesh = vehicles/PZKA/VanBox/trunk|Trunk_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk.L 1.0,
+		boneWeight = Trunk.R 1.0,
+	}
+	template vehicle VVA_PZK_VanBox_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_VanBox_Trunk,
+			}
+		}
+		template! = VVA_DoorRear_Common,
+		part WindshieldRear
+		{
+			parent = DoorRear,
+		}
+		template! = VVA_PZK_VanBox_RearWindow,
+
+	}
+	template vehicle VVA_PZK_VanBox_Trunk_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_VanBox_Trunk_nr,
+			}
+		}
+		template! = VVA_DoorRear_Common,
+ 		part WindshieldRear
+		{
+			parent = DoorRear,
+		}
+		template! = VVA_PZK_VanBox_RearWindow,
+	}
+}

@@ -1,0 +1,101 @@
+module Base
+{
+	model VVA_Vehicles_PZKAWagon_Trunk
+	{
+		mesh = vehicles/PZKA/Normal/wagonTrunk|Trunk_PZKAWagon_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLowerBone 1.0,
+		boneWeight = TrunkUpperBone 1.0,
+	}
+	model VVA_Vehicles_PZKAWagon_Trunk_nr
+	{
+		mesh = vehicles/PZKA/Normal/wagonTrunk|Trunk_PZKAWagon_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLowerBone 1.0,
+		boneWeight = TrunkUpperBone 1.0,
+	}
+	template vehicle VVA_PZKAWagon_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+		}
+		template! = VVA_PZKAWagon_RearWindow,
+
+	}
+	template vehicle VVA_PZKAWagon_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+ 		part WindshieldRear
+		{
+			parent = TrunkDoor,
+		}
+		template! = VVA_PZKAWagon_RearWindow,
+	}
+	model VVA_Vehicles_PZKAWagon_Mayor_Trunk
+	{
+		mesh = vehicles/PZKA/Normal/wagonTrunk|Trunk_PZKAWagon_Mayor_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLowerBone 1.0,
+		boneWeight = TrunkUpperBone 1.0,
+	}
+	model VVA_Vehicles_PZKAWagon_Mayor_Trunk_nr
+	{
+		mesh = vehicles/PZKA/Normal/wagonTrunk|Trunk_PZKAWagon_Mayor_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkLowerBone 1.0,
+		boneWeight = TrunkUpperBone 1.0,
+	}
+	template vehicle VVA_PZKAWagon_Mayor_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Mayor_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+		}
+		template! = VVA_PZKAWagon_RearWindow,
+
+	}
+	template vehicle VVA_PZKAWagon_Mayor_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Mayor_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+ 		part WindshieldRear
+		{
+			parent = TrunkDoor,
+		}
+		template! = VVA_PZKAWagon_RearWindow,
+	}
+}

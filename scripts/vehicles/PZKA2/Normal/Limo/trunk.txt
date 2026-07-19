@@ -1,0 +1,114 @@
+module Base
+{
+	model VVA_Vehicles_Limo_Cerise_Trunk
+	{
+		mesh = vehicles/PZKA/Normal/limoTrunk|Trunk_Limo_Cerise_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_Limo_Cerise_Trunk_nr
+	{
+		mesh = vehicles/PZKA/Normal/limoTrunk|Trunk_Limo_Cerise_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle VVA_Limo_Cerise_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Cerise_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+
+	}
+	template vehicle VVA_Limo_Cerise_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Cerise_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+	}
+	model VVA_Vehicles_Limo_Hellion_Trunk
+	{
+		mesh = vehicles/PZKA/Normal/limoTrunk|Trunk_Limo_Hellion_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_Limo_Hellion_Trunk_nr
+	{
+		mesh = vehicles/PZKA/Normal/limoTrunk|Trunk_Limo_Hellion_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle VVA_Limo_Hellion_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Hellion_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+
+	}
+	template vehicle VVA_Limo_Hellion_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Hellion_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+	}
+	model VVA_Vehicles_Limo_Homelander_Trunk
+	{
+		mesh = vehicles/PZKA/Normal/limoTrunk|Trunk_Limo_Homelander_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_Limo_Homelander_Trunk_nr
+	{
+		mesh = vehicles/PZKA/Normal/limoTrunk|Trunk_Limo_Homelander_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle VVA_Limo_Homelander_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Homelander_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+
+	}
+	template vehicle VVA_Limo_Homelander_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Homelander_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+	}
+}

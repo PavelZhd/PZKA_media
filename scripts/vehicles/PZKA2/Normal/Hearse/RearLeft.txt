@@ -1,0 +1,62 @@
+module Base
+{
+
+	model VVA_Vehicles_Hearse_DoorRearLeft
+	{
+		mesh = vehicles/PZKA/Normal/hearse|Door_RearLeft_Hearse_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor.L 1.0,
+	}
+	model VVA_Vehicles_Hearse_DoorRearLeft_nr
+	{
+		mesh = vehicles/PZKA/Normal/hearse|Door_RearLeft_Hearse_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor.L 1.0,
+	}
+	model VVA_Vehicles_Hearse_WindowRearLeft
+	{
+		mesh = vehicles/PZKA/Normal/hearse|Window_RearLeft_Hearse_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearWindow.L 1.0,
+	}
+
+
+	template vehicle VVA_Hearse_RearLeftShared {
+		part WindowRearLeft
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_Hearse_WindowRearLeft,
+            }
+		}
+		template! = VVA_WindowRL,
+		template! = VVA_DoorRL_Common,
+	}
+
+	template vehicle VVA_Hearse_RearLeft {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Hearse_DoorRearLeft,
+			}
+		}
+		template! = VVA_Hearse_RearLeftShared,
+	}
+	template vehicle VVA_Hearse_RearLeft_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Hearse_DoorRearLeft_nr,
+			}
+		}
+		template! = VVA_Hearse_RearLeftShared,
+	}
+}

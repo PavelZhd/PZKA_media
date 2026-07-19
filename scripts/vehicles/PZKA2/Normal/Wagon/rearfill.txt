@@ -1,0 +1,156 @@
+module Base
+{
+	model VVA_Vehicles_PZKAWagon_Cerise_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/wagon|rearfill_PZKAWagon_Cerise,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKAWagon_Cerise_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/wagon|rearfill_PZKAWagon_Cerise,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKAWagon_Cerise_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Cerise_RearFill,
+			}
+		}
+		template! = VVA_PZKAWagon_Cerise_RearLights,
+	}
+	template vehicle VVA_PZKAWagon_Cerise_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Cerise_RearFill_nr,
+			}
+		}
+		template! = VVA_PZKAWagon_Cerise_RearLights,
+	}
+	model VVA_Vehicles_PZKAWagon_Mayor_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/wagon|rearfill_PZKAWagon_Mayor,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKAWagon_Mayor_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/wagon|rearfill_PZKAWagon_Mayor,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKAWagon_Mayor_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Mayor_RearFill,
+			}
+		}
+		template! = VVA_PZKAWagon_Mayor_RearLights,
+	}
+	template vehicle VVA_PZKAWagon_Mayor_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Mayor_RearFill_nr,
+			}
+		}
+		template! = VVA_PZKAWagon_Mayor_RearLights,
+	}
+	model VVA_Vehicles_PZKAWagon_TWD_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/wagon|rearfill_PZKAWagon_TWD,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKAWagon_TWD_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/wagon|rearfill_PZKAWagon_TWD,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKAWagon_TWD_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_TWD_RearFill,
+			}
+		}
+		template! = VVA_PZKAWagon_TWD_RearLights,
+	}
+	template vehicle VVA_PZKAWagon_TWD_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_TWD_RearFill_nr,
+			}
+		}
+		template! = VVA_PZKAWagon_TWD_RearLights,
+	}
+	template vehicle VVA_PZKAWagon_VariableRearFill
+	{
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model _Cerise
+			{
+				file = VVA_Vehicles_PZKAWagon_Cerise_RearFill,
+			}
+			model _Mayor
+			{
+				file = VVA_Vehicles_PZKAWagon_Mayor_RearFill,
+			}
+			model _TWD
+			{
+				file = VVA_Vehicles_PZKAWagon_TWD_RearFill,
+			}
+		}
+		template! = PZKA_VariableRearFill,
+		template! = VVA_PZKAWagon_VariableRearLights,
+	}
+	template vehicle VVA_PZKAWagon_VariableRearFill_nr
+	{
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model _Cerise
+			{
+				file = VVA_Vehicles_PZKAWagon_Cerise_RearFill_nr,
+			}
+			model _Mayor
+			{
+				file = VVA_Vehicles_PZKAWagon_Mayor_RearFill_nr,
+			}
+			model _TWD
+			{
+				file = VVA_Vehicles_PZKAWagon_TWD_RearFill_nr,
+			}
+		}
+		template! = PZKA_VariableRearFill,
+		template! = VVA_PZKAWagon_VariableRearLights,
+	}
+}

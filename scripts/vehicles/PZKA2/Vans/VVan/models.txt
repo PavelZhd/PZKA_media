@@ -1,0 +1,17 @@
+module Base
+{
+    model VVA_Vehicles_VVan_Multi
+	{
+		mesh = vehicles/PZKA/Vans/VVan_static|Model_Multi,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_VVan_Multi_nr
+	{
+		mesh = vehicles/PZKA/Vans/VVan_static|Model_Multi,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

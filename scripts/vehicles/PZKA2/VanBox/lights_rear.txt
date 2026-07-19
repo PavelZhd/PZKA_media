@@ -1,0 +1,63 @@
+module Base
+{
+	model VVA_Vehicles_PZK_VanBox_LightRL
+	{
+		mesh = vehicles/PZKA/VanBox/static|Light_RearLeft_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_VanBox_LightRR
+	{
+		mesh = vehicles/PZKA/VanBox/static|Light_RearRight_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_VanBox_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_VanBox_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_VanBox_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_VanBox_Shutter_LightRL
+	{
+		mesh = vehicles/PZKA/VanBox/static|Light_RearLeft_Shutter_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_VanBox_Shutter_LightRR
+	{
+		mesh = vehicles/PZKA/VanBox/static|Light_RearRight_Shutter_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_VanBox_Shutter_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_VanBox_Shutter_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_VanBox_Shutter_LightRR,
+			}
+		}
+	}
+}

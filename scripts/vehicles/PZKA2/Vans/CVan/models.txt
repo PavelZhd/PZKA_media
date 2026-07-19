@@ -1,0 +1,45 @@
+module Base
+{
+    model VVA_Vehicles_CVan_Cargo
+	{
+		mesh = vehicles/PZKA/Vans/CVan_static|Model_CVan_Cargo,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_CVan_Cargo_nr
+	{
+		mesh = vehicles/PZKA/Vans/CVan_static|Model_CVan_Cargo,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_CVan_Multi
+	{
+		mesh = vehicles/PZKA/Vans/CVan_static|Model_CVan_Multi,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_CVan_Multi_nr
+	{
+		mesh = vehicles/PZKA/Vans/CVan_static|Model_CVan_Multi,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_CVan_Seats
+	{
+		mesh = vehicles/PZKA/Vans/CVan_static|Model_CVan_Seats,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_CVan_Seats_nr
+	{
+		mesh = vehicles/PZKA/Vans/CVan_static|Model_CVan_Seats,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

@@ -1,0 +1,20 @@
+module Base
+{
+	model VVA_Vehicles_VVan_Taxi
+	{
+		mesh = vehicles/PZKA/Vans/VVan_static|TaxiSign,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_VVan_Taxi {
+		part VVATaxiSign
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VVan_Taxi,
+			}
+		}
+	}
+}

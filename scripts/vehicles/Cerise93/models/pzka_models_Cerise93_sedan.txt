@@ -1,0 +1,39 @@
+module Base
+{
+	model PZKA_Vehicles_Cerise93_Sedan_Trunk	
+	{
+		mesh = vehicles/pzka_Cerise93|Trunk_Sedan_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkSedanBone 1.0,
+	}
+	model PZKA_Vehicles_Cerise93_Sedan_RearWindow
+	{
+		mesh = vehicles/pzka_Cerise93|RearWindow_Seadn_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cerise93_Sedan_WindowRearLeft_static
+	{
+		mesh = vehicles/pzka_Cerise93|Window_RearLeft_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cerise93_Sedan_WindowRearRight_static
+	{
+		mesh = vehicles/pzka_Cerise93|Window_RearRight_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+
+	model PZKA_Vehicles_Cerise93_Sedan_Trunk_nr
+	{
+		mesh = vehicles/pzka_Cerise93|Trunk_Sedan_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkSedanBone 1.0,
+	}
+	
+}

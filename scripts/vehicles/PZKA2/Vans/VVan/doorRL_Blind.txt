@@ -1,0 +1,46 @@
+module Base
+{
+
+	model VVA_Vehicles_VVan_Blind_DoorRearLeft
+	{
+		mesh = vehicles/VVA/Vans/doorR|Door_RearLeft_Blind_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearDoor.L 1.0,
+	}
+	model VVA_Vehicles_VVan_Blind_DoorRearLeft_nr
+	{
+		mesh = vehicles/VVA/Vans/doorR|Door_RearLeft_Blind_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearDoor.L 1.0,
+	}
+
+
+	template vehicle VVA_VVan_Blind_RearLeftShared {
+		template! = VVA_DoorRL_Common,
+	}
+
+	template vehicle VVA_VVan_Blind_RearLeft {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VVan_Blind_DoorRearLeft,
+			}
+		}
+		template! = VVA_VVan_Blind_RearLeftShared,
+	}
+	template vehicle VVA_VVan_Blind_RearLeft_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VVan_Blind_DoorRearLeft_nr,
+			}
+		}
+		template! = VVA_VVan_Blind_RearLeftShared,
+	}
+}

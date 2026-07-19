@@ -1,0 +1,33 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Pickup_LightFL
+	{
+		mesh = vehicles/PZKA/Pickup/static|Light_FrontLeft_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Pickup_LightFR
+	{
+		mesh = vehicles/PZKA/Pickup/static|Light_FrontRight_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Pickup_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Pickup_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Pickup_LightFR,
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+module Base
+{
+	model VVA_Vehicles_PZKASedan_SedanF_decor
+	{
+		mesh = vehicles/PZKA/Normal/sedan|decor_SedanF,
+		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKASedan_SedanF_Decor {
+		part Interior
+		{
+			model Decor_SedanF
+			{
+				file = VVA_Vehicles_PZKASedan_SedanF_decor,
+			}
+		}
+	}
+	model VVA_Vehicles_PZKASedan_SedanV_decor
+	{
+		mesh = vehicles/PZKA/Normal/sedan|decor_SedanV,
+		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKASedan_SedanV_Decor {
+		part Interior
+		{
+			model Decor_SedanV
+			{
+				file = VVA_Vehicles_PZKASedan_SedanV_decor,
+			}
+		}
+	}
+}

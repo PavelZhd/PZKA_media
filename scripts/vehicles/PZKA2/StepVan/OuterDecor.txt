@@ -1,0 +1,88 @@
+module Base
+{
+	model VVA_Vehicles_PZK_StepVan_HotDog_decor
+	{
+		mesh = vehicles/PZKA/StepVan/static|decor_HotDog,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_PZK_StepVan_HotDog_Decor {
+		part Interior
+		{
+			model Decor_HotDog
+			{
+				file = VVA_Vehicles_PZK_StepVan_HotDog_decor,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_StepVan_IceCream_decor
+	{
+		mesh = vehicles/PZKA/StepVan/static|decor_IceCream,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_PZK_StepVan_IceCream_Decor {
+		part Interior
+		{
+			model Decor_IceCream
+			{
+				file = VVA_Vehicles_PZK_StepVan_IceCream_decor,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_StepVan_Pierogi_decor
+	{
+		mesh = vehicles/PZKA/StepVan/static|decor_Pierogi,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_PZK_StepVan_Pierogi_Decor {
+		part Interior
+		{
+			model Decor_Pierogi
+			{
+				file = VVA_Vehicles_PZK_StepVan_Pierogi_decor,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_StepVan_RoofOven_decor
+	{
+		mesh = vehicles/PZKA/StepVan/static|decor_RoofOven,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_PZK_StepVan_RoofOven_Decor {
+		part Interior
+		{
+			model Decor_RoofOven
+			{
+				file = VVA_Vehicles_PZK_StepVan_RoofOven_decor,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_StepVan_Taco_decor
+	{
+		mesh = vehicles/PZKA/StepVan/static|decor_Taco,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.004,
+	}
+
+	template vehicle VVA_PZK_StepVan_Taco_Decor {
+		part Interior
+		{
+			model Decor_Taco
+			{
+				file = VVA_Vehicles_PZK_StepVan_Taco_decor,
+			}
+		}
+	}
+}

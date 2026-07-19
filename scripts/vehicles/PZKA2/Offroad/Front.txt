@@ -1,0 +1,11 @@
+module Base
+{
+    template vehicle VVA_PZK_Offroad_C_Front {
+		template! = VVA_PZK_Offroad_C_FrontLeft,
+		template! = VVA_PZK_Offroad_C_FrontRight,
+	}
+    template vehicle VVA_PZK_Offroad_C_Front_nr {
+		template! = VVA_PZK_Offroad_C_FrontLeft_nr,
+		template! = VVA_PZK_Offroad_C_FrontRight_nr,
+	}
+}

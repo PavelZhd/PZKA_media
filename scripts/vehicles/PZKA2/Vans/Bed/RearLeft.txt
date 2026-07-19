@@ -1,0 +1,62 @@
+module Base
+{
+
+	model VVA_Vehicles_Van_Bed_DoorRearLeft
+	{
+		mesh = vehicles/PZKA/Vans/Bed|Door_RearLeft_Bed_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor.L 1.0,
+	}
+	model VVA_Vehicles_Van_Bed_DoorRearLeft_nr
+	{
+		mesh = vehicles/PZKA/Vans/Bed|Door_RearLeft_Bed_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor.L 1.0,
+	}
+	model VVA_Vehicles_Van_Bed_WindowRearLeft
+	{
+		mesh = vehicles/PZKA/Vans/Bed|Window_RearLeft_Bed_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearWindow.L 1.0,
+	}
+
+
+	template vehicle VVA_Van_Bed_RearLeftShared {
+		part WindowRearLeft
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_Van_Bed_WindowRearLeft,
+            }
+		}
+		template! = VVA_WindowRL,
+		template! = VVA_DoorRL_Common,
+	}
+
+	template vehicle VVA_Van_Bed_RearLeft {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_Bed_DoorRearLeft,
+			}
+		}
+		template! = VVA_Van_Bed_RearLeftShared,
+	}
+	template vehicle VVA_Van_Bed_RearLeft_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_Bed_DoorRearLeft_nr,
+			}
+		}
+		template! = VVA_Van_Bed_RearLeftShared,
+	}
+}

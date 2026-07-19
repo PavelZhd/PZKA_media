@@ -1,0 +1,93 @@
+module Base
+{
+	model VVA_Vehicles_DVan1_LightFL
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|Light_FrontLeft_DVan1_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_DVan1_LightFR
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|Light_FrontRight_DVan1_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_DVan1_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan1_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan1_LightFR,
+			}
+		}
+	}
+	model VVA_Vehicles_DVan2_LightFL
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|Light_FrontLeft_DVan2_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_DVan2_LightFR
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|Light_FrontRight_DVan2_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_DVan2_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan2_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan2_LightFR,
+			}
+		}
+	}
+	model VVA_Vehicles_DVan3_LightFL
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|Light_FrontLeft_DVan3_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_DVan3_LightFR
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|Light_FrontRight_DVan3_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_DVan3_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan3_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan3_LightFR,
+			}
+		}
+	}
+}

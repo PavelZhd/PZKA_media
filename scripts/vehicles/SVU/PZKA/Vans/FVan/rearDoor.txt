@@ -1,0 +1,209 @@
+module Base
+{
+	model SVU_Trunk_Van_F_Light_a
+ 	{
+		mesh = vehicles/SVU/PZKA/Vans/FVan_trunk|trunklightrear_F,
+		shader = vehicle_armor,
+ 		scale = 0.01,
+		static = FALSE,
+ 	}
+	model SVU_Trunk_Van_F_Light_Spiked_a
+	{
+		mesh = vehicles/SVU/PZKA/Vans/FVan_trunk|trunklightspikedrear_F,
+        shader = vehicle_armor,
+        scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Trunk_Van_F_Heavy_a
+	{
+		mesh = vehicles/SVU/PZKA/Vans/FVan_trunk|trunkheavyrear_F,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Trunk_Van_F_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU/PZKA/Vans/FVan_trunk|trunkheavyspikedrear_F,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Trunk_Van_F_Reinforced_a
+	{
+		mesh = vehicles/SVU/PZKA/Vans/FVan_trunk|trunkreinforcedrear_F,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+    template vehicle PU_armor_Van_F_trunk {
+		part ATA2ProtectionDoorsRear
+		{
+			parent = DoorRear,
+			model anchorNormal {
+				file = VVA_SVU_Dummy,
+			}
+			model anchorRusted {
+				file = VVA_SVU_DummyRust,
+			}
+			model Light
+			{
+				file = SVU_Trunk_Van_F_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Trunk_Van_F_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Trunk_Van_F_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Trunk_Van_F_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Trunk_Van_F_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Trunk_Van_F_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Trunk_Van_F_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Trunk_Van_F_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Trunk_Van_F_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Trunk_Van_F_Reinforced_a,
+			}
+
+			table install
+            {
+            	complete = ATATuning2.InstallComplete.AnchorTuning,
+            }
+            table uninstall
+            {
+            	complete = ATATuning2.UninstallComplete.AnchorTuning,
+            }
+            lua
+            {
+            	create = ATATuning2.Create.AnchorTuning,
+        		init = ATATuning2.Init.AnchorTuning,
+        		update = ATATuning2.Update.Protection,
+            }
+		}
+    }
+	model SVU_Trunk_Van_FBlind_Light_a
+ 	{
+		mesh = vehicles/SVU/PZKA/Vans/FVan_trunk|trunklightrear_FBlind,
+		shader = vehicle_armor,
+ 		scale = 0.01,
+		static = FALSE,
+ 	}
+	model SVU_Trunk_Van_FBlind_Light_Spiked_a
+	{
+		mesh = vehicles/SVU/PZKA/Vans/FVan_trunk|trunklightspikedrear_FBlind,
+        shader = vehicle_armor,
+        scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Trunk_Van_FBlind_Heavy_a
+	{
+		mesh = vehicles/SVU/PZKA/Vans/FVan_trunk|trunkheavyrear_FBlind,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Trunk_Van_FBlind_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU/PZKA/Vans/FVan_trunk|trunkheavyspikedrear_FBlind,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Trunk_Van_FBlind_Reinforced_a
+	{
+		mesh = vehicles/SVU/PZKA/Vans/FVan_trunk|trunkreinforcedrear_FBlind,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+    template vehicle PU_armor_Van_FBlind_trunk {
+		part ATA2ProtectionDoorsRear
+		{
+			parent = DoorRear,
+			model anchorNormal {
+				file = VVA_SVU_Dummy,
+			}
+			model anchorRusted {
+				file = VVA_SVU_DummyRust,
+			}
+			model Light
+			{
+				file = SVU_Trunk_Van_FBlind_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Trunk_Van_FBlind_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Trunk_Van_FBlind_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Trunk_Van_FBlind_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Trunk_Van_FBlind_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Trunk_Van_FBlind_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Trunk_Van_FBlind_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Trunk_Van_FBlind_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Trunk_Van_FBlind_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Trunk_Van_FBlind_Reinforced_a,
+			}
+
+			table install
+            {
+            	complete = ATATuning2.InstallComplete.AnchorTuning,
+            }
+            table uninstall
+            {
+            	complete = ATATuning2.UninstallComplete.AnchorTuning,
+            }
+            lua
+            {
+            	create = ATATuning2.Create.AnchorTuning,
+        		init = ATATuning2.Init.AnchorTuning,
+        		update = ATATuning2.Update.Protection,
+            }
+		}
+    }
+}

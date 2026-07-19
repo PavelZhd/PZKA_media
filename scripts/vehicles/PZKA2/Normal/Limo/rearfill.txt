@@ -1,0 +1,291 @@
+module Base
+{
+	model VVA_Vehicles_Limo_Cerise_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/limo|rearfill_Limo_Cerise,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Limo_Cerise_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/limo|rearfill_Limo_Cerise,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_Limo_Cerise_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Cerise_RearFill,
+			}
+		}
+		template! = VVA_Limo_Cerise_RearLights,
+	}
+	template vehicle VVA_Limo_Cerise_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Cerise_RearFill_nr,
+			}
+		}
+		template! = VVA_Limo_Cerise_RearLights,
+	}
+	model VVA_Vehicles_Limo_Hellion_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/limo|rearfill_Limo_Hellion,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Limo_Hellion_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/limo|rearfill_Limo_Hellion,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_Limo_Hellion_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Hellion_RearFill,
+			}
+		}
+		template! = VVA_Limo_Hellion_RearLights,
+	}
+	template vehicle VVA_Limo_Hellion_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Hellion_RearFill_nr,
+			}
+		}
+		template! = VVA_Limo_Hellion_RearLights,
+	}
+	model VVA_Vehicles_Limo_Homelander_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/limo|rearfill_Limo_Homelander,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Limo_Homelander_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/limo|rearfill_Limo_Homelander,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_Limo_Homelander_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Homelander_RearFill,
+			}
+		}
+		template! = VVA_Limo_Homelander_RearLights,
+	}
+	template vehicle VVA_Limo_Homelander_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Homelander_RearFill_nr,
+			}
+		}
+		template! = VVA_Limo_Homelander_RearLights,
+	}
+	model VVA_Vehicles_Limo_Nyala_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/limo|rearfill_Limo_Nyala,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Limo_Nyala_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/limo|rearfill_Limo_Nyala,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_Limo_Nyala_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Nyala_RearFill,
+			}
+		}
+		template! = VVA_Limo_Nyala_RearLights,
+	}
+	template vehicle VVA_Limo_Nyala_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Nyala_RearFill_nr,
+			}
+		}
+		template! = VVA_Limo_Nyala_RearLights,
+	}
+	model VVA_Vehicles_Limo_Nyala42_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/limo|rearfill_Limo_Nyala42,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Limo_Nyala42_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/limo|rearfill_Limo_Nyala42,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_Limo_Nyala42_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Nyala42_RearFill,
+			}
+		}
+		template! = VVA_Limo_Nyala42_RearLights,
+	}
+	template vehicle VVA_Limo_Nyala42_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Nyala42_RearFill_nr,
+			}
+		}
+		template! = VVA_Limo_Nyala42_RearLights,
+	}
+	model VVA_Vehicles_Limo_Rapier_RearFill
+	{
+		mesh = vehicles/PZKA/Normal/limo|rearfill_Limo_Rapier,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Limo_Rapier_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/limo|rearfill_Limo_Rapier,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_Limo_Rapier_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Rapier_RearFill,
+			}
+		}
+		template! = VVA_Limo_Rapier_RearLights,
+	}
+	template vehicle VVA_Limo_Rapier_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Rapier_RearFill_nr,
+			}
+		}
+		template! = VVA_Limo_Rapier_RearLights,
+	}
+	template vehicle VVA_Limo_VariableRearFill
+	{
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model _Cerise
+			{
+				file = VVA_Vehicles_Limo_Cerise_RearFill,
+			}
+			model _Hellion
+			{
+				file = VVA_Vehicles_Limo_Hellion_RearFill,
+			}
+			model _Homelander
+			{
+				file = VVA_Vehicles_Limo_Homelander_RearFill,
+			}
+			model _Nyala
+			{
+				file = VVA_Vehicles_Limo_Nyala_RearFill,
+			}
+			model _Nyala42
+			{
+				file = VVA_Vehicles_Limo_Nyala42_RearFill,
+			}
+			model _Rapier
+			{
+				file = VVA_Vehicles_Limo_Rapier_RearFill,
+			}
+		}
+		template! = PZKA_VariableRearFill,
+		template! = VVA_Limo_VariableRearLights,
+	}
+	template vehicle VVA_Limo_VariableRearFill_nr
+	{
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model _Cerise
+			{
+				file = VVA_Vehicles_Limo_Cerise_RearFill_nr,
+			}
+			model _Hellion
+			{
+				file = VVA_Vehicles_Limo_Hellion_RearFill_nr,
+			}
+			model _Homelander
+			{
+				file = VVA_Vehicles_Limo_Homelander_RearFill_nr,
+			}
+			model _Nyala
+			{
+				file = VVA_Vehicles_Limo_Nyala_RearFill_nr,
+			}
+			model _Nyala42
+			{
+				file = VVA_Vehicles_Limo_Nyala42_RearFill_nr,
+			}
+			model _Rapier
+			{
+				file = VVA_Vehicles_Limo_Rapier_RearFill_nr,
+			}
+		}
+		template! = PZKA_VariableRearFill,
+		template! = VVA_Limo_VariableRearLights,
+	}
+}

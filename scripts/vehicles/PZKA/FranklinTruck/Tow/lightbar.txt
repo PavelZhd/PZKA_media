@@ -8,7 +8,7 @@ module Base
 	}
 
 	template vehicle PZKA_FranklinTruck_Tow_lightbar {
-		part ATA2RoofLightbar
+		part VVALightbar
 		{
 			model Default
 			{

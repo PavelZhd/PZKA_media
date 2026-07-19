@@ -1,0 +1,49 @@
+module Base
+{
+	template vehicle PZKA_Cerise93_wagon_shared {
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Wagon_RearWindow,
+			}
+			model Static
+			{
+				file = PZKA_Vehicles_Cerise93_Wagon_RearWindow_static,
+			}
+		}
+	}
+
+	template vehicle PZKA_Cerise93_wagon {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Wagon_Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		template! = PZKA_Cerise93_shared4Doors,
+		template! = PZKA_Cerise93_wagon_shared,
+	}
+
+	template vehicle PZKA_Cerise93_wagon_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Wagon_Trunk_nr,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		template! = PZKA_Cerise93_shared4Doors_nr,
+		template! = PZKA_Cerise93_wagon_shared,
+	}
+
+
+}

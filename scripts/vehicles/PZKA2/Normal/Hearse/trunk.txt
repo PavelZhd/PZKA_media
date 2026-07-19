@@ -1,0 +1,97 @@
+module Base
+{
+	model VVA_Vehicles_Hearse_Trunk
+	{
+		mesh = vehicles/PZKA/Normal/hearseTrunk|Trunk_Hearse_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_Hearse_Trunk_nr
+	{
+		mesh = vehicles/PZKA/Normal/hearseTrunk|Trunk_Hearse_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle VVA_Hearse_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Hearse_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+		}
+		template! = VVA_Hearse_RearWindow,
+
+	}
+	template vehicle VVA_Hearse_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Hearse_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+ 		part WindshieldRear
+		{
+			parent = TrunkDoor,
+		}
+		template! = VVA_Hearse_RearWindow,
+	}
+	model VVA_Vehicles_Hearse_Ghoulbuster_Trunk
+	{
+		mesh = vehicles/PZKA/Normal/hearseTrunk|Trunk_Hearse_Ghoulbuster_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_Hearse_Ghoulbuster_Trunk_nr
+	{
+		mesh = vehicles/PZKA/Normal/hearseTrunk|Trunk_Hearse_Ghoulbuster_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle VVA_Hearse_Ghoulbuster_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Hearse_Ghoulbuster_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+		}
+		template! = VVA_Hearse_Ghoulbuster_RearWindow,
+
+	}
+	template vehicle VVA_Hearse_Ghoulbuster_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Hearse_Ghoulbuster_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+ 		part WindshieldRear
+		{
+			parent = TrunkDoor,
+		}
+		template! = VVA_Hearse_Ghoulbuster_RearWindow,
+	}
+}

@@ -1,0 +1,19 @@
+module Base
+{
+    template vehicle VVA_VVan_Middle {
+		template! = VVA_VVan_MiddleLeft,
+		template! = VVA_VVan_MiddleRight,
+	}
+    template vehicle VVA_VVan_Middle_nr {
+		template! = VVA_VVan_MiddleLeft_nr,
+		template! = VVA_VVan_MiddleRight_nr,
+	}
+    template vehicle VVA_VVan_Open_Middle {
+		template! = VVA_VVan_Open_MiddleLeft,
+		template! = VVA_VVan_Open_MiddleRight,
+	}
+    template vehicle VVA_VVan_Open_Middle_nr {
+		template! = VVA_VVan_Open_MiddleLeft_nr,
+		template! = VVA_VVan_Open_MiddleRight_nr,
+	}
+}

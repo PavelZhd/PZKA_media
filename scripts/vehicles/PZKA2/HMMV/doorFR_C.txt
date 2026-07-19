@@ -1,0 +1,44 @@
+module Base
+{
+	model VVA_Vehicles_PZK_HMMV_C_DoorFrontRight
+	{
+		mesh = vehicles/PZKA/HMMV/doorF|Door_FrontRight_C_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontDoor.R 1.0,
+	}
+	model VVA_Vehicles_PZK_HMMV_C_DoorFrontRight_nr
+	{
+		mesh = vehicles/PZKA/HMMV/doorF|Door_FrontRight_C_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontDoor.R 1.0,
+	}
+
+	template vehicle VVA_PZK_HMMV_C_FrontRightShared {
+		template! = VVA_DoorFR_Common,
+	}
+
+	template vehicle VVA_PZK_HMMV_C_FrontRight {
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_C_DoorFrontRight,
+			}
+		}
+		template! = VVA_PZK_HMMV_C_FrontRightShared,
+	}
+	template vehicle VVA_PZK_HMMV_C_FrontRight_nr {
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_C_DoorFrontRight_nr,
+			}
+		}
+		template! = VVA_PZK_HMMV_C_FrontRightShared,
+	}
+}

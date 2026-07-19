@@ -1,0 +1,11 @@
+module Base
+{
+    template vehicle VVA_Hearse_Rear {
+		template! = VVA_Hearse_RearLeft,
+		template! = VVA_Hearse_RearRight,
+	}
+    template vehicle VVA_Hearse_Rear_nr {
+		template! = VVA_Hearse_RearLeft_nr,
+		template! = VVA_Hearse_RearRight_nr,
+	}
+}

@@ -1,0 +1,77 @@
+module Base
+{
+	model VVA_Vehicles_PZKAWagon_Ghoulbuster_FrontFill
+	{
+		mesh = vehicles/PZKA/Normal/wagon|frontfill_PZKAWagon_Ghoulbuster,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKAWagon_Ghoulbuster_FrontFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/wagon|frontfill_PZKAWagon_Ghoulbuster,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKAWagon_Ghoulbuster_FrontFill {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Ghoulbuster_FrontFill,
+			}
+		}
+		template! = VVA_PZKAWagon_Ghoulbuster_FrontLights,
+	}
+	template vehicle VVA_PZKAWagon_Ghoulbuster_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Ghoulbuster_FrontFill_nr,
+			}
+		}
+		template! = VVA_PZKAWagon_Ghoulbuster_FrontLights,
+	}
+	model VVA_Vehicles_PZKAWagon_Grisworld_FrontFill
+	{
+		mesh = vehicles/PZKA/Normal/wagon|frontfill_PZKAWagon_Grisworld,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKAWagon_Grisworld_FrontFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/wagon|frontfill_PZKAWagon_Grisworld,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZKAWagon_Grisworld_FrontFill {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Grisworld_FrontFill,
+			}
+		}
+		template! = VVA_PZKAWagon_Grisworld_FrontLights,
+	}
+	template vehicle VVA_PZKAWagon_Grisworld_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Grisworld_FrontFill_nr,
+			}
+		}
+		template! = VVA_PZKAWagon_Grisworld_FrontLights,
+	}
+}

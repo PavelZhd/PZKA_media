@@ -1,0 +1,127 @@
+module Base
+{
+	model VVA_Vehicles_FVan1_LightFL
+	{
+		mesh = vehicles/PZKA/Vans/FVan_static|Light_FrontLeft_FVan1_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_FVan1_LightFR
+	{
+		mesh = vehicles/PZKA/Vans/FVan_static|Light_FrontRight_FVan1_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_FVan1_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan1_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan1_LightFR,
+			}
+		}
+	}
+	model VVA_Vehicles_FVan2_LightFL
+	{
+		mesh = vehicles/PZKA/Vans/FVan_static|Light_FrontLeft_FVan2_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_FVan2_LightFR
+	{
+		mesh = vehicles/PZKA/Vans/FVan_static|Light_FrontRight_FVan2_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_FVan2_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan2_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan2_LightFR,
+			}
+		}
+	}
+	model VVA_Vehicles_FVan3_LightFL
+	{
+		mesh = vehicles/PZKA/Vans/FVan_static|Light_FrontLeft_FVan3_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_FVan3_LightFR
+	{
+		mesh = vehicles/PZKA/Vans/FVan_static|Light_FrontRight_FVan3_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_FVan3_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan3_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan3_LightFR,
+			}
+		}
+	}
+	template vehicle VVA_FVan_VariableFrontLights
+	{
+		part HeadlightLeft
+		{
+			model 1
+			{
+				file = VVA_Vehicles_FVan1_LightFL,
+			}
+			model 2
+			{
+				file = VVA_Vehicles_FVan2_LightFL,
+			}
+			model 3
+			{
+				file = VVA_Vehicles_FVan3_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model 1
+			{
+				file = VVA_Vehicles_FVan1_LightFR,
+			}
+			model 2
+			{
+				file = VVA_Vehicles_FVan2_LightFR,
+			}
+			model 3
+			{
+				file = VVA_Vehicles_FVan3_LightFR,
+			}
+		}
+		template! = PZKA_VariableFrontLights,
+	}
+}

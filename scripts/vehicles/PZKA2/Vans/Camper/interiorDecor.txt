@@ -1,0 +1,20 @@
+module Base
+{
+	model VVA_Vehicles_Van_Camper_decor
+	{
+		mesh = vehicles/PZKA/Vans/Camper|decor_Camper,
+		texture = Vehicles/[TEXTURE],
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_Van_Camper_Decor {
+		part Interior
+		{
+			model Decor_Camper
+			{
+				file = VVA_Vehicles_Van_Camper_decor,
+			}
+		}
+	}
+}

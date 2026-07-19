@@ -1,0 +1,54 @@
+module Base
+{
+	model VVA_Vehicles_CVan_interior_decor
+	{
+		mesh = vehicles/PZKA/Vans/CVan_static|decor_CVan_interior,
+		texture = Vehicles/vehicle_vanambulanceshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_CVan_interior_Decor {
+		part Interior
+		{
+			model Decor_interior
+			{
+				file = VVA_Vehicles_CVan_interior_decor,
+			}
+		}
+	}
+	model VVA_Vehicles_CVan_multi_decor
+	{
+		mesh = vehicles/PZKA/Vans/CVan_static|decor_CVan_multi,
+		texture = Vehicles/vehicle_vanambulanceshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_CVan_multi_Decor {
+		part Interior
+		{
+			model Decor_multi
+			{
+				file = VVA_Vehicles_CVan_multi_decor,
+			}
+		}
+	}
+	model VVA_Vehicles_CVan_seats_decor
+	{
+		mesh = vehicles/PZKA/Vans/CVan_static|decor_CVan_seats,
+		texture = Vehicles/vehicle_vanambulanceshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_CVan_seats_Decor {
+		part Interior
+		{
+			model Decor_seats
+			{
+				file = VVA_Vehicles_CVan_seats_decor,
+			}
+		}
+	}
+}

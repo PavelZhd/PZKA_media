@@ -1,0 +1,33 @@
+module Base
+{
+	model VVA_Vehicles_PZK_HMMV_LightRL
+	{
+		mesh = vehicles/PZKA/HMMV/static|Light_RearLeft_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_HMMV_LightRR
+	{
+		mesh = vehicles/PZKA/HMMV/static|Light_RearRight_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_HMMV_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_LightRR,
+			}
+		}
+	}
+}

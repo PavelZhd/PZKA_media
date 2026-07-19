@@ -1,0 +1,30 @@
+module Base
+{
+	model VVA_Vehicles_PZK_VanBox_internals
+	{
+		mesh = vehicles/PZKA/VanBox/static|Vehicles_Interior,
+
+		texture = Vehicles/vehicle_vanmeltingpointmetalshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_VanBox_Interior {
+		template! = VVA_Interior,
+		part Interior
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_VanBox_internals,
+			}
+		}
+		part Battery
+		{
+			model Default
+			{
+				file = VVA_Battery270,
+				offset = 0.244248 -0.030572 0.99608,
+			}
+		}
+	}
+}

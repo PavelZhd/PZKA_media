@@ -9,7 +9,7 @@ module Base
 	}
 
 	template vehicle PZKA_Marocco80_lightbar {
-		part ATA2RoofLightbar
+		part VVALightbar
 		{
 			model Default
 			{

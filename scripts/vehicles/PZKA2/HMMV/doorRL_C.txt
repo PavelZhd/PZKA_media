@@ -1,0 +1,46 @@
+module Base
+{
+
+	model VVA_Vehicles_PZK_HMMV_C_DoorRearLeft
+	{
+		mesh = vehicles/PZKA/HMMV/doorR|Door_RearLeft_C_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor.L 1.0,
+	}
+	model VVA_Vehicles_PZK_HMMV_C_DoorRearLeft_nr
+	{
+		mesh = vehicles/PZKA/HMMV/doorR|Door_RearLeft_C_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor.L 1.0,
+	}
+
+
+	template vehicle VVA_PZK_HMMV_C_RearLeftShared {
+		template! = VVA_DoorRL_Common,
+	}
+
+	template vehicle VVA_PZK_HMMV_C_RearLeft {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_C_DoorRearLeft,
+			}
+		}
+		template! = VVA_PZK_HMMV_C_RearLeftShared,
+	}
+	template vehicle VVA_PZK_HMMV_C_RearLeft_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_C_DoorRearLeft_nr,
+			}
+		}
+		template! = VVA_PZK_HMMV_C_RearLeftShared,
+	}
+}

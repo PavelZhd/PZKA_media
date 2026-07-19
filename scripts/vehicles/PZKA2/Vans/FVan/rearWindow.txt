@@ -1,0 +1,19 @@
+module Base
+{
+    model VVA_Vehicles_FVan_RearWindow
+	{
+		mesh = vehicles/PZKA/Vans/FVan_trunk|RearWindow_FVan_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	template vehicle VVA_FVan_RearWindow {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan_RearWindow,
+			}
+		}
+	}
+}

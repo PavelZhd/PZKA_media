@@ -120,7 +120,7 @@ module Base
 			}
 		}*/ 
 		template! = VVA_lightbar,
-		part ATA2RoofLightbar
+		part VVALightbar
 		{
 			model Default
 			{

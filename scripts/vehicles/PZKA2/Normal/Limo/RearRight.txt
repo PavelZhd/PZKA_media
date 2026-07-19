@@ -1,0 +1,134 @@
+module Base
+{
+
+	model VVA_Vehicles_Limo_DoorRearRight
+	{
+		mesh = vehicles/PZKA/Normal/limo_doorR|Door_RearRight_Limo_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor.R 1.0,
+	}
+	model VVA_Vehicles_Limo_DoorRearRight_nr
+	{
+		mesh = vehicles/PZKA/Normal/limo_doorR|Door_RearRight_Limo_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor.R 1.0,
+	}
+	model VVA_Vehicles_Limo_WindowRearRight
+	{
+		mesh = vehicles/PZKA/Normal/limo_doorR|Window_RearRight_Limo_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearWindow.R 1.0,
+	}
+	model VVA_Vehicles_Limo_WindowRearRight_static
+	{
+		mesh = vehicles/PZKA/Normal/limo_doorR|Window_RearRight_Limo_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+
+	template vehicle VVA_Limo_RearRightShared {
+		part WindowRearRight
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_Limo_WindowRearRight,
+            }
+		}
+		template! = VVA_WindowRR,
+		template! = VVA_DoorRR_Common,
+	}
+
+	template vehicle VVA_Limo_RearRight {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_DoorRearRight,
+			}
+		}
+		template! = VVA_Limo_RearRightShared,
+	}
+	template vehicle VVA_Limo_RearRight_nr {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_DoorRearRight_nr,
+			}
+		}
+		template! = VVA_Limo_RearRightShared,
+	}
+	model VVA_Vehicles_Limo_Nyala42_DoorRearRight
+	{
+		mesh = vehicles/PZKA/Normal/limo_doorR|Door_RearRight_Limo_Nyala42_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor.R 1.0,
+	}
+	model VVA_Vehicles_Limo_Nyala42_DoorRearRight_nr
+	{
+		mesh = vehicles/PZKA/Normal/limo_doorR|Door_RearRight_Limo_Nyala42_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor.R 1.0,
+	}
+	model VVA_Vehicles_Limo_Nyala42_WindowRearRight
+	{
+		mesh = vehicles/PZKA/Normal/limo_doorR|Window_RearRight_Limo_Nyala42_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearWindow.R 1.0,
+	}
+	model VVA_Vehicles_Limo_Nyala42_WindowRearRight_static
+	{
+		mesh = vehicles/PZKA/Normal/limo_doorR|Window_RearRight_Limo_Nyala42_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+
+	template vehicle VVA_Limo_Nyala42_RearRightShared {
+		part WindowRearRight
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_Limo_Nyala42_WindowRearRight,
+            }
+		}
+		template! = VVA_WindowRR,
+		template! = VVA_DoorRR_Common,
+	}
+
+	template vehicle VVA_Limo_Nyala42_RearRight {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Nyala42_DoorRearRight,
+			}
+		}
+		template! = VVA_Limo_Nyala42_RearRightShared,
+	}
+	template vehicle VVA_Limo_Nyala42_RearRight_nr {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Limo_Nyala42_DoorRearRight_nr,
+			}
+		}
+		template! = VVA_Limo_Nyala42_RearRightShared,
+	}
+}

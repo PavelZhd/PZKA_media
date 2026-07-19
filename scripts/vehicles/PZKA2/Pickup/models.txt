@@ -1,0 +1,59 @@
+module Base
+{
+    model VVA_Vehicles_PZK_Pickup
+	{
+		mesh = vehicles/PZKA/Pickup/static|Model,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Pickup_nr
+	{
+		mesh = vehicles/PZKA/Pickup/static|Model,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Pickup_D100
+	{
+		mesh = vehicles/PZKA/Pickup/static|Model_D100,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Pickup_D100_nr
+	{
+		mesh = vehicles/PZKA/Pickup/static|Model_D100,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Pickup_Tow
+	{
+		mesh = vehicles/PZKA/Pickup/static|Model_Tow,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Pickup_Tow_nr
+	{
+		mesh = vehicles/PZKA/Pickup/static|Model_Tow,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Pickup_Van
+	{
+		mesh = vehicles/PZKA/Pickup/static|Model_Van,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Pickup_Van_nr
+	{
+		mesh = vehicles/PZKA/Pickup/static|Model_Van,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

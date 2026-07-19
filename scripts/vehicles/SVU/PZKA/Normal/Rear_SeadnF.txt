@@ -1,0 +1,9 @@
+module Base
+{
+    template vehicle PU_armor_PZK_NormalF_Rear {
+		template! = PU_armor_Normal_doorsRL,
+		template! = PU_armor_Normal_doorwindowsRL,
+		template! = PU_armor_PZK_Normal_doorsRR,
+		template! = PU_armor_PZK_Normal_doorwindowsRR,
+	}
+}

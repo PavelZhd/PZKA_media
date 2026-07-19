@@ -1,0 +1,64 @@
+module Base
+{
+	model VVA_Vehicles_PZK_VanBox_Shutter_Trunk
+	{
+		mesh = vehicles/PZKA/VanBox/Shutter_trunk|Trunk_Shutter_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBoxBone 1.0,
+		boneWeight = TrunkBox5Bone 1.0,
+		boneWeight = TrunkBox6Bone 1.0,
+		boneWeight = TrunkBox7Bone 1.0,
+		boneWeight = TrunkBox8Bone 1.0,
+		boneWeight = TrunkBox9Bone 1.0,
+		boneWeight = TrunkBox10Bone 1.0,
+		boneWeight = TrunkBox11Bone 1.0,
+		boneWeight = TrunkBox12Bone 1.0,
+		boneWeight = TrunkBox13Bone 1.0,
+		boneWeight = TrunkBox14Bone 1.0,
+		boneWeight = TrunkBox15Bone 1.0,
+		boneWeight = TrunkBox16Bone 1.0,
+	}
+	model VVA_Vehicles_PZK_VanBox_Shutter_Trunk_nr
+	{
+		mesh = vehicles/PZKA/VanBox/Shutter_trunk|Trunk_Shutter_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBoxBone 1.0,
+		boneWeight = TrunkBox5Bone 1.0,
+		boneWeight = TrunkBox6Bone 1.0,
+		boneWeight = TrunkBox7Bone 1.0,
+		boneWeight = TrunkBox8Bone 1.0,
+		boneWeight = TrunkBox9Bone 1.0,
+		boneWeight = TrunkBox10Bone 1.0,
+		boneWeight = TrunkBox11Bone 1.0,
+		boneWeight = TrunkBox12Bone 1.0,
+		boneWeight = TrunkBox13Bone 1.0,
+		boneWeight = TrunkBox14Bone 1.0,
+		boneWeight = TrunkBox15Bone 1.0,
+		boneWeight = TrunkBox16Bone 1.0,
+	}
+	template vehicle VVA_PZK_VanBox_Shutter_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_VanBox_Shutter_Trunk,
+			}
+		}
+		template! = VVA_DoorRear_Common,
+
+	}
+	template vehicle VVA_PZK_VanBox_Shutter_Trunk_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_VanBox_Shutter_Trunk_nr,
+			}
+		}
+		template! = VVA_DoorRear_Common,
+	}
+}

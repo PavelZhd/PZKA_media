@@ -1,0 +1,114 @@
+module Base
+{
+	model SVU_PZKA_Van_F_Hood_Scoop
+	{
+		mesh = vehicles/PZKA/Vans/hood|Hood_F_Scoop_obj,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_PZKA_Van_F_Hood_Scoop_nr
+	{
+		mesh = vehicles/PZKA/Vans/hood|Hood_F_Scoop_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+
+	template vehicle VVA_SVU_Hood_PZKA_Van_F {
+		template! = VVA_SVU_SwapHood,
+		part EngineDoor
+		{
+			model Scooped
+			{
+				file = SVU_PZKA_Van_F_Hood_Scoop,
+			}
+		}
+	}
+	template vehicle VVA_SVU_Hood_PZKA_Van_F_nr {
+		template! = VVA_SVU_SwapHood,
+		part EngineDoor
+		{
+			model Scooped
+			{
+				file = SVU_PZKA_Van_F_Hood_Scoop_nr,
+			}
+		}
+	}
+	model SVU_PZKA_Van_C_Hood_Scoop
+	{
+		mesh = vehicles/PZKA/Vans/hood|Hood_C_Scoop_obj,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_PZKA_Van_C_Hood_Scoop_nr
+	{
+		mesh = vehicles/PZKA/Vans/hood|Hood_C_Scoop_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+
+	template vehicle VVA_SVU_Hood_PZKA_Van_C {
+		template! = VVA_SVU_SwapHood,
+		part EngineDoor
+		{
+			model Scooped
+			{
+				file = SVU_PZKA_Van_C_Hood_Scoop,
+			}
+		}
+	}
+	template vehicle VVA_SVU_Hood_PZKA_Van_C_nr {
+		template! = VVA_SVU_SwapHood,
+		part EngineDoor
+		{
+			model Scooped
+			{
+				file = SVU_PZKA_Van_C_Hood_Scoop_nr,
+			}
+		}
+	}
+	model SVU_PZKA_Van_D_Hood_Scoop
+	{
+		mesh = vehicles/PZKA/Vans/hood|Hood_D_Scoop_obj,
+		shader = vehicle_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SVU_PZKA_Van_D_Hood_Scoop_nr
+	{
+		mesh = vehicles/PZKA/Vans/hood|Hood_D_Scoop_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		scale = 0.01,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+
+	template vehicle VVA_SVU_Hood_PZKA_Van_D {
+		template! = VVA_SVU_SwapHood,
+		part EngineDoor
+		{
+			model Scooped
+			{
+				file = SVU_PZKA_Van_D_Hood_Scoop,
+			}
+		}
+	}
+	template vehicle VVA_SVU_Hood_PZKA_Van_D_nr {
+		template! = VVA_SVU_SwapHood,
+		part EngineDoor
+		{
+			model Scooped
+			{
+				file = SVU_PZKA_Van_D_Hood_Scoop_nr,
+			}
+		}
+	}
+}

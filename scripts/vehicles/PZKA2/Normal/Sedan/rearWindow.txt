@@ -1,0 +1,19 @@
+module Base
+{
+    model VVA_Vehicles_PZKASedan_RearWindow
+	{
+		mesh = vehicles/PZKA/Normal/sedan|RearWindow_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKASedan_RearWindow {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_RearWindow,
+			}
+		}
+	}
+}

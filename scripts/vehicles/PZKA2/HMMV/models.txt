@@ -1,0 +1,101 @@
+module Base
+{
+    model VVA_Vehicles_PZK_HMMV_1
+	{
+		mesh = vehicles/PZKA/HMMV/static|Model_1,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_HMMV_1_nr
+	{
+		mesh = vehicles/PZKA/HMMV/static|Model_1,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_HMMV_2
+	{
+		mesh = vehicles/PZKA/HMMV/static|Model_2,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_HMMV_2_nr
+	{
+		mesh = vehicles/PZKA/HMMV/static|Model_2,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_HMMV_2M
+	{
+		mesh = vehicles/PZKA/HMMV/static|Model_2M,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_HMMV_2M_nr
+	{
+		mesh = vehicles/PZKA/HMMV/static|Model_2M,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_HMMV_3
+	{
+		mesh = vehicles/PZKA/HMMV/static|Model_3,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_HMMV_3_nr
+	{
+		mesh = vehicles/PZKA/HMMV/static|Model_3,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_HMMV_4
+	{
+		mesh = vehicles/PZKA/HMMV/static|Model_4,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_HMMV_4_nr
+	{
+		mesh = vehicles/PZKA/HMMV/static|Model_4,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_HMMV_5
+	{
+		mesh = vehicles/PZKA/HMMV/static|Model_5,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_HMMV_5_nr
+	{
+		mesh = vehicles/PZKA/HMMV/static|Model_5,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_HMMV_6
+	{
+		mesh = vehicles/PZKA/HMMV/static|Model_6,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_HMMV_6_nr
+	{
+		mesh = vehicles/PZKA/HMMV/static|Model_6,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

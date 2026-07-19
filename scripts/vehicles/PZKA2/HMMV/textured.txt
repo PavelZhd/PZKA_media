@@ -1,0 +1,37 @@
+module Base
+{
+	model VVA_Vehicles_PZK_HMMV_battery
+	{
+		mesh = vehicles/PZKA/HMMV/static|Battery,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model VVA_Vehicles_PZK_HMMV_internals
+	{
+		mesh = vehicles/PZKA/HMMV/static|Vehicles_Interior,
+
+		texture = Vehicles/Vehicle_pzkHMMWV1Civshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_HMMV_Interior {
+		template! = VVA_Interior,
+		part Interior
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_internals,
+			}
+		}
+		part Battery
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_battery,
+			}
+		}
+	}
+}

@@ -1,0 +1,77 @@
+module Base
+{
+	template vehicle PZKA_Cerise93_sedan_shared {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Sedan_RearWindow,
+			}
+		}
+		part WindowRearLeft
+		{
+			model Static
+			{
+				file = PZKA_Vehicles_Cerise93_Sedan_WindowRearLeft_static,
+			}
+		}
+		part WindowRearRight
+		{
+			model Static
+			{
+				file = PZKA_Vehicles_Cerise93_Sedan_WindowRearRight_static,
+			}
+		}
+	}
+
+	template vehicle PZKA_Cerise93_sedan {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Sedan_Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		template! = PZKA_Cerise93_shared4Doors,
+		template! = PZKA_Cerise93_sedan_shared,
+	}
+
+	template vehicle PZKA_Cerise93_sedan_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Sedan_Trunk_nr,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+		}
+		template! = PZKA_Cerise93_shared4Doors_nr,
+		template! = PZKA_Cerise93_sedan_shared,
+	}
+
+
+
+	template vehicle PZKA_Cerise93_sedan_taxi {
+		part PZKATaxiSign
+		{
+			model Normal
+			{
+				file = PZKA_Vehicles_Cerise93_Taxi,
+			}			
+			category = nodisplay,
+            area = Engine,
+            specificItem = false,
+            itemType = Base.LightBulb,
+            setAllModelsVisible = true,
+			lua
+	    	{
+				create = Vehicles.Create.Default,
+	    	}
+		}
+	}
+}

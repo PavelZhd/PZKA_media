@@ -1,0 +1,35 @@
+module Base
+{
+	model VVA_Vehicles_PZK_HMMV_SeatFL
+	{
+		mesh = vehicles/PZKA/HMMV/static|Seat_FrontLeft_obj,
+
+		texture = Vehicles/Vehicle_pzkHMMWV1Civshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_HMMV_SeatFR
+	{
+		mesh = vehicles/PZKA/HMMV/static|Seat_FrontRight_obj,
+
+		texture = Vehicles/Vehicle_pzkHMMWV1Civshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_HMMV_SeatsF {
+		part SeatFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_SeatFL,
+			}
+		}
+		part SeatFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_SeatFR,
+			}
+		}
+	}
+}

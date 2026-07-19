@@ -1,0 +1,62 @@
+module Base
+{
+
+	model VVA_Vehicles_Van_Camper_DoorRearRight
+	{
+		mesh = vehicles/PZKA/Vans/Camper|Door_RearRight_Camper_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor1.R 1.0,
+		boneWeight = RearDoor2.R 1.0,
+	}
+	model VVA_Vehicles_Van_Camper_DoorRearRight_nr
+	{
+		mesh = vehicles/PZKA/Vans/Camper|Door_RearRight_Camper_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor1.R 1.0,
+		boneWeight = RearDoor2.R 1.0,
+	}
+	model VVA_Vehicles_Van_Camper_WindowRearRight
+	{
+		mesh = vehicles/PZKA/Vans/Camper|Window_RearRight_Camper_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+
+
+	template vehicle VVA_Van_Camper_RearRightShared {
+		part WindowRearRight
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_Van_Camper_WindowRearRight,
+            }
+		}
+		template! = VVA_DoorRR_Common,
+	}
+
+	template vehicle VVA_Van_Camper_RearRight {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_Camper_DoorRearRight,
+			}
+		}
+		template! = VVA_Van_Camper_RearRightShared,
+	}
+	template vehicle VVA_Van_Camper_RearRight_nr {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_Camper_DoorRearRight_nr,
+			}
+		}
+		template! = VVA_Van_Camper_RearRightShared,
+	}
+}

@@ -1,0 +1,33 @@
+module Base
+{
+	model VVA_Vehicles_Van_Bed_LightRL
+	{
+		mesh = vehicles/PZKA/Vans/Bed|Light_RearLeft_Bed_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Van_Bed_LightRR
+	{
+		mesh = vehicles/PZKA/Vans/Bed|Light_RearRight_Bed_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_Van_Bed_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_Bed_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Van_Bed_LightRR,
+			}
+		}
+	}
+}

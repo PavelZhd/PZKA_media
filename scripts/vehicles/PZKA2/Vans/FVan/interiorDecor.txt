@@ -1,0 +1,20 @@
+module Base
+{
+	model VVA_Vehicles_FVan_Fill_decor
+	{
+		mesh = vehicles/PZKA/Vans/FVan_static|decor_FVan_Fill,
+		texture = Vehicles/vehicle_vanambulanceshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_FVan_Fill_Decor {
+		part Interior
+		{
+			model Decor_Fill
+			{
+				file = VVA_Vehicles_FVan_Fill_decor,
+			}
+		}
+	}
+}

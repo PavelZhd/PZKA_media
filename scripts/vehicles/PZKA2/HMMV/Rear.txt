@@ -1,0 +1,19 @@
+module Base
+{
+    template vehicle VVA_PZK_HMMV_Rear {
+		template! = VVA_PZK_HMMV_RearLeft,
+		template! = VVA_PZK_HMMV_RearRight,
+	}
+    template vehicle VVA_PZK_HMMV_Rear_nr {
+		template! = VVA_PZK_HMMV_RearLeft_nr,
+		template! = VVA_PZK_HMMV_RearRight_nr,
+	}
+    template vehicle VVA_PZK_HMMV_C_Rear {
+		template! = VVA_PZK_HMMV_C_RearLeft,
+		template! = VVA_PZK_HMMV_C_RearRight,
+	}
+    template vehicle VVA_PZK_HMMV_C_Rear_nr {
+		template! = VVA_PZK_HMMV_C_RearLeft_nr,
+		template! = VVA_PZK_HMMV_C_RearRight_nr,
+	}
+}

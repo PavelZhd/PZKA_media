@@ -1,0 +1,19 @@
+module Base
+{
+    template vehicle VVA_Limo_Rear {
+		template! = VVA_Limo_RearLeft,
+		template! = VVA_Limo_RearRight,
+	}
+    template vehicle VVA_Limo_Rear_nr {
+		template! = VVA_Limo_RearLeft_nr,
+		template! = VVA_Limo_RearRight_nr,
+	}
+    template vehicle VVA_Limo_Nyala42_Rear {
+		template! = VVA_Limo_Nyala42_RearLeft,
+		template! = VVA_Limo_Nyala42_RearRight,
+	}
+    template vehicle VVA_Limo_Nyala42_Rear_nr {
+		template! = VVA_Limo_Nyala42_RearLeft_nr,
+		template! = VVA_Limo_Nyala42_RearRight_nr,
+	}
+}

@@ -1,0 +1,355 @@
+module Base
+{
+	model VVA_Vehicles_PZKASedan_Cerise_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearLeft_PZKASedan_Cerise_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_Cerise_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearRight_PZKASedan_Cerise_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKASedan_Cerise_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Cerise_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Cerise_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZKASedan_Hellion_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearLeft_PZKASedan_Hellion_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_Hellion_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearRight_PZKASedan_Hellion_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKASedan_Hellion_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Hellion_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Hellion_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZKASedan_Homelander_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearLeft_PZKASedan_Homelander_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_Homelander_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearRight_PZKASedan_Homelander_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKASedan_Homelander_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Homelander_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Homelander_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZKASedan_Mayor_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearLeft_PZKASedan_Mayor_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_Mayor_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearRight_PZKASedan_Mayor_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKASedan_Mayor_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Mayor_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Mayor_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZKASedan_Nayala_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearLeft_PZKASedan_Nayala_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_Nayala_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearRight_PZKASedan_Nayala_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKASedan_Nayala_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Nayala_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Nayala_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZKASedan_Nyala42_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearLeft_PZKASedan_Nyala42_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_Nyala42_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearRight_PZKASedan_Nyala42_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKASedan_Nyala42_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Nyala42_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Nyala42_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZKASedan_Rapier_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearLeft_PZKASedan_Rapier_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_Rapier_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearRight_PZKASedan_Rapier_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKASedan_Rapier_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Rapier_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Rapier_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZKASedan_TWD_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearLeft_PZKASedan_TWD_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_TWD_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearRight_PZKASedan_TWD_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKASedan_TWD_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_TWD_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_TWD_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZKASedan_TWD91_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearLeft_PZKASedan_TWD91_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKASedan_TWD91_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/sedan|Light_RearRight_PZKASedan_TWD91_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKASedan_TWD91_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_TWD91_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_TWD91_LightRR,
+			}
+		}
+	}
+	template vehicle VVA_PZKASedan_VariableRearLights
+	{
+		part HeadlightRearLeft
+		{
+			model _Cerise
+			{
+				file = VVA_Vehicles_PZKASedan_Cerise_LightRL,
+			}
+			model _Hellion
+			{
+				file = VVA_Vehicles_PZKASedan_Hellion_LightRL,
+			}
+			model _Homelander
+			{
+				file = VVA_Vehicles_PZKASedan_Homelander_LightRL,
+			}
+			model _Mayor
+			{
+				file = VVA_Vehicles_PZKASedan_Mayor_LightRL,
+			}
+			model _Nayala
+			{
+				file = VVA_Vehicles_PZKASedan_Nayala_LightRL,
+			}
+			model _Nyala42
+			{
+				file = VVA_Vehicles_PZKASedan_Nyala42_LightRL,
+			}
+			model _Rapier
+			{
+				file = VVA_Vehicles_PZKASedan_Rapier_LightRL,
+			}
+			model _TWD
+			{
+				file = VVA_Vehicles_PZKASedan_TWD_LightRL,
+			}
+			model _TWD91
+			{
+				file = VVA_Vehicles_PZKASedan_TWD91_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model _Cerise
+			{
+				file = VVA_Vehicles_PZKASedan_Cerise_LightRR,
+			}
+			model _Hellion
+			{
+				file = VVA_Vehicles_PZKASedan_Hellion_LightRR,
+			}
+			model _Homelander
+			{
+				file = VVA_Vehicles_PZKASedan_Homelander_LightRR,
+			}
+			model _Mayor
+			{
+				file = VVA_Vehicles_PZKASedan_Mayor_LightRR,
+			}
+			model _Nayala
+			{
+				file = VVA_Vehicles_PZKASedan_Nayala_LightRR,
+			}
+			model _Nyala42
+			{
+				file = VVA_Vehicles_PZKASedan_Nyala42_LightRR,
+			}
+			model _Rapier
+			{
+				file = VVA_Vehicles_PZKASedan_Rapier_LightRR,
+			}
+			model _TWD
+			{
+				file = VVA_Vehicles_PZKASedan_TWD_LightRR,
+			}
+			model _TWD91
+			{
+				file = VVA_Vehicles_PZKASedan_TWD91_LightRR,
+			}
+		}
+		template! = PZKA_VariableRearLights,
+	}
+}

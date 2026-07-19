@@ -1,0 +1,35 @@
+module Base
+{
+	model VVA_Vehicles_Hearse_SeatRL
+	{
+		mesh = vehicles/PZKA/Normal/hearse|Seat_RearLeft_Hearse_obj,
+
+		texture = Vehicles/vehicle_pzkHearseshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Hearse_SeatRR
+	{
+		mesh = vehicles/PZKA/Normal/hearse|Seat_RearRight_Hearse_obj,
+
+		texture = Vehicles/vehicle_pzkHearseshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_Hearse_SeatsR {
+		part SeatRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Hearse_SeatRL,
+			}
+		}
+		part SeatRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Hearse_SeatRR,
+			}
+		}
+	}
+}

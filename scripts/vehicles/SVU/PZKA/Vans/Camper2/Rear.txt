@@ -1,0 +1,7 @@
+module Base
+{
+    template vehicle PU_armor_Van_Camper_Rear {
+		template! = PU_armor_Van_Camper_doorsRR,
+		template! = PU_armor_Van_Camper_doorwindowsRR,
+	}
+}

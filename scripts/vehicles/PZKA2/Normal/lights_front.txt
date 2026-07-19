@@ -1,0 +1,317 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Normal_Cerise_LightFL
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontLeft_Cerise_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_Cerise_LightFR
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontRight_Cerise_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Normal_Cerise_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Cerise_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Cerise_LightFR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_Normal_Hellion_LightFL
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontLeft_Hellion_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_Hellion_LightFR
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontRight_Hellion_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Normal_Hellion_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Hellion_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Hellion_LightFR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_Normal_Homelander_LightFL
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontLeft_Homelander_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_Homelander_LightFR
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontRight_Homelander_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Normal_Homelander_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Homelander_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Homelander_LightFR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_Normal_Mayor_LightFL
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontLeft_Mayor_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_Mayor_LightFR
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontRight_Mayor_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Normal_Mayor_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Mayor_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Mayor_LightFR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_Normal_Nyala_LightFL
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontLeft_Nyala_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_Nyala_LightFR
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontRight_Nyala_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Normal_Nyala_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala_LightFR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_Normal_Nyala42_LightFL
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontLeft_Nyala42_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_Nyala42_LightFR
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontRight_Nyala42_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Normal_Nyala42_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala42_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala42_LightFR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_Normal_Rapier_LightFL
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontLeft_Rapier_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_Rapier_LightFR
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontRight_Rapier_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Normal_Rapier_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Rapier_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Rapier_LightFR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_Normal_TWD_LightFL
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontLeft_TWD_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_TWD_LightFR
+	{
+		mesh = vehicles/PZKA/Normal/static|Light_FrontRight_TWD_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Normal_TWD_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_TWD_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_TWD_LightFR,
+			}
+		}
+	}
+	template vehicle VVA_PZK_Normal_VariableFrontLights
+	{
+		part HeadlightLeft
+		{
+			model _Cerise
+			{
+				file = VVA_Vehicles_PZK_Normal_Cerise_LightFL,
+			}
+			model _Hellion
+			{
+				file = VVA_Vehicles_PZK_Normal_Hellion_LightFL,
+			}
+			model _Homelander
+			{
+				file = VVA_Vehicles_PZK_Normal_Homelander_LightFL,
+			}
+			model _Mayor
+			{
+				file = VVA_Vehicles_PZK_Normal_Mayor_LightFL,
+			}
+			model _Nyala
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala_LightFL,
+			}
+			model _Nyala42
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala42_LightFL,
+			}
+			model _Rapier
+			{
+				file = VVA_Vehicles_PZK_Normal_Rapier_LightFL,
+			}
+			model _TWD
+			{
+				file = VVA_Vehicles_PZK_Normal_TWD_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model _Cerise
+			{
+				file = VVA_Vehicles_PZK_Normal_Cerise_LightFR,
+			}
+			model _Hellion
+			{
+				file = VVA_Vehicles_PZK_Normal_Hellion_LightFR,
+			}
+			model _Homelander
+			{
+				file = VVA_Vehicles_PZK_Normal_Homelander_LightFR,
+			}
+			model _Mayor
+			{
+				file = VVA_Vehicles_PZK_Normal_Mayor_LightFR,
+			}
+			model _Nyala
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala_LightFR,
+			}
+			model _Nyala42
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala42_LightFR,
+			}
+			model _Rapier
+			{
+				file = VVA_Vehicles_PZK_Normal_Rapier_LightFR,
+			}
+			model _TWD
+			{
+				file = VVA_Vehicles_PZK_Normal_TWD_LightFR,
+			}
+		}
+		template! = PZKA_VariableFrontLights,
+	}
+}

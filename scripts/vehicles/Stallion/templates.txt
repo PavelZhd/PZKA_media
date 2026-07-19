@@ -313,7 +313,7 @@ module Base
 	}
 	template vehicle PZKA_Stallion_lightbar {	
 		template! = VVA_lightbar,
-		part ATA2RoofLightbar
+		part VVALightbar
 		{
 			model Normal
 			{

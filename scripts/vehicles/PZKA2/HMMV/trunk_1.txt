@@ -1,0 +1,52 @@
+module Base
+{
+	model VVA_Vehicles_PZK_HMMV_1_Trunk
+	{
+		mesh = vehicles/PZKA/HMMV/trunk_1|Trunk_1_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk.L 1.0,
+		boneWeight = Trunk.R 1.0,
+	}
+	model VVA_Vehicles_PZK_HMMV_1_Trunk_nr
+	{
+		mesh = vehicles/PZKA/HMMV/trunk_1|Trunk_1_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk.L 1.0,
+		boneWeight = Trunk.R 1.0,
+	}
+	template vehicle VVA_PZK_HMMV_1_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_1_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+		}
+		template! = VVA_PZK_HMMV_1_RearWindow,
+
+	}
+	template vehicle VVA_PZK_HMMV_1_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_1_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+ 		part WindshieldRear
+		{
+			parent = TrunkDoor,
+		}
+		template! = VVA_PZK_HMMV_1_RearWindow,
+	}
+}

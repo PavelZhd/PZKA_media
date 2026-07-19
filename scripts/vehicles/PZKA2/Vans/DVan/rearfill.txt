@@ -1,0 +1,77 @@
+module Base
+{
+	model VVA_Vehicles_DVan1_RearFill
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|rearfill_DVan1,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_DVan1_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|rearfill_DVan1,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_DVan1_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan1_RearFill,
+			}
+		}
+		template! = VVA_DVan1_RearLights,
+	}
+	template vehicle VVA_DVan1_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan1_RearFill_nr,
+			}
+		}
+		template! = VVA_DVan1_RearLights,
+	}
+	model VVA_Vehicles_DVan3_RearFill
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|rearfill_DVan3,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_DVan3_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|rearfill_DVan3,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_DVan3_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan3_RearFill,
+			}
+		}
+		template! = VVA_DVan3_RearLights,
+	}
+	template vehicle VVA_DVan3_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan3_RearFill_nr,
+			}
+		}
+		template! = VVA_DVan3_RearLights,
+	}
+}

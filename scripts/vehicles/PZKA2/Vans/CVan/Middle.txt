@@ -1,0 +1,11 @@
+module Base
+{
+    template vehicle VVA_CVan_Middle {
+		template! = VVA_CVan_MiddleRight,
+		template! = VVA_CVan_Camper_MiddleLeft,
+	}
+    template vehicle VVA_CVan_Middle_nr {
+		template! = VVA_CVan_MiddleRight_nr,
+		template! = VVA_CVan_Camper_MiddleLeft,
+	}
+}

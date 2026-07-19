@@ -1,0 +1,27 @@
+module Base
+{
+    template vehicle VVA_VVan_Rear {
+		template! = VVA_VVan_RearLeft,
+		template! = VVA_VVan_RearRight,
+	}
+    template vehicle VVA_VVan_Rear_nr {
+		template! = VVA_VVan_RearLeft_nr,
+		template! = VVA_VVan_RearRight_nr,
+	}
+    template vehicle VVA_VVan_Open_Rear {
+		template! = VVA_VVan_Open_RearLeft,
+		template! = VVA_VVan_Open_RearRight,
+	}
+    template vehicle VVA_VVan_Open_Rear_nr {
+		template! = VVA_VVan_Open_RearLeft_nr,
+		template! = VVA_VVan_Open_RearRight_nr,
+	}
+    template vehicle VVA_VVan_Blind_Rear {
+		template! = VVA_VVan_Blind_RearLeft,
+		template! = VVA_VVan_Blind_RearRight,
+	}
+    template vehicle VVA_VVan_Blind_Rear_nr {
+		template! = VVA_VVan_Blind_RearLeft_nr,
+		template! = VVA_VVan_Blind_RearRight_nr,
+	}
+}

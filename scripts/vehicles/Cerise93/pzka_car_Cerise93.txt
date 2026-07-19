@@ -1,0 +1,173 @@
+module Base
+{
+	model PZKA_Vehicles_Cerise93_Sedan_a
+	{
+		mesh = vehicles/pzka_Cerise93|Vehicles_Sedan_Cerise93,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cerise93_Wagon_a
+	{
+		mesh = vehicles/pzka_Cerise93|Vehicles_Wagon_Cerise93,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cerise93_Sedan_nr_a
+	{
+		mesh = vehicles/pzka_Cerise93|Vehicles_Sedan_Cerise93,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	
+	model PZKA_Vehicles_Cerise93_LightFL
+	{
+		mesh = vehicles/pzka_Cerise93|Light_FrontLeft_Cerise93_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}	
+	model PZKA_Vehicles_Cerise93_LightFR
+	{
+		mesh = vehicles/pzka_Cerise93|Light_FrontRight_Cerise93_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Cerise93_Front_Light {
+		part HeadlightLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_LightFL,
+			}
+		}
+		part HeadlightRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_LightFR,
+			}
+		}
+	}
+	
+	model PZKA_Vehicles_Cerise93_Sedan_LightRL
+	{
+		mesh = vehicles/pzka_Cerise93|Light_RearLeft_Sedan_Cerise93_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cerise93_Sedan_LightRR
+	{
+		mesh = vehicles/pzka_Cerise93|Light_RearRight_Sedan_Cerise93_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Cerise93_Sedan_Lights {
+		template! = PZKA_Cerise93_Front_Light,
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Sedan_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Sedan_LightRR,
+			}
+		}
+	}
+
+	model PZKA_Vehicles_Cerise93_Wagon_LightRL
+	{
+		mesh = vehicles/pzka_Cerise93|Light_RearLeft_Wagon_Cerise93_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model PZKA_Vehicles_Cerise93_Wagon_LightRR
+	{
+		mesh = vehicles/pzka_Cerise93|Light_RearRight_Wagon_Cerise93_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle PZKA_Cerise93_Wagon_Lights {
+		template! = PZKA_Cerise93_Front_Light,
+		part HeadlightRearLeft 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Wagon_LightRL,
+			}
+		}
+		part HeadlightRearRight 
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Wagon_LightRR,
+			}
+		}
+	}
+
+	template vehicle PZKA_Cerise93_sedan_C93 {
+		template! = PZKA_Cerise93_sedan,
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Hood_C93,
+			}
+		}
+	}
+	template vehicle PZKA_Cerise93_sedan_C93_nr {
+		template! = PZKA_Cerise93_sedan_nr,
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Hood_C93_nr,
+			}
+		}
+	}
+	template vehicle PZKA_Cerise93_wagon_C93 {
+		template! = PZKA_Cerise93_wagon,
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Hood_C93,
+			}
+		}
+	}
+	template vehicle PZKA_Cerise93_wagon_C93_nr {
+		template! = PZKA_Cerise93_wagon_nr,
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_Cerise93_Hood_C93_nr,
+			}
+		}
+	}
+	template vehicle PZKA_Cerise93_sedan_C93_police {
+		template! = PZKA_Cerise93_sedan_C93_nr,
+		template! = PZKA_Cerise93_lightbar,
+	}
+	template vehicle PZKA_Cerise93_sedan_C93_taxi {
+		template! = PZKA_Cerise93_sedan_C93_nr,
+		template! = PZKA_Cerise93_sedan_taxi,
+	}
+	template vehicle PZKA_Cerise93_wagon_C93_police {
+		template! = PZKA_Cerise93_wagon_C93_nr,
+		template! = PZKA_Cerise93_lightbar,
+	}
+}

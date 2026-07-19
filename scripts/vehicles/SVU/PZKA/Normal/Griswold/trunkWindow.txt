@@ -1,0 +1,106 @@
+module Base
+{
+	model SVU_R_Window_Gris_griswold_Light_a
+ 	{
+		mesh = vehicles/SVU/PZKA/Normal/griswold|windowlightrear_griswold,
+		shader = vehicle_armor,
+ 		scale = 0.01,
+		static = FALSE,
+ 	}
+	model SVU_R_Window_Gris_griswold_Light_Spiked_a
+	{
+		mesh = vehicles/SVU/PZKA/Normal/griswold|windowlightspikedrear_griswold,
+        shader = vehicle_armor,
+        scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_R_Window_Gris_griswold_Heavy_a
+	{
+		mesh = vehicles/SVU/PZKA/Normal/griswold|windowheavyrear_griswold,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_R_Window_Gris_griswold_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU/PZKA/Normal/griswold|windowheavyspikedrear_griswold,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_R_Window_Gris_griswold_Reinforced_a
+	{
+		mesh = vehicles/SVU/PZKA/Normal/griswold|windowreinforcedrear_griswold,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+    template vehicle PU_armor_Gris_griswold_trunkWindow {
+        part ATA2ProtectionWindshieldRear
+		{
+			parent = TrunkDoor,
+			model anchorNormal {
+				file = VVA_SVU_Dummy,
+			}
+			model anchorRusted {
+				file = VVA_SVU_DummyRust,
+			}
+			model Light
+			{
+				file = SVU_R_Window_Gris_griswold_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_R_Window_Gris_griswold_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_R_Window_Gris_griswold_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_R_Window_Gris_griswold_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_R_Window_Gris_griswold_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_R_Window_Gris_griswold_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_R_Window_Gris_griswold_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_R_Window_Gris_griswold_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_R_Window_Gris_griswold_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_R_Window_Gris_griswold_Reinforced_a,
+			}
+
+			table install
+            {
+            	complete = ATATuning2.InstallComplete.AnchorTuning,
+            }
+            table uninstall
+            {
+            	complete = ATATuning2.UninstallComplete.AnchorTuning,
+            }
+            lua
+            {
+            	create = ATATuning2.Create.AnchorTuning,
+        		init = ATATuning2.Init.AnchorTuning,
+        		update = ATATuning2.Update.Protection,
+            }
+		}
+    }
+}

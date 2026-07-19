@@ -1,0 +1,17 @@
+module Base
+{
+    model VVA_Vehicles_Van_Bed
+	{
+		mesh = vehicles/PZKA/Vans/Bed|Model_Bed,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_Van_Bed_nr
+	{
+		mesh = vehicles/PZKA/Vans/Bed|Model_Bed,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

@@ -1,0 +1,45 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Offroad_C_DoorFrontLeft
+	{
+		mesh = vehicles/PZKA/Offroad/doorF|Door_FrontLeft_C_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontDoor.L 1.0,
+	}
+	model VVA_Vehicles_PZK_Offroad_C_DoorFrontLeft_nr
+	{
+		mesh = vehicles/PZKA/Offroad/doorF|Door_FrontLeft_C_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = FrontDoor.L 1.0,
+	}
+
+	template vehicle VVA_PZK_Offroad_C_FrontLeftShared {
+		template! = VVA_DoorFL_Common,
+	}
+
+	template vehicle VVA_PZK_Offroad_C_FrontLeft {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Offroad_C_DoorFrontLeft,
+			}
+		}
+		template! = VVA_PZK_Offroad_C_FrontLeftShared,
+	}
+
+	template vehicle VVA_PZK_Offroad_C_FrontLeft_nr {
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Offroad_C_DoorFrontLeft_nr,
+			}
+		}
+		template! = VVA_PZK_Offroad_C_FrontLeftShared,
+	}
+}

@@ -1,0 +1,20 @@
+module Base
+{
+	model VVA_Vehicles_VVan_Multi_decor
+	{
+		mesh = vehicles/PZKA/Vans/VVan_static|decor_Multi,
+		texture = Vehicles/[TEXTURE],
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_VVan_Multi_Decor {
+		part Interior
+		{
+			model Decor_Multi
+			{
+				file = VVA_Vehicles_VVan_Multi_decor,
+			}
+		}
+	}
+}

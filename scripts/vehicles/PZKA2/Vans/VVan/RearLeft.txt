@@ -1,0 +1,168 @@
+module Base
+{
+	model VVA_Vehicles_VVan_DoorRearLeft
+	{
+		mesh = vehicles/VVA/Vans/doorR|Door_RearLeft_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearDoor.L 1.0,
+	}
+	model VVA_Vehicles_VVan_DoorRearLeft_nr
+	{
+		mesh = vehicles/VVA/Vans/doorR|Door_RearLeft_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearDoor.L 1.0,
+	}
+
+	model VVA_Vehicles_VVan_WindowRearLeft
+	{
+		mesh = vehicles/VVA/Vans/doorR|Window_RearLeft_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearWindow.L 1.0,
+	}
+
+	template vehicle VVA_VVan_MiddleLeftShared {
+		part WindowMiddleLeft
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_VVan_WindowRearLeft,
+            }
+		}
+		template! = VVA_WindowML,
+		template! = VVA_DoorML_Common,
+	}
+
+	template vehicle VVA_VVan_MiddleLeft {
+		part DoorMiddleLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VVan_DoorRearLeft,
+			}
+		}
+		template! = VVA_VVan_MiddleLeftShared,
+	}
+	template vehicle VVA_VVan_MiddleLeft_nr {
+		part DoorMiddleLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VVan_DoorRearLeft_nr,
+			}
+		}
+		template! = VVA_VVan_MiddleLeftShared,
+	}
+
+	template vehicle VVA_VVan_RearLeftShared {
+		part WindowRearLeft
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_VVan_WindowRearLeft,
+            }
+		}
+		template! = VVA_WindowRL,
+		template! = VVA_DoorRL_Common,
+	}
+
+	template vehicle VVA_VVan_RearLeft {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VVan_DoorRearLeft,
+			}
+		}
+		template! = VVA_VVan_RearLeftShared,
+	}
+	template vehicle VVA_VVan_RearLeft_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VVan_DoorRearLeft_nr,
+			}
+		}
+		template! = VVA_VVan_RearLeftShared,
+	}
+	model VVA_Vehicles_VVan_Open_WindowRearLeft
+	{
+		mesh = vehicles/VVA/Vans/doorR|Window_RearLeft_Open_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = RearWindow.L 1.0,
+	}
+
+	template vehicle VVA_VVan_Open_MiddleLeftShared {
+		part WindowMiddleLeft
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_VVan_Open_WindowRearLeft,
+            }
+		}
+		template! = VVA_WindowML,
+		template! = VVA_DoorML_Common,
+	}
+
+	template vehicle VVA_VVan_Open_MiddleLeft {
+		part DoorMiddleLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VVan_DoorRearLeft,
+			}
+		}
+		template! = VVA_VVan_Open_MiddleLeftShared,
+	}
+	template vehicle VVA_VVan_Open_MiddleLeft_nr {
+		part DoorMiddleLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VVan_DoorRearLeft_nr,
+			}
+		}
+		template! = VVA_VVan_Open_MiddleLeftShared,
+	}
+
+	template vehicle VVA_VVan_Open_RearLeftShared {
+		part WindowRearLeft
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_VVan_Open_WindowRearLeft,
+            }
+		}
+		template! = VVA_WindowRL,
+		template! = VVA_DoorRL_Common,
+	}
+
+	template vehicle VVA_VVan_Open_RearLeft {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VVan_DoorRearLeft,
+			}
+		}
+		template! = VVA_VVan_Open_RearLeftShared,
+	}
+	template vehicle VVA_VVan_Open_RearLeft_nr {
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_VVan_DoorRearLeft_nr,
+			}
+		}
+		template! = VVA_VVan_Open_RearLeftShared,
+	}
+}

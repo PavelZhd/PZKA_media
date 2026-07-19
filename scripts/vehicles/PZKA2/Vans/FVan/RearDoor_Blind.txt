@@ -1,0 +1,42 @@
+module Base
+{
+	model VVA_Vehicles_FVan_Blind_Trunk
+	{
+		mesh = vehicles/PZKA/Vans/FVan_trunk|Trunk_FVan_Blind_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk.L 1.0,
+		boneWeight = Trunk.R 1.0,
+	}
+	model VVA_Vehicles_FVan_Blind_Trunk_nr
+	{
+		mesh = vehicles/PZKA/Vans/FVan_trunk|Trunk_FVan_Blind_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk.L 1.0,
+		boneWeight = Trunk.R 1.0,
+	}
+	template vehicle VVA_FVan_Blind_Trunk {
+		part DoorRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan_Blind_Trunk,
+			}
+		}
+		template! = VVA_DoorRear_Common,
+
+	}
+	template vehicle VVA_FVan_Blind_Trunk_nr {
+		part DoorRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan_Blind_Trunk_nr,
+			}
+		}
+		template! = VVA_DoorRear_Common,
+	}
+}

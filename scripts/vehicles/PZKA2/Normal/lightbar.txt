@@ -1,0 +1,20 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Normal_Detective_Lightbar
+	{
+		mesh = vehicles/PZKA/Normal/static|Lightbar_Detective,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Normal_Detective_Lightbar {
+		part VVALightbar
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Detective_Lightbar,
+			}
+		}
+	}
+}

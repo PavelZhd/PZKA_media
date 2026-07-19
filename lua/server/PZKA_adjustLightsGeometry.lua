@@ -173,6 +173,7 @@ FillPartsMap["Base.pzkChevalier150UtilityLVPD"] = FillPartsMap["Base.pzkChevalie
 FillPartsMap["Base.pzkChevalier150UtilityMuldPD"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
 FillPartsMap["Base.pzkChevalier150UtilityKSTPD"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
 FillPartsMap["Base.pzkChevalier150UtilityBulletinPD"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
+FillPartsMap["Base.pzkChevalier150UtilityRail"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
 FillPartsMap["Base.pzkChevalier150BoxFlatbedPublicWorks"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
 FillPartsMap["Base.pzkChevalierLaserFire"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
 FillPartsMap["Base.pzkChevalierLaserPoliceBulletinSheriff"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
@@ -180,6 +181,8 @@ FillPartsMap["Base.pzkChevalierLaserPoliceKST"] = FillPartsMap["Base.pzkChevalie
 FillPartsMap["Base.pzkChevalierLaserPoliceLouisvilleCounty"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
 FillPartsMap["Base.pzkChevalierLaserPoliceMuldraughPolice"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
 FillPartsMap["Base.pzkChevalierLaserRanger"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
+FillPartsMap["Base.pzkChevalierPickupCrewLongRail"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
+FillPartsMap["Base.pzkChevalierPickupCrewMediumRail"] = FillPartsMap["Base.pzkChevalier150UtilityAirport"]
 
 
 
@@ -191,6 +194,13 @@ FillPartsMap["Base.pzkChevalierE6"] = {
 }
 FillPartsMap["Base.pzkChevalierE6Van"] = FillPartsMap["Base.pzkChevalierE6"]
 
+FillPartsMap["Base.pzkChevalierE6Rail"] = {
+    ["Province_12"] = "a",
+    ["Province_34"] = "a0a",
+    ["Province_56"] = "a1a",
+    ["Province_78"] = "a2a",
+}
+
 FillPartsMap["Base.pzkChevalierF6"] = {
     ["Province_12"] = "a0a1a",
     ["Province_34"] = "a",
@@ -198,6 +208,7 @@ FillPartsMap["Base.pzkChevalierF6"] = {
     ["Province_78"] = "a",
 }
 FillPartsMap["Base.pzkChevalierF6Van"] = FillPartsMap["Base.pzkChevalierF6"]
+FillPartsMap["Base.pzkChevalierF6Rail"] = FillPartsMap["Base.pzkChevalierF6"]
 FillPartsMap["Base.pzkChevalierProvinceLongCUCV"] = {
     ["Province_12"] = "a",
     ["Province_34"] = "a0a",

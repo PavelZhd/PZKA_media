@@ -1,0 +1,11 @@
+module Base
+{
+    template vehicle VVA_PZK_Normal_Nyala42_Rear {
+		template! = VVA_PZK_Normal_Nyala42_RearLeft,
+		template! = VVA_PZK_Normal_Nyala42_RearRight,
+	}
+    template vehicle VVA_PZK_Normal_Nyala42_Rear_nr {
+		template! = VVA_PZK_Normal_Nyala42_RearLeft_nr,
+		template! = VVA_PZK_Normal_Nyala42_RearRight_nr,
+	}
+}

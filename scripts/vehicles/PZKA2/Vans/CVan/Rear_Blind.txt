@@ -1,0 +1,9 @@
+module Base
+{
+    template vehicle VVA_CVan_Blind_Rear {
+		template! = VVA_CVan_Blind_RearRight,
+	}
+    template vehicle VVA_CVan_Blind_Rear_nr {
+		template! = VVA_CVan_Blind_RearRight_nr,
+	}
+}

@@ -1,0 +1,17 @@
+module Base
+{
+    model VVA_Vehicles_Hearse
+	{
+		mesh = vehicles/PZKA/Normal/hearse|Model_Hearse,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_Hearse_nr
+	{
+		mesh = vehicles/PZKA/Normal/hearse|Model_Hearse,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

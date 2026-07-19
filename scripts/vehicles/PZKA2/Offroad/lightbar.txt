@@ -1,0 +1,20 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Offroad_C_Lightbar
+	{
+		mesh = vehicles/PZKA/Offroad/static|Lightbar_C,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Offroad_C_Lightbar {
+		part VVALightbar
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Offroad_C_Lightbar,
+			}
+		}
+	}
+}

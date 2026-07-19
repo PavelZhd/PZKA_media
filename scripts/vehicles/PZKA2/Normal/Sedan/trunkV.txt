@@ -1,0 +1,114 @@
+module Base
+{
+	model VVA_Vehicles_PZKASedan_Homelander_Trunk
+	{
+		mesh = vehicles/PZKA/Normal/sedan_trunkV|Trunk_PZKASedan_Homelander_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_PZKASedan_Homelander_Trunk_nr
+	{
+		mesh = vehicles/PZKA/Normal/sedan_trunkV|Trunk_PZKASedan_Homelander_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle VVA_PZKASedan_Homelander_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Homelander_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+
+	}
+	template vehicle VVA_PZKASedan_Homelander_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Homelander_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+	}
+	model VVA_Vehicles_PZKASedan_Nyala42_Trunk
+	{
+		mesh = vehicles/PZKA/Normal/sedan_trunkV|Trunk_PZKASedan_Nyala42_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_PZKASedan_Nyala42_Trunk_nr
+	{
+		mesh = vehicles/PZKA/Normal/sedan_trunkV|Trunk_PZKASedan_Nyala42_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle VVA_PZKASedan_Nyala42_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Nyala42_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+
+	}
+	template vehicle VVA_PZKASedan_Nyala42_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_Nyala42_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+	}
+	model VVA_Vehicles_PZKASedan_TWD_Trunk
+	{
+		mesh = vehicles/PZKA/Normal/sedan_trunkV|Trunk_PZKASedan_TWD_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_PZKASedan_TWD_Trunk_nr
+	{
+		mesh = vehicles/PZKA/Normal/sedan_trunkV|Trunk_PZKASedan_TWD_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle VVA_PZKASedan_TWD_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_TWD_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+
+	}
+	template vehicle VVA_PZKASedan_TWD_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKASedan_TWD_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+	}
+}

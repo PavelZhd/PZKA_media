@@ -1,0 +1,40 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Offroad_C_Trunk
+	{
+		mesh = vehicles/PZKA/Offroad/trunk|Trunk_C_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_PZK_Offroad_C_Trunk_nr
+	{
+		mesh = vehicles/PZKA/Offroad/trunk|Trunk_C_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.004,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle VVA_PZK_Offroad_C_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Offroad_C_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+
+	}
+	template vehicle VVA_PZK_Offroad_C_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Offroad_C_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+	}
+}

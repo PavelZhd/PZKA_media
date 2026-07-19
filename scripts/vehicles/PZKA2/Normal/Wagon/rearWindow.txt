@@ -1,0 +1,30 @@
+module Base
+{
+    model VVA_Vehicles_PZKAWagon_RearWindow
+	{
+		mesh = vehicles/PZKA/Normal/wagonTrunk|RearWindow_PZKAWagon_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZKAWagon_RearWindow_static
+	{
+		mesh = vehicles/PZKA/Normal/wagonTrunk|RearWindow_PZKAWagon_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+		static = TRUE,
+	}
+	template vehicle VVA_PZKAWagon_RearWindow {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_RearWindow,
+			}
+			model Static
+			{
+				file = VVA_Vehicles_PZKAWagon_RearWindow_static,
+			}
+		}
+	}
+}

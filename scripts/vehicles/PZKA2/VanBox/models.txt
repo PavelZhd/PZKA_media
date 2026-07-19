@@ -1,0 +1,31 @@
+module Base
+{
+    model VVA_Vehicles_PZK_VanBox
+	{
+		mesh = vehicles/PZKA/VanBox/static|Model,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_VanBox_nr
+	{
+		mesh = vehicles/PZKA/VanBox/static|Model,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_VanBox_Shutter
+	{
+		mesh = vehicles/PZKA/VanBox/static|Model_Shutter,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_VanBox_Shutter_nr
+	{
+		mesh = vehicles/PZKA/VanBox/static|Model_Shutter,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

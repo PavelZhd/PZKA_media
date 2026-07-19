@@ -1,0 +1,114 @@
+module Base
+{
+	model VVA_Vehicles_DVan1_FrontFill
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|frontfill_DVan1,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_DVan1_FrontFill_nr
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|frontfill_DVan1,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_DVan1_FrontFill {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan1_FrontFill,
+			}
+		}
+		template! = VVA_DVan1_FrontLights,
+	}
+	template vehicle VVA_DVan1_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan1_FrontFill_nr,
+			}
+		}
+		template! = VVA_DVan1_FrontLights,
+	}
+	model VVA_Vehicles_DVan2_FrontFill
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|frontfill_DVan2,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_DVan2_FrontFill_nr
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|frontfill_DVan2,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_DVan2_FrontFill {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan2_FrontFill,
+			}
+		}
+		template! = VVA_DVan2_FrontLights,
+	}
+	template vehicle VVA_DVan2_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan2_FrontFill_nr,
+			}
+		}
+		template! = VVA_DVan2_FrontLights,
+	}
+	model VVA_Vehicles_DVan3_FrontFill
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|frontfill_DVan3,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_DVan3_FrontFill_nr
+	{
+		mesh = vehicles/PZKA/Vans/DVan_static|frontfill_DVan3,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_DVan3_FrontFill {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan3_FrontFill,
+			}
+		}
+		template! = VVA_DVan3_FrontLights,
+	}
+	template vehicle VVA_DVan3_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_DVan3_FrontFill_nr,
+			}
+		}
+		template! = VVA_DVan3_FrontLights,
+	}
+}

@@ -1,0 +1,26 @@
+module Base
+{
+
+	model VVA_Vehicles_CVan_Camper_WindowRearLeft
+	{
+		mesh = vehicles/PZKA/Vans/Camper|Window_RearLeft_Camper_obj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_CVan_Camper_MiddleLeftShared {
+		part WindowMiddleLeft
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_CVan_Camper_WindowRearLeft,
+            }
+		}
+	}
+
+	template vehicle VVA_CVan_Camper_MiddleLeft {
+		template! = VVA_CVan_Camper_MiddleLeftShared,
+	}
+
+}

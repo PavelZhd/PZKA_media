@@ -9,7 +9,7 @@ module Base
 	}
 
 	template vehicle PZKA_LABEL_Lightbar {
-		part ATA2RoofLightbar
+		part VVALightbar
 		{
 			model Default
 			{

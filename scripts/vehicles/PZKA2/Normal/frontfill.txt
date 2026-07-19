@@ -1,0 +1,381 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Normal_Cerise_FrontFill
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_Cerise,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_Cerise_FrontFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_Cerise,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Normal_Cerise_FrontFill {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Cerise_FrontFill,
+			}
+		}
+		template! = VVA_PZK_Normal_Cerise_FrontLights,
+	}
+	template vehicle VVA_PZK_Normal_Cerise_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Cerise_FrontFill_nr,
+			}
+		}
+		template! = VVA_PZK_Normal_Cerise_FrontLights,
+	}
+	model VVA_Vehicles_PZK_Normal_Hellion_FrontFill
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_Hellion,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_Hellion_FrontFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_Hellion,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Normal_Hellion_FrontFill {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Hellion_FrontFill,
+			}
+		}
+		template! = VVA_PZK_Normal_Hellion_FrontLights,
+	}
+	template vehicle VVA_PZK_Normal_Hellion_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Hellion_FrontFill_nr,
+			}
+		}
+		template! = VVA_PZK_Normal_Hellion_FrontLights,
+	}
+	model VVA_Vehicles_PZK_Normal_Homelander_FrontFill
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_Homelander,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_Homelander_FrontFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_Homelander,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Normal_Homelander_FrontFill {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Homelander_FrontFill,
+			}
+		}
+		template! = VVA_PZK_Normal_Homelander_FrontLights,
+	}
+	template vehicle VVA_PZK_Normal_Homelander_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Homelander_FrontFill_nr,
+			}
+		}
+		template! = VVA_PZK_Normal_Homelander_FrontLights,
+	}
+	model VVA_Vehicles_PZK_Normal_Mayor_FrontFill
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_Mayor,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_Mayor_FrontFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_Mayor,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Normal_Mayor_FrontFill {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Mayor_FrontFill,
+			}
+		}
+		template! = VVA_PZK_Normal_Mayor_FrontLights,
+	}
+	template vehicle VVA_PZK_Normal_Mayor_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Mayor_FrontFill_nr,
+			}
+		}
+		template! = VVA_PZK_Normal_Mayor_FrontLights,
+	}
+	model VVA_Vehicles_PZK_Normal_Nyala_FrontFill
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_Nyala,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_Nyala_FrontFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_Nyala,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Normal_Nyala_FrontFill {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala_FrontFill,
+			}
+		}
+		template! = VVA_PZK_Normal_Nyala_FrontLights,
+	}
+	template vehicle VVA_PZK_Normal_Nyala_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala_FrontFill_nr,
+			}
+		}
+		template! = VVA_PZK_Normal_Nyala_FrontLights,
+	}
+	model VVA_Vehicles_PZK_Normal_Nyala42_FrontFill
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_Nyala42,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_Nyala42_FrontFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_Nyala42,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Normal_Nyala42_FrontFill {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala42_FrontFill,
+			}
+		}
+		template! = VVA_PZK_Normal_Nyala42_FrontLights,
+	}
+	template vehicle VVA_PZK_Normal_Nyala42_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala42_FrontFill_nr,
+			}
+		}
+		template! = VVA_PZK_Normal_Nyala42_FrontLights,
+	}
+	model VVA_Vehicles_PZK_Normal_Rapier_FrontFill
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_Rapier,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_Rapier_FrontFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_Rapier,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Normal_Rapier_FrontFill {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Rapier_FrontFill,
+			}
+		}
+		template! = VVA_PZK_Normal_Rapier_FrontLights,
+	}
+	template vehicle VVA_PZK_Normal_Rapier_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_Rapier_FrontFill_nr,
+			}
+		}
+		template! = VVA_PZK_Normal_Rapier_FrontLights,
+	}
+	model VVA_Vehicles_PZK_Normal_TWD_FrontFill
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_TWD,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Normal_TWD_FrontFill_nr
+	{
+		mesh = vehicles/PZKA/Normal/static|frontfill_TWD,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Normal_TWD_FrontFill {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_TWD_FrontFill,
+			}
+		}
+		template! = VVA_PZK_Normal_TWD_FrontLights,
+	}
+	template vehicle VVA_PZK_Normal_TWD_FrontFill_nr {
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Normal_TWD_FrontFill_nr,
+			}
+		}
+		template! = VVA_PZK_Normal_TWD_FrontLights,
+	}
+	template vehicle VVA_PZK_Normal_VariableFrontFill
+	{
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model _Cerise
+			{
+				file = VVA_Vehicles_PZK_Normal_Cerise_FrontFill,
+			}
+			model _Hellion
+			{
+				file = VVA_Vehicles_PZK_Normal_Hellion_FrontFill,
+			}
+			model _Homelander
+			{
+				file = VVA_Vehicles_PZK_Normal_Homelander_FrontFill,
+			}
+			model _Mayor
+			{
+				file = VVA_Vehicles_PZK_Normal_Mayor_FrontFill,
+			}
+			model _Nyala
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala_FrontFill,
+			}
+			model _Nyala42
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala42_FrontFill,
+			}
+			model _Rapier
+			{
+				file = VVA_Vehicles_PZK_Normal_Rapier_FrontFill,
+			}
+			model _TWD
+			{
+				file = VVA_Vehicles_PZK_Normal_TWD_FrontFill,
+			}
+		}
+		template! = PZKA_VariableFrontFill,
+		template! = VVA_PZK_Normal_VariableFrontLights,
+	}
+	template vehicle VVA_PZK_Normal_VariableFrontFill_nr
+	{
+		template! = PZKA_Frontfill,
+		part Frontfill
+		{
+			model _Cerise
+			{
+				file = VVA_Vehicles_PZK_Normal_Cerise_FrontFill_nr,
+			}
+			model _Hellion
+			{
+				file = VVA_Vehicles_PZK_Normal_Hellion_FrontFill_nr,
+			}
+			model _Homelander
+			{
+				file = VVA_Vehicles_PZK_Normal_Homelander_FrontFill_nr,
+			}
+			model _Mayor
+			{
+				file = VVA_Vehicles_PZK_Normal_Mayor_FrontFill_nr,
+			}
+			model _Nyala
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala_FrontFill_nr,
+			}
+			model _Nyala42
+			{
+				file = VVA_Vehicles_PZK_Normal_Nyala42_FrontFill_nr,
+			}
+			model _Rapier
+			{
+				file = VVA_Vehicles_PZK_Normal_Rapier_FrontFill_nr,
+			}
+			model _TWD
+			{
+				file = VVA_Vehicles_PZK_Normal_TWD_FrontFill_nr,
+			}
+		}
+		template! = PZKA_VariableFrontFill,
+		template! = VVA_PZK_Normal_VariableFrontLights,
+	}
+}

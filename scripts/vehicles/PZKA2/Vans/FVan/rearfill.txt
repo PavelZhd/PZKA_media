@@ -1,0 +1,156 @@
+module Base
+{
+	model VVA_Vehicles_FVan1_RearFill
+	{
+		mesh = vehicles/PZKA/Vans/FVan_static|rearfill_FVan1,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_FVan1_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Vans/FVan_static|rearfill_FVan1,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_FVan1_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan1_RearFill,
+			}
+		}
+		template! = VVA_FVan1_RearLights,
+	}
+	template vehicle VVA_FVan1_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan1_RearFill_nr,
+			}
+		}
+		template! = VVA_FVan1_RearLights,
+	}
+	model VVA_Vehicles_FVan2_RearFill
+	{
+		mesh = vehicles/PZKA/Vans/FVan_static|rearfill_FVan2,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_FVan2_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Vans/FVan_static|rearfill_FVan2,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_FVan2_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan2_RearFill,
+			}
+		}
+		template! = VVA_FVan2_RearLights,
+	}
+	template vehicle VVA_FVan2_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan2_RearFill_nr,
+			}
+		}
+		template! = VVA_FVan2_RearLights,
+	}
+	model VVA_Vehicles_FVan3_RearFill
+	{
+		mesh = vehicles/PZKA/Vans/FVan_static|rearfill_FVan3,
+		shader = vehicle_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_FVan3_RearFill_nr
+	{
+		mesh = vehicles/PZKA/Vans/FVan_static|rearfill_FVan3,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_FVan3_RearFill {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan3_RearFill,
+			}
+		}
+		template! = VVA_FVan3_RearLights,
+	}
+	template vehicle VVA_FVan3_RearFill_nr {
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model Default
+			{
+				file = VVA_Vehicles_FVan3_RearFill_nr,
+			}
+		}
+		template! = VVA_FVan3_RearLights,
+	}
+	template vehicle VVA_FVan_VariableRearFill
+	{
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model 1
+			{
+				file = VVA_Vehicles_FVan1_RearFill,
+			}
+			model 2
+			{
+				file = VVA_Vehicles_FVan2_RearFill,
+			}
+			model 3
+			{
+				file = VVA_Vehicles_FVan3_RearFill,
+			}
+		}
+		template! = PZKA_VariableRearFill,
+		template! = VVA_FVan_VariableRearLights,
+	}
+	template vehicle VVA_FVan_VariableRearFill_nr
+	{
+		template! = PZKA_Rearfill,
+		part Rearfill
+		{
+			model 1
+			{
+				file = VVA_Vehicles_FVan1_RearFill_nr,
+			}
+			model 2
+			{
+				file = VVA_Vehicles_FVan2_RearFill_nr,
+			}
+			model 3
+			{
+				file = VVA_Vehicles_FVan3_RearFill_nr,
+			}
+		}
+		template! = PZKA_VariableRearFill,
+		template! = VVA_FVan_VariableRearLights,
+	}
+}

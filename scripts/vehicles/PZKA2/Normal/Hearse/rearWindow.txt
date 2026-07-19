@@ -1,0 +1,35 @@
+module Base
+{
+    model VVA_Vehicles_Hearse_RearWindow
+	{
+		mesh = vehicles/PZKA/Normal/hearseTrunk|RearWindow_Hearse_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	template vehicle VVA_Hearse_RearWindow {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Hearse_RearWindow,
+			}
+		}
+	}
+    model VVA_Vehicles_Hearse_Ghoulbuster_RearWindow
+	{
+		mesh = vehicles/PZKA/Normal/hearseTrunk|RearWindow_Hearse_Ghoulbuster_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+	template vehicle VVA_Hearse_Ghoulbuster_RearWindow {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Hearse_Ghoulbuster_RearWindow,
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+module Base
+{
+	model VVA_Vehicles_Hearse_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/hearse|Light_RearLeft_Hearse_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_Hearse_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/hearse|Light_RearRight_Hearse_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_Hearse_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Hearse_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_Hearse_LightRR,
+			}
+		}
+	}
+}

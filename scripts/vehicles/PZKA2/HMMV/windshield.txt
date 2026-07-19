@@ -1,0 +1,18 @@
+module Base
+{
+	model VVA_Vehicles_PZK_HMMV_Windshield
+	{
+		mesh = vehicles/PZKA/HMMV/static|Windshield_obj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_HMMV_Windshield {
+		part Windshield
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_HMMV_Windshield,
+			}
+		}
+	}
+}

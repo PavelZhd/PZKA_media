@@ -1,0 +1,111 @@
+module Base
+{
+	model SVU_Door_RL_PZK_Normal_Light_a
+	{
+		mesh = vehicles/SVU/PZKA/Normal/doorR|doorrearlightleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_RL_PZK_Normal_Light_Spiked_a
+	{
+		mesh = vehicles/SVU/PZKA/Normal/doorR|doorrearlightspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_RL_PZK_Normal_Heavy_a
+	{
+		mesh = vehicles/SVU/PZKA/Normal/doorR|doorrearheavyleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_RL_PZK_Normal_Heavy_Spiked_a
+	{
+		mesh = vehicles/SVU/PZKA/Normal/doorR|doorrearheavyspikedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+	model SVU_Door_RL_PZK_Normal_Reinforced_a
+	{
+		mesh = vehicles/SVU/PZKA/Normal/doorR|doorrearreinforcedleft,
+		texture = Vehicles/puv_parts,
+		shader = vehicle_armor,
+		scale = 0.01,
+		static = FALSE,
+	}
+
+    template vehicle PU_armor_PZK_Normal_doorsRL {
+        part ATA2ProtectionDoorRearLeft
+		{
+			parent = DoorRearLeft,
+			model anchorNormal {
+				file = VVA_SVU_Dummy,
+			}
+			model anchorRusted {
+				file = VVA_SVU_DummyRust,
+			}
+			model Light
+			{
+				file = SVU_Door_RL_PZK_Normal_Light_a,
+			}
+			model Heavy
+			{
+				file = SVU_Door_RL_PZK_Normal_Heavy_a,
+			}
+			model LightSpiked
+			{
+				file = SVU_Door_RL_PZK_Normal_Light_Spiked_a,
+			}
+			model HeavySpiked
+			{
+				file = SVU_Door_RL_PZK_Normal_Heavy_Spiked_a,
+			}
+			model LightRusted
+			{
+				file = SVU_Door_RL_PZK_Normal_Light_a,
+			}
+			model HeavyRusted
+			{
+				file = SVU_Door_RL_PZK_Normal_Heavy_a,
+			}
+			model LightSpikedRusted
+			{
+				file = SVU_Door_RL_PZK_Normal_Light_Spiked_a,
+			}
+			model HeavySpikedRusted
+			{
+				file = SVU_Door_RL_PZK_Normal_Heavy_Spiked_a,
+			}
+			model Reinforced
+			{
+				file = SVU_Door_RL_PZK_Normal_Reinforced_a,
+			}
+			model ReinforcedRusted
+			{
+				file = SVU_Door_RL_PZK_Normal_Reinforced_a,
+			}
+
+			table install
+            {
+            	complete = ATATuning2.InstallComplete.AnchorTuning,
+            }
+            table uninstall
+            {
+            	complete = ATATuning2.UninstallComplete.AnchorTuning,
+            }
+            lua
+            {
+            	create = ATATuning2.Create.AnchorTuning,
+        		init = ATATuning2.Init.AnchorTuning,
+        		update = ATATuning2.Update.Protection,
+            }
+		}
+    }
+}

@@ -1,0 +1,203 @@
+module Base
+{
+	model VVA_Vehicles_PZKAWagon_Ghoulbuster_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/wagon|Light_RearLeft_PZKAWagon_Ghoulbuster_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKAWagon_Ghoulbuster_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/wagon|Light_RearRight_PZKAWagon_Ghoulbuster_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKAWagon_Ghoulbuster_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Ghoulbuster_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Ghoulbuster_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZKAWagon_Grisworld_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/wagon|Light_RearLeft_PZKAWagon_Grisworld_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKAWagon_Grisworld_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/wagon|Light_RearRight_PZKAWagon_Grisworld_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKAWagon_Grisworld_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Grisworld_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Grisworld_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZKAWagon_Cerise_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/wagon|Light_RearLeft_PZKAWagon_Cerise_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKAWagon_Cerise_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/wagon|Light_RearRight_PZKAWagon_Cerise_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKAWagon_Cerise_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Cerise_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Cerise_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZKAWagon_Mayor_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/wagon|Light_RearLeft_PZKAWagon_Mayor_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKAWagon_Mayor_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/wagon|Light_RearRight_PZKAWagon_Mayor_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKAWagon_Mayor_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Mayor_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_Mayor_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZKAWagon_TWD_LightRL
+	{
+		mesh = vehicles/PZKA/Normal/wagon|Light_RearLeft_PZKAWagon_TWD_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZKAWagon_TWD_LightRR
+	{
+		mesh = vehicles/PZKA/Normal/wagon|Light_RearRight_PZKAWagon_TWD_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZKAWagon_TWD_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_TWD_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZKAWagon_TWD_LightRR,
+			}
+		}
+	}
+	template vehicle VVA_PZKAWagon_VariableRearLights
+	{
+		part HeadlightRearLeft
+		{
+			model _Ghoulbuster
+			{
+				file = VVA_Vehicles_PZKAWagon_Ghoulbuster_LightRL,
+			}
+			model _Grisworld
+			{
+				file = VVA_Vehicles_PZKAWagon_Grisworld_LightRL,
+			}
+			model _Cerise
+			{
+				file = VVA_Vehicles_PZKAWagon_Cerise_LightRL,
+			}
+			model _Mayor
+			{
+				file = VVA_Vehicles_PZKAWagon_Mayor_LightRL,
+			}
+			model _TWD
+			{
+				file = VVA_Vehicles_PZKAWagon_TWD_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model _Ghoulbuster
+			{
+				file = VVA_Vehicles_PZKAWagon_Ghoulbuster_LightRR,
+			}
+			model _Grisworld
+			{
+				file = VVA_Vehicles_PZKAWagon_Grisworld_LightRR,
+			}
+			model _Cerise
+			{
+				file = VVA_Vehicles_PZKAWagon_Cerise_LightRR,
+			}
+			model _Mayor
+			{
+				file = VVA_Vehicles_PZKAWagon_Mayor_LightRR,
+			}
+			model _TWD
+			{
+				file = VVA_Vehicles_PZKAWagon_TWD_LightRR,
+			}
+		}
+		template! = PZKA_VariableRearLights,
+	}
+}

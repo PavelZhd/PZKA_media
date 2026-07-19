@@ -1,0 +1,96 @@
+module Base
+{
+
+	model VVA_Vehicles_CVan_DoorRearRight
+	{
+		mesh = vehicles/PZKA/Vans/CVan_doorR|Door_RearRight_CVan_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoorF.R 1.0,
+		boneWeight = RearDoorR.R 1.0,
+	}
+	model VVA_Vehicles_CVan_DoorRearRight_nr
+	{
+		mesh = vehicles/PZKA/Vans/CVan_doorR|Door_RearRight_CVan_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoorF.R 1.0,
+		boneWeight = RearDoorR.R 1.0,
+	}
+	model VVA_Vehicles_CVan_WindowRearRight
+	{
+		mesh = vehicles/PZKA/Vans/CVan_doorR|Window_RearRight_CVan_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearWindowR.R 1.0,
+	}
+
+	template vehicle VVA_CVan_MiddleRightShared {
+		part WindowMiddleRight
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_CVan_WindowRearRight,
+            }
+		}
+		template! = VVA_WindowMR,
+		template! = VVA_DoorMR_Common,
+	}
+
+	template vehicle VVA_CVan_MiddleRight {
+		part DoorMiddleRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_CVan_DoorRearRight,
+			}
+		}
+		template! = VVA_CVan_MiddleRightShared,
+	}
+	template vehicle VVA_CVan_MiddleRight_nr {
+		part DoorMiddleRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_CVan_DoorRearRight_nr,
+			}
+		}
+		template! = VVA_CVan_MiddleRightShared,
+	}
+
+	template vehicle VVA_CVan_RearRightShared {
+		part WindowRearRight
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_CVan_WindowRearRight,
+            }
+		}
+		template! = VVA_WindowRR,
+		template! = VVA_DoorRR_Common,
+	}
+
+	template vehicle VVA_CVan_RearRight {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_CVan_DoorRearRight,
+			}
+		}
+		template! = VVA_CVan_RearRightShared,
+	}
+	template vehicle VVA_CVan_RearRight_nr {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_CVan_DoorRearRight_nr,
+			}
+		}
+		template! = VVA_CVan_RearRightShared,
+	}
+}

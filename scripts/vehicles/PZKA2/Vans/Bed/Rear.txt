@@ -1,0 +1,11 @@
+module Base
+{
+    template vehicle VVA_Van_Bed_Rear {
+		template! = VVA_Van_Bed_RearLeft,
+		template! = VVA_Van_Bed_RearRight,
+	}
+    template vehicle VVA_Van_Bed_Rear_nr {
+		template! = VVA_Van_Bed_RearLeft_nr,
+		template! = VVA_Van_Bed_RearRight_nr,
+	}
+}

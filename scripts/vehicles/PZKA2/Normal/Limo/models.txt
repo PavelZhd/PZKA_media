@@ -1,0 +1,17 @@
+module Base
+{
+    model VVA_Vehicles_Limo
+	{
+		mesh = vehicles/PZKA/Normal/limo|Model_Limo,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_Limo_nr
+	{
+		mesh = vehicles/PZKA/Normal/limo|Model_Limo,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}
