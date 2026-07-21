@@ -3,7 +3,8 @@ module Base
 	template vehicle PZKA_Rookie_shared {
 		template! = PZKA_Rookie_Windshield,
 		template! = PZKA_Rookie_SeatsFront,
-		template! = PZKA_Rookie_Interior,		
+		template! = PZKA_Rookie_Interior,
+		template! = PZKA_Rookie_Lights,
 	}
 
 	template vehicle PZKA_Rookie {
