@@ -3,14 +3,14 @@ module Base
 	model PZKA_Vehicles_Laser_LightFL12
 	{
 		mesh = vehicles/Laser/pzka_Laser|Light_FrontLeft_Laser12_obj,
-		shader = vehicle_multiuv_vva,
+		shader = vehicle_multiuv,
 		static = TRUE,
 		scale = 0.01,
 	}	
 	model PZKA_Vehicles_Laser_LightFR12
 	{
 		mesh = vehicles/Laser/pzka_Laser|Light_FrontRight_Laser12_obj,
-		shader = vehicle_multiuv_vva,
+		shader = vehicle_multiuv,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -18,14 +18,14 @@ module Base
 	model PZKA_Vehicles_Laser_LightFL34
 	{
 		mesh = vehicles/Laser/pzka_Laser|Light_FrontLeft_Laser34_obj,
-		shader = vehicle_multiuv_vva,
+		shader = vehicle_multiuv,
 		static = TRUE,
 		scale = 0.01,
 	}	
 	model PZKA_Vehicles_Laser_LightFR34
 	{
 		mesh = vehicles/Laser/pzka_Laser|Light_FrontRight_Laser34_obj,
-		shader = vehicle_multiuv_vva,
+		shader = vehicle_multiuv,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -33,14 +33,14 @@ module Base
 	model PZKA_Vehicles_Laser_LightFL56
 	{
 		mesh = vehicles/Laser/pzka_Laser|Light_FrontLeft_Laser56_obj,
-		shader = vehicle_multiuv_vva,
+		shader = vehicle_multiuv,
 		static = TRUE,
 		scale = 0.01,
 	}	
 	model PZKA_Vehicles_Laser_LightFR56
 	{
 		mesh = vehicles/Laser/pzka_Laser|Light_FrontRight_Laser56_obj,
-		shader = vehicle_multiuv_vva,
+		shader = vehicle_multiuv,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -48,14 +48,14 @@ module Base
 	model PZKA_Vehicles_Laser_LightFL78
 	{
 		mesh = vehicles/Laser/pzka_Laser|Light_FrontLeft_Laser78_obj,
-		shader = vehicle_multiuv_vva,
+		shader = vehicle_multiuv,
 		static = TRUE,
 		scale = 0.01,
 	}	
 	model PZKA_Vehicles_Laser_LightFR78
 	{
 		mesh = vehicles/Laser/pzka_Laser|Light_FrontRight_Laser78_obj,
-		shader = vehicle_multiuv_vva,
+		shader = vehicle_multiuv,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -63,14 +63,14 @@ module Base
 	model PZKA_Vehicles_Laser_LightRL
 	{
 		mesh = vehicles/Laser/pzka_Laser|Light_RearLeft_Laser_obj,
-		shader = vehicle_multiuv_vva,
+		shader = vehicle_multiuv,
 		static = TRUE,
 		scale = 0.01,
 	}
 	model PZKA_Vehicles_Laser_LightRR
 	{
 		mesh = vehicles/Laser/pzka_Laser|Light_RearRight_Laser_obj,
-		shader = vehicle_multiuv_vva,
+		shader = vehicle_multiuv,
 		static = TRUE,
 		scale = 0.01,
 	}

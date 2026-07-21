@@ -4,7 +4,7 @@ module Base
 	model PZKA_Vehicles_Laser5D_WindowFrontLeft
 	{
 		mesh = vehicles/Laser/pzka_Laser_Shared|Window5D_FrontLeft_obj,
-		shader = vehicle_multiuv_noreflect,
+		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -12,7 +12,7 @@ module Base
 	model PZKA_Vehicles_Laser5D_WindowFrontRight
 	{
 		mesh = vehicles/Laser/pzka_Laser_Shared|Window5D_FrontRight_obj,
-		shader = vehicle_multiuv_noreflect,
+		shader = vehicle_multiuv_vva,
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = FrontRightWindowBone 1.0,

@@ -1,4 +1,18 @@
 local VVA = require "VVA_core"
+
+if not VVA.addToProfileNR then
+    VVA.addToProfileNR = function(profileName, templates)
+        VVA.addToProfile(profileName, templates)
+        local NRtemplates = {}
+        for i, template in pairs(templates) do
+            if (template) then
+                NRtemplates[i] = template
+            end
+        end
+        VVA.addToProfile(profileName.."_nr", NRtemplates)
+    end
+end
+
 local PZKA = require "PZKA_addAnimations"
 require "VVA_applyAnimations"
 require "VVA_misc_Profiles"
@@ -9,32 +23,29 @@ local VVE = VVA.CheckModEnabled("VVehicleEnhancer") or VVA.CheckModEnabled("Ze_V
 
 
 -- BEGIN: VVA-Related
-VVA.addToProfile("pzka_NormalBase",{"VVA_Normal_Root","VVA_Normal_Windshield"})
-VVA.addToProfile("VVA_PZK_Normal_Rear",{"VVA_Wagon_RearLeft","VVA_PZK_Normal_RearRight"})
-VVA.addToProfile("VVA_PZK_Normal_Rear_nr",{"VVA_Wagon_RearLeft_nr","VVA_PZK_Normal_RearRight_nr"})
+--VVA.addToProfile("VVA_Normal_Base",{"VVA_Normal_Interior","VVA_Normal_SeatsF","VVA_Normal_Windshield"});
 
-VVA.addToProfile("pzka_PZK_SedanRear_F",{"VVA_PZKASedan_RearWindow","VVA_PZKASedan_SedanF_Decor"})
-VVA.addToProfile("pzka_PZK_SedanRear_V",{"VVA_Normal_RearWindow","VVA_PZKASedan_SedanV_Decor"})
+VVA.addToProfileNR("VVA_PZK_Normal_Rear",{"VVA_Wagon_RearLeft","VVA_PZK_Normal_RearRight"})
+--VVA.addToProfile("VVA_PZK_Normal_Rear_nr",{"VVA_Wagon_RearLeft_nr","VVA_PZK_Normal_RearRight_nr"})
+
+VVA.addToProfile("pzka_Normal_SedanRearF",{"VVA_Normal_Base","VVA_PZKASedan_RearWindow","VVA_PZKASedan_SedanF_Decor"})
+VVA.addToProfile("pzka_Normal_SedanRearV",{"VVA_Normal_Base","VVA_Normal_RearWindow","VVA_PZKASedan_SedanV_Decor"})
+
+VVA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_F","VVA_Vehicles_PZKASedan_SedanF",{"VVA_Normal_Front","VVA_PZK_Normal_hood","VVA_PZK_Normal_Rear"})
+VVA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_F_nr","VVA_Vehicles_PZKASedan_SedanF_nr",{"VVA_Normal_Front_nr","VVA_PZK_Normal_hood_nr","VVA_PZK_Normal_Rear_nr"})
 
 
-VVA.addToProfile("pzka_Normal_F",{"pzka_NormalBase","VVA_Normal_SeatsR","pzka_PZK_SedanRear_F"})
-
-VVA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_F","VVA_Vehicles_PZKASedan_SedanF",{"4SeatsR","pzka_Normal_F","VVA_Normal_Front","VVA_PZK_Normal_hood","VVA_PZK_Normal_Rear"})
-VVA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_F_nr","VVA_Vehicles_PZKASedan_SedanF_nr",{"4SeatsR","pzka_Normal_F","VVA_Normal_Front_nr","VVA_PZK_Normal_hood_nr","VVA_PZK_Normal_Rear_nr"})
-
-VVA.addToProfile("pzka_Normal_V",{"pzka_NormalBase","VVA_Normal_SeatsR","pzka_PZK_SedanRear_V"})
-
-VVA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_V","VVA_Vehicles_PZKASedan_SedanV",{"4SeatsR","pzka_Normal_V","VVA_Normal_Front","VVA_PZK_Normal_hood","VVA_Normal_Rear"})
-VVA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_V_nr","VVA_Vehicles_PZKASedan_SedanV_nr",{"4SeatsR","pzka_Normal_V","VVA_Normal_Front_nr","VVA_PZK_Normal_hood_nr","VVA_Normal_Rear_nr"})
+VVA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_V","VVA_Vehicles_PZKASedan_SedanV",{"VVA_Normal_Front","VVA_PZK_Normal_hood","VVA_Normal_Rear"})
+VVA.ApplyTemplateToVehicle("PZKA_Normal_Sedan_V_nr","VVA_Vehicles_PZKASedan_SedanV_nr",{"VVA_Normal_Front_nr","VVA_PZK_Normal_hood_nr","VVA_Normal_Rear_nr"})
 
 -- Cerise Sedan 
-VVA.addToProfile("pzka_CeriseSedanBase",{"VVA_PZK_Normal_Cerise_FrontFill","VVA_PZKASedan_Cerise_RearFill","VVA_PZKASedan_Cerise_Trunk"})
-VVA.addToProfile("pzka_CeriseSedanBase_nr",{"VVA_PZK_Normal_Cerise_FrontFill_nr","VVA_PZKASedan_Cerise_RearFill_nr","VVA_PZKASedan_Cerise_Trunk_nr"})
+VVA.addToProfileNR("VVA_PZK_Normal_CeriseSedan",{"VVA_PZK_Normal_Cerise_FrontFill","VVA_PZKASedan_Cerise_RearFill","VVA_PZKASedan_Cerise_Trunk"})
+--VVA.addToProfile("VVA_PZK_Normal_CeriseSedan_nr",{"VVA_PZK_Normal_Cerise_FrontFill_nr","VVA_PZKASedan_Cerise_RearFill_nr","VVA_PZKASedan_Cerise_Trunk_nr"})
 
-VVA.CopyTemplateToVehicle("pzkChevalierCeriseSedan","PZKA_Normal_Sedan_F",{"pzka_CeriseSedanBase"})
+VVA.CopyTemplateToVehicle("pzkChevalierCeriseSedan","PZKA_Normal_Sedan_F",{"4SeatsR","pzka_Normal_SedanRearF","VVA_Normal_SeatsR","VVA_PZK_Normal_CeriseSedan"})
 VVA.CopyTemplateToVehicle("pzkChevalierCeriseDetective","pzkChevalierCeriseSedan",{"VVA_t_lighbar","VVA_NormalBars_Decor","VVA_PZK_Normal_Detective_Lightbar"})
 
-VVA.CopyTemplateToVehicle("pzkChevalierCeriseSedan_nr","PZKA_Normal_Sedan_F_nr",{"pzka_CeriseSedanBase_nr"})
+VVA.CopyTemplateToVehicle("pzkChevalierCeriseSedan_nr","PZKA_Normal_Sedan_F_nr",{"4SeatsR","pzka_Normal_SedanRearF","VVA_Normal_SeatsR","VVA_PZK_Normal_CeriseSedan_nr"})
 VVA.CopyTemplateToVehicle("pzkChevalierCeriseSedanFire","pzkChevalierCeriseSedan_nr",{"VVA_NormalBars_Decor","VVA_t_lighbar","VVA_Normal_Lightbar"})
 VVA.CopyTemplateToVehicle("pzkChevalierCeriseSedanLSU","pzkChevalierCeriseSedanFire")
 VVA.CopyTemplateToVehicle("pzkChevalierCeriseSedanMall","pzkChevalierCeriseSedanFire")
@@ -48,18 +59,22 @@ VVA.CopyTemplateToVehicle("pzkChevalierCeriseSedanPoliceBulletinSheriff","pzkChe
 VVA.CopyTemplateToVehicle("pzkChevalierCeriseSedanTaxi","pzkChevalierCeriseSedan_nr",{"VVA_sle_taxi","VVA_Normal_Taxi"})
 
 -- Hellion Sedan
-VVA.CopyTemplateToVehicle("pzkDashHellion","PZKA_Normal_Sedan_F",{"VVA_PZK_Normal_Hellion_FrontFill","VVA_PZKASedan_Hellion_RearFill","VVA_PZKASedan_Hellion_Trunk"})
+VVA.addToProfileNR("VVA_PZK_Normal_HellionSedan",{"VVA_PZK_Normal_Hellion_FrontFill","VVA_PZKASedan_Hellion_RearFill","VVA_PZKASedan_Hellion_Trunk"})
+
+VVA.CopyTemplateToVehicle("pzkDashHellion","PZKA_Normal_Sedan_F",{"4SeatsR","pzka_Normal_SedanRearF","VVA_Normal_SeatsR","VVA_PZK_Normal_HellionSedan"})
 VVA.CopyTemplateToVehicle("pzkDashHellionDetective","pzkDashHellion",{"VVA_t_lighbar","VVA_NormalBars_Decor","VVA_PZK_Normal_Detective_Lightbar"})
 
-VVA.CopyTemplateToVehicle("pzkDashHellion_nr","PZKA_Normal_Sedan_F_nr",{"VVA_PZK_Normal_Hellion_FrontFill_nr","VVA_PZKASedan_Hellion_RearFill_nr","VVA_PZKASedan_Hellion_Trunk_nr"})
+VVA.CopyTemplateToVehicle("pzkDashHellion_nr","PZKA_Normal_Sedan_F_nr",{"4SeatsR","pzka_Normal_SedanRearF","VVA_Normal_SeatsR","VVA_PZK_Normal_HellionSedan_nr"})
 VVA.CopyTemplateToVehicle("pzkDashHellionTaxi","pzkDashHellion_nr",{"VVA_sle_taxi","VVA_PZK_Normal_short_Taxi"})
 
 -- Mayor Sedan
-VVA.CopyTemplateToVehicle("pzkDashMayor","PZKA_Normal_Sedan_F",{"VVA_PZK_Normal_Mayor_FrontFill","VVA_PZKASedan_Mayor_RearFill","VVA_PZKASedan_Cerise_Trunk"})
+VVA.addToProfileNR("VVA_PZK_Normal_MayorSedan",{"VVA_PZK_Normal_Mayor_FrontFill","VVA_PZKASedan_Mayor_RearFill","VVA_PZKASedan_Cerise_Trunk"})
+
+VVA.CopyTemplateToVehicle("pzkDashMayor","PZKA_Normal_Sedan_F",{"4SeatsR","pzka_Normal_SedanRearF","VVA_Normal_SeatsR","VVA_PZK_Normal_MayorSedan"})
 VVA.CopyTemplateToVehicle("Vehicles_pzkDashMayor","pzkDashMayor")
 VVA.CopyTemplateToVehicle("pzkDashMayorDetective","pzkDashMayor",{"VVA_t_lighbar","VVA_NormalBars_Decor","VVA_PZK_Normal_Detective_Lightbar"})
 
-VVA.CopyTemplateToVehicle("pzkDashMayor_nr","PZKA_Normal_Sedan_F_nr",{"VVA_PZK_Normal_Mayor_FrontFill_nr","VVA_PZKASedan_Mayor_RearFill_nr","VVA_PZKASedan_Cerise_Trunk_nr"})
+VVA.CopyTemplateToVehicle("pzkDashMayor_nr","PZKA_Normal_Sedan_F_nr",{"4SeatsR","pzka_Normal_SedanRearF","VVA_Normal_SeatsR","VVA_PZK_Normal_MayorSedan_nr"})
 VVA.CopyTemplateToVehicle("pzkDashMayorLSU","pzkDashMayor_nr",{"VVA_NormalBars_Decor","VVA_t_lighbar","VVA_Normal_Lightbar"})
 VVA.CopyTemplateToVehicle("pzkDashMayorMall","pzkDashMayorLSU")
 
@@ -71,15 +86,19 @@ VVA.CopyTemplateToVehicle("pzkDashMayorPoliceBulletinSheriff","pzkDashMayorPolic
 VVA.CopyTemplateToVehicle("pzkDashMayorTaxi","pzkDashMayor_nr",{"VVA_sle_taxi","VVA_PZK_Normal_short_Taxi"})
 
 -- Rapier Sedan
-VVA.CopyTemplateToVehicle("pzkDashRapier","PZKA_Normal_Sedan_F",{"VVA_PZK_Normal_Rapier_FrontFill","VVA_PZKASedan_Rapier_RearFill","VVA_PZKASedan_Cerise_Trunk"})
+VVA.addToProfileNR("VVA_PZK_Normal_RapierSedan",{"VVA_PZK_Normal_Rapier_FrontFill","VVA_PZKASedan_Rapier_RearFill","VVA_PZKASedan_Cerise_Trunk"})
+
+VVA.CopyTemplateToVehicle("pzkDashRapier","PZKA_Normal_Sedan_F",{"4SeatsR","pzka_Normal_SedanRearF","VVA_Normal_SeatsR","VVA_PZK_Normal_RapierSedan"})
 VVA.CopyTemplateToVehicle("Vehicles_pzkDashRapier","pzkDashRapier")
 VVA.CopyTemplateToVehicle("pzkDashRapierDetective","pzkDashRapier",{"VVA_t_lighbar","VVA_PZK_Normal_Detective_Lightbar"})
 
 -- TWD Sedan
-VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWD","PZKA_Normal_Sedan_V",{"VVA_PZK_Normal_TWD_FrontFill","VVA_PZKASedan_TWD_RearFill","VVA_PZKASedan_TWD_Trunk"})
+VVA.addToProfileNR("VVA_PZK_Normal_TWDSedan",{"VVA_PZK_Normal_TWD_FrontFill","VVA_PZKASedan_TWD_RearFill","VVA_PZKASedan_TWD_Trunk"})
+
+VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWD","PZKA_Normal_Sedan_V",{"4SeatsR","pzka_Normal_SedanRearV","VVA_Normal_SeatsR","VVA_PZK_Normal_TWDSedan"})
 VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWDDetective","pzkFranklinTriumphTWD",{"VVA_t_lighbar","VVA_NormalBars_Decor","VVA_PZK_Normal_Detective_Lightbar"})
 
-VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWD_nr","PZKA_Normal_Sedan_V_nr",{"VVA_PZK_Normal_TWD_FrontFill_nr","VVA_PZKASedan_TWD_RearFill_nr","VVA_PZKASedan_TWD_Trunk_nr"})
+VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWD_nr","PZKA_Normal_Sedan_V_nr",{"4SeatsR","pzka_Normal_SedanRearV","VVA_Normal_SeatsR","VVA_PZK_Normal_TWDSedan_nr"})
 VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWDFire","pzkFranklinTriumphTWD_nr",{"VVA_NormalBars_Decor","VVA_t_lighbar","VVA_Normal_Lightbar"})
 VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWDLSU","pzkFranklinTriumphTWDFire")
 VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWDMall","pzkFranklinTriumphTWDFire")
@@ -92,10 +111,12 @@ VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWDPoliceMuldraughPolice","pzkFrank
 VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWDTaxi","pzkFranklinTriumphTWD_nr",{"VVA_sle_taxi","VVA_PZK_Normal_short_Taxi"})
 
 -- TWD91 Sedan
-VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91","PZKA_Normal_Sedan_V",{"VVA_PZK_Normal_TWD_FrontFill","VVA_PZKASedan_TWD91_RearFill","VVA_PZKASedan_TWD_Trunk"})
+VVA.addToProfileNR("VVA_PZK_Normal_TWD91Sedan",{"VVA_PZK_Normal_TWD_FrontFill","VVA_PZKASedan_TWD91_RearFill","VVA_PZKASedan_TWD_Trunk"})
+
+VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91","PZKA_Normal_Sedan_V",{"4SeatsR","pzka_Normal_SedanRearV","VVA_Normal_SeatsR","VVA_PZK_Normal_TWD91Sedan"})
 VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91Detective","pzkFranklinTriumphTWD91",{"VVA_t_lighbar","VVA_NormalBars_Decor","VVA_PZK_Normal_Detective_Lightbar"})
 
-VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91_nr","PZKA_Normal_Sedan_V_nr",{"VVA_PZK_Normal_TWD_FrontFill_nr","VVA_PZKASedan_TWD91_RearFill_nr","VVA_PZKASedan_TWD_Trunk_nr"})
+VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91_nr","PZKA_Normal_Sedan_V_nr",{"4SeatsR","pzka_Normal_SedanRearV","VVA_Normal_SeatsR","VVA_PZK_Normal_TWD91Sedan_nr"})
 VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91LSU","pzkFranklinTriumphTWD91_nr",{"VVA_NormalBars_Decor","VVA_t_lighbar","VVA_Normal_Lightbar"})
 VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91Mall","pzkFranklinTriumphTWD91LSU")
 
@@ -105,26 +126,37 @@ VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91PoliceLouisvilleCounty","pzkFr
 VVA.CopyTemplateToVehicle("pzkFranklinTriumphTWD91PoliceMuldraughPolice","pzkFranklinTriumphTWD91PoliceBulletinSheriff")
 
 -- Homelander Sedan
-VVA.CopyTemplateToVehicle("pzkFranklinHomelander","PZKA_Normal_Sedan_V",{"VVA_PZK_Normal_Homelander_FrontFill","VVA_PZKASedan_Homelander_RearFill","VVA_PZKASedan_Homelander_Trunk"})
+VVA.addToProfileNR("VVA_PZK_Normal_HomelanderSedan",{"VVA_PZK_Normal_Homelander_FrontFill","VVA_PZKASedan_Homelander_RearFill","VVA_PZKASedan_Homelander_Trunk"})
+
+VVA.CopyTemplateToVehicle("pzkFranklinHomelander","PZKA_Normal_Sedan_V",{"4SeatsR","pzka_Normal_SedanRearV","VVA_Normal_SeatsR","VVA_PZK_Normal_HomelanderSedan"})
 VVA.CopyTemplateToVehicle("pzkFranklinHomelanderDetective","pzkFranklinHomelander",{"VVA_t_lighbar","VVA_PZK_Normal_Detective_Lightbar"})
 
 
 -- Nyala42 Sedan
---[[VVA.ApplyTemplateToVehicle("PZKA_Nyala42_Sedan_V","VVA_Vehicles_PZKASedan_SedanV",{"4SeatsR","pzka_Normal_V","VVA_Normal_Front","VVA_PZK_Normal_hood","VVA_PZK_Normal_Nyala42_Rear","VVA_PZK_Normal_Nyala42_FrontFill","VVA_PZKASedan_Nyala42_RearFill","VVA_PZKASedan_Nyala42_Trunk"})
-VVA.ApplyTemplateToVehicle("PZKA_Nyala42_Sedan_V_nr","VVA_Vehicles_PZKASedan_SedanV_nr",{"4SeatsR","pzka_Normal_V","VVA_Normal_Front_nr","VVA_PZK_Normal_hood_nr","VVA_PZK_Normal_Nyala42_Rear_nr","VVA_PZK_Normal_Nyala42_FrontFill_nr","VVA_PZKASedan_Nyala42_RearFill_nr","VVA_PZKASedan_Nyala42_Trunk"})
+--[[VVA.addToProfileNR("VVA_PZK_Normal_Nyala42Sedan",{"VVA_PZK_Normal_Nyala42_FrontFill","VVA_PZKASedan_Nyala42_RearFill","VVA_PZKASedan_Nyala42_Trunk"})
 
-VVA.CopyTemplateToVehicle("CarNormal","PZKA_Nyala42_Sedan_V")
-VVA.CopyTemplateToVehicle("CarTaxi","PZKA_Nyala42_Sedan_V_nr",{"VVA_sle_taxi","VVA_Normal_Taxi"})
+VVA.ApplyTemplateToVehicle("PZKA_Normal_Nyala42","VVA_Vehicles_PZKASedan_SedanV",{"VVA_Normal_Front","VVA_PZK_Normal_hood","VVA_PZK_Normal_Nyala42_Rear"})
+VVA.ApplyTemplateToVehicle("PZKA_Normal_Nyala42_nr","VVA_Vehicles_PZKASedan_SedanV_nr",{"VVA_Normal_Front_nr","VVA_PZK_Normal_hood_nr","VVA_PZK_Normal_Nyala42_Rear_nr"})
+
+VVA.CopyTemplateToVehicle("PZKA_Nyala_Sedan","PZKA_Normal_Nyala42",{"4SeatsR","pzka_Normal_SedanRearV","VVA_Normal_SeatsR","VVA_PZK_Normal_Nyala42Sedan"})
+VVA.CopyTemplateToVehicle("PZKA_Nyala_Sedan_nr","PZKA_Normal_Nyala42",{"4SeatsR","pzka_Normal_SedanRearV","VVA_Normal_SeatsR","VVA_PZK_Normal_Nyala42Sedan_nr"})
+
+VVA.CopyTemplateToVehicle("CarNormal","PZKA_Nyala_Sedan")
+VVA.CopyTemplateToVehicle("pzkChevalierNyalaDetective","CarNormal",{"VVA_t_lighbar","VVA_NormalBars_Decor","VVA_PZK_Normal_Detective_Lightbar"})
+
+VVA.CopyTemplateToVehicle("CarTaxi","PZKA_Nyala_Sedan_nr",{"VVA_sle_taxi","VVA_Normal_Taxi"})
 VVA.CopyTemplateToVehicle("CarTaxi2","CarTaxi")
-VVA.CopyTemplateToVehicle("CarLightsBulletinSheriff","PZKA_Nyala42_Sedan_V_nr",{"VVA_NormalBars_Decor","VVA_sle_lighbar","VVA_Normal_Lightbar"})
+VVA.CopyTemplateToVehicle("CarLightsBulletinSheriff","PZKA_Nyala_Sedan_nr",{"VVA_NormalBars_Decor","VVA_sle_lighbar","VVA_Normal_Lightbar"})
 VVA.CopyTemplateToVehicle("CarLightsKST","CarLightsBulletinSheriff")
 VVA.CopyTemplateToVehicle("CarLightsLouisvilleCounty","CarLightsBulletinSheriff")
 VVA.CopyTemplateToVehicle("CarLightsMuldraughPolice","CarLightsBulletinSheriff")
-VVA.CopyTemplateToVehicle("CarLightsRanger","PZKA_Nyala42_Sedan_V_nr",{"VVA_t_lighbar","VVA_Normal_Lightbar","VVA_NormalBars_Decor"})
 ]]
 VVA.CopyTemplateToVehicle("pzkChevalierNyalaDetective","VVA_CarNormal",{"VVA_t_lighbar","VVA_NormalBars_Decor","VVA_PZK_Normal_Detective_Lightbar"})
 
-VVA.CopyTemplateToVehicle("pzkChevalierNyalaLSU","VVA_CarNormal_nr",{"VVA_NormalBars_Decor","VVA_t_lighbar","VVA_Normal_Lightbar"})
+VVA.CopyTemplateToVehicle("CarLightsRanger","PZKA_Nyala_Sedan_nr",{"VVA_t_lighbar","VVA_Normal_Lightbar","VVA_NormalBars_Decor"})
+
+
+VVA.CopyTemplateToVehicle("pzkChevalierNyalaLSU","CarLightsRanger")
 --VVA.CopyTemplateToVehicle("pzkChevalierNyalaMall", "pzkChevalierNyalaLSU")
 
 -- Nyala Sedan
@@ -136,10 +168,10 @@ VVA.CopyTemplateToVehicle("pzkChevalierNyalaLSU","VVA_CarNormal_nr",{"VVA_Normal
 VVA.CopyTemplateToVehicle("pzkChevalierNyalaMall", "pzkChevalierNyalaLSU")
 
 -- Hearse
-VVA.ApplyTemplateToVehicle("pzkHearse","VVA_Vehicles_Hearse_nr",{"4SeatsR","pzka_NormalBase","VVA_Hearse_SeatsR","VVA_Normal_Front_nr","VVA_PZK_Normal_hood_nr","VVA_Hearse_Rear_nr","VVA_Hearse_Trunk_nr","VVA_PZK_Normal_Nyala_FrontFill_nr","VVA_Hearse_RearLights"})
+VVA.ApplyTemplateToVehicle("pzkHearse","VVA_Vehicles_Hearse_nr",{"4SeatsR","VVA_Normal_Base","VVA_Hearse_SeatsR","VVA_Normal_Front_nr","VVA_PZK_Normal_hood_nr","VVA_Hearse_Rear_nr","VVA_Hearse_Trunk_nr","VVA_PZK_Normal_Nyala_FrontFill_nr","VVA_Hearse_RearLights"})
 
 -- Limo
-VVA.ApplyTemplateToVehicle("PZKA_Limo_Base","VVA_Vehicles_Limo",{"4SeatsR","pzka_NormalBase","VVA_Limo_SeatsR","VVA_Normal_Front","VVA_PZK_Normal_hood","VVA_Limo_Decor"})
+VVA.ApplyTemplateToVehicle("PZKA_Limo_Base","VVA_Vehicles_Limo",{"4SeatsR","VVA_Normal_Base","VVA_Limo_SeatsR","VVA_Normal_Front","VVA_PZK_Normal_hood","VVA_Limo_Decor"})
 --VVA.ApplyTemplateToVehicle("pzkLimo","VVA_Vehicles_Hearse",{"4SeatsR","VVA_Normal_common","PZKA_Limo_Interior","PZKA_Normal_front","PZKA_Normal_Limo_Nyala42_Reardoors","PZKA_Limo_RearWindow","PZKA_Limo_Nyala42"})
 --VVA.CopyTemplateToVehicle("pzkLimo","PZKA_Limo_Base",{"VVA_Limo_Nyala42_Rear","VVA_PZK_Normal_Nyala42_FrontFill","VVA_Limo_Cerise_Trunk","VVA_Limo_Nyala42_RearFill"})
 VVA.CopyTemplateToVehicle("pzkChevalierCeriseLimo","PZKA_Limo_Base",{"VVA_Limo_Rear","VVA_PZK_Normal_Cerise_FrontFill","VVA_Limo_Cerise_Trunk","VVA_Limo_Cerise_RearFill"})
@@ -148,8 +180,8 @@ VVA.CopyTemplateToVehicle("pzkFranklinHomelanderLimo","PZKA_Limo_Base",{"VVA_Lim
 VVA.CopyTemplateToVehicle("pzkDashHellionLimo","PZKA_Limo_Base",{"VVA_Limo_Rear","VVA_PZK_Normal_Hellion_FrontFill","VVA_Limo_Hellion_Trunk","VVA_Limo_Hellion_RearFill"})
 
 -- Station Wagon
-VVA.ApplyTemplateToVehicle("PZKA_Normal_Wagon","VVA_Vehicles_PZKAWagon",{"4SeatsR","pzka_NormalBase","VVA_Normal_SeatsR","VVA_Normal_Front","VVA_PZK_Normal_hood","VVA_PZK_Normal_Rear"})
-VVA.ApplyTemplateToVehicle("PZKA_Normal_Wagon_nr","VVA_Vehicles_PZKAWagon_nr",{"4SeatsR","pzka_NormalBase","VVA_Normal_SeatsR","VVA_Normal_Front_nr","VVA_PZK_Normal_hood_nr","VVA_PZK_Normal_Rear_nr"})
+VVA.ApplyTemplateToVehicle("PZKA_Normal_Wagon","VVA_Vehicles_PZKAWagon",{"4SeatsR","VVA_Normal_Base","VVA_Normal_SeatsR","VVA_Normal_Front","VVA_PZK_Normal_hood","VVA_PZK_Normal_Rear"})
+VVA.ApplyTemplateToVehicle("PZKA_Normal_Wagon_nr","VVA_Vehicles_PZKAWagon_nr",{"4SeatsR","VVA_Normal_Base","VVA_Normal_SeatsR","VVA_Normal_Front_nr","VVA_PZK_Normal_hood_nr","VVA_PZK_Normal_Rear_nr"})
 
 VVA.CopyTemplateToVehicle("pzkCeriseStationWagon","PZKA_Normal_Wagon",{"VVA_PZK_Normal_Cerise_FrontFill","VVA_PZKAWagon_Cerise_RearFill","VVA_PZKAWagon_Trunk"})
 VVA.CopyTemplateToVehicle("pzkRapierStationWagon","PZKA_Normal_Wagon",{"VVA_PZK_Normal_Rapier_FrontFill","VVA_PZKAWagon_Cerise_RearFill","VVA_PZKAWagon_Trunk"})
@@ -157,8 +189,8 @@ VVA.CopyTemplateToVehicle("pzkDashMayorStationWagon","PZKA_Normal_Wagon",{"VVA_P
 VVA.CopyTemplateToVehicle("pzkTriumphTWDStationWagon","PZKA_Normal_Wagon",{"VVA_PZK_Normal_TWD_FrontFill","VVA_PZKAWagon_TWD_RearFill","VVA_PZKAWagon_Trunk"})
 VVA.CopyTemplateToVehicle("pzkTriumphTWDStationWagonTaxi","PZKA_Normal_Wagon_nr",{"VVA_PZK_Normal_TWD_FrontFill_nr","VVA_PZKAWagon_TWD_RearFill_nr","VVA_PZKAWagon_Trunk_nr", "VVA_sle_taxi","VVA_PZK_Normal_wagon_Taxi"})
 
-VVA.ApplyTemplateToVehicle("pzkTriumphTWDStationWagonGriswold","VVA_Vehicles_PZKAWagon_Grisworld_nr",{"4SeatsR","pzka_NormalBase","VVA_Normal_SeatsR","VVA_Normal_Front_nr","VVA_PZK_Normal_hood_nr","VVA_PZK_Normal_Rear_nr","VVA_PZKAWagon_Grisworld_Trunk_nr","VVA_PZKAWagon_Grisworld_FrontFill_nr","VVA_PZKAWagon_Grisworld_RearLights"})
-VVA.ApplyTemplateToVehicle("pzkHearseGhoulbusters","VVA_Vehicles_PZKAWagon_Ghoulbuster_nr",{"4SeatsR","pzka_NormalBase","VVA_Normal_SeatsR","VVA_Normal_Front_nr","VVA_PZK_Normal_hood_nr","VVA_PZK_Normal_Rear_nr","VVA_Hearse_Ghoulbuster_Trunk_nr","VVA_PZKAWagon_Ghoulbuster_FrontFill_nr","VVA_PZKAWagon_Ghoulbuster_RearLights","VVA_t_lighbar","VVA_Hearse_Lightbar"})
+VVA.ApplyTemplateToVehicle("pzkTriumphTWDStationWagonGriswold","VVA_Vehicles_PZKAWagon_Grisworld_nr",{"4SeatsR","VVA_Normal_Base","VVA_Normal_SeatsR","VVA_Normal_Front_nr","VVA_PZK_Normal_hood_nr","VVA_PZK_Normal_Rear_nr","VVA_PZKAWagon_Grisworld_Trunk_nr","VVA_PZKAWagon_Grisworld_FrontFill_nr","VVA_PZKAWagon_Grisworld_RearLights"})
+VVA.ApplyTemplateToVehicle("pzkHearseGhoulbusters","VVA_Vehicles_PZKAWagon_Ghoulbuster_nr",{"4SeatsR","VVA_Normal_Base","VVA_Normal_SeatsR","VVA_Normal_Front_nr","VVA_PZK_Normal_hood_nr","VVA_PZK_Normal_Rear_nr","VVA_Hearse_Ghoulbuster_Trunk_nr","VVA_PZKAWagon_Ghoulbuster_FrontFill_nr","VVA_PZKAWagon_Ghoulbuster_RearLights","VVA_t_lighbar","VVA_Hearse_Lightbar"})
 
 -- K9
 ---- Cerise
@@ -167,10 +199,10 @@ VVA.ApplyTemplateToVehicle("pzkChevalierCeriseSedanPoliceK9","VVA_Vehicles_PZKAS
 --VVA.ApplyTemplateToVehicle("pzkChevalierCeriseSedanPoliceK9","PZKA_Normal_SedanF_nr",{"2SeatsF","PZKA_Normal_SedanF_K9_base_nr","PZKA_SedanF_Cerise_nr","VVA_sle_lighbar","VVA_Normal_Lightbar"})
 
 ---- TWD
-VVA.ApplyTemplateToVehicle("pzkFranklinTriumphTWDPoliceK9","PZKA_Normal_SedanV_nr",{"2SeatsF","PZKA_Normal_SedanV_K9_base_nr","PZKA_SedanV_TWD_nr","VVA_sle_lighbar","VVA_Normal_Lightbar"})
+--VVA.ApplyTemplateToVehicle("pzkFranklinTriumphTWDPoliceK9","PZKA_Normal_SedanV_nr",{"2SeatsF","PZKA_Normal_SedanV_K9_base_nr","PZKA_SedanV_TWD_nr","VVA_sle_lighbar","VVA_Normal_Lightbar"})
 
 ---- Mayor
-VVA.ApplyTemplateToVehicle("pzkDashMayorPoliceK9","PZKA_Normal_SedanF_nr",{"2SeatsF","PZKA_Normal_SedanF_K9_base_nr","PZKA_SedanF_Mayor_nr","VVA_sle_lighbar","VVA_Normal_Lightbar"})
+--VVA.ApplyTemplateToVehicle("pzkDashMayorPoliceK9","PZKA_Normal_SedanF_nr",{"2SeatsF","PZKA_Normal_SedanF_K9_base_nr","PZKA_SedanF_Mayor_nr","VVA_sle_lighbar","VVA_Normal_Lightbar"})
 
 
 -- Pickup
@@ -198,28 +230,9 @@ VVA.CopyTemplateToVehicle("pzkPickUpTruckPublicWorks","VVA_Pickup_lightbarF")
 
 VVA.CopyTemplateToVehicle("pzkPickUpTruckWoodboarded","VVA_Pickup")
 
--- SUV
-
---VVA.ApplyTemplateToVehicle("SUV","PZKA_Vehicles_SUV",{"pzka_4SeatsR","PZKA_SUV"})
-VVA.ApplyTemplateToVehicle("pzkSuvDinoPark","VVA_SUV_nr",{"pzka_4SeatsR","PZKA_SUV_nr"})
-VVA.CopyTemplateToVehicle("pzkSuvPleistoceneLand","pzkSuvDinoPark")
-
-VVA.ApplyTemplateToVehicle("pzkSuvAirportSecurity","VVA_SUV_nr",{"pzka_4SeatsR","PZKA_SUV_nr","VVA_t_lighbar","PZKA_SUV_Lightbar"})
-VVA.CopyTemplateToVehicle("pzkSuvFire","pzkSuvAirportSecurity")
-VVA.CopyTemplateToVehicle("pzkSuvRanger","pzkSuvAirportSecurity")
-VVA.ApplyTemplateToVehicle("pzkSuvMeadeSheriff","VVA_SUV_nr",{"pzka_4SeatsR","PZKA_SUV_nr","VVA_sle_lighbar","PZKA_SUV_Lightbar"})
-VVA.CopyTemplateToVehicle("pzkSuvPoliceLouisvillePD","pzkSuvMeadeSheriff")
-VVA.CopyTemplateToVehicle("pzkSuvWestPoint","pzkSuvMeadeSheriff")
-
--- SUV Pickup
-
-VVA.ApplyTemplateToVehicle("pzkPickupFranklin","PZKA_Vehicles_SUV_P",{"pzka_2SeatsF","PZKA_SUV_P"})
-VVA.ApplyTemplateToVehicle("pzkPickupFranklinRanger","PZKA_Vehicles_SUV_P_nr",{"pzka_2SeatsF","PZKA_SUV_P_nr","VVA_t_lighbar","PZKA_SUV_Lightbar"})
-VVA.CopyTemplateToVehicle("pzkPickupFranklinFire","pzkPickupFranklinRanger")
-
 -- VVans
 VVA.addToProfile("pzka_VanBase",{"VVA_Van_Interior","VVA_Van_Windshield","VVA_Van_SeatsF"})
-
+VVA.addToProfile("VVA_Van_VBase",{"pzka_VanBase","VVA_Van_FrontLights","VVA_Van_RearLights","VVA_Van_Fill_Decor"})
 
 VVA.CopyTemplateToVehicle("pzkVanilaVanAmbulance","VVA_VanAmbulance")
 VVA.CopyTemplateToVehicle("pzkVanMcCoy","VVA_VanCommecial")
@@ -236,7 +249,7 @@ VVA.CopyTemplateToVehicle("pzkVanPoliceLouisvillePD","pzka_VVan_Multi_nr",{"VVA_
 VVA.CopyTemplateToVehicle("pzkVanPoliceMeadeSheriff","pzkVanPoliceLouisvillePD")
 VVA.CopyTemplateToVehicle("pzkVanPoliceWestPoint","pzkVanPoliceLouisvillePD")
 
-VVA.ApplyTemplateToVehicle("pzkVanSeatsTaxi","VVA_Vehicles_Van_seats_nr",{"6Seats","VVA_Van_Seats","VVA_Van_hood_nr","VVA_Van_Front_nr","VVA_VVan_Open_Middle_nr","VVA_Van_Trunk_Seats"})
+VVA.ApplyTemplateToVehicle("pzkVanSeatsTaxi","VVA_Vehicles_Van_seats_nr",{"6Seats","VVA_VanSeats_Base","VVA_Van_hood_nr","VVA_Van_Front_nr","VVA_VVan_Open_Middle_nr","VVA_Van_Trunk_Seats"})
 VVA.CopyTemplateToVehicle("Vehicles_VanSeatsTaxi","pzkVanSeatsTaxi")
 
 ---- Camper
@@ -248,12 +261,12 @@ VVA.ApplyTemplateToVehicle("pzkVanCamper","VVA_Vehicles_Van_Camper",{"2SeatsF","
 
 ---- Brig
 
-VVA.addToProfile("VVA_Van_Bed",{"VVA_Van_Root","VVA_Van_Windshield","VVA_Van_FrontLights","VVA_Van_Bed_RearLights","VVA_Van_Bed_SeatsR","VVA_Van_Bed_RearWindow"})
+VVA.addToProfile("VVA_Van_Bed",{"pzka_VanBase","VVA_Van_FrontLights","VVA_Van_Bed_RearLights","VVA_Van_Bed_SeatsR","VVA_Van_Bed_RearWindow"})
 VVA.ApplyTemplateToVehicle("pzkVanBrig","VVA_Vehicles_Van_Bed",{"4SeatsR","VVA_Van_Bed","VVA_Van_hood","VVA_Van_Front","VVA_Van_Bed_Rear"})
 
 ---- CVans
 
-VVA.addToProfile("pzka_CVanBase",{"VVA_Van_Root","VVA_Van_Windshield","VVA_CVan_interior_Decor"})
+VVA.addToProfile("pzka_CVanBase",{"pzka_VanBase","VVA_CVan_interior_Decor"})
 
 VVA.addToProfile("pzka_CVanFill",{"VVA_CVan_VariableFrontFill","VVA_CVan_RearFill"})
 VVA.addToProfile("pzka_CVan3Fill",{"VVA_CVan3_FrontFill","VVA_CVan_RearFill"})
@@ -314,7 +327,7 @@ VVA.CopyTemplateToVehicle("pzkDVan6Seats3","pzka_DVan6Seats",{"pzka_DVan3Fill"})
 
 ---- FVans
 
-VVA.addToProfile("pzka_FVanBase",{"VVA_Van_Root","VVA_Van_Windshield","VVA_FVan_Fill_Decor"})
+VVA.addToProfile("pzka_FVanBase",{"pzka_VanBase","VVA_FVan_Fill_Decor"})
 VVA.addToProfile("pzka_FVan_TrunkSeats",{"VVA_FVan_Trunk","VVA_Van_seats_RearWindow"})
 
 VVA.ApplyTemplateToVehicle("pzkFVanCargo","VVA_Vehicles_FVan_Cargo",{"2SeatsF","VVA_FVan_VariableFrontFill","VVA_FVan_VariableRearFill","pzka_FVanBase","VVA_Van_F_hood","VVA_Van_Front","VVA_FVan_Blind_Trunk","VVA_Van_Cargo_Decor"})
@@ -405,6 +418,26 @@ VVA.ApplyTemplateToVehicle("pzkHMMV5Mil","VVA_Vehicles_PZK_HMMV_5_nr",{"2SeatsF"
 
 
 --!!-- END OF V3 Code
+
+-- SUV
+
+VVA.ApplyTemplateToVehicle("SUV","PZKA_Vehicles_SUV",{"pzka_4SeatsR","PZKA_SUV"})
+VVA.ApplyTemplateToVehicle("pzkSuvDinoPark","PZKA_Vehicles_SUV_nr",{"pzka_4SeatsR","PZKA_SUV_nr"})
+VVA.CopyTemplateToVehicle("pzkSuvPleistoceneLand","pzkSuvDinoPark")
+
+VVA.ApplyTemplateToVehicle("pzkSuvAirportSecurity","PZKA_Vehicles_SUV_nr",{"pzka_4SeatsR","PZKA_SUV_nr","VVA_t_lighbar","PZKA_SUV_Lightbar"})
+VVA.CopyTemplateToVehicle("pzkSuvFire","pzkSuvAirportSecurity")
+VVA.CopyTemplateToVehicle("pzkSuvRanger","pzkSuvAirportSecurity")
+VVA.ApplyTemplateToVehicle("pzkSuvMeadeSheriff","PZKA_Vehicles_SUV_nr",{"pzka_4SeatsR","PZKA_SUV_nr","VVA_sle_lighbar","PZKA_SUV_Lightbar"})
+VVA.CopyTemplateToVehicle("pzkSuvPoliceLouisvillePD","pzkSuvMeadeSheriff")
+VVA.CopyTemplateToVehicle("pzkSuvWestPoint","pzkSuvMeadeSheriff")
+
+-- SUV Pickup
+
+VVA.ApplyTemplateToVehicle("pzkPickupFranklin","PZKA_Vehicles_SUV_P",{"pzka_2SeatsF","PZKA_SUV_P"})
+VVA.ApplyTemplateToVehicle("pzkPickupFranklinRanger","PZKA_Vehicles_SUV_P_nr",{"pzka_2SeatsF","PZKA_SUV_P_nr","VVA_t_lighbar","PZKA_SUV_Lightbar"})
+VVA.CopyTemplateToVehicle("pzkPickupFranklinFire","pzkPickupFranklinRanger")
+
 
 --Bank Truck
 
@@ -629,7 +662,7 @@ VVA.ApplyTemplateToVehicle("pzkDashIntruder150short","PZKA_Vehicles_Laser_2D",{"
 
 -- Rookie
 
---VVA.ApplyTemplateToVehicle("pzkChevalierRookie","PZKA_Vehicles_Rookie",{"pzka_4SeatsR","PZKA_Rookie"})
+VVA.ApplyTemplateToVehicle("pzkChevalierRookie","PZKA_Vehicles_Rookie",{"pzka_4SeatsR","PZKA_Rookie"})
 
 -- Marocca
 
