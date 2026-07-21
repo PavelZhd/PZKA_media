@@ -4,7 +4,6 @@ module Base
 	{
 		mesh = vehicles/PZKA/Vans/Camper|decor_CamperFurniture,
 		shader = vehicle_multiuv_noreflect,
-		texture = Vehicles/[TEXTURE],
 		static = TRUE,
 		scale = 0.01,
 	}

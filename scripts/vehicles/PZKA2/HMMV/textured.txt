@@ -3,7 +3,8 @@ module Base
 	model VVA_Vehicles_PZK_HMMV_battery
 	{
 		mesh = vehicles/PZKA/HMMV/static|Battery,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehiclewheel,
+		texture = WorldItems/CarBattery,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -11,7 +12,7 @@ module Base
 	model VVA_Vehicles_PZK_HMMV_internals
 	{
 		mesh = vehicles/PZKA/HMMV/static|Vehicles_Interior,
-
+		shader = vehiclewheel,
 		texture = Vehicles/Vehicle_pzkHMMWV1Civshell,
 		static = TRUE,
 		scale = 0.01,
