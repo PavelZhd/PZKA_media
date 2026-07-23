@@ -1,0 +1,19 @@
+module Base
+{
+    template vehicle VVA_PZK_Cerise93_Rear {
+		template! = VVA_PZK_Cerise93_RearLeft,
+		template! = VVA_PZK_Cerise93_RearRight,
+	}
+    template vehicle VVA_PZK_Cerise93_Rear_nr {
+		template! = VVA_PZK_Cerise93_RearLeft_nr,
+		template! = VVA_PZK_Cerise93_RearRight_nr,
+	}
+    template vehicle VVA_PZK_Cerise93_K9_Rear {
+		template! = VVA_PZK_Cerise93_K9_RearLeft,
+		template! = VVA_PZK_Cerise93_K9_RearRight,
+	}
+    template vehicle VVA_PZK_Cerise93_K9_Rear_nr {
+		template! = VVA_PZK_Cerise93_K9_RearLeft_nr,
+		template! = VVA_PZK_Cerise93_K9_RearRight_nr,
+	}
+}

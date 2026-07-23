@@ -1,0 +1,75 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Cerise93_Hood
+	{
+		mesh = vehicles/PZKA/Cerise93/hood|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+  	}
+	model VVA_Vehicles_PZK_Cerise93_Hood_nr
+	{
+		mesh = vehicles/PZKA/Cerise93/hood|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+  	}
+	template vehicle VVA_PZK_Cerise93_hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Hood,
+			}
+		}
+		template! = VVA_Hood_Common,
+	}
+	template vehicle VVA_PZK_Cerise93_hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Hood_nr,
+			}
+		}
+		template! = VVA_Hood_Common,
+	}
+	model VVA_Vehicles_PZK_Cerise93_C93_Hood
+	{
+		mesh = vehicles/PZKA/Cerise93/hood|Hood_C93_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+  	}
+	model VVA_Vehicles_PZK_Cerise93_C93_Hood_nr
+	{
+		mesh = vehicles/PZKA/Cerise93/hood|Hood_C93_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+  	}
+	template vehicle VVA_PZK_Cerise93_C93_hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_C93_Hood,
+			}
+		}
+		template! = VVA_Hood_Common,
+	}
+	template vehicle VVA_PZK_Cerise93_C93_hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_C93_Hood_nr,
+			}
+		}
+		template! = VVA_Hood_Common,
+	}
+}

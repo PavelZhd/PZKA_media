@@ -1,0 +1,35 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Cerise93_SeatFL
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Seat_FrontLeft_obj,
+		shader = vva_fixetex,
+		texture = Vehicles/Vehicle_pzkChevalierCeriseSedanshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Cerise93_SeatFR
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Seat_FrontRight_obj,
+		shader = vva_fixetex,
+		texture = Vehicles/Vehicle_pzkChevalierCeriseSedanshell,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Cerise93_SeatsF {
+		part SeatFrontLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_SeatFL,
+			}
+		}
+		part SeatFrontRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_SeatFR,
+			}
+		}
+	}
+}

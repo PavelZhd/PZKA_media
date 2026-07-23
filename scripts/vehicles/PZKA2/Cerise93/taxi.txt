@@ -1,0 +1,20 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Cerise93_Taxi
+	{
+		mesh = vehicles/PZKA/Cerise93/static|TaxiSign,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Cerise93_Taxi {
+		part VVATaxiSign
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Taxi,
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+module Base
+{
+
+	model VVA_Vehicles_PZK_Cerise93_internals
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Vehicles_Interior,
+		shader = vva_fixetex,
+		texture = Vehicles/Vehicle_pzkFranklinTriumph,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Cerise93_Interior {
+		template! = VVA_Interior,
+		part Interior
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_internals,
+			}
+		}
+		part Battery
+		{
+			model Default
+			{
+				file = VVA_Battery,
+				offset = -0.21491 -0.025531 0.96711,
+			}
+		}
+	}
+}

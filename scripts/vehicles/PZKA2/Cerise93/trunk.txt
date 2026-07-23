@@ -1,0 +1,50 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Cerise93_Wagon_Trunk
+	{
+		mesh = vehicles/PZKA/Cerise93/wagonTrunk|Trunk_Wagon_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VVA_Vehicles_PZK_Cerise93_Wagon_Trunk_nr
+	{
+		mesh = vehicles/PZKA/Cerise93/wagonTrunk|Trunk_Wagon_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = TrunkBone 1.0,
+	}
+	template vehicle VVA_PZK_Cerise93_Wagon_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Wagon_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+		}
+		template! = VVA_PZK_Cerise93_Wagon_RearWindow,
+
+	}
+	template vehicle VVA_PZK_Cerise93_Wagon_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Wagon_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+ 		part WindshieldRear
+		{
+			parent = TrunkDoor,
+		}
+		template! = VVA_PZK_Cerise93_Wagon_RearWindow,
+	}
+}

@@ -1,0 +1,127 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Cerise93_WindowRearRight
+	{
+		mesh = vehicles/PZKA/Cerise93/doorR|Window_RearRight_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearWindow.R 1.0,
+	}
+	model VVA_Vehicles_PZK_Cerise93_WindowRearRight_static
+	{
+		mesh = vehicles/PZKA/Cerise93/doorR|Window_RearRight_sobj,
+		shader = vehicle_multiuv_vva,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	model VVA_Vehicles_PZK_Cerise93_DoorRearRight
+	{
+		mesh = vehicles/PZKA/Cerise93/doorR|Door_RearRight_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor.R 1.0,
+	}
+	model VVA_Vehicles_PZK_Cerise93_DoorRearRight_nr
+	{
+		mesh = vehicles/PZKA/Cerise93/doorR|Door_RearRight_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor.R 1.0,
+	}
+
+
+	template vehicle VVA_PZK_Cerise93_RearRightShared {
+		part WindowRearRight
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_PZK_Cerise93_WindowRearRight,
+            }
+			model Static
+            {
+            	file = VVA_Vehicles_PZK_Cerise93_WindowRearRight_static,
+            }
+		}
+		template! = VVA_WindowRR,
+		template! = VVA_DoorRR_Common,
+	}
+
+	template vehicle VVA_PZK_Cerise93_RearRight {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_DoorRearRight,
+			}
+		}
+		template! = VVA_PZK_Cerise93_RearRightShared,
+	}
+	template vehicle VVA_PZK_Cerise93_RearRight_nr {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_DoorRearRight_nr,
+			}
+		}
+		template! = VVA_PZK_Cerise93_RearRightShared,
+	}
+	model VVA_Vehicles_PZK_Cerise93_K9_DoorRearRight
+	{
+		mesh = vehicles/PZKA/Cerise93/doorR|Door_RearRight_K9_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor.R 1.0,
+	}
+	model VVA_Vehicles_PZK_Cerise93_K9_DoorRearRight_nr
+	{
+		mesh = vehicles/PZKA/Cerise93/doorR|Door_RearRight_K9_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = RearDoor.R 1.0,
+	}
+
+
+	template vehicle VVA_PZK_Cerise93_K9_RearRightShared {
+		part WindowRearRight
+        {
+			model Default
+            {
+            	file = VVA_Vehicles_PZK_Cerise93_WindowRearRight,
+            }
+			model Static
+            {
+            	file = VVA_Vehicles_PZK_Cerise93_WindowRearRight_static,
+            }
+		}
+		template! = VVA_WindowRR,
+		template! = VVA_DoorRR_Common,
+	}
+
+	template vehicle VVA_PZK_Cerise93_K9_RearRight {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_K9_DoorRearRight,
+			}
+		}
+		template! = VVA_PZK_Cerise93_K9_RearRightShared,
+	}
+	template vehicle VVA_PZK_Cerise93_K9_RearRight_nr {
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_K9_DoorRearRight_nr,
+			}
+		}
+		template! = VVA_PZK_Cerise93_K9_RearRightShared,
+	}
+}

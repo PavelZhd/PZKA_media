@@ -1,0 +1,11 @@
+module Base
+{
+    template vehicle VVA_PZK_Cerise93_Front {
+		template! = VVA_PZK_Cerise93_FrontLeft,
+		template! = VVA_PZK_Cerise93_FrontRight,
+	}
+    template vehicle VVA_PZK_Cerise93_Front_nr {
+		template! = VVA_PZK_Cerise93_FrontLeft_nr,
+		template! = VVA_PZK_Cerise93_FrontRight_nr,
+	}
+}
