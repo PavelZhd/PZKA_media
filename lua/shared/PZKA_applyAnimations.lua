@@ -13,6 +13,10 @@ if not VVA.addToProfileNR then
     end
 end
 
+if VVA.CheckModEnabled("STFRMain") then
+    require "1STFRCore/Vehicles/ApplyAnimations"
+end
+
 local PZKA = require "PZKA_addAnimations"
 require "VVA_applyAnimations"
 require "VVA_misc_Profiles"
@@ -505,14 +509,19 @@ VVA.CopyTemplateToVehicle("pzkFranklinTriumphWagon","PZK_Cerise93_Wagon")
 VVA.CopyTemplateToVehicle("pzkFranklinTriumphWagonLSU","PZK_Cerise93_Wagon_nr", {"VVA_t_lightbar","VVA_PZK_Cerise93_Lightbar"})
 VVA.CopyTemplateToVehicle("pzkFranklinTriumphWagonMall","pzkFranklinTriumphWagonLSU")
 
----- K9
+---- STFR
+if VVA.CheckModEnabled("STFRMain") then
 
 VVA.ApplyTemplateToVehicle("PZK_Cerise93_Sedan_K9_nr","VVA_Vehicles_PZK_Cerise93_Sedan_Cerise93_nr",{"2SeatsF","VVA_PZK_Cerise93_Common","VVA_PZK_Cerise93_Kennel_Decor","VVA_PZK_Cerise93_Sedan_RearWindow","VVA_PZK_Cerise93_Triumph_FrontLights","VVA_PZK_Cerise93_Sedan_Triumph_RearLights","VVA_PZK_Cerise93_hood_nr","VVA_PZK_Cerise93_Front_nr","VVA_PZK_Cerise93_Rear_nr","VVA_PZK_Cerise93_Sedan_Trunk_nr"})
 VVA.ApplyTemplateToVehicle("PZK_Triumph_Sedan_K9_nr","VVA_Vehicles_PZK_Cerise93_Sedan_Triumph_nr",{"2SeatsF","VVA_PZK_Cerise93_Common","VVA_PZK_Cerise93_Kennel_Decor","VVA_PZK_Cerise93_Sedan_RearWindow","VVA_PZK_Cerise93_Triumph_FrontLights","VVA_PZK_Cerise93_Sedan_Triumph_RearLights","VVA_PZK_Cerise93_hood_nr","VVA_PZK_Cerise93_Front_nr","VVA_PZK_Cerise93_Rear_nr","VVA_PZK_Cerise93_Sedan_Trunk_nr"})
 
---VVA.CopyTemplateToVehicle("pzkChevalierCerise93PoliceK9","PZK_Cerise93_Sedan_K9_nr", {"PZKA_sle_lightbar","VVA_PZK_Cerise93_Lightbar"})
---VVA.CopyTemplateToVehicle("pzkFranklinTriumphPoliceK9","PZK_Triumph_Sedan_K9_nr", {"PZKA_sle_lightbar","VVA_PZK_Cerise93_Lightbar"})
+VVA.CopyTemplateToVehicle("pzkChevalierCerise93PoliceK9","PZK_Cerise93_Sedan_K9_nr", {"PZKA_sle_lightbar","VVA_PZK_Cerise93_Lightbar"})
+VVA.CopyTemplateToVehicle("pzkChevalierCerise93PoliceSupervisor","pzkChevalierCerise93Police")
 
+VVA.CopyTemplateToVehicle("pzkFranklinTriumphPoliceK9","PZK_Triumph_Sedan_K9_nr", {"PZKA_sle_lightbar","VVA_PZK_Cerise93_Lightbar"})
+VVA.CopyTemplateToVehicle("pzkFranklinTriumphPoliceSupervisor","pzkFranklinTriumphPolice")
+
+end
 
 
 --!!-- END OF V3 Code
