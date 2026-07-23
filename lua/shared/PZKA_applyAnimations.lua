@@ -19,7 +19,7 @@ require "VVA_misc_Profiles"
 
 local SLE =  VVA.CheckModEnabled("SimpleLightbarsExpandedPZK")
 if SLE then
-    VVA.addToProfile("PZKA_sle_lightbar", {"VVA_sle_lighbar"})
+    VVA.addToProfile("PZKA_sle_lightbar", {"VVA_sle_lightbar"})
     VVA.addToProfile("PZKA_sle_taxi", {"VVA_sle_taxi"})
 else
     VVA.addToProfile("PZKA_sle_lightbar", {"VVA_t_lightbar"})
@@ -157,7 +157,7 @@ VVA.CopyTemplateToVehicle("CarNormal","PZKA_Nyala_Sedan")
 
 VVA.CopyTemplateToVehicle("CarTaxi","PZKA_Nyala_Sedan_nr",{"VVA_sle_taxi","VVA_Normal_Taxi"})
 VVA.CopyTemplateToVehicle("CarTaxi2","CarTaxi")
-VVA.CopyTemplateToVehicle("CarLightsBulletinSheriff","PZKA_Nyala_Sedan_nr",{"VVA_NormalBars_Decor","VVA_sle_lighbar","VVA_Normal_Lightbar"})
+VVA.CopyTemplateToVehicle("CarLightsBulletinSheriff","PZKA_Nyala_Sedan_nr",{"VVA_NormalBars_Decor","VVA_sle_lightbar","VVA_Normal_Lightbar"})
 VVA.CopyTemplateToVehicle("CarLightsKST","CarLightsBulletinSheriff")
 VVA.CopyTemplateToVehicle("CarLightsLouisvilleCounty","CarLightsBulletinSheriff")
 VVA.CopyTemplateToVehicle("CarLightsMuldraughPolice","CarLightsBulletinSheriff")
