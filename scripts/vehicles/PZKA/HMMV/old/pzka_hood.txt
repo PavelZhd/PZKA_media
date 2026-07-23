@@ -1,0 +1,42 @@
+module Base
+{
+	model PZKA_Vehicles_HMMV_old_Hood
+	{
+		mesh = vehicles/pzka_HMMV|Hood_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+		boneWeight = BullBarBone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_old_Hood_nr
+	{
+		mesh = vehicles/pzka_HMMV|Hood_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = HoodBone 1.0,
+		boneWeight = BullBarBone 1.0,
+	}
+	
+	template vehicle PZKA_HMMV_old_hood {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_old_Hood,
+			}
+		}
+		template! = VVA_EngineDoorHeadlights,
+	}	
+	template vehicle PZKA_HMMV_old_hood_nr {
+		part EngineDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_old_Hood_nr,
+			}
+		}
+		template! = VVA_EngineDoorHeadlights,
+	}
+}

@@ -1,0 +1,39 @@
+module Base
+{
+    model PZKA_Vehicles_HMMV_old_2_Trunk
+	{
+		mesh = vehicles/pzka_HMMV|Trunk_2_obj,
+		shader = vehicle_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk2Bone 1.0,
+	}
+	model PZKA_Vehicles_HMMV_old_2_Trunk_nr
+	{
+		mesh = vehicles/pzka_HMMV|Trunk_2_obj,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = Trunk2Bone 1.0,
+	}
+	template vehicle PZKA_HMMV_old_2_Trunk {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_old_2_Trunk,
+			}
+		}
+		template! = VVA_TrunkDoorVersion,
+	}
+	template vehicle PZKA_HMMV_old_2_Trunk_nr {
+		part TrunkDoor
+		{
+			model Default
+			{
+				file = PZKA_Vehicles_HMMV_old_2_Trunk_nr,
+			}
+		}
+		template! = VVA_TrunkDoorVersion,
+	}
+}

@@ -111,4 +111,36 @@ module Base
 		}
 		template! = VVA_TrunkDoor_Common,
 	}
+
+	template vehicle VVA_Limo_Homelander_Trunk_Variable {
+		part TrunkDoor
+		{
+			model TCerise
+			{
+				file = VVA_Vehicles_Limo_Cerise_Trunk,
+			}
+			model _Hellion
+			{
+				file = VVA_Vehicles_Limo_Hellion_Trunk,
+			}
+			model _Homelander
+			{
+				file = VVA_Vehicles_Limo_Homelander_Trunk,
+			}			
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.AdjustLightGeometryDoor,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+			table install {
+				complete = Vehicles.Init.AdjustLightGeometry,
+			}
+		}
+		template! = VVA_TrunkDoor_Common,
+	}
+			
+			
+			
 }

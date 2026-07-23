@@ -180,4 +180,62 @@ module Base
 			}
 		}
 	}
+	template vehicle VVA_Limo_VariableRearLights
+	{
+		part HeadlightRearLeft
+		{
+			model _Cerise
+			{
+				file = VVA_Vehicles_Limo_Cerise_LightRL,
+			}
+			model _Hellion
+			{
+				file = VVA_Vehicles_Limo_Hellion_LightRL,
+			}
+			model _Homelander
+			{
+				file = VVA_Vehicles_Limo_Homelander_LightRL,
+			}
+			model _Nyala
+			{
+				file = VVA_Vehicles_Limo_Nyala_LightRL,
+			}
+			model _Nyala42
+			{
+				file = VVA_Vehicles_Limo_Nyala42_LightRL,
+			}
+			model _Rapier
+			{
+				file = VVA_Vehicles_Limo_Rapier_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model _Cerise
+			{
+				file = VVA_Vehicles_Limo_Cerise_LightRR,
+			}
+			model _Hellion
+			{
+				file = VVA_Vehicles_Limo_Hellion_LightRR,
+			}
+			model _Homelander
+			{
+				file = VVA_Vehicles_Limo_Homelander_LightRR,
+			}
+			model _Nyala
+			{
+				file = VVA_Vehicles_Limo_Nyala_LightRR,
+			}
+			model _Nyala42
+			{
+				file = VVA_Vehicles_Limo_Nyala42_LightRR,
+			}
+			model _Rapier
+			{
+				file = VVA_Vehicles_Limo_Rapier_LightRR,
+			}
+		}
+		template! = PZKA_VariableRearLights,
+	}
 }

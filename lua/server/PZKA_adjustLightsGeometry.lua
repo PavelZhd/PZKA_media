@@ -287,11 +287,15 @@ FillPartsMap["Base.pzkMastersonTR2Kouki"] = {
 FillPartsMap["Base.pzkMastersonTR2Zenki"] = FillPartsMap["Base.pzkMastersonTR2Kouki"]
 
 FillPartsMap["Base.pzkLimo"] = {
-    ["Nyala"] = "a0a",
-    ["Hellion"] = "a1a",
-    ["Cerise"] = "a2a",
-    ["Rapier"] = "a3a",
-    ["Homelander"] = "a4a",
+    ["_Nyala42"] = "a",
+    ["_Mayor"] = "a",
+    ["_TWD"] = "a",
+    ["_Nyala"] = "a0a",
+    ["_Hellion"] = "a1a",
+    ["_Cerise"] = "a2a",
+    ["_Rapier"] = "a3a",
+    ["_Homelander"] = "a4a",
+    ["TCerise"] = "a0a2a3a",
 }
 
 function Vehicles.Init.AdjustLightGeometry(vehicle, part)

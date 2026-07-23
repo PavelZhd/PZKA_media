@@ -1,0 +1,13 @@
+module Base
+{
+	template vehicle PZKA_HMMV_old_1 {
+		template! = PZKA_HMMV_old_1_Trunk,
+		template! = PZKA_HMMV_old_1_RearLights,
+		template! = PZKA_HMMV_old,
+	}
+	template vehicle PZKA_HMMV_old_1_nr {
+		template! = PZKA_HMMV_old_1_Trunk_nr,
+		template! = PZKA_HMMV_old_1_RearLights,
+		template! = PZKA_HMMV_old_nr,
+	}
+}
