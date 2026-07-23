@@ -1,0 +1,59 @@
+module Base
+{
+    model VVA_Vehicles_PZK_Cerise93_Sedan_Cerise93
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Model_Sedan_Cerise93,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Cerise93_Sedan_Cerise93_nr
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Model_Sedan_Cerise93,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Cerise93_Sedan_Triumph
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Model_Sedan_Triumph,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Cerise93_Sedan_Triumph_nr
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Model_Sedan_Triumph,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Cerise93_Wagon_Cerise93
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Model_Wagon_Cerise93,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Cerise93_Wagon_Cerise93_nr
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Model_Wagon_Cerise93,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Cerise93_Wagon_Triumph
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Model_Wagon_Triumph,
+		shader = vehicle_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Cerise93_Wagon_Triumph_nr
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Model_Wagon_Triumph,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+}

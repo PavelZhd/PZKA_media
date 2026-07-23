@@ -1,0 +1,63 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Cerise93_Cerise93_LightFL
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Light_FrontLeft_Cerise93_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Cerise93_Cerise93_LightFR
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Light_FrontRight_Cerise93_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Cerise93_Cerise93_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Cerise93_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Cerise93_LightFR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_Cerise93_Triumph_LightFL
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Light_FrontLeft_Triumph_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Cerise93_Triumph_LightFR
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Light_FrontRight_Triumph_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Cerise93_Triumph_FrontLights {
+		part HeadlightLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Triumph_LightFL,
+			}
+		}
+		part HeadlightRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Triumph_LightFR,
+			}
+		}
+	}
+}

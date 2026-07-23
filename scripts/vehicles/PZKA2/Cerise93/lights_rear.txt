@@ -1,0 +1,123 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Cerise93_Sedan_Cerise93_LightRL
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Light_RearLeft_Sedan_Cerise93_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Cerise93_Sedan_Cerise93_LightRR
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Light_RearRight_Sedan_Cerise93_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Cerise93_Sedan_Cerise93_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Sedan_Cerise93_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Sedan_Cerise93_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_Cerise93_Sedan_Triumph_LightRL
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Light_RearLeft_Sedan_Triumph_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Cerise93_Sedan_Triumph_LightRR
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Light_RearRight_Sedan_Triumph_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Cerise93_Sedan_Triumph_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Sedan_Triumph_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Sedan_Triumph_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_Cerise93_Wagon_Cerise93_LightRL
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Light_RearLeft_Wagon_Cerise93_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Cerise93_Wagon_Cerise93_LightRR
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Light_RearRight_Wagon_Cerise93_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Cerise93_Wagon_Cerise93_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Wagon_Cerise93_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Wagon_Cerise93_LightRR,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_Cerise93_Wagon_Triumph_LightRL
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Light_RearLeft_Wagon_Triumph_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model VVA_Vehicles_PZK_Cerise93_Wagon_Triumph_LightRR
+	{
+		mesh = vehicles/PZKA/Cerise93/static|Light_RearRight_Wagon_Triumph_obj,
+		shader = vehicle_multiuv,
+		static = TRUE,
+		scale = 0.01,
+	}
+	template vehicle VVA_PZK_Cerise93_Wagon_Triumph_RearLights {
+		part HeadlightRearLeft
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Wagon_Triumph_LightRL,
+			}
+		}
+		part HeadlightRearRight
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Wagon_Triumph_LightRR,
+			}
+		}
+	}
+}

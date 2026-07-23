@@ -1,0 +1,39 @@
+module Base
+{
+	model VVA_Vehicles_PZK_Cerise93_Kennel_decor
+	{
+		mesh = vehicles/PZKA/Cerise93/static|decor_Kennel,
+		shader = vva_fixetex,
+		texture = Vehicles/Vehicle_pzkChevalierCerise93Police,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Cerise93_Kennel_Decor {
+		part Interior
+		{
+			model Decor_Kennel
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Kennel_decor,
+			}
+		}
+	}
+	model VVA_Vehicles_PZK_Cerise93_Bars_decor
+	{
+		mesh = vehicles/PZKA/Cerise93/static|decor_Bars,
+		shader = vva_fixetex,
+		texture = Vehicles/Vehicle_pzkChevalierCerise93Police,
+		static = TRUE,
+		scale = 0.01,
+	}
+
+	template vehicle VVA_PZK_Cerise93_Bars_Decor {
+		part Interior
+		{
+			model Decor_Bars
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Bars_decor,
+			}
+		}
+	}
+}

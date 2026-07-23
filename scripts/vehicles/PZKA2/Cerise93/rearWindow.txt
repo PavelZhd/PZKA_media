@@ -1,0 +1,30 @@
+module Base
+{
+    model VVA_Vehicles_PZK_Cerise93_Wagon_RearWindow
+	{
+		mesh = vehicles/PZKA/Cerise93/wagonTrunk|RearWindow_Wagon_obj,
+		shader = vehicle_multiuv_vva,
+		static = FALSE,
+		scale = 0.01,
+	}
+    model VVA_Vehicles_PZK_Cerise93_Wagon_RearWindow_static
+	{
+		mesh = vehicles/PZKA/Cerise93/wagonTrunk|RearWindow_Wagon_sobj,
+		shader = vehicle_multiuv_vva,
+		scale = 0.01,
+		static = TRUE,
+	}
+	template vehicle VVA_PZK_Cerise93_Wagon_RearWindow {
+		part WindshieldRear
+		{
+			model Default
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Wagon_RearWindow,
+			}
+			model Static
+			{
+				file = VVA_Vehicles_PZK_Cerise93_Wagon_RearWindow_static,
+			}
+		}
+	}
+}
