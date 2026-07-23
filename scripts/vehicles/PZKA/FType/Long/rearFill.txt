@@ -89,7 +89,7 @@ module Base
 	}
 	model PZKA_Vehicles_Ftype_Long_RearFill_Pickup_Province_nr
 	{		
-		mesh = vehicles/FType/pzka_Long|RearFill_Long_PickUp_Province,
+		mesh = vehicles/FType/pzka_Long|RearFill_Long_Pickup_Province,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 0.01,

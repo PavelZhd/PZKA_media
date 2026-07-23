@@ -3,6 +3,7 @@ module Base
 	model VVA_Vehicles_FVan_Fill_decor
 	{
 		mesh = vehicles/PZKA/Vans/FVan_static|decor_FVan_Fill,
+		shader = vva_fixetex,
 		texture = Vehicles/vehicle_vanambulanceshell,
 		static = TRUE,
 		scale = 0.01,

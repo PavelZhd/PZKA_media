@@ -3,6 +3,7 @@ module Base
 	model VVA_Vehicles_PZKASedan_SedanF_decor
 	{
 		mesh = vehicles/PZKA/Normal/sedan|decor_SedanF,
+		shader = vva_fixetex,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
 		static = TRUE,
 		scale = 0.01,
@@ -20,6 +21,7 @@ module Base
 	model VVA_Vehicles_PZKASedan_SedanV_decor
 	{
 		mesh = vehicles/PZKA/Normal/sedan|decor_SedanV,
+		shader = vva_fixetex,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
 		static = TRUE,
 		scale = 0.01,

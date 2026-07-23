@@ -7,7 +7,7 @@ module Base
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = HoodBone 1.0,
-	}
+  	}
 	model VVA_Vehicles_Van_F_Hood_nr
 	{
 		mesh = vehicles/PZKA/Vans/hood|Hood_F_obj,
@@ -15,7 +15,7 @@ module Base
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = HoodBone 1.0,
-	}
+  	}
 	template vehicle VVA_Van_F_hood {
 		part EngineDoor
 		{
@@ -43,7 +43,7 @@ module Base
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = HoodBone 1.0,
-	}
+  	}
 	model VVA_Vehicles_Van_C_Hood_nr
 	{
 		mesh = vehicles/PZKA/Vans/hood|Hood_C_obj,
@@ -51,7 +51,7 @@ module Base
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = HoodBone 1.0,
-	}
+  	}
 	template vehicle VVA_Van_C_hood {
 		part EngineDoor
 		{
@@ -79,7 +79,7 @@ module Base
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = HoodBone 1.0,
-	}
+  	}
 	model VVA_Vehicles_Van_D_Hood_nr
 	{
 		mesh = vehicles/PZKA/Vans/hood|Hood_D_obj,
@@ -87,7 +87,7 @@ module Base
 		static = FALSE,
 		scale = 0.01,
 		boneWeight = HoodBone 1.0,
-	}
+  	}
 	template vehicle VVA_Van_D_hood {
 		part EngineDoor
 		{

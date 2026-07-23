@@ -13,7 +13,7 @@ module Base
 		{
 			model Default
 			{
-				file = VVA_Vehicles_PZK_Offroad_C_Lightbar,
+				file = VVA_Vehicles_PZK_Offroad_Lightbar,
 			}
 		}
 	}

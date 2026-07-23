@@ -3,7 +3,7 @@ module Base
 	model VVA_Vehicles_PZK_HMMV_SeatFL
 	{
 		mesh = vehicles/PZKA/HMMV/static|Seat_FrontLeft_obj,
-		shader = vehiclewheel,		
+		shader = vva_fixetex,
 		texture = Vehicles/Vehicle_pzkHMMWV1Civshell,
 		static = TRUE,
 		scale = 0.01,
@@ -11,7 +11,7 @@ module Base
 	model VVA_Vehicles_PZK_HMMV_SeatFR
 	{
 		mesh = vehicles/PZKA/HMMV/static|Seat_FrontRight_obj,
-		shader = vehiclewheel,		
+		shader = vva_fixetex,
 		texture = Vehicles/Vehicle_pzkHMMWV1Civshell,
 		static = TRUE,
 		scale = 0.01,

@@ -3,6 +3,7 @@ module Base
 	model VVA_Vehicles_PZK_StepVan_Food_decor
 	{
 		mesh = vehicles/PZKA/StepVan/static|decor_Food,
+		shader = vva_fixetex,
 		texture = Vehicles/vehicle_stepvanshell,
 		static = TRUE,
 		scale = 0.004,
