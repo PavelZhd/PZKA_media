@@ -3,6 +3,7 @@ module Base
 	model VVA_Vehicles_Limo_decor
 	{
 		mesh = vehicles/PZKA/Normal/limo|decor_Limo,
+		shader = vva_fixetex,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
 		static = TRUE,
 		scale = 0.01,

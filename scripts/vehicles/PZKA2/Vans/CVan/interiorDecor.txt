@@ -3,6 +3,7 @@ module Base
 	model VVA_Vehicles_CVan_interior_decor
 	{
 		mesh = vehicles/PZKA/Vans/CVan_static|decor_CVan_interior,
+		shader = vva_fixetex,
 		texture = Vehicles/vehicle_vanambulanceshell,
 		static = TRUE,
 		scale = 0.01,
@@ -20,6 +21,7 @@ module Base
 	model VVA_Vehicles_CVan_multi_decor
 	{
 		mesh = vehicles/PZKA/Vans/CVan_static|decor_CVan_multi,
+		shader = vva_fixetex,
 		texture = Vehicles/vehicle_vanambulanceshell,
 		static = TRUE,
 		scale = 0.01,
@@ -37,6 +39,7 @@ module Base
 	model VVA_Vehicles_CVan_seats_decor
 	{
 		mesh = vehicles/PZKA/Vans/CVan_static|decor_CVan_seats,
+		shader = vva_fixetex,
 		texture = Vehicles/vehicle_vanambulanceshell,
 		static = TRUE,
 		scale = 0.01,

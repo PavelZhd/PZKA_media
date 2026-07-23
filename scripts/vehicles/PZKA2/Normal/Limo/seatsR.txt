@@ -3,7 +3,7 @@ module Base
 	model VVA_Vehicles_Limo_SeatRL
 	{
 		mesh = vehicles/PZKA/Normal/limo|Seat_RearLeft_Limo_obj,
-
+		shader = vva_fixetex,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
 		static = TRUE,
 		scale = 0.01,
@@ -11,7 +11,7 @@ module Base
 	model VVA_Vehicles_Limo_SeatRR
 	{
 		mesh = vehicles/PZKA/Normal/limo|Seat_RearRight_Limo_obj,
-
+		shader = vva_fixetex,
 		texture = Vehicles/Vehicle_pzkDashHellionTaxi1shell,
 		static = TRUE,
 		scale = 0.01,

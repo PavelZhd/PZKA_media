@@ -1,9 +1,10 @@
 module Base
 {
+
 	model VVA_Vehicles_PZK_VanBox_internals
 	{
 		mesh = vehicles/PZKA/VanBox/static|Vehicles_Interior,
-
+		shader = vva_fixetex,
 		texture = Vehicles/vehicle_vanmeltingpointmetalshell,
 		static = TRUE,
 		scale = 0.01,

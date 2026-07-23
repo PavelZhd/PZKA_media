@@ -6,7 +6,7 @@ module Base
 		mesh = vehicles/PZKA/Normal/doorR|Door_RearRight_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 		boneWeight = RearDoor.R 1.0,
 	}
 	model VVA_Vehicles_PZK_Normal_DoorRearRight_nr
@@ -14,7 +14,7 @@ module Base
 		mesh = vehicles/PZKA/Normal/doorR|Door_RearRight_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 		boneWeight = RearDoor.R 1.0,
 	}
 	model VVA_Vehicles_PZK_Normal_WindowRearRight
@@ -22,7 +22,7 @@ module Base
 		mesh = vehicles/PZKA/Normal/doorR|Window_RearRight_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 		boneWeight = RearWindow.R 1.0,
 	}
 
@@ -64,7 +64,7 @@ module Base
 		mesh = vehicles/PZKA/Normal/doorR|Door_RearRight_Nyala42_obj,
 		shader = vehicle_multiuv_noreflect,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 		boneWeight = RearDoor.R 1.0,
 	}
 	model VVA_Vehicles_PZK_Normal_Nyala42_DoorRearRight_nr
@@ -72,7 +72,7 @@ module Base
 		mesh = vehicles/PZKA/Normal/doorR|Door_RearRight_Nyala42_obj,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 		boneWeight = RearDoor.R 1.0,
 	}
 	model VVA_Vehicles_PZK_Normal_Nyala42_WindowRearRight
@@ -80,7 +80,7 @@ module Base
 		mesh = vehicles/PZKA/Normal/doorR|Window_RearRight_Nyala42_obj,
 		shader = vehicle_multiuv_vva,
 		static = FALSE,
-		scale = 0.01,
+		scale = 0.004,
 		boneWeight = RearWindow.R 1.0,
 	}
 
